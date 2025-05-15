@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+      <Version>0.0.2</Version>
     <LangVersion>latest</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -12,6 +13,8 @@
     <Product>nebulae.$(AssemblyName)</Product>
     <Copyright>©2025 Nebulae Foundation, LLC</Copyright>
     <PackageProjectUrl>https://github.com/nebulaeonline/dotPDFium</PackageProjectUrl>
+      <RepositoryType>git</RepositoryType>
+      <RepositoryUrl>https://github.com/nebulaeonline/dotPDFium</RepositoryUrl>
     <RootNamespace>nebulae.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
       <PackageReadmeFile>docs\README.md</PackageReadmeFile>
   </PropertyGroup>
