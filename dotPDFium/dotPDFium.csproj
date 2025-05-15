@@ -1,0 +1,69 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>nebulae.$(AssemblyName)</PackageId>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <Company>Nebulae Foundation, LLC</Company>
+    <Authors>Robert C. Horvath, III</Authors>
+    <Product>nebulae.$(AssemblyName)</Product>
+    <Copyright>©2025 Nebulae Foundation, LLC</Copyright>
+    <PackageProjectUrl>https://github.com/nebulaeonline/dotPDFium</PackageProjectUrl>
+    <RootNamespace>nebulae.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+      <PackageReadmeFile>docs\README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+    <ItemGroup>
+        <!-- Windows x64 -->
+        <Content Include="NativeBinaries\win-x64\pdfium.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Link>runtimes\win-x64\native\pdfium.dll</Link>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+
+        <!-- Windows ARM64 -->
+        <Content Include="NativeBinaries\win-arm64\pdfium.dll">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Link>runtimes\win-arm64\native\pdfium.dll</Link>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+
+        <!-- macOS universal (x64 + arm64 fat binary) -->
+        <Content Include="NativeBinaries\osx-universal\libpdfium.dylib">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Link>runtimes\osx-universal\native\libpdfium.dylib</Link>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+
+        <!-- Linux x64 -->
+        <Content Include="NativeBinaries\linux-x64\libpdfium.so">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Link>runtimes\linux-x64\native\libpdfium.so</Link>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+
+        <!-- Linux ARM64 -->
+        <Content Include="NativeBinaries\linux-arm64\libpdfium.so">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+            <Link>runtimes\linux-arm64\native\libpdfium.so</Link>
+            <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+        </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Include="..\README.md" Pack="true" PackagePath="docs">
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="pdfium.version">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+
+</Project>

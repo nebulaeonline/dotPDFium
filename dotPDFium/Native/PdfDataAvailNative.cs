@@ -1,0 +1,36 @@
+﻿using Nebulae.dotPDFium.Native;
+using System;
+using System.Runtime.InteropServices;
+
+namespace nebulae.dotPDFium.Native;
+
+public static class PdfDataAvailNative
+{
+    private const string PdfiumLib = "pdfium";
+
+    // Create a document availability context from file access and availability interface
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDFAvail_Create(ref FX_FILEAVAIL fileAvail, ref FPDF_FILEACCESS fileAccess);
+
+    [DllImport(PdfiumLib)]
+    public static extern void FPDFAvail_Destroy(IntPtr avail);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFAvail_IsDocAvail(IntPtr avail, ref FX_DOWNLOADHINTS hints);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDFAvail_GetDocument(IntPtr avail, [MarshalAs(UnmanagedType.LPStr)] string password);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFAvail_IsPageAvail(IntPtr avail, int pageIndex, ref FX_DOWNLOADHINTS hints);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFAvail_IsFormAvail(IntPtr avail, ref FX_DOWNLOADHINTS hints);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFAvail_IsLinearized(IntPtr avail);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFAvail_GetFirstPageNum(IntPtr document);
+}
+
