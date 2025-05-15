@@ -1,5 +1,4 @@
-﻿using Nebulae.dotPDFium.Native;
-using System;
+﻿using System;
 using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
