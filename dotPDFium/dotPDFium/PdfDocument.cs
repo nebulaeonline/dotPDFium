@@ -197,9 +197,9 @@ public class PdfDocument : PdfObject
     /// <returns>true on success, false on failure</returns>
     public bool SaveTo(string path, bool incremental = false)
     {
-        using var writer = new ManagedPdfWriter(path);
         uint flags = incremental ? 1u : 0u;
-        return PdfSaveNative.FPDF_SaveAsCopy(_handle, ref writer.GetFileWrite(), flags) != false;
+        using var writer = new ManagedPdfWriter(path);
+        return PdfSaveNative.FPDF_SaveAsCopy(_handle, writer.NativePtr, flags);
     }
 
     /// <summary>
@@ -207,12 +207,13 @@ public class PdfDocument : PdfObject
     /// </summary>
     /// <param name="path"></param>
     /// <param name="pdfVersion"></param>
-    /// <returns></returns>
-    public bool SaveWithPdfVersion(string path, PdfFileVersion pdfVersion)
+    /// <returns>true on success, false on failure</returns>
+    public bool SaveWithVersion(string path, PdfFileVersion fileVersion)
     {
         using var writer = new ManagedPdfWriter(path);
-        return PdfSaveNative.FPDF_SaveWithVersion(_handle, ref writer.GetFileWrite(), 0, (int)pdfVersion) != false;
+        return PdfSaveNative.FPDF_SaveWithVersion(_handle, writer.NativePtr, 0, (int)fileVersion);
     }
+
 
     /// <summary>
     /// Creates a new page in the document at the specified index with the specified width and height.

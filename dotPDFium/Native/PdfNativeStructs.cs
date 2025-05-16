@@ -180,19 +180,6 @@ public struct FPDF_COLORSCHEME
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public unsafe struct FPDF_FILEWRITE
-{
-    public int version;
-    public IntPtr userData;
-
-    // Delegate for writing data back to stream
-    public FPDFWriteBlockDelegate WriteBlock;
-}
-
-[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-public delegate int FPDFWriteBlockDelegate(IntPtr fileWrite, IntPtr data, uint size);
-
-[StructLayout(LayoutKind.Sequential)]
 public unsafe struct FPDF_SYSFONTINFO
 {
     public int version;

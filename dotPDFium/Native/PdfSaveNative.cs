@@ -7,13 +7,13 @@ public static class PdfSaveNative
 {
     private const string PdfiumLib = "pdfium";
 
-    [DllImport(PdfiumLib)]
+    [DllImport("pdfium.dll", CallingConvention = CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDF_SaveAsCopy(IntPtr document, ref FPDF_FILEWRITE writer, uint flags);
+    public static extern bool FPDF_SaveAsCopy(IntPtr document, IntPtr writer, uint flags);
 
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDF_SaveWithVersion(IntPtr document, ref FPDF_FILEWRITE writer, uint flags, int fileVersion);
+    public static extern bool FPDF_SaveWithVersion(IntPtr document, IntPtr writer, uint flags, int fileVersion);
 
     // Save flags
     public const int FPDF_INCREMENTAL = 1;
