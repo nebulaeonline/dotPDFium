@@ -2,6 +2,14 @@
 
 namespace nebulae.dotPDFium.Native;
 
+public enum FpdfRenderStatus
+{
+    Ready = 0,
+    ToBeContinued = 1,
+    Done = 2,
+    Failed = 3
+}
+
 public static class PdfProgressiveNative
 {
     private const string PdfiumLib = "pdfium";
@@ -17,7 +25,7 @@ public static class PdfProgressiveNative
         int sizeY,
         int rotate,
         int flags,
-        ref IFSDK_PAUSE pause);
+        ref IfSdkPause pause);
 
     // Start progressive rendering with a color scheme
     [DllImport(PdfiumLib)]
@@ -31,13 +39,13 @@ public static class PdfProgressiveNative
         int rotate,
         int flags,
         ref FPDF_COLORSCHEME colorScheme,
-        ref IFSDK_PAUSE pause);
+        ref IfSdkPause pause);
 
     // Continue rendering if FPDF_RENDER_TOBECONTINUED
     [DllImport(PdfiumLib)]
     public static extern int FPDF_RenderPage_Continue(
         IntPtr page,
-        ref IFSDK_PAUSE pause);
+        ref IfSdkPause pause);
 
     // Finalize rendering session
     [DllImport(PdfiumLib)]

@@ -57,5 +57,61 @@ public static class PdfTextNative
 
     [DllImport(PdfiumLib)]
     public static extern void FPDFText_FindClose(IntPtr searchHandle);
-}
 
+    [DllImport(PdfiumLib)] 
+    public static extern IntPtr FPDFText_GetTextObject(IntPtr textPage, int index);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern int FPDFText_IsGenerated(IntPtr textPage, int index);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern int FPDFText_IsHyphen(IntPtr textPage, int index);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern int FPDFText_HasUnicodeMapError(IntPtr textPage, int index);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern double FPDFText_GetFontSize(IntPtr textPage, int index);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern uint FPDFText_GetFontInfo(IntPtr textPage, int index, byte[] buffer, uint buflen, out int flags);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern int FPDFText_GetFontWeight(IntPtr textPage, int index);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern bool FPDFText_GetFillColor(IntPtr textPage, int index, out uint r, out uint g, out uint b, out uint a);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern bool FPDFText_GetStrokeColor(IntPtr textPage, int index, out uint r, out uint g, out uint b, out uint a);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern float FPDFText_GetCharAngle(IntPtr textPage, int index);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern bool FPDFText_GetLooseCharBox(IntPtr textPage, int index, out FsRectF rect);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern bool FPDFText_GetMatrix(IntPtr textPage, int index, out FsMatrix matrix);
+
+    [DllImport(PdfiumLib)] 
+    public static extern IntPtr FPDFLink_LoadWebLinks(IntPtr textPage);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern int FPDFLink_CountWebLinks(IntPtr linkPage);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern int FPDFLink_GetURL(IntPtr linkPage, int linkIndex, [Out] ushort[] buffer, int buflen);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern int FPDFLink_CountRects(IntPtr linkPage, int linkIndex);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern bool FPDFLink_GetRect(IntPtr linkPage, int linkIndex, int rectIndex, out double left, out double top, out double right, out double bottom);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern bool FPDFLink_GetTextRange(IntPtr linkPage, int linkIndex, out int startCharIndex, out int charCount);
+    
+    [DllImport(PdfiumLib)] 
+    public static extern void FPDFLink_CloseWebLinks(IntPtr linkPage);
+}

@@ -3,6 +3,15 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
+[Flags]
+public enum PdfSaveFlags
+{
+    None = 0,
+    Incremental = 1,
+    NoIncremental = 2,
+    RemoveSecurity = 3,
+}
+
 public static class PdfSaveNative
 {
     private const string PdfiumLib = "pdfium";
@@ -14,10 +23,5 @@ public static class PdfSaveNative
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
     public static extern bool FPDF_SaveWithVersion(IntPtr document, IntPtr writer, uint flags, int fileVersion);
-
-    // Save flags
-    public const int FPDF_INCREMENTAL = 1;
-    public const int FPDF_NO_INCREMENTAL = 2;
-    public const int FPDF_REMOVE_SECURITY = 3;
 }
 

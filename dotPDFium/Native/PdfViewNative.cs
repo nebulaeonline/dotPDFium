@@ -1,6 +1,59 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
+
+/// <summary>
+/// Bitmap pixel formats supported by the PDFium library.
+/// </summary>
+public enum PdfBitmapFormat
+{
+    Unknown = 0,
+    Gray = 1,
+    BGR = 2,
+    BGRx = 3,
+    BGRA = 4,
+    BGRAPremul = 5
+}
+public enum FpfObjectType
+{
+    Unknown = 0,
+    Boolean = 1,
+    Number = 2,
+    String = 3,
+    Name = 4,
+    Array = 5,
+    Dictionary = 6,
+    Stream = 7,
+    NullObj = 8,
+    Reference = 9
+}
+
+public enum PdfRenderFlags
+{
+    Annot = 0x01,
+    LcdText = 0x02,
+    NoNativeText = 0x04,
+    Grayscale = 0x08,
+    DebugInfo = 0x80,
+    NoCatch = 0x100,
+    LimitedImageCache = 0x200,
+    ForceHalftone = 0x400,
+    Printing = 0x800,
+    NoSmoothText = 0x1000,
+    NoSmoothImage = 0x2000,
+    NoSmoothPath = 0x4000,
+    ReverseByteOrder = 0x10,
+    ConvertFillToStroke = 0x20
+}
+
+public enum PdfDuplexType
+{
+    Undefined = 0,
+    Simplex = 1,
+    FlipShortEdge = 2,
+    FlipLongEdge = 3
+}
 
 public class PdfViewNative
 {
@@ -76,7 +129,7 @@ public class PdfViewNative
     public static extern void FPDF_RenderPageBitmap(IntPtr bitmap, IntPtr page, int start_x, int start_y, int size_x, int size_y, int rotate, int flags);
 
     [DllImport(PdfiumLib)]
-    public static extern void FPDF_RenderPageBitmapWithMatrix(IntPtr bitmap, IntPtr page, ref FS_MATRIX matrix, ref FS_RECTF clipping, int flags);
+    public static extern void FPDF_RenderPageBitmapWithMatrix(IntPtr bitmap, IntPtr page, ref FsMatrixF matrix, ref FsRectF clipping, int flags);
 
     [DllImport(PdfiumLib)]
     public static extern bool FPDF_DeviceToPage(IntPtr page, int start_x, int start_y, int size_x, int size_y, int rotate, int device_x, int device_y, out double page_x, out double page_y);
@@ -86,4 +139,73 @@ public class PdfViewNative
 
     [DllImport(PdfiumLib)]
     public static extern uint FPDF_GetLastError();
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDF_LoadCustomDocument(ref FpdfFileAccess access, [MarshalAs(UnmanagedType.LPStr)] string password);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDF_GetFileVersion(IntPtr document, out int version);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDF_DocumentHasValidCrossReferenceTable(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_GetTrailerEnds(IntPtr document, [Out] uint[] buffer, uint length);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_GetDocPermissions(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_GetDocUserPermissions(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDF_GetSecurityHandlerRevision(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDF_GetPageBoundingBox(IntPtr page, out FsRectF rect);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDF_GetPageSizeByIndexF(IntPtr document, int pageIndex, out FsSizeF size);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDF_GetPageSizeByIndex(IntPtr document, int pageIndex, out double width, out double height);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDF_VIEWERREF_GetPrintScaling(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDF_VIEWERREF_GetNumCopies(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDF_VIEWERREF_GetPrintPageRange(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern UIntPtr FPDF_VIEWERREF_GetPrintPageRangeCount(IntPtr pageRange);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDF_VIEWERREF_GetPrintPageRangeElement(IntPtr pageRange, UIntPtr index);
+
+    [DllImport(PdfiumLib)]
+    public static extern PdfDuplexType FPDF_VIEWERREF_GetDuplex(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_VIEWERREF_GetName(IntPtr document, [MarshalAs(UnmanagedType.LPStr)] string key, [Out] byte[] buffer, uint length);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_CountNamedDests(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDF_GetNamedDestByName(IntPtr document, [MarshalAs(UnmanagedType.LPStr)] string name);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDF_GetNamedDest(IntPtr document, int index, IntPtr buffer, ref int buflen);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDF_GetXFAPacketCount(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_GetXFAPacketName(IntPtr document, int index, IntPtr buffer, uint buflen);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDF_GetXFAPacketContent(IntPtr document, int index, IntPtr buffer, uint buflen, out uint outBuflen);
 }

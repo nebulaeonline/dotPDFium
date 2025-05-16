@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using nebulae.dotPDFium.Native;
+
 namespace nebulae.dotPDFium.dotPDFium;
 
 public static class PdfBitmapFormatExtension

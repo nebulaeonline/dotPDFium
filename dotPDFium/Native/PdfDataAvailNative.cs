@@ -9,22 +9,22 @@ public static class PdfDataAvailNative
 
     // Create a document availability context from file access and availability interface
     [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDFAvail_Create(ref FX_FILEAVAIL fileAvail, ref FPDF_FILEACCESS fileAccess);
+    public static extern IntPtr FPDFAvail_Create(ref FxFileAvail fileAvail, ref FpdfFileAccess fileAccess);
 
     [DllImport(PdfiumLib)]
     public static extern void FPDFAvail_Destroy(IntPtr avail);
 
     [DllImport(PdfiumLib)]
-    public static extern int FPDFAvail_IsDocAvail(IntPtr avail, ref FX_DOWNLOADHINTS hints);
+    public static extern int FPDFAvail_IsDocAvail(IntPtr avail, ref FxDownloadHints hints);
 
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFAvail_GetDocument(IntPtr avail, [MarshalAs(UnmanagedType.LPStr)] string password);
 
     [DllImport(PdfiumLib)]
-    public static extern int FPDFAvail_IsPageAvail(IntPtr avail, int pageIndex, ref FX_DOWNLOADHINTS hints);
+    public static extern int FPDFAvail_IsPageAvail(IntPtr avail, int pageIndex, ref FxDownloadHints hints);
 
     [DllImport(PdfiumLib)]
-    public static extern int FPDFAvail_IsFormAvail(IntPtr avail, ref FX_DOWNLOADHINTS hints);
+    public static extern int FPDFAvail_IsFormAvail(IntPtr avail, ref FxDownloadHints hints);
 
     [DllImport(PdfiumLib)]
     public static extern int FPDFAvail_IsLinearized(IntPtr avail);

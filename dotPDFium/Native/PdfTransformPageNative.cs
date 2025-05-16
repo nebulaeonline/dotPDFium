@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
-public static class PdfTransformNative
+public static class PdfTransformPageNative
 {
     private const string PdfiumLib = "pdfium";
 
@@ -43,7 +43,7 @@ public static class PdfTransformNative
     // Transform entire page with optional clipping
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDFPage_TransFormWithClip(IntPtr page, ref FS_MATRIX matrix, ref FS_RECTF clipRect);
+    public static extern bool FPDFPage_TransFormWithClip(IntPtr page, ref FsMatrixF matrix, ref FsRectF clipRect);
 
     // Transform clip path of a page object
     [DllImport(PdfiumLib)]

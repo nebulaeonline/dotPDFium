@@ -1,9 +1,36 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FS_MATRIX
+public struct FsPointF
+{
+    public float X;
+    public float Y;
+
+    public FsPointF(float x, float y)
+    {
+        X = x;
+        Y = y;
+    }
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FsSizeF
+{
+    public float width;
+    public float height;
+
+    public FsSizeF(float width, float height)
+    {
+        this.width = width;
+        this.height = height;
+    }
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FsMatrixF
 {
     public float a;
     public float b;
@@ -12,7 +39,7 @@ public struct FS_MATRIX
     public float e;
     public float f;
 
-    public FS_MATRIX(float a, float b, float c, float d, float e, float f)
+    public FsMatrixF(float a, float b, float c, float d, float e, float f)
     {
         this.a = a;
         this.b = b;
@@ -24,14 +51,35 @@ public struct FS_MATRIX
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FS_RECTF
+public struct FsMatrix
+{
+    public double a;
+    public double b;
+    public double c;
+    public double d;
+    public double e;
+    public double f;
+
+    public FsMatrix(double a, double b, double c, double d, double e, double f)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+        this.f = f;
+    }
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FsRectF
 {
     public float left;
     public float top;
     public float right;
     public float bottom;
 
-    public FS_RECTF(float left, float top, float right, float bottom)
+    public FsRectF(float left, float top, float right, float bottom)
     {
         this.left = left;
         this.top = top;
@@ -41,7 +89,74 @@ public struct FS_RECTF
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FX_FILEAVAIL
+public struct FsRect
+{
+    public double left;
+    public double top;
+    public double right;
+    public double bottom;
+
+    public FsRect(double left, double top, double right, double bottom)
+    {
+        this.left = left;
+        this.top = top;
+        this.right = right;
+        this.bottom = bottom;
+    }
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FsQuadPointsF
+{
+    float x1;
+    float y1;
+    float x2;
+    float y2;
+    float x3;
+    float y3;
+    float x4;
+    float y4;
+
+    public FsQuadPointsF(float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4)
+    {
+        this.x1 = x1;
+        this.y1 = y1;
+        this.x2 = x2;
+        this.y2 = y2;
+        this.x3 = x3;
+        this.y3 = y3;
+        this.x4 = x4;
+        this.y4 = y4;
+    }
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FpdfImageObjMetadata
+{
+    /// <summary>The image width in pixels.</summary>
+    public uint width;
+
+    /// <summary>The image height in pixels.</summary>
+    public uint height;
+
+    /// <summary>The image's horizontal DPI (dots per inch).</summary>
+    public float horizontal_dpi;
+
+    /// <summary>The image's vertical DPI (dots per inch).</summary>
+    public float vertical_dpi;
+
+    /// <summary>Bits per pixel.</summary>
+    public uint bits_per_pixel;
+
+    /// <summary>The image's color space. Use FPDF_COLORSPACE_* constants.</summary>
+    public int colorspace;
+
+    /// <summary>The image's marked content ID, or -1 if none.</summary>
+    public int marked_content_id;
+}
+
+[StructLayout(LayoutKind.Sequential)]
+public struct FxFileAvail
 {
     public int version;
 
@@ -53,7 +168,7 @@ public struct FX_FILEAVAIL
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FX_DOWNLOADHINTS
+public struct FxDownloadHints
 {
     public int version;
 
@@ -65,7 +180,7 @@ public struct FX_DOWNLOADHINTS
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FPDF_FILEACCESS
+public struct FpdfFileAccess
 {
     public uint m_FileLen;
 
@@ -79,7 +194,7 @@ public struct FPDF_FILEACCESS
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct UNSUPPORT_INFO
+public struct UnSupportInfo
 {
     public int version;
 
@@ -87,8 +202,9 @@ public struct UNSUPPORT_INFO
     public UnSupportHandler FSDK_UnSupport_Handler;
 
     [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate void UnSupportHandler(ref UNSUPPORT_INFO info, int type);
+    public delegate void UnSupportHandler(IntPtr pThis, int type);
 }
+
 
 // time_t = long on most platforms
 [StructLayout(LayoutKind.Sequential)]
@@ -101,74 +217,79 @@ public struct time_t
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FPDF_SYSTEMTIME
+public struct FpdfSystemTime
 {
-    public ushort wYear;         // e.g. 2024
-    public ushort wMonth;        // 1–12
-    public ushort wDayOfWeek;    // 0–6 (Sunday–Saturday)
-    public ushort wDay;          // 1–31
-    public ushort wHour;         // 0–23
-    public ushort wMinute;       // 0–59
-    public ushort wSecond;       // 0–59
-    public ushort wMilliseconds; // 0–999
+    public ushort wYear;
+    public ushort wMonth;
+    public ushort wDayOfWeek;
+    public ushort wDay;
+    public ushort wHour;
+    public ushort wMinute;
+    public ushort wSecond;
+    public ushort wMilliseconds;
 }
 
+
 [StructLayout(LayoutKind.Sequential)]
-public unsafe struct FPDF_FORMFILLINFO
+public unsafe struct PdfFormFillInfo
 {
     public int version;
 
     // Optional: free resources
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, void> Release;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, void> Release;
 
     // Rendering invalidation callback
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, IntPtr /* FPDF_PAGE */, double, double, double, double, void> FFI_Invalidate;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, IntPtr /* FPDF_PAGE */, double, double, double, double, void> FFI_Invalidate;
 
     // Optional: text selection display
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, IntPtr, double, double, double, double, void> FFI_OutputSelectedRect;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, IntPtr, double, double, double, double, void> FFI_OutputSelectedRect;
 
     // Cursor change
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, int, void> FFI_SetCursor;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, void> FFI_SetCursor;
 
     // Timer control
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, int, delegate* unmanaged[Cdecl]<int, void>, int> FFI_SetTimer;
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, int, void> FFI_KillTimer;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, delegate* unmanaged[Cdecl]<int, void>, int> FFI_SetTimer;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, void> FFI_KillTimer;
 
     // Time
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, FPDF_SYSTEMTIME> FFI_GetLocalTime;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, FpdfSystemTime> FFI_GetLocalTime;
 
     // Form change callback
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, void> FFI_OnChange;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, void> FFI_OnChange;
 
     // Page access
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, IntPtr /* FPDF_DOCUMENT */, int, IntPtr> FFI_GetPage;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, IntPtr /* FPDF_DOCUMENT */, int, IntPtr> FFI_GetPage;
 
     // Optional: for JavaScript engines
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, IntPtr /* FPDF_DOCUMENT */, IntPtr> FFI_GetCurrentPage;
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, IntPtr /* FPDF_PAGE */, int> FFI_GetRotation;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, IntPtr /* FPDF_DOCUMENT */, IntPtr> FFI_GetCurrentPage;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, IntPtr /* FPDF_PAGE */, int> FFI_GetRotation;
 
     // Execute named action (e.g. "NextPage")
-    public delegate* unmanaged[Cdecl]<FPDF_FORMFILLINFO*, IntPtr /* FPDF_BYTESTRING */, void> FFI_ExecuteNamedAction;
+    public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, IntPtr /* FPDF_BYTESTRING */, void> FFI_ExecuteNamedAction;
 
-    // Optional: JavaScript runtime integration (unused unless m_pJsPlatform is provided)
+    // JavaScript runtime integration (unused unless m_pJsPlatform is provided)
     public IntPtr m_pJsPlatform;
 
-    // Optional: XFA-related flags
+    // XFA-related flags
     public byte xfa_disabled;
 
-    // Add other fields as needed for version 2/3 support
+    // TODO: other fields as needed for version 2/3 support
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public unsafe struct IFSDK_PAUSE
+public struct IfSdkPause
 {
     public int version;
 
-    // PDFium will periodically call this to ask: should we pause?
-    public delegate* unmanaged[Cdecl]<IFSDK_PAUSE*, int> NeedToPauseNow;
+    [MarshalAs(UnmanagedType.FunctionPtr)]
+    public NeedToPauseNowCallback NeedToPauseNow;
 
-    public void* user;
+    public IntPtr user;
+
+    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+    public delegate int NeedToPauseNowCallback(IntPtr pThis);
 }
+
 
 [StructLayout(LayoutKind.Sequential)]
 public struct FPDF_COLORSCHEME
@@ -195,8 +316,10 @@ public unsafe struct FPDF_SYSFONTINFO
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FPDF_CharsetFontMap
+public struct CharsetFontMap
 {
     public int charset;
-    public IntPtr fontname;
+
+    [MarshalAs(UnmanagedType.LPStr)]
+    public string fontname;
 }

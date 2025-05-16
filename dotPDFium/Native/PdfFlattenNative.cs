@@ -3,6 +3,19 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
+public enum FpdfFlattenResult
+{
+    Fail = 0,
+    Success = 1,
+    NothingToDo = 2
+}
+
+public enum FpdfFlattenMode
+{
+    NormalDisplay = 0,
+    Print = 1
+}
+
 public static class PdfFlattenNative
 {
     private const string PdfiumLib = "pdfium";

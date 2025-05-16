@@ -3,6 +3,35 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
+public enum PdfActionType
+{
+    Unsupported = 0,
+    GoTo = 1,
+    RemoteGoTo = 2,
+    Uri = 3,
+    Launch = 4,
+    EmbeddedGoTo = 5
+}
+
+public enum PdfDestViewMode
+{
+    Unknown = 0,
+    XYZ = 1,
+    Fit = 2,
+    FitH = 3,
+    FitV = 4,
+    FitR = 5,
+    FitB = 6,
+    FitBH = 7,
+    FitBV = 8
+}
+
+public enum PdfFileIdType
+{
+    Permanent = 0,
+    Changing = 1
+}
+
 public static class PdfDocNative
 {
     private const string PdfiumLib = "pdfium";
@@ -64,4 +93,37 @@ public static class PdfDocNative
 
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFLink_GetAction(IntPtr link);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDFLink_Enumerate(IntPtr page, ref int startPos, out IntPtr linkAnnot);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDFLink_GetAnnot(IntPtr page, IntPtr link);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDFLink_GetAnnotRect(IntPtr link, out FsRectF rect);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFLink_CountQuadPoints(IntPtr link);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDFLink_GetQuadPoints(IntPtr link, int index, out FsQuadPointsF quad);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDFDest_GetView(IntPtr dest, out uint numParams, [Out] float[] parameters);
+
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDFDest_GetLocationInPage(IntPtr dest,
+                                                         out bool hasX,
+                                                         out bool hasY,
+                                                         out bool hasZoom,
+                                                         out float x,
+                                                         out float y,
+                                                         out float zoom);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDF_GetPageAAction(IntPtr page, int aaType);
+
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_GetFileIdentifier(IntPtr doc, int idType, IntPtr buffer, uint buflen);
 }

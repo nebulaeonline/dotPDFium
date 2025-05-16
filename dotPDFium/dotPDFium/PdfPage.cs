@@ -180,8 +180,8 @@ namespace nebulae.dotPDFium
         /// <exception cref="ArgumentNullException">Thrown if the PDF bitmap is null</exception>
         public void RenderToBitmapWithMatrix(
             PdfBitmap bitmap,
-            ref FS_MATRIX transform,
-            ref FS_RECTF clip,
+            ref FsMatrixF transform,
+            ref FsRectF clip,
             PdfRenderFlags flags = PdfRenderFlags.None)
         {
             if (_handle == IntPtr.Zero)

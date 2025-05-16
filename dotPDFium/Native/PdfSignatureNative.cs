@@ -3,6 +3,14 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
+public enum FpdfDocMdpPermission
+{
+    NoChanges = 1,
+    FormFillAndSign = 2,
+    AnnotateFormFillAndSign = 3
+}
+
+
 public static class PdfSignatureNative
 {
     private const string PdfiumLib = "pdfium";

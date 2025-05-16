@@ -2,18 +2,6 @@
 using nebulae.dotPDFium.Native;
 
 /// <summary>
-/// Bitmap pixel formats supported by the PDFium library.
-/// </summary>
-public enum PdfBitmapFormat
-{
-    Unknown = 0,
-    Gray = 1,
-    BGR = 2,
-    BGRx = 3,
-    BGRA = 4
-}
-
-/// <summary>
 /// The PdfBitmap class represents a bitmap image in the PDFium library. 
 /// It provides methods to create and manipulate bitmap images from PDF pages.
 /// </summary>
