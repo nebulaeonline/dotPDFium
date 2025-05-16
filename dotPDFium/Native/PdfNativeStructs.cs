@@ -11,6 +11,16 @@ public struct FS_MATRIX
     public float d;
     public float e;
     public float f;
+
+    public FS_MATRIX(float a, float b, float c, float d, float e, float f)
+    {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+        this.f = f;
+    }
 }
 
 [StructLayout(LayoutKind.Sequential)]
@@ -20,6 +30,14 @@ public struct FS_RECTF
     public float top;
     public float right;
     public float bottom;
+
+    public FS_RECTF(float left, float top, float right, float bottom)
+    {
+        this.left = left;
+        this.top = top;
+        this.right = right;
+        this.bottom = bottom;
+    }
 }
 
 [StructLayout(LayoutKind.Sequential)]
@@ -165,10 +183,14 @@ public struct FPDF_COLORSCHEME
 public unsafe struct FPDF_FILEWRITE
 {
     public int version;
+    public IntPtr userData;
 
     // Delegate for writing data back to stream
-    public delegate* unmanaged[Cdecl]<FPDF_FILEWRITE*, IntPtr /* pData */, uint /* size */, int> WriteBlock;
+    public FPDFWriteBlockDelegate WriteBlock;
 }
+
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public delegate int FPDFWriteBlockDelegate(IntPtr fileWrite, IntPtr data, uint size);
 
 [StructLayout(LayoutKind.Sequential)]
 public unsafe struct FPDF_SYSFONTINFO

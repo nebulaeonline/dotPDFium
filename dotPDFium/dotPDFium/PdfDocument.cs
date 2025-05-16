@@ -5,6 +5,27 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium;
 
+/// <summary>
+/// Specifies the PDF file version supported by a document or operation.
+/// </summary>
+/// <remarks>The values of this enumeration correspond to the major and minor versions of the PDF specification.
+/// For example, <see cref="PdfFileVersion.Pdf14"/> represents PDF version 1.4.</remarks>
+public enum PdfFileVersion
+{
+    Pdf14 = 14,
+    Pdf15 = 15,
+    Pdf16 = 16,
+    Pdf17 = 17
+}
+
+/// <summary>
+/// Specifies the type of font used in a PDF document or text object.
+/// </summary>
+public enum PdfFontType
+{
+    Type1 = 1,
+    TrueType = 2
+}
 public class PdfDocument : PdfObject
 {
     /// <summary>
@@ -154,6 +175,70 @@ public class PdfDocument : PdfObject
     }
 
     /// <summary>
+    /// Creates a new PDF document. This method initializes a new PDF document and returns a new document object.
+    /// </summary>
+    /// <returns>A new PdfDocument</returns>
+    /// <exception cref="dotPDFiumException">Throws on PDFium library error.</exception>
+    public static PdfDocument CreateNew()
+    {
+        var handle = PdfEditNative.FPDF_CreateNewDocument();
+        
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to create new document: {PdfObject.GetPDFiumError()}");
+
+        return new PdfDocument(handle);
+    }
+
+    /// <summary>
+    /// Saves the current PDF document to the specified file path.
+    /// </summary>
+    /// <param name="path">The path to write the document to</param>
+    /// <param name="incremental">Whether to append changes to the PDF or to re-encode the entire PDF</param>
+    /// <returns>true on success, false on failure</returns>
+    public bool SaveTo(string path, bool incremental = false)
+    {
+        using var writer = new ManagedPdfWriter(path);
+        uint flags = incremental ? 1u : 0u;
+        return PdfSaveNative.FPDF_SaveAsCopy(_handle, ref writer.GetFileWrite(), flags) != false;
+    }
+
+    /// <summary>
+    /// Saves the current PDF document to the specified file path with a specific PDF version.
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="pdfVersion"></param>
+    /// <returns></returns>
+    public bool SaveWithPdfVersion(string path, PdfFileVersion pdfVersion)
+    {
+        using var writer = new ManagedPdfWriter(path);
+        return PdfSaveNative.FPDF_SaveWithVersion(_handle, ref writer.GetFileWrite(), 0, (int)pdfVersion) != false;
+    }
+
+    /// <summary>
+    /// Creates a new page in the document at the specified index with the specified width and height.
+    /// </summary>
+    /// <param name="index">index == 0 will insert a new page at the beginning; index == PageCount
+    /// will append a new page to the end, and index = N inserts the page *before* existing page N.
+    /// Page indexes may shift, so be cautious</param>
+    /// <param name="width">The width of the page to insert in points (1/72 of an inch)</param>
+    /// <param name="height">The height of the page to insert in points (1/72 of an inch)</param>
+    /// <returns></returns>
+    public PdfPage CreatePage(int index, float width, float height)
+    {
+        var pageHandle = PdfEditNative.FPDFPage_New(_handle, index, width, height);
+        return new PdfPage(pageHandle, this);
+    }
+
+    /// <summary>
+    /// Deletes a page from the document at the specified index. This method will shift the indexes of all subsequent pages.
+    /// </summary>
+    /// <param name="index"></param>
+    public void DeletePage(int index)
+    {
+        PdfEditNative.FPDFPage_Delete(_handle, index);
+    }
+
+    /// <summary>
     /// Returns the number of pages in the document.
     /// </summary>
     public int PageCount
@@ -223,6 +308,105 @@ public class PdfDocument : PdfObject
         page = new PdfPage(pageHandle, this);
         RegisterPage(page);
         return true;
+    }
+
+    /// <summary>
+    /// Loads a font into the document for use with text objects. This method loads 
+    /// a standard font, such as "Arial" or "Times-Roman".
+    /// </summary>
+    /// <param name="fontName">The name of the font to load</param>
+    /// <exception cref="ArgumentException">Throws if the font name is null or empty</exception>
+    /// <exception cref="dotPDFiumException">Throws on PDFium library error</exception>
+    /// <returns>a PdfFont object</returns>
+    public PdfFont LoadStandardFont(string fontName)
+    {
+        if (string.IsNullOrWhiteSpace(fontName))
+            throw new ArgumentException("Font name cannot be null or empty.", nameof(fontName));
+
+        var fontHandle = PdfEditNative.FPDFText_LoadStandardFont(_handle, fontName);
+        if (fontHandle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to load standard font: '{fontName}'");
+
+        return new PdfFont(fontHandle, fontName);
+    }
+
+    /// <summary>
+    /// Loads an embedded font into the document for use with text objects. This method loads a font from a byte array.
+    /// </summary>
+    /// <param name="fontData">The font data as a byte array</param>
+    /// <param name="fontType">The type of font</param>
+    /// <param name="isCid">Whether the font is a character identifier font</param>
+    /// <returns>A new PdfEmbeddedFont object</returns>
+    /// <exception cref="ArgumentException">Throws if font data is null or empty</exception>
+    /// <exception cref="dotPDFiumException">Throws on PDFium library error</exception>
+    public PdfEmbeddedFont LoadEmbeddedFont(byte[] fontData, PdfFontType fontType, bool isCid = false)
+    {
+        if (fontData == null || fontData.Length == 0)
+            throw new ArgumentException("Font data cannot be null or empty.", nameof(fontData));
+
+        var pinned = GCHandle.Alloc(fontData, GCHandleType.Pinned);
+        try
+        {
+            var fontHandle = PdfEditNative.FPDFText_LoadFont(
+                _handle,
+                pinned.AddrOfPinnedObject(),
+                (uint)fontData.Length,
+                (int)fontType,
+                isCid ? 1 : 0);
+
+            if (fontHandle == IntPtr.Zero)
+                throw new dotPDFiumException($"Failed to load embedded font: {PdfObject.GetPDFiumError()}");
+
+            return new PdfEmbeddedFont(fontHandle, "<embedded>");
+        }
+        finally
+        {
+            if (pinned.IsAllocated)
+                pinned.Free();
+        }
+    }
+
+    /// <summary>
+    /// Creates a new text object in the document. This method creates a new text object with the specified font and font size.
+    /// The text object can then be added to a page or manipulated as needed.
+    /// </summary>
+    /// <param name="font">The PdfFont to apply to the text object</param>
+    /// <param name="fontSize">The font size</param>
+    /// <returns>a new PdfTextObject</returns>
+    /// <exception cref="ArgumentNullException">Throws if the specified font is null</exception>
+    /// <exception cref="ArgumentOutOfRangeException">Throws if the font size is <= 0</exception>
+    /// <exception cref="dotPDFiumException">Throws on PDFium library error</exception>
+    public PdfTextObject CreateTextObject(PdfFont font, float fontSize)
+    {
+        if (font == null)
+            throw new ArgumentNullException(nameof(font));
+        if (fontSize <= 0)
+            throw new ArgumentOutOfRangeException(nameof(fontSize), "Font size must be positive.");
+
+        var handle = PdfEditNative.FPDFPageObj_CreateTextObj(_handle, font.Handle, fontSize);
+
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to create text object: {PdfObject.GetPDFiumError()}");
+
+        return new PdfTextObject(handle);
+    }
+
+    /// <summary>
+    /// Creates a new text objecct in the document. This method creates a new text object with the 
+    /// specified font and font size. The text object can then be added to a page or manipulated as needed.
+    /// </summary>
+    /// <param name="fontName">Name of the font to use</param>
+    /// <param name="fontSize">Size of the font to use</param>
+    /// <returns>a new PdfTextObject</returns>
+    /// <exception cref="dotPDFiumException">Thrown on PDFium library error</exception>
+    public PdfTextObject CreateStandardTextObject(string fontName, float fontSize)
+    {
+        var handle = PdfEditNative.FPDFPageObj_NewTextObj(_handle, fontName, fontSize);
+
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to create standard font text object: {PdfObject.GetPDFiumError()}");
+
+        return new PdfTextObject(handle);
     }
 
     /// <summary>

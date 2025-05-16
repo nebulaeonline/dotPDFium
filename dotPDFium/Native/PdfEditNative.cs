@@ -23,6 +23,9 @@ public static class PdfEditNative
     [DllImport(PdfiumLib)]
     public static extern void FPDFPage_InsertObject(IntPtr page, IntPtr pageObject);
 
+    [DllImport("pdfium")]
+    public static extern bool FPDFPage_RemoveObject(IntPtr page, IntPtr pageObject);
+
     // Generate the page's updated content stream
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
@@ -35,6 +38,10 @@ public static class PdfEditNative
     // Get a page object from a page
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFPage_GetObject(IntPtr page, int index);
+
+    // Get the type of a page object
+    [DllImport("pdfium")]
+    public static extern int FPDFPageObj_GetType(IntPtr pageObject);
 
     // Destroy a page object manually
     [DllImport(PdfiumLib)]
@@ -53,6 +60,9 @@ public static class PdfEditNative
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFPageObj_NewTextObj(IntPtr document, [MarshalAs(UnmanagedType.LPStr)] string font, float fontSize);
 
+    [DllImport("pdfium")]
+    public static extern IntPtr FPDFPageObj_CreateTextObj(IntPtr document, IntPtr font, float fontSize);
+
     // Set text on a text object (UTF-16LE)
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
@@ -62,9 +72,12 @@ public static class PdfEditNative
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFText_LoadStandardFont(IntPtr document, [MarshalAs(UnmanagedType.LPStr)] string font);
 
-    // Attach a font to a new text object
-    [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDFPageObj_CreateTextObj(IntPtr document, IntPtr font, float fontSize);
+    // Load a custom font from memory
+    [DllImport("pdfium")]
+    public static extern IntPtr FPDFText_LoadFont(IntPtr document, IntPtr fontData, uint size, int fontType, int cid);
+
+    [DllImport("pdfium")]
+    public static extern bool FPDFTextObj_GetFontSize(IntPtr textObject, out float size);
 
     // Close a font
     [DllImport(PdfiumLib)]

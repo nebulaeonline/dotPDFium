@@ -12,6 +12,9 @@ public enum PdfObjectType
     Page,
     TextPage,
     Bitmap,
+    PageObject,
+    Font,
+    Form,
 }
 
 /// <summary>

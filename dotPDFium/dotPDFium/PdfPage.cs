@@ -143,10 +143,10 @@ namespace nebulae.dotPDFium
         /// This method renders the current PDF page to a bitmap.
         /// </summary>
         /// <param name="bitmap">The bitmap to render the page to</param>
-        /// <param name="startX">The starting x coordinate</param>
-        /// <param name="startY">The starting y coordinate</param>
-        /// <param name="width">The width of the section to render</param>
-        /// <param name="height">The height of the section to render</param>
+        /// <param name="startX">The starting x coordinate in pixels</param>
+        /// <param name="startY">The starting y coordinate in pixels</param>
+        /// <param name="width">The width of the bitmap to render in pixels</param>
+        /// <param name="height">The height of the bitmap to render in pixels</param>
         /// <param name="rotate">The rotation of the page (see PdfRotation enum)</param>
         /// <param name="flags">See PdfRenderFlags</param>
         /// <exception cref="ObjectDisposedException"></exception>
@@ -200,18 +200,20 @@ namespace nebulae.dotPDFium
         }
 
         /// <summary>
-        /// Converts device coordinates to page coordinates.
+        /// Converts device (pixel) coordinates into page-space coordinates (points).
         /// </summary>
-        /// <param name="startX">The starting x coordinate</param>
-        /// <param name="startY">The starting y coordinate</param>
-        /// <param name="width">The width of the page</param>
-        /// <param name="height">The height of the page</param>
-        /// <param name="rotate">The rotation of the page; don't swap width and height on rotation.</param>
-        /// <param name="deviceX">The device x coordinate</param>
-        /// <param name="deviceY">The device y coordinate</param>
-        /// <param name="pageX">out variable for the page x coordinate</param>
-        /// <param name="pageY">out variable for the page y coordinate</param>
-        /// <exception cref="ObjectDisposedException"></exception>
+        /// <param name="startX">The X position of the rendered area in device pixels (usually 0).</param>
+        /// <param name="startY">The Y position of the rendered area in device pixels (usually 0).</param>
+        /// <param name="width">The width of the rendered area in pixels (matches the bitmap width).</param>
+        /// <param name="height">The height of the rendered area in pixels (matches the bitmap height).</param>
+        /// <param name="rotate">The rotation of the page (0, 90, 180, 270 degrees). See PdfRotation enum.
+        /// Do not swap width and height manually; PDFium handles this automatically.</param>
+        /// <param name="deviceX">The device-space X coordinate (in pixels) to convert.</param>
+        /// <param name="deviceY">The device-space Y coordinate (in pixels) to convert.</param>
+        /// <param name="pageX">Output variable for the resulting X coordinate in page-space points.</param>
+        /// <param name="pageY">Output variable for the resulting Y coordinate in page-space points.</param>
+        /// <exception cref="ObjectDisposedException">Thrown if the page has been disposed.</exception>
+
         public void DeviceToPage(
             int startX,
             int startY,
@@ -236,18 +238,19 @@ namespace nebulae.dotPDFium
         }
 
         /// <summary>
-        /// Converts page coordinates to device coordinates.
+        /// Converts a point from page coordinates (points) to device coordinates (pixels).
         /// </summary>
-        /// <param name="startX">The starting x coordinate</param>
-        /// <param name="startY">The starting y coordinate</param>
-        /// <param name="width">The width of the page</param>
-        /// <param name="height">The height of the page</param>
-        /// <param name="rotate">The rotation of the page; don't swap width and height on rotation.</param>
-        /// <param name="pageX">The page x coordinate</param>
-        /// <param name="pageY">The page y coordinate</param>
-        /// <param name="deviceX">out variable for the device x coordinate</param>
-        /// <param name="deviceY">out variable for the device y coordinate</param>
-        /// <exception cref="ObjectDisposedException"></exception>
+        /// <param name="startX">The X offset in device pixels where the page rendering starts (usually 0).</param>
+        /// <param name="startY">The Y offset in device pixels where the page rendering starts (usually 0).</param>
+        /// <param name="width">The width of the rendered area in device pixels (e.g., the bitmap width).</param>
+        /// <param name="height">The height of the rendered area in device pixels (e.g., the bitmap height).</param>
+        /// <param name="rotation">The rotation of the page as a <see cref="PdfRotation"/> value (0, 90, 180, 270 degrees).
+        /// /// PDFium applies the rotation internally; do not swap width and height manually.</param>
+        /// <param name="pageX">The X coordinate in page space (points, where 1 point = 1/72 inch).</param>
+        /// <param name="pageY">The Y coordinate in page space (points).</param>
+        /// <param name="deviceX">Output parameter receiving the corresponding X coordinate in device space (pixels).</param>
+        /// <param name="deviceY">Output parameter receiving the corresponding Y coordinate in device space (pixels).</param>
+        /// <exception cref="ObjectDisposedException">Thrown if the page has been disposed.</exception>
         public void PageToDevice(
             int startX,
             int startY,
@@ -270,6 +273,62 @@ namespace nebulae.dotPDFium
                 out deviceX, out deviceY
             );
         }
+
+        /// <summary>
+        /// Insert a PDF page object into the current page.
+        /// </summary>
+        /// <param name="obj">The PdfObject to insert into the page</param>
+        /// <exception cref="ArgumentNullException">Throws if obj is null</exception>
+        public void InsertObject(PdfPageObject obj)
+        {
+            if (obj == null) throw new ArgumentNullException(nameof(obj));
+            PdfEditNative.FPDFPage_InsertObject(_handle, obj.Handle);
+        }
+
+        /// <summary>
+        /// Finalizes the content of the current page. This method should be called after all modifications to the page are complete.
+        /// </summary>
+        /// <exception cref="dotPDFiumException">Throws on PDFium library error</exception>
+        public void FinalizeContent()
+        {
+            if (!PdfEditNative.FPDFPage_GenerateContent(_handle))
+                throw new dotPDFiumException($"Failed to generate page content: {PdfObject.GetPDFiumError()}");
+        }
+
+        /// <summary>
+        /// Gets the number of objects on the current page.
+        /// </summary>
+        /// <returns></returns>
+        public int GetObjectCount()
+        {
+            return PdfEditNative.FPDFPage_CountObjects(_handle);
+        }
+
+        /// <summary>
+        /// Gets the object at the specified index on the current page.
+        /// </summary>
+        /// <param name="index">The index of the object to retrieve</param>
+        /// <returns>The object at the specified index</returns>
+        /// <exception cref="dotPDFiumException">Throws on PDFium library error</exception>
+        public PdfPageObject GetObject(int index)
+        {
+            var objHandle = PdfEditNative.FPDFPage_GetObject(_handle, index);
+
+            if (objHandle == IntPtr.Zero)
+                throw new dotPDFiumException($"Failed to get page object at index {index}: {PdfObject.GetPDFiumError()}");
+
+            var objType = (PdfPageObjectType)PdfEditNative.FPDFPageObj_GetType(objHandle);
+
+            return objType switch
+            {
+                PdfPageObjectType.Text => new PdfTextObject(objHandle),
+                PdfPageObjectType.Image => new PdfImageObject(objHandle),
+                PdfPageObjectType.Path => new PdfPathObject(objHandle),
+                PdfPageObjectType.Form => new PdfFormObject(objHandle),
+                _ => new PdfPageObject(objHandle)
+            };
+        }
+
 
         /// <summary>
         /// Closes the current page and releases the associated resources.

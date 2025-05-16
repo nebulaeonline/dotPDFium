@@ -1,4 +1,5 @@
 ﻿using nebulae.dotPDFium.Native;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace nebulae.dotPDFium;
 
