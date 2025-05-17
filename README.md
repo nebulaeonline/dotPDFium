@@ -6,6 +6,8 @@ This project is currently in a **pre-pre-alpha** state. Development is focused o
 
 We're not yet feature-complete, stable, or ready for production use. This repository is for exploratory development and incremental wrapping of PDFium's 375+ functions in a .NET-friendly way.
 
+The library contains the latest PDFium binaries (v138.0.7175.0) from chromium/7175, built by bblanchon (https://github.com/bblanchon/pdfium-binaries/releases) for Windows x64 & ARM64, Linux x64 & ARM64, and MacOS (as a universal dylib supporting x64 & ARM64).
+
 ### Goals (eventually)
 
 - Managed lifecycle and memory safety for native PDFium handles
