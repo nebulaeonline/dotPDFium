@@ -93,6 +93,9 @@ public static class PdfDocNative
                                                          out float zoom);
 
     [DllImport(PdfiumLib)]
+    public static extern int FPDFDest_GetPageIndex(IntPtr document, IntPtr dest);
+
+    [DllImport(PdfiumLib)]
     public static extern IntPtr FPDF_GetPageAAction(IntPtr page, int aaType);
 
     [DllImport(PdfiumLib)]

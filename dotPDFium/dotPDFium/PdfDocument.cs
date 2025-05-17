@@ -263,6 +263,25 @@ public class PdfDocument : PdfObject
     }
 
     /// <summary>
+    /// Moves the specified pages to a new position within the document.
+    /// </summary>
+    /// <remarks>The order of the pages in <paramref name="pageIndices"/> is preserved during the move
+    /// operation.  Ensure that the indices are valid and within the bounds of the document's page count.</remarks>
+    /// <param name="pageIndices">An array of zero-based indices representing the pages to move. Must contain at least one index.</param>
+    /// <param name="destinationIndex">The zero-based index where the pages will be moved. The pages will be inserted before this index.</param>
+    /// <exception cref="ArgumentException">Thrown if <paramref name="pageIndices"/> is null or empty.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails to move the pages.</exception>
+    public void MovePages(int[] pageIndices, int destinationIndex)
+    {
+        if (pageIndices == null || pageIndices.Length == 0)
+            throw new ArgumentException("At least one page index must be specified.", nameof(pageIndices));
+
+        if (!PdfEditNative.FPDF_MovePages(_handle, pageIndices, (ulong)pageIndices.Length, destinationIndex))
+            throw new dotPDFiumException($"Failed to move pages: {PdfObject.GetPDFiumError()}");
+    }
+
+
+    /// <summary>
     /// Returns the number of open pages in the document.
     /// </summary>
     public int OpenPageCount
@@ -274,6 +293,21 @@ public class PdfDocument : PdfObject
 
             return _openPages.Count;
         }
+    }
+
+    /// <summary>
+    /// Retrieves the page mode of the PDF document.
+    /// </summary>
+    /// <remarks>The page mode specifies how the document should be displayed when opened, such as whether 
+    /// bookmarks, thumbnails, or other navigation panels are shown.</remarks>
+    /// <returns>A <see cref="PdfPageMode"/> value representing the page mode of the document.  Returns <see
+    /// cref="PdfPageMode.Unknown"/> if the page mode is not defined or cannot be determined.</returns>
+    public PdfPageMode GetPageMode()
+    {
+        int mode = PdfExtNative.FPDFDoc_GetPageMode(_handle);
+        return Enum.IsDefined(typeof(PdfPageMode), mode)
+            ? (PdfPageMode)mode
+            : PdfPageMode.Unknown;
     }
 
     /// <summary>

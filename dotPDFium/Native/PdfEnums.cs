@@ -19,6 +19,7 @@ public enum PdfPageObjectType
     Image,
     Shading,
     Form,
+    Mark = 1000,
 }
 
 /// <summary>
@@ -196,7 +197,8 @@ public enum PdfActionType
     RemoteGoTo = 2,
     Uri = 3,
     Launch = 4,
-    EmbeddedGoTo = 5
+    Named = 5,
+    JavaScript = 6,
 }
 
 /// <summary>
@@ -648,4 +650,12 @@ public enum PdfTextRenderMode
     StrokeClip = 5,
     FillStrokeClip = 6,
     Clip = 7
+}
+
+public enum PdfMarkParamType
+{
+    None = 0,
+    Int = 1,
+    String = 2,
+    Blob = 3
 }

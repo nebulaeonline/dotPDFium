@@ -99,10 +99,10 @@ public static class PdfTextNative
     
     [DllImport(PdfiumLib)] 
     public static extern int FPDFLink_CountWebLinks(IntPtr linkPage);
-    
-    [DllImport(PdfiumLib)] 
-    public static extern int FPDFLink_GetURL(IntPtr linkPage, int linkIndex, [Out] ushort[] buffer, int buflen);
-    
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFLink_GetURL(IntPtr linkPage, int linkIndex, IntPtr buffer, int buflen);
+
     [DllImport(PdfiumLib)] 
     public static extern int FPDFLink_CountRects(IntPtr linkPage, int linkIndex);
     

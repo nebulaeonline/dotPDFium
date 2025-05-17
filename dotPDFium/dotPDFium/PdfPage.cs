@@ -711,6 +711,52 @@ namespace nebulae.dotPDFium
         }
 
         /// <summary>
+        /// Enumerates all link annotations on the current PDF page.
+        /// </summary>
+        /// <remarks>This method lazily enumerates the link annotations on the page. Each <see
+        /// cref="PdfLinkAnnotation"/>  object represents a single link annotation and provides access to its properties
+        /// and behaviors.</remarks>
+        /// <returns>An <see cref="IEnumerable{T}"/> of <see cref="PdfLinkAnnotation"/> objects representing the link annotations
+        /// found on the page. The enumeration will be empty if no link annotations are present.</returns>
+        public IEnumerable<PdfLinkAnnotation> EnumerateLinks()
+        {
+            int pos = 0;
+            while (PdfDocNative.FPDFLink_Enumerate(_handle, ref pos, out var link))
+            {
+                if (link != IntPtr.Zero)
+                    yield return new PdfLinkAnnotation(link, this);
+            }
+        }
+
+        /// <summary>
+        /// Finds a link annotation at the specified point on the PDF page.
+        /// </summary>
+        /// <param name="x">The x-coordinate of the point, in the coordinate system of the PDF page.</param>
+        /// <param name="y">The y-coordinate of the point, in the coordinate system of the PDF page.</param>
+        /// <returns>A <see cref="PdfLinkAnnotation"/> object representing the link annotation at the specified point,  or <see
+        /// langword="null"/> if no link annotation is found.</returns>
+        public PdfLinkAnnotation? FindLinkAtPoint(double x, double y)
+        {
+            var link = PdfDocNative.FPDFLink_GetLinkAtPoint(_handle, x, y);
+            return link == IntPtr.Zero ? null : new PdfLinkAnnotation(link, this);
+        }
+
+        /// <summary>
+        /// Gets the z-order index of a link at the specified point on the page.
+        /// </summary>
+        /// <remarks>The z-order index determines the stacking order of links at a given point, with lower
+        /// indices representing links that are visually on top. This method can be used to identify and interact with
+        /// specific links in a document.</remarks>
+        /// <param name="x">The x-coordinate of the point, in the page's coordinate system.</param>
+        /// <param name="y">The y-coordinate of the point, in the page's coordinate system.</param>
+        /// <returns>The zero-based z-order index of the link at the specified point, where a lower index indicates a link closer
+        /// to the top of the z-order. Returns -1 if no link is found at the specified point.</returns>
+        public int GetLinkZOrderAtPoint(double x, double y)
+        {
+            return PdfDocNative.FPDFLink_GetLinkZOrderAtPoint(_handle, x, y);
+        }
+
+        /// <summary>
         /// Closes the current page and releases the associated resources.
         /// </summary>
         public void Close() => Dispose();

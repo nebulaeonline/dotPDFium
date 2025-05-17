@@ -377,6 +377,66 @@ public class PdfPageObject : PdfObject
     }
 
     /// <summary>
+    /// Adds a mark with the specified tag to the PDF page object.
+    /// </summary>
+    /// <param name="tag">The tag identifying the mark to be added. Cannot be null, empty, or consist only of whitespace.</param>
+    /// <returns>A <see cref="PdfMark"/> instance representing the newly added mark.</returns>
+    /// <exception cref="ArgumentException">Thrown if <paramref name="tag"/> is null, empty, or consists only of whitespace.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the mark could not be added to the page object.</exception>
+    public PdfMark AddMark(string tag)
+    {
+        if (string.IsNullOrWhiteSpace(tag))
+            throw new ArgumentException("Mark tag cannot be null or empty.", nameof(tag));
+
+        var handle = PdfEditNative.FPDFPageObj_AddMark(_handle, tag);
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to add mark '{tag}' to page object.");
+
+        return new PdfMark(handle);
+    }
+
+    /// <summary>
+    /// Removes the specified mark from the PDF page object.
+    /// </summary>
+    /// <param name="mark">The <see cref="PdfMark"/> to be removed. Must not be <see langword="null"/>.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the mark could not be removed from the page object.</exception>
+    public void RemoveMark(PdfMark mark)
+    {
+        if (!PdfEditNative.FPDFPageObj_RemoveMark(_handle, mark.Handle))
+            throw new dotPDFiumException("Failed to remove mark from page object.");
+    }
+
+    /// <summary>
+    /// Gets the number of marks associated with the current PDF page object.
+    /// </summary>
+    /// <remarks>Marks are metadata or annotations associated with a PDF page object. This method retrieves
+    /// the count of such marks.</remarks>
+    /// <returns>The total number of marks present in the PDF page object. Returns 0 if no marks are associated.</returns>
+    public int GetMarkCount()
+    {
+        return PdfEditNative.FPDFPageObj_CountMarks(_handle);
+    }
+
+    /// <summary>
+    /// Retrieves the <see cref="PdfMark"/> at the specified index.
+    /// </summary>
+    /// <param name="index">The zero-based index of the mark to retrieve. Must be within the range of available marks.</param>
+    /// <returns>The <see cref="PdfMark"/> at the specified index.</returns>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown if <paramref name="index"/> is less than 0 or greater than or equal to the total number of marks.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the mark cannot be retrieved due to an internal error.</exception>
+    public PdfMark GetMark(int index)
+    {
+        if (index < 0 || index >= GetMarkCount())
+            throw new ArgumentOutOfRangeException(nameof(index));
+
+        var handle = PdfEditNative.FPDFPageObj_GetMark(_handle, (uint)index);
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to get mark at index {index}.");
+
+        return new PdfMark(handle);
+    }
+
+    /// <summary>
     /// The dispose method for the PdfPageObject class. This method is called to release the resources used by this
     /// object. It overrides the base class Dispose method to ensure that the native handle is properly destroyed.
     /// </summary>

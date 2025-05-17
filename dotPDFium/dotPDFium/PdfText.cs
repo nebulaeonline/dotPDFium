@@ -8,6 +8,7 @@ public class PdfText : PdfObject
 {
     private readonly PdfPage _parentPage;
     private int _charCount = 0;
+    private IntPtr _weblinkHandle = IntPtr.Zero;
 
     /// <summary>
     /// PdfText constructor. This constructor is internal and should not be used directly.
@@ -602,6 +603,45 @@ public class PdfText : PdfObject
 
         return PdfTextNative.FPDFText_IsHyphen(_handle, index) != 0;
     }
+    
+    /// <summary>
+    /// Loads the web links associated with the current PDF document.
+    /// </summary>
+    /// <remarks>This method initializes the web link handle for the PDF document if it has not already been
+    /// loaded.  If the web link handle is already initialized, the method returns without performing any action.  If
+    /// the operation fails, an exception is thrown.</remarks>
+    /// <exception cref="dotPDFiumException">Thrown if the web links cannot be loaded successfully.</exception>
+    public void LoadWebLinks()
+    {
+        if (_weblinkHandle != IntPtr.Zero)
+            return;
+
+        _weblinkHandle = PdfTextNative.FPDFLink_LoadWebLinks(_handle);
+
+        if (_weblinkHandle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to load weblinks: {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
+    /// Gets the number of web links associated with the current PDF text object.
+    /// </summary>
+    public int WebLinkCount => _weblinkHandle == IntPtr.Zero
+        ? 0
+        : PdfTextNative.FPDFLink_CountWebLinks(_weblinkHandle);
+
+    /// <summary>
+    /// Releases resources associated with the web links and resets the handle.
+    /// </summary>
+    /// <remarks>This method should be called to clean up resources when web link processing is no longer
+    /// needed. Failing to call this method may result in resource leaks.</remarks>
+    public void CloseWebLinks()
+    {
+        if (_weblinkHandle != IntPtr.Zero)
+        {
+            PdfTextNative.FPDFLink_CloseWebLinks(_weblinkHandle);
+            _weblinkHandle = IntPtr.Zero;
+        }
+    }
 
     /// <summary>
     /// Dispose method for the PdfText object. This method is called when the object is disposed.
@@ -609,6 +649,9 @@ public class PdfText : PdfObject
     /// <param name="disposing">Whether to dispose of managed resources</param>
     protected override void Dispose(bool disposing)
     {
+        if (disposing)
+            CloseWebLinks();
+
         // Let base class call FPDFText_ClosePage
         base.Dispose(disposing);
     }
