@@ -143,10 +143,10 @@ public class PdfViewNative
     public static extern uint FPDF_CountNamedDests(IntPtr document);
 
     [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDF_GetNamedDestByName(IntPtr document, [MarshalAs(UnmanagedType.LPStr)] string name);
+    public static extern IntPtr FPDF_GetNamedDest(IntPtr document, int index, IntPtr buffer, ref int buflen);
 
     [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDF_GetNamedDest(IntPtr document, int index, IntPtr buffer, ref int buflen);
+    public static extern IntPtr FPDF_GetNamedDestByName(IntPtr document, [MarshalAs(UnmanagedType.LPStr)] string name);
 
     [DllImport(PdfiumLib)]
     public static extern int FPDF_GetXFAPacketCount(IntPtr document);

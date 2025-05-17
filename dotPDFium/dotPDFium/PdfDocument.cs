@@ -663,6 +663,104 @@ public class PdfDocument : PdfObject
             throw new dotPDFiumException($"Failed to delete attachment '{index}': {PdfObject.GetPDFiumError()}");
     }
 
+    public PdfBookmark? FindBookmark(string title)
+    {
+        var handle = PdfDocNative.FPDFBookmark_Find(_handle, title);
+        return handle == IntPtr.Zero ? null : new PdfBookmark(handle, this);
+    }
+
+    /// <summary>
+    /// Returns the number of named destinations defined in this document.
+    /// </summary>
+    public int GetNamedDestinationCount()
+    {
+        return (int)PdfViewNative.FPDF_CountNamedDests(_handle);
+    }
+
+    /// <summary>
+    /// Retrieves the permissions associated with the current PDF document.
+    /// </summary>
+    /// <remarks>The permissions are determined by the document's security settings.  Refer to the PDF
+    /// specification for details on the meaning of each bit in the returned bitmask.</remarks>
+    /// <returns>A 32-bit unsigned integer representing the permissions of the PDF document.  The value is a bitmask where each
+    /// bit indicates a specific permission, such as printing, copying, or modifying the document.</returns>
+    public uint GetPermissions()
+    {
+        return PdfViewNative.FPDF_GetDocPermissions(_handle);
+    }
+
+    /// <summary>
+    /// Retrieves the user permissions for the current PDF document.
+    /// </summary>
+    /// <remarks>The permissions are determined by the document's security settings.  Refer to the PDF
+    /// specification for details on the meaning of each bit in the bitmask.</remarks>
+    /// <returns>A 32-bit unsigned integer representing the user permissions for the document.  The value is a bitmask where each
+    /// bit corresponds to a specific permission,  such as printing, copying, or modifying the document.</returns>
+    public uint GetUserPermissions()
+    {
+        return PdfViewNative.FPDF_GetDocUserPermissions(_handle);
+    }
+
+    /// <summary>
+    /// Retrieves the version number of the PDF file associated with the current instance.
+    /// </summary>
+    /// <remarks>The version number corresponds to the PDF specification version of the file.  For example, a
+    /// version number of 1 indicates PDF 1.x.</remarks>
+    /// <returns>The version number of the PDF file if it is successfully retrieved; otherwise, <see langword="null"/>.</returns>
+    public int? GetFileVersion()
+    {
+        return PdfViewNative.FPDF_GetFileVersion(_handle, out int version)
+            ? version
+            : null;
+    }
+
+    /// <summary>
+    /// Retrieves the named destination at the specified index within the PDF document.
+    /// </summary>
+    /// <remarks>Named destinations are predefined locations within a PDF document that can be used for
+    /// navigation.  The method returns <see langword="null"/> if the specified index does not correspond to a valid
+    /// named destination.</remarks>
+    /// <param name="index">The zero-based index of the named destination to retrieve.</param>
+    /// <returns>A tuple containing the name of the destination and a <see cref="PdfDestination"/> object representing the
+    /// destination,  or <see langword="null"/> if the index is out of range or the destination cannot be retrieved.</returns>
+    public (string Name, PdfDestination? Destination)? GetNamedDestination(int index)
+    {
+        int charLen = 0;
+        var handle = PdfViewNative.FPDF_GetNamedDest(_handle, index, IntPtr.Zero, ref charLen);
+        if (charLen == 0)
+            return null;
+
+        IntPtr buffer = Marshal.AllocHGlobal(charLen);
+        try
+        {
+            handle = PdfViewNative.FPDF_GetNamedDest(_handle, index, buffer, ref charLen);
+            if (handle == IntPtr.Zero)
+                return null;
+
+            string name = Marshal.PtrToStringUni(buffer, charLen / 2) ?? string.Empty;
+            return (name, new PdfDestination(handle, this));
+        }
+        finally
+        {
+            Marshal.FreeHGlobal(buffer);
+        }
+    }
+
+    /// <summary>
+    /// Retrieves a named destination from the PDF document by its name.
+    /// </summary>
+    /// <remarks>Named destinations are predefined locations within the PDF document that can be used for
+    /// navigation. Use this method to retrieve a destination by its name for further processing or
+    /// navigation.</remarks>
+    /// <param name="name">The name of the destination to retrieve. This value cannot be <see langword="null"/> or empty.</param>
+    /// <returns>A <see cref="PdfDestination"/> object representing the named destination if found; otherwise, <see
+    /// langword="null"/>.</returns>
+    public PdfDestination? GetNamedDestinationByName(string name)
+    {
+        var handle = PdfViewNative.FPDF_GetNamedDestByName(_handle, name);
+        return handle == IntPtr.Zero ? null : new PdfDestination(handle, this);
+    }
+
     /// <summary>
     /// Closes the current PdfDocument instance and releases the resources associated with it.
     /// </summary>
