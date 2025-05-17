@@ -518,6 +518,33 @@ public class PdfText : PdfObject
     }
 
     /// <summary>
+    /// Converts a text index to the corresponding character index within the document.
+    /// </summary>
+    /// <remarks>This method maps a logical text index to its associated character index, which can be used
+    /// for further text processing. Ensure that the provided <paramref name="textIndex"/> is within the bounds of the
+    /// document's text content to avoid exceptions.</remarks>
+    /// <param name="textIndex">The zero-based index of the text element to be converted. Must be a valid index within the document's text
+    /// content.</param>
+    /// <returns>The zero-based character index corresponding to the specified text index.</returns>
+    public int GetCharIndexFromTextIndex(int textIndex)
+    {
+        return PdfSearchExNative.FPDFText_GetCharIndexFromTextIndex(_handle, textIndex);
+    }
+
+    /// <summary>
+    /// Converts a character index to the corresponding text index in the document.
+    /// </summary>
+    /// <remarks>This method maps a character index to its equivalent text index, which may differ depending
+    /// on the document's internal representation of text. Ensure that <paramref name="charIndex"/> is within the valid
+    /// range of the text content to avoid exceptions.</remarks>
+    /// <param name="charIndex">The zero-based index of the character within the text content.</param>
+    /// <returns>The zero-based text index corresponding to the specified character index.</returns>
+    public int GetTextIndexFromCharIndex(int charIndex)
+    {
+        return PdfSearchExNative.FPDFText_GetTextIndexFromCharIndex(_handle, charIndex);
+    }
+
+    /// <summary>
     /// Determines whether the character at the specified index has a Unicode mapping error.
     /// </summary>
     /// <param name="index">The zero-based index of the character to check. Must be within the range of valid character indices.</param>

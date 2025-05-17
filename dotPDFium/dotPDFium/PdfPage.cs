@@ -693,6 +693,22 @@ namespace nebulae.dotPDFium
             return new PdfBitmap(handle, estimatedWidth, estimatedHeight);
         }
 
+        /// <summary>
+        /// Applies a transformation matrix to all annotations on the current PDF page.
+        /// </summary>
+        /// <remarks>This method modifies the appearance and positioning of annotations on the page by
+        /// applying the specified transformation matrix. The transformation is applied directly to the annotations and
+        /// does not affect the page content itself.</remarks>
+        /// <param name="matrix">The transformation matrix to apply. Each element of the matrix represents a specific transformation
+        /// component (e.g., scaling, rotation, translation).</param>
+        public void TransformAnnotations(FsMatrix matrix)
+        {
+            PdfEditNative.FPDFPage_TransformAnnots(
+                _handle,
+                matrix.a, matrix.b,
+                matrix.c, matrix.d,
+                matrix.e, matrix.f);
+        }
 
         /// <summary>
         /// Closes the current page and releases the associated resources.
