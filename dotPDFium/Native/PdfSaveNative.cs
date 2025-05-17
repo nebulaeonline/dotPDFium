@@ -3,15 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
-[Flags]
-public enum PdfSaveFlags
-{
-    None = 0,
-    Incremental = 1,
-    NoIncremental = 2,
-    RemoveSecurity = 3,
-}
-
 public static class PdfSaveNative
 {
     private const string PdfiumLib = "pdfium";

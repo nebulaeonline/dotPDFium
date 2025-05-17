@@ -3,42 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
-public enum FpdfFormType
-{
-    None = 0,
-    AcroForm = 1,
-    XfaFull = 2,
-    XfaForeground = 3
-}
-
-public enum FpdfFormFieldType
-{
-    Unknown = 0,
-    PushButton = 1,
-    CheckBox = 2,
-    RadioButton = 3,
-    ComboBox = 4,
-    ListBox = 5,
-    TextField = 6,
-    Signature = 7
-    // XFA values 8–15 if needed
-}
-
-public enum FpdfDocActionType
-{
-    BeforeClose = 0x10,   // WC
-    BeforeSave = 0x11,    // WS
-    AfterSave = 0x12,     // DS
-    BeforePrint = 0x13,   // WP
-    AfterPrint = 0x14     // DP
-}
-
-public enum FpdfPageActionType
-{
-    Open = 0,
-    Close = 1
-}
-
 public static class PdfFormFillNative
 {
     private const string PdfiumLib = "pdfium";

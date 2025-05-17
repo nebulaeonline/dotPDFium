@@ -4,68 +4,6 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
-public enum FpdfAnnotationSubtype
-{
-    Unknown = 0,
-    Text = 1,
-    Link = 2,
-    FreeText = 3,
-    Line = 4,
-    Square = 5,
-    Circle = 6,
-    Polygon = 7,
-    Polyline = 8,
-    Highlight = 9,
-    Underline = 10,
-    Squiggly = 11,
-    Strikeout = 12,
-    Stamp = 13,
-    Caret = 14,
-    Ink = 15,
-    Popup = 16,
-    FileAttachment = 17,
-    Sound = 18,
-    Movie = 19,
-    Widget = 20,
-    Screen = 21,
-    PrinterMark = 22,
-    TrapNet = 23,
-    Watermark = 24,
-    ThreeD = 25,
-    RichMedia = 26,
-    XfaWidget = 27,
-    Redact = 28
-}
-
-[Flags]
-public enum FpdfAnnotationFlags
-{
-    None = 0,
-    Invisible = 1 << 0,
-    Hidden = 1 << 1,
-    Print = 1 << 2,
-    NoZoom = 1 << 3,
-    NoRotate = 1 << 4,
-    NoView = 1 << 5,
-    ReadOnly = 1 << 6,
-    Locked = 1 << 7,
-    ToggleNoView = 1 << 8
-}
-
-public enum FpdfAnnotColorType
-{
-    Color = 0,
-    InteriorColor = 1
-}
-
-public enum FpdfAnnotationActionType
-{
-    KeyStroke = 12,
-    Format = 13,
-    Validate = 14,
-    Calculate = 15
-}
-
 public static class PdfAnnotNative
 {
     private const string PdfiumLib = "pdfium";

@@ -3,59 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
-/// <summary>
-/// Specifies the type of an object on a PDF page.
-/// </summary>
-/// <remarks>This enumeration is used to identify the category of a PDF page object, such as text, images, or
-/// paths. It can be useful for processing or analyzing the content of a PDF document.</remarks>
-public enum PdfPageObjectType
-{
-    Unknown = 0,
-    Text,
-    Path,
-    Image,
-    Shading,
-    Form,
-}
-
-public enum PdfSegmentType
-{
-    Unknown = -1,
-    LineTo = 0,
-    BezierTo = 1,
-    MoveTo = 2
-}
-
-public enum PdfFillMode
-{
-    None = 0,
-    Alternate = 1,
-    Winding = 2
-}
-
-public enum PdfLineCap
-{
-    Butt = 0,
-    Round = 1,
-    ProjectingSquare = 2
-}
-
-public enum PdfColorspace
-{
-    Unknown = 0,
-    DeviceGray = 1,
-    DeviceRGB = 2,
-    DeviceCMYK = 3,
-    CalGray = 4,
-    CalRGB = 5,
-    Lab = 6,
-    ICCBased = 7,
-    Separation = 8,
-    DeviceN = 9,
-    Indexed = 10,
-    Pattern = 11
-}
-
 public static partial class PdfEditNative
 {
     private const string PdfiumLib = "pdfium";

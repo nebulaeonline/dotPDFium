@@ -14,8 +14,8 @@ public class PdfBitmap : PdfObject
     /// Constructor for PdfBitmap. This constructor is internal and should not be used directly.
     /// </summary>
     /// <param name="handle">The PDFium pointer to the bitmap</param>
-    /// <param name="width">The width of the page in points (1/72 of an inch)</param>
-    /// <param name="height">The height of the page in points (1/72 of an inch)</param>
+    /// <param name="width">The width of the bitmap in pixels</param>
+    /// <param name="height">The height of the bitmap in pixels</param>
     internal PdfBitmap(IntPtr handle, int width, int height)
         : base(handle, PdfObjectType.Bitmap)
     {

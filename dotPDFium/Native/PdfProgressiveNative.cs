@@ -2,14 +2,6 @@
 
 namespace nebulae.dotPDFium.Native;
 
-public enum FpdfRenderStatus
-{
-    Ready = 0,
-    ToBeContinued = 1,
-    Done = 2,
-    Failed = 3
-}
-
 public static class PdfProgressiveNative
 {
     private const string PdfiumLib = "pdfium";

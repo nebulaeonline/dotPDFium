@@ -3,58 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
-/// <summary>
-/// Bitmap pixel formats supported by the PDFium library.
-/// </summary>
-public enum PdfBitmapFormat
-{
-    Unknown = 0,
-    Gray = 1,
-    BGR = 2,
-    BGRx = 3,
-    BGRA = 4,
-    BGRAPremul = 5
-}
-public enum FpfObjectType
-{
-    Unknown = 0,
-    Boolean = 1,
-    Number = 2,
-    String = 3,
-    Name = 4,
-    Array = 5,
-    Dictionary = 6,
-    Stream = 7,
-    NullObj = 8,
-    Reference = 9
-}
-
-public enum PdfRenderFlags
-{
-    Annot = 0x01,
-    LcdText = 0x02,
-    NoNativeText = 0x04,
-    Grayscale = 0x08,
-    DebugInfo = 0x80,
-    NoCatch = 0x100,
-    LimitedImageCache = 0x200,
-    ForceHalftone = 0x400,
-    Printing = 0x800,
-    NoSmoothText = 0x1000,
-    NoSmoothImage = 0x2000,
-    NoSmoothPath = 0x4000,
-    ReverseByteOrder = 0x10,
-    ConvertFillToStroke = 0x20
-}
-
-public enum PdfDuplexType
-{
-    Undefined = 0,
-    Simplex = 1,
-    FlipShortEdge = 2,
-    FlipLongEdge = 3
-}
-
 public class PdfViewNative
 {
     private const string PdfiumLib = "pdfium";

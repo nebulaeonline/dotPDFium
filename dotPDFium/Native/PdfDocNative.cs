@@ -3,35 +3,6 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium.Native;
 
-public enum PdfActionType
-{
-    Unsupported = 0,
-    GoTo = 1,
-    RemoteGoTo = 2,
-    Uri = 3,
-    Launch = 4,
-    EmbeddedGoTo = 5
-}
-
-public enum PdfDestViewMode
-{
-    Unknown = 0,
-    XYZ = 1,
-    Fit = 2,
-    FitH = 3,
-    FitV = 4,
-    FitR = 5,
-    FitB = 6,
-    FitBH = 7,
-    FitBV = 8
-}
-
-public enum PdfFileIdType
-{
-    Permanent = 0,
-    Changing = 1
-}
-
 public static class PdfDocNative
 {
     private const string PdfiumLib = "pdfium";
