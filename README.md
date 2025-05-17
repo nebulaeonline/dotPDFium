@@ -17,8 +17,10 @@ We're not yet feature-complete, stable, or ready for production use. This reposi
 
 - Basic document and page loading
 - Text extraction in progress
-- Rendering and search not yet implemented
-- No formal tests yet
+- Rendering and search implemented
+- Very few formal tests
+- No documentation or examples yet
+- Need to build out: forms, annotations, extended search, and other features
 
 ---
 
