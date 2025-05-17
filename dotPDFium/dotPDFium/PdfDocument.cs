@@ -575,6 +575,61 @@ public class PdfDocument : PdfObject
     }
 
     /// <summary>
+    /// Gets the total number of attachments in the PDF document.
+    /// </summary>
+    /// <returns>The number of attachments in the PDF document. Returns 0 if the document contains no attachments.</returns>
+    public int GetAttachmentCount()
+    {
+        return PdfAttachmentNative.FPDFDoc_GetAttachmentCount(_handle);
+    }
+
+    /// <summary>
+    /// Retrieves the attachment at the specified index from the PDF document.
+    /// </summary>
+    /// <remarks>Use this method to access attachments embedded in the PDF document. Ensure that the <paramref
+    /// name="index"/> is within the range of available attachments to avoid exceptions.</remarks>
+    /// <param name="index">The zero-based index of the attachment to retrieve. Must be within the valid range of available attachments.</param>
+    /// <returns>A <see cref="PdfAttachment"/> object representing the attachment at the specified index.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if no attachment exists at the specified <paramref name="index"/>.</exception>
+    public PdfAttachment GetAttachment(int index)
+    {
+        var handle = PdfAttachmentNative.FPDFDoc_GetAttachment(_handle, index);
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"No attachment at index {index}");
+
+        return new PdfAttachment(handle);
+    }
+
+    /// <summary>
+    /// Adds a new attachment to the PDF document.
+    /// </summary>
+    /// <remarks>The <paramref name="name"/> parameter must be unique within the document. If an attachment
+    /// with the same name already exists, the behavior is undefined. Ensure that the provided name is valid and does
+    /// not conflict with existing attachments.</remarks>
+    /// <param name="name">The name of the attachment to be added. This must be a non-empty string.</param>
+    /// <returns>A <see cref="PdfAttachment"/> object representing the newly added attachment.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the attachment could not be added to the document.</exception>
+    public PdfAttachment AddAttachment(string name)
+    {
+        var handle = PdfAttachmentNative.FPDFDoc_AddAttachment(_handle, name);
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to add attachment '{name}'");
+
+        return new PdfAttachment(handle);
+    }
+
+    /// <summary>
+    /// Deletes the attachment at the specified index from the PDF document.
+    /// </summary>
+    /// <param name="index">The zero-based index of the attachment to delete.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the attachment cannot be deleted. The exception message will include the specific error details.</exception>
+    public void DeleteAttachment(int index)
+    {
+        if (!PdfAttachmentNative.FPDFDoc_DeleteAttachment(_handle, index))
+            throw new dotPDFiumException($"Failed to delete attachment '{index}': {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
     /// Closes the current PdfDocument instance and releases the resources associated with it.
     /// </summary>
     public void Close() => Dispose();

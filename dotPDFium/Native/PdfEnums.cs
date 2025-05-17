@@ -166,6 +166,24 @@ public enum PdfAnnotationActionType
 }
 
 /// <summary>
+/// Represents the type of value that an attachment can hold.
+/// </summary>
+/// <remarks>This enumeration defines the possible data types that can be associated with an attachment.  It is
+/// used to specify the type of value stored in an attachment, enabling type-safe handling  of attachment
+/// data.</remarks>
+public enum AttachmentValueType
+{
+    Boolean = 0,
+    Number = 1,
+    String = 2,
+    Name = 3,
+    Array = 4,
+    Dictionary = 5,
+    Stream = 6
+}
+
+
+/// <summary>
 /// Specifies the type of action that can be performed in a PDF document.
 /// </summary>
 /// <remarks>This enumeration defines the various types of actions that can be associated with interactive

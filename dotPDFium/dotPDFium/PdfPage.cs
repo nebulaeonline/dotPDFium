@@ -367,6 +367,223 @@ namespace nebulae.dotPDFium
             };
         }
 
+        /// <summary>
+        /// Gets the total number of annotations on the current PDF page.
+        /// </summary>
+        /// <remarks>This method retrieves the count of annotations present on the PDF page represented by
+        /// this instance.</remarks>
+        /// <returns>The number of annotations on the page. Returns 0 if the page has no annotations.</returns>
+        public int GetAnnotationCount()
+        {
+            return PdfAnnotNative.FPDFPage_GetAnnotCount(_handle);
+        }
+
+        /// <summary>
+        /// Retrieves the annotation at the specified index on the PDF page.
+        /// </summary>
+        /// <param name="index">The zero-based index of the annotation to retrieve. Must be within the range of available annotations on the
+        /// page.</param>
+        /// <returns>A <see cref="PdfAnnotation"/> object representing the annotation at the specified index.</returns>
+        /// <exception cref="dotPDFiumException">Thrown if the annotation at the specified <paramref name="index"/> cannot be retrieved.</exception>
+        public PdfAnnotation GetAnnotation(int index)
+        {
+            var handle = PdfAnnotNative.FPDFPage_GetAnnot(_handle, index);
+
+            if (handle == IntPtr.Zero)
+                throw new dotPDFiumException($"Failed to retrieve annotation at index {index}");
+
+            return new PdfAnnotation(handle, this);
+        }
+
+        /// <summary>
+        /// Creates a new annotation of the specified subtype on the current PDF page.
+        /// </summary>
+        /// <param name="subtype">The subtype of the annotation to create. This determines the type of annotation, such as a text note,
+        /// highlight, or shape.</param>
+        /// <returns>A <see cref="PdfAnnotation"/> object representing the newly created annotation.</returns>
+        /// <exception cref="dotPDFiumException">Thrown if the annotation could not be created for the specified <paramref name="subtype"/>.</exception>
+        public PdfAnnotation CreateAnnotation(PdfAnnotationSubtype subtype)
+        {
+            var handle = PdfAnnotNative.FPDFPage_CreateAnnot(_handle, (int)subtype);
+            if (handle == IntPtr.Zero)
+                throw new dotPDFiumException($"Failed to create annotation of subtype: {subtype}");
+
+            return new PdfAnnotation(handle, this);
+        }
+
+        /// <summary>
+        /// Retrieves the index of the specified annotation within the PDF page.
+        /// </summary>
+        /// <param name="annotation">The annotation whose index is to be retrieved. Must not be <c>null</c>.</param>
+        /// <returns>The zero-based index of the annotation within the page.</returns>
+        /// <exception cref="dotPDFiumException">Thrown if the annotation cannot be located on the page.</exception>
+        public int GetAnnotationIndex(PdfAnnotation annotation)
+        {
+            int index = PdfAnnotNative.FPDFPage_GetAnnotIndex(_handle, annotation.Handle);
+            if (index < 0)
+                throw new dotPDFiumException("Failed to locate annotation on page.");
+            return index;
+        }
+
+        /// <summary>
+        /// Removes the specified annotation from the PDF page.
+        /// </summary>
+        /// <remarks>Use this method to delete an annotation from the current PDF page. Ensure that the
+        /// annotation  is valid and associated with this page before calling this method.</remarks>
+        /// <param name="annotation">The annotation to remove from the page. This parameter cannot be <see langword="null"/>.</param>
+        /// <exception cref="dotPDFiumException">Thrown if the annotation could not be removed from the page.</exception>
+        public void RemoveAnnotation(PdfAnnotation annotation)
+        {
+            if (!PdfAnnotNative.FPDFPage_RemoveAnnot(_handle, GetAnnotationIndex(annotation)))
+                throw new dotPDFiumException("Failed to remove annotation from page.");
+        }
+
+        /// <summary>
+        /// Internal delegate for getting the bounding box of a page.
+        /// </summary>
+        /// <param name="page"></param>
+        /// <param name="left"></param>
+        /// <param name="bottom"></param>
+        /// <param name="right"></param>
+        /// <param name="top"></param>
+        /// <returns></returns>
+        private delegate bool BoxGetter(
+            IntPtr page,
+            out float left,
+            out float bottom,
+            out float right,
+            out float top);
+
+        /// <summary>
+        /// Retrieves a rectangular bounding box using the specified delegate and handle.
+        /// </summary>
+        /// <param name="getter">A delegate that retrieves the bounding box coordinates.</param>
+        /// <param name="handle">A pointer to the object for which the bounding box is retrieved.</param>
+        /// <returns>An <see cref="FsRectF"/> representing the bounding box, with coordinates specified by the delegate.</returns>
+        /// <exception cref="dotPDFiumException">Thrown if the delegate fails to retrieve the bounding box.</exception>
+        private static FsRectF GetBox(BoxGetter getter, IntPtr handle)
+        {
+            if (!getter(handle, out float left, out float bottom, out float right, out float top))
+                throw new dotPDFiumException($"Failed to get page box: {PdfObject.GetPDFiumError()}");
+
+            return new FsRectF(left, top, right, bottom);
+        }
+
+        /// <summary>
+        /// Configures a rectangular box by invoking the specified setter action with the provided handle and box
+        /// dimensions.
+        /// </summary>
+        /// <param name="setter">A delegate that accepts the handle and the box's dimensions (left, bottom, right, top) to set the box.</param>
+        /// <param name="handle">A pointer to the resource or object associated with the box.</param>
+        /// <param name="box">The rectangle structure containing the dimensions of the box to be set.</param>
+        private static void SetBox(Action<IntPtr, float, float, float, float> setter, IntPtr handle, FsRectF box)
+        {
+            setter(handle, box.left, box.bottom, box.right, box.top);
+        }
+
+        /// <summary>
+        /// Retrieves the MediaBox of the current PDF page.
+        /// </summary>
+        /// <remarks>The MediaBox is the default boundary for the page content in a PDF document.  It
+        /// specifies the dimensions of the page in user space units.</remarks>
+        /// <returns>An <see cref="FsRectF"/> structure representing the MediaBox of the page.  The MediaBox defines the
+        /// boundaries of the physical medium on which the page is intended to be displayed or printed.</returns>
+        public FsRectF GetMediaBox() => GetBox(PdfTransformPageNative.FPDFPage_GetMediaBox, _handle);
+        
+        /// <summary>
+        /// Sets the MediaBox for the current page.
+        /// </summary>
+        /// <remarks>The MediaBox defines the boundaries of the physical medium on which the page is
+        /// intended to be displayed or printed. Ensure that the provided <paramref name="box"/> is valid and within the
+        /// acceptable range for the page.</remarks>
+        /// <param name="box">The <see cref="FsRectF"/> structure representing the new MediaBox dimensions.  The coordinates must be
+        /// specified in points and follow the PDF coordinate system.</param>
+        public void SetMediaBox(FsRectF box) => SetBox(PdfTransformPageNative.FPDFPage_SetMediaBox, _handle, box);
+
+        /// <summary>
+        /// Retrieves the crop box of the current page.
+        /// </summary>
+        /// <returns>A <see cref="FsRectF"/> structure representing the crop box of the page.  The crop box defines the visible
+        /// area of the page in user space coordinates.</returns>
+        public FsRectF GetCropBox() => GetBox(PdfTransformPageNative.FPDFPage_GetCropBox, _handle);
+        
+        /// <summary>
+        /// Sets the crop box for the current page.
+        /// </summary>
+        /// <remarks>The crop box defines the visible area of the page when displayed or printed.  Any
+        /// content outside the crop box will be clipped.</remarks>
+        /// <param name="box">The <see cref="FsRectF"/> structure defining the crop box dimensions.  The coordinates are specified in
+        /// points, with the origin at the bottom-left corner of the page.</param>
+        public void SetCropBox(FsRectF box) => SetBox(PdfTransformPageNative.FPDFPage_SetCropBox, _handle, box);
+
+        /// <summary>
+        /// Retrieves the bleed box of the page, which defines the region to which the page's content should be clipped
+        /// when printed.
+        /// </summary>
+        /// <remarks>The bleed box is typically used in printing workflows to account for content that
+        /// extends beyond the trim box, such as bleeds.</remarks>
+        /// <returns>An <see cref="FsRectF"/> structure representing the bleed box of the page. The bleed box is defined in the
+        /// page's coordinate system.</returns>
+        public FsRectF GetBleedBox() => GetBox(PdfTransformPageNative.FPDFPage_GetBleedBox, _handle);
+        
+        /// <summary>
+        /// Sets the bleed box for the current page.
+        /// </summary>
+        /// <remarks>The bleed box is used to ensure that content intended to extend to the edge of the
+        /// page  is printed correctly, even if the page is trimmed. Ensure that the <paramref name="box"/>  parameter
+        /// specifies valid dimensions within the page boundaries.</remarks>
+        /// <param name="box">The <see cref="FsRectF"/> structure representing the bleed box dimensions.  The bleed box defines the region
+        /// to which the page content should extend,  typically used for printing purposes.</param>
+        public void SetBleedBox(FsRectF box) => SetBox(PdfTransformPageNative.FPDFPage_SetBleedBox, _handle, box);
+
+        /// <summary>
+        /// Retrieves the trim box of the current page.
+        /// </summary>
+        /// <returns>An <see cref="FsRectF"/> structure representing the trim box of the page.  The trim box defines the intended
+        /// dimensions of the page's content after trimming.</returns>
+        public FsRectF GetTrimBox() => GetBox(PdfTransformPageNative.FPDFPage_GetTrimBox, _handle);
+        
+        /// <summary>
+        /// Sets the trim box for the current page.
+        /// </summary>
+        /// <remarks>The trim box is typically used to specify the final dimensions of the page after any
+        /// trimming or cutting operations. Ensure that the provided <paramref name="box"/> dimensions are valid and
+        /// within the bounds of the page.</remarks>
+        /// <param name="box">The <see cref="FsRectF"/> structure representing the trim box dimensions. The trim box defines the intended
+        /// visible area of the page after trimming.</param>
+        public void SetTrimBox(FsRectF box) => SetBox(PdfTransformPageNative.FPDFPage_SetTrimBox, _handle, box);
+
+        /// <summary>
+        /// Retrieves the ArtBox of the current PDF page.
+        /// </summary>
+        /// <remarks>The ArtBox defines the extent of the page's meaningful content as intended by the
+        /// creator. This method returns the rectangle that represents the ArtBox in user space coordinates.</remarks>
+        /// <returns>A <see cref="FsRectF"/> structure representing the ArtBox of the page.  The rectangle's coordinates are in
+        /// user space units.</returns>
+        public FsRectF GetArtBox() => GetBox(PdfTransformPageNative.FPDFPage_GetArtBox, _handle);
+        
+        /// <summary>
+        /// Sets the ArtBox for the current page.
+        /// </summary>
+        /// <remarks>The ArtBox defines the extent of the page's meaningful content,  excluding any
+        /// additional elements such as bleed or trim areas. Ensure that the specified <paramref name="box"/> is valid
+        /// and within the page's boundaries.</remarks>
+        /// <param name="box">The <see cref="FsRectF"/> structure defining the ArtBox dimensions.  The coordinates must be specified in
+        /// the page's coordinate system.</param>
+        public void SetArtBox(FsRectF box) => SetBox(PdfTransformPageNative.FPDFPage_SetArtBox, _handle, box);
+
+        /// <summary>
+        /// Applies a transformation matrix and a clipping rectangle to the current page.
+        /// </summary>
+        /// <param name="matrix">The transformation matrix to apply to the page. This defines how the page content is scaled, rotated, or
+        /// translated.</param>
+        /// <param name="clip">The clipping rectangle that limits the visible area of the page after the transformation is applied.</param>
+        /// <exception cref="dotPDFiumException">Thrown if the transformation or clipping operation fails.</exception>
+        public void TransformWithClip(FsMatrixF matrix, FsRectF clip)
+        {
+            if (!PdfTransformPageNative.FPDFPage_TransFormWithClip(_handle, ref matrix, ref clip))
+                throw new dotPDFiumException("Failed to transform page with clip.");
+        }
 
         /// <summary>
         /// Closes the current page and releases the associated resources.

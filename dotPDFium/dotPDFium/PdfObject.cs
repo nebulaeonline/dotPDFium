@@ -13,6 +13,7 @@ public enum PdfObjectType
     TextPage,
     Bitmap,
     PageObject,
+    Annotation,
     Font,
     Form,
 }

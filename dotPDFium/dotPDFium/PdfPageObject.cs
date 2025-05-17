@@ -353,6 +353,30 @@ public class PdfPageObject : PdfObject
     }
 
     /// <summary>
+    /// Retrieves the handle to the clip path associated with the current page object.
+    /// </summary>
+    /// <returns>A nullable <see cref="IntPtr"/> representing the handle to the clip path.  Returns <see langword="null"/> if no
+    /// clip path is associated with the page object.</returns>
+    public IntPtr? GetClipPath()
+    {
+        var handle = PdfTransformPageNative.FPDFPageObj_GetClipPath(_handle);
+        return handle == IntPtr.Zero ? null : handle;
+    }
+
+    /// <summary>
+    /// Applies a transformation to the clip path of the current page object using the specified matrix.
+    /// </summary>
+    /// <remarks>This method modifies the clip path of the page object by applying the given transformation
+    /// matrix.  Ensure that the matrix is properly defined to achieve the desired transformation. </remarks>
+    /// <param name="matrix">The transformation matrix to apply. The matrix defines how the clip path should be scaled, rotated,  translated,
+    /// or skewed. Each component of the matrix must be specified.</param>
+    public void TransformClipPath(FsMatrix matrix)
+    {
+        PdfTransformPageNative.FPDFPageObj_TransformClipPath(
+            _handle, matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f);
+    }
+
+    /// <summary>
     /// The dispose method for the PdfPageObject class. This method is called to release the resources used by this
     /// object. It overrides the base class Dispose method to ensure that the native handle is properly destroyed.
     /// </summary>
