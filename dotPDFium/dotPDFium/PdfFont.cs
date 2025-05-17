@@ -1,4 +1,6 @@
-﻿namespace nebulae.dotPDFium;
+﻿using System.Runtime.InteropServices;
+
+namespace nebulae.dotPDFium;
 
 public class PdfFont : PdfObject
 {

@@ -586,6 +586,115 @@ namespace nebulae.dotPDFium
         }
 
         /// <summary>
+        /// Flattens the PDF page content into a single layer, making annotations and form fields part of the page
+        /// content.
+        /// </summary>
+        /// <remarks>Flattening a PDF page can be useful for ensuring that annotations and form fields are
+        /// no longer interactive and are instead rendered as part of the static page content. This operation is
+        /// typically irreversible.</remarks>
+        /// <param name="mode">The flattening mode that determines how the content is rendered. Defaults to <see
+        /// cref="PdfFlattenMode.NormalDisplay"/>.</param>
+        /// <returns>A <see cref="PdfFlattenResult"/> indicating the result of the flattening operation: <see
+        /// cref="PdfFlattenResult.Success"/> if the operation was successful, <see
+        /// cref="PdfFlattenResult.NothingToDo"/> if there was no content to flatten, or <see
+        /// cref="PdfFlattenResult.Fail"/> if the operation failed.</returns>
+        public PdfFlattenResult Flatten(PdfFlattenMode mode = PdfFlattenMode.NormalDisplay)
+        {
+            int result = PdfFlattenNative.FPDFPage_Flatten(_handle, (int)mode);
+            return result switch
+            {
+                1 => PdfFlattenResult.Success,
+                2 => PdfFlattenResult.NothingToDo,
+                _ => PdfFlattenResult.Fail
+            };
+        }
+
+        /// <summary>
+        /// Retrieves the decoded thumbnail image data for the current PDF page.
+        /// </summary>
+        /// <remarks>The returned byte array represents the raw image data of the thumbnail.  Callers can
+        /// process this data further as needed, such as converting it into an image format.</remarks>
+        /// <returns>A byte array containing the decoded thumbnail image data.  Returns an empty array if no thumbnail data is
+        /// available.</returns>
+        public byte[] GetDecodedThumbnailData()
+        {
+            uint size = PdfThumbnailNative.FPDFPage_GetDecodedThumbnailData(_handle, IntPtr.Zero, 0);
+            if (size == 0)
+                return Array.Empty<byte>();
+
+            var buffer = new byte[size];
+            unsafe
+            {
+                fixed (byte* ptr = buffer)
+                {
+                    PdfThumbnailNative.FPDFPage_GetDecodedThumbnailData(_handle, (IntPtr)ptr, size);
+                }
+            }
+
+            return buffer;
+        }
+
+        /// <summary>
+        /// Retrieves the raw thumbnail data for the current PDF page.
+        /// </summary>
+        /// <remarks>The raw thumbnail data can be used for further processing or rendering.  The caller
+        /// is responsible for interpreting the data appropriately.</remarks>
+        /// <returns>A byte array containing the raw thumbnail data of the PDF page.  Returns an empty array if no thumbnail data
+        /// is available.</returns>
+        public byte[] GetRawThumbnailData()
+        {
+            uint size = PdfThumbnailNative.FPDFPage_GetRawThumbnailData(_handle, IntPtr.Zero, 0);
+            if (size == 0)
+                return Array.Empty<byte>();
+
+            var buffer = new byte[size];
+            unsafe
+            {
+                fixed (byte* ptr = buffer)
+                {
+                    PdfThumbnailNative.FPDFPage_GetRawThumbnailData(_handle, (IntPtr)ptr, size);
+                }
+            }
+
+            return buffer;
+        }
+
+        /// <summary>
+        /// Retrieves the thumbnail image of the current PDF page as a <see cref="PdfBitmap"/> object.
+        /// </summary>
+        /// <remarks>The returned <see cref="PdfBitmap"/> contains the thumbnail image of the current PDF
+        /// page,  with its dimensions estimated based on the bitmap's stride and format.  If the thumbnail cannot be
+        /// retrieved, the method returns <see langword="null"/>.</remarks>
+        /// <returns>A <see cref="PdfBitmap"/> representing the thumbnail image of the current PDF page,  or <see
+        /// langword="null"/> if no thumbnail is available.</returns>
+        /// <exception cref="dotPDFiumException">Thrown if the thumbnail image is in an unsupported format.</exception>
+        public PdfBitmap? GetThumbnailBitmap()
+        {
+            var handle = PdfThumbnailNative.FPDFPage_GetThumbnailAsBitmap(_handle);
+            if (handle == IntPtr.Zero)
+                return null;
+
+            // Get stride and format to infer width/height
+            int stride = PdfViewNative.FPDFBitmap_GetStride(handle);
+            var format = (PdfBitmapFormat)PdfViewNative.FPDFBitmap_GetFormat(handle);
+
+            // Estimate bytes per pixel from format
+            int bpp = format switch
+            {
+                PdfBitmapFormat.Gray => 1,
+                PdfBitmapFormat.BGR => 3,
+                PdfBitmapFormat.BGRA => 4,
+                _ => throw new dotPDFiumException($"Unsupported format: {format}")
+            };
+
+            int estimatedWidth = stride / bpp;
+            int estimatedHeight = estimatedWidth > 0 ? 1 : 0; // best guess fallback
+
+            return new PdfBitmap(handle, estimatedWidth, estimatedHeight);
+        }
+
+
+        /// <summary>
         /// Closes the current page and releases the associated resources.
         /// </summary>
         public void Close() => Dispose();

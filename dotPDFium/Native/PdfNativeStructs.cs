@@ -314,18 +314,18 @@ public struct FPDF_COLORSCHEME
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public unsafe struct FPDF_SYSFONTINFO
+public unsafe struct PdfFontInfo
 {
     public int version;
 
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, void> Release;
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, void*, void> EnumFonts;
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, int, byte, int, int, byte*, byte*, void*> MapFont;
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, byte*, void*> GetFont;
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, void*, uint, byte*, uint, uint> GetFontData;
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, void*, byte*, uint, uint> GetFaceName;
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, void*, int> GetFontCharset;
-    public delegate* unmanaged[Cdecl]<FPDF_SYSFONTINFO*, void*, void> DeleteFont;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, void> Release;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, void*, void> EnumFonts;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, int, byte, int, int, byte*, byte*, void*> MapFont;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, byte*, void*> GetFont;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, void*, uint, byte*, uint, uint> GetFontData;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, void*, byte*, uint, uint> GetFaceName;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, void*, int> GetFontCharset;
+    public delegate* unmanaged[Cdecl]<PdfFontInfo*, void*, void> DeleteFont;
 }
 
 [StructLayout(LayoutKind.Sequential)]
