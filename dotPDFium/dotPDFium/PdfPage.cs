@@ -2,35 +2,6 @@
 
 namespace nebulae.dotPDFium
 {
-    /// <summary>
-    /// This enum represents the rotation of the PDF page.
-    /// </summary>
-    public enum PdfRotation
-    {
-        NoRotation = 0,
-        Rotate90 = 1,
-        Rotate180 = 2,
-        Rotate270 = 3
-    }
-
-    [Flags]
-    public enum PdfRenderFlags
-    {
-        None = 0,
-        Annot = 0x01,
-        OptimizedText = 0x02,
-        DisableNativeText = 0x04,
-        Grayscale = 0x08,
-        ShowDebugInfo = 0x80,
-        NoCatchExceptions = 0x100,
-        RenderLimitedImageCache = 0x200,
-        ForceHalftone = 0x400,
-        ForPrinting = 0x800,
-        NoSmoothText = 0x1000,
-        NoSmoothImages = 0x2000,
-        NoSmoothPaths = 0x4000,
-    }
-
     public class PdfPage : PdfObject
     {
         private readonly PdfDocument _parentDoc;
@@ -138,6 +109,22 @@ namespace nebulae.dotPDFium
             }
         }
 
+        /// <summary>
+        /// Retrieves the bounding box of the current PDF page.
+        /// </summary>
+        /// <returns>A <see cref="FsRectF"/> structure representing the bounding box of the page.</returns>
+        /// <exception cref="ObjectDisposedException">Thrown if the PDF page has been disposed.</exception>
+        /// <exception cref="dotPDFiumException">Thrown if the bounding box could not be retrieved.</exception>
+        public FsRectF GetBoundingBox()
+        {
+            if (_handle == IntPtr.Zero)
+                throw new ObjectDisposedException(nameof(PdfPage));
+
+            if (!PdfViewNative.FPDF_GetPageBoundingBox(_handle, out FsRectF rect))
+                throw new dotPDFiumException("Failed to get bounding box for page.");
+
+            return rect;
+        }
 
         /// <summary>
         /// This method renders the current PDF page to a bitmap.
@@ -282,7 +269,12 @@ namespace nebulae.dotPDFium
         public void InsertObject(PdfPageObject obj)
         {
             if (obj == null) throw new ArgumentNullException(nameof(obj));
+
+            if (obj.IsOwned)
+                throw new InvalidOperationException("Object is already owned by a page.");
+
             PdfEditNative.FPDFPage_InsertObject(_handle, obj.Handle);
+            obj.MarkOwned();
         }
 
         /// <summary>

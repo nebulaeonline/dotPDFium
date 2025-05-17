@@ -30,6 +30,19 @@ public struct FsSizeF
 }
 
 [StructLayout(LayoutKind.Sequential)]
+public struct FsSize
+{
+    public double width;
+    public double height;
+
+    public FsSize(double width, double height)
+    {
+        this.width = width;
+        this.height = height;
+    }
+}
+
+[StructLayout(LayoutKind.Sequential)]
 public struct FsMatrixF
 {
     public float a;
@@ -323,3 +336,5 @@ public struct CharsetFontMap
     [MarshalAs(UnmanagedType.LPStr)]
     public string fontname;
 }
+
+public readonly record struct RgbaColor(byte R, byte G, byte B, byte A);

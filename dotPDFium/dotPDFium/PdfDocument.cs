@@ -5,27 +5,6 @@ using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium;
 
-/// <summary>
-/// Specifies the PDF file version supported by a document or operation.
-/// </summary>
-/// <remarks>The values of this enumeration correspond to the major and minor versions of the PDF specification.
-/// For example, <see cref="PdfFileVersion.Pdf14"/> represents PDF version 1.4.</remarks>
-public enum PdfFileVersion
-{
-    Pdf14 = 14,
-    Pdf15 = 15,
-    Pdf16 = 16,
-    Pdf17 = 17
-}
-
-/// <summary>
-/// Specifies the type of font used in a PDF document or text object.
-/// </summary>
-public enum PdfFontType
-{
-    Type1 = 1,
-    TrueType = 2
-}
 public class PdfDocument : PdfObject
 {
     /// <summary>
@@ -173,6 +152,35 @@ public class PdfDocument : PdfObject
                 pinned.Free();
         }
     }
+
+    /// <summary>
+    /// Loads a PDF document using a custom file access descriptor.
+    /// </summary>
+    /// <remarks>This method uses the <see cref="FpdfFileAccess"/> structure to provide custom file access for
+    /// loading the PDF document. Ensure that the <paramref name="fileAccess"/> descriptor is properly initialized
+    /// before calling this method.</remarks>
+    /// <param name="fileAccess">The <see cref="FpdfFileAccess"/> descriptor that provides custom file access functionality. The descriptor must
+    /// have a valid <c>m_GetBlock</c> delegate and a non-zero <c>m_FileLen</c>.</param>
+    /// <param name="password">An optional password to decrypt the PDF document, if it is password-protected. Pass <see langword="null"/> or an
+    /// empty string if no password is required.</param>
+    /// <returns>A <see cref="PdfDocument"/> instance representing the loaded PDF document.</returns>
+    /// <exception cref="ArgumentException">Thrown if the <paramref name="fileAccess"/> descriptor is invalid, such as when <c>m_GetBlock</c> is <see
+    /// langword="null"/> or <c>m_FileLen</c> is zero.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the PDF document cannot be loaded, typically due to an error in the underlying PDF library or an
+    /// invalid file format.</exception>
+    public static PdfDocument LoadFromCustomAccess(FpdfFileAccess fileAccess, string? password = null)
+    {
+        if (fileAccess.m_GetBlock == null || fileAccess.m_FileLen == 0)
+            throw new ArgumentException("Invalid FpdfFileAccess descriptor.", nameof(fileAccess));
+
+        var handle = PdfViewNative.FPDF_LoadCustomDocument(ref fileAccess, password ?? string.Empty);
+
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to load PDF document from custom file access: {PdfObject.GetPDFiumError()}");
+
+        return new PdfDocument(handle);
+    }
+
 
     /// <summary>
     /// Creates a new PDF document. This method initializes a new PDF document and returns a new document object.
@@ -408,6 +416,51 @@ public class PdfDocument : PdfObject
             throw new dotPDFiumException($"Failed to create standard font text object: {PdfObject.GetPDFiumError()}");
 
         return new PdfTextObject(handle);
+    }
+
+    /// <summary>
+    /// Retrieves the size of the page at the specified index in floating-point units.
+    /// </summary>
+    /// <param name="pageIndex">The zero-based index of the page whose size is to be retrieved. Must be within the range of available pages.</param>
+    /// <returns>An <see cref="FsSizeF"/> structure representing the width and height of the specified page in floating-point
+    /// units.</returns>
+    /// <exception cref="ObjectDisposedException">Thrown if the <see cref="PdfDocument"/> has been disposed.</exception>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown if <paramref name="pageIndex"/> is less than 0 or greater than or equal to the total number of pages in
+    /// the document.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the page size could not be retrieved due to an internal error.</exception>
+    public FsSizeF GetPageSizeByIndexF(int pageIndex)
+    {
+        if (_handle == IntPtr.Zero)
+            throw new ObjectDisposedException(nameof(PdfDocument));
+        if (pageIndex < 0 || pageIndex >= PageCount)
+            throw new ArgumentOutOfRangeException(nameof(pageIndex));
+
+        if (!PdfViewNative.FPDF_GetPageSizeByIndexF(_handle, pageIndex, out FsSizeF size))
+            throw new dotPDFiumException("Failed to retrieve page size using GetPageSizeByIndexF.");
+
+        return size;
+    }
+
+    /// <summary>
+    /// Retrieves the size of a page in the document specified by its index as double-precision floating-point units.
+    /// </summary>
+    /// <param name="pageIndex">The zero-based index of the page whose size is to be retrieved. Must be within the range of available pages.</param>
+    /// <returns>An <see cref="FsSize"/> object representing the width and height of the specified page, in points.</returns>
+    /// <exception cref="ObjectDisposedException">Thrown if the document has been disposed and is no longer accessible.</exception>
+    /// <exception cref="ArgumentOutOfRangeException">Thrown if <paramref name="pageIndex"/> is less than 0 or greater than or equal to the total number of pages in
+    /// the document.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the page size could not be retrieved due to an error in the underlying PDF library.</exception>
+    public FsSize GetPageSizeByIndex(int pageIndex)
+    {
+        if (_handle == IntPtr.Zero)
+            throw new ObjectDisposedException(nameof(PdfDocument));
+        if (pageIndex < 0 || pageIndex >= PageCount)
+            throw new ArgumentOutOfRangeException(nameof(pageIndex));
+
+        if (PdfViewNative.FPDF_GetPageSizeByIndex(_handle, pageIndex, out double width, out double height) == 0)
+            throw new dotPDFiumException("Failed to retrieve page size using GetPageSizeByIndex.");
+
+        return new FsSize(width, height);
     }
 
     /// <summary>

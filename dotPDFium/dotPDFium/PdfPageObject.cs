@@ -11,6 +11,8 @@ namespace nebulae.dotPDFium;
 public class PdfPageObject : PdfObject
 {
     private readonly PdfPageObjectType _objType;
+    protected bool _hasOwner = false;
+    internal bool IsOwned => _hasOwner;
 
     /// <summary>
     /// Constructor for creating a new PdfPageObject instance. This constructor is internal and should not be used
@@ -31,6 +33,16 @@ public class PdfPageObject : PdfObject
         : base(handle, PdfObjectType.PageObject)
     {
         _objType = type;
+    }
+
+    /// <summary>
+    /// Marks the current instance as owned.
+    /// </summary>
+    /// <remarks>This method sets the ownership state of the instance. Once marked as owned,  the instance
+    /// cannot be unmarked through this method.</remarks>
+    internal void MarkOwned()
+    {
+        _hasOwner = true;
     }
 
     /// <summary>
@@ -112,7 +124,7 @@ public class PdfPageObject : PdfObject
     /// <param name="matrix"></param>
     public void TransformF(FsMatrixF matrix)
     {
-        PdfEditNative.FPDFPageObj_Transform(_handle, matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f);
+        PdfEditNative.FPDFPageObj_TransformF(_handle, ref matrix);
     }
 
     /// <summary>
@@ -197,7 +209,9 @@ public class PdfPageObject : PdfObject
     /// <param name="disposing"></param>
     protected override void Dispose(bool disposing)
     {
-        PdfEditNative.FPDFPageObj_Destroy(_handle);
+        if (!_hasOwner)
+            PdfEditNative.FPDFPageObj_Destroy(_handle);
+
         base.Dispose(disposing);
     }
 }

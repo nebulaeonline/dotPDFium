@@ -466,6 +466,27 @@ public enum FxFontPitchFamily
 }
 
 /// <summary>
+/// Specifies font characteristics and attributes for a PDF font.
+/// </summary>
+/// <remarks>This enumeration uses the <see cref="FlagsAttribute"/> to allow a bitwise combination of its member
+/// values. Each flag represents a specific font attribute, such as whether the font is italic, symbolic, or
+/// serif.</remarks>
+[Flags]
+public enum PdfFontFlags
+{
+    None = 0,
+    FixedPitch = 1 << 0,  // bit 1
+    Serif = 1 << 1,  // bit 2
+    Symbolic = 1 << 2,  // bit 3
+    Script = 1 << 3,  // bit 4
+    Nonsymbolic = 1 << 5,  // bit 6 (bit 5 is reserved)
+    Italic = 1 << 6,  // bit 7
+    AllCap = 1 << 16, // bit 17
+    SmallCap = 1 << 17, // bit 18
+    ForceBold = 1 << 18  // bit 19
+}
+
+/// <summary>
 /// Specifies the weight of a font, which determines the thickness of the characters.
 /// </summary>
 /// <remarks>The font weight is represented as an integer value, where higher values indicate thicker weights.
@@ -522,6 +543,7 @@ public enum FpfObjectType
 [Flags]
 public enum PdfRenderFlags
 {
+    None = 0,
     Annot = 0x01,
     LcdText = 0x02,
     NoNativeText = 0x04,
@@ -549,4 +571,37 @@ public enum PdfDuplexType
     Simplex = 1,
     FlipShortEdge = 2,
     FlipLongEdge = 3
+}
+
+/// <summary>
+/// This enum represents the rotation of the PDF page.
+/// </summary>
+public enum PdfRotation
+{
+    NoRotation = 0,
+    Rotate90 = 1,
+    Rotate180 = 2,
+    Rotate270 = 3
+}
+
+/// <summary>
+/// Specifies the PDF file version supported by a document or operation.
+/// </summary>
+/// <remarks>The values of this enumeration correspond to the major and minor versions of the PDF specification.
+/// For example, <see cref="PdfFileVersion.Pdf14"/> represents PDF version 1.4.</remarks>
+public enum PdfFileVersion
+{
+    Pdf14 = 14,
+    Pdf15 = 15,
+    Pdf16 = 16,
+    Pdf17 = 17
+}
+
+/// <summary>
+/// Specifies the type of font used in a PDF document or text object.
+/// </summary>
+public enum PdfFontType
+{
+    Type1 = 1,
+    TrueType = 2
 }

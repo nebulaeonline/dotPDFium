@@ -53,7 +53,7 @@ public static partial class PdfEditNative
     public static extern void FPDFPageObj_Transform(IntPtr obj, double a, double b, double c, double d, double e, double f);
 
     [DllImport(PdfiumLib)]
-    public static extern bool FPDFPageObj_TransformF(IntPtr obj, ref FsMatrix matrix);
+    public static extern bool FPDFPageObj_TransformF(IntPtr obj, ref FsMatrixF matrix);
 
     [DllImport(PdfiumLib)]
     public static extern bool FPDFPageObj_GetMatrix(IntPtr obj, out FsMatrix matrix);
