@@ -56,10 +56,10 @@ public static partial class PdfEditNative
     public static extern bool FPDFPageObj_TransformF(IntPtr obj, ref FsMatrixF matrix);
 
     [DllImport(PdfiumLib)]
-    public static extern bool FPDFPageObj_GetMatrix(IntPtr obj, out FsMatrix matrix);
+    public static extern bool FPDFPageObj_GetMatrix(IntPtr obj, out FsMatrixF matrix);
 
     [DllImport(PdfiumLib)]
-    public static extern bool FPDFPageObj_SetMatrix(IntPtr obj, ref FsMatrix matrix);
+    public static extern bool FPDFPageObj_SetMatrix(IntPtr obj, ref FsMatrixF matrix);
 
     [DllImport(PdfiumLib)]
     public static extern bool FPDFPageObj_GetBounds(IntPtr obj, out float left, out float bottom, out float right, out float top);
@@ -102,6 +102,9 @@ public static partial class PdfEditNative
 
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFPageObj_CreateNewRect(float x, float y, float w, float h);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDFPageObj_NewImageObj(IntPtr document);
 
     [DllImport(PdfiumLib)]
     public static extern bool FPDFPath_MoveTo(IntPtr path, float x, float y);
@@ -248,7 +251,7 @@ public static partial class PdfEditNative
     public static extern uint FPDFImageObj_GetImageFilter(IntPtr obj, int index, byte[] buffer, uint buflen);
     
     [DllImport(PdfiumLib)] 
-    public static extern bool FPDFImageObj_GetImageMetadata(IntPtr obj, IntPtr page, out FpdfImageObjMetadata metadata);
+    public static extern bool FPDFImageObj_GetImageMetadata(IntPtr obj, IntPtr page, out PdfImageObjMetadata metadata);
     
     [DllImport(PdfiumLib)] 
     public static extern bool FPDFImageObj_GetImagePixelSize(IntPtr obj, out uint width, out uint height);

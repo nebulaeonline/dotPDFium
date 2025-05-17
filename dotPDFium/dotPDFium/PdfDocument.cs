@@ -1,6 +1,7 @@
 ﻿using nebulae.dotPDFium.Native;
 using System;
 using System.Diagnostics;
+using System.Reflection.Metadata;
 using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium;
@@ -376,6 +377,43 @@ public class PdfDocument : PdfObject
     }
 
     /// <summary>
+    /// Loads a CIDType2 font into the PDF document.
+    /// </summary>
+    /// <remarks>CIDType2 fonts are commonly used for embedding TrueType fonts in PDF documents.  Ensure that
+    /// the provided font data is valid and compatible with the PDF library.</remarks>
+    /// <param name="fontData">The font data as a byte array. This cannot be null or empty.</param>
+    /// <param name="name">The name of the font to be used in the PDF document.</param>
+    /// <param name="toUnicodeCMap">An optional string representing the ToUnicode CMap, which maps character codes to Unicode values. If not
+    /// provided, an empty string is used.</param>
+    /// <param name="cidToGidMap">An optional byte array representing the CID-to-GID map, which maps character identifiers (CIDs) to glyph
+    /// identifiers (GIDs). If not provided, an empty array is used.</param>
+    /// <returns>A <see cref="PdfFont"/> object representing the loaded CIDType2 font.</returns>
+    /// <exception cref="ArgumentException">Thrown if <paramref name="fontData"/> is null or empty.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the font fails to load due to an error in the underlying PDF library.</exception>
+    public PdfFont LoadCidType2Font(
+    byte[] fontData,
+    string name,
+    string toUnicodeCMap = "",
+    byte[]? cidToGidMap = null)
+    {
+        if (fontData == null || fontData.Length == 0)
+            throw new ArgumentException("Font data cannot be null or empty.", nameof(fontData));
+
+        var handle = PdfEditNative.FPDFText_LoadCidType2Font(
+            _handle,
+            fontData,
+            (uint)fontData.Length,
+            toUnicodeCMap ?? string.Empty,
+            cidToGidMap ?? Array.Empty<byte>(),
+            cidToGidMap != null ? (uint)cidToGidMap.Length : 0);
+
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to load CIDType2 font: {PdfObject.GetPDFiumError()}");
+
+        return new PdfFont(handle, name);
+    }
+
+    /// <summary>
     /// Creates a new text object in the document. This method creates a new text object with the specified font and font size.
     /// The text object can then be added to a page or manipulated as needed.
     /// </summary>
@@ -416,6 +454,57 @@ public class PdfDocument : PdfObject
             throw new dotPDFiumException($"Failed to create standard font text object: {PdfObject.GetPDFiumError()}");
 
         return new PdfTextObject(handle);
+    }
+
+    /// <summary>
+    /// Creates a new path object for use in a PDF document.
+    /// </summary>
+    /// <returns>A <see cref="PdfPathObject"/> representing the newly created path object.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the path object could not be created due to an error in the underlying PDF library.</exception>
+    public PdfPathObject CreatePathObject()
+    {
+        var handle = PdfEditNative.FPDFPageObj_CreateNewPath(0, 0);
+
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to create path object: {PdfObject.GetPDFiumError()}");
+
+        return new PdfPathObject(handle);
+    }
+
+    /// <summary>
+    /// Creates a new image object for use in a PDF document.
+    /// </summary>
+    /// <returns>A <see cref="PdfImageObject"/> representing the newly created image object.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the image object could not be created due to an error in the underlying PDF library.</exception>
+    public PdfImageObject CreateImageObject()
+    {
+        var handle = PdfEditNative.FPDFPageObj_NewImageObj(_handle);
+
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to create image object: {PdfObject.GetPDFiumError()}");
+
+        return new PdfImageObject(handle);
+    }
+
+    /// <summary>
+    /// Creates a new rectangular path object with the specified dimensions.
+    /// </summary>
+    /// <remarks>The rectangle is defined in the coordinate space of the PDF page. Ensure that the provided
+    /// dimensions are valid and fit within the desired page area.</remarks>
+    /// <param name="x">The x-coordinate of the lower-left corner of the rectangle.</param>
+    /// <param name="y">The y-coordinate of the lower-left corner of the rectangle.</param>
+    /// <param name="width">The width of the rectangle. Must be greater than 0.</param>
+    /// <param name="height">The height of the rectangle. Must be greater than 0.</param>
+    /// <returns>A <see cref="PdfPathObject"/> representing the created rectangle.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the rectangle object could not be created due to an internal error.</exception>
+    public PdfPathObject CreateRectObject(float x, float y, float width, float height)
+    {
+        var handle = PdfEditNative.FPDFPageObj_CreateNewRect(x, y, width, height);
+
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to create rect object: {PdfObject.GetPDFiumError()}");
+
+        return new PdfPathObject(handle);
     }
 
     /// <summary>
@@ -461,6 +550,28 @@ public class PdfDocument : PdfObject
             throw new dotPDFiumException("Failed to retrieve page size using GetPageSizeByIndex.");
 
         return new FsSize(width, height);
+    }
+
+    /// <summary>
+    /// Retrieves a rendered bitmap of the specified text object on a PDF page at the given scale.
+    /// </summary>
+    /// <remarks>This method uses the underlying PDF library to render the specified text object into a
+    /// bitmap.  Ensure that the provided <paramref name="page"/> and <paramref name="text"/> objects are valid and
+    /// associated with the same PDF document.</remarks>
+    /// <param name="page">The <see cref="PdfPage"/> containing the text object to render. Must not be <c>null</c>.</param>
+    /// <param name="text">The <see cref="PdfTextObject"/> to render as a bitmap. Must not be <c>null</c>.</param>
+    /// <param name="scale">The scale factor to apply when rendering the bitmap. Must be greater than 0.</param>
+    /// <returns>A pointer to the rendered bitmap as an <see cref="IntPtr"/>. The caller is responsible for managing the memory
+    /// of the returned bitmap.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the bitmap could not be rendered due to an error in the underlying PDF library.</exception>
+    public IntPtr GetRenderedBitmap(PdfPage page, PdfTextObject text, float scale)
+    {
+        var bmp = PdfEditNative.FPDFTextObj_GetRenderedBitmap(_handle, page.Handle, text.Handle, scale);
+
+        if (bmp == IntPtr.Zero)
+            throw new dotPDFiumException($"Failed to get rendered bitmap from text object: {PdfObject.GetPDFiumError()}");
+
+        return bmp;
     }
 
     /// <summary>

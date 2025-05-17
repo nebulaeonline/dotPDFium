@@ -576,7 +576,7 @@ public enum PdfDuplexType
 /// <summary>
 /// This enum represents the rotation of the PDF page.
 /// </summary>
-public enum PdfRotation
+public enum PdfPageRotation
 {
     NoRotation = 0,
     Rotate90 = 1,
@@ -604,4 +604,30 @@ public enum PdfFontType
 {
     Type1 = 1,
     TrueType = 2
+}
+
+/// <summary>
+/// Specifies the drawing mode for a path in a PDF document.
+/// </summary>
+/// <remarks>This enumeration defines the options for rendering a path in a PDF, including filling, stroking, or
+/// both. It supports bitwise combination of its values due to the <see cref="FlagsAttribute"/>.</remarks>
+[Flags]
+public enum PdfPathDrawMode
+{
+    None = 0,
+    Fill = 1,
+    Stroke = 2,
+    FillStroke = Fill | Stroke
+}
+
+public enum PdfTextRenderMode
+{
+    Fill = 0,
+    Stroke = 1,
+    FillStroke = 2,
+    Invisible = 3,
+    FillClip = 4,
+    StrokeClip = 5,
+    FillStrokeClip = 6,
+    Clip = 7
 }

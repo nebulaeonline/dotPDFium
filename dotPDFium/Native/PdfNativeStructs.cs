@@ -144,7 +144,7 @@ public struct FsQuadPointsF
 }
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FpdfImageObjMetadata
+public struct PdfImageObjMetadata
 {
     /// <summary>The image width in pixels.</summary>
     public uint width;

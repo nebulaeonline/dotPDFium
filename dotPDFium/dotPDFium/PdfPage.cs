@@ -54,6 +54,30 @@ namespace nebulae.dotPDFium
             : PdfViewNative.FPDF_GetPageHeightF(_handle);
 
         /// <summary>
+        /// Gets the rotation of the current PDF page.
+        /// </summary>
+        /// <returns>A <see cref="PdfPageRotation"/> value representing the rotation of the page.</returns>
+        /// <exception cref="dotPDFiumException">Thrown if the rotation value retrieved from the native PDF library is invalid.</exception>
+        public PdfPageRotation GetRotation()
+        {
+            int raw = PdfEditNative.FPDFPage_GetRotation(_handle);
+            return Enum.IsDefined(typeof(PdfPageRotation), raw)
+                ? (PdfPageRotation)raw
+                : throw new dotPDFiumException($"Invalid rotation value: {raw}");
+        }
+
+        /// <summary>
+        /// Sets the rotation of the current PDF page.
+        /// </summary>
+        /// <remarks>This method updates the rotation of the page to the specified value.  The rotation is
+        /// applied in 90-degree increments, as defined by the <see cref="PdfPageRotation"/> enumeration.</remarks>
+        /// <param name="rotation">The desired rotation for the page, specified as a <see cref="PdfPageRotation"/> value.</param>
+        public void SetRotation(PdfPageRotation rotation)
+        {
+            PdfEditNative.FPDFPage_SetRotation(_handle, (int)rotation);
+        }
+
+        /// <summary>
         /// Gets the text content of the current PDF page if it is already loaded, otherwise loads it.
         /// </summary>
         /// <returns></returns>
@@ -127,6 +151,28 @@ namespace nebulae.dotPDFium
         }
 
         /// <summary>
+        /// Determines whether the PDF page contains any transparent elements.
+        /// </summary>
+        /// <remarks>This method checks for the presence of transparency on the PDF page, which may affect
+        /// rendering or printing.</remarks>
+        /// <returns><see langword="true"/> if the PDF page has transparent elements; otherwise, <see langword="false"/>.</returns>
+        public bool HasTransparency()
+        {
+            return PdfEditNative.FPDFPage_HasTransparency(_handle);
+        }
+
+        /// <summary>
+        /// Removes the specified PDF page object from the current page.
+        /// </summary>
+        /// <param name="obj">The <see cref="PdfPageObject"/> to remove. This parameter cannot be <see langword="null"/>.</param>
+        /// <exception cref="dotPDFiumException">Thrown if the removal operation fails due to an error in the underlying PDF library.</exception>
+        public void RemoveObject(PdfPageObject obj)
+        {
+            if (!PdfEditNative.FPDFPage_RemoveObject(_handle, obj.Handle))
+                throw new dotPDFiumException($"Failed to remove page object: {PdfObject.GetPDFiumError()}");
+        }
+
+        /// <summary>
         /// This method renders the current PDF page to a bitmap.
         /// </summary>
         /// <param name="bitmap">The bitmap to render the page to</param>
@@ -144,7 +190,7 @@ namespace nebulae.dotPDFium
             int startY,
             int width,
             int height,
-            PdfRotation rotate = PdfRotation.NoRotation,
+            PdfPageRotation rotate = PdfPageRotation.NoRotation,
             PdfRenderFlags flags = PdfRenderFlags.None)
         {
             if (_handle == IntPtr.Zero)
@@ -206,7 +252,7 @@ namespace nebulae.dotPDFium
             int startY,
             int width,
             int height,
-            PdfRotation rotate,
+            PdfPageRotation rotate,
             int deviceX,
             int deviceY,
             out double pageX,
@@ -231,7 +277,7 @@ namespace nebulae.dotPDFium
         /// <param name="startY">The Y offset in device pixels where the page rendering starts (usually 0).</param>
         /// <param name="width">The width of the rendered area in device pixels (e.g., the bitmap width).</param>
         /// <param name="height">The height of the rendered area in device pixels (e.g., the bitmap height).</param>
-        /// <param name="rotation">The rotation of the page as a <see cref="PdfRotation"/> value (0, 90, 180, 270 degrees).
+        /// <param name="rotation">The rotation of the page as a <see cref="PdfPageRotation"/> value (0, 90, 180, 270 degrees).
         /// /// PDFium applies the rotation internally; do not swap width and height manually.</param>
         /// <param name="pageX">The X coordinate in page space (points, where 1 point = 1/72 inch).</param>
         /// <param name="pageY">The Y coordinate in page space (points).</param>
@@ -243,7 +289,7 @@ namespace nebulae.dotPDFium
             int startY,
             int width,
             int height,
-            PdfRotation rotate,
+            PdfPageRotation rotate,
             double pageX,
             double pageY,
             out int deviceX,

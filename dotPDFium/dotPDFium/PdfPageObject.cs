@@ -190,6 +190,33 @@ public class PdfPageObject : PdfObject
     }
 
     /// <summary>
+    /// Determines whether the current page object is active.
+    /// </summary>
+    /// <remarks>This method checks the active state of the page object associated with the current instance.
+    /// If the underlying operation fails, the method returns <see langword="false"/>.</remarks>
+    /// <returns><see langword="true"/> if the page object is active; otherwise, <see langword="false"/>.</returns>
+    public bool GetIsActive()
+    {
+        var retVal = PdfEditNative.FPDFPageObj_GetIsActive(_handle, out bool active);
+
+        if (!retVal)
+            return false;
+
+        return active;
+    }
+
+    /// <summary>
+    /// Sets the active state of the PDF page object.
+    /// </summary>
+    /// <remarks>The active state of a page object may influence its visibility or behavior in certain
+    /// contexts. Ensure that the appropriate state is set based on the desired outcome.</remarks>
+    /// <param name="active"><see langword="true"/> to activate the page object; <see langword="false"/> to deactivate it.</param>
+    public void SetIsActive(bool active)
+    {
+        PdfEditNative.FPDFPageObj_SetIsActive(_handle, active);
+    }
+
+    /// <summary>
     /// Gets the bounds of the page object. The bounds are represented as a rectangle defined by its left, bottom, right, and top.
     /// </summary>
     /// <returns></returns>
@@ -197,9 +224,132 @@ public class PdfPageObject : PdfObject
     public FsRectF GetBounds()
     {
         if (!PdfEditNative.FPDFPageObj_GetBounds(_handle, out float left, out float bottom, out float right, out float top))
-            throw new dotPDFiumException("Failed to get object bounds.");
+            throw new dotPDFiumException($"Failed to get object bounds: {PdfObject.GetPDFiumError()}");
 
         return new FsRectF(left, top, right, bottom);
+    }
+
+    /// <summary>
+    /// Retrieves the fill color of the PDF page object.
+    /// </summary>
+    /// <returns>An <see cref="RgbaColor"/> structure representing the fill color of the object,  including red, green, blue, and
+    /// alpha channel values.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the fill color cannot be retrieved due to an error in the underlying PDF library.</exception>
+    public RgbaColor GetFillColor()
+    {
+        if (!PdfEditNative.FPDFPageObj_GetFillColor(_handle, out uint r, out uint g, out uint b, out uint a))
+            throw new dotPDFiumException($"Failed to get fill color: {PdfObject.GetPDFiumError()}");
+
+        return new RgbaColor((byte)r, (byte)g, (byte)b, (byte)a);
+    }
+
+    public void SetFillColor(RgbaColor color)
+    {
+        PdfEditNative.FPDFPageObj_SetFillColor(_handle, color.R, color.G, color.B, color.A);
+    }
+
+    /// <summary>
+    /// Retrieves the transformation matrix associated with the current PDF object.
+    /// </summary>
+    /// <returns>An <see cref="FsMatrixF"/> representing the transformation matrix of the PDF object.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the transformation matrix cannot be retrieved due to an error in the underlying PDF library.</exception>
+    public FsMatrixF GetMatrixF()
+    {
+        if (!PdfEditNative.FPDFPageObj_GetMatrix(_handle, out FsMatrixF matrix))
+            throw new dotPDFiumException($"Failed to get object matrix: {PdfObject.GetPDFiumError()}");
+
+        return matrix;
+    }
+
+    /// <summary>
+    /// Sets the transformation matrix for the current PDF page object.
+    /// </summary>
+    /// <param name="matrix">The transformation matrix to apply. This defines how the page object is scaled, rotated, or translated.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the matrix could not be applied. The exception message will contain additional details about the
+    /// failure.</exception>
+    public void SetMatrix(FsMatrixF matrix)
+    {
+        if (!PdfEditNative.FPDFPageObj_SetMatrix(
+                _handle,
+                ref matrix))
+        {
+            throw new dotPDFiumException($"Failed to set matrix: {PdfObject.GetPDFiumError()}");
+        }
+    }
+
+    /// <summary>
+    /// Retrieves the rotated bounding box of the current PDF page object.
+    /// </summary>
+    /// <returns>A <see cref="FsQuadPointsF"/> structure representing the four corners of the rotated bounding box.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails to retrieve the rotated bounds.</exception>
+    public FsQuadPointsF GetRotatedBounds()
+    {
+        if (!PdfEditNative.FPDFPageObj_GetRotatedBounds(_handle, out FsQuadPointsF quad))
+            throw new dotPDFiumException($"Failed to get rotated bounds: {PdfObject.GetPDFiumError()}");
+
+        return quad;
+    }
+
+    /// <summary>
+    /// Retrieves the stroke color of the current PDF page object.
+    /// </summary>
+    /// <returns>An <see cref="RgbaColor"/> structure representing the stroke color,  including red, green, blue, and alpha
+    /// channel values.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the stroke color cannot be retrieved due to an error in the underlying PDF library.</exception>
+    public RgbaColor GetStrokeColor()
+    {
+        if (!PdfEditNative.FPDFPageObj_GetStrokeColor(_handle, out uint r, out uint g, out uint b, out uint a))
+            throw new dotPDFiumException($"Failed to get stroke color: {PdfObject.GetPDFiumError()}");
+
+        return new RgbaColor((byte)r, (byte)g, (byte)b, (byte)a);
+    }
+
+    /// <summary>
+    /// Sets the stroke color for the current PDF page object.
+    /// </summary>
+    /// <remarks>The stroke color determines the color used for drawing the outline of shapes or paths in the
+    /// PDF page object. Ensure that the <paramref name="color"/> parameter contains valid RGBA values, where each
+    /// component is in the range of 0 to 255.</remarks>
+    /// <param name="color">The <see cref="RgbaColor"/> structure representing the stroke color, including red, green, blue, and alpha
+    /// components.</param>
+    public void SetStrokeColor(RgbaColor color)
+    {
+        PdfEditNative.FPDFPageObj_SetStrokeColor(_handle, color.R, color.G, color.B, color.A);
+    }
+
+    /// <summary>
+    /// Retrieves the stroke width of the current PDF page object.
+    /// </summary>
+    /// <returns>The stroke width of the PDF page object as a <see cref="float"/>.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the stroke width cannot be retrieved due to an error in the underlying PDF library.</exception>
+    public float GetStrokeWidth()
+    {
+        if (!PdfEditNative.FPDFPageObj_GetStrokeWidth(_handle, out float width))
+            throw new dotPDFiumException($"Failed to get stroke width: {PdfObject.GetPDFiumError()}");
+
+        return width;
+    }
+
+    /// <summary>
+    /// Sets the stroke width for the current PDF page object.
+    /// </summary>
+    /// <param name="width">The width of the stroke, in points. Must be a non-negative value.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails due to an error in the underlying PDF library.</exception>
+    public void SetStrokeWidth(float width)
+    {
+        if (!PdfEditNative.FPDFPageObj_SetStrokeWidth(_handle, width))
+            throw new dotPDFiumException($"Failed to set stroke width: {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
+    /// Determines whether the PDF page object has transparency.
+    /// </summary>
+    /// <remarks>This method checks for the presence of transparency in the PDF page object, which may affect
+    /// rendering or printing.</remarks>
+    /// <returns><see langword="true"/> if the PDF page object contains transparent elements; otherwise, <see langword="false"/>.</returns>
+    public bool HasTransparency()
+    {
+        return PdfEditNative.FPDFPageObj_HasTransparency(_handle);
     }
 
     /// <summary>
