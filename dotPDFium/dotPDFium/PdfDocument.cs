@@ -762,6 +762,72 @@ public class PdfDocument : PdfObject
     }
 
     /// <summary>
+    /// Retrieves the metadata value associated with the specified tag from the PDF document.
+    /// </summary>
+    /// <remarks>The returned string excludes any null terminator that may be present in the underlying
+    /// data.</remarks>
+    /// <param name="tag">The metadata tag to retrieve. Common tags include "Title", "Author", and "Subject".</param>
+    /// <returns>The metadata value as a string, or <see langword="null"/> if the specified tag does not exist or has no value.</returns>
+    public string? GetMetadata(string tag)
+    {
+        uint len = PdfDocNative.FPDF_GetMetaText(_handle, tag, Array.Empty<char>(), 0);
+        if (len == 0) return null;
+
+        var buffer = new char[len];
+        PdfDocNative.FPDF_GetMetaText(_handle, tag, buffer, len);
+
+        return new string(buffer, 0, (int)len - 1); // Remove null terminator
+    }
+
+    /// <summary>
+    /// Retrieves the label associated with the specified page index in the document.
+    /// </summary>
+    /// <remarks>Page labels are often used to display custom page numbering or names in a document. If no
+    /// label is defined for the specified page, the method returns <see langword="null"/>.</remarks>
+    /// <param name="pageIndex">The zero-based index of the page for which to retrieve the label.</param>
+    /// <returns>The label of the specified page as a string, or <see langword="null"/> if the page does not have a label.</returns>
+    public string? GetPageLabel(int pageIndex)
+    {
+        uint len = PdfDocNative.FPDF_GetPageLabel(_handle, pageIndex, Array.Empty<char>(), 0);
+        if (len == 0) return null;
+
+        var buffer = new char[len];
+        PdfDocNative.FPDF_GetPageLabel(_handle, pageIndex, buffer, len);
+
+        return new string(buffer, 0, (int)len - 1); // remove null terminator
+    }
+
+    /// <summary>
+    /// Retrieves the file identifier associated with the document.
+    /// </summary>
+    /// <remarks>File identifiers are typically used to uniquely identify a document. The returned identifier
+    /// may vary depending on the <paramref name="idType"/> specified.</remarks>
+    /// <param name="idType">The type of file identifier to retrieve. Use <c>0</c> to retrieve the primary identifier, or other values as
+    /// defined by the document specification.</param>
+    /// <returns>A byte array containing the file identifier, or <see langword="null"/> if no identifier is available.</returns>
+    public byte[]? GetFileIdentifier(uint idType = 0)
+    {
+        uint len = PdfDocNative.FPDF_GetFileIdentifier(_handle, idType, Array.Empty<byte>(), 0);
+        if (len == 0) return null;
+
+        var buffer = new byte[len];
+        PdfDocNative.FPDF_GetFileIdentifier(_handle, idType, buffer, len);
+        return buffer;
+    }
+
+    /// <summary>
+    /// Retrieves the additional action associated with the specified page action type.
+    /// </summary>
+    /// <param name="type">The type of page action to retrieve. This specifies the event for which the additional action is defined.</param>
+    /// <returns>A <see cref="PdfAction"/> representing the additional action for the specified page action type,  or <see
+    /// langword="null"/> if no additional action is defined for the specified type.</returns>
+    public PdfAction? GetAdditionalAction(PdfPageActionType type)
+    {
+        var handle = PdfDocNative.FPDF_GetPageAAction(_handle, (int)type);
+        return handle == IntPtr.Zero ? null : new PdfAction(handle);
+    }
+
+    /// <summary>
     /// Closes the current PdfDocument instance and releases the resources associated with it.
     /// </summary>
     public void Close() => Dispose();

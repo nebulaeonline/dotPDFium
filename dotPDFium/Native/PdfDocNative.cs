@@ -52,6 +52,9 @@ public static class PdfDocNative
     [DllImport(PdfiumLib)]
     public static extern uint FPDF_GetPageLabel(IntPtr doc, int pageIndex, [Out] char[] buffer, uint buflen);
 
+    [DllImport(PdfiumLib)]
+    public static extern uint FPDF_GetFileIdentifier(IntPtr doc, uint idType, [Out] byte[] buffer, uint buflen);
+
     // --- Links ---
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFLink_GetLinkAtPoint(IntPtr page, double x, double y);
