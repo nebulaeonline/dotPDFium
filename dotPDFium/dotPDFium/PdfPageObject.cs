@@ -1,4 +1,5 @@
-﻿using nebulae.dotPDFium.Native;
+﻿using nebulae.dotPDFium.Forms;
+using nebulae.dotPDFium.Native;
 
 namespace nebulae.dotPDFium;
 
@@ -21,6 +22,32 @@ public class PdfPageObject : PdfObject
     internal PdfPageObject(IntPtr handle) : base(handle, PdfObjectType.PageObject)
     {
         _objType = PdfPageObjectType.Unknown;
+    }
+
+    /// <summary>
+    /// Creates a new instance of a <see cref="PdfPageObject"/> or one of its derived types based on the specified
+    /// handle.
+    /// </summary>
+    /// <param name="handle">A pointer to the native PDF page object. Must not be <see cref="IntPtr.Zero"/>.</param>
+    /// <returns>A <see cref="PdfPageObject"/> instance or a derived type, such as <see cref="PdfTextObject"/>,  <see
+    /// cref="PdfImageObject"/>, <see cref="PdfPathObject"/>, or <see cref="PdfFormXObject"/>,  depending on the type of
+    /// the PDF page object represented by the handle.</returns>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="handle"/> is <see cref="IntPtr.Zero"/>.</exception>
+    internal static PdfPageObject Create(IntPtr handle)
+    {
+        if (handle == IntPtr.Zero)
+            throw new ArgumentNullException(nameof(handle));
+
+        var type = (PdfPageObjectType)PdfEditNative.FPDFPageObj_GetType(handle);
+
+        return type switch
+        {
+            PdfPageObjectType.Text => new PdfTextObject(handle),
+            PdfPageObjectType.Image => new PdfImageObject(handle),
+            PdfPageObjectType.Path => new PdfPathObject(handle),
+            PdfPageObjectType.Form => new PdfFormXObject(handle),
+            _ => new PdfPageObject(handle, type)
+        };
     }
 
     /// <summary>

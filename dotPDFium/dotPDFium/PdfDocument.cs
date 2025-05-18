@@ -1,5 +1,6 @@
 ﻿using nebulae.dotPDFium.Forms;
 using nebulae.dotPDFium.Native;
+using nebulae.dotPDFium.Security;
 using System;
 using System.Diagnostics;
 using System.Reflection.Metadata;
@@ -17,6 +18,18 @@ public class PdfDocument : PdfObject
     public PdfFormContext? Forms { get; private set; }
 
     /// <summary>
+    /// Class constructor. This constructor is private and should not be used directly.
+    /// </summary>
+    /// <param name="handle">The pointer to the document object</param>
+    /// <exception cref="dotPDFiumException">Thrown on PDFium library error</exception>
+    private PdfDocument(IntPtr handle) : base(handle, PdfObjectType.Document)
+    {
+        // Throw on null pointer
+        if (handle == IntPtr.Zero)
+            throw new dotPDFiumException($"Invalid document handle ({nameof(handle)}): {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
     /// Registers a PDF page for tracking within the current context.
     /// </summary>
     /// <remarks>This method adds the specified <see cref="PdfPage"/> to an internal collection of open pages.
@@ -31,15 +44,190 @@ public class PdfDocument : PdfObject
     internal void UnregisterPage(PdfPage page) => _openPages.Remove(page);
 
     /// <summary>
-    /// Class constructor. This constructor is private and should not be used directly.
+    /// Copies the viewer preferences (e.g., page layout, UI hints) from another PDF document.
     /// </summary>
-    /// <param name="handle">The pointer to the document object</param>
-    /// <exception cref="dotPDFiumException">Thrown on PDFium library error</exception>
-    private PdfDocument(IntPtr handle) : base(handle, PdfObjectType.Document)
+    /// <param name="source">The document from which to copy viewer preferences.</param>
+    /// <exception cref="ArgumentNullException">Thrown if source is null.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the copy operation fails.</exception>
+    public void CopyViewerPreferencesFrom(PdfDocument source)
     {
-        // Throw on null pointer
+        if (source == null)
+            throw new ArgumentNullException(nameof(source));
+
+        if (!PdfPpoNative.FPDF_CopyViewerPreferences(_handle, source._handle))
+            throw new dotPDFiumException("Failed to copy viewer preferences from source document.");
+    }
+
+    /// <summary>
+    /// Creates a new PDF document by importing pages from an existing document arranged in an N-up layout.
+    /// </summary>
+    /// <param name="source">The source document to import pages from.</param>
+    /// <param name="width">The width of the output composite page in points.</param>
+    /// <param name="height">The height of the output composite page in points.</param>
+    /// <param name="columns">Number of pages horizontally.</param>
+    /// <param name="rows">Number of pages vertically.</param>
+    /// <returns>A new <see cref="PdfDocument"/> containing a single composite page.</returns>
+    /// <exception cref="ArgumentNullException">Thrown if the source document is null.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails.</exception>
+    public static PdfDocument ImportNPagesToOne(PdfDocument source, float width, float height, int columns, int rows)
+    {
+        if (source == null)
+            throw new ArgumentNullException(nameof(source));
+
+        var handle = PdfPpoNative.FPDF_ImportNPagesToOne(
+            source._handle,
+            width,
+            height,
+            (UIntPtr)columns,
+            (UIntPtr)rows);
+
         if (handle == IntPtr.Zero)
-            throw new dotPDFiumException($"Invalid document handle ({nameof(handle)}): {PdfObject.GetPDFiumError()}");
+            throw new dotPDFiumException("Failed to import N pages to one.");
+
+        return new PdfDocument(handle);
+    }
+
+    /// <summary>
+    /// Imports pages from another document into this one, starting at the given index.
+    /// </summary>
+    /// <param name="source">The source document to import pages from.</param>
+    /// <param name="pageRange">Page range string (e.g., "1-3,5"). Must use 1-based indexing.</param>
+    /// <param name="insertAtIndex">Zero-based index to insert pages into this document.</param>
+    /// <exception cref="ArgumentNullException">Thrown if source or pageRange is null.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails.</exception>
+    public void ImportPagesFrom(PdfDocument source, string pageRange, int insertAtIndex)
+    {
+        if (source == null)
+            throw new ArgumentNullException(nameof(source));
+
+        if (string.IsNullOrWhiteSpace(pageRange))
+            throw new ArgumentNullException(nameof(pageRange));
+
+        bool ok = PdfPpoNative.FPDF_ImportPages(_handle, source._handle, pageRange, insertAtIndex);
+        if (!ok)
+            throw new dotPDFiumException("Failed to import pages from source document.");
+    }
+
+    /// <summary>
+    /// Imports specific pages (by zero-based index) from another document into this one.
+    /// </summary>
+    /// <param name="source">The source PDF document.</param>
+    /// <param name="pageIndices">Array of zero-based page indices to import.</param>
+    /// <param name="insertAtIndex">Zero-based insertion point in the destination document.</param>
+    /// <exception cref="ArgumentNullException">Thrown if source or pageIndices is null.</exception>
+    /// <exception cref="ArgumentException">Thrown if the pageIndices array is empty.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the import fails.</exception>
+    public void ImportPagesFromByIndex(PdfDocument source, int[] pageIndices, int insertAtIndex)
+    {
+        if (source == null)
+            throw new ArgumentNullException(nameof(source));
+        if (pageIndices == null || pageIndices.Length == 0)
+            throw new ArgumentException("Page index array must not be null or empty.", nameof(pageIndices));
+
+        bool ok = PdfPpoNative.FPDF_ImportPagesByIndex(
+            _handle,
+            source._handle,
+            pageIndices,
+            (uint)pageIndices.Length,
+            insertAtIndex);
+
+        if (!ok)
+            throw new dotPDFiumException("Failed to import pages by index.");
+    }
+
+    /// <summary>
+    /// Gets the security handler revision used for encryption, or -1 if the document is not encrypted.
+    /// </summary>
+    /// <returns>
+    /// The revision number (e.g., 2 for RC4-40, 4 for AES-128, 6 for AES-256), or -1 if not encrypted.
+    /// </returns>
+    public int GetSecurityHandlerRevision()
+    {
+        return PdfViewNative.FPDF_GetSecurityHandlerRevision(_handle);
+    }
+
+    /// <summary>
+    /// Gets the duplex printing preference defined in the document's viewer preferences.
+    /// </summary>
+    /// <returns>The <see cref="PdfDuplexType"/> specified by the document.</returns>
+    public PdfDuplexType GetViewerDuplexPreference()
+    {
+        return PdfViewNative.FPDF_VIEWERREF_GetDuplex(_handle);
+    }
+
+    /// <summary>
+    /// Retrieves a raw name value from the document's /ViewerPreferences dictionary.
+    /// </summary>
+    /// <param name="key">The name key to query (e.g., "Direction", "PrintScaling").</param>
+    /// <returns>The associated name string, or an empty string if not present or invalid.</returns>
+    /// <exception cref="ArgumentNullException">Thrown if the key is null or empty.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if decoding fails despite valid key.</exception>
+    public string GetViewerPreferenceName(string key)
+    {
+        if (string.IsNullOrWhiteSpace(key))
+            throw new ArgumentNullException(nameof(key));
+
+        uint size = PdfViewNative.FPDF_VIEWERREF_GetName(_handle, key, null!, 0);
+        if (size == 0)
+            return string.Empty;
+
+        var buffer = new byte[size];
+        uint actual = PdfViewNative.FPDF_VIEWERREF_GetName(_handle, key, buffer, size);
+
+        if (actual == 0 || actual > size)
+            throw new dotPDFiumException($"Failed to read ViewerPreferences name entry for key '{key}'.");
+
+        return System.Text.Encoding.UTF8.GetString(buffer, 0, (int)(actual - 1)); // strip null terminator
+    }
+
+    /// <summary>
+    /// Gets the suggested number of copies to print as defined in the document's viewer preferences.
+    /// </summary>
+    /// <returns>The suggested number of copies, or 0 if unspecified.</returns>
+    public int GetSuggestedPrintCopies()
+    {
+        return PdfViewNative.FPDF_VIEWERREF_GetNumCopies(_handle);
+    }
+
+    /// <summary>
+    /// Gets the suggested print page range defined in the viewer preferences (e.g., "1-3,5").
+    /// </summary>
+    /// <returns>
+    /// A UTF-8 encoded string with the suggested print range, or an empty string if none is defined.
+    /// </returns>
+    public string GetSuggestedPrintRange()
+    {
+        IntPtr ptr = PdfViewNative.FPDF_VIEWERREF_GetPrintPageRange(_handle);
+        if (ptr == IntPtr.Zero)
+            return string.Empty;
+
+        return Marshal.PtrToStringUTF8(ptr) ?? string.Empty;
+    }
+
+    /// <summary>
+    /// Retrieves the print page range specified in the PDF viewer preferences.
+    /// </summary>
+    /// <remarks>This method checks the PDF viewer preferences for a defined print page range and returns it
+    /// as a <see cref="PdfPrintPageRange"/> object. If no range is specified, the method returns <see
+    /// langword="null"/>.</remarks>
+    /// <returns>A <see cref="PdfPrintPageRange"/> object representing the print page range if specified; otherwise, <see
+    /// langword="null"/> if no print page range is defined.</returns>
+    public PdfPrintPageRange? GetParsedPrintPageRange()
+    {
+        var handle = PdfViewNative.FPDF_VIEWERREF_GetPrintPageRange(_handle);
+        return handle == IntPtr.Zero ? null : new PdfPrintPageRange(handle);
+    }
+
+    /// <summary>
+    /// Gets the print scaling flag defined in the document's viewer preferences.
+    /// </summary>
+    /// <returns>
+    /// <see langword="true"/> if the document allows automatic scaling when printed;
+    /// <see langword="false"/> if it requests no scaling (actual size).
+    /// </returns>
+    public bool GetPrintScalingAllowed()
+    {
+        return PdfViewNative.FPDF_VIEWERREF_GetPrintScaling(_handle);
     }
 
     /// <summary>
@@ -311,6 +499,60 @@ public class PdfDocument : PdfObject
         return Enum.IsDefined(typeof(PdfPageMode), mode)
             ? (PdfPageMode)mode
             : PdfPageMode.Unknown;
+    }
+
+    /// <summary>
+    /// Checks whether the PDF document has a valid cross-reference table or stream.
+    /// </summary>
+    /// <returns><see langword="true"/> if the cross-reference structure is valid; otherwise, <see langword="false"/>.</returns>
+    public bool HasValidCrossReferenceTable()
+    {
+        return PdfViewNative.FPDF_DocumentHasValidCrossReferenceTable(_handle);
+    }
+
+    /// <summary>
+    /// Retrieves the byte offsets of all trailer dictionaries in the PDF file.
+    /// </summary>
+    /// <returns>
+    /// A list of unsigned 32-bit integers representing the end offsets of each trailer section.
+    /// </returns>
+    /// <exception cref="dotPDFiumException">Thrown if the call fails unexpectedly.</exception>
+    public IReadOnlyList<uint> GetTrailerEndOffsets()
+    {
+        // Step 1: Get the count
+        uint count = PdfViewNative.FPDF_GetTrailerEnds(_handle, null!, 0);
+        if (count == 0)
+            return Array.Empty<uint>();
+
+        // Step 2: Fetch the actual trailer offsets
+        var buffer = new uint[count];
+        uint actual = PdfViewNative.FPDF_GetTrailerEnds(_handle, buffer, count);
+
+        if (actual != count)
+            throw new dotPDFiumException("Mismatch in trailer end retrieval.");
+
+        return buffer;
+    }
+
+    /// <summary>
+    /// Gets all digital signatures defined in this document.
+    /// </summary>
+    /// <returns>A list of <see cref="PdfSignature"/> objects.</returns>
+    public IReadOnlyList<PdfSignature> GetSignatures()
+    {
+        int count = PdfSignatureNative.FPDF_GetSignatureCount(_handle);
+        if (count <= 0)
+            return Array.Empty<PdfSignature>();
+
+        var result = new List<PdfSignature>(count);
+        for (int i = 0; i < count; i++)
+        {
+            var sigHandle = PdfSignatureNative.FPDF_GetSignatureObject(_handle, i);
+            if (sigHandle != IntPtr.Zero)
+                result.Add(new PdfSignature(sigHandle));
+        }
+
+        return result;
     }
 
     /// <summary>

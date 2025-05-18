@@ -16,6 +16,7 @@ public enum PdfObjectType
     Annotation,
     Font,
     Form,
+    Signature,
 }
 
 /// <summary>

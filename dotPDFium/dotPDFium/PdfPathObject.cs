@@ -1,4 +1,5 @@
 ﻿using nebulae.dotPDFium.Native;
+using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium;
 
@@ -76,4 +77,136 @@ public class PdfPathObject : PdfPageObject
         if (!PdfEditNative.FPDFPath_SetDrawMode(_handle, (int)mode, stroke))
             throw new dotPDFiumException($"Failed to set draw mode: {PdfObject.GetPDFiumError()}");
     }
+
+    /// <summary>
+    /// Retrieves the dash pattern used for stroking paths in the current page object.
+    /// </summary>
+    /// <returns>An array of <see langword="float"/> values representing the dash pattern. Each value specifies      the length
+    /// of a dash or gap in the pattern. Returns an empty array if no dash pattern is defined.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the dash pattern cannot be retrieved due to an error in the underlying PDF library.</exception>
+    /// <summary>
+    /// Returns the number of elements in the stroke dash pattern (e.g. [3 2] => 2).
+    /// </summary>
+    public int GetDashPatternCount()
+    {
+        int count = PdfEditNative.FPDFPageObj_GetDashCount(_handle);
+        return count < 0 ? 0 : count;
+    }
+
+    /// <summary>
+    /// Retrieves the full stroke dash pattern as an array of floats. If none is defined, returns an empty array.
+    /// </summary>
+    public float[] GetDashPattern()
+    {
+        int count = GetDashPatternCount();
+        if (count == 0)
+            return Array.Empty<float>();
+
+        var dashArray = new float[count];
+        bool ok = PdfEditNative.FPDFPageObj_GetDashArray(_handle, dashArray, (UIntPtr)count);
+        if (!ok)
+            throw new dotPDFiumException("Failed to retrieve dash array.");
+
+        return dashArray;
+    }
+
+    /// <summary>
+    /// Sets the dash pattern and phase used when stroking the path.
+    /// </summary>
+    /// <param name="pattern">An array of floats representing the dash/gap lengths (e.g. [3,2] for 3pt line, 2pt gap).</param>
+    /// <param name="phase">Offset into the dash pattern at which stroking begins.</param>
+    /// <exception cref="ArgumentException">Thrown if pattern is null or empty.</exception>
+    /// <exception cref="dotPDFiumException">Thrown if the dash pattern could not be set.</exception>
+    public void SetDashPattern(float[] pattern, float phase = 0f)
+    {
+        if (pattern == null || pattern.Length == 0)
+            throw new ArgumentException("Dash pattern cannot be null or empty.", nameof(pattern));
+
+        if (!PdfEditNative.FPDFPageObj_SetDashArray(_handle, pattern, (UIntPtr)pattern.Length, phase))
+            throw new dotPDFiumException("Failed to set dash pattern.");
+    }
+
+    /// <summary>
+    /// Retrieves the dash phase, which specifies the offset into the dash pattern at which stroking begins.
+    /// </summary>
+    /// <returns>The dash phase as a float.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the phase could not be retrieved.</exception>
+    public float GetDashPhase()
+    {
+        if (!PdfEditNative.FPDFPageObj_GetDashPhase(_handle, out float phase))
+            throw new dotPDFiumException("Failed to retrieve dash phase.");
+
+        return phase;
+    }
+
+    /// <summary>
+    /// Sets the dash phase, which specifies the offset into the dash pattern at which stroking begins.
+    /// </summary>
+    /// <param name="phase">The phase offset (in points).</param>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails.</exception>
+    public void SetDashPhase(float phase)
+    {
+        if (!PdfEditNative.FPDFPageObj_SetDashPhase(_handle, phase))
+            throw new dotPDFiumException("Failed to set dash phase.");
+    }
+
+    /// <summary>
+    /// Retrieves the line cap style used when stroking the path.
+    /// </summary>
+    /// <returns>A <see cref="PdfLineCapStyle"/> value indicating the cap type.</returns>
+    public PdfLineCapStyle GetLineCap()
+    {
+        int raw = PdfEditNative.FPDFPageObj_GetLineCap(_handle);
+
+        return raw switch
+        {
+            0 => PdfLineCapStyle.Butt,
+            1 => PdfLineCapStyle.Round,
+            2 => PdfLineCapStyle.Square,
+            _ => throw new dotPDFiumException($"Unknown line cap style: {raw}")
+        };
+    }
+
+    /// <summary>
+    /// Sets the line cap style used at the ends of stroked open subpaths.
+    /// </summary>
+    /// <param name="capStyle">The desired <see cref="PdfLineCapStyle"/>.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails.</exception>
+    public void SetLineCap(PdfLineCapStyle capStyle)
+    {
+        bool ok = PdfEditNative.FPDFPageObj_SetLineCap(_handle, (int)capStyle);
+        if (!ok)
+            throw new dotPDFiumException("Failed to set line cap style.");
+    }
+
+    /// <summary>
+    /// Retrieves the line join style used when stroking connected segments in the path.
+    /// </summary>
+    /// <returns>A <see cref="PdfLineJoinStyle"/> indicating how corners are rendered.</returns>
+    public PdfLineJoinStyle GetLineJoin()
+    {
+        int raw = PdfEditNative.FPDFPageObj_GetLineJoin(_handle);
+
+        return raw switch
+        {
+            0 => PdfLineJoinStyle.Miter,
+            1 => PdfLineJoinStyle.Round,
+            2 => PdfLineJoinStyle.Bevel,
+            _ => throw new dotPDFiumException($"Unknown line join style: {raw}")
+        };
+    }
+
+    /// <summary>
+    /// Sets the line join style used for path corners when stroking.
+    /// </summary>
+    /// <param name="joinStyle">The desired <see cref="PdfLineJoinStyle"/> to apply.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails.</exception>
+    public void SetLineJoin(PdfLineJoinStyle joinStyle)
+    {
+        bool ok = PdfEditNative.FPDFPageObj_SetLineJoin(_handle, (int)joinStyle);
+        if (!ok)
+            throw new dotPDFiumException("Failed to set line join style.");
+    }
+
+
 }

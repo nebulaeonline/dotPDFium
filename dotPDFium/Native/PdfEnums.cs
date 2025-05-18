@@ -53,11 +53,24 @@ public enum PdfFillMode
 /// </summary>
 /// <remarks>This enumeration defines the available line cap styles for stroking operations in PDF graphics. The
 /// line cap determines how the end of a line is rendered when it does not connect to another line.</remarks>
-public enum PdfLineCap
+public enum PdfLineCapStyle
 {
     Butt = 0,
     Round = 1,
-    ProjectingSquare = 2
+    Square = 2
+}
+
+/// <summary>
+/// Specifies the style of line joins used when drawing paths in a PDF document.
+/// </summary>
+/// <remarks>Line join styles determine how the intersection between two connected lines is rendered. This
+/// enumeration is typically used in conjunction with PDF graphics operations to control the appearance of line joins in
+/// vector graphics.</remarks>
+public enum PdfLineJoinStyle
+{
+    Miter = 0,
+    Round = 1,
+    Bevel = 2
 }
 
 /// <summary>
@@ -716,6 +729,17 @@ public enum PdfFileVersion
     Pdf17 = 17
 }
 
+public enum PdfSecurityHandlerRevision
+{
+    None = -1,
+    Revision2_RC4_40 = 2,
+    Revision3_RC4_128 = 3,
+    Revision4_AES_128 = 4,
+    Revision5_AES_256 = 5,
+    Revision6_AES_256_Enhanced = 6
+}
+
+
 /// <summary>
 /// Specifies the type of font used in a PDF document or text object.
 /// </summary>
@@ -739,6 +763,11 @@ public enum PdfPathDrawMode
     FillStroke = Fill | Stroke
 }
 
+/// <summary>
+/// Specifies the rendering mode for text in a PDF document.
+/// </summary>
+/// <remarks>The rendering mode determines how text is drawn or clipped in the PDF content.  It can control
+/// whether the text is filled, stroked, both, or used as a clipping path.</remarks>
 public enum PdfTextRenderMode
 {
     Fill = 0,
@@ -751,10 +780,30 @@ public enum PdfTextRenderMode
     Clip = 7
 }
 
+/// <summary>
+/// Specifies the type of parameter used in a PDF mark operation.
+/// </summary>
+/// <remarks>This enumeration is used to define the data type of parameters when working with PDF mark operations.
+/// Each value represents a specific type of parameter that can be passed or processed.</remarks>
 public enum PdfMarkParamType
 {
     None = 0,
     Int = 1,
     String = 2,
     Blob = 3
+}
+
+/// <summary>
+/// Specifies the permission levels for modifying a PDF document with DocMDP (Document Modification Detection and
+/// Prevention) settings.
+/// </summary>
+/// <remarks>These permissions are used to define the allowed operations on a PDF document when DocMDP is applied.
+/// The permissions range from no changes allowed to allowing specific modifications such as filling forms or adding
+/// annotations.</remarks>
+public enum PdfDocMDPPermission
+{
+    None = 0,
+    NoChangesAllowed = 1,
+    FillAndPageInsert = 2,
+    FillSignAndAnnotate = 3
 }

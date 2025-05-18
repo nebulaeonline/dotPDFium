@@ -9,34 +9,17 @@ public static class PdfPpoNative
 
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDF_ImportPagesByIndex(
-        IntPtr destDoc,
-        IntPtr srcDoc,
-        int[] pageIndices,
-        uint length,
-        int index);
+    public static extern bool FPDF_ImportPagesByIndex(IntPtr destDoc, IntPtr srcDoc, int[] pageIndices, uint length, int index);
 
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDF_ImportPages(
-        IntPtr destDoc,
-        IntPtr srcDoc,
-        [MarshalAs(UnmanagedType.LPStr)] string pageRange,
-        int index);
+    public static extern bool FPDF_ImportPages(IntPtr destDoc, IntPtr srcDoc, [MarshalAs(UnmanagedType.LPStr)] string pageRange, int index);
 
     [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDF_ImportNPagesToOne(
-        IntPtr srcDoc,
-        float outputWidth,
-        float outputHeight,
-        UIntPtr pagesX,
-        UIntPtr pagesY);
+    public static extern IntPtr FPDF_ImportNPagesToOne(IntPtr srcDoc, float outputWidth, float outputHeight, UIntPtr pagesX, UIntPtr pagesY);
 
     [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDF_NewXObjectFromPage(
-        IntPtr destDoc,
-        IntPtr srcDoc,
-        int srcPageIndex);
+    public static extern IntPtr FPDF_NewXObjectFromPage(IntPtr destDoc, IntPtr srcDoc, int srcPageIndex);
 
     [DllImport(PdfiumLib)]
     public static extern void FPDF_CloseXObject(IntPtr xobject);
