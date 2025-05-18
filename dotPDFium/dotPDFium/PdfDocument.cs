@@ -1,4 +1,5 @@
-﻿using nebulae.dotPDFium.Native;
+﻿using nebulae.dotPDFium.Forms;
+using nebulae.dotPDFium.Native;
 using System;
 using System.Diagnostics;
 using System.Reflection.Metadata;
@@ -12,6 +13,8 @@ public class PdfDocument : PdfObject
     /// This is a list of open pages; it is used to keep track of the pages that are currently open.
     /// </summary>
     private readonly HashSet<PdfPage> _openPages = new();
+
+    public PdfFormContext? Forms { get; private set; }
 
     /// <summary>
     /// Registers a PDF page for tracking within the current context.
@@ -821,10 +824,23 @@ public class PdfDocument : PdfObject
     /// <param name="type">The type of page action to retrieve. This specifies the event for which the additional action is defined.</param>
     /// <returns>A <see cref="PdfAction"/> representing the additional action for the specified page action type,  or <see
     /// langword="null"/> if no additional action is defined for the specified type.</returns>
-    public PdfAction? GetAdditionalAction(PdfPageActionType type)
+    public PdfAction? GetAdditionalAction(PdfPageAActionType type)
     {
         var handle = PdfDocNative.FPDF_GetPageAAction(_handle, (int)type);
         return handle == IntPtr.Zero ? null : new PdfAction(handle);
+    }
+
+    /// <summary>
+    /// Enables form filling functionality for the PDF document.
+    /// </summary>
+    /// <param name="info">The configuration information required to initialize form filling.</param>
+    /// <exception cref="InvalidOperationException">Thrown if forms have already been initialized for the document.</exception>
+    public void EnableForms(PdfFormFillInfo info)
+    {
+        if (Forms is null)
+            throw new InvalidOperationException("Forms already initialized.");
+
+        Forms = new PdfFormContext(this, info);
     }
 
     /// <summary>

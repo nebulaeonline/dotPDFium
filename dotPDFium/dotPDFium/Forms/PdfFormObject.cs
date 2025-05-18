@@ -1,10 +1,10 @@
 ﻿using nebulae.dotPDFium.Native;
 
-namespace nebulae.dotPDFium;
+namespace nebulae.dotPDFium.Forms;
 
 public class PdfFormObject : PdfPageObject
 {
-    internal PdfFormObject(IntPtr handle)
+    internal PdfFormObject(nint handle)
         : base(handle, PdfPageObjectType.Image)
     {
     }

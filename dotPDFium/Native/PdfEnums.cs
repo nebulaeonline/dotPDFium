@@ -142,14 +142,52 @@ public enum PdfAnnotationFlags
 }
 
 /// <summary>
+/// Specifies the flags that define the behavior and appearance of a form field in a PDF document.
+/// </summary>
+/// <remarks>This enumeration is decorated with the <see cref="FlagsAttribute"/>, allowing a combination of values
+/// to be specified using a bitwise OR operation. Each flag represents a specific characteristic or functionality of a
+/// form field, such as whether it is read-only, required, or supports multiline input.</remarks>
+[Flags]
+public enum PdfFormFieldFlags
+{
+    ReadOnly = 1 << 0,
+    Required = 1 << 1,
+    NoExport = 1 << 2,
+    Multiline = 1 << 12,
+    Password = 1 << 13,
+    NoToggleToOff = 1 << 14,
+    Radio = 1 << 15,
+    PushButton = 1 << 16,
+    Combo = 1 << 17,
+    Edit = 1 << 18,
+    Sort = 1 << 19,
+    FileSelect = 1 << 20,
+    MultiSelect = 1 << 21,
+    DoNotSpellCheck = 1 << 22,
+    DoNotScroll = 1 << 23,
+    Comb = 1 << 24,
+    RichText = 1 << 25,
+    RadiosInUnison = 1 << 26,
+    CommitOnSelChange = 1 << 27
+}
+
+
+/// <summary>
 /// Specifies the type of color associated with a PDF annotation.
 /// </summary>
 /// <remarks>This enumeration is used to distinguish between the primary color of the annotation and its interior
 /// color, if applicable. The values correspond to specific color roles within a PDF annotation's appearance.</remarks>
-public enum PdfAnnotColorType
+public enum PdfAnnotationColorType
 {
     Color = 0,
     InteriorColor = 1
+}
+
+public enum PdfAnnotationAppearanceMode
+{
+    Normal = 0,
+    Rollover = 1,
+    Down = 2
 }
 
 /// <summary>
@@ -183,6 +221,24 @@ public enum AttachmentValueType
     Stream = 6
 }
 
+/// <summary>
+/// Represents the type of a value in a PDF document.
+/// </summary>
+/// <remarks>This enumeration is used to identify the data type of a value within a PDF structure,  such as a
+/// boolean, number, string, or more complex types like arrays and dictionaries. It is commonly used when parsing or
+/// manipulating PDF content to determine the type of a value.</remarks>
+public enum PdfValueType
+{
+    NotFound = 0,
+    Boolean = 1,
+    Number = 2,
+    String = 3,
+    Name = 4,
+    Array = 5,
+    Dictionary = 6,
+    Stream = 7,
+    Null = 8
+}
 
 /// <summary>
 /// Specifies the type of action that can be performed in a PDF document.
@@ -199,6 +255,21 @@ public enum PdfActionType
     Launch = 4,
     Named = 5,
     JavaScript = 6,
+}
+
+/// <summary>
+/// Specifies the types of additional actions (AAction) that can be triggered in a PDF document.
+/// </summary>
+/// <remarks>These actions represent specific events in the lifecycle of a PDF document, such as closing, saving,
+/// or printing. They can be used to define custom behaviors or scripts that execute when the corresponding event
+/// occurs.</remarks>
+public enum PdfDocumentAActionType
+{
+    WillClose = 0,   // WC
+    WillSave = 1,    // WO
+    WillPrint = 2,   // WS
+    DidSave = 3,     // DS
+    DidPrint = 4     // DP
 }
 
 /// <summary>
@@ -323,14 +394,13 @@ public enum PdfFormType
 public enum PdfFormFieldType
 {
     Unknown = 0,
-    PushButton = 1,
+    Button = 1,
     CheckBox = 2,
     RadioButton = 3,
     ComboBox = 4,
     ListBox = 5,
-    TextField = 6,
+    Text = 6,
     Signature = 7
-    // XFA values 8–15 if needed
 }
 
 /// <summary>
@@ -353,10 +423,39 @@ public enum PdfDocActionType
 /// </summary>
 /// <remarks>This enumeration is used to indicate whether an action should occur when a PDF page is opened or
 /// closed.</remarks>
-public enum PdfPageActionType
+public enum PdfPageAActionType
 {
     Open = 0,
     Close = 1
+}
+
+/// <summary>
+/// Specifies the types of form fields in a PDF document that can be highlighted.
+/// </summary>
+/// <remarks>This enumeration is used to indicate the type of form field to which a specific operation or behavior
+/// applies. For example, it can be used to determine which form fields should be visually highlighted in a PDF
+/// viewer.</remarks>
+public enum PdfFormFieldHighlightType
+{
+    All = 0,         // Applies to all types
+    TextField = 1,
+    CheckBox = 2,
+    RadioButton = 3,
+    PushButton = 4,
+    ComboBox = 5,
+    ListBox = 6
+}
+
+/// <summary>
+/// Specifies the type of color applied to a PDF form field.
+/// </summary>
+/// <remarks>This enumeration is used to define the context in which a color is applied to a PDF form field,  such
+/// as the background fill, border stroke, or text font color.</remarks>
+public enum PdfFormFieldColorType
+{
+    Fill = 0,   // Background color
+    Border = 1, // Border stroke color
+    Text = 2    // Font color (for text fields)
 }
 
 /// <summary>

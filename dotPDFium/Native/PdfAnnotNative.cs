@@ -70,13 +70,10 @@ public static class PdfAnnotNative
 
     [DllImport(PdfiumLib)] 
     public static extern int FPDFAnnot_GetValueType(IntPtr annot, string key);
-    
-    [DllImport(PdfiumLib)] 
-    public static extern bool FPDFAnnot_SetStringValue(IntPtr annot, string key, [MarshalAs(UnmanagedType.LPWStr)] string value);
-    
-    [DllImport(PdfiumLib)] 
-    public static extern uint FPDFAnnot_GetStringValue(IntPtr annot, string key, [Out] char[] buffer, uint buflen);
-    
+
+    [DllImport(PdfiumLib, CharSet = CharSet.Ansi)]
+    public static extern bool FPDFAnnot_GetStringValue(IntPtr annot, [MarshalAs(UnmanagedType.LPStr)] string key, [Out] byte[] buffer, uint buflen);
+
     [DllImport(PdfiumLib)] 
     public static extern bool FPDFAnnot_GetNumberValue(IntPtr annot, string key, out float value);
 
@@ -200,5 +197,7 @@ public static class PdfAnnotNative
     [DllImport(PdfiumLib)]
     public static extern bool FPDFAnnot_GetRect(IntPtr annot, out FsRectF rect);
 
+    [DllImport(PdfiumLib, CharSet = CharSet.Unicode)]
+    public static extern bool FPDFAnnot_SetStringValue(IntPtr annot, [MarshalAs(UnmanagedType.LPStr)] string key, [MarshalAs(UnmanagedType.LPWStr)] string value);
 }
 

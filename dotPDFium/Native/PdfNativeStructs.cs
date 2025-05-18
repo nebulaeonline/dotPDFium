@@ -143,6 +143,21 @@ public struct FsQuadPointsF
     }
 }
 
+public readonly struct PdfAnnotationBorder
+{
+    public float HorizontalRadius { get; }
+    public float VerticalRadius { get; }
+    public float BorderWidth { get; }
+
+    public PdfAnnotationBorder(float hr, float vr, float width)
+    {
+        HorizontalRadius = hr;
+        VerticalRadius = vr;
+        BorderWidth = width;
+    }
+}
+
+
 [StructLayout(LayoutKind.Sequential)]
 public struct PdfImageObjMetadata
 {

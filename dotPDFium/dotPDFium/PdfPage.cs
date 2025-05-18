@@ -1,4 +1,7 @@
-﻿using nebulae.dotPDFium.Native;
+﻿using nebulae.dotPDFium.Forms;
+using nebulae.dotPDFium.Native;
+using System.Reflection.Metadata;
+using System.Xml.Linq;
 
 namespace nebulae.dotPDFium
 {
@@ -200,6 +203,11 @@ namespace nebulae.dotPDFium
                 throw new ArgumentNullException(nameof(bitmap));
 
             PdfViewNative.FPDF_RenderPageBitmap(bitmap.Handle, _handle, startX, startY, width, height, (int)rotate, (int)flags);
+
+            if (_parentDoc.Forms is { } forms)
+            {
+                forms.RenderFormFields(this, bitmap);
+            }
         }
 
         /// <summary>
@@ -230,6 +238,11 @@ namespace nebulae.dotPDFium
                 ref clip,
                 (int)flags
             );
+
+            if (_parentDoc.Forms is { } forms)
+            {
+                forms.RenderFormFields(this, bitmap);
+            }
         }
 
         /// <summary>
