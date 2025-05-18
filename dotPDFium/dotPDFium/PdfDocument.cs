@@ -231,6 +231,28 @@ public class PdfDocument : PdfObject
     }
 
     /// <summary>
+    /// Determines whether the document is tagged (i.e., contains a structure tree).
+    /// </summary>
+    /// <returns><see langword="true"/> if the document is tagged; otherwise <see langword="false"/>.</returns>
+    public bool IsTagged()
+    {
+        return PdfCatalogNative.FPDFCatalog_IsTagged(_handle);
+    }
+
+    /// <summary>
+    /// Sets the document-level default language in the PDF catalog (/Lang).
+    /// </summary>
+    /// <param name="language">The BCP 47 language tag (e.g., "en-US", "fr-FR").</param>
+    /// <returns><see langword="true"/> if the language was successfully set; otherwise <see langword="false"/>.</returns>
+    public bool SetDefaultLanguage(string language)
+    {
+        if (string.IsNullOrWhiteSpace(language))
+            throw new ArgumentException("Language cannot be null or empty.", nameof(language));
+
+        return PdfCatalogNative.FPDFCatalog_SetLanguage(_handle, language);
+    }
+
+    /// <summary>
     /// Loads a PDF document from a file. The file path must be valid and the file must exist.
     /// </summary>
     /// <param name="filePath">Path to the file to load</param>

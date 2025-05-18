@@ -30,7 +30,7 @@ public static class PdfProgressiveNative
         int sizeY,
         int rotate,
         int flags,
-        ref FPDF_COLORSCHEME colorScheme,
+        ref PdfColorScheme colorScheme,
         ref IfSdkPause pause);
 
     // Continue rendering if FPDF_RENDER_TOBECONTINUED

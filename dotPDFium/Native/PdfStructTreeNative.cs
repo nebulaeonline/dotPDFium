@@ -44,13 +44,16 @@ public static class PdfStructTreeNative
     public static extern uint FPDF_StructElement_GetLang(IntPtr element, [Out] char[] buffer, uint length);
 
     [DllImport(PdfiumLib)]
-    public static extern uint FPDF_StructElement_GetType(IntPtr element, [Out] char[] buffer, uint length);
+    public static extern uint FPDF_StructElement_GetType(IntPtr element, [Out] byte[] buffer, uint buflen);
 
     [DllImport(PdfiumLib)]
     public static extern uint FPDF_StructElement_GetObjType(IntPtr element, [Out] char[] buffer, uint length);
 
     [DllImport(PdfiumLib)]
     public static extern uint FPDF_StructElement_GetTitle(IntPtr element, [Out] char[] buffer, uint length);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDF_StructElement_GetAttr(IntPtr element);
 
     [DllImport(PdfiumLib)]
     public static extern int FPDF_StructElement_GetAttributeCount(IntPtr element);
@@ -63,12 +66,7 @@ public static class PdfStructTreeNative
 
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDF_StructElement_Attr_GetName(
-        IntPtr attr,
-        int index,
-        IntPtr buffer,
-        uint buflen,
-        out uint outBuflen);
+    public static extern bool FPDF_StructElement_Attr_GetName(IntPtr attr, int index, IntPtr buffer, uint buflen, out uint outBuflen);
 
     [DllImport(PdfiumLib)]
     public static extern IntPtr FPDF_StructElement_Attr_GetValue(IntPtr attr, [MarshalAs(UnmanagedType.LPStr)] string name);
@@ -86,19 +84,11 @@ public static class PdfStructTreeNative
 
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDF_StructElement_Attr_GetStringValue(
-        IntPtr value,
-        IntPtr buffer,
-        uint buflen,
-        out uint outBuflen);
+    public static extern bool FPDF_StructElement_Attr_GetStringValue(IntPtr value, IntPtr buffer, uint buflen, out uint outBuflen);
 
     [DllImport(PdfiumLib)]
     [return: MarshalAs(UnmanagedType.I1)]
-    public static extern bool FPDF_StructElement_Attr_GetBlobValue(
-        IntPtr value,
-        IntPtr buffer,
-        uint buflen,
-        out uint outBuflen);
+    public static extern bool FPDF_StructElement_Attr_GetBlobValue(IntPtr value, IntPtr buffer, uint buflen, out uint outBuflen);
 
     [DllImport(PdfiumLib)]
     public static extern int FPDF_StructElement_Attr_CountChildren(IntPtr value);
@@ -116,11 +106,7 @@ public static class PdfStructTreeNative
     public static extern int FPDF_StructElement_GetChildMarkedContentID(IntPtr element, int index);
 
     [DllImport(PdfiumLib)]
-    public static extern uint FPDF_StructElement_GetStringAttribute(
-        IntPtr element,
-        [MarshalAs(UnmanagedType.LPStr)] string name,
-        [Out] char[] buffer,
-        uint length);
+    public static extern uint FPDF_StructElement_GetStringAttribute(IntPtr element, [MarshalAs(UnmanagedType.LPStr)] string name, [Out] char[] buffer, uint length);
 
 }
 

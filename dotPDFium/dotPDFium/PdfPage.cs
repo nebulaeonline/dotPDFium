@@ -154,6 +154,16 @@ namespace nebulae.dotPDFium
         }
 
         /// <summary>
+        /// Gets the logical structure tree for this page, if one exists.
+        /// </summary>
+        /// <returns>A <see cref="PdfStructTree"/>, or <c>null</c> if the page has no tagged content.</returns>
+        public PdfStructTree? GetStructTree()
+        {
+            var treeHandle = PdfStructTreeNative.FPDF_StructTree_GetForPage(_handle);
+            return treeHandle == IntPtr.Zero ? null : new PdfStructTree(treeHandle);
+        }
+
+        /// <summary>
         /// Determines whether the PDF page contains any transparent elements.
         /// </summary>
         /// <remarks>This method checks for the presence of transparency on the PDF page, which may affect

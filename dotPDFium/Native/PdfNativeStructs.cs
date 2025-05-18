@@ -309,18 +309,18 @@ public struct IfSdkPause
 {
     public int version;
 
-    [MarshalAs(UnmanagedType.FunctionPtr)]
-    public NeedToPauseNowCallback NeedToPauseNow;
+    // Pointer to a native callback: delegate or IntPtr (we’ll handle both)
+    public IntPtr NeedToPauseNow;
 
-    public IntPtr user;
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate int NeedToPauseNowCallback(IntPtr pThis);
+    // Optional user-defined context
+    public IntPtr userData;
 }
 
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public delegate int NeedToPauseNowDelegate(ref IfSdkPause pause);
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FPDF_COLORSCHEME
+public struct PdfColorScheme
 {
     public uint path_fill_color;
     public uint path_stroke_color;

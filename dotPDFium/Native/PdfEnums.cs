@@ -729,6 +729,13 @@ public enum PdfFileVersion
     Pdf17 = 17
 }
 
+/// <summary>
+/// Represents the revision levels of the PDF security handler, which determine the encryption algorithm and key length
+/// used for securing a PDF document.
+/// </summary>
+/// <remarks>Each revision corresponds to a specific encryption standard and key length, as defined by the PDF
+/// specification.  Use this enumeration to identify or specify the security handler revision when working with
+/// encrypted PDF documents.</remarks>
 public enum PdfSecurityHandlerRevision
 {
     None = -1,
@@ -806,4 +813,54 @@ public enum PdfDocMDPPermission
     NoChangesAllowed = 1,
     FillAndPageInsert = 2,
     FillSignAndAnnotate = 3
+}
+
+/// <summary>
+/// Represents the types of structural elements in a PDF document, as defined by the PDF specification.
+/// </summary>
+/// <remarks>This enumeration provides a comprehensive list of structural element types that can be used to
+/// describe the logical structure of a PDF document. These types are commonly used in tagged PDFs to improve
+/// accessibility, enable content reflow, and provide semantic meaning to document elements.  Each value corresponds to
+/// a specific structural role, such as headings, lists, tables, or annotations. For example, <see cref="H1"/> through
+/// <see cref="H6"/> represent heading levels, while <see cref="Table"/>, <see cref="TR"/>, <see cref="TH"/>, and <see
+/// cref="TD"/> represent table structures.</remarks>
+public enum PdfStructElementType
+{
+    Unknown = 0,
+    Document,
+    Part,
+    Sect,
+    Art,
+    Div,
+    Span,
+    Quote,
+    Note,
+    Reference,
+    BibEntry,
+    Code,
+    Link,
+    Annot,
+    BlockQuote,
+    Caption,
+    NonStruct,
+    Paragraph,
+    H,      // generic heading
+    H1,
+    H2,
+    H3,
+    H4,
+    H5,
+    H6,
+    L,      // list
+    LI,     // list item
+    LBody,
+    Table,
+    TR,
+    TH,
+    TD,
+    TOC,
+    TOCI,
+    Figure,
+    Formula,
+    Form
 }
