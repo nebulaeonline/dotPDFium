@@ -28,7 +28,7 @@ We are at v0.2.3-prealpha, which is a *very* early pre-alpha version. The goal i
 - Annotations imlemented
 - Very few formal tests
 - No documentation or examples yet
-- Need to build out: Structured trees and progressive loading
+- Structured trees and progressive loading are implemented
 - XFA support is not planned
 
 ---
