@@ -24,7 +24,7 @@ We are at v0.2.2-prealpha, which is a *very* early pre-alpha version. The goal i
 - Text extraction imlemented
 - Rendering and search implemented
 - Security implemented
-- Forms are a WIP and broken at the moment
+- Forms are a WIP; If you have suggestions, please open an issue or PR
 - Annotations imlemented
 - Very few formal tests
 - No documentation or examples yet

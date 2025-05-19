@@ -36,8 +36,55 @@ public class PdfFormElement : IDisposable
         Page = page ?? throw new ArgumentNullException(nameof(page));
     }
 
-    public IntPtr Handle => _annot;
     public PdfFormElementType ElementType => _type;
+    public IntPtr Handle => _annot;
+
+    public FsRectF? GetRect()
+    {
+        return PdfAnnotNative.FPDFAnnot_GetRect(_annot, out FsRectF rect) ? rect : null;
+    }
+
+    public bool SetRect(FsRectF rect)
+    {
+        return PdfAnnotNative.FPDFAnnot_SetRect(_annot, ref rect);
+    }
+
+    public bool SetBorderColor(RgbaColor color)
+    {
+        return PdfAnnotNative.FPDFAnnot_SetColor(_annot, (int)PdfFormFieldColorType.Border, color.R, color.G, color.B, color.A);
+    }
+
+    public bool SetFillColor(RgbaColor color)
+    {
+        return PdfAnnotNative.FPDFAnnot_SetColor(_annot, (int)PdfFormFieldColorType.Fill, color.R, color.G, color.B, color.A);
+    }
+
+    public bool SetTextColor(RgbaColor color)
+    {
+        return PdfAnnotNative.FPDFAnnot_SetColor(_annot, (int)PdfFormFieldColorType.Text, color.R, color.G, color.B, color.A);
+    }
+
+    public float? GetFontSize()
+    {
+        return PdfAnnotNative.FPDFAnnot_GetFontSize(Form.Handle, _annot, out float size) ? size : null;
+    }
+
+    public RgbaColor? GetFontColor()
+    {
+        return PdfAnnotNative.FPDFAnnot_GetFontColor(Form.Handle, _annot, out uint r, out uint g, out uint b)
+            ? new RgbaColor((byte)r, (byte)g, (byte)b, 255)
+            : null;
+    }
+
+    public PdfAnnotationFlags GetAnnotationFlags()
+    {
+        return (PdfAnnotationFlags)PdfAnnotNative.FPDFAnnot_GetFlags(_annot);
+    }
+
+    public bool SetAnnotationFlags(PdfAnnotationFlags flags)
+    {
+        return PdfAnnotNative.FPDFAnnot_SetFlags(_annot, (int)flags);
+    }
 
     public void Dispose()
     {
@@ -58,4 +105,5 @@ public class PdfFormElement : IDisposable
         _disposed = true;
     }
 }
+
 
