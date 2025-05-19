@@ -45,7 +45,6 @@ public class PdfPageObject : PdfObject
             PdfPageObjectType.Text => new PdfTextObject(handle),
             PdfPageObjectType.Image => new PdfImageObject(handle),
             PdfPageObjectType.Path => new PdfPathObject(handle),
-            PdfPageObjectType.Form => new PdfFormXObject(handle),
             _ => new PdfPageObject(handle, type)
         };
     }

@@ -19,5 +19,4 @@ public class CreateAndEditTests
         doc.SaveTo("generated.pdf");
         PDFiumEngine.Shutdown();
     }
-
 }

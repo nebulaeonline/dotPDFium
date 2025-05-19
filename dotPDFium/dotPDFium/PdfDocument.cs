@@ -395,35 +395,6 @@ public class PdfDocument : PdfObject
     }
 
     /// <summary>
-    /// Loads a PDF document using a custom file access descriptor.
-    /// </summary>
-    /// <remarks>This method uses the <see cref="PdfFileAccess"/> structure to provide custom file access for
-    /// loading the PDF document. Ensure that the <paramref name="fileAccess"/> descriptor is properly initialized
-    /// before calling this method.</remarks>
-    /// <param name="fileAccess">The <see cref="PdfFileAccess"/> descriptor that provides custom file access functionality. The descriptor must
-    /// have a valid <c>m_GetBlock</c> delegate and a non-zero <c>m_FileLen</c>.</param>
-    /// <param name="password">An optional password to decrypt the PDF document, if it is password-protected. Pass <see langword="null"/> or an
-    /// empty string if no password is required.</param>
-    /// <returns>A <see cref="PdfDocument"/> instance representing the loaded PDF document.</returns>
-    /// <exception cref="ArgumentException">Thrown if the <paramref name="fileAccess"/> descriptor is invalid, such as when <c>m_GetBlock</c> is <see
-    /// langword="null"/> or <c>m_FileLen</c> is zero.</exception>
-    /// <exception cref="dotPDFiumException">Thrown if the PDF document cannot be loaded, typically due to an error in the underlying PDF library or an
-    /// invalid file format.</exception>
-    public static PdfDocument LoadFromCustomAccess(PdfFileAccess fileAccess, string? password = null)
-    {
-        if (fileAccess.m_GetBlock == null || fileAccess.m_FileLen == 0)
-            throw new ArgumentException("Invalid FpdfFileAccess descriptor.", nameof(fileAccess));
-
-        var handle = PdfViewNative.FPDF_LoadCustomDocument(ref fileAccess, password ?? string.Empty);
-
-        if (handle == IntPtr.Zero)
-            throw new dotPDFiumException($"Failed to load PDF document from custom file access: {PdfObject.GetPDFiumError()}");
-
-        return new PdfDocument(handle);
-    }
-
-
-    /// <summary>
     /// Creates a new PDF document. This method initializes a new PDF document and returns a new document object.
     /// </summary>
     /// <returns>A new PdfDocument</returns>
@@ -1119,19 +1090,6 @@ public class PdfDocument : PdfObject
     {
         var handle = PdfDocNative.FPDF_GetPageAAction(_handle, (int)type);
         return handle == IntPtr.Zero ? null : new PdfAction(handle);
-    }
-
-    /// <summary>
-    /// Enables form filling functionality for the PDF document.
-    /// </summary>
-    /// <param name="info">The configuration information required to initialize form filling.</param>
-    /// <exception cref="InvalidOperationException">Thrown if forms have already been initialized for the document.</exception>
-    public void EnableForms(PdfFormFillInfo info)
-    {
-        if (Forms is null)
-            throw new InvalidOperationException("Forms already initialized.");
-
-        Forms = new PdfFormContext(this, info);
     }
 
     /// <summary>

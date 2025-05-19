@@ -224,11 +224,6 @@ namespace nebulae.dotPDFium
                 throw new ArgumentNullException(nameof(bitmap));
 
             PdfViewNative.FPDF_RenderPageBitmap(bitmap.Handle, _handle, startX, startY, width, height, (int)rotate, (int)flags);
-
-            if (_parentDoc.Forms is { } forms)
-            {
-                forms.RenderFormFields(this, bitmap);
-            }
         }
 
         /// <summary>
@@ -259,11 +254,6 @@ namespace nebulae.dotPDFium
                 ref clip,
                 (int)flags
             );
-
-            if (_parentDoc.Forms is { } forms)
-            {
-                forms.RenderFormFields(this, bitmap);
-            }
         }
 
         /// <summary>
@@ -396,7 +386,6 @@ namespace nebulae.dotPDFium
                 PdfPageObjectType.Text => new PdfTextObject(objHandle),
                 PdfPageObjectType.Image => new PdfImageObject(objHandle),
                 PdfPageObjectType.Path => new PdfPathObject(objHandle),
-                PdfPageObjectType.Form => new PdfFormObject(objHandle),
                 _ => new PdfPageObject(objHandle)
             };
         }
