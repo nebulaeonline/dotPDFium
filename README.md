@@ -35,3 +35,23 @@ We are at v0.2.4-prealpha, which is a *very* early pre-alpha version. The goal i
 
 **Note:** This is a low-level interop library in early development. Expect sharp edges, breaking changes, and missing functionality.
 
+### Usage
+```csharp
+    using nebulae.dotPDFium;
+
+    PDFiumEngine.Init();
+
+    var doc = PdfDocument.CreateNew();
+    var page = doc.CreatePage(0, 612, 792); // 8.5x11 inches
+
+    var font = doc.LoadStandardFont("Helvetica");
+    var text = doc.CreateTextObject(font, 12f);
+    text.SetText("Hello from test!");
+    text.SetPosition(100, 700);
+    page.InsertObject(text);
+
+    page.FinalizeContent();
+    doc.SaveTo("generated.pdf");
+
+    PDFiumEngine.Shutdown();
+```
