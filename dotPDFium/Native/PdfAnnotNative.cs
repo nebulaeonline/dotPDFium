@@ -77,6 +77,9 @@ public static class PdfAnnotNative
     [DllImport(PdfiumLib)] 
     public static extern bool FPDFAnnot_GetNumberValue(IntPtr annot, string key, out float value);
 
+    [DllImport(PdfiumLib)]
+    public static extern bool FPDFAnnot_SetNumberValue(IntPtr annot, [MarshalAs(UnmanagedType.LPStr)] string key, float value);
+
     [DllImport(PdfiumLib)] 
     public static extern bool FPDFAnnot_SetAP(IntPtr annot, int mode, [MarshalAs(UnmanagedType.LPWStr)] string value);
     

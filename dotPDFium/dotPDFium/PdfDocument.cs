@@ -15,8 +15,6 @@ public class PdfDocument : PdfObject
     /// </summary>
     private readonly HashSet<PdfPage> _openPages = new();
 
-    public PdfFormContext? Forms { get; private set; }
-
     /// <summary>
     /// Class constructor. This constructor is internal and should not be used directly.
     /// </summary>
@@ -27,6 +25,26 @@ public class PdfDocument : PdfObject
         // Throw on null pointer
         if (handle == IntPtr.Zero)
             throw new dotPDFiumException($"Invalid document handle ({nameof(handle)}): {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
+    /// Resolves a PDF page from the specified handle.
+    /// </summary>
+    /// <remarks>This method searches through the collection of open pages to find a match for the provided
+    /// handle.  If the handle does not correspond to any open page, the method returns <see
+    /// langword="null"/>.</remarks>
+    /// <param name="pageHandle">The handle of the page to resolve.</param>
+    /// <returns>The <see cref="PdfPage"/> instance associated with the specified handle if it is currently open;  otherwise,
+    /// <see langword="null"/>.</returns>
+    public PdfPage? ResolvePage(IntPtr pageHandle)
+    {
+        foreach (var page in _openPages) // Assuming _openPages is your HashSet<PdfPage>
+        {
+            if (page.Handle == pageHandle)
+                return page;
+        }
+
+        return null; // Not currently open
     }
 
     /// <summary>

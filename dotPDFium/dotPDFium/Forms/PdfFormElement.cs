@@ -4,15 +4,14 @@ using nebulae.dotPDFium.Native;
 
 public enum PdfFormElementType
 {
-    TextField,
+    Unknown = -1,
+    PushButton,
     CheckBox,
     RadioButton,
     ComboBox,
     ListBox,
-    PushButton,
+    TextField,
     SignatureField,
-    Hidden,
-    FileSelectButton,
 }
 
 public class PdfFormElement : IDisposable
