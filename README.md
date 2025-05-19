@@ -8,7 +8,7 @@ We're not yet feature-complete, stable, or ready for production use. This reposi
 
 The library contains the latest PDFium binaries (v138.0.7175.0) from chromium/7175, built by bblanchon (https://github.com/bblanchon/pdfium-binaries/releases) for Windows x64 & ARM64, Linux x64 & ARM64, and MacOS (as a universal dylib supporting x64 & ARM64).
 
-We are at v0.2.4-prealpha, which is a *very* early pre-alpha version. The goal is to hit v1.0 within 3 months or so, maybe sooner.
+We are at v0.2.5-prealpha, which is a *very* early pre-alpha version. The goal is to hit v1.0 within 3 months or so, maybe sooner.
 
 ### Goals (eventually)
 
@@ -35,7 +35,11 @@ We are at v0.2.4-prealpha, which is a *very* early pre-alpha version. The goal i
 
 **Note:** This is a low-level interop library in early development. Expect sharp edges, breaking changes, and missing functionality.
 
-### Usage
+---
+
+### Example Usage
+
+#### Create a new PDF document
 ```csharp
     using nebulae.dotPDFium;
 
@@ -52,6 +56,57 @@ We are at v0.2.4-prealpha, which is a *very* early pre-alpha version. The goal i
 
     page.FinalizeContent();
     doc.SaveTo("generated.pdf");
+
+    PDFiumEngine.Shutdown();
+```
+
+#### Cross platform rendering & drawing (using SixLabors for cross-platform support)
+```csharp
+
+    PDFiumEngine.Init();
+
+    var doc = PdfDocument.LoadFromFile("test.pdf");
+    using var page = doc.LoadPage(0);
+
+    int dpi = 144;
+    float scale = dpi / 72f;
+
+    int width = (int)(page.Width * scale);
+    int height = (int)(page.Height * scale);
+
+    using var pdfBitmap = PdfBitmap.Create(width, height);
+    pdfBitmap.FillRect(0, 0, width, height, 0xFFFFFFFF); // White background
+
+    page.RenderToBitmap(pdfBitmap, 0, 0, width, height);
+
+    var imageBuffer = new Rgba32[width * height];
+
+    unsafe
+    {
+        Buffer.MemoryCopy(
+            source: (void*)pdfBitmap.Buffer,
+            destination: Unsafe.AsPointer(ref imageBuffer[0]),
+            destinationSizeInBytes: imageBuffer.Length * sizeof(uint), // Rgba32 is 4 bytes
+            sourceBytesToCopy: imageBuffer.Length * sizeof(uint)
+        );
+    }
+
+    var image = Image.WrapMemory<Rgba32>(imageBuffer, width, height);
+
+    // Apply ImageSharp.Drawing: draw a red rectangle on top of the rendered PDF
+    image.Mutate(ctx =>
+    {
+        ctx.DrawPolygon(Color.Red, 4f, new PointF[]
+        {
+            new(50, 50),
+            new(width - 50, 50),
+            new(width - 50, height - 50),
+            new(50, height - 50),
+            new(50, 50)
+        });
+    });
+
+    image.SaveAsPng("rendered-drawing.png");
 
     PDFiumEngine.Shutdown();
 ```
