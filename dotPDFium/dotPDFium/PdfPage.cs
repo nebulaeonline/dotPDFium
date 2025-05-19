@@ -164,6 +164,17 @@ namespace nebulae.dotPDFium
         }
 
         /// <summary>
+        /// Retrieves the link annotation at the specified index as a <see cref="PdfAnnotation"/>, if it exists.
+        /// </summary>
+        /// <param name="linkIndex">The zero-based index of the link annotation.</param>
+        /// <returns>The corresponding <see cref="PdfAnnotation"/> or <c>null</c> if not found.</returns>
+        public PdfAnnotation? GetLinkAnnotation(int linkIndex)
+        {
+            var annotHandle = PdfDocNative.FPDFLink_GetAnnot(_handle, linkIndex);
+            return annotHandle == IntPtr.Zero ? null : new PdfAnnotation(annotHandle, this);
+        }
+
+        /// <summary>
         /// Determines whether the PDF page contains any transparent elements.
         /// </summary>
         /// <remarks>This method checks for the presence of transparency on the PDF page, which may affect

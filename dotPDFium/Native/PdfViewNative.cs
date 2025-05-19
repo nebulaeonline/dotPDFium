@@ -89,7 +89,7 @@ public class PdfViewNative
     public static extern uint FPDF_GetLastError();
 
     [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDF_LoadCustomDocument(ref FpdfFileAccess access, [MarshalAs(UnmanagedType.LPStr)] string password);
+    public static extern IntPtr FPDF_LoadCustomDocument(ref PdfFileAccess access, [MarshalAs(UnmanagedType.LPStr)] string password);
 
     [DllImport(PdfiumLib)]
     public static extern bool FPDF_GetFileVersion(IntPtr document, out int version);

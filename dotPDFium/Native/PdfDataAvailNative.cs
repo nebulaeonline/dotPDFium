@@ -9,7 +9,7 @@ public static class PdfDataAvailNative
 
     // Create a document availability context from file access and availability interface
     [DllImport(PdfiumLib)]
-    public static extern IntPtr FPDFAvail_Create(ref FxFileAvail fileAvail, ref FpdfFileAccess fileAccess);
+    public static extern IntPtr FPDFAvail_Create(ref FxFileAvail fileAvail, ref PdfFileAccess fileAccess);
 
     [DllImport(PdfiumLib)]
     public static extern void FPDFAvail_Destroy(IntPtr avail);

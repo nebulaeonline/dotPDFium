@@ -18,11 +18,11 @@ public class PdfDocument : PdfObject
     public PdfFormContext? Forms { get; private set; }
 
     /// <summary>
-    /// Class constructor. This constructor is private and should not be used directly.
+    /// Class constructor. This constructor is internal and should not be used directly.
     /// </summary>
     /// <param name="handle">The pointer to the document object</param>
     /// <exception cref="dotPDFiumException">Thrown on PDFium library error</exception>
-    private PdfDocument(IntPtr handle) : base(handle, PdfObjectType.Document)
+    internal PdfDocument(IntPtr handle) : base(handle, PdfObjectType.Document)
     {
         // Throw on null pointer
         if (handle == IntPtr.Zero)
@@ -56,6 +56,15 @@ public class PdfDocument : PdfObject
 
         if (!PdfPpoNative.FPDF_CopyViewerPreferences(_handle, source._handle))
             throw new dotPDFiumException("Failed to copy viewer preferences from source document.");
+    }
+
+    /// <summary>
+    /// Gets the index of the first page for linearized viewing.
+    /// </summary>
+    /// <returns>The zero-based page index (typically 0).</returns>
+    public int GetFirstPageIndex()
+    {
+        return PdfDataAvailNative.FPDFAvail_GetFirstPageNum(_handle);
     }
 
     /// <summary>
@@ -370,10 +379,10 @@ public class PdfDocument : PdfObject
     /// <summary>
     /// Loads a PDF document using a custom file access descriptor.
     /// </summary>
-    /// <remarks>This method uses the <see cref="FpdfFileAccess"/> structure to provide custom file access for
+    /// <remarks>This method uses the <see cref="PdfFileAccess"/> structure to provide custom file access for
     /// loading the PDF document. Ensure that the <paramref name="fileAccess"/> descriptor is properly initialized
     /// before calling this method.</remarks>
-    /// <param name="fileAccess">The <see cref="FpdfFileAccess"/> descriptor that provides custom file access functionality. The descriptor must
+    /// <param name="fileAccess">The <see cref="PdfFileAccess"/> descriptor that provides custom file access functionality. The descriptor must
     /// have a valid <c>m_GetBlock</c> delegate and a non-zero <c>m_FileLen</c>.</param>
     /// <param name="password">An optional password to decrypt the PDF document, if it is password-protected. Pass <see langword="null"/> or an
     /// empty string if no password is required.</param>
@@ -382,7 +391,7 @@ public class PdfDocument : PdfObject
     /// langword="null"/> or <c>m_FileLen</c> is zero.</exception>
     /// <exception cref="dotPDFiumException">Thrown if the PDF document cannot be loaded, typically due to an error in the underlying PDF library or an
     /// invalid file format.</exception>
-    public static PdfDocument LoadFromCustomAccess(FpdfFileAccess fileAccess, string? password = null)
+    public static PdfDocument LoadFromCustomAccess(PdfFileAccess fileAccess, string? password = null)
     {
         if (fileAccess.m_GetBlock == null || fileAccess.m_FileLen == 0)
             throw new ArgumentException("Invalid FpdfFileAccess descriptor.", nameof(fileAccess));

@@ -183,43 +183,38 @@ public struct PdfImageObjMetadata
     public int marked_content_id;
 }
 
+
+
 [StructLayout(LayoutKind.Sequential)]
 public struct FxFileAvail
 {
     public int version;
-
-    [MarshalAs(UnmanagedType.FunctionPtr)]
-    public IsDataAvailDelegate IsDataAvail;
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate bool IsDataAvailDelegate(IntPtr pThis, UIntPtr offset, UIntPtr size);
+    public IntPtr IsDataAvail; // pointer to IsDataAvailDelegate
 }
+
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public delegate int IsDataAvailDelegate(IntPtr pThis, UIntPtr offset, UIntPtr size);
 
 [StructLayout(LayoutKind.Sequential)]
 public struct FxDownloadHints
 {
     public int version;
-
-    [MarshalAs(UnmanagedType.FunctionPtr)]
-    public AddSegmentDelegate AddSegment;
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate void AddSegmentDelegate(IntPtr pThis, UIntPtr offset, UIntPtr size);
+    public IntPtr AddSegment;
 }
+
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public delegate void AddSegmentDelegate(IntPtr pThis, UIntPtr offset, UIntPtr size);
 
 [StructLayout(LayoutKind.Sequential)]
-public struct FpdfFileAccess
+public struct PdfFileAccess
 {
-    public uint m_FileLen;
-
-    [MarshalAs(UnmanagedType.FunctionPtr)]
-    public GetBlockDelegate m_GetBlock;
-
-    public IntPtr m_Param;
-
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate int GetBlockDelegate(IntPtr param, uint position, IntPtr buffer, uint size);
+    public uint fileLength;
+    public IntPtr getBlock;     // function pointer
+    public IntPtr userData;     // GCHandle to stream
 }
+
+[UnmanagedFunctionPointer(CallingConvention.Cdecl)]
+public delegate int GetBlockDelegate(IntPtr param, uint position, IntPtr buffer, uint size);
 
 [StructLayout(LayoutKind.Sequential)]
 public struct UnSupportInfo
