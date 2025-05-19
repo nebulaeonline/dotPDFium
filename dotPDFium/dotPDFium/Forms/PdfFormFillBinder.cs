@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using nebulae.dotPDFium.Native;
@@ -8,39 +9,50 @@ namespace nebulae.dotPDFium.Forms;
 public unsafe sealed class PdfFormFillBinder : IDisposable
 {
     public PdfFormFillInfo Info;
+    private static readonly Dictionary<IntPtr, PdfFormEvents> _eventMap = new();
+    private readonly GCHandle _selfHandle;
+    private readonly IntPtr _infoPtr;
 
-    public PdfFormFillBinder()
+    public PdfFormFillBinder(PdfFormEvents events)
     {
         Info.version = 1;
+        Info.FFI_SetCursor = &OnSetCursor;
+        Info.FFI_OnChange = &OnChanged;
+        Info.FFI_Invalidate = &OnInvalidate;
 
-        Info.FFI_SetCursor = (delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, void>)&SetCursor;
-        Info.FFI_OnChange = (delegate* unmanaged[Cdecl]<PdfFormFillInfo*, void>)&OnChange;
-        Info.FFI_Invalidate = (delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, double, double, double, double, void>)&Invalidate;
-
-        // Everything else left null for now
-        Info.Release = null;
-        Info.FFI_KillTimer = null;
-        Info.FFI_SetTimer = null;
-        Info.FFI_GetLocalTime = null;
+        _selfHandle = GCHandle.Alloc(events);
+        _infoPtr = (IntPtr)Unsafe.AsPointer(ref Info);
+        _eventMap[_infoPtr] = events;
     }
 
-    public void Dispose() { }
-
-    [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static void SetCursor(PdfFormFillInfo* info, int cursorType)
+    public void Dispose()
     {
-        Debug.WriteLine($"[dotPDFium] Cursor set to {cursorType}");
+        _eventMap.Remove(_infoPtr);
+        if (_selfHandle.IsAllocated)
+            _selfHandle.Free();
     }
 
     [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static void OnChange(PdfFormFillInfo* info)
+    private static void OnSetCursor(PdfFormFillInfo* info, int cursorType)
     {
-        Debug.WriteLine($"[dotPDFium] Form field changed.");
+        if (_eventMap.TryGetValue((IntPtr)info, out var events))
+            events.OnCursorChange?.Invoke(cursorType);
     }
 
     [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
-    public static void Invalidate(PdfFormFillInfo* info, nint page, double l, double t, double r, double b)
+    private static void OnChanged(PdfFormFillInfo* info)
     {
-        Debug.WriteLine($"[dotPDFium] Invalidate: ({l},{t}) → ({r},{b})");
+        if (_eventMap.TryGetValue((IntPtr)info, out var events))
+            events.OnFormChanged?.Invoke();
+    }
+
+    [UnmanagedCallersOnly(CallConvs = new[] { typeof(CallConvCdecl) })]
+    private static void OnInvalidate(PdfFormFillInfo* info, IntPtr page, double left, double top, double right, double bottom)
+    {
+        if (!_eventMap.TryGetValue((IntPtr)info, out var events)) return;
+
+        var rect = new FsRectF((float)left, (float)top, (float)right, (float)bottom);
+        var pageWrapper = new PdfPage(page); // Temporary stub; should be resolved from PdfDocument
+        events.OnInvalidate?.Invoke(pageWrapper, rect);
     }
 }

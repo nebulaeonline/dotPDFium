@@ -8,7 +8,7 @@ We're not yet feature-complete, stable, or ready for production use. This reposi
 
 The library contains the latest PDFium binaries (v138.0.7175.0) from chromium/7175, built by bblanchon (https://github.com/bblanchon/pdfium-binaries/releases) for Windows x64 & ARM64, Linux x64 & ARM64, and MacOS (as a universal dylib supporting x64 & ARM64).
 
-We are at v0.2.0-prealpha, which is a *very* early pre-alpha version. The goal is to hit v1.0 within 3 months or so, maybe sooner.
+We are at v0.2.1-prealpha, which is a *very* early pre-alpha version. The goal is to hit v1.0 within 3 months or so, maybe sooner.
 
 ### Goals (eventually)
 
@@ -24,7 +24,7 @@ We are at v0.2.0-prealpha, which is a *very* early pre-alpha version. The goal i
 - Text extraction imlemented
 - Rendering and search implemented
 - Security implemented
-- Forms implemented
+- Forms are a WIP and broken at the moment
 - Annotations imlemented
 - Very few formal tests
 - No documentation or examples yet
