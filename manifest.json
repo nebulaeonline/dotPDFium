@@ -1636,6 +1636,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/nebulae.dotPDFium.PdfBitmap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/nebulae.dotPDFium.PdfBitmap.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "nebulae.dotPDFium.PdfBitmap",
+      "Summary": "<p sourcefile=\"api/nebulae.dotPDFium.PdfBitmap.yml\" sourcestartlinenumber=\"1\">The PdfBitmap class represents a bitmap image in the PDFium library.\nIt provides methods to create and manipulate bitmap images from PDF pages.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/nebulae.dotPDFium.PdfBitmapFormatExtension.yml",
       "output": {
         ".html": {

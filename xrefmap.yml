@@ -11595,6 +11595,154 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfAttachment.SetStringValue
   nameWithType: PdfAttachment.SetStringValue
+- uid: nebulae.dotPDFium.PdfBitmap
+  name: PdfBitmap
+  href: api/nebulae.dotPDFium.PdfBitmap.html
+  commentId: T:nebulae.dotPDFium.PdfBitmap
+  fullName: nebulae.dotPDFium.PdfBitmap
+  nameWithType: PdfBitmap
+- uid: nebulae.dotPDFium.PdfBitmap.Buffer
+  name: Buffer
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Buffer
+  commentId: P:nebulae.dotPDFium.PdfBitmap.Buffer
+  fullName: nebulae.dotPDFium.PdfBitmap.Buffer
+  nameWithType: PdfBitmap.Buffer
+- uid: nebulae.dotPDFium.PdfBitmap.Buffer*
+  name: Buffer
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Buffer_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.Buffer
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.Buffer
+  nameWithType: PdfBitmap.Buffer
+- uid: nebulae.dotPDFium.PdfBitmap.Create(System.Int32,System.Int32,System.Boolean)
+  name: Create(int, int, bool)
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Create_System_Int32_System_Int32_System_Boolean_
+  commentId: M:nebulae.dotPDFium.PdfBitmap.Create(System.Int32,System.Int32,System.Boolean)
+  name.vb: Create(Integer, Integer, Boolean)
+  fullName: nebulae.dotPDFium.PdfBitmap.Create(int, int, bool)
+  fullName.vb: nebulae.dotPDFium.PdfBitmap.Create(Integer, Integer, Boolean)
+  nameWithType: PdfBitmap.Create(int, int, bool)
+  nameWithType.vb: PdfBitmap.Create(Integer, Integer, Boolean)
+- uid: nebulae.dotPDFium.PdfBitmap.Create*
+  name: Create
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Create_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.Create
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.Create
+  nameWithType: PdfBitmap.Create
+- uid: nebulae.dotPDFium.PdfBitmap.CreateEx(System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfBitmapFormat,System.IntPtr,System.Int32)
+  name: CreateEx(int, int, PdfBitmapFormat, nint, int)
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_CreateEx_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfBitmapFormat_System_IntPtr_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfBitmap.CreateEx(System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfBitmapFormat,System.IntPtr,System.Int32)
+  name.vb: CreateEx(Integer, Integer, PdfBitmapFormat, IntPtr, Integer)
+  fullName: nebulae.dotPDFium.PdfBitmap.CreateEx(int, int, nebulae.dotPDFium.Native.PdfBitmapFormat, nint, int)
+  fullName.vb: nebulae.dotPDFium.PdfBitmap.CreateEx(Integer, Integer, nebulae.dotPDFium.Native.PdfBitmapFormat, System.IntPtr, Integer)
+  nameWithType: PdfBitmap.CreateEx(int, int, PdfBitmapFormat, nint, int)
+  nameWithType.vb: PdfBitmap.CreateEx(Integer, Integer, PdfBitmapFormat, IntPtr, Integer)
+- uid: nebulae.dotPDFium.PdfBitmap.CreateEx*
+  name: CreateEx
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_CreateEx_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.CreateEx
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.CreateEx
+  nameWithType: PdfBitmap.CreateEx
+- uid: nebulae.dotPDFium.PdfBitmap.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Dispose_System_Boolean_
+  commentId: M:nebulae.dotPDFium.PdfBitmap.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: nebulae.dotPDFium.PdfBitmap.Dispose(bool)
+  fullName.vb: nebulae.dotPDFium.PdfBitmap.Dispose(Boolean)
+  nameWithType: PdfBitmap.Dispose(bool)
+  nameWithType.vb: PdfBitmap.Dispose(Boolean)
+- uid: nebulae.dotPDFium.PdfBitmap.Dispose*
+  name: Dispose
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Dispose_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.Dispose
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.Dispose
+  nameWithType: PdfBitmap.Dispose
+- uid: nebulae.dotPDFium.PdfBitmap.FillRect(System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32)
+  name: FillRect(int, int, int, int, uint)
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_FillRect_System_Int32_System_Int32_System_Int32_System_Int32_System_UInt32_
+  commentId: M:nebulae.dotPDFium.PdfBitmap.FillRect(System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32)
+  name.vb: FillRect(Integer, Integer, Integer, Integer, UInteger)
+  fullName: nebulae.dotPDFium.PdfBitmap.FillRect(int, int, int, int, uint)
+  fullName.vb: nebulae.dotPDFium.PdfBitmap.FillRect(Integer, Integer, Integer, Integer, UInteger)
+  nameWithType: PdfBitmap.FillRect(int, int, int, int, uint)
+  nameWithType.vb: PdfBitmap.FillRect(Integer, Integer, Integer, Integer, UInteger)
+- uid: nebulae.dotPDFium.PdfBitmap.FillRect*
+  name: FillRect
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_FillRect_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.FillRect
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.FillRect
+  nameWithType: PdfBitmap.FillRect
+- uid: nebulae.dotPDFium.PdfBitmap.Format
+  name: Format
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Format
+  commentId: P:nebulae.dotPDFium.PdfBitmap.Format
+  fullName: nebulae.dotPDFium.PdfBitmap.Format
+  nameWithType: PdfBitmap.Format
+- uid: nebulae.dotPDFium.PdfBitmap.Format*
+  name: Format
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Format_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.Format
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.Format
+  nameWithType: PdfBitmap.Format
+- uid: nebulae.dotPDFium.PdfBitmap.Height
+  name: Height
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Height
+  commentId: P:nebulae.dotPDFium.PdfBitmap.Height
+  fullName: nebulae.dotPDFium.PdfBitmap.Height
+  nameWithType: PdfBitmap.Height
+- uid: nebulae.dotPDFium.PdfBitmap.Height*
+  name: Height
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Height_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.Height
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.Height
+  nameWithType: PdfBitmap.Height
+- uid: nebulae.dotPDFium.PdfBitmap.HelloDocfx
+  name: HelloDocfx()
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_HelloDocfx
+  commentId: M:nebulae.dotPDFium.PdfBitmap.HelloDocfx
+  fullName: nebulae.dotPDFium.PdfBitmap.HelloDocfx()
+  nameWithType: PdfBitmap.HelloDocfx()
+- uid: nebulae.dotPDFium.PdfBitmap.HelloDocfx*
+  name: HelloDocfx
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_HelloDocfx_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.HelloDocfx
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.HelloDocfx
+  nameWithType: PdfBitmap.HelloDocfx
+- uid: nebulae.dotPDFium.PdfBitmap.Stride
+  name: Stride
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Stride
+  commentId: P:nebulae.dotPDFium.PdfBitmap.Stride
+  fullName: nebulae.dotPDFium.PdfBitmap.Stride
+  nameWithType: PdfBitmap.Stride
+- uid: nebulae.dotPDFium.PdfBitmap.Stride*
+  name: Stride
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Stride_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.Stride
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.Stride
+  nameWithType: PdfBitmap.Stride
+- uid: nebulae.dotPDFium.PdfBitmap.Width
+  name: Width
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Width
+  commentId: P:nebulae.dotPDFium.PdfBitmap.Width
+  fullName: nebulae.dotPDFium.PdfBitmap.Width
+  nameWithType: PdfBitmap.Width
+- uid: nebulae.dotPDFium.PdfBitmap.Width*
+  name: Width
+  href: api/nebulae.dotPDFium.PdfBitmap.html#nebulae_dotPDFium_PdfBitmap_Width_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmap.Width
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmap.Width
+  nameWithType: PdfBitmap.Width
 - uid: nebulae.dotPDFium.PdfBitmapFormatExtension
   name: PdfBitmapFormatExtension
   href: api/nebulae.dotPDFium.PdfBitmapFormatExtension.html
@@ -14090,13 +14238,13 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfPage.RemoveObject
   nameWithType: PdfPage.RemoveObject
-- uid: nebulae.dotPDFium.PdfPage.RenderToBitmap(PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
+- uid: nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
   name: RenderToBitmap(PdfBitmap, int, int, int, int, PdfPageRotation, PdfRenderFlags)
-  href: api/nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RenderToBitmap_PdfBitmap_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_nebulae_dotPDFium_Native_PdfRenderFlags_
-  commentId: M:nebulae.dotPDFium.PdfPage.RenderToBitmap(PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
+  href: api/nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RenderToBitmap_nebulae_dotPDFium_PdfBitmap_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_nebulae_dotPDFium_Native_PdfRenderFlags_
+  commentId: M:nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
   name.vb: RenderToBitmap(PdfBitmap, Integer, Integer, Integer, Integer, PdfPageRotation, PdfRenderFlags)
-  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmap(PdfBitmap, int, int, int, int, nebulae.dotPDFium.Native.PdfPageRotation, nebulae.dotPDFium.Native.PdfRenderFlags)
-  fullName.vb: nebulae.dotPDFium.PdfPage.RenderToBitmap(PdfBitmap, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfPageRotation, nebulae.dotPDFium.Native.PdfRenderFlags)
+  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap, int, int, int, int, nebulae.dotPDFium.Native.PdfPageRotation, nebulae.dotPDFium.Native.PdfRenderFlags)
+  fullName.vb: nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfPageRotation, nebulae.dotPDFium.Native.PdfRenderFlags)
   nameWithType: PdfPage.RenderToBitmap(PdfBitmap, int, int, int, int, PdfPageRotation, PdfRenderFlags)
   nameWithType.vb: PdfPage.RenderToBitmap(PdfBitmap, Integer, Integer, Integer, Integer, PdfPageRotation, PdfRenderFlags)
 - uid: nebulae.dotPDFium.PdfPage.RenderToBitmap*
@@ -14106,13 +14254,13 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfPage.RenderToBitmap
   nameWithType: PdfPage.RenderToBitmap
-- uid: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
+- uid: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
   name: RenderToBitmapWithMatrix(PdfBitmap, ref FsMatrixF, ref FsRectF, PdfRenderFlags)
-  href: api/nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RenderToBitmapWithMatrix_PdfBitmap_nebulae_dotPDFium_Native_FsMatrixF__nebulae_dotPDFium_Native_FsRectF__nebulae_dotPDFium_Native_PdfRenderFlags_
-  commentId: M:nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
+  href: api/nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RenderToBitmapWithMatrix_nebulae_dotPDFium_PdfBitmap_nebulae_dotPDFium_Native_FsMatrixF__nebulae_dotPDFium_Native_FsRectF__nebulae_dotPDFium_Native_PdfRenderFlags_
+  commentId: M:nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
   name.vb: RenderToBitmapWithMatrix(PdfBitmap, FsMatrixF, FsRectF, PdfRenderFlags)
-  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(PdfBitmap, ref nebulae.dotPDFium.Native.FsMatrixF, ref nebulae.dotPDFium.Native.FsRectF, nebulae.dotPDFium.Native.PdfRenderFlags)
-  fullName.vb: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(PdfBitmap, nebulae.dotPDFium.Native.FsMatrixF, nebulae.dotPDFium.Native.FsRectF, nebulae.dotPDFium.Native.PdfRenderFlags)
+  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap, ref nebulae.dotPDFium.Native.FsMatrixF, ref nebulae.dotPDFium.Native.FsRectF, nebulae.dotPDFium.Native.PdfRenderFlags)
+  fullName.vb: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap, nebulae.dotPDFium.Native.FsMatrixF, nebulae.dotPDFium.Native.FsRectF, nebulae.dotPDFium.Native.PdfRenderFlags)
   nameWithType: PdfPage.RenderToBitmapWithMatrix(PdfBitmap, ref FsMatrixF, ref FsRectF, PdfRenderFlags)
   nameWithType.vb: PdfPage.RenderToBitmapWithMatrix(PdfBitmap, FsMatrixF, FsRectF, PdfRenderFlags)
 - uid: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix*
@@ -14950,13 +15098,13 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfProgressiveRenderer.Continue
   nameWithType: PdfProgressiveRenderer.Continue
-- uid: nebulae.dotPDFium.PdfProgressiveRenderer.Start(PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause)
+- uid: nebulae.dotPDFium.PdfProgressiveRenderer.Start(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause)
   name: Start(PdfBitmap, PdfPage, int, int, int, int, int, int, IfSdkPause)
-  href: api/nebulae.dotPDFium.PdfProgressiveRenderer.html#nebulae_dotPDFium_PdfProgressiveRenderer_Start_PdfBitmap_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_IfSdkPause_
-  commentId: M:nebulae.dotPDFium.PdfProgressiveRenderer.Start(PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause)
+  href: api/nebulae.dotPDFium.PdfProgressiveRenderer.html#nebulae_dotPDFium_PdfProgressiveRenderer_Start_nebulae_dotPDFium_PdfBitmap_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_IfSdkPause_
+  commentId: M:nebulae.dotPDFium.PdfProgressiveRenderer.Start(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause)
   name.vb: Start(PdfBitmap, PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, IfSdkPause)
-  fullName: nebulae.dotPDFium.PdfProgressiveRenderer.Start(PdfBitmap, nebulae.dotPDFium.PdfPage, int, int, int, int, int, int, nebulae.dotPDFium.Native.IfSdkPause)
-  fullName.vb: nebulae.dotPDFium.PdfProgressiveRenderer.Start(PdfBitmap, nebulae.dotPDFium.PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.IfSdkPause)
+  fullName: nebulae.dotPDFium.PdfProgressiveRenderer.Start(nebulae.dotPDFium.PdfBitmap, nebulae.dotPDFium.PdfPage, int, int, int, int, int, int, nebulae.dotPDFium.Native.IfSdkPause)
+  fullName.vb: nebulae.dotPDFium.PdfProgressiveRenderer.Start(nebulae.dotPDFium.PdfBitmap, nebulae.dotPDFium.PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.IfSdkPause)
   nameWithType: PdfProgressiveRenderer.Start(PdfBitmap, PdfPage, int, int, int, int, int, int, IfSdkPause)
   nameWithType.vb: PdfProgressiveRenderer.Start(PdfBitmap, PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, IfSdkPause)
 - uid: nebulae.dotPDFium.PdfProgressiveRenderer.Start*
@@ -14966,13 +15114,13 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfProgressiveRenderer.Start
   nameWithType: PdfProgressiveRenderer.Start
-- uid: nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme,nebulae.dotPDFium.Native.IfSdkPause)
+- uid: nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme,nebulae.dotPDFium.Native.IfSdkPause)
   name: StartWithColorScheme(PdfBitmap, PdfPage, int, int, int, int, int, int, PdfColorScheme, IfSdkPause)
-  href: api/nebulae.dotPDFium.PdfProgressiveRenderer.html#nebulae_dotPDFium_PdfProgressiveRenderer_StartWithColorScheme_PdfBitmap_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfColorScheme_nebulae_dotPDFium_Native_IfSdkPause_
-  commentId: M:nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme,nebulae.dotPDFium.Native.IfSdkPause)
+  href: api/nebulae.dotPDFium.PdfProgressiveRenderer.html#nebulae_dotPDFium_PdfProgressiveRenderer_StartWithColorScheme_nebulae_dotPDFium_PdfBitmap_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfColorScheme_nebulae_dotPDFium_Native_IfSdkPause_
+  commentId: M:nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme,nebulae.dotPDFium.Native.IfSdkPause)
   name.vb: StartWithColorScheme(PdfBitmap, PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, PdfColorScheme, IfSdkPause)
-  fullName: nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(PdfBitmap, nebulae.dotPDFium.PdfPage, int, int, int, int, int, int, nebulae.dotPDFium.Native.PdfColorScheme, nebulae.dotPDFium.Native.IfSdkPause)
-  fullName.vb: nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(PdfBitmap, nebulae.dotPDFium.PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfColorScheme, nebulae.dotPDFium.Native.IfSdkPause)
+  fullName: nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(nebulae.dotPDFium.PdfBitmap, nebulae.dotPDFium.PdfPage, int, int, int, int, int, int, nebulae.dotPDFium.Native.PdfColorScheme, nebulae.dotPDFium.Native.IfSdkPause)
+  fullName.vb: nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme(nebulae.dotPDFium.PdfBitmap, nebulae.dotPDFium.PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfColorScheme, nebulae.dotPDFium.Native.IfSdkPause)
   nameWithType: PdfProgressiveRenderer.StartWithColorScheme(PdfBitmap, PdfPage, int, int, int, int, int, int, PdfColorScheme, IfSdkPause)
   nameWithType.vb: PdfProgressiveRenderer.StartWithColorScheme(PdfBitmap, PdfPage, Integer, Integer, Integer, Integer, Integer, Integer, PdfColorScheme, IfSdkPause)
 - uid: nebulae.dotPDFium.PdfProgressiveRenderer.StartWithColorScheme*

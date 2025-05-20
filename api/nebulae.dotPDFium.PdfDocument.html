@@ -647,7 +647,9 @@ specified font and font size. The text object can then be added to a page or man
   <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfDocument.cs/#L725"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new text object in the document. This method creates a new text object with the specified font and font size.
+The text object can then be added to a page or manipulated as needed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -657,15 +659,18 @@ specified font and font size. The text object can then be added to a page or man
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>font</code> <a class="xref" href="nebulae.dotPDFium.PdfFont.html">PdfFont</a></dt>
-    <dd></dd>
+    <dd><p>The PdfFont to apply to the text object</p>
+</dd>
     <dt><code>fontSize</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
-    <dd></dd>
+    <dd><p>The font size</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="nebulae.dotPDFium.PdfTextObject.html">PdfTextObject</a></dt>
-    <dd></dd>
+    <dd><p>a new PdfTextObject</p>
+</dd>
   </dl>
 
 
@@ -675,6 +680,18 @@ specified font and font size. The text object can then be added to a page or man
 
 
 
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Throws if the specified font is null</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd><p>Throws if the font size is &lt;= 0</p>
+</dd>
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Throws on PDFium library error</p>
+</dd>
+  </dl>
 
 
 
