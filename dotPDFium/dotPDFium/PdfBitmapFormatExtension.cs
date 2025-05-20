@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 using nebulae.dotPDFium.Native;
 
-namespace nebulae.dotPDFium.dotPDFium;
+namespace nebulae.dotPDFium;
 
 public static class PdfBitmapFormatExtension
 {
