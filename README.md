@@ -22,9 +22,9 @@ We are at v0.2.6-prealpha, which is a *very* early pre-alpha version. The goal i
 - Basic document and page loading implemented
 - Page handling and rendering implemented
 - Text extraction imlemented
-- Rendering and search implemented
+- Search implemented
 - Security implemented
-- Forms are a WIP; If you have suggestions, please open an issue or PR
+- Forms\* are a WIP; If you have suggestions, please open an issue or PR
 - Annotations imlemented
 - Very few formal tests
 - No documentation or examples yet
@@ -34,6 +34,14 @@ We are at v0.2.6-prealpha, which is a *very* early pre-alpha version. The goal i
 #### API Docs are available at [dotPDFium API Docs](https://nebulae.online/dotPDFium/api/nebulae.dotPDFium.html)
 
 #### Getting Started can be found [here](https://nebulae.online/dotPDFium/docs/getting-started.html)
+
+#### Can I Create New Form Fields?
+
+No — the underlying PDFium library does not support creating new `/Widget` annotations, which are required for checkboxes, text inputs, radio buttons, etc.
+
+This is a limitation in the C++ PDFium core. Until it adds `FPDF_ANNOT_WIDGET` to its supported list, only editing of existing form fields is possible.
+
+See: [FPDFAnnot_IsSupportedSubtype](https://github.com/pdfium/pdfium/blob/main/fpdfsdk/fpdf_annot.cpp)
 
 ---
 
