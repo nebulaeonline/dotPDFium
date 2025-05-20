@@ -40,7 +40,7 @@ public sealed class PdfSignature : PdfObject
     /// <summary>
     /// Gets the raw PKCS#7 signature contents as a DER-encoded binary blob.
     /// </summary>
-    /// <returns>A <see cref="byte[]"/> containing the raw signature data.</returns>
+    /// <returns>A <see cref="byte"/> array containing the raw signature data.</returns>
     public byte[] GetContents()
     {
         // Step 1: Get size

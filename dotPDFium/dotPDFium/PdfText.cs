@@ -425,9 +425,9 @@ public class PdfText : PdfObject
     /// <param name="index">The index of the character to get the origin for</param>
     /// <param name="x">The out x variable of the origin</param>
     /// <param name="y">The out y variable of the origin</param>
-    /// <returns>The origin of the specified character & true on success, false on failure</returns>
     /// <exception cref="ObjectDisposedException"></exception>
     /// <exception cref="ArgumentOutOfRangeException"></exception>
+    /// <returns>The origin of the specified character & true on success, false on failure</returns>
     public bool GetCharOrigin(int index, out double x, out double y)
     {
         if (_handle == IntPtr.Zero)

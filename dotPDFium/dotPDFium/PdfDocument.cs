@@ -720,7 +720,7 @@ public class PdfDocument : PdfObject
     /// <param name="fontSize">The font size</param>
     /// <returns>a new PdfTextObject</returns>
     /// <exception cref="ArgumentNullException">Throws if the specified font is null</exception>
-    /// <exception cref="ArgumentOutOfRangeException">Throws if the font size is <= 0</exception>
+    /// <exception cref="ArgumentOutOfRangeException">Throws if the font size is &lt;= 0</exception>
     /// <exception cref="dotPDFiumException">Throws on PDFium library error</exception>
     public PdfTextObject CreateTextObject(PdfFont font, float fontSize)
     {

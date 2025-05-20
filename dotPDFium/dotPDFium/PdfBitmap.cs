@@ -10,6 +10,8 @@ public class PdfBitmap : PdfObject
     private readonly int _width;
     private readonly int _height;
 
+    public int HelloDocfx() => 42;
+
     /// <summary>
     /// Constructor for PdfBitmap. This constructor is internal and should not be used directly.
     /// </summary>

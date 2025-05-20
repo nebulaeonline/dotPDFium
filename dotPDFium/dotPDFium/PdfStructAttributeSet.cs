@@ -29,7 +29,7 @@ public sealed class PdfStructAttributeSet : PdfTaggedObject
     /// </summary>
     /// <returns>
     /// A <see cref="byte[]"/> containing the blob value, or <c>null</c> if the attribute is not a blob or does not exist.
-    /// </returns>
+    /// <returns>The binary blob value associated with this attribute</returns>
     public byte[]? TryGetBlobValue()
     {
         // Query for size
