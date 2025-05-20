@@ -41,7 +41,7 @@ No — the underlying PDFium library does not support creating new `/Widget` ann
 
 This is a limitation in the C++ PDFium core. Until it adds `FPDF_ANNOT_WIDGET` to its supported list, only editing of existing form fields is possible.
 
-See: [FPDFAnnot_IsSupportedSubtype](https://github.com/pdfium/pdfium/blob/main/fpdfsdk/fpdf_annot.cpp)
+See: [FPDFAnnot_IsSupportedSubtype](https://pdfium.googlesource.com/pdfium/+/cffbd3c96f99c86fad5880db4996daa6b19fa501/fpdfsdk/fpdf_annot.cpp)
 
 ---
 
