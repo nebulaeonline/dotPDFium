@@ -237,7 +237,34 @@ public static partial class PdfEditNative
     
     [DllImport(PdfiumLib)] 
     public static extern bool FPDFPageObjMark_RemoveParam(IntPtr obj, IntPtr mark, string key);
-        
+
+    [DllImport(PdfiumLib)]
+    [return: MarshalAs(UnmanagedType.I1)]
+    public static extern bool FPDFImageObj_SetBitmap(
+    IntPtr[] pages,         // optional, can be null
+    int count,
+    IntPtr imageObject,
+    IntPtr bitmap);
+
+    [DllImport(PdfiumLib)]
+    [return: MarshalAs(UnmanagedType.I1)]
+    public static extern bool FPDFImageObj_SetMatrix(IntPtr imageObject, double a, double b, double c, double d, double e, double f);
+
+    [DllImport(PdfiumLib)]
+    [return: MarshalAs(UnmanagedType.I1)]
+    public static extern bool FPDFImageObj_LoadJpegFile(
+        IntPtr[] pages,         // optional, can be null
+        int count,
+        IntPtr imageObject,
+        ref PdfFileAccess fileAccess);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDFImageObj_GetBitmap(IntPtr imageObject);
+
+    [DllImport(PdfiumLib)]
+    public static extern IntPtr FPDFImageObj_GetRenderedBitmap(IntPtr document, IntPtr page, IntPtr imageObject);
+
+
     [DllImport(PdfiumLib)] 
     public static extern uint FPDFImageObj_GetImageDataDecoded(IntPtr obj, byte[] buffer, uint buflen);
     

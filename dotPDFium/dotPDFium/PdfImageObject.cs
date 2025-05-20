@@ -89,6 +89,15 @@ public class PdfImageObject : PdfPageObject
         return PdfEditNative.FPDFImageObj_GetImageFilterCount(_handle);
     }
 
+    /// <summary>
+    /// Retrieves the name of the image filter applied to the image at the specified index.
+    /// </summary>
+    /// <remarks>The method retrieves the name of the image filter associated with an image object in a PDF. 
+    /// The index must correspond to a valid filter applied to the image; otherwise, an exception is thrown.</remarks>
+    /// <param name="index">The zero-based index of the image filter to retrieve.</param>
+    /// <returns>A string representing the name of the image filter. The string is encoded in ASCII and does not include a null
+    /// terminator.</returns>
+    /// <exception cref="dotPDFiumException">Thrown if the image filter cannot be retrieved for the specified <paramref name="index"/>.</exception>
     public string GetImageFilter(int index)
     {
         const int maxLen = 64; // arbitrary; PDF filters are short
@@ -112,5 +121,75 @@ public class PdfImageObject : PdfPageObject
             throw new dotPDFiumException("Failed to retrieve image pixel dimensions.");
 
         return new FsSize(width, height);
+    }
+
+    /// <summary>
+    /// Retrieves the rendered bitmap representation of the current image object on the specified PDF page.
+    /// </summary>
+    /// <remarks>The dimensions of the returned bitmap are not known and must be determined by the caller if
+    /// needed.</remarks>
+    /// <param name="doc">The PDF document containing the page and image object. Cannot be <see langword="null"/>.</param>
+    /// <param name="page">The PDF page containing the image object. Cannot be <see langword="null"/>.</param>
+    /// <returns>A <see cref="PdfBitmap"/> representing the rendered image object, or <see langword="null"/> if the rendering
+    /// fails.</returns>
+    public PdfBitmap? GetRenderedBitmap(PdfDocument doc, PdfPage page)
+    {
+        var handle = PdfEditNative.FPDFImageObj_GetRenderedBitmap(doc.Handle, page.Handle, this.Handle);
+        if (handle == IntPtr.Zero)
+            return null;
+
+        return new PdfBitmap(handle, 0, 0); // no dimensions known
+    }
+
+    /// <summary>
+    /// Loads a JPEG image into the current PDF image object.
+    /// </summary>
+    /// <remarks>This method uses the native PDFium library to load a JPEG image into the current image
+    /// object.  If a page is specified, the image will be associated with that page. Ensure that the  <paramref
+    /// name="access"/> object provides valid access to the JPEG file.</remarks>
+    /// <param name="page">The <see cref="PdfPage"/> instance representing the page where the image will be loaded.  Can be <see
+    /// langword="null"/> if the image is not associated with a specific page.</param>
+    /// <param name="access">A <see cref="PdfFileAccess"/> object that provides access to the JPEG file.  This object must remain valid for
+    /// the duration of the operation.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the JPEG image fails to load into the PDF image object.</exception>
+    public void LoadJpeg(PdfPage? page, PdfFileAccess access)
+    {
+        IntPtr[]? pages = page != null ? new[] { page.Handle } : null;
+        if (!PdfEditNative.FPDFImageObj_LoadJpegFile(pages, pages?.Length ?? 0, this.Handle, ref access))
+            throw new dotPDFiumException("Failed to load JPEG into image object.");
+    }
+
+    /// <summary>
+    /// Sets the specified bitmap as the content of this image object.
+    /// </summary>
+    /// <remarks>If a page is provided, the bitmap will be associated with that page. If no page is specified,
+    /// the bitmap will be set without a specific page context.</remarks>
+    /// <param name="bitmap">The <see cref="PdfBitmap"/> to set as the image content. Cannot be null.</param>
+    /// <param name="page">The <see cref="PdfPage"/> associated with the bitmap, or <see langword="null"/> if the bitmap is not tied to a
+    /// specific page.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the operation fails due to an error in the underlying PDF library.</exception>
+    public void SetBitmap(PdfBitmap bitmap, PdfPage? page = null)
+    {
+        IntPtr[]? pages = page != null ? new[] { page.Handle } : null;
+        if (!PdfEditNative.FPDFImageObj_SetBitmap(pages, pages?.Length ?? 0, this.Handle, bitmap.Handle))
+            throw new dotPDFiumException($"Failed to set bitmap: {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
+    /// Sets the transformation matrix for the image object.
+    /// </summary>
+    /// <remarks>The transformation matrix defines how the image object is scaled, skewed, rotated, and
+    /// translated within the PDF. Ensure that the provided values form a valid transformation matrix.</remarks>
+    /// <param name="a">The horizontal scaling factor.</param>
+    /// <param name="b">The horizontal skewing factor.</param>
+    /// <param name="c">The vertical skewing factor.</param>
+    /// <param name="d">The vertical scaling factor.</param>
+    /// <param name="e">The horizontal translation (x-axis offset).</param>
+    /// <param name="f">The vertical translation (y-axis offset).</param>
+    /// <exception cref="dotPDFiumException">Thrown if the operation to set the image matrix fails.</exception>
+    public void SetMatrix(double a, double b, double c, double d, double e, double f)
+    {
+        if (!PdfEditNative.FPDFImageObj_SetMatrix(this.Handle, a, b, c, d, e, f))
+            throw new dotPDFiumException("Failed to set image matrix.");
     }
 }
