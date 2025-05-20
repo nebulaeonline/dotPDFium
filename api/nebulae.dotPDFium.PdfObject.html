@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PdfObject | dotPDFium </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PdfObject | dotPDFium ">
+      
+      <meta name="description" content="This class is the base class for all PDFium objects. It implements IDisposable to ensure proper resource management.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nebulaeonline/dotPDFium/new/main/apiSpec/new?filename=nebulae_dotPDFium_PdfObject.md&amp;value=---%0Auid%3A%20nebulae.dotPDFium.PdfObject%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="dotPDFium">
+            dotPDFium
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="nebulae.dotPDFium.PdfObject">
+
+
+
+  <h1 id="nebulae_dotPDFium_PdfObject" data-uid="nebulae.dotPDFium.PdfObject" class="text-break">
+Class PdfObject  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="nebulae.html">nebulae</a>.<a class="xref" href="nebulae.dotPDFium.html">dotPDFium</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotPDFium.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>This class is the base class for all PDFium objects. It implements IDisposable to
+ensure proper resource management.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PdfObject : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PdfObject</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfBitmap.html">PdfBitmap</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfDocument.html">PdfDocument</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfFont.html">PdfFont</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfPageObject.html">PdfPageObject</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfText.html">PdfText</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.Security.PdfSignature.html">PdfSignature</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="nebulae_dotPDFium_PdfObject__ctor_" data-uid="nebulae.dotPDFium.PdfObject.#ctor*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject__ctor_System_IntPtr_nebulae_dotPDFium_PdfObjectType_" data-uid="nebulae.dotPDFium.PdfObject.#ctor(System.IntPtr,nebulae.dotPDFium.PdfObjectType)">
+  PdfObject(nint, PdfObjectType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Base class constructor. This constructor is protected and should not be used directly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PdfObject(nint handle, PdfObjectType type)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>handle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="nebulae.dotPDFium.PdfObjectType.html">PdfObjectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="nebulae_dotPDFium_PdfObject__disposed" data-uid="nebulae.dotPDFium.PdfObject._disposed">
+  _disposed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool _disposed</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="nebulae_dotPDFium_PdfObject__handle" data-uid="nebulae.dotPDFium.PdfObject._handle">
+  _handle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected nint _handle</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="nebulae_dotPDFium_PdfObject__type" data-uid="nebulae.dotPDFium.PdfObject._type">
+  _type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PdfObjectType _type</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfObjectType.html">PdfObjectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="nebulae_dotPDFium_PdfObject_Handle_" data-uid="nebulae.dotPDFium.PdfObject.Handle*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject_Handle" data-uid="nebulae.dotPDFium.PdfObject.Handle">
+  Handle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public nint Handle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfObject_IsDisposed_" data-uid="nebulae.dotPDFium.PdfObject.IsDisposed*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject_IsDisposed" data-uid="nebulae.dotPDFium.PdfObject.IsDisposed">
+  IsDisposed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDisposed { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfObject_Type_" data-uid="nebulae.dotPDFium.PdfObject.Type*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject_Type" data-uid="nebulae.dotPDFium.PdfObject.Type">
+  Type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfObjectType Type { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfObjectType.html">PdfObjectType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="nebulae_dotPDFium_PdfObject_Dispose_" data-uid="nebulae.dotPDFium.PdfObject.Dispose*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject_Dispose" data-uid="nebulae.dotPDFium.PdfObject.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases the resources used by this instance of the PdfObject class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfObject_Dispose_" data-uid="nebulae.dotPDFium.PdfObject.Dispose*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_" data-uid="nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases the resources used by the current instance of the class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Are we disposing managed objects?</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfObject_Dispose_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method should be called when the instance is no longer needed to free unmanaged
+resources. It ensures that any associated native resources are properly released based on the type of the
+object.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown if the object type is not supported for disposal.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfObject_Finalize_" data-uid="nebulae.dotPDFium.PdfObject.Finalize*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject_Finalize" data-uid="nebulae.dotPDFium.PdfObject.Finalize">
+  ~PdfObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Base class destructor. This destructor is here for the IDisposable pattern.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ~PdfObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfObject_GetPDFiumError_" data-uid="nebulae.dotPDFium.PdfObject.GetPDFiumError*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfObject_GetPDFiumError" data-uid="nebulae.dotPDFium.PdfObject.GetPDFiumError">
+  GetPDFiumError()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the last error message from PDFium.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPDFiumError()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfObject.cs/#L26" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
