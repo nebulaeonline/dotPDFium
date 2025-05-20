@@ -1,110 +1,6 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: dotPDFiumTests
-  name: dotPDFiumTests
-  href: api/dotPDFiumTests.html
-  commentId: N:dotPDFiumTests
-  fullName: dotPDFiumTests
-  nameWithType: dotPDFiumTests
-- uid: dotPDFiumTests.CreateAndEditTests
-  name: CreateAndEditTests
-  href: api/dotPDFiumTests.CreateAndEditTests.html
-  commentId: T:dotPDFiumTests.CreateAndEditTests
-  fullName: dotPDFiumTests.CreateAndEditTests
-  nameWithType: CreateAndEditTests
-- uid: dotPDFiumTests.CreateAndEditTests.RenderFirstPageWithImageSharpDrawing
-  name: RenderFirstPageWithImageSharpDrawing()
-  href: api/dotPDFiumTests.CreateAndEditTests.html#dotPDFiumTests_CreateAndEditTests_RenderFirstPageWithImageSharpDrawing
-  commentId: M:dotPDFiumTests.CreateAndEditTests.RenderFirstPageWithImageSharpDrawing
-  fullName: dotPDFiumTests.CreateAndEditTests.RenderFirstPageWithImageSharpDrawing()
-  nameWithType: CreateAndEditTests.RenderFirstPageWithImageSharpDrawing()
-- uid: dotPDFiumTests.CreateAndEditTests.RenderFirstPageWithImageSharpDrawing*
-  name: RenderFirstPageWithImageSharpDrawing
-  href: api/dotPDFiumTests.CreateAndEditTests.html#dotPDFiumTests_CreateAndEditTests_RenderFirstPageWithImageSharpDrawing_
-  commentId: Overload:dotPDFiumTests.CreateAndEditTests.RenderFirstPageWithImageSharpDrawing
-  isSpec: "True"
-  fullName: dotPDFiumTests.CreateAndEditTests.RenderFirstPageWithImageSharpDrawing
-  nameWithType: CreateAndEditTests.RenderFirstPageWithImageSharpDrawing
-- uid: dotPDFiumTests.CreateAndEditTests.SaveGeneratedTextPdf
-  name: SaveGeneratedTextPdf()
-  href: api/dotPDFiumTests.CreateAndEditTests.html#dotPDFiumTests_CreateAndEditTests_SaveGeneratedTextPdf
-  commentId: M:dotPDFiumTests.CreateAndEditTests.SaveGeneratedTextPdf
-  fullName: dotPDFiumTests.CreateAndEditTests.SaveGeneratedTextPdf()
-  nameWithType: CreateAndEditTests.SaveGeneratedTextPdf()
-- uid: dotPDFiumTests.CreateAndEditTests.SaveGeneratedTextPdf*
-  name: SaveGeneratedTextPdf
-  href: api/dotPDFiumTests.CreateAndEditTests.html#dotPDFiumTests_CreateAndEditTests_SaveGeneratedTextPdf_
-  commentId: Overload:dotPDFiumTests.CreateAndEditTests.SaveGeneratedTextPdf
-  isSpec: "True"
-  fullName: dotPDFiumTests.CreateAndEditTests.SaveGeneratedTextPdf
-  nameWithType: CreateAndEditTests.SaveGeneratedTextPdf
-- uid: dotPDFiumTests.PriorityOrderer
-  name: PriorityOrderer
-  href: api/dotPDFiumTests.PriorityOrderer.html
-  commentId: T:dotPDFiumTests.PriorityOrderer
-  fullName: dotPDFiumTests.PriorityOrderer
-  nameWithType: PriorityOrderer
-- uid: dotPDFiumTests.PriorityOrderer.OrderTestCases*
-  name: OrderTestCases
-  href: api/dotPDFiumTests.PriorityOrderer.html#dotPDFiumTests_PriorityOrderer_OrderTestCases_
-  commentId: Overload:dotPDFiumTests.PriorityOrderer.OrderTestCases
-  isSpec: "True"
-  fullName: dotPDFiumTests.PriorityOrderer.OrderTestCases
-  nameWithType: PriorityOrderer.OrderTestCases
-- uid: dotPDFiumTests.PriorityOrderer.OrderTestCases``1(System.Collections.Generic.IEnumerable{``0})
-  name: OrderTestCases<TTestCase>(IEnumerable<TTestCase>)
-  href: api/dotPDFiumTests.PriorityOrderer.html#dotPDFiumTests_PriorityOrderer_OrderTestCases__1_System_Collections_Generic_IEnumerable___0__
-  commentId: M:dotPDFiumTests.PriorityOrderer.OrderTestCases``1(System.Collections.Generic.IEnumerable{``0})
-  name.vb: OrderTestCases(Of TTestCase)(IEnumerable(Of TTestCase))
-  fullName: dotPDFiumTests.PriorityOrderer.OrderTestCases<TTestCase>(System.Collections.Generic.IEnumerable<TTestCase>)
-  fullName.vb: dotPDFiumTests.PriorityOrderer.OrderTestCases(Of TTestCase)(System.Collections.Generic.IEnumerable(Of TTestCase))
-  nameWithType: PriorityOrderer.OrderTestCases<TTestCase>(IEnumerable<TTestCase>)
-  nameWithType.vb: PriorityOrderer.OrderTestCases(Of TTestCase)(IEnumerable(Of TTestCase))
-- uid: dotPDFiumTests.SequentialCollection
-  name: SequentialCollection
-  href: api/dotPDFiumTests.SequentialCollection.html
-  commentId: T:dotPDFiumTests.SequentialCollection
-  fullName: dotPDFiumTests.SequentialCollection
-  nameWithType: SequentialCollection
-- uid: dotPDFiumTests.TestPriorityAttribute
-  name: TestPriorityAttribute
-  href: api/dotPDFiumTests.TestPriorityAttribute.html
-  commentId: T:dotPDFiumTests.TestPriorityAttribute
-  fullName: dotPDFiumTests.TestPriorityAttribute
-  nameWithType: TestPriorityAttribute
-- uid: dotPDFiumTests.TestPriorityAttribute.#ctor(System.Int32)
-  name: TestPriorityAttribute(int)
-  href: api/dotPDFiumTests.TestPriorityAttribute.html#dotPDFiumTests_TestPriorityAttribute__ctor_System_Int32_
-  commentId: M:dotPDFiumTests.TestPriorityAttribute.#ctor(System.Int32)
-  name.vb: New(Integer)
-  fullName: dotPDFiumTests.TestPriorityAttribute.TestPriorityAttribute(int)
-  fullName.vb: dotPDFiumTests.TestPriorityAttribute.New(Integer)
-  nameWithType: TestPriorityAttribute.TestPriorityAttribute(int)
-  nameWithType.vb: TestPriorityAttribute.New(Integer)
-- uid: dotPDFiumTests.TestPriorityAttribute.#ctor*
-  name: TestPriorityAttribute
-  href: api/dotPDFiumTests.TestPriorityAttribute.html#dotPDFiumTests_TestPriorityAttribute__ctor_
-  commentId: Overload:dotPDFiumTests.TestPriorityAttribute.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: dotPDFiumTests.TestPriorityAttribute.TestPriorityAttribute
-  fullName.vb: dotPDFiumTests.TestPriorityAttribute.New
-  nameWithType: TestPriorityAttribute.TestPriorityAttribute
-  nameWithType.vb: TestPriorityAttribute.New
-- uid: dotPDFiumTests.TestPriorityAttribute.Priority
-  name: Priority
-  href: api/dotPDFiumTests.TestPriorityAttribute.html#dotPDFiumTests_TestPriorityAttribute_Priority
-  commentId: P:dotPDFiumTests.TestPriorityAttribute.Priority
-  fullName: dotPDFiumTests.TestPriorityAttribute.Priority
-  nameWithType: TestPriorityAttribute.Priority
-- uid: dotPDFiumTests.TestPriorityAttribute.Priority*
-  name: Priority
-  href: api/dotPDFiumTests.TestPriorityAttribute.html#dotPDFiumTests_TestPriorityAttribute_Priority_
-  commentId: Overload:dotPDFiumTests.TestPriorityAttribute.Priority
-  isSpec: "True"
-  fullName: dotPDFiumTests.TestPriorityAttribute.Priority
-  nameWithType: TestPriorityAttribute.Priority
 - uid: nebulae.dotPDFium
   name: nebulae.dotPDFium
   href: api/nebulae.dotPDFium.html
@@ -11699,6 +11595,25 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfAttachment.SetStringValue
   nameWithType: PdfAttachment.SetStringValue
+- uid: nebulae.dotPDFium.PdfBitmapFormatExtension
+  name: PdfBitmapFormatExtension
+  href: api/nebulae.dotPDFium.PdfBitmapFormatExtension.html
+  commentId: T:nebulae.dotPDFium.PdfBitmapFormatExtension
+  fullName: nebulae.dotPDFium.PdfBitmapFormatExtension
+  nameWithType: PdfBitmapFormatExtension
+- uid: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  name: GetBytesPerPixel(PdfBitmapFormat)
+  href: api/nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
+  commentId: M:nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  fullName: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  nameWithType: PdfBitmapFormatExtension.GetBytesPerPixel(PdfBitmapFormat)
+- uid: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel*
+  name: GetBytesPerPixel
+  href: api/nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_
+  commentId: Overload:nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel
+  nameWithType: PdfBitmapFormatExtension.GetBytesPerPixel
 - uid: nebulae.dotPDFium.PdfBookmark
   name: PdfBookmark
   href: api/nebulae.dotPDFium.PdfBookmark.html
@@ -16620,31 +16535,6 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.Security.PdfSignature.GetSubFilter
   nameWithType: PdfSignature.GetSubFilter
-- uid: nebulae.dotPDFium.dotPDFium
-  name: nebulae.dotPDFium.dotPDFium
-  href: api/nebulae.dotPDFium.dotPDFium.html
-  commentId: N:nebulae.dotPDFium.dotPDFium
-  fullName: nebulae.dotPDFium.dotPDFium
-  nameWithType: nebulae.dotPDFium.dotPDFium
-- uid: nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension
-  name: PdfBitmapFormatExtension
-  href: api/nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.html
-  commentId: T:nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension
-  fullName: nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension
-  nameWithType: PdfBitmapFormatExtension
-- uid: nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
-  name: GetBytesPerPixel(PdfBitmapFormat)
-  href: api/nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
-  commentId: M:nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
-  fullName: nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
-  nameWithType: PdfBitmapFormatExtension.GetBytesPerPixel(PdfBitmapFormat)
-- uid: nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel*
-  name: GetBytesPerPixel
-  href: api/nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_
-  commentId: Overload:nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel
-  isSpec: "True"
-  fullName: nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel
-  nameWithType: PdfBitmapFormatExtension.GetBytesPerPixel
 - uid: nebulae.dotPDFium.dotPDFiumException
   name: dotPDFiumException
   href: api/nebulae.dotPDFium.dotPDFiumException.html

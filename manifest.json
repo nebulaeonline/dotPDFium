@@ -12,76 +12,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/dotPDFiumTests.CreateAndEditTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/dotPDFiumTests.CreateAndEditTests.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "dotPDFiumTests.CreateAndEditTests",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/dotPDFiumTests.PriorityOrderer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/dotPDFiumTests.PriorityOrderer.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "dotPDFiumTests.PriorityOrderer",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/dotPDFiumTests.SequentialCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/dotPDFiumTests.SequentialCollection.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "dotPDFiumTests.SequentialCollection",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/dotPDFiumTests.TestPriorityAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/dotPDFiumTests.TestPriorityAttribute.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "dotPDFiumTests.TestPriorityAttribute",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/dotPDFiumTests.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/dotPDFiumTests.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "dotPDFiumTests",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/nebulae.dotPDFium.Forms.PdfCheckBox.yml",
       "output": {
         ".html": {
@@ -1706,6 +1636,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/nebulae.dotPDFium.PdfBitmapFormatExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/nebulae.dotPDFium.PdfBitmapFormatExtension.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "nebulae.dotPDFium.PdfBitmapFormatExtension",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/nebulae.dotPDFium.PdfBookmark.yml",
       "output": {
         ".html": {
@@ -2220,34 +2164,6 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "nebulae.dotPDFium.Security",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "nebulae.dotPDFium.dotPDFium.PdfBitmapFormatExtension",
-      "Summary": null
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/nebulae.dotPDFium.dotPDFium.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/nebulae.dotPDFium.dotPDFium.html"
-        }
-      },
-      "version": "",
-      "Uid": null,
-      "IsMRef": true,
-      "Title": "nebulae.dotPDFium.dotPDFium",
       "Summary": null
     },
     {
