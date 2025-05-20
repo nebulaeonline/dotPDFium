@@ -1,6 +1,8 @@
 ﻿using nebulae.dotPDFium;
 using nebulae.dotPDFium.Native;
 
+namespace nebulae.dotPDFium;
+
 /// <summary>
 /// The PdfBitmap class represents a bitmap image in the PDFium library. 
 /// It provides methods to create and manipulate bitmap images from PDF pages.
@@ -9,8 +11,6 @@ public class PdfBitmap : PdfObject
 {
     private readonly int _width;
     private readonly int _height;
-
-    public int HelloDocfx() => 42;
 
     /// <summary>
     /// Constructor for PdfBitmap. This constructor is internal and should not be used directly.
