@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PdfBookmark | dotPDFium </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PdfBookmark | dotPDFium ">
+      
+      <meta name="description" content="Represents a bookmark in a PDF document, providing access to its title, hierarchical structure,  and associated actions or destinations.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nebulaeonline/dotPDFium/new/main/apiSpec/new?filename=nebulae_dotPDFium_PdfBookmark.md&amp;value=---%0Auid%3A%20nebulae.dotPDFium.PdfBookmark%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="dotPDFium">
+            dotPDFium
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="nebulae.dotPDFium.PdfBookmark">
+
+
+
+  <h1 id="nebulae_dotPDFium_PdfBookmark" data-uid="nebulae.dotPDFium.PdfBookmark" class="text-break">
+Class PdfBookmark  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L12"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="nebulae.html">nebulae</a>.<a class="xref" href="nebulae.dotPDFium.html">dotPDFium</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotPDFium.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents a bookmark in a PDF document, providing access to its title, hierarchical structure,  and associated
+actions or destinations.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PdfBookmark</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PdfBookmark</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="nebulae_dotPDFium_PdfBookmark_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A <a class="xref" href="nebulae.dotPDFium.PdfBookmark.html">PdfBookmark</a> allows navigation through the bookmark hierarchy of a PDF document.  It
+provides methods to retrieve child bookmarks, sibling bookmarks, and associated actions or  destinations. Bookmarks
+are typically used to represent a table of contents or navigation points  within a PDF document.</p>
+</div>
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="nebulae_dotPDFium_PdfBookmark_Title_" data-uid="nebulae.dotPDFium.PdfBookmark.Title*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfBookmark_Title" data-uid="nebulae.dotPDFium.PdfBookmark.Title">
+  Title
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the title of the bookmark represented by this instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Title { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="nebulae_dotPDFium_PdfBookmark_GetAction_" data-uid="nebulae.dotPDFium.PdfBookmark.GetAction*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfBookmark_GetAction" data-uid="nebulae.dotPDFium.PdfBookmark.GetAction">
+  GetAction()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the action associated with the current PDF bookmark, if one exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfAction? GetAction()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfAction.html">PdfAction</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfAction.html">PdfAction</a> object representing the action associated with the bookmark,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no action is associated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfBookmark_GetAction_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use this method to obtain the action linked to a bookmark in a PDF document, such as
+navigating to a specific page or executing a script. If the bookmark does not have an  associated action, the
+method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfBookmark_GetChildCount_" data-uid="nebulae.dotPDFium.PdfBookmark.GetChildCount*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfBookmark_GetChildCount" data-uid="nebulae.dotPDFium.PdfBookmark.GetChildCount">
+  GetChildCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of child bookmarks associated with the current bookmark.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetChildCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of child bookmarks. Returns 0 if the current bookmark has no children.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfBookmark_GetChildCount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use this method to determine the number of child bookmarks for a given bookmark in a PDF
+document. This can be useful for navigating or processing hierarchical bookmark structures.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfBookmark_GetDestination_" data-uid="nebulae.dotPDFium.PdfBookmark.GetDestination*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfBookmark_GetDestination" data-uid="nebulae.dotPDFium.PdfBookmark.GetDestination">
+  GetDestination()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the destination associated with the current bookmark.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfDestination? GetDestination()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfDestination.html">PdfDestination</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfDestination.html">PdfDestination</a> object representing the destination linked to the bookmark,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no destination is associated.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfBookmark_GetDestination_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The destination provides information about the location or view in the PDF document  that the
+bookmark points to. If the bookmark does not have an associated destination,  the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfBookmark_GetFirstChild_" data-uid="nebulae.dotPDFium.PdfBookmark.GetFirstChild*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfBookmark_GetFirstChild" data-uid="nebulae.dotPDFium.PdfBookmark.GetFirstChild">
+  GetFirstChild()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the first child bookmark of the current bookmark.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfBookmark? GetFirstChild()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfBookmark.html">PdfBookmark</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfBookmark.html">PdfBookmark</a> representing the first child bookmark, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the current
+bookmark has no children.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfBookmark_GetFirstChild_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use this method to navigate the hierarchy of bookmarks in a PDF document. If the current
+bookmark has no child bookmarks, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfBookmark_GetNextSibling_" data-uid="nebulae.dotPDFium.PdfBookmark.GetNextSibling*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfBookmark_GetNextSibling" data-uid="nebulae.dotPDFium.PdfBookmark.GetNextSibling">
+  GetNextSibling()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the next sibling of the current bookmark in the document's bookmark hierarchy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfBookmark? GetNextSibling()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfBookmark.html">PdfBookmark</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfBookmark.html">PdfBookmark</a> object representing the next sibling of the current bookmark, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if there is no next sibling.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfBookmark_GetNextSibling_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method navigates the bookmark hierarchy of the PDF document. If the current bookmark is
+the last sibling in its level, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfBookmark.cs/#L12" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

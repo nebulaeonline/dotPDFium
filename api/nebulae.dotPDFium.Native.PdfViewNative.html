@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PdfViewNative | dotPDFium </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PdfViewNative | dotPDFium ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nebulaeonline/dotPDFium/new/main/apiSpec/new?filename=nebulae_dotPDFium_Native_PdfViewNative.md&amp;value=---%0Auid%3A%20nebulae.dotPDFium.Native.PdfViewNative%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="dotPDFium">
+            dotPDFium
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="nebulae.dotPDFium.Native.PdfViewNative">
+
+
+
+  <h1 id="nebulae_dotPDFium_Native_PdfViewNative" data-uid="nebulae.dotPDFium.Native.PdfViewNative" class="text-break">
+Class PdfViewNative  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/Native/PdfViewNative.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="nebulae.html">nebulae</a>.<a class="xref" href="nebulae.dotPDFium.html">dotPDFium</a>.<a class="xref" href="nebulae.dotPDFium.Native.html">Native</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotPDFium.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PdfViewNative</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PdfViewNative</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_Create_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_Create*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_Create_System_Int32_System_Int32_System_Int32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_Create(System.Int32,System.Int32,System.Int32)">
+  FPDFBitmap_Create(int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDFBitmap_Create(int width, int height, int alpha)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>alpha</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_CreateEx_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_CreateEx*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_CreateEx_System_Int32_System_Int32_System_Int32_System_IntPtr_System_Int32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_CreateEx(System.Int32,System.Int32,System.Int32,System.IntPtr,System.Int32)">
+  FPDFBitmap_CreateEx(int, int, int, nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDFBitmap_CreateEx(int width, int height, int format, nint first_scan, int stride)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>format</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>first_scan</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>stride</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_Destroy_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_Destroy*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_Destroy_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_Destroy(System.IntPtr)">
+  FPDFBitmap_Destroy(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void FPDFBitmap_Destroy(nint bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_FillRect_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_FillRect*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_FillRect_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_System_UInt32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_FillRect(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32)">
+  FPDFBitmap_FillRect(nint, int, int, int, int, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDFBitmap_FillRect(nint bitmap, int left, int top, int width, int height, uint color)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>left</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>top</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>color</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetBuffer_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetBuffer*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetBuffer_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetBuffer(System.IntPtr)">
+  FPDFBitmap_GetBuffer(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDFBitmap_GetBuffer(nint bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetFormat_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetFormat*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetFormat_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetFormat(System.IntPtr)">
+  FPDFBitmap_GetFormat(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDFBitmap_GetFormat(nint bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetHeight_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetHeight*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetHeight_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetHeight(System.IntPtr)">
+  FPDFBitmap_GetHeight(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDFBitmap_GetHeight(nint bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetStride_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetStride*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetStride_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetStride(System.IntPtr)">
+  FPDFBitmap_GetStride(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDFBitmap_GetStride(nint bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetWidth_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetWidth*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDFBitmap_GetWidth_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDFBitmap_GetWidth(System.IntPtr)">
+  FPDFBitmap_GetWidth(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDFBitmap_GetWidth(nint bitmap)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_CloseDocument_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_CloseDocument*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_CloseDocument_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_CloseDocument(System.IntPtr)">
+  FPDF_CloseDocument(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void FPDF_CloseDocument(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_ClosePage_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_ClosePage*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_ClosePage_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_ClosePage(System.IntPtr)">
+  FPDF_ClosePage(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void FPDF_ClosePage(nint page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_CountNamedDests_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_CountNamedDests*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_CountNamedDests_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_CountNamedDests(System.IntPtr)">
+  FPDF_CountNamedDests(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint FPDF_CountNamedDests(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_DeviceToPage_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_DeviceToPage*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_DeviceToPage_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double__System_Double__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_DeviceToPage(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double@,System.Double@)">
+  FPDF_DeviceToPage(nint, int, int, int, int, int, int, int, out double, out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_DeviceToPage(nint page, int start_x, int start_y, int size_x, int size_y, int rotate, int device_x, int device_y, out double page_x, out double page_y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>start_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>start_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rotate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>device_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>device_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>page_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>page_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_DocumentHasValidCrossReferenceTable_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_DocumentHasValidCrossReferenceTable*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_DocumentHasValidCrossReferenceTable_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_DocumentHasValidCrossReferenceTable(System.IntPtr)">
+  FPDF_DocumentHasValidCrossReferenceTable(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_DocumentHasValidCrossReferenceTable(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetDocPermissions_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetDocPermissions*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetDocPermissions_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetDocPermissions(System.IntPtr)">
+  FPDF_GetDocPermissions(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint FPDF_GetDocPermissions(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetDocUserPermissions_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetDocUserPermissions*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetDocUserPermissions_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetDocUserPermissions(System.IntPtr)">
+  FPDF_GetDocUserPermissions(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint FPDF_GetDocUserPermissions(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetFileVersion_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetFileVersion*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetFileVersion_System_IntPtr_System_Int32__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetFileVersion(System.IntPtr,System.Int32@)">
+  FPDF_GetFileVersion(nint, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_GetFileVersion(nint document, out int version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetLastError_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetLastError*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetLastError" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetLastError">
+  FPDF_GetLastError()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint FPDF_GetLastError()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetNamedDest_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetNamedDest*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetNamedDest_System_IntPtr_System_Int32_System_IntPtr_System_Int32__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetNamedDest(System.IntPtr,System.Int32,System.IntPtr,System.Int32@)">
+  FPDF_GetNamedDest(nint, int, nint, ref int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_GetNamedDest(nint document, int index, nint buffer, ref int buflen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>buflen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetNamedDestByName_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetNamedDestByName*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetNamedDestByName_System_IntPtr_System_String_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetNamedDestByName(System.IntPtr,System.String)">
+  FPDF_GetNamedDestByName(nint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_GetNamedDestByName(nint document, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageBoundingBox_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageBoundingBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageBoundingBox_System_IntPtr_nebulae_dotPDFium_Native_FsRectF__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageBoundingBox(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)">
+  FPDF_GetPageBoundingBox(nint, out FsRectF)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_GetPageBoundingBox(nint page, out FsRectF rect)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>rect</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageCount_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageCount*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageCount_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageCount(System.IntPtr)">
+  FPDF_GetPageCount(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDF_GetPageCount(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageHeight_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageHeight*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageHeight_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageHeight(System.IntPtr)">
+  FPDF_GetPageHeight(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern double FPDF_GetPageHeight(nint page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageHeightF_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageHeightF*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageHeightF_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageHeightF(System.IntPtr)">
+  FPDF_GetPageHeightF(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern float FPDF_GetPageHeightF(nint page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageSizeByIndex_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageSizeByIndex*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageSizeByIndex_System_IntPtr_System_Int32_System_Double__System_Double__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageSizeByIndex(System.IntPtr,System.Int32,System.Double@,System.Double@)">
+  FPDF_GetPageSizeByIndex(nint, int, out double, out double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDF_GetPageSizeByIndex(nint document, int pageIndex, out double width, out double height)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>pageIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageSizeByIndexF_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageSizeByIndexF*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageSizeByIndexF_System_IntPtr_System_Int32_nebulae_dotPDFium_Native_FsSizeF__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageSizeByIndexF(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsSizeF@)">
+  FPDF_GetPageSizeByIndexF(nint, int, out FsSizeF)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_GetPageSizeByIndexF(nint document, int pageIndex, out FsSizeF size)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>pageIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="nebulae.dotPDFium.Native.FsSizeF.html">FsSizeF</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageWidth_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageWidth*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageWidth_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageWidth(System.IntPtr)">
+  FPDF_GetPageWidth(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern double FPDF_GetPageWidth(nint page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageWidthF_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageWidthF*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetPageWidthF_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetPageWidthF(System.IntPtr)">
+  FPDF_GetPageWidthF(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern float FPDF_GetPageWidthF(nint page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetSecurityHandlerRevision_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetSecurityHandlerRevision*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetSecurityHandlerRevision_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetSecurityHandlerRevision(System.IntPtr)">
+  FPDF_GetSecurityHandlerRevision(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDF_GetSecurityHandlerRevision(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetTrailerEnds_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetTrailerEnds*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetTrailerEnds_System_IntPtr_System_UInt32___System_UInt32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetTrailerEnds(System.IntPtr,System.UInt32[],System.UInt32)">
+  FPDF_GetTrailerEnds(nint, uint[], uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint FPDF_GetTrailerEnds(nint document, uint[] buffer, uint length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a>[]</dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetXFAPacketContent_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetXFAPacketContent*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetXFAPacketContent_System_IntPtr_System_Int32_System_IntPtr_System_UInt32_System_UInt32__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetXFAPacketContent(System.IntPtr,System.Int32,System.IntPtr,System.UInt32,System.UInt32@)">
+  FPDF_GetXFAPacketContent(nint, int, nint, uint, out uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_GetXFAPacketContent(nint document, int index, nint buffer, uint buflen, out uint outBuflen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>buflen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+    <dt><code>outBuflen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetXFAPacketCount_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetXFAPacketCount*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetXFAPacketCount_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetXFAPacketCount(System.IntPtr)">
+  FPDF_GetXFAPacketCount(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDF_GetXFAPacketCount(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetXFAPacketName_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetXFAPacketName*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_GetXFAPacketName_System_IntPtr_System_Int32_System_IntPtr_System_UInt32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_GetXFAPacketName(System.IntPtr,System.Int32,System.IntPtr,System.UInt32)">
+  FPDF_GetXFAPacketName(nint, int, nint, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint FPDF_GetXFAPacketName(nint document, int index, nint buffer, uint buflen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>buflen</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadCustomDocument_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadCustomDocument*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadCustomDocument_nebulae_dotPDFium_Native_PdfFileAccess__System_String_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadCustomDocument(nebulae.dotPDFium.Native.PdfFileAccess@,System.String)">
+  FPDF_LoadCustomDocument(ref PdfFileAccess, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_LoadCustomDocument(ref PdfFileAccess access, string password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>access</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfFileAccess.html">PdfFileAccess</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadDocument_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadDocument*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadDocument_System_String_System_String_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadDocument(System.String,System.String)">
+  FPDF_LoadDocument(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_LoadDocument(string file_path, string password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>file_path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadMemDocument_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadMemDocument*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadMemDocument_System_IntPtr_System_Int32_System_String_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadMemDocument(System.IntPtr,System.Int32,System.String)">
+  FPDF_LoadMemDocument(nint, int, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_LoadMemDocument(nint data_buf, int size, string password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data_buf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadMemDocument64_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadMemDocument64*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadMemDocument64_System_IntPtr_System_UIntPtr_System_String_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadMemDocument64(System.IntPtr,System.UIntPtr,System.String)">
+  FPDF_LoadMemDocument64(nint, nuint, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_LoadMemDocument64(nint data_buf, nuint size, string password)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data_buf</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>size</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+    <dt><code>password</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadPage_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadPage*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_LoadPage_System_IntPtr_System_Int32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_LoadPage(System.IntPtr,System.Int32)">
+  FPDF_LoadPage(nint, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_LoadPage(nint document, int page_index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>page_index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_PageToDevice_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_PageToDevice*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_PageToDevice_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Double_System_Double_System_Int32__System_Int32__" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_PageToDevice(System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Double,System.Double,System.Int32@,System.Int32@)">
+  FPDF_PageToDevice(nint, int, int, int, int, int, double, double, out int, out int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_PageToDevice(nint page, int start_x, int start_y, int size_x, int size_y, int rotate, double page_x, double page_y, out int device_x, out int device_y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>start_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>start_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rotate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>page_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>page_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>device_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>device_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_RenderPageBitmap_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_RenderPageBitmap*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_RenderPageBitmap_System_IntPtr_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_RenderPageBitmap(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)">
+  FPDF_RenderPageBitmap(nint, nint, int, int, int, int, int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void FPDF_RenderPageBitmap(nint bitmap, nint page, int start_x, int start_y, int size_x, int size_y, int rotate, int flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>start_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>start_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size_x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>size_y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>rotate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_RenderPageBitmapWithMatrix_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_RenderPageBitmapWithMatrix*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_RenderPageBitmapWithMatrix_System_IntPtr_System_IntPtr_nebulae_dotPDFium_Native_FsMatrixF__nebulae_dotPDFium_Native_FsRectF__System_Int32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_RenderPageBitmapWithMatrix(System.IntPtr,System.IntPtr,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,System.Int32)">
+  FPDF_RenderPageBitmapWithMatrix(nint, nint, ref FsMatrixF, ref FsRectF, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern void FPDF_RenderPageBitmapWithMatrix(nint bitmap, nint page, ref FsMatrixF matrix, ref FsRectF clipping, int flags)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>page</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>matrix</code> <a class="xref" href="nebulae.dotPDFium.Native.FsMatrixF.html">FsMatrixF</a></dt>
+    <dd></dd>
+    <dt><code>clipping</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd></dd>
+    <dt><code>flags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetDuplex_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetDuplex*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetDuplex_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetDuplex(System.IntPtr)">
+  FPDF_VIEWERREF_GetDuplex(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern PdfDuplexType FPDF_VIEWERREF_GetDuplex(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.PdfDuplexType.html">PdfDuplexType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetName_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetName*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetName_System_IntPtr_System_String_System_Byte___System_UInt32_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetName(System.IntPtr,System.String,System.Byte[],System.UInt32)">
+  FPDF_VIEWERREF_GetName(nint, string, byte[], uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern uint FPDF_VIEWERREF_GetName(nint document, string key, byte[] buffer, uint length)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetNumCopies_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetNumCopies*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetNumCopies_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetNumCopies(System.IntPtr)">
+  FPDF_VIEWERREF_GetNumCopies(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDF_VIEWERREF_GetNumCopies(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintPageRange_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintPageRange*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintPageRange_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintPageRange(System.IntPtr)">
+  FPDF_VIEWERREF_GetPrintPageRange(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nint FPDF_VIEWERREF_GetPrintPageRange(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintPageRangeCount_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintPageRangeCount*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintPageRangeCount_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintPageRangeCount(System.IntPtr)">
+  FPDF_VIEWERREF_GetPrintPageRangeCount(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern nuint FPDF_VIEWERREF_GetPrintPageRangeCount(nint pageRange)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintPageRangeElement_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintPageRangeElement*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintPageRangeElement_System_IntPtr_System_UIntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintPageRangeElement(System.IntPtr,System.UIntPtr)">
+  FPDF_VIEWERREF_GetPrintPageRangeElement(nint, nuint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern int FPDF_VIEWERREF_GetPrintPageRangeElement(nint pageRange, nuint index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pageRange</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uintptr">nuint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintScaling_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintScaling*"></a>
+
+  <h3 id="nebulae_dotPDFium_Native_PdfViewNative_FPDF_VIEWERREF_GetPrintScaling_System_IntPtr_" data-uid="nebulae.dotPDFium.Native.PdfViewNative.FPDF_VIEWERREF_GetPrintScaling(System.IntPtr)">
+  FPDF_VIEWERREF_GetPrintScaling(nint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static extern bool FPDF_VIEWERREF_GetPrintScaling(nint document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">nint</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/Native/PdfViewNative.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,2116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PdfPage | dotPDFium </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PdfPage | dotPDFium ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nebulaeonline/dotPDFium/new/main/apiSpec/new?filename=nebulae_dotPDFium_PdfPage.md&amp;value=---%0Auid%3A%20nebulae.dotPDFium.PdfPage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="dotPDFium">
+            dotPDFium
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="nebulae.dotPDFium.PdfPage">
+
+
+
+  <h1 id="nebulae_dotPDFium_PdfPage" data-uid="nebulae.dotPDFium.PdfPage" class="text-break">
+Class PdfPage  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L8"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="nebulae.html">nebulae</a>.<a class="xref" href="nebulae.dotPDFium.html">dotPDFium</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotPDFium.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PdfPage : PdfObject, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="nebulae.dotPDFium.PdfObject.html">PdfObject</a></div>
+      <div><span class="xref">PdfPage</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__handle">PdfObject._handle</a>
+    </div>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__type">PdfObject._type</a>
+    </div>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__disposed">PdfObject._disposed</a>
+    </div>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Handle">PdfObject.Handle</a>
+    </div>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Type">PdfObject.Type</a>
+    </div>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_IsDisposed">PdfObject.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError">PdfObject.GetPDFiumError()</a>
+    </div>
+    <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose">PdfObject.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="nebulae_dotPDFium_PdfPage_Height_" data-uid="nebulae.dotPDFium.PdfPage.Height*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_Height" data-uid="nebulae.dotPDFium.PdfPage.Height">
+  Height
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the height of the current PDF page in points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Height { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_Height_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The height is retrieved directly from the underlying PDF page handle. The value is
+typically used for rendering or layout purposes.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_HeightF_" data-uid="nebulae.dotPDFium.PdfPage.HeightF*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_HeightF" data-uid="nebulae.dotPDFium.PdfPage.HeightF">
+  HeightF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the height of the current PDF page in points as a float.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HeightF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_Width_" data-uid="nebulae.dotPDFium.PdfPage.Width*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_Width" data-uid="nebulae.dotPDFium.PdfPage.Width">
+  Width
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the width of the current PDF page in points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double Width { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_Width_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The width is retrieved directly from the underlying PDF page handle. The value is
+typically used for rendering or layout purposes.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_WidthF_" data-uid="nebulae.dotPDFium.PdfPage.WidthF*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_WidthF" data-uid="nebulae.dotPDFium.PdfPage.WidthF">
+  WidthF
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the width of the current PDF page in points as a float.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WidthF { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="nebulae_dotPDFium_PdfPage_Close_" data-uid="nebulae.dotPDFium.PdfPage.Close*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_Close" data-uid="nebulae.dotPDFium.PdfPage.Close">
+  Close()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L785"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Closes the current page and releases the associated resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Close()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_CreateAnnotation_" data-uid="nebulae.dotPDFium.PdfPage.CreateAnnotation*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_CreateAnnotation_nebulae_dotPDFium_Native_PdfAnnotationSubtype_" data-uid="nebulae.dotPDFium.PdfPage.CreateAnnotation(nebulae.dotPDFium.Native.PdfAnnotationSubtype)">
+  CreateAnnotation(PdfAnnotationSubtype)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L428"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a new annotation of the specified subtype on the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfAnnotation CreateAnnotation(PdfAnnotationSubtype subtype)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>subtype</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfAnnotationSubtype.html">PdfAnnotationSubtype</a></dt>
+    <dd><p>The subtype of the annotation to create. This determines the type of annotation, such as a text note,
+highlight, or shape.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a> object representing the newly created annotation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the annotation could not be created for the specified <code class="paramref">subtype</code>.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_DeviceToPage_" data-uid="nebulae.dotPDFium.PdfPage.DeviceToPage*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_DeviceToPage_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_System_Int32_System_Int32_System_Double__System_Double__" data-uid="nebulae.dotPDFium.PdfPage.DeviceToPage(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Int32,System.Int32,System.Double@,System.Double@)">
+  DeviceToPage(int, int, int, int, PdfPageRotation, int, int, out double, out double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts device (pixel) coordinates into page-space coordinates (points).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeviceToPage(int startX, int startY, int width, int height, PdfPageRotation rotate, int deviceX, int deviceY, out double pageX, out double pageY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The X position of the rendered area in device pixels (usually 0).</p>
+</dd>
+    <dt><code>startY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y position of the rendered area in device pixels (usually 0).</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the rendered area in pixels (matches the bitmap width).</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the rendered area in pixels (matches the bitmap height).</p>
+</dd>
+    <dt><code>rotate</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a></dt>
+    <dd><p>The rotation of the page (0, 90, 180, 270 degrees). See PdfRotation enum.
+Do not swap width and height manually; PDFium handles this automatically.</p>
+</dd>
+    <dt><code>deviceX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The device-space X coordinate (in pixels) to convert.</p>
+</dd>
+    <dt><code>deviceY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The device-space Y coordinate (in pixels) to convert.</p>
+</dd>
+    <dt><code>pageX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output variable for the resulting X coordinate in page-space points.</p>
+</dd>
+    <dt><code>pageY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>Output variable for the resulting Y coordinate in page-space points.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if the page has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_Dispose_" data-uid="nebulae.dotPDFium.PdfPage.Dispose*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_Dispose_System_Boolean_" data-uid="nebulae.dotPDFium.PdfPage.Dispose(System.Boolean)">
+  Dispose(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L795"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Releases the resources used by the page, optionally unregistering it from the parent document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to release both managed and unmanaged resources; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to release
+only unmanaged resources.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_Dispose_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When <code class="paramref">disposing</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, this method unregisters
+the page  from its parent document, if applicable. Ensure that this method is called to properly clean up
+resources associated with the page.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_EnumerateLinks_" data-uid="nebulae.dotPDFium.PdfPage.EnumerateLinks*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_EnumerateLinks" data-uid="nebulae.dotPDFium.PdfPage.EnumerateLinks">
+  EnumerateLinks()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L744"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enumerates all link annotations on the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;PdfLinkAnnotation&gt; EnumerateLinks()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="nebulae.dotPDFium.PdfLinkAnnotation.html">PdfLinkAnnotation</a>&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="nebulae.dotPDFium.PdfLinkAnnotation.html">PdfLinkAnnotation</a> objects representing the link annotations
+found on the page. The enumeration will be empty if no link annotations are present.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_EnumerateLinks_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method lazily enumerates the link annotations on the page. Each <a class="xref" href="nebulae.dotPDFium.PdfLinkAnnotation.html">PdfLinkAnnotation</a>  object represents a single link annotation and provides access to its properties
+and behaviors.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_FinalizeContent_" data-uid="nebulae.dotPDFium.PdfPage.FinalizeContent*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_FinalizeContent" data-uid="nebulae.dotPDFium.PdfPage.FinalizeContent">
+  FinalizeContent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finalizes the content of the current page. This method should be called after all modifications to the page are complete.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinalizeContent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Throws on PDFium library error</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_FindLinkAtPoint_" data-uid="nebulae.dotPDFium.PdfPage.FindLinkAtPoint*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_FindLinkAtPoint_System_Double_System_Double_" data-uid="nebulae.dotPDFium.PdfPage.FindLinkAtPoint(System.Double,System.Double)">
+  FindLinkAtPoint(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L761"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds a link annotation at the specified point on the PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfLinkAnnotation? FindLinkAtPoint(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the point, in the coordinate system of the PDF page.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the point, in the coordinate system of the PDF page.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfLinkAnnotation.html">PdfLinkAnnotation</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfLinkAnnotation.html">PdfLinkAnnotation</a> object representing the link annotation at the specified point,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no link annotation is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_Flatten_" data-uid="nebulae.dotPDFium.PdfPage.Flatten*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_Flatten_nebulae_dotPDFium_Native_PdfFlattenMode_" data-uid="nebulae.dotPDFium.PdfPage.Flatten(nebulae.dotPDFium.Native.PdfFlattenMode)">
+  Flatten(PdfFlattenMode)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L624"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Flattens the PDF page content into a single layer, making annotations and form fields part of the page
+content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfFlattenResult Flatten(PdfFlattenMode mode = PdfFlattenMode.NormalDisplay)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mode</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfFlattenMode.html">PdfFlattenMode</a></dt>
+    <dd><p>The flattening mode that determines how the content is rendered. Defaults to <a class="xref" href="nebulae.dotPDFium.Native.PdfFlattenMode.html#nebulae_dotPDFium_Native_PdfFlattenMode_NormalDisplay">NormalDisplay</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.PdfFlattenResult.html">PdfFlattenResult</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.Native.PdfFlattenResult.html">PdfFlattenResult</a> indicating the result of the flattening operation: <a class="xref" href="nebulae.dotPDFium.Native.PdfFlattenResult.html#nebulae_dotPDFium_Native_PdfFlattenResult_Success">Success</a> if the operation was successful, <a class="xref" href="nebulae.dotPDFium.Native.PdfFlattenResult.html#nebulae_dotPDFium_Native_PdfFlattenResult_NothingToDo">NothingToDo</a> if there was no content to flatten, or <a class="xref" href="nebulae.dotPDFium.Native.PdfFlattenResult.html#nebulae_dotPDFium_Native_PdfFlattenResult_Fail">Fail</a> if the operation failed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_Flatten_nebulae_dotPDFium_Native_PdfFlattenMode__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Flattening a PDF page can be useful for ensuring that annotations and form fields are
+no longer interactive and are instead rendered as part of the static page content. This operation is
+typically irreversible.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetAnnotation_" data-uid="nebulae.dotPDFium.PdfPage.GetAnnotation*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetAnnotation_System_Int32_" data-uid="nebulae.dotPDFium.PdfPage.GetAnnotation(System.Int32)">
+  GetAnnotation(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L411"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the annotation at the specified index on the PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfAnnotation GetAnnotation(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the annotation to retrieve. Must be within the range of available annotations on the
+page.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a> object representing the annotation at the specified index.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the annotation at the specified <code class="paramref">index</code> cannot be retrieved.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetAnnotationCount_" data-uid="nebulae.dotPDFium.PdfPage.GetAnnotationCount*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetAnnotationCount" data-uid="nebulae.dotPDFium.PdfPage.GetAnnotationCount">
+  GetAnnotationCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L399"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the total number of annotations on the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAnnotationCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of annotations on the page. Returns 0 if the page has no annotations.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetAnnotationCount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method retrieves the count of annotations present on the PDF page represented by
+this instance.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetAnnotationIndex_" data-uid="nebulae.dotPDFium.PdfPage.GetAnnotationIndex*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetAnnotationIndex_nebulae_dotPDFium_PdfAnnotation_" data-uid="nebulae.dotPDFium.PdfPage.GetAnnotationIndex(nebulae.dotPDFium.PdfAnnotation)">
+  GetAnnotationIndex(PdfAnnotation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the index of the specified annotation within the PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAnnotationIndex(PdfAnnotation annotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>annotation</code> <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></dt>
+    <dd><p>The annotation whose index is to be retrieved. Must not be <code>null</code>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the annotation within the page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the annotation cannot be located on the page.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetArtBox_" data-uid="nebulae.dotPDFium.PdfPage.GetArtBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetArtBox" data-uid="nebulae.dotPDFium.PdfPage.GetArtBox">
+  GetArtBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L586"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the ArtBox of the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FsRectF GetArtBox()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the ArtBox of the page.  The rectangle's coordinates are in
+user space units.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetArtBox_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The ArtBox defines the extent of the page's meaningful content as intended by the
+creator. This method returns the rectangle that represents the ArtBox in user space coordinates.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetBleedBox_" data-uid="nebulae.dotPDFium.PdfPage.GetBleedBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetBleedBox" data-uid="nebulae.dotPDFium.PdfPage.GetBleedBox">
+  GetBleedBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the bleed box of the page, which defines the region to which the page's content should be clipped
+when printed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FsRectF GetBleedBox()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>An <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the bleed box of the page. The bleed box is defined in the
+page's coordinate system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetBleedBox_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The bleed box is typically used in printing workflows to account for content that
+extends beyond the trim box, such as bleeds.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetBoundingBox_" data-uid="nebulae.dotPDFium.PdfPage.GetBoundingBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetBoundingBox" data-uid="nebulae.dotPDFium.PdfPage.GetBoundingBox">
+  GetBoundingBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the bounding box of the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FsRectF GetBoundingBox()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the bounding box of the page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if the PDF page has been disposed.</p>
+</dd>
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the bounding box could not be retrieved.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetCropBox_" data-uid="nebulae.dotPDFium.PdfPage.GetCropBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetCropBox" data-uid="nebulae.dotPDFium.PdfPage.GetCropBox">
+  GetCropBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L531"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the crop box of the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FsRectF GetCropBox()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the crop box of the page.  The crop box defines the visible
+area of the page in user space coordinates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetDecodedThumbnailData_" data-uid="nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetDecodedThumbnailData" data-uid="nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData">
+  GetDecodedThumbnailData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L642"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the decoded thumbnail image data for the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetDecodedThumbnailData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>A byte array containing the decoded thumbnail image data.  Returns an empty array if no thumbnail data is
+available.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetDecodedThumbnailData_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned byte array represents the raw image data of the thumbnail.  Callers can
+process this data further as needed, such as converting it into an image format.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetLinkAnnotation_" data-uid="nebulae.dotPDFium.PdfPage.GetLinkAnnotation*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetLinkAnnotation_System_Int32_" data-uid="nebulae.dotPDFium.PdfPage.GetLinkAnnotation(System.Int32)">
+  GetLinkAnnotation(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the link annotation at the specified index as a <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a>, if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfAnnotation? GetLinkAnnotation(int linkIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>linkIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the link annotation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></dt>
+    <dd><p>The corresponding <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a> or <code>null</code> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetLinkZOrderAtPoint_" data-uid="nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetLinkZOrderAtPoint_System_Double_System_Double_" data-uid="nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint(System.Double,System.Double)">
+  GetLinkZOrderAtPoint(double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L777"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the z-order index of a link at the specified point on the page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetLinkZOrderAtPoint(double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the point, in the page's coordinate system.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the point, in the page's coordinate system.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based z-order index of the link at the specified point, where a lower index indicates a link closer
+to the top of the z-order. Returns -1 if no link is found at the specified point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetLinkZOrderAtPoint_System_Double_System_Double__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The z-order index determines the stacking order of links at a given point, with lower
+indices representing links that are visually on top. This method can be used to identify and interact with
+specific links in a document.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetMediaBox_" data-uid="nebulae.dotPDFium.PdfPage.GetMediaBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetMediaBox" data-uid="nebulae.dotPDFium.PdfPage.GetMediaBox">
+  GetMediaBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L514"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the MediaBox of the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FsRectF GetMediaBox()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>An <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the MediaBox of the page.  The MediaBox defines the
+boundaries of the physical medium on which the page is intended to be displayed or printed.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetMediaBox_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The MediaBox is the default boundary for the page content in a PDF document.  It
+specifies the dimensions of the page in user space units.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetObject_" data-uid="nebulae.dotPDFium.PdfPage.GetObject*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetObject_System_Int32_" data-uid="nebulae.dotPDFium.PdfPage.GetObject(System.Int32)">
+  GetObject(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L375"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the object at the specified index on the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfPageObject GetObject(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the object to retrieve</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfPageObject.html">PdfPageObject</a></dt>
+    <dd><p>The object at the specified index</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Throws on PDFium library error</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetObjectCount_" data-uid="nebulae.dotPDFium.PdfPage.GetObjectCount*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetObjectCount" data-uid="nebulae.dotPDFium.PdfPage.GetObjectCount">
+  GetObjectCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the number of objects on the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetObjectCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetOrLoadText_" data-uid="nebulae.dotPDFium.PdfPage.GetOrLoadText*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetOrLoadText" data-uid="nebulae.dotPDFium.PdfPage.GetOrLoadText">
+  GetOrLoadText()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L89"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the text content of the current PDF page if it is already loaded, otherwise loads it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfText GetOrLoadText()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfText.html">PdfText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Throws if the page has been disposed</p>
+</dd>
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Throws on PDFium library error</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetRawThumbnailData_" data-uid="nebulae.dotPDFium.PdfPage.GetRawThumbnailData*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetRawThumbnailData" data-uid="nebulae.dotPDFium.PdfPage.GetRawThumbnailData">
+  GetRawThumbnailData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L667"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the raw thumbnail data for the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetRawThumbnailData()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>A byte array containing the raw thumbnail data of the PDF page.  Returns an empty array if no thumbnail data
+is available.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetRawThumbnailData_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The raw thumbnail data can be used for further processing or rendering.  The caller
+is responsible for interpreting the data appropriately.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetRotation_" data-uid="nebulae.dotPDFium.PdfPage.GetRotation*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetRotation" data-uid="nebulae.dotPDFium.PdfPage.GetRotation">
+  GetRotation()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the rotation of the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfPageRotation GetRotation()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a> value representing the rotation of the page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the rotation value retrieved from the native PDF library is invalid.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetStructTree_" data-uid="nebulae.dotPDFium.PdfPage.GetStructTree*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetStructTree" data-uid="nebulae.dotPDFium.PdfPage.GetStructTree">
+  GetStructTree()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the logical structure tree for this page, if one exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfStructTree? GetStructTree()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfStructTree.html">PdfStructTree</a></dt>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfStructTree.html">PdfStructTree</a>, or <code>null</code> if the page has no tagged content.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetThumbnailBitmap_" data-uid="nebulae.dotPDFium.PdfPage.GetThumbnailBitmap*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetThumbnailBitmap" data-uid="nebulae.dotPDFium.PdfPage.GetThumbnailBitmap">
+  GetThumbnailBitmap()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L694"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the thumbnail image of the current PDF page as a <a class="xref" href="PdfBitmap.html">PdfBitmap</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfBitmap? GetThumbnailBitmap()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="PdfBitmap.html">PdfBitmap</a></dt>
+    <dd><p>A <a class="xref" href="PdfBitmap.html">PdfBitmap</a> representing the thumbnail image of the current PDF page,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no thumbnail is available.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_GetThumbnailBitmap_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned <a class="xref" href="PdfBitmap.html">PdfBitmap</a> contains the thumbnail image of the current PDF
+page,  with its dimensions estimated based on the bitmap's stride and format.  If the thumbnail cannot be
+retrieved, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the thumbnail image is in an unsupported format.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_GetTrimBox_" data-uid="nebulae.dotPDFium.PdfPage.GetTrimBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_GetTrimBox" data-uid="nebulae.dotPDFium.PdfPage.GetTrimBox">
+  GetTrimBox()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L567"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the trim box of the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FsRectF GetTrimBox()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>An <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the trim box of the page.  The trim box defines the intended
+dimensions of the page's content after trimming.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_HasTransparency_" data-uid="nebulae.dotPDFium.PdfPage.HasTransparency*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_HasTransparency" data-uid="nebulae.dotPDFium.PdfPage.HasTransparency">
+  HasTransparency()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the PDF page contains any transparent elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasTransparency()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the PDF page has transparent elements; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_HasTransparency_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks for the presence of transparency on the PDF page, which may affect
+rendering or printing.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_InsertObject_" data-uid="nebulae.dotPDFium.PdfPage.InsertObject*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_InsertObject_nebulae_dotPDFium_PdfPageObject_" data-uid="nebulae.dotPDFium.PdfPage.InsertObject(nebulae.dotPDFium.PdfPageObject)">
+  InsertObject(PdfPageObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Insert a PDF page object into the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InsertObject(PdfPageObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="nebulae.dotPDFium.PdfPageObject.html">PdfPageObject</a></dt>
+    <dd><p>The PdfObject to insert into the page</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Throws if obj is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_PageToDevice_" data-uid="nebulae.dotPDFium.PdfPage.PageToDevice*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_PageToDevice_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_System_Double_System_Double_System_Int32__System_Int32__" data-uid="nebulae.dotPDFium.PdfPage.PageToDevice(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Double,System.Double,System.Int32@,System.Int32@)">
+  PageToDevice(int, int, int, int, PdfPageRotation, double, double, out int, out int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Converts a point from page coordinates (points) to device coordinates (pixels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PageToDevice(int startX, int startY, int width, int height, PdfPageRotation rotate, double pageX, double pageY, out int deviceX, out int deviceY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>startX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The X offset in device pixels where the page rendering starts (usually 0).</p>
+</dd>
+    <dt><code>startY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Y offset in device pixels where the page rendering starts (usually 0).</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the rendered area in device pixels (e.g., the bitmap width).</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the rendered area in device pixels (e.g., the bitmap height).</p>
+</dd>
+    <dt><code>rotate</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a></dt>
+    <dd></dd>
+    <dt><code>pageX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The X coordinate in page space (points, where 1 point = 1/72 inch).</p>
+</dd>
+    <dt><code>pageY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The Y coordinate in page space (points).</p>
+</dd>
+    <dt><code>deviceX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Output parameter receiving the corresponding X coordinate in device space (pixels).</p>
+</dd>
+    <dt><code>deviceY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Output parameter receiving the corresponding Y coordinate in device space (pixels).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if the page has been disposed.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_RemoveAnnotation_" data-uid="nebulae.dotPDFium.PdfPage.RemoveAnnotation*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_RemoveAnnotation_nebulae_dotPDFium_PdfAnnotation_" data-uid="nebulae.dotPDFium.PdfPage.RemoveAnnotation(nebulae.dotPDFium.PdfAnnotation)">
+  RemoveAnnotation(PdfAnnotation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L458"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the specified annotation from the PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAnnotation(PdfAnnotation annotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>annotation</code> <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></dt>
+    <dd><p>The annotation to remove from the page. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_RemoveAnnotation_nebulae_dotPDFium_PdfAnnotation__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use this method to delete an annotation from the current PDF page. Ensure that the
+annotation  is valid and associated with this page before calling this method.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the annotation could not be removed from the page.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_RemoveObject_" data-uid="nebulae.dotPDFium.PdfPage.RemoveObject*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_RemoveObject_nebulae_dotPDFium_PdfPageObject_" data-uid="nebulae.dotPDFium.PdfPage.RemoveObject(nebulae.dotPDFium.PdfPageObject)">
+  RemoveObject(PdfPageObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Removes the specified PDF page object from the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveObject(PdfPageObject obj)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <a class="xref" href="nebulae.dotPDFium.PdfPageObject.html">PdfPageObject</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPageObject.html">PdfPageObject</a> to remove. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the removal operation fails due to an error in the underlying PDF library.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_RenderToBitmap_" data-uid="nebulae.dotPDFium.PdfPage.RenderToBitmap*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_RenderToBitmap_PdfBitmap_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_nebulae_dotPDFium_Native_PdfRenderFlags_" data-uid="nebulae.dotPDFium.PdfPage.RenderToBitmap(PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)">
+  RenderToBitmap(PdfBitmap, int, int, int, int, PdfPageRotation, PdfRenderFlags)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method renders the current PDF page to a bitmap.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderToBitmap(PdfBitmap bitmap, int startX, int startY, int width, int height, PdfPageRotation rotate = PdfPageRotation.NoRotation, PdfRenderFlags flags = PdfRenderFlags.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="PdfBitmap.html">PdfBitmap</a></dt>
+    <dd><p>The bitmap to render the page to</p>
+</dd>
+    <dt><code>startX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting x coordinate in pixels</p>
+</dd>
+    <dt><code>startY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The starting y coordinate in pixels</p>
+</dd>
+    <dt><code>width</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The width of the bitmap to render in pixels</p>
+</dd>
+    <dt><code>height</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The height of the bitmap to render in pixels</p>
+</dd>
+    <dt><code>rotate</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a></dt>
+    <dd><p>The rotation of the page (see PdfRotation enum)</p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfRenderFlags.html">PdfRenderFlags</a></dt>
+    <dd><p>See PdfRenderFlags</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd></dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_RenderToBitmapWithMatrix_" data-uid="nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_RenderToBitmapWithMatrix_PdfBitmap_nebulae_dotPDFium_Native_FsMatrixF__nebulae_dotPDFium_Native_FsRectF__nebulae_dotPDFium_Native_PdfRenderFlags_" data-uid="nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)">
+  RenderToBitmapWithMatrix(PdfBitmap, ref FsMatrixF, ref FsRectF, PdfRenderFlags)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the current PDF page to a bitmap using a transformation matrix and clipping rectangle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenderToBitmapWithMatrix(PdfBitmap bitmap, ref FsMatrixF transform, ref FsRectF clip, PdfRenderFlags flags = PdfRenderFlags.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bitmap</code> <a class="xref" href="PdfBitmap.html">PdfBitmap</a></dt>
+    <dd><p>The bitmap to render to</p>
+</dd>
+    <dt><code>transform</code> <a class="xref" href="nebulae.dotPDFium.Native.FsMatrixF.html">FsMatrixF</a></dt>
+    <dd><p>The transform matrix for the page</p>
+</dd>
+    <dt><code>clip</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>The clipping rectangle for the page</p>
+</dd>
+    <dt><code>flags</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfRenderFlags.html">PdfRenderFlags</a></dt>
+    <dd><p>Flags - see PdfRenderFlags</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.objectdisposedexception">ObjectDisposedException</a></dt>
+    <dd><p>Thrown if the PDF page has already been disposed</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if the PDF bitmap is null</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_SetArtBox_" data-uid="nebulae.dotPDFium.PdfPage.SetArtBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_SetArtBox_nebulae_dotPDFium_Native_FsRectF_" data-uid="nebulae.dotPDFium.PdfPage.SetArtBox(nebulae.dotPDFium.Native.FsRectF)">
+  SetArtBox(FsRectF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L596"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the ArtBox for the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetArtBox(FsRectF box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure defining the ArtBox dimensions.  The coordinates must be specified in
+the page's coordinate system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_SetArtBox_nebulae_dotPDFium_Native_FsRectF__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The ArtBox defines the extent of the page's meaningful content,  excluding any
+additional elements such as bleed or trim areas. Ensure that the specified <code class="paramref">box</code> is valid
+and within the page's boundaries.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_SetBleedBox_" data-uid="nebulae.dotPDFium.PdfPage.SetBleedBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_SetBleedBox_nebulae_dotPDFium_Native_FsRectF_" data-uid="nebulae.dotPDFium.PdfPage.SetBleedBox(nebulae.dotPDFium.Native.FsRectF)">
+  SetBleedBox(FsRectF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L560"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the bleed box for the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBleedBox(FsRectF box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the bleed box dimensions.  The bleed box defines the region
+to which the page content should extend,  typically used for printing purposes.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_SetBleedBox_nebulae_dotPDFium_Native_FsRectF__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The bleed box is used to ensure that content intended to extend to the edge of the
+page  is printed correctly, even if the page is trimmed. Ensure that the <code class="paramref">box</code>  parameter
+specifies valid dimensions within the page boundaries.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_SetCropBox_" data-uid="nebulae.dotPDFium.PdfPage.SetCropBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_SetCropBox_nebulae_dotPDFium_Native_FsRectF_" data-uid="nebulae.dotPDFium.PdfPage.SetCropBox(nebulae.dotPDFium.Native.FsRectF)">
+  SetCropBox(FsRectF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L540"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the crop box for the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCropBox(FsRectF box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure defining the crop box dimensions.  The coordinates are specified in
+points, with the origin at the bottom-left corner of the page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_SetCropBox_nebulae_dotPDFium_Native_FsRectF__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The crop box defines the visible area of the page when displayed or printed.  Any
+content outside the crop box will be clipped.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_SetMediaBox_" data-uid="nebulae.dotPDFium.PdfPage.SetMediaBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_SetMediaBox_nebulae_dotPDFium_Native_FsRectF_" data-uid="nebulae.dotPDFium.PdfPage.SetMediaBox(nebulae.dotPDFium.Native.FsRectF)">
+  SetMediaBox(FsRectF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L524"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the MediaBox for the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMediaBox(FsRectF box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the new MediaBox dimensions.  The coordinates must be
+specified in points and follow the PDF coordinate system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_SetMediaBox_nebulae_dotPDFium_Native_FsRectF__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The MediaBox defines the boundaries of the physical medium on which the page is
+intended to be displayed or printed. Ensure that the provided <code class="paramref">box</code> is valid and within the
+acceptable range for the page.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_SetRotation_" data-uid="nebulae.dotPDFium.PdfPage.SetRotation*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_SetRotation_nebulae_dotPDFium_Native_PdfPageRotation_" data-uid="nebulae.dotPDFium.PdfPage.SetRotation(nebulae.dotPDFium.Native.PdfPageRotation)">
+  SetRotation(PdfPageRotation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the rotation of the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRotation(PdfPageRotation rotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rotation</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a></dt>
+    <dd><p>The desired rotation for the page, specified as a <a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_SetRotation_nebulae_dotPDFium_Native_PdfPageRotation__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method updates the rotation of the page to the specified value.  The rotation is
+applied in 90-degree increments, as defined by the <a class="xref" href="nebulae.dotPDFium.Native.PdfPageRotation.html">PdfPageRotation</a> enumeration.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_SetTrimBox_" data-uid="nebulae.dotPDFium.PdfPage.SetTrimBox*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_SetTrimBox_nebulae_dotPDFium_Native_FsRectF_" data-uid="nebulae.dotPDFium.PdfPage.SetTrimBox(nebulae.dotPDFium.Native.FsRectF)">
+  SetTrimBox(FsRectF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L577"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the trim box for the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTrimBox(FsRectF box)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>box</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a> structure representing the trim box dimensions. The trim box defines the intended
+visible area of the page after trimming.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_SetTrimBox_nebulae_dotPDFium_Native_FsRectF__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The trim box is typically used to specify the final dimensions of the page after any
+trimming or cutting operations. Ensure that the provided <code class="paramref">box</code> dimensions are valid and
+within the bounds of the page.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_TransformAnnotations_" data-uid="nebulae.dotPDFium.PdfPage.TransformAnnotations*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_TransformAnnotations_nebulae_dotPDFium_Native_FsMatrix_" data-uid="nebulae.dotPDFium.PdfPage.TransformAnnotations(nebulae.dotPDFium.Native.FsMatrix)">
+  TransformAnnotations(FsMatrix)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L727"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a transformation matrix to all annotations on the current PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransformAnnotations(FsMatrix matrix)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <a class="xref" href="nebulae.dotPDFium.Native.FsMatrix.html">FsMatrix</a></dt>
+    <dd><p>The transformation matrix to apply. Each element of the matrix represents a specific transformation
+component (e.g., scaling, rotation, translation).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfPage_TransformAnnotations_nebulae_dotPDFium_Native_FsMatrix__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method modifies the appearance and positioning of annotations on the page by
+applying the specified transformation matrix. The transformation is applied directly to the annotations and
+does not affect the page content itself.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_TransformWithClip_" data-uid="nebulae.dotPDFium.PdfPage.TransformWithClip*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_TransformWithClip_nebulae_dotPDFium_Native_FsMatrixF_nebulae_dotPDFium_Native_FsRectF_" data-uid="nebulae.dotPDFium.PdfPage.TransformWithClip(nebulae.dotPDFium.Native.FsMatrixF,nebulae.dotPDFium.Native.FsRectF)">
+  TransformWithClip(FsMatrixF, FsRectF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Applies a transformation matrix and a clipping rectangle to the current page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TransformWithClip(FsMatrixF matrix, FsRectF clip)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>matrix</code> <a class="xref" href="nebulae.dotPDFium.Native.FsMatrixF.html">FsMatrixF</a></dt>
+    <dd><p>The transformation matrix to apply to the page. This defines how the page content is scaled, rotated, or
+translated.</p>
+</dd>
+    <dt><code>clip</code> <a class="xref" href="nebulae.dotPDFium.Native.FsRectF.html">FsRectF</a></dt>
+    <dd><p>The clipping rectangle that limits the visible area of the page after the transformation is applied.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the transformation or clipping operation fails.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="nebulae_dotPDFium_PdfPage_TryGetOrLoadText_" data-uid="nebulae.dotPDFium.PdfPage.TryGetOrLoadText*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPage_TryGetOrLoadText_nebulae_dotPDFium_PdfText__" data-uid="nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText@)">
+  TryGetOrLoadText(out PdfText?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the text content of the current PDF page if it is already loaded, otherwise loads it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetOrLoadText(out PdfText? pdfText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pdfText</code> <a class="xref" href="nebulae.dotPDFium.PdfText.html">PdfText</a></dt>
+    <dd><p>Out parameter for receiving the PdfText object</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>true on success, false on failure</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPage.cs/#L8" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
