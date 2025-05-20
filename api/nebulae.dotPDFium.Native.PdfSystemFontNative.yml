@@ -1,0 +1,568 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative
+  commentId: T:nebulae.dotPDFium.Native.PdfSystemFontNative
+  id: PdfSystemFontNative
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont(System.IntPtr,System.String,System.Int32)
+  - nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo
+  - nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap
+  - nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount
+  - nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry(System.UIntPtr)
+  - nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo(System.IntPtr)
+  langs:
+  - csharp
+  - vb
+  name: PdfSystemFontNative
+  nameWithType: PdfSystemFontNative
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/Native/PdfSystemFontNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfSystemFontNative
+    path: ../dotPDFium/dotPDFium/Native/PdfSystemFontNative.cs
+    startLine: 5
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static class PdfSystemFontNative
+    content.vb: Public Module PdfSystemFontNative
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo(System.IntPtr)
+  id: FPDF_SetSystemFontInfo(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfSystemFontNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_SetSystemFontInfo(nint)
+  nameWithType: PdfSystemFontNative.FPDF_SetSystemFontInfo(nint)
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDF_SetSystemFontInfo(nint fontInfo)
+    parameters:
+    - id: fontInfo
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDF_SetSystemFontInfo(fontInfo As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo*
+  nameWithType.vb: PdfSystemFontNative.FPDF_SetSystemFontInfo(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo(System.IntPtr)
+  name.vb: FPDF_SetSystemFontInfo(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo
+  commentId: M:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo
+  id: FPDF_GetDefaultSystemFontInfo
+  parent: nebulae.dotPDFium.Native.PdfSystemFontNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_GetDefaultSystemFontInfo()
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo()
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo()
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_GetDefaultSystemFontInfo()
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_GetDefaultSystemFontInfo() As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo*
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo(System.IntPtr)
+  id: FPDF_FreeDefaultSystemFontInfo(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfSystemFontNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_FreeDefaultSystemFontInfo(nint)
+  nameWithType: PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo(nint)
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDF_FreeDefaultSystemFontInfo(nint fontInfo)
+    parameters:
+    - id: fontInfo
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDF_FreeDefaultSystemFontInfo(fontInfo As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo*
+  nameWithType.vb: PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo(System.IntPtr)
+  name.vb: FPDF_FreeDefaultSystemFontInfo(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont(System.IntPtr,System.String,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont(System.IntPtr,System.String,System.Int32)
+  id: FPDF_AddInstalledFont(System.IntPtr,System.String,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfSystemFontNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_AddInstalledFont(nint, string, int)
+  nameWithType: PdfSystemFontNative.FPDF_AddInstalledFont(nint, string, int)
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont(nint, string, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDF_AddInstalledFont(nint mapper, string face, int charset)
+    parameters:
+    - id: mapper
+      type: System.IntPtr
+    - id: face
+      type: System.String
+    - id: charset
+      type: System.Int32
+    content.vb: Public Shared Sub FPDF_AddInstalledFont(mapper As IntPtr, face As String, charset As Integer)
+  overload: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont*
+  nameWithType.vb: PdfSystemFontNative.FPDF_AddInstalledFont(IntPtr, String, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont(System.IntPtr, String, Integer)
+  name.vb: FPDF_AddInstalledFont(IntPtr, String, Integer)
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap
+  commentId: M:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap
+  id: FPDF_GetDefaultTTFMap
+  parent: nebulae.dotPDFium.Native.PdfSystemFontNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_GetDefaultTTFMap()
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultTTFMap()
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap()
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_GetDefaultTTFMap()
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_GetDefaultTTFMap() As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap*
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount
+  commentId: M:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount
+  id: FPDF_GetDefaultTTFMapCount
+  parent: nebulae.dotPDFium.Native.PdfSystemFontNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_GetDefaultTTFMapCount()
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultTTFMapCount()
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount()
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nuint FPDF_GetDefaultTTFMapCount()
+    return:
+      type: System.UIntPtr
+    content.vb: Public Shared Function FPDF_GetDefaultTTFMapCount() As UIntPtr
+  overload: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount*
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry(System.UIntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry(System.UIntPtr)
+  id: FPDF_GetDefaultTTFMapEntry(System.UIntPtr)
+  parent: nebulae.dotPDFium.Native.PdfSystemFontNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_GetDefaultTTFMapEntry(nuint)
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry(nuint)
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry(nuint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_GetDefaultTTFMapEntry(nuint index)
+    parameters:
+    - id: index
+      type: System.UIntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_GetDefaultTTFMapEntry(index As UIntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry*
+  nameWithType.vb: PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry(UIntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry(System.UIntPtr)
+  name.vb: FPDF_GetDefaultTTFMapEntry(UIntPtr)
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfSystemFontNative.html#nebulae_dotPDFium_Native_PdfSystemFontNative_FPDF_SetSystemFontInfo_System_IntPtr_
+  name: FPDF_SetSystemFontInfo
+  nameWithType: PdfSystemFontNative.FPDF_SetSystemFontInfo
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_SetSystemFontInfo
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfSystemFontNative.html#nebulae_dotPDFium_Native_PdfSystemFontNative_FPDF_GetDefaultSystemFontInfo
+  name: FPDF_GetDefaultSystemFontInfo
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultSystemFontInfo
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfSystemFontNative.html#nebulae_dotPDFium_Native_PdfSystemFontNative_FPDF_FreeDefaultSystemFontInfo_System_IntPtr_
+  name: FPDF_FreeDefaultSystemFontInfo
+  nameWithType: PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_FreeDefaultSystemFontInfo
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfSystemFontNative.html#nebulae_dotPDFium_Native_PdfSystemFontNative_FPDF_AddInstalledFont_System_IntPtr_System_String_System_Int32_
+  name: FPDF_AddInstalledFont
+  nameWithType: PdfSystemFontNative.FPDF_AddInstalledFont
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_AddInstalledFont
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfSystemFontNative.html#nebulae_dotPDFium_Native_PdfSystemFontNative_FPDF_GetDefaultTTFMap
+  name: FPDF_GetDefaultTTFMap
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultTTFMap
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMap
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfSystemFontNative.html#nebulae_dotPDFium_Native_PdfSystemFontNative_FPDF_GetDefaultTTFMapCount
+  name: FPDF_GetDefaultTTFMapCount
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultTTFMapCount
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapCount
+- uid: System.UIntPtr
+  commentId: T:System.UIntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  name: nuint
+  nameWithType: nuint
+  fullName: nuint
+  nameWithType.vb: UIntPtr
+  fullName.vb: System.UIntPtr
+  name.vb: UIntPtr
+- uid: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfSystemFontNative.html#nebulae_dotPDFium_Native_PdfSystemFontNative_FPDF_GetDefaultTTFMapEntry_System_UIntPtr_
+  name: FPDF_GetDefaultTTFMapEntry
+  nameWithType: PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry
+  fullName: nebulae.dotPDFium.Native.PdfSystemFontNative.FPDF_GetDefaultTTFMapEntry

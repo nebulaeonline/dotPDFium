@@ -1,0 +1,564 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfAction
+  commentId: T:nebulae.dotPDFium.PdfAction
+  id: PdfAction
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfAction.GetDestination(nebulae.dotPDFium.PdfDocument)
+  - nebulae.dotPDFium.PdfAction.GetFilePath
+  - nebulae.dotPDFium.PdfAction.GetNamedAction
+  - nebulae.dotPDFium.PdfAction.GetUri(nebulae.dotPDFium.PdfDocument)
+  - nebulae.dotPDFium.PdfAction.Type
+  langs:
+  - csharp
+  - vb
+  name: PdfAction
+  nameWithType: PdfAction
+  fullName: nebulae.dotPDFium.PdfAction
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAction.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfAction
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAction.cs
+    startLine: 16
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Represents an action within a PDF document, such as a hyperlink or a named action.
+  remarks: >-
+    A <xref href="nebulae.dotPDFium.PdfAction" data-throw-if-not-resolved="false"></xref> encapsulates a specific action defined in a PDF document.  Actions can
+        include navigating to a URI, executing a named action, or other types of actions  as defined by the PDF
+        specification. Use the <xref href="nebulae.dotPDFium.PdfAction.Type" data-throw-if-not-resolved="false"></xref> property to determine the  type of action and the appropriate methods to
+        retrieve additional details.
+  example: []
+  syntax:
+    content: public sealed class PdfAction
+    content.vb: Public NotInheritable Class PdfAction
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfAction.Type
+  commentId: P:nebulae.dotPDFium.PdfAction.Type
+  id: Type
+  parent: nebulae.dotPDFium.PdfAction
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: PdfAction.Type
+  fullName: nebulae.dotPDFium.PdfAction.Type
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAction.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Type
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAction.cs
+    startLine: 34
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the type of the PDF action represented by this instance.
+  example: []
+  syntax:
+    content: public PdfActionType Type { get; }
+    parameters: []
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+    content.vb: Public ReadOnly Property Type As PdfActionType
+  overload: nebulae.dotPDFium.PdfAction.Type*
+- uid: nebulae.dotPDFium.PdfAction.GetDestination(nebulae.dotPDFium.PdfDocument)
+  commentId: M:nebulae.dotPDFium.PdfAction.GetDestination(nebulae.dotPDFium.PdfDocument)
+  id: GetDestination(nebulae.dotPDFium.PdfDocument)
+  parent: nebulae.dotPDFium.PdfAction
+  langs:
+  - csharp
+  - vb
+  name: GetDestination(PdfDocument)
+  nameWithType: PdfAction.GetDestination(PdfDocument)
+  fullName: nebulae.dotPDFium.PdfAction.GetDestination(nebulae.dotPDFium.PdfDocument)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAction.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetDestination
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAction.cs
+    startLine: 53
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the destination associated with the current action in the specified PDF document.
+  remarks: >-
+    The destination represents a specific location within the PDF document, such as a page or a
+        view.  Use this method to navigate to or retrieve information about the target location of the action.
+  example: []
+  syntax:
+    content: public PdfDestination? GetDestination(PdfDocument doc)
+    parameters:
+    - id: doc
+      type: nebulae.dotPDFium.PdfDocument
+      description: The <xref href="nebulae.dotPDFium.PdfDocument" data-throw-if-not-resolved="false"></xref> instance representing the PDF document containing the action.
+    return:
+      type: nebulae.dotPDFium.PdfDestination
+      description: A <xref href="nebulae.dotPDFium.PdfDestination" data-throw-if-not-resolved="false"></xref> object representing the destination associated with the action,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no destination is associated.
+    content.vb: Public Function GetDestination(doc As PdfDocument) As PdfDestination
+  overload: nebulae.dotPDFium.PdfAction.GetDestination*
+- uid: nebulae.dotPDFium.PdfAction.GetFilePath
+  commentId: M:nebulae.dotPDFium.PdfAction.GetFilePath
+  id: GetFilePath
+  parent: nebulae.dotPDFium.PdfAction
+  langs:
+  - csharp
+  - vb
+  name: GetFilePath()
+  nameWithType: PdfAction.GetFilePath()
+  fullName: nebulae.dotPDFium.PdfAction.GetFilePath()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAction.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFilePath
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAction.cs
+    startLine: 65
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the file path associated with the current PDF action.
+  remarks: >-
+    The returned file path is decoded using UTF-8 encoding and may be trimmed of any trailing
+        null characters.
+  example: []
+  syntax:
+    content: public string? GetFilePath()
+    return:
+      type: System.String
+      description: The file path as a string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no file path is associated with the action.
+    content.vb: Public Function GetFilePath() As String
+  overload: nebulae.dotPDFium.PdfAction.GetFilePath*
+- uid: nebulae.dotPDFium.PdfAction.GetUri(nebulae.dotPDFium.PdfDocument)
+  commentId: M:nebulae.dotPDFium.PdfAction.GetUri(nebulae.dotPDFium.PdfDocument)
+  id: GetUri(nebulae.dotPDFium.PdfDocument)
+  parent: nebulae.dotPDFium.PdfAction
+  langs:
+  - csharp
+  - vb
+  name: GetUri(PdfDocument)
+  nameWithType: PdfAction.GetUri(PdfDocument)
+  fullName: nebulae.dotPDFium.PdfAction.GetUri(nebulae.dotPDFium.PdfDocument)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAction.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetUri
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAction.cs
+    startLine: 83
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the URI associated with the specified PDF document action.
+  remarks: >-
+    The returned URI is encoded in UTF-8 and may include a null terminator, which is removed
+        before returning the result.
+  example: []
+  syntax:
+    content: public string? GetUri(PdfDocument doc)
+    parameters:
+    - id: doc
+      type: nebulae.dotPDFium.PdfDocument
+      description: The <xref href="nebulae.dotPDFium.PdfDocument" data-throw-if-not-resolved="false"></xref> containing the action for which the URI is retrieved.
+    return:
+      type: System.String
+      description: The URI as a string if the action has an associated URI; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetUri(doc As PdfDocument) As String
+  overload: nebulae.dotPDFium.PdfAction.GetUri*
+- uid: nebulae.dotPDFium.PdfAction.GetNamedAction
+  commentId: M:nebulae.dotPDFium.PdfAction.GetNamedAction
+  id: GetNamedAction
+  parent: nebulae.dotPDFium.PdfAction
+  langs:
+  - csharp
+  - vb
+  name: GetNamedAction()
+  nameWithType: PdfAction.GetNamedAction()
+  fullName: nebulae.dotPDFium.PdfAction.GetNamedAction()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAction.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetNamedAction
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAction.cs
+    startLine: 101
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the name of a named action.
+  example: []
+  syntax:
+    content: public string? GetNamedAction()
+    return:
+      type: System.String
+      description: >-
+        Always returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> as the underlying implementation does not support retrieving the name of
+            named actions.
+    content.vb: Public Function GetNamedAction() As String
+  overload: nebulae.dotPDFium.PdfAction.GetNamedAction*
+references:
+- uid: nebulae.dotPDFium.PdfAction
+  commentId: T:nebulae.dotPDFium.PdfAction
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfAction.html
+  name: PdfAction
+  nameWithType: PdfAction
+  fullName: nebulae.dotPDFium.PdfAction
+- uid: nebulae.dotPDFium.PdfAction.Type
+  commentId: P:nebulae.dotPDFium.PdfAction.Type
+  href: nebulae.dotPDFium.PdfAction.html#nebulae_dotPDFium_PdfAction_Type
+  name: Type
+  nameWithType: PdfAction.Type
+  fullName: nebulae.dotPDFium.PdfAction.Type
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfAction.Type*
+  commentId: Overload:nebulae.dotPDFium.PdfAction.Type
+  href: nebulae.dotPDFium.PdfAction.html#nebulae_dotPDFium_PdfAction_Type
+  name: Type
+  nameWithType: PdfAction.Type
+  fullName: nebulae.dotPDFium.PdfAction.Type
+- uid: nebulae.dotPDFium.Native.PdfActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfActionType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfActionType.html
+  name: PdfActionType
+  nameWithType: PdfActionType
+  fullName: nebulae.dotPDFium.Native.PdfActionType
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.PdfDocument
+  commentId: T:nebulae.dotPDFium.PdfDocument
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfDocument.html
+  name: PdfDocument
+  nameWithType: PdfDocument
+  fullName: nebulae.dotPDFium.PdfDocument
+- uid: nebulae.dotPDFium.PdfDestination
+  commentId: T:nebulae.dotPDFium.PdfDestination
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfDestination.html
+  name: PdfDestination
+  nameWithType: PdfDestination
+  fullName: nebulae.dotPDFium.PdfDestination
+- uid: nebulae.dotPDFium.PdfAction.GetDestination*
+  commentId: Overload:nebulae.dotPDFium.PdfAction.GetDestination
+  href: nebulae.dotPDFium.PdfAction.html#nebulae_dotPDFium_PdfAction_GetDestination_nebulae_dotPDFium_PdfDocument_
+  name: GetDestination
+  nameWithType: PdfAction.GetDestination
+  fullName: nebulae.dotPDFium.PdfAction.GetDestination
+- uid: nebulae.dotPDFium.PdfAction.GetFilePath*
+  commentId: Overload:nebulae.dotPDFium.PdfAction.GetFilePath
+  href: nebulae.dotPDFium.PdfAction.html#nebulae_dotPDFium_PdfAction_GetFilePath
+  name: GetFilePath
+  nameWithType: PdfAction.GetFilePath
+  fullName: nebulae.dotPDFium.PdfAction.GetFilePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.PdfAction.GetUri*
+  commentId: Overload:nebulae.dotPDFium.PdfAction.GetUri
+  href: nebulae.dotPDFium.PdfAction.html#nebulae_dotPDFium_PdfAction_GetUri_nebulae_dotPDFium_PdfDocument_
+  name: GetUri
+  nameWithType: PdfAction.GetUri
+  fullName: nebulae.dotPDFium.PdfAction.GetUri
+- uid: nebulae.dotPDFium.PdfAction.GetNamedAction*
+  commentId: Overload:nebulae.dotPDFium.PdfAction.GetNamedAction
+  href: nebulae.dotPDFium.PdfAction.html#nebulae_dotPDFium_PdfAction_GetNamedAction
+  name: GetNamedAction
+  nameWithType: PdfAction.GetNamedAction
+  fullName: nebulae.dotPDFium.PdfAction.GetNamedAction

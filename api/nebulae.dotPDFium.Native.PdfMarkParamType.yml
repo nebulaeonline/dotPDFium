@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfMarkParamType
+  commentId: T:nebulae.dotPDFium.Native.PdfMarkParamType
+  id: PdfMarkParamType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfMarkParamType.Blob
+  - nebulae.dotPDFium.Native.PdfMarkParamType.Int
+  - nebulae.dotPDFium.Native.PdfMarkParamType.None
+  - nebulae.dotPDFium.Native.PdfMarkParamType.String
+  langs:
+  - csharp
+  - vb
+  name: PdfMarkParamType
+  nameWithType: PdfMarkParamType
+  fullName: nebulae.dotPDFium.Native.PdfMarkParamType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfMarkParamType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 794
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the type of parameter used in a PDF mark operation.
+  remarks: >-
+    This enumeration is used to define the data type of parameters when working with PDF mark operations.
+        Each value represents a specific type of parameter that can be passed or processed.
+  example: []
+  syntax:
+    content: public enum PdfMarkParamType
+    content.vb: Public Enum PdfMarkParamType
+- uid: nebulae.dotPDFium.Native.PdfMarkParamType.None
+  commentId: F:nebulae.dotPDFium.Native.PdfMarkParamType.None
+  id: None
+  parent: nebulae.dotPDFium.Native.PdfMarkParamType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PdfMarkParamType.None
+  fullName: nebulae.dotPDFium.Native.PdfMarkParamType.None
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: None
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 796
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: None = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfMarkParamType
+- uid: nebulae.dotPDFium.Native.PdfMarkParamType.Int
+  commentId: F:nebulae.dotPDFium.Native.PdfMarkParamType.Int
+  id: Int
+  parent: nebulae.dotPDFium.Native.PdfMarkParamType
+  langs:
+  - csharp
+  - vb
+  name: Int
+  nameWithType: PdfMarkParamType.Int
+  fullName: nebulae.dotPDFium.Native.PdfMarkParamType.Int
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Int
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 797
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Int = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfMarkParamType
+- uid: nebulae.dotPDFium.Native.PdfMarkParamType.String
+  commentId: F:nebulae.dotPDFium.Native.PdfMarkParamType.String
+  id: String
+  parent: nebulae.dotPDFium.Native.PdfMarkParamType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: PdfMarkParamType.String
+  fullName: nebulae.dotPDFium.Native.PdfMarkParamType.String
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: String
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 798
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: String = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfMarkParamType
+- uid: nebulae.dotPDFium.Native.PdfMarkParamType.Blob
+  commentId: F:nebulae.dotPDFium.Native.PdfMarkParamType.Blob
+  id: Blob
+  parent: nebulae.dotPDFium.Native.PdfMarkParamType
+  langs:
+  - csharp
+  - vb
+  name: Blob
+  nameWithType: PdfMarkParamType.Blob
+  fullName: nebulae.dotPDFium.Native.PdfMarkParamType.Blob
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Blob
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 799
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Blob = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfMarkParamType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfMarkParamType
+  commentId: T:nebulae.dotPDFium.Native.PdfMarkParamType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfMarkParamType.html
+  name: PdfMarkParamType
+  nameWithType: PdfMarkParamType
+  fullName: nebulae.dotPDFium.Native.PdfMarkParamType

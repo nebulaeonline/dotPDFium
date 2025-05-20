@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfLineJoinStyle
+  commentId: T:nebulae.dotPDFium.Native.PdfLineJoinStyle
+  id: PdfLineJoinStyle
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfLineJoinStyle.Bevel
+  - nebulae.dotPDFium.Native.PdfLineJoinStyle.Miter
+  - nebulae.dotPDFium.Native.PdfLineJoinStyle.Round
+  langs:
+  - csharp
+  - vb
+  name: PdfLineJoinStyle
+  nameWithType: PdfLineJoinStyle
+  fullName: nebulae.dotPDFium.Native.PdfLineJoinStyle
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfLineJoinStyle
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 68
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the style of line joins used when drawing paths in a PDF document.
+  remarks: >-
+    Line join styles determine how the intersection between two connected lines is rendered. This
+        enumeration is typically used in conjunction with PDF graphics operations to control the appearance of line joins in
+        vector graphics.
+  example: []
+  syntax:
+    content: public enum PdfLineJoinStyle
+    content.vb: Public Enum PdfLineJoinStyle
+- uid: nebulae.dotPDFium.Native.PdfLineJoinStyle.Miter
+  commentId: F:nebulae.dotPDFium.Native.PdfLineJoinStyle.Miter
+  id: Miter
+  parent: nebulae.dotPDFium.Native.PdfLineJoinStyle
+  langs:
+  - csharp
+  - vb
+  name: Miter
+  nameWithType: PdfLineJoinStyle.Miter
+  fullName: nebulae.dotPDFium.Native.PdfLineJoinStyle.Miter
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Miter
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 70
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Miter = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfLineJoinStyle
+- uid: nebulae.dotPDFium.Native.PdfLineJoinStyle.Round
+  commentId: F:nebulae.dotPDFium.Native.PdfLineJoinStyle.Round
+  id: Round
+  parent: nebulae.dotPDFium.Native.PdfLineJoinStyle
+  langs:
+  - csharp
+  - vb
+  name: Round
+  nameWithType: PdfLineJoinStyle.Round
+  fullName: nebulae.dotPDFium.Native.PdfLineJoinStyle.Round
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Round
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 71
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Round = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfLineJoinStyle
+- uid: nebulae.dotPDFium.Native.PdfLineJoinStyle.Bevel
+  commentId: F:nebulae.dotPDFium.Native.PdfLineJoinStyle.Bevel
+  id: Bevel
+  parent: nebulae.dotPDFium.Native.PdfLineJoinStyle
+  langs:
+  - csharp
+  - vb
+  name: Bevel
+  nameWithType: PdfLineJoinStyle.Bevel
+  fullName: nebulae.dotPDFium.Native.PdfLineJoinStyle.Bevel
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Bevel
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 72
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Bevel = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfLineJoinStyle
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfLineJoinStyle
+  commentId: T:nebulae.dotPDFium.Native.PdfLineJoinStyle
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfLineJoinStyle.html
+  name: PdfLineJoinStyle
+  nameWithType: PdfLineJoinStyle
+  fullName: nebulae.dotPDFium.Native.PdfLineJoinStyle

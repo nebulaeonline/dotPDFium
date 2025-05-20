@@ -1,0 +1,396 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfColorspace
+  commentId: T:nebulae.dotPDFium.Native.PdfColorspace
+  id: PdfColorspace
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfColorspace.CalGray
+  - nebulae.dotPDFium.Native.PdfColorspace.CalRGB
+  - nebulae.dotPDFium.Native.PdfColorspace.DeviceCMYK
+  - nebulae.dotPDFium.Native.PdfColorspace.DeviceGray
+  - nebulae.dotPDFium.Native.PdfColorspace.DeviceN
+  - nebulae.dotPDFium.Native.PdfColorspace.DeviceRGB
+  - nebulae.dotPDFium.Native.PdfColorspace.ICCBased
+  - nebulae.dotPDFium.Native.PdfColorspace.Indexed
+  - nebulae.dotPDFium.Native.PdfColorspace.Lab
+  - nebulae.dotPDFium.Native.PdfColorspace.Pattern
+  - nebulae.dotPDFium.Native.PdfColorspace.Separation
+  - nebulae.dotPDFium.Native.PdfColorspace.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PdfColorspace
+  nameWithType: PdfColorspace
+  fullName: nebulae.dotPDFium.Native.PdfColorspace
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfColorspace
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 81
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents the color space used in a PDF document.
+  remarks: >-
+    A color space defines how colors are represented and interpreted in a PDF.  This enumeration includes
+        standard color spaces such as DeviceRGB and DeviceCMYK,  as well as specialized color spaces like ICCBased and
+        Separation.
+  example: []
+  syntax:
+    content: public enum PdfColorspace
+    content.vb: Public Enum PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PdfColorspace.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 83
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unknown = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.DeviceGray
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.DeviceGray
+  id: DeviceGray
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: DeviceGray
+  nameWithType: PdfColorspace.DeviceGray
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.DeviceGray
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DeviceGray
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 84
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DeviceGray = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.DeviceRGB
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.DeviceRGB
+  id: DeviceRGB
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: DeviceRGB
+  nameWithType: PdfColorspace.DeviceRGB
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.DeviceRGB
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DeviceRGB
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 85
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DeviceRGB = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.DeviceCMYK
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.DeviceCMYK
+  id: DeviceCMYK
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: DeviceCMYK
+  nameWithType: PdfColorspace.DeviceCMYK
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.DeviceCMYK
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DeviceCMYK
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 86
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DeviceCMYK = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.CalGray
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.CalGray
+  id: CalGray
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: CalGray
+  nameWithType: PdfColorspace.CalGray
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.CalGray
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CalGray
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 87
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: CalGray = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.CalRGB
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.CalRGB
+  id: CalRGB
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: CalRGB
+  nameWithType: PdfColorspace.CalRGB
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.CalRGB
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CalRGB
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 88
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: CalRGB = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.Lab
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.Lab
+  id: Lab
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: Lab
+  nameWithType: PdfColorspace.Lab
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.Lab
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Lab
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 89
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Lab = 6
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.ICCBased
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.ICCBased
+  id: ICCBased
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: ICCBased
+  nameWithType: PdfColorspace.ICCBased
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.ICCBased
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ICCBased
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 90
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ICCBased = 7
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.Separation
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.Separation
+  id: Separation
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: Separation
+  nameWithType: PdfColorspace.Separation
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.Separation
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Separation
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 91
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Separation = 8
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.DeviceN
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.DeviceN
+  id: DeviceN
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: DeviceN
+  nameWithType: PdfColorspace.DeviceN
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.DeviceN
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DeviceN
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 92
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DeviceN = 9
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.Indexed
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.Indexed
+  id: Indexed
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: Indexed
+  nameWithType: PdfColorspace.Indexed
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.Indexed
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Indexed
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 93
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Indexed = 10
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+- uid: nebulae.dotPDFium.Native.PdfColorspace.Pattern
+  commentId: F:nebulae.dotPDFium.Native.PdfColorspace.Pattern
+  id: Pattern
+  parent: nebulae.dotPDFium.Native.PdfColorspace
+  langs:
+  - csharp
+  - vb
+  name: Pattern
+  nameWithType: PdfColorspace.Pattern
+  fullName: nebulae.dotPDFium.Native.PdfColorspace.Pattern
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Pattern
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 94
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Pattern = 11
+    return:
+      type: nebulae.dotPDFium.Native.PdfColorspace
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfColorspace
+  commentId: T:nebulae.dotPDFium.Native.PdfColorspace
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfColorspace.html
+  name: PdfColorspace
+  nameWithType: PdfColorspace
+  fullName: nebulae.dotPDFium.Native.PdfColorspace

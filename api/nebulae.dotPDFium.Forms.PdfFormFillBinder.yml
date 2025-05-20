@@ -1,0 +1,473 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Forms.PdfFormFillBinder
+  commentId: T:nebulae.dotPDFium.Forms.PdfFormFillBinder
+  id: PdfFormFillBinder
+  parent: nebulae.dotPDFium.Forms
+  children:
+  - nebulae.dotPDFium.Forms.PdfFormFillBinder.#ctor(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.Forms.PdfFormEvents)
+  - nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose
+  - nebulae.dotPDFium.Forms.PdfFormFillBinder.Info
+  langs:
+  - csharp
+  - vb
+  name: PdfFormFillBinder
+  nameWithType: PdfFormFillBinder
+  fullName: nebulae.dotPDFium.Forms.PdfFormFillBinder
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFormFillBinder
+    path: ../dotPDFium/dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+    startLine: 8
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Forms
+  syntax:
+    content: 'public sealed class PdfFormFillBinder : IDisposable'
+    content.vb: Public NotInheritable Class PdfFormFillBinder Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Forms.PdfFormFillBinder.Info
+  commentId: F:nebulae.dotPDFium.Forms.PdfFormFillBinder.Info
+  id: Info
+  parent: nebulae.dotPDFium.Forms.PdfFormFillBinder
+  langs:
+  - csharp
+  - vb
+  name: Info
+  nameWithType: PdfFormFillBinder.Info
+  fullName: nebulae.dotPDFium.Forms.PdfFormFillBinder.Info
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Info
+    path: ../dotPDFium/dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+    startLine: 10
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Forms
+  syntax:
+    content: public PdfFormFillInfo Info
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFillInfo
+    content.vb: Public Info As PdfFormFillInfo
+- uid: nebulae.dotPDFium.Forms.PdfFormFillBinder.#ctor(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.Forms.PdfFormEvents)
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormFillBinder.#ctor(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.Forms.PdfFormEvents)
+  id: '#ctor(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.Forms.PdfFormEvents)'
+  parent: nebulae.dotPDFium.Forms.PdfFormFillBinder
+  langs:
+  - csharp
+  - vb
+  name: PdfFormFillBinder(PdfForm, PdfFormEvents)
+  nameWithType: PdfFormFillBinder.PdfFormFillBinder(PdfForm, PdfFormEvents)
+  fullName: nebulae.dotPDFium.Forms.PdfFormFillBinder.PdfFormFillBinder(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.Forms.PdfFormEvents)
+  type: Constructor
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: .ctor
+    path: ../dotPDFium/dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+    startLine: 19
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Forms
+  syntax:
+    content: public PdfFormFillBinder(PdfForm form, PdfFormEvents events)
+    parameters:
+    - id: form
+      type: nebulae.dotPDFium.Forms.PdfForm
+    - id: events
+      type: nebulae.dotPDFium.Forms.PdfFormEvents
+    content.vb: Public Sub New(form As PdfForm, events As PdfFormEvents)
+  overload: nebulae.dotPDFium.Forms.PdfFormFillBinder.#ctor*
+  nameWithType.vb: PdfFormFillBinder.New(PdfForm, PdfFormEvents)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormFillBinder.New(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.Forms.PdfFormEvents)
+  name.vb: New(PdfForm, PdfFormEvents)
+- uid: nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose
+  id: Dispose
+  parent: nebulae.dotPDFium.Forms.PdfFormFillBinder
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: PdfFormFillBinder.Dispose()
+  fullName: nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Dispose
+    path: ../dotPDFium/dotPDFium/dotPDFium/Forms/PdfFormFillBinder.cs
+    startLine: 41
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Forms
+  summary: Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: nebulae.dotPDFium.Forms
+  commentId: N:nebulae.dotPDFium.Forms
+  href: nebulae.html
+  name: nebulae.dotPDFium.Forms
+  nameWithType: nebulae.dotPDFium.Forms
+  fullName: nebulae.dotPDFium.Forms
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Forms
+    name: Forms
+    href: nebulae.dotPDFium.Forms.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Forms
+    name: Forms
+    href: nebulae.dotPDFium.Forms.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFillInfo
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: PdfFormFillInfo
+  nameWithType: PdfFormFillInfo
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Forms.PdfFormFillBinder.#ctor*
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormFillBinder.#ctor
+  href: nebulae.dotPDFium.Forms.PdfFormFillBinder.html#nebulae_dotPDFium_Forms_PdfFormFillBinder__ctor_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_Forms_PdfFormEvents_
+  name: PdfFormFillBinder
+  nameWithType: PdfFormFillBinder.PdfFormFillBinder
+  fullName: nebulae.dotPDFium.Forms.PdfFormFillBinder.PdfFormFillBinder
+  nameWithType.vb: PdfFormFillBinder.New
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormFillBinder.New
+  name.vb: New
+- uid: nebulae.dotPDFium.Forms.PdfForm
+  commentId: T:nebulae.dotPDFium.Forms.PdfForm
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfForm.html
+  name: PdfForm
+  nameWithType: PdfForm
+  fullName: nebulae.dotPDFium.Forms.PdfForm
+- uid: nebulae.dotPDFium.Forms.PdfFormEvents
+  commentId: T:nebulae.dotPDFium.Forms.PdfFormEvents
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfFormEvents.html
+  name: PdfFormEvents
+  nameWithType: PdfFormEvents
+  fullName: nebulae.dotPDFium.Forms.PdfFormEvents
+- uid: nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose*
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose
+  href: nebulae.dotPDFium.Forms.PdfFormFillBinder.html#nebulae_dotPDFium_Forms_PdfFormFillBinder_Dispose
+  name: Dispose
+  nameWithType: PdfFormFillBinder.Dispose
+  fullName: nebulae.dotPDFium.Forms.PdfFormFillBinder.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

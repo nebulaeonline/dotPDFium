@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfDocumentAActionType
+  id: PdfDocumentAActionType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfDocumentAActionType.DidPrint
+  - nebulae.dotPDFium.Native.PdfDocumentAActionType.DidSave
+  - nebulae.dotPDFium.Native.PdfDocumentAActionType.WillClose
+  - nebulae.dotPDFium.Native.PdfDocumentAActionType.WillPrint
+  - nebulae.dotPDFium.Native.PdfDocumentAActionType.WillSave
+  langs:
+  - csharp
+  - vb
+  name: PdfDocumentAActionType
+  nameWithType: PdfDocumentAActionType
+  fullName: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfDocumentAActionType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 278
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the types of additional actions (AAction) that can be triggered in a PDF document.
+  remarks: >-
+    These actions represent specific events in the lifecycle of a PDF document, such as closing, saving,
+        or printing. They can be used to define custom behaviors or scripts that execute when the corresponding event
+        occurs.
+  example: []
+  syntax:
+    content: public enum PdfDocumentAActionType
+    content.vb: Public Enum PdfDocumentAActionType
+- uid: nebulae.dotPDFium.Native.PdfDocumentAActionType.WillClose
+  commentId: F:nebulae.dotPDFium.Native.PdfDocumentAActionType.WillClose
+  id: WillClose
+  parent: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  langs:
+  - csharp
+  - vb
+  name: WillClose
+  nameWithType: PdfDocumentAActionType.WillClose
+  fullName: nebulae.dotPDFium.Native.PdfDocumentAActionType.WillClose
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: WillClose
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 280
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: WillClose = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocumentAActionType
+- uid: nebulae.dotPDFium.Native.PdfDocumentAActionType.WillSave
+  commentId: F:nebulae.dotPDFium.Native.PdfDocumentAActionType.WillSave
+  id: WillSave
+  parent: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  langs:
+  - csharp
+  - vb
+  name: WillSave
+  nameWithType: PdfDocumentAActionType.WillSave
+  fullName: nebulae.dotPDFium.Native.PdfDocumentAActionType.WillSave
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: WillSave
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 281
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: WillSave = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocumentAActionType
+- uid: nebulae.dotPDFium.Native.PdfDocumentAActionType.WillPrint
+  commentId: F:nebulae.dotPDFium.Native.PdfDocumentAActionType.WillPrint
+  id: WillPrint
+  parent: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  langs:
+  - csharp
+  - vb
+  name: WillPrint
+  nameWithType: PdfDocumentAActionType.WillPrint
+  fullName: nebulae.dotPDFium.Native.PdfDocumentAActionType.WillPrint
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: WillPrint
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 282
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: WillPrint = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocumentAActionType
+- uid: nebulae.dotPDFium.Native.PdfDocumentAActionType.DidSave
+  commentId: F:nebulae.dotPDFium.Native.PdfDocumentAActionType.DidSave
+  id: DidSave
+  parent: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  langs:
+  - csharp
+  - vb
+  name: DidSave
+  nameWithType: PdfDocumentAActionType.DidSave
+  fullName: nebulae.dotPDFium.Native.PdfDocumentAActionType.DidSave
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DidSave
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 283
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DidSave = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocumentAActionType
+- uid: nebulae.dotPDFium.Native.PdfDocumentAActionType.DidPrint
+  commentId: F:nebulae.dotPDFium.Native.PdfDocumentAActionType.DidPrint
+  id: DidPrint
+  parent: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  langs:
+  - csharp
+  - vb
+  name: DidPrint
+  nameWithType: PdfDocumentAActionType.DidPrint
+  fullName: nebulae.dotPDFium.Native.PdfDocumentAActionType.DidPrint
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DidPrint
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 284
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DidPrint = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocumentAActionType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfDocumentAActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfDocumentAActionType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfDocumentAActionType.html
+  name: PdfDocumentAActionType
+  nameWithType: PdfDocumentAActionType
+  fullName: nebulae.dotPDFium.Native.PdfDocumentAActionType

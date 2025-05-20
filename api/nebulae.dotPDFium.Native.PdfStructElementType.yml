@@ -1,0 +1,1109 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfStructElementType
+  commentId: T:nebulae.dotPDFium.Native.PdfStructElementType
+  id: PdfStructElementType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfStructElementType.Annot
+  - nebulae.dotPDFium.Native.PdfStructElementType.Art
+  - nebulae.dotPDFium.Native.PdfStructElementType.BibEntry
+  - nebulae.dotPDFium.Native.PdfStructElementType.BlockQuote
+  - nebulae.dotPDFium.Native.PdfStructElementType.Caption
+  - nebulae.dotPDFium.Native.PdfStructElementType.Code
+  - nebulae.dotPDFium.Native.PdfStructElementType.Div
+  - nebulae.dotPDFium.Native.PdfStructElementType.Document
+  - nebulae.dotPDFium.Native.PdfStructElementType.Figure
+  - nebulae.dotPDFium.Native.PdfStructElementType.Form
+  - nebulae.dotPDFium.Native.PdfStructElementType.Formula
+  - nebulae.dotPDFium.Native.PdfStructElementType.H
+  - nebulae.dotPDFium.Native.PdfStructElementType.H1
+  - nebulae.dotPDFium.Native.PdfStructElementType.H2
+  - nebulae.dotPDFium.Native.PdfStructElementType.H3
+  - nebulae.dotPDFium.Native.PdfStructElementType.H4
+  - nebulae.dotPDFium.Native.PdfStructElementType.H5
+  - nebulae.dotPDFium.Native.PdfStructElementType.H6
+  - nebulae.dotPDFium.Native.PdfStructElementType.L
+  - nebulae.dotPDFium.Native.PdfStructElementType.LBody
+  - nebulae.dotPDFium.Native.PdfStructElementType.LI
+  - nebulae.dotPDFium.Native.PdfStructElementType.Link
+  - nebulae.dotPDFium.Native.PdfStructElementType.NonStruct
+  - nebulae.dotPDFium.Native.PdfStructElementType.Note
+  - nebulae.dotPDFium.Native.PdfStructElementType.Paragraph
+  - nebulae.dotPDFium.Native.PdfStructElementType.Part
+  - nebulae.dotPDFium.Native.PdfStructElementType.Quote
+  - nebulae.dotPDFium.Native.PdfStructElementType.Reference
+  - nebulae.dotPDFium.Native.PdfStructElementType.Sect
+  - nebulae.dotPDFium.Native.PdfStructElementType.Span
+  - nebulae.dotPDFium.Native.PdfStructElementType.TD
+  - nebulae.dotPDFium.Native.PdfStructElementType.TH
+  - nebulae.dotPDFium.Native.PdfStructElementType.TOC
+  - nebulae.dotPDFium.Native.PdfStructElementType.TOCI
+  - nebulae.dotPDFium.Native.PdfStructElementType.TR
+  - nebulae.dotPDFium.Native.PdfStructElementType.Table
+  - nebulae.dotPDFium.Native.PdfStructElementType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PdfStructElementType
+  nameWithType: PdfStructElementType
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfStructElementType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 826
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents the types of structural elements in a PDF document, as defined by the PDF specification.
+  remarks: >-
+    This enumeration provides a comprehensive list of structural element types that can be used to
+        describe the logical structure of a PDF document. These types are commonly used in tagged PDFs to improve
+        accessibility, enable content reflow, and provide semantic meaning to document elements.  Each value corresponds to
+        a specific structural role, such as headings, lists, tables, or annotations. For example, <xref href="nebulae.dotPDFium.Native.PdfStructElementType.H1" data-throw-if-not-resolved="false"></xref> through
+        <xref href="nebulae.dotPDFium.Native.PdfStructElementType.H6" data-throw-if-not-resolved="false"></xref> represent heading levels, while <xref href="nebulae.dotPDFium.Native.PdfStructElementType.Table" data-throw-if-not-resolved="false"></xref>, <xref href="nebulae.dotPDFium.Native.PdfStructElementType.TR" data-throw-if-not-resolved="false"></xref>, <xref href="nebulae.dotPDFium.Native.PdfStructElementType.TH" data-throw-if-not-resolved="false"></xref>, and <xref href="nebulae.dotPDFium.Native.PdfStructElementType.TD" data-throw-if-not-resolved="false"></xref> represent table structures.
+  example: []
+  syntax:
+    content: public enum PdfStructElementType
+    content.vb: Public Enum PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PdfStructElementType.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 828
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unknown = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Document
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Document
+  id: Document
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: PdfStructElementType.Document
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Document
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Document
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 829
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Document = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Part
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Part
+  id: Part
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Part
+  nameWithType: PdfStructElementType.Part
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Part
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Part
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 830
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Part = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Sect
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Sect
+  id: Sect
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Sect
+  nameWithType: PdfStructElementType.Sect
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Sect
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Sect
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 831
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Sect = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Art
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Art
+  id: Art
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Art
+  nameWithType: PdfStructElementType.Art
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Art
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Art
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 832
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Art = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Div
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Div
+  id: Div
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Div
+  nameWithType: PdfStructElementType.Div
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Div
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Div
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 833
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Div = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Span
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Span
+  id: Span
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Span
+  nameWithType: PdfStructElementType.Span
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Span
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Span
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 834
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Span = 6
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Quote
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Quote
+  id: Quote
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Quote
+  nameWithType: PdfStructElementType.Quote
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Quote
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Quote
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 835
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Quote = 7
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Note
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Note
+  id: Note
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Note
+  nameWithType: PdfStructElementType.Note
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Note
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Note
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 836
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Note = 8
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Reference
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Reference
+  id: Reference
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: PdfStructElementType.Reference
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Reference
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Reference
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 837
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Reference = 9
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.BibEntry
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.BibEntry
+  id: BibEntry
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: BibEntry
+  nameWithType: PdfStructElementType.BibEntry
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.BibEntry
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: BibEntry
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 838
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: BibEntry = 10
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Code
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Code
+  id: Code
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: PdfStructElementType.Code
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Code
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Code
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 839
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Code = 11
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Link
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Link
+  id: Link
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Link
+  nameWithType: PdfStructElementType.Link
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Link
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Link
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 840
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Link = 12
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Annot
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Annot
+  id: Annot
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Annot
+  nameWithType: PdfStructElementType.Annot
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Annot
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Annot
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 841
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Annot = 13
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.BlockQuote
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.BlockQuote
+  id: BlockQuote
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: BlockQuote
+  nameWithType: PdfStructElementType.BlockQuote
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.BlockQuote
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: BlockQuote
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 842
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: BlockQuote = 14
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Caption
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Caption
+  id: Caption
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Caption
+  nameWithType: PdfStructElementType.Caption
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Caption
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Caption
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 843
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Caption = 15
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.NonStruct
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.NonStruct
+  id: NonStruct
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: NonStruct
+  nameWithType: PdfStructElementType.NonStruct
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.NonStruct
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NonStruct
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 844
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NonStruct = 16
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Paragraph
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Paragraph
+  id: Paragraph
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Paragraph
+  nameWithType: PdfStructElementType.Paragraph
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Paragraph
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Paragraph
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 845
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Paragraph = 17
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H
+  id: H
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: H
+  nameWithType: PdfStructElementType.H
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: H
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 846
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: H = 18
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H1
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H1
+  id: H1
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: H1
+  nameWithType: PdfStructElementType.H1
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H1
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: H1
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 847
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: H1 = 19
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H2
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H2
+  id: H2
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: H2
+  nameWithType: PdfStructElementType.H2
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H2
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: H2
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 848
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: H2 = 20
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H3
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H3
+  id: H3
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: H3
+  nameWithType: PdfStructElementType.H3
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H3
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: H3
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 849
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: H3 = 21
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H4
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H4
+  id: H4
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: H4
+  nameWithType: PdfStructElementType.H4
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H4
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: H4
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 850
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: H4 = 22
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H5
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H5
+  id: H5
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: H5
+  nameWithType: PdfStructElementType.H5
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H5
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: H5
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 851
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: H5 = 23
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H6
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H6
+  id: H6
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: H6
+  nameWithType: PdfStructElementType.H6
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H6
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: H6
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 852
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: H6 = 24
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.L
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.L
+  id: L
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: L
+  nameWithType: PdfStructElementType.L
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.L
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: L
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 853
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: L = 25
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.LI
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.LI
+  id: LI
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: LI
+  nameWithType: PdfStructElementType.LI
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.LI
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LI
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 854
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: LI = 26
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.LBody
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.LBody
+  id: LBody
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: LBody
+  nameWithType: PdfStructElementType.LBody
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.LBody
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LBody
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 855
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: LBody = 27
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Table
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Table
+  id: Table
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Table
+  nameWithType: PdfStructElementType.Table
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Table
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Table
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 856
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Table = 28
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TR
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TR
+  id: TR
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: TR
+  nameWithType: PdfStructElementType.TR
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TR
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TR
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 857
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: TR = 29
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TH
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TH
+  id: TH
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: TH
+  nameWithType: PdfStructElementType.TH
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TH
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TH
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 858
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: TH = 30
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TD
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TD
+  id: TD
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: TD
+  nameWithType: PdfStructElementType.TD
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TD
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TD
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 859
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: TD = 31
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TOC
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TOC
+  id: TOC
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: TOC
+  nameWithType: PdfStructElementType.TOC
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TOC
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TOC
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 860
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: TOC = 32
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TOCI
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TOCI
+  id: TOCI
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: TOCI
+  nameWithType: PdfStructElementType.TOCI
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TOCI
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TOCI
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 861
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: TOCI = 33
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Figure
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Figure
+  id: Figure
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Figure
+  nameWithType: PdfStructElementType.Figure
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Figure
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Figure
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 862
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Figure = 34
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Formula
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Formula
+  id: Formula
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Formula
+  nameWithType: PdfStructElementType.Formula
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Formula
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Formula
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 863
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Formula = 35
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Form
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Form
+  id: Form
+  parent: nebulae.dotPDFium.Native.PdfStructElementType
+  langs:
+  - csharp
+  - vb
+  name: Form
+  nameWithType: PdfStructElementType.Form
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Form
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Form
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 864
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Form = 36
+    return:
+      type: nebulae.dotPDFium.Native.PdfStructElementType
+references:
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H1
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H1
+  href: nebulae.dotPDFium.Native.PdfStructElementType.html#nebulae_dotPDFium_Native_PdfStructElementType_H1
+  name: H1
+  nameWithType: PdfStructElementType.H1
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H1
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.H6
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.H6
+  href: nebulae.dotPDFium.Native.PdfStructElementType.html#nebulae_dotPDFium_Native_PdfStructElementType_H6
+  name: H6
+  nameWithType: PdfStructElementType.H6
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.H6
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.Table
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.Table
+  href: nebulae.dotPDFium.Native.PdfStructElementType.html#nebulae_dotPDFium_Native_PdfStructElementType_Table
+  name: Table
+  nameWithType: PdfStructElementType.Table
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.Table
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TR
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TR
+  href: nebulae.dotPDFium.Native.PdfStructElementType.html#nebulae_dotPDFium_Native_PdfStructElementType_TR
+  name: TR
+  nameWithType: PdfStructElementType.TR
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TR
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TH
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TH
+  href: nebulae.dotPDFium.Native.PdfStructElementType.html#nebulae_dotPDFium_Native_PdfStructElementType_TH
+  name: TH
+  nameWithType: PdfStructElementType.TH
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TH
+- uid: nebulae.dotPDFium.Native.PdfStructElementType.TD
+  commentId: F:nebulae.dotPDFium.Native.PdfStructElementType.TD
+  href: nebulae.dotPDFium.Native.PdfStructElementType.html#nebulae_dotPDFium_Native_PdfStructElementType_TD
+  name: TD
+  nameWithType: PdfStructElementType.TD
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType.TD
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfStructElementType
+  commentId: T:nebulae.dotPDFium.Native.PdfStructElementType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfStructElementType.html
+  name: PdfStructElementType
+  nameWithType: PdfStructElementType
+  fullName: nebulae.dotPDFium.Native.PdfStructElementType

@@ -1,0 +1,3892 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfDocument
+  commentId: T:nebulae.dotPDFium.PdfDocument
+  id: PdfDocument
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfDocument.AddAttachment(System.String)
+  - nebulae.dotPDFium.PdfDocument.Close
+  - nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom(nebulae.dotPDFium.PdfDocument)
+  - nebulae.dotPDFium.PdfDocument.CreateImageObject
+  - nebulae.dotPDFium.PdfDocument.CreateNew
+  - nebulae.dotPDFium.PdfDocument.CreatePage(System.Int32,System.Single,System.Single)
+  - nebulae.dotPDFium.PdfDocument.CreatePathObject
+  - nebulae.dotPDFium.PdfDocument.CreateRectObject(System.Single,System.Single,System.Single,System.Single)
+  - nebulae.dotPDFium.PdfDocument.CreateStandardTextObject(System.String,System.Single)
+  - nebulae.dotPDFium.PdfDocument.CreateTextObject(nebulae.dotPDFium.PdfFont,System.Single)
+  - nebulae.dotPDFium.PdfDocument.DeleteAttachment(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.DeletePage(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.Dispose(System.Boolean)
+  - nebulae.dotPDFium.PdfDocument.FindBookmark(System.String)
+  - nebulae.dotPDFium.PdfDocument.GetAdditionalAction(nebulae.dotPDFium.Native.PdfPageAActionType)
+  - nebulae.dotPDFium.PdfDocument.GetAttachment(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.GetAttachmentCount
+  - nebulae.dotPDFium.PdfDocument.GetFileIdentifier(System.UInt32)
+  - nebulae.dotPDFium.PdfDocument.GetFileVersion
+  - nebulae.dotPDFium.PdfDocument.GetFirstPageIndex
+  - nebulae.dotPDFium.PdfDocument.GetMetadata(System.String)
+  - nebulae.dotPDFium.PdfDocument.GetNamedDestination(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName(System.String)
+  - nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount
+  - nebulae.dotPDFium.PdfDocument.GetPageLabel(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.GetPageMode
+  - nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange
+  - nebulae.dotPDFium.PdfDocument.GetPermissions
+  - nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed
+  - nebulae.dotPDFium.PdfDocument.GetRenderedBitmap(nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.PdfTextObject,System.Single)
+  - nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision
+  - nebulae.dotPDFium.PdfDocument.GetSignatures
+  - nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies
+  - nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange
+  - nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets
+  - nebulae.dotPDFium.PdfDocument.GetUserPermissions
+  - nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference
+  - nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName(System.String)
+  - nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable
+  - nebulae.dotPDFium.PdfDocument.ImportNPagesToOne(nebulae.dotPDFium.PdfDocument,System.Single,System.Single,System.Int32,System.Int32)
+  - nebulae.dotPDFium.PdfDocument.ImportPagesFrom(nebulae.dotPDFium.PdfDocument,System.String,System.Int32)
+  - nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex(nebulae.dotPDFium.PdfDocument,System.Int32[],System.Int32)
+  - nebulae.dotPDFium.PdfDocument.IsTagged
+  - nebulae.dotPDFium.PdfDocument.LoadCidType2Font(System.Byte[],System.String,System.String,System.Byte[])
+  - nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont(System.Byte[],nebulae.dotPDFium.Native.PdfFontType,System.Boolean)
+  - nebulae.dotPDFium.PdfDocument.LoadFromFile(System.String,System.String)
+  - nebulae.dotPDFium.PdfDocument.LoadFromMemory(System.Byte[],System.String)
+  - nebulae.dotPDFium.PdfDocument.LoadPage(System.Int32)
+  - nebulae.dotPDFium.PdfDocument.LoadStandardFont(System.String)
+  - nebulae.dotPDFium.PdfDocument.MovePages(System.Int32[],System.Int32)
+  - nebulae.dotPDFium.PdfDocument.OpenPageCount
+  - nebulae.dotPDFium.PdfDocument.PageCount
+  - nebulae.dotPDFium.PdfDocument.ResolvePage(System.IntPtr)
+  - nebulae.dotPDFium.PdfDocument.SaveTo(System.String,System.Boolean)
+  - nebulae.dotPDFium.PdfDocument.SaveWithVersion(System.String,nebulae.dotPDFium.Native.PdfFileVersion)
+  - nebulae.dotPDFium.PdfDocument.SetDefaultLanguage(System.String)
+  - nebulae.dotPDFium.PdfDocument.TryLoadFromFile(System.String,nebulae.dotPDFium.PdfDocument@,System.String)
+  - nebulae.dotPDFium.PdfDocument.TryLoadFromMemory(System.Byte[],nebulae.dotPDFium.PdfDocument@,System.String)
+  - nebulae.dotPDFium.PdfDocument.TryLoadPage(System.Int32,nebulae.dotPDFium.PdfPage@)
+  langs:
+  - csharp
+  - vb
+  name: PdfDocument
+  nameWithType: PdfDocument
+  fullName: nebulae.dotPDFium.PdfDocument
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfDocument
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 10
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: 'public class PdfDocument : PdfObject, IDisposable'
+    content.vb: Public Class PdfDocument Inherits PdfObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - nebulae.dotPDFium.PdfObject
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - nebulae.dotPDFium.PdfObject._handle
+  - nebulae.dotPDFium.PdfObject._type
+  - nebulae.dotPDFium.PdfObject._disposed
+  - nebulae.dotPDFium.PdfObject.Handle
+  - nebulae.dotPDFium.PdfObject.Type
+  - nebulae.dotPDFium.PdfObject.IsDisposed
+  - nebulae.dotPDFium.PdfObject.GetPDFiumError
+  - nebulae.dotPDFium.PdfObject.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfDocument.ResolvePage(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.PdfDocument.ResolvePage(System.IntPtr)
+  id: ResolvePage(System.IntPtr)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: ResolvePage(nint)
+  nameWithType: PdfDocument.ResolvePage(nint)
+  fullName: nebulae.dotPDFium.PdfDocument.ResolvePage(nint)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ResolvePage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 38
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Resolves a PDF page from the specified handle.
+  remarks: >-
+    This method searches through the collection of open pages to find a match for the provided
+        handle.  If the handle does not correspond to any open page, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfPage? ResolvePage(nint pageHandle)
+    parameters:
+    - id: pageHandle
+      type: System.IntPtr
+      description: The handle of the page to resolve.
+    return:
+      type: nebulae.dotPDFium.PdfPage
+      description: >-
+        The <xref href="nebulae.dotPDFium.PdfPage" data-throw-if-not-resolved="false"></xref> instance associated with the specified handle if it is currently open;  otherwise,
+            <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function ResolvePage(pageHandle As IntPtr) As PdfPage
+  overload: nebulae.dotPDFium.PdfDocument.ResolvePage*
+  nameWithType.vb: PdfDocument.ResolvePage(IntPtr)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.ResolvePage(System.IntPtr)
+  name.vb: ResolvePage(IntPtr)
+- uid: nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom(nebulae.dotPDFium.PdfDocument)
+  commentId: M:nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom(nebulae.dotPDFium.PdfDocument)
+  id: CopyViewerPreferencesFrom(nebulae.dotPDFium.PdfDocument)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CopyViewerPreferencesFrom(PdfDocument)
+  nameWithType: PdfDocument.CopyViewerPreferencesFrom(PdfDocument)
+  fullName: nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom(nebulae.dotPDFium.PdfDocument)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CopyViewerPreferencesFrom
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 69
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Copies the viewer preferences (e.g., page layout, UI hints) from another PDF document.
+  example: []
+  syntax:
+    content: public void CopyViewerPreferencesFrom(PdfDocument source)
+    parameters:
+    - id: source
+      type: nebulae.dotPDFium.PdfDocument
+      description: The document from which to copy viewer preferences.
+    content.vb: Public Sub CopyViewerPreferencesFrom(source As PdfDocument)
+  overload: nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if source is null.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the copy operation fails.
+- uid: nebulae.dotPDFium.PdfDocument.GetFirstPageIndex
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetFirstPageIndex
+  id: GetFirstPageIndex
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetFirstPageIndex()
+  nameWithType: PdfDocument.GetFirstPageIndex()
+  fullName: nebulae.dotPDFium.PdfDocument.GetFirstPageIndex()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFirstPageIndex
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 82
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the index of the first page for linearized viewing.
+  example: []
+  syntax:
+    content: public int GetFirstPageIndex()
+    return:
+      type: System.Int32
+      description: The zero-based page index (typically 0).
+    content.vb: Public Function GetFirstPageIndex() As Integer
+  overload: nebulae.dotPDFium.PdfDocument.GetFirstPageIndex*
+- uid: nebulae.dotPDFium.PdfDocument.ImportNPagesToOne(nebulae.dotPDFium.PdfDocument,System.Single,System.Single,System.Int32,System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.ImportNPagesToOne(nebulae.dotPDFium.PdfDocument,System.Single,System.Single,System.Int32,System.Int32)
+  id: ImportNPagesToOne(nebulae.dotPDFium.PdfDocument,System.Single,System.Single,System.Int32,System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: ImportNPagesToOne(PdfDocument, float, float, int, int)
+  nameWithType: PdfDocument.ImportNPagesToOne(PdfDocument, float, float, int, int)
+  fullName: nebulae.dotPDFium.PdfDocument.ImportNPagesToOne(nebulae.dotPDFium.PdfDocument, float, float, int, int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ImportNPagesToOne
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 98
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Creates a new PDF document by importing pages from an existing document arranged in an N-up layout.
+  example: []
+  syntax:
+    content: public static PdfDocument ImportNPagesToOne(PdfDocument source, float width, float height, int columns, int rows)
+    parameters:
+    - id: source
+      type: nebulae.dotPDFium.PdfDocument
+      description: The source document to import pages from.
+    - id: width
+      type: System.Single
+      description: The width of the output composite page in points.
+    - id: height
+      type: System.Single
+      description: The height of the output composite page in points.
+    - id: columns
+      type: System.Int32
+      description: Number of pages horizontally.
+    - id: rows
+      type: System.Int32
+      description: Number of pages vertically.
+    return:
+      type: nebulae.dotPDFium.PdfDocument
+      description: A new <xref href="nebulae.dotPDFium.PdfDocument" data-throw-if-not-resolved="false"></xref> containing a single composite page.
+    content.vb: Public Shared Function ImportNPagesToOne(source As PdfDocument, width As Single, height As Single, columns As Integer, rows As Integer) As PdfDocument
+  overload: nebulae.dotPDFium.PdfDocument.ImportNPagesToOne*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the source document is null.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails.
+  nameWithType.vb: PdfDocument.ImportNPagesToOne(PdfDocument, Single, Single, Integer, Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.ImportNPagesToOne(nebulae.dotPDFium.PdfDocument, Single, Single, Integer, Integer)
+  name.vb: ImportNPagesToOne(PdfDocument, Single, Single, Integer, Integer)
+- uid: nebulae.dotPDFium.PdfDocument.ImportPagesFrom(nebulae.dotPDFium.PdfDocument,System.String,System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.ImportPagesFrom(nebulae.dotPDFium.PdfDocument,System.String,System.Int32)
+  id: ImportPagesFrom(nebulae.dotPDFium.PdfDocument,System.String,System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: ImportPagesFrom(PdfDocument, string, int)
+  nameWithType: PdfDocument.ImportPagesFrom(PdfDocument, string, int)
+  fullName: nebulae.dotPDFium.PdfDocument.ImportPagesFrom(nebulae.dotPDFium.PdfDocument, string, int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ImportPagesFrom
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 124
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Imports pages from another document into this one, starting at the given index.
+  example: []
+  syntax:
+    content: public void ImportPagesFrom(PdfDocument source, string pageRange, int insertAtIndex)
+    parameters:
+    - id: source
+      type: nebulae.dotPDFium.PdfDocument
+      description: The source document to import pages from.
+    - id: pageRange
+      type: System.String
+      description: Page range string (e.g., "1-3,5"). Must use 1-based indexing.
+    - id: insertAtIndex
+      type: System.Int32
+      description: Zero-based index to insert pages into this document.
+    content.vb: Public Sub ImportPagesFrom(source As PdfDocument, pageRange As String, insertAtIndex As Integer)
+  overload: nebulae.dotPDFium.PdfDocument.ImportPagesFrom*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if source or pageRange is null.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails.
+  nameWithType.vb: PdfDocument.ImportPagesFrom(PdfDocument, String, Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.ImportPagesFrom(nebulae.dotPDFium.PdfDocument, String, Integer)
+  name.vb: ImportPagesFrom(PdfDocument, String, Integer)
+- uid: nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex(nebulae.dotPDFium.PdfDocument,System.Int32[],System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex(nebulae.dotPDFium.PdfDocument,System.Int32[],System.Int32)
+  id: ImportPagesFromByIndex(nebulae.dotPDFium.PdfDocument,System.Int32[],System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: ImportPagesFromByIndex(PdfDocument, int[], int)
+  nameWithType: PdfDocument.ImportPagesFromByIndex(PdfDocument, int[], int)
+  fullName: nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex(nebulae.dotPDFium.PdfDocument, int[], int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ImportPagesFromByIndex
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 146
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Imports specific pages (by zero-based index) from another document into this one.
+  example: []
+  syntax:
+    content: public void ImportPagesFromByIndex(PdfDocument source, int[] pageIndices, int insertAtIndex)
+    parameters:
+    - id: source
+      type: nebulae.dotPDFium.PdfDocument
+      description: The source PDF document.
+    - id: pageIndices
+      type: System.Int32[]
+      description: Array of zero-based page indices to import.
+    - id: insertAtIndex
+      type: System.Int32
+      description: Zero-based insertion point in the destination document.
+    content.vb: Public Sub ImportPagesFromByIndex(source As PdfDocument, pageIndices As Integer(), insertAtIndex As Integer)
+  overload: nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if source or pageIndices is null.
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the pageIndices array is empty.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the import fails.
+  nameWithType.vb: PdfDocument.ImportPagesFromByIndex(PdfDocument, Integer(), Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex(nebulae.dotPDFium.PdfDocument, Integer(), Integer)
+  name.vb: ImportPagesFromByIndex(PdfDocument, Integer(), Integer)
+- uid: nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision
+  id: GetSecurityHandlerRevision
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetSecurityHandlerRevision()
+  nameWithType: PdfDocument.GetSecurityHandlerRevision()
+  fullName: nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSecurityHandlerRevision
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 170
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the security handler revision used for encryption, or -1 if the document is not encrypted.
+  example: []
+  syntax:
+    content: public int GetSecurityHandlerRevision()
+    return:
+      type: System.Int32
+      description: The revision number (e.g., 2 for RC4-40, 4 for AES-128, 6 for AES-256), or -1 if not encrypted.
+    content.vb: Public Function GetSecurityHandlerRevision() As Integer
+  overload: nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision*
+- uid: nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference
+  id: GetViewerDuplexPreference
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetViewerDuplexPreference()
+  nameWithType: PdfDocument.GetViewerDuplexPreference()
+  fullName: nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetViewerDuplexPreference
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 179
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the duplex printing preference defined in the document's viewer preferences.
+  example: []
+  syntax:
+    content: public PdfDuplexType GetViewerDuplexPreference()
+    return:
+      type: nebulae.dotPDFium.Native.PdfDuplexType
+      description: The <xref href="nebulae.dotPDFium.Native.PdfDuplexType" data-throw-if-not-resolved="false"></xref> specified by the document.
+    content.vb: Public Function GetViewerDuplexPreference() As PdfDuplexType
+  overload: nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference*
+- uid: nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName(System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName(System.String)
+  id: GetViewerPreferenceName(System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetViewerPreferenceName(string)
+  nameWithType: PdfDocument.GetViewerPreferenceName(string)
+  fullName: nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetViewerPreferenceName
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 191
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves a raw name value from the document's /ViewerPreferences dictionary.
+  example: []
+  syntax:
+    content: public string GetViewerPreferenceName(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The name key to query (e.g., "Direction", "PrintScaling").
+    return:
+      type: System.String
+      description: The associated name string, or an empty string if not present or invalid.
+    content.vb: Public Function GetViewerPreferenceName(key As String) As String
+  overload: nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the key is null or empty.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if decoding fails despite valid key.
+  nameWithType.vb: PdfDocument.GetViewerPreferenceName(String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName(String)
+  name.vb: GetViewerPreferenceName(String)
+- uid: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies
+  id: GetSuggestedPrintCopies
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetSuggestedPrintCopies()
+  nameWithType: PdfDocument.GetSuggestedPrintCopies()
+  fullName: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSuggestedPrintCopies
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 213
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the suggested number of copies to print as defined in the document's viewer preferences.
+  example: []
+  syntax:
+    content: public int GetSuggestedPrintCopies()
+    return:
+      type: System.Int32
+      description: The suggested number of copies, or 0 if unspecified.
+    content.vb: Public Function GetSuggestedPrintCopies() As Integer
+  overload: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies*
+- uid: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange
+  id: GetSuggestedPrintRange
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetSuggestedPrintRange()
+  nameWithType: PdfDocument.GetSuggestedPrintRange()
+  fullName: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSuggestedPrintRange
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 224
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the suggested print page range defined in the viewer preferences (e.g., "1-3,5").
+  example: []
+  syntax:
+    content: public string GetSuggestedPrintRange()
+    return:
+      type: System.String
+      description: A UTF-8 encoded string with the suggested print range, or an empty string if none is defined.
+    content.vb: Public Function GetSuggestedPrintRange() As String
+  overload: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange*
+- uid: nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange
+  id: GetParsedPrintPageRange
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetParsedPrintPageRange()
+  nameWithType: PdfDocument.GetParsedPrintPageRange()
+  fullName: nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetParsedPrintPageRange
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 241
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the print page range specified in the PDF viewer preferences.
+  remarks: >-
+    This method checks the PDF viewer preferences for a defined print page range and returns it
+        as a <xref href="nebulae.dotPDFium.PdfPrintPageRange" data-throw-if-not-resolved="false"></xref> object. If no range is specified, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfPrintPageRange? GetParsedPrintPageRange()
+    return:
+      type: nebulae.dotPDFium.PdfPrintPageRange
+      description: A <xref href="nebulae.dotPDFium.PdfPrintPageRange" data-throw-if-not-resolved="false"></xref> object representing the print page range if specified; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no print page range is defined.
+    content.vb: Public Function GetParsedPrintPageRange() As PdfPrintPageRange
+  overload: nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange*
+- uid: nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed
+  id: GetPrintScalingAllowed
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetPrintScalingAllowed()
+  nameWithType: PdfDocument.GetPrintScalingAllowed()
+  fullName: nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetPrintScalingAllowed
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 254
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the print scaling flag defined in the document's viewer preferences.
+  example: []
+  syntax:
+    content: public bool GetPrintScalingAllowed()
+    return:
+      type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the document allows automatic scaling when printed;
+
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> if it requests no scaling (actual size).
+    content.vb: Public Function GetPrintScalingAllowed() As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed*
+- uid: nebulae.dotPDFium.PdfDocument.IsTagged
+  commentId: M:nebulae.dotPDFium.PdfDocument.IsTagged
+  id: IsTagged
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: IsTagged()
+  nameWithType: PdfDocument.IsTagged()
+  fullName: nebulae.dotPDFium.PdfDocument.IsTagged()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: IsTagged
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 263
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Determines whether the document is tagged (i.e., contains a structure tree).
+  example: []
+  syntax:
+    content: public bool IsTagged()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the document is tagged; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function IsTagged() As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.IsTagged*
+- uid: nebulae.dotPDFium.PdfDocument.SetDefaultLanguage(System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.SetDefaultLanguage(System.String)
+  id: SetDefaultLanguage(System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: SetDefaultLanguage(string)
+  nameWithType: PdfDocument.SetDefaultLanguage(string)
+  fullName: nebulae.dotPDFium.PdfDocument.SetDefaultLanguage(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetDefaultLanguage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 273
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the document-level default language in the PDF catalog (/Lang).
+  example: []
+  syntax:
+    content: public bool SetDefaultLanguage(string language)
+    parameters:
+    - id: language
+      type: System.String
+      description: The BCP 47 language tag (e.g., "en-US", "fr-FR").
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the language was successfully set; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function SetDefaultLanguage(language As String) As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.SetDefaultLanguage*
+  nameWithType.vb: PdfDocument.SetDefaultLanguage(String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.SetDefaultLanguage(String)
+  name.vb: SetDefaultLanguage(String)
+- uid: nebulae.dotPDFium.PdfDocument.LoadFromFile(System.String,System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.LoadFromFile(System.String,System.String)
+  id: LoadFromFile(System.String,System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: LoadFromFile(string, string?)
+  nameWithType: PdfDocument.LoadFromFile(string, string?)
+  fullName: nebulae.dotPDFium.PdfDocument.LoadFromFile(string, string?)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LoadFromFile
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 289
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Loads a PDF document from a file. The file path must be valid and the file must exist.
+  example: []
+  syntax:
+    content: public static PdfDocument LoadFromFile(string filePath, string? password = null)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to the file to load
+    - id: password
+      type: System.String
+      description: Password to the file being loaded
+    return:
+      type: nebulae.dotPDFium.PdfDocument
+      description: PdfDocument on success
+    content.vb: Public Shared Function LoadFromFile(filePath As String, password As String = Nothing) As PdfDocument
+  overload: nebulae.dotPDFium.PdfDocument.LoadFromFile*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown on null or empty filePath
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown on PDFium library error
+  nameWithType.vb: PdfDocument.LoadFromFile(String, String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.LoadFromFile(String, String)
+  name.vb: LoadFromFile(String, String)
+- uid: nebulae.dotPDFium.PdfDocument.TryLoadFromFile(System.String,nebulae.dotPDFium.PdfDocument@,System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.TryLoadFromFile(System.String,nebulae.dotPDFium.PdfDocument@,System.String)
+  id: TryLoadFromFile(System.String,nebulae.dotPDFium.PdfDocument@,System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: TryLoadFromFile(string, out PdfDocument?, string?)
+  nameWithType: PdfDocument.TryLoadFromFile(string, out PdfDocument?, string?)
+  fullName: nebulae.dotPDFium.PdfDocument.TryLoadFromFile(string, out nebulae.dotPDFium.PdfDocument?, string?)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TryLoadFromFile
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 311
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Loads a PDF document from a file. The file path must be valid and the file must exist.
+  example: []
+  syntax:
+    content: public static bool TryLoadFromFile(string filePath, out PdfDocument? document, string? password = null)
+    parameters:
+    - id: filePath
+      type: System.String
+      description: Path to the file to load
+    - id: document
+      type: nebulae.dotPDFium.PdfDocument
+      description: The out variable to receive the PdfDocument object
+    - id: password
+      type: System.String
+      description: Password to the file being loaded
+    return:
+      type: System.Boolean
+      description: true on success, false on failure
+    content.vb: Public Shared Function TryLoadFromFile(filePath As String, document As PdfDocument, password As String = Nothing) As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.TryLoadFromFile*
+  nameWithType.vb: PdfDocument.TryLoadFromFile(String, PdfDocument, String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.TryLoadFromFile(String, nebulae.dotPDFium.PdfDocument, String)
+  name.vb: TryLoadFromFile(String, PdfDocument, String)
+- uid: nebulae.dotPDFium.PdfDocument.LoadFromMemory(System.Byte[],System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.LoadFromMemory(System.Byte[],System.String)
+  id: LoadFromMemory(System.Byte[],System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: LoadFromMemory(byte[], string?)
+  nameWithType: PdfDocument.LoadFromMemory(byte[], string?)
+  fullName: nebulae.dotPDFium.PdfDocument.LoadFromMemory(byte[], string?)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LoadFromMemory
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 335
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Loads a PDF document from a byte array. The byte array must not be null or empty.
+  example: []
+  syntax:
+    content: public static PdfDocument LoadFromMemory(byte[] buffer, string? password = null)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The byte array containing the PDF document
+    - id: password
+      type: System.String
+      description: Password to the file being loaded
+    return:
+      type: nebulae.dotPDFium.PdfDocument
+      description: PdfDocument on success
+    content.vb: Public Shared Function LoadFromMemory(buffer As Byte(), password As String = Nothing) As PdfDocument
+  overload: nebulae.dotPDFium.PdfDocument.LoadFromMemory*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if the byte array is null or empty
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown on PDFium library error
+  nameWithType.vb: PdfDocument.LoadFromMemory(Byte(), String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.LoadFromMemory(Byte(), String)
+  name.vb: LoadFromMemory(Byte(), String)
+- uid: nebulae.dotPDFium.PdfDocument.TryLoadFromMemory(System.Byte[],nebulae.dotPDFium.PdfDocument@,System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.TryLoadFromMemory(System.Byte[],nebulae.dotPDFium.PdfDocument@,System.String)
+  id: TryLoadFromMemory(System.Byte[],nebulae.dotPDFium.PdfDocument@,System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: TryLoadFromMemory(byte[], out PdfDocument?, string?)
+  nameWithType: PdfDocument.TryLoadFromMemory(byte[], out PdfDocument?, string?)
+  fullName: nebulae.dotPDFium.PdfDocument.TryLoadFromMemory(byte[], out nebulae.dotPDFium.PdfDocument?, string?)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TryLoadFromMemory
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 367
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Loads a PDF document from a byte array. The byte array must not be null or empty.
+  example: []
+  syntax:
+    content: public static bool TryLoadFromMemory(byte[] buffer, out PdfDocument? document, string? password = null)
+    parameters:
+    - id: buffer
+      type: System.Byte[]
+      description: The byte array containing the PDF document
+    - id: document
+      type: nebulae.dotPDFium.PdfDocument
+      description: The out variable to receive the PdfDocument object
+    - id: password
+      type: System.String
+      description: Password to the file being loaded
+    return:
+      type: System.Boolean
+      description: true on success, false on failure
+    content.vb: Public Shared Function TryLoadFromMemory(buffer As Byte(), document As PdfDocument, password As String = Nothing) As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.TryLoadFromMemory*
+  nameWithType.vb: PdfDocument.TryLoadFromMemory(Byte(), PdfDocument, String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.TryLoadFromMemory(Byte(), nebulae.dotPDFium.PdfDocument, String)
+  name.vb: TryLoadFromMemory(Byte(), PdfDocument, String)
+- uid: nebulae.dotPDFium.PdfDocument.CreateNew
+  commentId: M:nebulae.dotPDFium.PdfDocument.CreateNew
+  id: CreateNew
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CreateNew()
+  nameWithType: PdfDocument.CreateNew()
+  fullName: nebulae.dotPDFium.PdfDocument.CreateNew()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreateNew
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 401
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Creates a new PDF document. This method initializes a new PDF document and returns a new document object.
+  example: []
+  syntax:
+    content: public static PdfDocument CreateNew()
+    return:
+      type: nebulae.dotPDFium.PdfDocument
+      description: A new PdfDocument
+    content.vb: Public Shared Function CreateNew() As PdfDocument
+  overload: nebulae.dotPDFium.PdfDocument.CreateNew*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Throws on PDFium library error.
+- uid: nebulae.dotPDFium.PdfDocument.SaveTo(System.String,System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfDocument.SaveTo(System.String,System.Boolean)
+  id: SaveTo(System.String,System.Boolean)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: SaveTo(string, bool)
+  nameWithType: PdfDocument.SaveTo(string, bool)
+  fullName: nebulae.dotPDFium.PdfDocument.SaveTo(string, bool)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SaveTo
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 417
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Saves the current PDF document to the specified file path.
+  example: []
+  syntax:
+    content: public bool SaveTo(string path, bool incremental = false)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to write the document to
+    - id: incremental
+      type: System.Boolean
+      description: Whether to append changes to the PDF or to re-encode the entire PDF
+    return:
+      type: System.Boolean
+      description: true on success, false on failure
+    content.vb: Public Function SaveTo(path As String, incremental As Boolean = False) As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.SaveTo*
+  nameWithType.vb: PdfDocument.SaveTo(String, Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.SaveTo(String, Boolean)
+  name.vb: SaveTo(String, Boolean)
+- uid: nebulae.dotPDFium.PdfDocument.SaveWithVersion(System.String,nebulae.dotPDFium.Native.PdfFileVersion)
+  commentId: M:nebulae.dotPDFium.PdfDocument.SaveWithVersion(System.String,nebulae.dotPDFium.Native.PdfFileVersion)
+  id: SaveWithVersion(System.String,nebulae.dotPDFium.Native.PdfFileVersion)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: SaveWithVersion(string, PdfFileVersion)
+  nameWithType: PdfDocument.SaveWithVersion(string, PdfFileVersion)
+  fullName: nebulae.dotPDFium.PdfDocument.SaveWithVersion(string, nebulae.dotPDFium.Native.PdfFileVersion)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SaveWithVersion
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 430
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Saves the current PDF document to the specified file path with a specific PDF version.
+  example: []
+  syntax:
+    content: public bool SaveWithVersion(string path, PdfFileVersion fileVersion)
+    parameters:
+    - id: path
+      type: System.String
+      description: ''
+    - id: fileVersion
+      type: nebulae.dotPDFium.Native.PdfFileVersion
+    return:
+      type: System.Boolean
+      description: true on success, false on failure
+    content.vb: Public Function SaveWithVersion(path As String, fileVersion As PdfFileVersion) As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.SaveWithVersion*
+  nameWithType.vb: PdfDocument.SaveWithVersion(String, PdfFileVersion)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.SaveWithVersion(String, nebulae.dotPDFium.Native.PdfFileVersion)
+  name.vb: SaveWithVersion(String, PdfFileVersion)
+- uid: nebulae.dotPDFium.PdfDocument.CreatePage(System.Int32,System.Single,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfDocument.CreatePage(System.Int32,System.Single,System.Single)
+  id: CreatePage(System.Int32,System.Single,System.Single)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CreatePage(int, float, float)
+  nameWithType: PdfDocument.CreatePage(int, float, float)
+  fullName: nebulae.dotPDFium.PdfDocument.CreatePage(int, float, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreatePage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 446
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Creates a new page in the document at the specified index with the specified width and height.
+  example: []
+  syntax:
+    content: public PdfPage CreatePage(int index, float width, float height)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        index == 0 will insert a new page at the beginning; index == PageCount
+            will append a new page to the end, and index = N inserts the page *before* existing page N.
+            Page indexes may shift, so be cautious
+    - id: width
+      type: System.Single
+      description: The width of the page to insert in points (1/72 of an inch)
+    - id: height
+      type: System.Single
+      description: The height of the page to insert in points (1/72 of an inch)
+    return:
+      type: nebulae.dotPDFium.PdfPage
+      description: ''
+    content.vb: Public Function CreatePage(index As Integer, width As Single, height As Single) As PdfPage
+  overload: nebulae.dotPDFium.PdfDocument.CreatePage*
+  nameWithType.vb: PdfDocument.CreatePage(Integer, Single, Single)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.CreatePage(Integer, Single, Single)
+  name.vb: CreatePage(Integer, Single, Single)
+- uid: nebulae.dotPDFium.PdfDocument.DeletePage(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.DeletePage(System.Int32)
+  id: DeletePage(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: DeletePage(int)
+  nameWithType: PdfDocument.DeletePage(int)
+  fullName: nebulae.dotPDFium.PdfDocument.DeletePage(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DeletePage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 456
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Deletes a page from the document at the specified index. This method will shift the indexes of all subsequent pages.
+  example: []
+  syntax:
+    content: public void DeletePage(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: ''
+    content.vb: Public Sub DeletePage(index As Integer)
+  overload: nebulae.dotPDFium.PdfDocument.DeletePage*
+  nameWithType.vb: PdfDocument.DeletePage(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.DeletePage(Integer)
+  name.vb: DeletePage(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.PageCount
+  commentId: P:nebulae.dotPDFium.PdfDocument.PageCount
+  id: PageCount
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: PageCount
+  nameWithType: PdfDocument.PageCount
+  fullName: nebulae.dotPDFium.PdfDocument.PageCount
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PageCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 464
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Returns the number of pages in the document.
+  example: []
+  syntax:
+    content: public int PageCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property PageCount As Integer
+  overload: nebulae.dotPDFium.PdfDocument.PageCount*
+- uid: nebulae.dotPDFium.PdfDocument.MovePages(System.Int32[],System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.MovePages(System.Int32[],System.Int32)
+  id: MovePages(System.Int32[],System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: MovePages(int[], int)
+  nameWithType: PdfDocument.MovePages(int[], int)
+  fullName: nebulae.dotPDFium.PdfDocument.MovePages(int[], int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: MovePages
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 484
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Moves the specified pages to a new position within the document.
+  remarks: >-
+    The order of the pages in <code class="paramref">pageIndices</code> is preserved during the move
+        operation.  Ensure that the indices are valid and within the bounds of the document's page count.
+  example: []
+  syntax:
+    content: public void MovePages(int[] pageIndices, int destinationIndex)
+    parameters:
+    - id: pageIndices
+      type: System.Int32[]
+      description: An array of zero-based indices representing the pages to move. Must contain at least one index.
+    - id: destinationIndex
+      type: System.Int32
+      description: The zero-based index where the pages will be moved. The pages will be inserted before this index.
+    content.vb: Public Sub MovePages(pageIndices As Integer(), destinationIndex As Integer)
+  overload: nebulae.dotPDFium.PdfDocument.MovePages*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code class="paramref">pageIndices</code> is null or empty.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails to move the pages.
+  nameWithType.vb: PdfDocument.MovePages(Integer(), Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.MovePages(Integer(), Integer)
+  name.vb: MovePages(Integer(), Integer)
+- uid: nebulae.dotPDFium.PdfDocument.OpenPageCount
+  commentId: P:nebulae.dotPDFium.PdfDocument.OpenPageCount
+  id: OpenPageCount
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: OpenPageCount
+  nameWithType: PdfDocument.OpenPageCount
+  fullName: nebulae.dotPDFium.PdfDocument.OpenPageCount
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: OpenPageCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 497
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Returns the number of open pages in the document.
+  example: []
+  syntax:
+    content: public int OpenPageCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property OpenPageCount As Integer
+  overload: nebulae.dotPDFium.PdfDocument.OpenPageCount*
+- uid: nebulae.dotPDFium.PdfDocument.GetPageMode
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetPageMode
+  id: GetPageMode
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetPageMode()
+  nameWithType: PdfDocument.GetPageMode()
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageMode()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetPageMode
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 515
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the page mode of the PDF document.
+  remarks: >-
+    The page mode specifies how the document should be displayed when opened, such as whether 
+        bookmarks, thumbnails, or other navigation panels are shown.
+  example: []
+  syntax:
+    content: public PdfPageMode GetPageMode()
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageMode
+      description: A <xref href="nebulae.dotPDFium.Native.PdfPageMode" data-throw-if-not-resolved="false"></xref> value representing the page mode of the document.  Returns <xref href="nebulae.dotPDFium.Native.PdfPageMode.Unknown" data-throw-if-not-resolved="false"></xref> if the page mode is not defined or cannot be determined.
+    content.vb: Public Function GetPageMode() As PdfPageMode
+  overload: nebulae.dotPDFium.PdfDocument.GetPageMode*
+- uid: nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable
+  commentId: M:nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable
+  id: HasValidCrossReferenceTable
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: HasValidCrossReferenceTable()
+  nameWithType: PdfDocument.HasValidCrossReferenceTable()
+  fullName: nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: HasValidCrossReferenceTable
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 527
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Checks whether the PDF document has a valid cross-reference table or stream.
+  example: []
+  syntax:
+    content: public bool HasValidCrossReferenceTable()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the cross-reference structure is valid; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function HasValidCrossReferenceTable() As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable*
+- uid: nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets
+  id: GetTrailerEndOffsets
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetTrailerEndOffsets()
+  nameWithType: PdfDocument.GetTrailerEndOffsets()
+  fullName: nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetTrailerEndOffsets
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 539
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the byte offsets of all trailer dictionaries in the PDF file.
+  example: []
+  syntax:
+    content: public IReadOnlyList<uint> GetTrailerEndOffsets()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.UInt32}
+      description: A list of unsigned 32-bit integers representing the end offsets of each trailer section.
+    content.vb: Public Function GetTrailerEndOffsets() As IReadOnlyList(Of UInteger)
+  overload: nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the call fails unexpectedly.
+- uid: nebulae.dotPDFium.PdfDocument.GetSignatures
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetSignatures
+  id: GetSignatures
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetSignatures()
+  nameWithType: PdfDocument.GetSignatures()
+  fullName: nebulae.dotPDFium.PdfDocument.GetSignatures()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSignatures
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 560
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets all digital signatures defined in this document.
+  example: []
+  syntax:
+    content: public IReadOnlyList<PdfSignature> GetSignatures()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{nebulae.dotPDFium.Security.PdfSignature}
+      description: A list of <xref href="nebulae.dotPDFium.Security.PdfSignature" data-throw-if-not-resolved="false"></xref> objects.
+    content.vb: Public Function GetSignatures() As IReadOnlyList(Of PdfSignature)
+  overload: nebulae.dotPDFium.PdfDocument.GetSignatures*
+- uid: nebulae.dotPDFium.PdfDocument.LoadPage(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.LoadPage(System.Int32)
+  id: LoadPage(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: LoadPage(int)
+  nameWithType: PdfDocument.LoadPage(int)
+  fullName: nebulae.dotPDFium.PdfDocument.LoadPage(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LoadPage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 584
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Returns the page from the document at the specified index.
+  example: []
+  syntax:
+    content: public PdfPage LoadPage(int pageIndex)
+    parameters:
+    - id: pageIndex
+      type: System.Int32
+      description: The index of the page to load
+    return:
+      type: nebulae.dotPDFium.PdfPage
+      description: PdfPage on success
+    content.vb: Public Function LoadPage(pageIndex As Integer) As PdfPage
+  overload: nebulae.dotPDFium.PdfDocument.LoadPage*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if the page index specified is out of range
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown on PDFium library error
+  nameWithType.vb: PdfDocument.LoadPage(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.LoadPage(Integer)
+  name.vb: LoadPage(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.TryLoadPage(System.Int32,nebulae.dotPDFium.PdfPage@)
+  commentId: M:nebulae.dotPDFium.PdfDocument.TryLoadPage(System.Int32,nebulae.dotPDFium.PdfPage@)
+  id: TryLoadPage(System.Int32,nebulae.dotPDFium.PdfPage@)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: TryLoadPage(int, out PdfPage?)
+  nameWithType: PdfDocument.TryLoadPage(int, out PdfPage?)
+  fullName: nebulae.dotPDFium.PdfDocument.TryLoadPage(int, out nebulae.dotPDFium.PdfPage?)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TryLoadPage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 604
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Returns the page from the document at the specified index.
+  example: []
+  syntax:
+    content: public bool TryLoadPage(int pageIndex, out PdfPage? page)
+    parameters:
+    - id: pageIndex
+      type: System.Int32
+      description: The index of the page to load
+    - id: page
+      type: nebulae.dotPDFium.PdfPage
+      description: The out variable to receive the specfied page
+    return:
+      type: System.Boolean
+      description: true on success, false on failure
+    content.vb: Public Function TryLoadPage(pageIndex As Integer, page As PdfPage) As Boolean
+  overload: nebulae.dotPDFium.PdfDocument.TryLoadPage*
+  nameWithType.vb: PdfDocument.TryLoadPage(Integer, PdfPage)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.TryLoadPage(Integer, nebulae.dotPDFium.PdfPage)
+  name.vb: TryLoadPage(Integer, PdfPage)
+- uid: nebulae.dotPDFium.PdfDocument.LoadStandardFont(System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.LoadStandardFont(System.String)
+  id: LoadStandardFont(System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: LoadStandardFont(string)
+  nameWithType: PdfDocument.LoadStandardFont(string)
+  fullName: nebulae.dotPDFium.PdfDocument.LoadStandardFont(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LoadStandardFont
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 629
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Loads a font into the document for use with text objects. This method loads 
+
+    a standard font, such as "Arial" or "Times-Roman".
+  example: []
+  syntax:
+    content: public PdfFont LoadStandardFont(string fontName)
+    parameters:
+    - id: fontName
+      type: System.String
+      description: The name of the font to load
+    return:
+      type: nebulae.dotPDFium.PdfFont
+      description: a PdfFont object
+    content.vb: Public Function LoadStandardFont(fontName As String) As PdfFont
+  overload: nebulae.dotPDFium.PdfDocument.LoadStandardFont*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Throws if the font name is null or empty
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Throws on PDFium library error
+  nameWithType.vb: PdfDocument.LoadStandardFont(String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.LoadStandardFont(String)
+  name.vb: LoadStandardFont(String)
+- uid: nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont(System.Byte[],nebulae.dotPDFium.Native.PdfFontType,System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont(System.Byte[],nebulae.dotPDFium.Native.PdfFontType,System.Boolean)
+  id: LoadEmbeddedFont(System.Byte[],nebulae.dotPDFium.Native.PdfFontType,System.Boolean)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: LoadEmbeddedFont(byte[], PdfFontType, bool)
+  nameWithType: PdfDocument.LoadEmbeddedFont(byte[], PdfFontType, bool)
+  fullName: nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont(byte[], nebulae.dotPDFium.Native.PdfFontType, bool)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LoadEmbeddedFont
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 650
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Loads an embedded font into the document for use with text objects. This method loads a font from a byte array.
+  example: []
+  syntax:
+    content: public PdfEmbeddedFont LoadEmbeddedFont(byte[] fontData, PdfFontType fontType, bool isCid = false)
+    parameters:
+    - id: fontData
+      type: System.Byte[]
+      description: The font data as a byte array
+    - id: fontType
+      type: nebulae.dotPDFium.Native.PdfFontType
+      description: The type of font
+    - id: isCid
+      type: System.Boolean
+      description: Whether the font is a character identifier font
+    return:
+      type: nebulae.dotPDFium.PdfEmbeddedFont
+      description: A new PdfEmbeddedFont object
+    content.vb: Public Function LoadEmbeddedFont(fontData As Byte(), fontType As PdfFontType, isCid As Boolean = False) As PdfEmbeddedFont
+  overload: nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Throws if font data is null or empty
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Throws on PDFium library error
+  nameWithType.vb: PdfDocument.LoadEmbeddedFont(Byte(), PdfFontType, Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont(Byte(), nebulae.dotPDFium.Native.PdfFontType, Boolean)
+  name.vb: LoadEmbeddedFont(Byte(), PdfFontType, Boolean)
+- uid: nebulae.dotPDFium.PdfDocument.LoadCidType2Font(System.Byte[],System.String,System.String,System.Byte[])
+  commentId: M:nebulae.dotPDFium.PdfDocument.LoadCidType2Font(System.Byte[],System.String,System.String,System.Byte[])
+  id: LoadCidType2Font(System.Byte[],System.String,System.String,System.Byte[])
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: LoadCidType2Font(byte[], string, string, byte[]?)
+  nameWithType: PdfDocument.LoadCidType2Font(byte[], string, string, byte[]?)
+  fullName: nebulae.dotPDFium.PdfDocument.LoadCidType2Font(byte[], string, string, byte[]?)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LoadCidType2Font
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 691
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Loads a CIDType2 font into the PDF document.
+  remarks: >-
+    CIDType2 fonts are commonly used for embedding TrueType fonts in PDF documents.  Ensure that
+        the provided font data is valid and compatible with the PDF library.
+  example: []
+  syntax:
+    content: public PdfFont LoadCidType2Font(byte[] fontData, string name, string toUnicodeCMap = "", byte[]? cidToGidMap = null)
+    parameters:
+    - id: fontData
+      type: System.Byte[]
+      description: The font data as a byte array. This cannot be null or empty.
+    - id: name
+      type: System.String
+      description: The name of the font to be used in the PDF document.
+    - id: toUnicodeCMap
+      type: System.String
+      description: >-
+        An optional string representing the ToUnicode CMap, which maps character codes to Unicode values. If not
+            provided, an empty string is used.
+    - id: cidToGidMap
+      type: System.Byte[]
+      description: >-
+        An optional byte array representing the CID-to-GID map, which maps character identifiers (CIDs) to glyph
+            identifiers (GIDs). If not provided, an empty array is used.
+    return:
+      type: nebulae.dotPDFium.PdfFont
+      description: A <xref href="nebulae.dotPDFium.PdfFont" data-throw-if-not-resolved="false"></xref> object representing the loaded CIDType2 font.
+    content.vb: Public Function LoadCidType2Font(fontData As Byte(), name As String, toUnicodeCMap As String = "", cidToGidMap As Byte() = Nothing) As PdfFont
+  overload: nebulae.dotPDFium.PdfDocument.LoadCidType2Font*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code class="paramref">fontData</code> is null or empty.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the font fails to load due to an error in the underlying PDF library.
+  nameWithType.vb: PdfDocument.LoadCidType2Font(Byte(), String, String, Byte())
+  fullName.vb: nebulae.dotPDFium.PdfDocument.LoadCidType2Font(Byte(), String, String, Byte())
+  name.vb: LoadCidType2Font(Byte(), String, String, Byte())
+- uid: nebulae.dotPDFium.PdfDocument.CreateTextObject(nebulae.dotPDFium.PdfFont,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfDocument.CreateTextObject(nebulae.dotPDFium.PdfFont,System.Single)
+  id: CreateTextObject(nebulae.dotPDFium.PdfFont,System.Single)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CreateTextObject(PdfFont, float)
+  nameWithType: PdfDocument.CreateTextObject(PdfFont, float)
+  fullName: nebulae.dotPDFium.PdfDocument.CreateTextObject(nebulae.dotPDFium.PdfFont, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreateTextObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 724
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Creates a new text object in the document. This method creates a new text object with the specified font and font size.
+
+    The text object can then be added to a page or manipulated as needed.
+  example: []
+  syntax:
+    content: public PdfTextObject CreateTextObject(PdfFont font, float fontSize)
+    parameters:
+    - id: font
+      type: nebulae.dotPDFium.PdfFont
+      description: The PdfFont to apply to the text object
+    - id: fontSize
+      type: System.Single
+      description: The font size
+    return:
+      type: nebulae.dotPDFium.PdfTextObject
+      description: a new PdfTextObject
+    content.vb: Public Function CreateTextObject(font As PdfFont, fontSize As Single) As PdfTextObject
+  overload: nebulae.dotPDFium.PdfDocument.CreateTextObject*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws if the specified font is null
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Throws if the font size is &lt;= 0
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Throws on PDFium library error
+  nameWithType.vb: PdfDocument.CreateTextObject(PdfFont, Single)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.CreateTextObject(nebulae.dotPDFium.PdfFont, Single)
+  name.vb: CreateTextObject(PdfFont, Single)
+- uid: nebulae.dotPDFium.PdfDocument.CreateStandardTextObject(System.String,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfDocument.CreateStandardTextObject(System.String,System.Single)
+  id: CreateStandardTextObject(System.String,System.Single)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CreateStandardTextObject(string, float)
+  nameWithType: PdfDocument.CreateStandardTextObject(string, float)
+  fullName: nebulae.dotPDFium.PdfDocument.CreateStandardTextObject(string, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreateStandardTextObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 747
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Creates a new text objecct in the document. This method creates a new text object with the 
+
+    specified font and font size. The text object can then be added to a page or manipulated as needed.
+  example: []
+  syntax:
+    content: public PdfTextObject CreateStandardTextObject(string fontName, float fontSize)
+    parameters:
+    - id: fontName
+      type: System.String
+      description: Name of the font to use
+    - id: fontSize
+      type: System.Single
+      description: Size of the font to use
+    return:
+      type: nebulae.dotPDFium.PdfTextObject
+      description: a new PdfTextObject
+    content.vb: Public Function CreateStandardTextObject(fontName As String, fontSize As Single) As PdfTextObject
+  overload: nebulae.dotPDFium.PdfDocument.CreateStandardTextObject*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown on PDFium library error
+  nameWithType.vb: PdfDocument.CreateStandardTextObject(String, Single)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.CreateStandardTextObject(String, Single)
+  name.vb: CreateStandardTextObject(String, Single)
+- uid: nebulae.dotPDFium.PdfDocument.CreatePathObject
+  commentId: M:nebulae.dotPDFium.PdfDocument.CreatePathObject
+  id: CreatePathObject
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CreatePathObject()
+  nameWithType: PdfDocument.CreatePathObject()
+  fullName: nebulae.dotPDFium.PdfDocument.CreatePathObject()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreatePathObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 762
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Creates a new path object for use in a PDF document.
+  example: []
+  syntax:
+    content: public PdfPathObject CreatePathObject()
+    return:
+      type: nebulae.dotPDFium.PdfPathObject
+      description: A <xref href="nebulae.dotPDFium.PdfPathObject" data-throw-if-not-resolved="false"></xref> representing the newly created path object.
+    content.vb: Public Function CreatePathObject() As PdfPathObject
+  overload: nebulae.dotPDFium.PdfDocument.CreatePathObject*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the path object could not be created due to an error in the underlying PDF library.
+- uid: nebulae.dotPDFium.PdfDocument.CreateImageObject
+  commentId: M:nebulae.dotPDFium.PdfDocument.CreateImageObject
+  id: CreateImageObject
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CreateImageObject()
+  nameWithType: PdfDocument.CreateImageObject()
+  fullName: nebulae.dotPDFium.PdfDocument.CreateImageObject()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreateImageObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 777
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Creates a new image object for use in a PDF document.
+  example: []
+  syntax:
+    content: public PdfImageObject CreateImageObject()
+    return:
+      type: nebulae.dotPDFium.PdfImageObject
+      description: A <xref href="nebulae.dotPDFium.PdfImageObject" data-throw-if-not-resolved="false"></xref> representing the newly created image object.
+    content.vb: Public Function CreateImageObject() As PdfImageObject
+  overload: nebulae.dotPDFium.PdfDocument.CreateImageObject*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the image object could not be created due to an error in the underlying PDF library.
+- uid: nebulae.dotPDFium.PdfDocument.CreateRectObject(System.Single,System.Single,System.Single,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfDocument.CreateRectObject(System.Single,System.Single,System.Single,System.Single)
+  id: CreateRectObject(System.Single,System.Single,System.Single,System.Single)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: CreateRectObject(float, float, float, float)
+  nameWithType: PdfDocument.CreateRectObject(float, float, float, float)
+  fullName: nebulae.dotPDFium.PdfDocument.CreateRectObject(float, float, float, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreateRectObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 798
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Creates a new rectangular path object with the specified dimensions.
+  remarks: >-
+    The rectangle is defined in the coordinate space of the PDF page. Ensure that the provided
+        dimensions are valid and fit within the desired page area.
+  example: []
+  syntax:
+    content: public PdfPathObject CreateRectObject(float x, float y, float width, float height)
+    parameters:
+    - id: x
+      type: System.Single
+      description: The x-coordinate of the lower-left corner of the rectangle.
+    - id: y
+      type: System.Single
+      description: The y-coordinate of the lower-left corner of the rectangle.
+    - id: width
+      type: System.Single
+      description: The width of the rectangle. Must be greater than 0.
+    - id: height
+      type: System.Single
+      description: The height of the rectangle. Must be greater than 0.
+    return:
+      type: nebulae.dotPDFium.PdfPathObject
+      description: A <xref href="nebulae.dotPDFium.PdfPathObject" data-throw-if-not-resolved="false"></xref> representing the created rectangle.
+    content.vb: Public Function CreateRectObject(x As Single, y As Single, width As Single, height As Single) As PdfPathObject
+  overload: nebulae.dotPDFium.PdfDocument.CreateRectObject*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the rectangle object could not be created due to an internal error.
+  nameWithType.vb: PdfDocument.CreateRectObject(Single, Single, Single, Single)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.CreateRectObject(Single, Single, Single, Single)
+  name.vb: CreateRectObject(Single, Single, Single, Single)
+- uid: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF(System.Int32)
+  id: GetPageSizeByIndexF(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetPageSizeByIndexF(int)
+  nameWithType: PdfDocument.GetPageSizeByIndexF(int)
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetPageSizeByIndexF
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 818
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the size of the page at the specified index in floating-point units.
+  example: []
+  syntax:
+    content: public FsSizeF GetPageSizeByIndexF(int pageIndex)
+    parameters:
+    - id: pageIndex
+      type: System.Int32
+      description: The zero-based index of the page whose size is to be retrieved. Must be within the range of available pages.
+    return:
+      type: nebulae.dotPDFium.Native.FsSizeF
+      description: >-
+        An <xref href="nebulae.dotPDFium.Native.FsSizeF" data-throw-if-not-resolved="false"></xref> structure representing the width and height of the specified page in floating-point
+            units.
+    content.vb: Public Function GetPageSizeByIndexF(pageIndex As Integer) As FsSizeF
+  overload: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if the <xref href="nebulae.dotPDFium.PdfDocument" data-throw-if-not-resolved="false"></xref> has been disposed.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      Thrown if <code class="paramref">pageIndex</code> is less than 0 or greater than or equal to the total number of pages in
+          the document.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the page size could not be retrieved due to an internal error.
+  nameWithType.vb: PdfDocument.GetPageSizeByIndexF(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF(Integer)
+  name.vb: GetPageSizeByIndexF(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex(System.Int32)
+  id: GetPageSizeByIndex(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetPageSizeByIndex(int)
+  nameWithType: PdfDocument.GetPageSizeByIndex(int)
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetPageSizeByIndex
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 840
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the size of a page in the document specified by its index as double-precision floating-point units.
+  example: []
+  syntax:
+    content: public FsSize GetPageSizeByIndex(int pageIndex)
+    parameters:
+    - id: pageIndex
+      type: System.Int32
+      description: The zero-based index of the page whose size is to be retrieved. Must be within the range of available pages.
+    return:
+      type: nebulae.dotPDFium.Native.FsSize
+      description: An <xref href="nebulae.dotPDFium.Native.FsSize" data-throw-if-not-resolved="false"></xref> object representing the width and height of the specified page, in points.
+    content.vb: Public Function GetPageSizeByIndex(pageIndex As Integer) As FsSize
+  overload: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if the document has been disposed and is no longer accessible.
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: >-
+      Thrown if <code class="paramref">pageIndex</code> is less than 0 or greater than or equal to the total number of pages in
+          the document.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the page size could not be retrieved due to an error in the underlying PDF library.
+  nameWithType.vb: PdfDocument.GetPageSizeByIndex(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex(Integer)
+  name.vb: GetPageSizeByIndex(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.GetRenderedBitmap(nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.PdfTextObject,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetRenderedBitmap(nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.PdfTextObject,System.Single)
+  id: GetRenderedBitmap(nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.PdfTextObject,System.Single)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetRenderedBitmap(PdfPage, PdfTextObject, float)
+  nameWithType: PdfDocument.GetRenderedBitmap(PdfPage, PdfTextObject, float)
+  fullName: nebulae.dotPDFium.PdfDocument.GetRenderedBitmap(nebulae.dotPDFium.PdfPage, nebulae.dotPDFium.PdfTextObject, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetRenderedBitmap
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 865
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves a rendered bitmap of the specified text object on a PDF page at the given scale.
+  remarks: >-
+    This method uses the underlying PDF library to render the specified text object into a
+        bitmap.  Ensure that the provided <code class="paramref">page</code> and <code class="paramref">text</code> objects are valid and
+        associated with the same PDF document.
+  example: []
+  syntax:
+    content: public nint GetRenderedBitmap(PdfPage page, PdfTextObject text, float scale)
+    parameters:
+    - id: page
+      type: nebulae.dotPDFium.PdfPage
+      description: The <xref href="nebulae.dotPDFium.PdfPage" data-throw-if-not-resolved="false"></xref> containing the text object to render. Must not be <code>null</code>.
+    - id: text
+      type: nebulae.dotPDFium.PdfTextObject
+      description: The <xref href="nebulae.dotPDFium.PdfTextObject" data-throw-if-not-resolved="false"></xref> to render as a bitmap. Must not be <code>null</code>.
+    - id: scale
+      type: System.Single
+      description: The scale factor to apply when rendering the bitmap. Must be greater than 0.
+    return:
+      type: System.IntPtr
+      description: >-
+        A pointer to the rendered bitmap as an <xref href="System.IntPtr" data-throw-if-not-resolved="false"></xref>. The caller is responsible for managing the memory
+            of the returned bitmap.
+    content.vb: Public Function GetRenderedBitmap(page As PdfPage, text As PdfTextObject, scale As Single) As IntPtr
+  overload: nebulae.dotPDFium.PdfDocument.GetRenderedBitmap*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the bitmap could not be rendered due to an error in the underlying PDF library.
+  nameWithType.vb: PdfDocument.GetRenderedBitmap(PdfPage, PdfTextObject, Single)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetRenderedBitmap(nebulae.dotPDFium.PdfPage, nebulae.dotPDFium.PdfTextObject, Single)
+  name.vb: GetRenderedBitmap(PdfPage, PdfTextObject, Single)
+- uid: nebulae.dotPDFium.PdfDocument.GetAttachmentCount
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetAttachmentCount
+  id: GetAttachmentCount
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetAttachmentCount()
+  nameWithType: PdfDocument.GetAttachmentCount()
+  fullName: nebulae.dotPDFium.PdfDocument.GetAttachmentCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAttachmentCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 879
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the total number of attachments in the PDF document.
+  example: []
+  syntax:
+    content: public int GetAttachmentCount()
+    return:
+      type: System.Int32
+      description: The number of attachments in the PDF document. Returns 0 if the document contains no attachments.
+    content.vb: Public Function GetAttachmentCount() As Integer
+  overload: nebulae.dotPDFium.PdfDocument.GetAttachmentCount*
+- uid: nebulae.dotPDFium.PdfDocument.GetAttachment(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetAttachment(System.Int32)
+  id: GetAttachment(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetAttachment(int)
+  nameWithType: PdfDocument.GetAttachment(int)
+  fullName: nebulae.dotPDFium.PdfDocument.GetAttachment(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAttachment
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 892
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the attachment at the specified index from the PDF document.
+  remarks: Use this method to access attachments embedded in the PDF document. Ensure that the <code class="paramref">index</code> is within the range of available attachments to avoid exceptions.
+  example: []
+  syntax:
+    content: public PdfAttachment GetAttachment(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the attachment to retrieve. Must be within the valid range of available attachments.
+    return:
+      type: nebulae.dotPDFium.PdfAttachment
+      description: A <xref href="nebulae.dotPDFium.PdfAttachment" data-throw-if-not-resolved="false"></xref> object representing the attachment at the specified index.
+    content.vb: Public Function GetAttachment(index As Integer) As PdfAttachment
+  overload: nebulae.dotPDFium.PdfDocument.GetAttachment*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if no attachment exists at the specified <code class="paramref">index</code>.
+  nameWithType.vb: PdfDocument.GetAttachment(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetAttachment(Integer)
+  name.vb: GetAttachment(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.AddAttachment(System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.AddAttachment(System.String)
+  id: AddAttachment(System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: AddAttachment(string)
+  nameWithType: PdfDocument.AddAttachment(string)
+  fullName: nebulae.dotPDFium.PdfDocument.AddAttachment(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AddAttachment
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 910
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Adds a new attachment to the PDF document.
+  remarks: >-
+    The <code class="paramref">name</code> parameter must be unique within the document. If an attachment
+        with the same name already exists, the behavior is undefined. Ensure that the provided name is valid and does
+        not conflict with existing attachments.
+  example: []
+  syntax:
+    content: public PdfAttachment AddAttachment(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the attachment to be added. This must be a non-empty string.
+    return:
+      type: nebulae.dotPDFium.PdfAttachment
+      description: A <xref href="nebulae.dotPDFium.PdfAttachment" data-throw-if-not-resolved="false"></xref> object representing the newly added attachment.
+    content.vb: Public Function AddAttachment(name As String) As PdfAttachment
+  overload: nebulae.dotPDFium.PdfDocument.AddAttachment*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the attachment could not be added to the document.
+  nameWithType.vb: PdfDocument.AddAttachment(String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.AddAttachment(String)
+  name.vb: AddAttachment(String)
+- uid: nebulae.dotPDFium.PdfDocument.DeleteAttachment(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.DeleteAttachment(System.Int32)
+  id: DeleteAttachment(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: DeleteAttachment(int)
+  nameWithType: PdfDocument.DeleteAttachment(int)
+  fullName: nebulae.dotPDFium.PdfDocument.DeleteAttachment(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DeleteAttachment
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 924
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Deletes the attachment at the specified index from the PDF document.
+  example: []
+  syntax:
+    content: public void DeleteAttachment(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the attachment to delete.
+    content.vb: Public Sub DeleteAttachment(index As Integer)
+  overload: nebulae.dotPDFium.PdfDocument.DeleteAttachment*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the attachment cannot be deleted. The exception message will include the specific error details.
+  nameWithType.vb: PdfDocument.DeleteAttachment(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.DeleteAttachment(Integer)
+  name.vb: DeleteAttachment(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.FindBookmark(System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.FindBookmark(System.String)
+  id: FindBookmark(System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: FindBookmark(string)
+  nameWithType: PdfDocument.FindBookmark(string)
+  fullName: nebulae.dotPDFium.PdfDocument.FindBookmark(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FindBookmark
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 930
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: public PdfBookmark? FindBookmark(string title)
+    parameters:
+    - id: title
+      type: System.String
+    return:
+      type: nebulae.dotPDFium.PdfBookmark
+    content.vb: Public Function FindBookmark(title As String) As PdfBookmark
+  overload: nebulae.dotPDFium.PdfDocument.FindBookmark*
+  nameWithType.vb: PdfDocument.FindBookmark(String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.FindBookmark(String)
+  name.vb: FindBookmark(String)
+- uid: nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount
+  id: GetNamedDestinationCount
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetNamedDestinationCount()
+  nameWithType: PdfDocument.GetNamedDestinationCount()
+  fullName: nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetNamedDestinationCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 939
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Returns the number of named destinations defined in this document.
+  example: []
+  syntax:
+    content: public int GetNamedDestinationCount()
+    return:
+      type: System.Int32
+    content.vb: Public Function GetNamedDestinationCount() As Integer
+  overload: nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount*
+- uid: nebulae.dotPDFium.PdfDocument.GetPermissions
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetPermissions
+  id: GetPermissions
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetPermissions()
+  nameWithType: PdfDocument.GetPermissions()
+  fullName: nebulae.dotPDFium.PdfDocument.GetPermissions()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetPermissions
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 951
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the permissions associated with the current PDF document.
+  remarks: >-
+    The permissions are determined by the document's security settings.  Refer to the PDF
+        specification for details on the meaning of each bit in the returned bitmask.
+  example: []
+  syntax:
+    content: public uint GetPermissions()
+    return:
+      type: System.UInt32
+      description: >-
+        A 32-bit unsigned integer representing the permissions of the PDF document.  The value is a bitmask where each
+            bit indicates a specific permission, such as printing, copying, or modifying the document.
+    content.vb: Public Function GetPermissions() As UInteger
+  overload: nebulae.dotPDFium.PdfDocument.GetPermissions*
+- uid: nebulae.dotPDFium.PdfDocument.GetUserPermissions
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetUserPermissions
+  id: GetUserPermissions
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetUserPermissions()
+  nameWithType: PdfDocument.GetUserPermissions()
+  fullName: nebulae.dotPDFium.PdfDocument.GetUserPermissions()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetUserPermissions
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 963
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the user permissions for the current PDF document.
+  remarks: >-
+    The permissions are determined by the document's security settings.  Refer to the PDF
+        specification for details on the meaning of each bit in the bitmask.
+  example: []
+  syntax:
+    content: public uint GetUserPermissions()
+    return:
+      type: System.UInt32
+      description: >-
+        A 32-bit unsigned integer representing the user permissions for the document.  The value is a bitmask where each
+            bit corresponds to a specific permission,  such as printing, copying, or modifying the document.
+    content.vb: Public Function GetUserPermissions() As UInteger
+  overload: nebulae.dotPDFium.PdfDocument.GetUserPermissions*
+- uid: nebulae.dotPDFium.PdfDocument.GetFileVersion
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetFileVersion
+  id: GetFileVersion
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetFileVersion()
+  nameWithType: PdfDocument.GetFileVersion()
+  fullName: nebulae.dotPDFium.PdfDocument.GetFileVersion()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFileVersion
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 974
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the version number of the PDF file associated with the current instance.
+  remarks: >-
+    The version number corresponds to the PDF specification version of the file.  For example, a
+        version number of 1 indicates PDF 1.x.
+  example: []
+  syntax:
+    content: public int? GetFileVersion()
+    return:
+      type: System.Nullable{System.Int32}
+      description: The version number of the PDF file if it is successfully retrieved; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetFileVersion() As Integer?
+  overload: nebulae.dotPDFium.PdfDocument.GetFileVersion*
+- uid: nebulae.dotPDFium.PdfDocument.GetNamedDestination(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetNamedDestination(System.Int32)
+  id: GetNamedDestination(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetNamedDestination(int)
+  nameWithType: PdfDocument.GetNamedDestination(int)
+  fullName: nebulae.dotPDFium.PdfDocument.GetNamedDestination(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetNamedDestination
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 990
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the named destination at the specified index within the PDF document.
+  remarks: >-
+    Named destinations are predefined locations within a PDF document that can be used for
+        navigation.  The method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the specified index does not correspond to a valid
+        named destination.
+  example: []
+  syntax:
+    content: public (string Name, PdfDestination? Destination)? GetNamedDestination(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the named destination to retrieve.
+    return:
+      type: System.Nullable{System.ValueTuple{System.String,nebulae.dotPDFium.PdfDestination}}
+      description: >-
+        A tuple containing the name of the destination and a <xref href="nebulae.dotPDFium.PdfDestination" data-throw-if-not-resolved="false"></xref> object representing the
+            destination,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the index is out of range or the destination cannot be retrieved.
+    content.vb: Public Function GetNamedDestination(index As Integer) As (Name As String, Destination As PdfDestination)?
+  overload: nebulae.dotPDFium.PdfDocument.GetNamedDestination*
+  nameWithType.vb: PdfDocument.GetNamedDestination(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetNamedDestination(Integer)
+  name.vb: GetNamedDestination(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName(System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName(System.String)
+  id: GetNamedDestinationByName(System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetNamedDestinationByName(string)
+  nameWithType: PdfDocument.GetNamedDestinationByName(string)
+  fullName: nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetNamedDestinationByName
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 1022
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves a named destination from the PDF document by its name.
+  remarks: >-
+    Named destinations are predefined locations within the PDF document that can be used for
+        navigation. Use this method to retrieve a destination by its name for further processing or
+        navigation.
+  example: []
+  syntax:
+    content: public PdfDestination? GetNamedDestinationByName(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the destination to retrieve. This value cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: nebulae.dotPDFium.PdfDestination
+      description: A <xref href="nebulae.dotPDFium.PdfDestination" data-throw-if-not-resolved="false"></xref> object representing the named destination if found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetNamedDestinationByName(name As String) As PdfDestination
+  overload: nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName*
+  nameWithType.vb: PdfDocument.GetNamedDestinationByName(String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName(String)
+  name.vb: GetNamedDestinationByName(String)
+- uid: nebulae.dotPDFium.PdfDocument.GetMetadata(System.String)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetMetadata(System.String)
+  id: GetMetadata(System.String)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetMetadata(string)
+  nameWithType: PdfDocument.GetMetadata(string)
+  fullName: nebulae.dotPDFium.PdfDocument.GetMetadata(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetMetadata
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 1035
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the metadata value associated with the specified tag from the PDF document.
+  remarks: >-
+    The returned string excludes any null terminator that may be present in the underlying
+        data.
+  example: []
+  syntax:
+    content: public string? GetMetadata(string tag)
+    parameters:
+    - id: tag
+      type: System.String
+      description: The metadata tag to retrieve. Common tags include "Title", "Author", and "Subject".
+    return:
+      type: System.String
+      description: The metadata value as a string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the specified tag does not exist or has no value.
+    content.vb: Public Function GetMetadata(tag As String) As String
+  overload: nebulae.dotPDFium.PdfDocument.GetMetadata*
+  nameWithType.vb: PdfDocument.GetMetadata(String)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetMetadata(String)
+  name.vb: GetMetadata(String)
+- uid: nebulae.dotPDFium.PdfDocument.GetPageLabel(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetPageLabel(System.Int32)
+  id: GetPageLabel(System.Int32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetPageLabel(int)
+  nameWithType: PdfDocument.GetPageLabel(int)
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageLabel(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetPageLabel
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 1053
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the label associated with the specified page index in the document.
+  remarks: >-
+    Page labels are often used to display custom page numbering or names in a document. If no
+        label is defined for the specified page, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public string? GetPageLabel(int pageIndex)
+    parameters:
+    - id: pageIndex
+      type: System.Int32
+      description: The zero-based index of the page for which to retrieve the label.
+    return:
+      type: System.String
+      description: The label of the specified page as a string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the page does not have a label.
+    content.vb: Public Function GetPageLabel(pageIndex As Integer) As String
+  overload: nebulae.dotPDFium.PdfDocument.GetPageLabel*
+  nameWithType.vb: PdfDocument.GetPageLabel(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetPageLabel(Integer)
+  name.vb: GetPageLabel(Integer)
+- uid: nebulae.dotPDFium.PdfDocument.GetFileIdentifier(System.UInt32)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetFileIdentifier(System.UInt32)
+  id: GetFileIdentifier(System.UInt32)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetFileIdentifier(uint)
+  nameWithType: PdfDocument.GetFileIdentifier(uint)
+  fullName: nebulae.dotPDFium.PdfDocument.GetFileIdentifier(uint)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFileIdentifier
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 1072
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the file identifier associated with the document.
+  remarks: >-
+    File identifiers are typically used to uniquely identify a document. The returned identifier
+        may vary depending on the <code class="paramref">idType</code> specified.
+  example: []
+  syntax:
+    content: public byte[]? GetFileIdentifier(uint idType = 0)
+    parameters:
+    - id: idType
+      type: System.UInt32
+      description: >-
+        The type of file identifier to retrieve. Use <code>0</code> to retrieve the primary identifier, or other values as
+            defined by the document specification.
+    return:
+      type: System.Byte[]
+      description: A byte array containing the file identifier, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no identifier is available.
+    content.vb: Public Function GetFileIdentifier(idType As UInteger = 0) As Byte()
+  overload: nebulae.dotPDFium.PdfDocument.GetFileIdentifier*
+  nameWithType.vb: PdfDocument.GetFileIdentifier(UInteger)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.GetFileIdentifier(UInteger)
+  name.vb: GetFileIdentifier(UInteger)
+- uid: nebulae.dotPDFium.PdfDocument.GetAdditionalAction(nebulae.dotPDFium.Native.PdfPageAActionType)
+  commentId: M:nebulae.dotPDFium.PdfDocument.GetAdditionalAction(nebulae.dotPDFium.Native.PdfPageAActionType)
+  id: GetAdditionalAction(nebulae.dotPDFium.Native.PdfPageAActionType)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: GetAdditionalAction(PdfPageAActionType)
+  nameWithType: PdfDocument.GetAdditionalAction(PdfPageAActionType)
+  fullName: nebulae.dotPDFium.PdfDocument.GetAdditionalAction(nebulae.dotPDFium.Native.PdfPageAActionType)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAdditionalAction
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 1088
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the additional action associated with the specified page action type.
+  example: []
+  syntax:
+    content: public PdfAction? GetAdditionalAction(PdfPageAActionType type)
+    parameters:
+    - id: type
+      type: nebulae.dotPDFium.Native.PdfPageAActionType
+      description: The type of page action to retrieve. This specifies the event for which the additional action is defined.
+    return:
+      type: nebulae.dotPDFium.PdfAction
+      description: A <xref href="nebulae.dotPDFium.PdfAction" data-throw-if-not-resolved="false"></xref> representing the additional action for the specified page action type,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no additional action is defined for the specified type.
+    content.vb: Public Function GetAdditionalAction(type As PdfPageAActionType) As PdfAction
+  overload: nebulae.dotPDFium.PdfDocument.GetAdditionalAction*
+- uid: nebulae.dotPDFium.PdfDocument.Close
+  commentId: M:nebulae.dotPDFium.PdfDocument.Close
+  id: Close
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: PdfDocument.Close()
+  fullName: nebulae.dotPDFium.PdfDocument.Close()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Close
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 1097
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Closes the current PdfDocument instance and releases the resources associated with it.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: nebulae.dotPDFium.PdfDocument.Close*
+- uid: nebulae.dotPDFium.PdfDocument.Dispose(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfDocument.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: nebulae.dotPDFium.PdfDocument
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: PdfDocument.Dispose(bool)
+  fullName: nebulae.dotPDFium.PdfDocument.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfDocument.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Dispose
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfDocument.cs
+    startLine: 1104
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Called when the PdfDocument is disposed. This method is responsible for releasing the resources used by the
+
+    PdfDocument instance, including closing any open pages and freeing the native resources associated with the document.
+  example: []
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: ''
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+  overridden: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  overload: nebulae.dotPDFium.PdfDocument.Dispose*
+  nameWithType.vb: PdfDocument.Dispose(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfDocument.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: nebulae.dotPDFium.PdfObject
+  commentId: T:nebulae.dotPDFium.PdfObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfObject.html
+  name: PdfObject
+  nameWithType: PdfObject
+  fullName: nebulae.dotPDFium.PdfObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: nebulae.dotPDFium.PdfObject._handle
+  commentId: F:nebulae.dotPDFium.PdfObject._handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__handle
+  name: _handle
+  nameWithType: PdfObject._handle
+  fullName: nebulae.dotPDFium.PdfObject._handle
+- uid: nebulae.dotPDFium.PdfObject._type
+  commentId: F:nebulae.dotPDFium.PdfObject._type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__type
+  name: _type
+  nameWithType: PdfObject._type
+  fullName: nebulae.dotPDFium.PdfObject._type
+- uid: nebulae.dotPDFium.PdfObject._disposed
+  commentId: F:nebulae.dotPDFium.PdfObject._disposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__disposed
+  name: _disposed
+  nameWithType: PdfObject._disposed
+  fullName: nebulae.dotPDFium.PdfObject._disposed
+- uid: nebulae.dotPDFium.PdfObject.Handle
+  commentId: P:nebulae.dotPDFium.PdfObject.Handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Handle
+  name: Handle
+  nameWithType: PdfObject.Handle
+  fullName: nebulae.dotPDFium.PdfObject.Handle
+- uid: nebulae.dotPDFium.PdfObject.Type
+  commentId: P:nebulae.dotPDFium.PdfObject.Type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Type
+  name: Type
+  nameWithType: PdfObject.Type
+  fullName: nebulae.dotPDFium.PdfObject.Type
+- uid: nebulae.dotPDFium.PdfObject.IsDisposed
+  commentId: P:nebulae.dotPDFium.PdfObject.IsDisposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_IsDisposed
+  name: IsDisposed
+  nameWithType: PdfObject.IsDisposed
+  fullName: nebulae.dotPDFium.PdfObject.IsDisposed
+- uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+  commentId: M:nebulae.dotPDFium.PdfObject.GetPDFiumError
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  name: GetPDFiumError()
+  nameWithType: PdfObject.GetPDFiumError()
+  fullName: nebulae.dotPDFium.PdfObject.GetPDFiumError()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  name: Dispose()
+  nameWithType: PdfObject.Dispose()
+  fullName: nebulae.dotPDFium.PdfObject.Dispose()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfPage
+  commentId: T:nebulae.dotPDFium.PdfPage
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPage.html
+  name: PdfPage
+  nameWithType: PdfPage
+  fullName: nebulae.dotPDFium.PdfPage
+- uid: nebulae.dotPDFium.PdfDocument.ResolvePage*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.ResolvePage
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_ResolvePage_System_IntPtr_
+  name: ResolvePage
+  nameWithType: PdfDocument.ResolvePage
+  fullName: nebulae.dotPDFium.PdfDocument.ResolvePage
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: nebulae.dotPDFium.dotPDFiumException
+  commentId: T:nebulae.dotPDFium.dotPDFiumException
+  href: nebulae.dotPDFium.dotPDFiumException.html
+  name: dotPDFiumException
+  nameWithType: dotPDFiumException
+  fullName: nebulae.dotPDFium.dotPDFiumException
+- uid: nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CopyViewerPreferencesFrom_nebulae_dotPDFium_PdfDocument_
+  name: CopyViewerPreferencesFrom
+  nameWithType: PdfDocument.CopyViewerPreferencesFrom
+  fullName: nebulae.dotPDFium.PdfDocument.CopyViewerPreferencesFrom
+- uid: nebulae.dotPDFium.PdfDocument
+  commentId: T:nebulae.dotPDFium.PdfDocument
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfDocument.html
+  name: PdfDocument
+  nameWithType: PdfDocument
+  fullName: nebulae.dotPDFium.PdfDocument
+- uid: nebulae.dotPDFium.PdfDocument.GetFirstPageIndex*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetFirstPageIndex
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetFirstPageIndex
+  name: GetFirstPageIndex
+  nameWithType: PdfDocument.GetFirstPageIndex
+  fullName: nebulae.dotPDFium.PdfDocument.GetFirstPageIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.PdfDocument.ImportNPagesToOne*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.ImportNPagesToOne
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_ImportNPagesToOne_nebulae_dotPDFium_PdfDocument_System_Single_System_Single_System_Int32_System_Int32_
+  name: ImportNPagesToOne
+  nameWithType: PdfDocument.ImportNPagesToOne
+  fullName: nebulae.dotPDFium.PdfDocument.ImportNPagesToOne
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: nebulae.dotPDFium.PdfDocument.ImportPagesFrom*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.ImportPagesFrom
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_ImportPagesFrom_nebulae_dotPDFium_PdfDocument_System_String_System_Int32_
+  name: ImportPagesFrom
+  nameWithType: PdfDocument.ImportPagesFrom
+  fullName: nebulae.dotPDFium.PdfDocument.ImportPagesFrom
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_ImportPagesFromByIndex_nebulae_dotPDFium_PdfDocument_System_Int32___System_Int32_
+  name: ImportPagesFromByIndex
+  nameWithType: PdfDocument.ImportPagesFromByIndex
+  fullName: nebulae.dotPDFium.PdfDocument.ImportPagesFromByIndex
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetSecurityHandlerRevision
+  name: GetSecurityHandlerRevision
+  nameWithType: PdfDocument.GetSecurityHandlerRevision
+  fullName: nebulae.dotPDFium.PdfDocument.GetSecurityHandlerRevision
+- uid: nebulae.dotPDFium.Native.PdfDuplexType
+  commentId: T:nebulae.dotPDFium.Native.PdfDuplexType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfDuplexType.html
+  name: PdfDuplexType
+  nameWithType: PdfDuplexType
+  fullName: nebulae.dotPDFium.Native.PdfDuplexType
+- uid: nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetViewerDuplexPreference
+  name: GetViewerDuplexPreference
+  nameWithType: PdfDocument.GetViewerDuplexPreference
+  fullName: nebulae.dotPDFium.PdfDocument.GetViewerDuplexPreference
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetViewerPreferenceName_System_String_
+  name: GetViewerPreferenceName
+  nameWithType: PdfDocument.GetViewerPreferenceName
+  fullName: nebulae.dotPDFium.PdfDocument.GetViewerPreferenceName
+- uid: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetSuggestedPrintCopies
+  name: GetSuggestedPrintCopies
+  nameWithType: PdfDocument.GetSuggestedPrintCopies
+  fullName: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintCopies
+- uid: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetSuggestedPrintRange
+  name: GetSuggestedPrintRange
+  nameWithType: PdfDocument.GetSuggestedPrintRange
+  fullName: nebulae.dotPDFium.PdfDocument.GetSuggestedPrintRange
+- uid: nebulae.dotPDFium.PdfPrintPageRange
+  commentId: T:nebulae.dotPDFium.PdfPrintPageRange
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPrintPageRange.html
+  name: PdfPrintPageRange
+  nameWithType: PdfPrintPageRange
+  fullName: nebulae.dotPDFium.PdfPrintPageRange
+- uid: nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetParsedPrintPageRange
+  name: GetParsedPrintPageRange
+  nameWithType: PdfDocument.GetParsedPrintPageRange
+  fullName: nebulae.dotPDFium.PdfDocument.GetParsedPrintPageRange
+- uid: nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetPrintScalingAllowed
+  name: GetPrintScalingAllowed
+  nameWithType: PdfDocument.GetPrintScalingAllowed
+  fullName: nebulae.dotPDFium.PdfDocument.GetPrintScalingAllowed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.PdfDocument.IsTagged*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.IsTagged
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_IsTagged
+  name: IsTagged
+  nameWithType: PdfDocument.IsTagged
+  fullName: nebulae.dotPDFium.PdfDocument.IsTagged
+- uid: nebulae.dotPDFium.PdfDocument.SetDefaultLanguage*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.SetDefaultLanguage
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_SetDefaultLanguage_System_String_
+  name: SetDefaultLanguage
+  nameWithType: PdfDocument.SetDefaultLanguage
+  fullName: nebulae.dotPDFium.PdfDocument.SetDefaultLanguage
+- uid: nebulae.dotPDFium.PdfDocument.LoadFromFile*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.LoadFromFile
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_LoadFromFile_System_String_System_String_
+  name: LoadFromFile
+  nameWithType: PdfDocument.LoadFromFile
+  fullName: nebulae.dotPDFium.PdfDocument.LoadFromFile
+- uid: nebulae.dotPDFium.PdfDocument.TryLoadFromFile*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.TryLoadFromFile
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_TryLoadFromFile_System_String_nebulae_dotPDFium_PdfDocument__System_String_
+  name: TryLoadFromFile
+  nameWithType: PdfDocument.TryLoadFromFile
+  fullName: nebulae.dotPDFium.PdfDocument.TryLoadFromFile
+- uid: nebulae.dotPDFium.PdfDocument.LoadFromMemory*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.LoadFromMemory
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_LoadFromMemory_System_Byte___System_String_
+  name: LoadFromMemory
+  nameWithType: PdfDocument.LoadFromMemory
+  fullName: nebulae.dotPDFium.PdfDocument.LoadFromMemory
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfDocument.TryLoadFromMemory*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.TryLoadFromMemory
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_TryLoadFromMemory_System_Byte___nebulae_dotPDFium_PdfDocument__System_String_
+  name: TryLoadFromMemory
+  nameWithType: PdfDocument.TryLoadFromMemory
+  fullName: nebulae.dotPDFium.PdfDocument.TryLoadFromMemory
+- uid: nebulae.dotPDFium.PdfDocument.CreateNew*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CreateNew
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CreateNew
+  name: CreateNew
+  nameWithType: PdfDocument.CreateNew
+  fullName: nebulae.dotPDFium.PdfDocument.CreateNew
+- uid: nebulae.dotPDFium.PdfDocument.SaveTo*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.SaveTo
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_SaveTo_System_String_System_Boolean_
+  name: SaveTo
+  nameWithType: PdfDocument.SaveTo
+  fullName: nebulae.dotPDFium.PdfDocument.SaveTo
+- uid: nebulae.dotPDFium.PdfDocument.SaveWithVersion*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.SaveWithVersion
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_SaveWithVersion_System_String_nebulae_dotPDFium_Native_PdfFileVersion_
+  name: SaveWithVersion
+  nameWithType: PdfDocument.SaveWithVersion
+  fullName: nebulae.dotPDFium.PdfDocument.SaveWithVersion
+- uid: nebulae.dotPDFium.Native.PdfFileVersion
+  commentId: T:nebulae.dotPDFium.Native.PdfFileVersion
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFileVersion.html
+  name: PdfFileVersion
+  nameWithType: PdfFileVersion
+  fullName: nebulae.dotPDFium.Native.PdfFileVersion
+- uid: nebulae.dotPDFium.PdfDocument.CreatePage*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CreatePage
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CreatePage_System_Int32_System_Single_System_Single_
+  name: CreatePage
+  nameWithType: PdfDocument.CreatePage
+  fullName: nebulae.dotPDFium.PdfDocument.CreatePage
+- uid: nebulae.dotPDFium.PdfDocument.DeletePage*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.DeletePage
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_DeletePage_System_Int32_
+  name: DeletePage
+  nameWithType: PdfDocument.DeletePage
+  fullName: nebulae.dotPDFium.PdfDocument.DeletePage
+- uid: nebulae.dotPDFium.PdfDocument.PageCount*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.PageCount
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_PageCount
+  name: PageCount
+  nameWithType: PdfDocument.PageCount
+  fullName: nebulae.dotPDFium.PdfDocument.PageCount
+- uid: nebulae.dotPDFium.PdfDocument.MovePages*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.MovePages
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_MovePages_System_Int32___System_Int32_
+  name: MovePages
+  nameWithType: PdfDocument.MovePages
+  fullName: nebulae.dotPDFium.PdfDocument.MovePages
+- uid: nebulae.dotPDFium.PdfDocument.OpenPageCount*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.OpenPageCount
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_OpenPageCount
+  name: OpenPageCount
+  nameWithType: PdfDocument.OpenPageCount
+  fullName: nebulae.dotPDFium.PdfDocument.OpenPageCount
+- uid: nebulae.dotPDFium.Native.PdfPageMode
+  commentId: T:nebulae.dotPDFium.Native.PdfPageMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfPageMode.html
+  name: PdfPageMode
+  nameWithType: PdfPageMode
+  fullName: nebulae.dotPDFium.Native.PdfPageMode
+- uid: nebulae.dotPDFium.Native.PdfPageMode.Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfPageMode.Unknown
+  href: nebulae.dotPDFium.Native.PdfPageMode.html#nebulae_dotPDFium_Native_PdfPageMode_Unknown
+  name: Unknown
+  nameWithType: PdfPageMode.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfPageMode.Unknown
+- uid: nebulae.dotPDFium.PdfDocument.GetPageMode*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetPageMode
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetPageMode
+  name: GetPageMode
+  nameWithType: PdfDocument.GetPageMode
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageMode
+- uid: nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_HasValidCrossReferenceTable
+  name: HasValidCrossReferenceTable
+  nameWithType: PdfDocument.HasValidCrossReferenceTable
+  fullName: nebulae.dotPDFium.PdfDocument.HasValidCrossReferenceTable
+- uid: nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetTrailerEndOffsets
+  name: GetTrailerEndOffsets
+  nameWithType: PdfDocument.GetTrailerEndOffsets
+  fullName: nebulae.dotPDFium.PdfDocument.GetTrailerEndOffsets
+- uid: System.Collections.Generic.IReadOnlyList{System.UInt32}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.UInt32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<uint>
+  nameWithType: IReadOnlyList<uint>
+  fullName: System.Collections.Generic.IReadOnlyList<uint>
+  nameWithType.vb: IReadOnlyList(Of UInteger)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of UInteger)
+  name.vb: IReadOnlyList(Of UInteger)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: nebulae.dotPDFium.Security.PdfSignature
+  commentId: T:nebulae.dotPDFium.Security.PdfSignature
+  href: nebulae.dotPDFium.Security.PdfSignature.html
+  name: PdfSignature
+  nameWithType: PdfSignature
+  fullName: nebulae.dotPDFium.Security.PdfSignature
+- uid: nebulae.dotPDFium.PdfDocument.GetSignatures*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetSignatures
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetSignatures
+  name: GetSignatures
+  nameWithType: PdfDocument.GetSignatures
+  fullName: nebulae.dotPDFium.PdfDocument.GetSignatures
+- uid: System.Collections.Generic.IReadOnlyList{nebulae.dotPDFium.Security.PdfSignature}
+  commentId: T:System.Collections.Generic.IReadOnlyList{nebulae.dotPDFium.Security.PdfSignature}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<PdfSignature>
+  nameWithType: IReadOnlyList<PdfSignature>
+  fullName: System.Collections.Generic.IReadOnlyList<nebulae.dotPDFium.Security.PdfSignature>
+  nameWithType.vb: IReadOnlyList(Of PdfSignature)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of nebulae.dotPDFium.Security.PdfSignature)
+  name.vb: IReadOnlyList(Of PdfSignature)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: nebulae.dotPDFium.Security.PdfSignature
+    name: PdfSignature
+    href: nebulae.dotPDFium.Security.PdfSignature.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: nebulae.dotPDFium.Security.PdfSignature
+    name: PdfSignature
+    href: nebulae.dotPDFium.Security.PdfSignature.html
+  - name: )
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: nebulae.dotPDFium.PdfDocument.LoadPage*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.LoadPage
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_LoadPage_System_Int32_
+  name: LoadPage
+  nameWithType: PdfDocument.LoadPage
+  fullName: nebulae.dotPDFium.PdfDocument.LoadPage
+- uid: nebulae.dotPDFium.PdfDocument.TryLoadPage*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.TryLoadPage
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_TryLoadPage_System_Int32_nebulae_dotPDFium_PdfPage__
+  name: TryLoadPage
+  nameWithType: PdfDocument.TryLoadPage
+  fullName: nebulae.dotPDFium.PdfDocument.TryLoadPage
+- uid: nebulae.dotPDFium.PdfDocument.LoadStandardFont*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.LoadStandardFont
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_LoadStandardFont_System_String_
+  name: LoadStandardFont
+  nameWithType: PdfDocument.LoadStandardFont
+  fullName: nebulae.dotPDFium.PdfDocument.LoadStandardFont
+- uid: nebulae.dotPDFium.PdfFont
+  commentId: T:nebulae.dotPDFium.PdfFont
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfFont.html
+  name: PdfFont
+  nameWithType: PdfFont
+  fullName: nebulae.dotPDFium.PdfFont
+- uid: nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_LoadEmbeddedFont_System_Byte___nebulae_dotPDFium_Native_PdfFontType_System_Boolean_
+  name: LoadEmbeddedFont
+  nameWithType: PdfDocument.LoadEmbeddedFont
+  fullName: nebulae.dotPDFium.PdfDocument.LoadEmbeddedFont
+- uid: nebulae.dotPDFium.Native.PdfFontType
+  commentId: T:nebulae.dotPDFium.Native.PdfFontType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFontType.html
+  name: PdfFontType
+  nameWithType: PdfFontType
+  fullName: nebulae.dotPDFium.Native.PdfFontType
+- uid: nebulae.dotPDFium.PdfEmbeddedFont
+  commentId: T:nebulae.dotPDFium.PdfEmbeddedFont
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfEmbeddedFont.html
+  name: PdfEmbeddedFont
+  nameWithType: PdfEmbeddedFont
+  fullName: nebulae.dotPDFium.PdfEmbeddedFont
+- uid: nebulae.dotPDFium.PdfDocument.LoadCidType2Font*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.LoadCidType2Font
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_LoadCidType2Font_System_Byte___System_String_System_String_System_Byte___
+  name: LoadCidType2Font
+  nameWithType: PdfDocument.LoadCidType2Font
+  fullName: nebulae.dotPDFium.PdfDocument.LoadCidType2Font
+- uid: nebulae.dotPDFium.PdfDocument.CreateTextObject*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CreateTextObject
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CreateTextObject_nebulae_dotPDFium_PdfFont_System_Single_
+  name: CreateTextObject
+  nameWithType: PdfDocument.CreateTextObject
+  fullName: nebulae.dotPDFium.PdfDocument.CreateTextObject
+- uid: nebulae.dotPDFium.PdfTextObject
+  commentId: T:nebulae.dotPDFium.PdfTextObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfTextObject.html
+  name: PdfTextObject
+  nameWithType: PdfTextObject
+  fullName: nebulae.dotPDFium.PdfTextObject
+- uid: nebulae.dotPDFium.PdfDocument.CreateStandardTextObject*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CreateStandardTextObject
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CreateStandardTextObject_System_String_System_Single_
+  name: CreateStandardTextObject
+  nameWithType: PdfDocument.CreateStandardTextObject
+  fullName: nebulae.dotPDFium.PdfDocument.CreateStandardTextObject
+- uid: nebulae.dotPDFium.PdfPathObject
+  commentId: T:nebulae.dotPDFium.PdfPathObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPathObject.html
+  name: PdfPathObject
+  nameWithType: PdfPathObject
+  fullName: nebulae.dotPDFium.PdfPathObject
+- uid: nebulae.dotPDFium.PdfDocument.CreatePathObject*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CreatePathObject
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CreatePathObject
+  name: CreatePathObject
+  nameWithType: PdfDocument.CreatePathObject
+  fullName: nebulae.dotPDFium.PdfDocument.CreatePathObject
+- uid: nebulae.dotPDFium.PdfImageObject
+  commentId: T:nebulae.dotPDFium.PdfImageObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfImageObject.html
+  name: PdfImageObject
+  nameWithType: PdfImageObject
+  fullName: nebulae.dotPDFium.PdfImageObject
+- uid: nebulae.dotPDFium.PdfDocument.CreateImageObject*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CreateImageObject
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CreateImageObject
+  name: CreateImageObject
+  nameWithType: PdfDocument.CreateImageObject
+  fullName: nebulae.dotPDFium.PdfDocument.CreateImageObject
+- uid: nebulae.dotPDFium.PdfDocument.CreateRectObject*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.CreateRectObject
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_CreateRectObject_System_Single_System_Single_System_Single_System_Single_
+  name: CreateRectObject
+  nameWithType: PdfDocument.CreateRectObject
+  fullName: nebulae.dotPDFium.PdfDocument.CreateRectObject
+- uid: nebulae.dotPDFium.Native.FsSizeF
+  commentId: T:nebulae.dotPDFium.Native.FsSizeF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsSizeF.html
+  name: FsSizeF
+  nameWithType: FsSizeF
+  fullName: nebulae.dotPDFium.Native.FsSizeF
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetPageSizeByIndexF_System_Int32_
+  name: GetPageSizeByIndexF
+  nameWithType: PdfDocument.GetPageSizeByIndexF
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndexF
+- uid: nebulae.dotPDFium.Native.FsSize
+  commentId: T:nebulae.dotPDFium.Native.FsSize
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsSize.html
+  name: FsSize
+  nameWithType: FsSize
+  fullName: nebulae.dotPDFium.Native.FsSize
+- uid: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetPageSizeByIndex_System_Int32_
+  name: GetPageSizeByIndex
+  nameWithType: PdfDocument.GetPageSizeByIndex
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageSizeByIndex
+- uid: nebulae.dotPDFium.PdfDocument.GetRenderedBitmap*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetRenderedBitmap
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetRenderedBitmap_nebulae_dotPDFium_PdfPage_nebulae_dotPDFium_PdfTextObject_System_Single_
+  name: GetRenderedBitmap
+  nameWithType: PdfDocument.GetRenderedBitmap
+  fullName: nebulae.dotPDFium.PdfDocument.GetRenderedBitmap
+- uid: nebulae.dotPDFium.PdfDocument.GetAttachmentCount*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetAttachmentCount
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetAttachmentCount
+  name: GetAttachmentCount
+  nameWithType: PdfDocument.GetAttachmentCount
+  fullName: nebulae.dotPDFium.PdfDocument.GetAttachmentCount
+- uid: nebulae.dotPDFium.PdfAttachment
+  commentId: T:nebulae.dotPDFium.PdfAttachment
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfAttachment.html
+  name: PdfAttachment
+  nameWithType: PdfAttachment
+  fullName: nebulae.dotPDFium.PdfAttachment
+- uid: nebulae.dotPDFium.PdfDocument.GetAttachment*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetAttachment
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetAttachment_System_Int32_
+  name: GetAttachment
+  nameWithType: PdfDocument.GetAttachment
+  fullName: nebulae.dotPDFium.PdfDocument.GetAttachment
+- uid: nebulae.dotPDFium.PdfDocument.AddAttachment*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.AddAttachment
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_AddAttachment_System_String_
+  name: AddAttachment
+  nameWithType: PdfDocument.AddAttachment
+  fullName: nebulae.dotPDFium.PdfDocument.AddAttachment
+- uid: nebulae.dotPDFium.PdfDocument.DeleteAttachment*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.DeleteAttachment
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_DeleteAttachment_System_Int32_
+  name: DeleteAttachment
+  nameWithType: PdfDocument.DeleteAttachment
+  fullName: nebulae.dotPDFium.PdfDocument.DeleteAttachment
+- uid: nebulae.dotPDFium.PdfDocument.FindBookmark*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.FindBookmark
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_FindBookmark_System_String_
+  name: FindBookmark
+  nameWithType: PdfDocument.FindBookmark
+  fullName: nebulae.dotPDFium.PdfDocument.FindBookmark
+- uid: nebulae.dotPDFium.PdfBookmark
+  commentId: T:nebulae.dotPDFium.PdfBookmark
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfBookmark.html
+  name: PdfBookmark
+  nameWithType: PdfBookmark
+  fullName: nebulae.dotPDFium.PdfBookmark
+- uid: nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetNamedDestinationCount
+  name: GetNamedDestinationCount
+  nameWithType: PdfDocument.GetNamedDestinationCount
+  fullName: nebulae.dotPDFium.PdfDocument.GetNamedDestinationCount
+- uid: nebulae.dotPDFium.PdfDocument.GetPermissions*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetPermissions
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetPermissions
+  name: GetPermissions
+  nameWithType: PdfDocument.GetPermissions
+  fullName: nebulae.dotPDFium.PdfDocument.GetPermissions
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: nebulae.dotPDFium.PdfDocument.GetUserPermissions*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetUserPermissions
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetUserPermissions
+  name: GetUserPermissions
+  nameWithType: PdfDocument.GetUserPermissions
+  fullName: nebulae.dotPDFium.PdfDocument.GetUserPermissions
+- uid: nebulae.dotPDFium.PdfDocument.GetFileVersion*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetFileVersion
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetFileVersion
+  name: GetFileVersion
+  nameWithType: PdfDocument.GetFileVersion
+  fullName: nebulae.dotPDFium.PdfDocument.GetFileVersion
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfDestination
+  commentId: T:nebulae.dotPDFium.PdfDestination
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfDestination.html
+  name: PdfDestination
+  nameWithType: PdfDestination
+  fullName: nebulae.dotPDFium.PdfDestination
+- uid: nebulae.dotPDFium.PdfDocument.GetNamedDestination*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetNamedDestination
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetNamedDestination_System_Int32_
+  name: GetNamedDestination
+  nameWithType: PdfDocument.GetNamedDestination
+  fullName: nebulae.dotPDFium.PdfDocument.GetNamedDestination
+- uid: System.Nullable{System.ValueTuple{System.String,nebulae.dotPDFium.PdfDestination}}
+  commentId: T:System.Nullable{System.ValueTuple{System.String,nebulae.dotPDFium.PdfDestination}}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: (string Name, PdfDestination Destination)?
+  nameWithType: (string Name, PdfDestination Destination)?
+  fullName: (string Name, nebulae.dotPDFium.PdfDestination Destination)?
+  nameWithType.vb: (Name As String, Destination As PdfDestination)?
+  fullName.vb: (Name As String, Destination As nebulae.dotPDFium.PdfDestination)?
+  name.vb: (Name As String, Destination As PdfDestination)?
+  spec.csharp:
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,nebulae.dotPDFium.PdfDestination}.Name
+    name: Name
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,nebulae.dotpdfium.pdfdestination-.name
+  - name: ','
+  - name: " "
+  - uid: nebulae.dotPDFium.PdfDestination
+    name: PdfDestination
+    href: nebulae.dotPDFium.PdfDestination.html
+  - name: " "
+  - uid: System.ValueTuple{System.String,nebulae.dotPDFium.PdfDestination}.Destination
+    name: Destination
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,nebulae.dotpdfium.pdfdestination-.destination
+  - name: )
+  - name: '?'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.String,nebulae.dotPDFium.PdfDestination}.Name
+    name: Name
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,nebulae.dotpdfium.pdfdestination-.name
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,nebulae.dotPDFium.PdfDestination}.Destination
+    name: Destination
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,nebulae.dotpdfium.pdfdestination-.destination
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: nebulae.dotPDFium.PdfDestination
+    name: PdfDestination
+    href: nebulae.dotPDFium.PdfDestination.html
+  - name: )
+  - name: '?'
+- uid: nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetNamedDestinationByName_System_String_
+  name: GetNamedDestinationByName
+  nameWithType: PdfDocument.GetNamedDestinationByName
+  fullName: nebulae.dotPDFium.PdfDocument.GetNamedDestinationByName
+- uid: nebulae.dotPDFium.PdfDocument.GetMetadata*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetMetadata
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetMetadata_System_String_
+  name: GetMetadata
+  nameWithType: PdfDocument.GetMetadata
+  fullName: nebulae.dotPDFium.PdfDocument.GetMetadata
+- uid: nebulae.dotPDFium.PdfDocument.GetPageLabel*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetPageLabel
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetPageLabel_System_Int32_
+  name: GetPageLabel
+  nameWithType: PdfDocument.GetPageLabel
+  fullName: nebulae.dotPDFium.PdfDocument.GetPageLabel
+- uid: nebulae.dotPDFium.PdfDocument.GetFileIdentifier*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetFileIdentifier
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetFileIdentifier_System_UInt32_
+  name: GetFileIdentifier
+  nameWithType: PdfDocument.GetFileIdentifier
+  fullName: nebulae.dotPDFium.PdfDocument.GetFileIdentifier
+- uid: nebulae.dotPDFium.PdfAction
+  commentId: T:nebulae.dotPDFium.PdfAction
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfAction.html
+  name: PdfAction
+  nameWithType: PdfAction
+  fullName: nebulae.dotPDFium.PdfAction
+- uid: nebulae.dotPDFium.PdfDocument.GetAdditionalAction*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.GetAdditionalAction
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_GetAdditionalAction_nebulae_dotPDFium_Native_PdfPageAActionType_
+  name: GetAdditionalAction
+  nameWithType: PdfDocument.GetAdditionalAction
+  fullName: nebulae.dotPDFium.PdfDocument.GetAdditionalAction
+- uid: nebulae.dotPDFium.Native.PdfPageAActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfPageAActionType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfPageAActionType.html
+  name: PdfPageAActionType
+  nameWithType: PdfPageAActionType
+  fullName: nebulae.dotPDFium.Native.PdfPageAActionType
+- uid: nebulae.dotPDFium.PdfDocument.Close*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.Close
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_Close
+  name: Close
+  nameWithType: PdfDocument.Close
+  fullName: nebulae.dotPDFium.PdfDocument.Close
+- uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  parent: nebulae.dotPDFium.PdfObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: PdfObject.Dispose(bool)
+  fullName: nebulae.dotPDFium.PdfObject.Dispose(bool)
+  nameWithType.vb: PdfObject.Dispose(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: nebulae.dotPDFium.PdfDocument.Dispose*
+  commentId: Overload:nebulae.dotPDFium.PdfDocument.Dispose
+  href: nebulae.dotPDFium.PdfDocument.html#nebulae_dotPDFium_PdfDocument_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: PdfDocument.Dispose
+  fullName: nebulae.dotPDFium.PdfDocument.Dispose

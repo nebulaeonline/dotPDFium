@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode
+  commentId: T:nebulae.dotPDFium.Native.PdfTextRenderMode
+  id: PdfTextRenderMode
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.Clip
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.Fill
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.FillClip
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.FillStroke
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.FillStrokeClip
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.Invisible
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.Stroke
+  - nebulae.dotPDFium.Native.PdfTextRenderMode.StrokeClip
+  langs:
+  - csharp
+  - vb
+  name: PdfTextRenderMode
+  nameWithType: PdfTextRenderMode
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfTextRenderMode
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 777
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the rendering mode for text in a PDF document.
+  remarks: >-
+    The rendering mode determines how text is drawn or clipped in the PDF content.  It can control
+        whether the text is filled, stroked, both, or used as a clipping path.
+  example: []
+  syntax:
+    content: public enum PdfTextRenderMode
+    content.vb: Public Enum PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.Fill
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.Fill
+  id: Fill
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: Fill
+  nameWithType: PdfTextRenderMode.Fill
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.Fill
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Fill
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 779
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Fill = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.Stroke
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.Stroke
+  id: Stroke
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: Stroke
+  nameWithType: PdfTextRenderMode.Stroke
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.Stroke
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Stroke
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 780
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Stroke = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.FillStroke
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.FillStroke
+  id: FillStroke
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: FillStroke
+  nameWithType: PdfTextRenderMode.FillStroke
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.FillStroke
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FillStroke
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 781
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: FillStroke = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.Invisible
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.Invisible
+  id: Invisible
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: Invisible
+  nameWithType: PdfTextRenderMode.Invisible
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.Invisible
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Invisible
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 782
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Invisible = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.FillClip
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.FillClip
+  id: FillClip
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: FillClip
+  nameWithType: PdfTextRenderMode.FillClip
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.FillClip
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FillClip
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 783
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: FillClip = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.StrokeClip
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.StrokeClip
+  id: StrokeClip
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: StrokeClip
+  nameWithType: PdfTextRenderMode.StrokeClip
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.StrokeClip
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: StrokeClip
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 784
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: StrokeClip = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.FillStrokeClip
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.FillStrokeClip
+  id: FillStrokeClip
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: FillStrokeClip
+  nameWithType: PdfTextRenderMode.FillStrokeClip
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.FillStrokeClip
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FillStrokeClip
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 785
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: FillStrokeClip = 6
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode.Clip
+  commentId: F:nebulae.dotPDFium.Native.PdfTextRenderMode.Clip
+  id: Clip
+  parent: nebulae.dotPDFium.Native.PdfTextRenderMode
+  langs:
+  - csharp
+  - vb
+  name: Clip
+  nameWithType: PdfTextRenderMode.Clip
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode.Clip
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Clip
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 786
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Clip = 7
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode
+  commentId: T:nebulae.dotPDFium.Native.PdfTextRenderMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfTextRenderMode.html
+  name: PdfTextRenderMode
+  nameWithType: PdfTextRenderMode
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode

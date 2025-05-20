@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFileIdType
+  commentId: T:nebulae.dotPDFium.Native.PdfFileIdType
+  id: PdfFileIdType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFileIdType.Changing
+  - nebulae.dotPDFium.Native.PdfFileIdType.Permanent
+  langs:
+  - csharp
+  - vb
+  name: PdfFileIdType
+  nameWithType: PdfFileIdType
+  fullName: nebulae.dotPDFium.Native.PdfFileIdType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFileIdType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 315
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the type of file identifier used in a PDF document, as defined by the PDF specification.
+  remarks: >-
+    A PDF file identifier consists of two parts: a "permanent" identifier and a "changing" identifier.
+        The <xref href="nebulae.dotPDFium.Native.PdfFileIdType" data-throw-if-not-resolved="false"></xref> enum is used to distinguish between these two types: <ul><li><span class="term"><xref href="nebulae.dotPDFium.Native.PdfFileIdType.Permanent" data-throw-if-not-resolved="false"></xref></span>Represents the permanent identifier, which remains constant across
+        revisions of the document.</li><li><span class="term"><xref href="nebulae.dotPDFium.Native.PdfFileIdType.Changing" data-throw-if-not-resolved="false"></xref></span>Represents
+        the changing identifier, which is updated with each revision of the document.</li></ul>
+  example: []
+  syntax:
+    content: public enum PdfFileIdType
+    content.vb: Public Enum PdfFileIdType
+- uid: nebulae.dotPDFium.Native.PdfFileIdType.Permanent
+  commentId: F:nebulae.dotPDFium.Native.PdfFileIdType.Permanent
+  id: Permanent
+  parent: nebulae.dotPDFium.Native.PdfFileIdType
+  langs:
+  - csharp
+  - vb
+  name: Permanent
+  nameWithType: PdfFileIdType.Permanent
+  fullName: nebulae.dotPDFium.Native.PdfFileIdType.Permanent
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Permanent
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 317
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Permanent = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFileIdType
+- uid: nebulae.dotPDFium.Native.PdfFileIdType.Changing
+  commentId: F:nebulae.dotPDFium.Native.PdfFileIdType.Changing
+  id: Changing
+  parent: nebulae.dotPDFium.Native.PdfFileIdType
+  langs:
+  - csharp
+  - vb
+  name: Changing
+  nameWithType: PdfFileIdType.Changing
+  fullName: nebulae.dotPDFium.Native.PdfFileIdType.Changing
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Changing
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 318
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Changing = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFileIdType
+references:
+- uid: nebulae.dotPDFium.Native.PdfFileIdType
+  commentId: T:nebulae.dotPDFium.Native.PdfFileIdType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFileIdType.html
+  name: PdfFileIdType
+  nameWithType: PdfFileIdType
+  fullName: nebulae.dotPDFium.Native.PdfFileIdType
+- uid: nebulae.dotPDFium.Native.PdfFileIdType.Permanent
+  commentId: F:nebulae.dotPDFium.Native.PdfFileIdType.Permanent
+  href: nebulae.dotPDFium.Native.PdfFileIdType.html#nebulae_dotPDFium_Native_PdfFileIdType_Permanent
+  name: Permanent
+  nameWithType: PdfFileIdType.Permanent
+  fullName: nebulae.dotPDFium.Native.PdfFileIdType.Permanent
+- uid: nebulae.dotPDFium.Native.PdfFileIdType.Changing
+  commentId: F:nebulae.dotPDFium.Native.PdfFileIdType.Changing
+  href: nebulae.dotPDFium.Native.PdfFileIdType.html#nebulae_dotPDFium_Native_PdfFileIdType_Changing
+  name: Changing
+  nameWithType: PdfFileIdType.Changing
+  fullName: nebulae.dotPDFium.Native.PdfFileIdType.Changing
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html

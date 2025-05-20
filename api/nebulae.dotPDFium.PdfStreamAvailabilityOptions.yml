@@ -1,0 +1,485 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  commentId: T:nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  id: PdfStreamAvailabilityOptions
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength
+  - nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock
+  - nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable
+  - nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment
+  - nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData
+  langs:
+  - csharp
+  - vb
+  name: PdfStreamAvailabilityOptions
+  nameWithType: PdfStreamAvailabilityOptions
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfStreamAvailabilityOptions
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+    startLine: 8
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: public sealed class PdfStreamAvailabilityOptions
+    content.vb: Public NotInheritable Class PdfStreamAvailabilityOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength
+  commentId: P:nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength
+  id: FileLength
+  parent: nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  langs:
+  - csharp
+  - vb
+  name: FileLength
+  nameWithType: PdfStreamAvailabilityOptions.FileLength
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FileLength
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+    startLine: 10
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: public required uint FileLength { get; init; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Public Property FileLength As UInteger
+  overload: nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength*
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData
+  commentId: P:nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData
+  id: UserData
+  parent: nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  langs:
+  - csharp
+  - vb
+  name: UserData
+  nameWithType: PdfStreamAvailabilityOptions.UserData
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: UserData
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+    startLine: 12
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: public required object UserData { get; init; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Property UserData As Object
+  overload: nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData*
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock
+  commentId: P:nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock
+  id: GetBlock
+  parent: nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  langs:
+  - csharp
+  - vb
+  name: GetBlock
+  nameWithType: PdfStreamAvailabilityOptions.GetBlock
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetBlock
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+    startLine: 14
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: public required PdfGetBlockDelegate GetBlock { get; init; }
+    parameters: []
+    return:
+      type: nebulae.dotPDFium.PdfGetBlockDelegate
+    content.vb: Public Property GetBlock As PdfGetBlockDelegate
+  overload: nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock*
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable
+  commentId: P:nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable
+  id: IsDataAvailable
+  parent: nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  langs:
+  - csharp
+  - vb
+  name: IsDataAvailable
+  nameWithType: PdfStreamAvailabilityOptions.IsDataAvailable
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: IsDataAvailable
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+    startLine: 15
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: public required PdfIsDataAvailDelegate IsDataAvailable { get; init; }
+    parameters: []
+    return:
+      type: nebulae.dotPDFium.PdfIsDataAvailDelegate
+    content.vb: Public Property IsDataAvailable As PdfIsDataAvailDelegate
+  overload: nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable*
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment
+  commentId: P:nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment
+  id: RequestSegment
+  parent: nebulae.dotPDFium.PdfStreamAvailabilityOptions
+  langs:
+  - csharp
+  - vb
+  name: RequestSegment
+  nameWithType: PdfStreamAvailabilityOptions.RequestSegment
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RequestSegment
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfStreamAvailabilityOptions.cs
+    startLine: 16
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: public required PdfAddSegmentDelegate RequestSegment { get; init; }
+    parameters: []
+    return:
+      type: nebulae.dotPDFium.PdfAddSegmentDelegate
+    content.vb: Public Property RequestSegment As PdfAddSegmentDelegate
+  overload: nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment*
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength*
+  commentId: Overload:nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength
+  href: nebulae.dotPDFium.PdfStreamAvailabilityOptions.html#nebulae_dotPDFium_PdfStreamAvailabilityOptions_FileLength
+  name: FileLength
+  nameWithType: PdfStreamAvailabilityOptions.FileLength
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.FileLength
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData*
+  commentId: Overload:nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData
+  href: nebulae.dotPDFium.PdfStreamAvailabilityOptions.html#nebulae_dotPDFium_PdfStreamAvailabilityOptions_UserData
+  name: UserData
+  nameWithType: PdfStreamAvailabilityOptions.UserData
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.UserData
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock*
+  commentId: Overload:nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock
+  href: nebulae.dotPDFium.PdfStreamAvailabilityOptions.html#nebulae_dotPDFium_PdfStreamAvailabilityOptions_GetBlock
+  name: GetBlock
+  nameWithType: PdfStreamAvailabilityOptions.GetBlock
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.GetBlock
+- uid: nebulae.dotPDFium.PdfGetBlockDelegate
+  commentId: T:nebulae.dotPDFium.PdfGetBlockDelegate
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfGetBlockDelegate.html
+  name: PdfGetBlockDelegate
+  nameWithType: PdfGetBlockDelegate
+  fullName: nebulae.dotPDFium.PdfGetBlockDelegate
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable*
+  commentId: Overload:nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable
+  href: nebulae.dotPDFium.PdfStreamAvailabilityOptions.html#nebulae_dotPDFium_PdfStreamAvailabilityOptions_IsDataAvailable
+  name: IsDataAvailable
+  nameWithType: PdfStreamAvailabilityOptions.IsDataAvailable
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.IsDataAvailable
+- uid: nebulae.dotPDFium.PdfIsDataAvailDelegate
+  commentId: T:nebulae.dotPDFium.PdfIsDataAvailDelegate
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfIsDataAvailDelegate.html
+  name: PdfIsDataAvailDelegate
+  nameWithType: PdfIsDataAvailDelegate
+  fullName: nebulae.dotPDFium.PdfIsDataAvailDelegate
+- uid: nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment*
+  commentId: Overload:nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment
+  href: nebulae.dotPDFium.PdfStreamAvailabilityOptions.html#nebulae_dotPDFium_PdfStreamAvailabilityOptions_RequestSegment
+  name: RequestSegment
+  nameWithType: PdfStreamAvailabilityOptions.RequestSegment
+  fullName: nebulae.dotPDFium.PdfStreamAvailabilityOptions.RequestSegment
+- uid: nebulae.dotPDFium.PdfAddSegmentDelegate
+  commentId: T:nebulae.dotPDFium.PdfAddSegmentDelegate
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfAddSegmentDelegate.html
+  name: PdfAddSegmentDelegate
+  nameWithType: PdfAddSegmentDelegate
+  fullName: nebulae.dotPDFium.PdfAddSegmentDelegate

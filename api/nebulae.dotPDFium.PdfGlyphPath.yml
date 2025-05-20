@@ -1,0 +1,546 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfGlyphPath
+  commentId: T:nebulae.dotPDFium.PdfGlyphPath
+  id: PdfGlyphPath
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfGlyphPath.GetSegment(System.Int32)
+  - nebulae.dotPDFium.PdfGlyphPath.GetSegments
+  - nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+  langs:
+  - csharp
+  - vb
+  name: PdfGlyphPath
+  nameWithType: PdfGlyphPath
+  fullName: nebulae.dotPDFium.PdfGlyphPath
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfGlyphPath.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfGlyphPath
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfGlyphPath.cs
+    startLine: 14
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Represents a glyph path in a PDF document, providing access to its segments.
+  remarks: >-
+    A glyph path is a series of segments that define the shape of a character or symbol in a PDF. This
+        class allows you to retrieve individual segments or enumerate all segments in the glyph path.
+  example: []
+  syntax:
+    content: public sealed class PdfGlyphPath
+    content.vb: Public NotInheritable Class PdfGlyphPath
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+  commentId: P:nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+  id: SegmentCount
+  parent: nebulae.dotPDFium.PdfGlyphPath
+  langs:
+  - csharp
+  - vb
+  name: SegmentCount
+  nameWithType: PdfGlyphPath.SegmentCount
+  fullName: nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfGlyphPath.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SegmentCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfGlyphPath.cs
+    startLine: 32
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the number of segments in the glyph path associated with the current PDF element.
+  example: []
+  syntax:
+    content: public int SegmentCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property SegmentCount As Integer
+  overload: nebulae.dotPDFium.PdfGlyphPath.SegmentCount*
+- uid: nebulae.dotPDFium.PdfGlyphPath.GetSegment(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfGlyphPath.GetSegment(System.Int32)
+  id: GetSegment(System.Int32)
+  parent: nebulae.dotPDFium.PdfGlyphPath
+  langs:
+  - csharp
+  - vb
+  name: GetSegment(int)
+  nameWithType: PdfGlyphPath.GetSegment(int)
+  fullName: nebulae.dotPDFium.PdfGlyphPath.GetSegment(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfGlyphPath.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSegment
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfGlyphPath.cs
+    startLine: 42
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the glyph path segment at the specified index.
+  example: []
+  syntax:
+    content: public PdfGlyphPathSegment GetSegment(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the segment to retrieve. Must be greater than or equal to 0 and less than <xref href="nebulae.dotPDFium.PdfGlyphPath.SegmentCount" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: nebulae.dotPDFium.PdfGlyphPathSegment
+      description: A <xref href="nebulae.dotPDFium.PdfGlyphPathSegment" data-throw-if-not-resolved="false"></xref> representing the glyph path segment at the specified index.
+    content.vb: Public Function GetSegment(index As Integer) As PdfGlyphPathSegment
+  overload: nebulae.dotPDFium.PdfGlyphPath.GetSegment*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if <code class="paramref">index</code> is less than 0 or greater than or equal to <xref href="nebulae.dotPDFium.PdfGlyphPath.SegmentCount" data-throw-if-not-resolved="false"></xref>.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the segment cannot be retrieved due to an internal error.
+  nameWithType.vb: PdfGlyphPath.GetSegment(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfGlyphPath.GetSegment(Integer)
+  name.vb: GetSegment(Integer)
+- uid: nebulae.dotPDFium.PdfGlyphPath.GetSegments
+  commentId: M:nebulae.dotPDFium.PdfGlyphPath.GetSegments
+  id: GetSegments
+  parent: nebulae.dotPDFium.PdfGlyphPath
+  langs:
+  - csharp
+  - vb
+  name: GetSegments()
+  nameWithType: PdfGlyphPath.GetSegments()
+  fullName: nebulae.dotPDFium.PdfGlyphPath.GetSegments()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfGlyphPath.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSegments
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfGlyphPath.cs
+    startLine: 61
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves all glyph path segments in the current collection.
+  remarks: >-
+    This method lazily enumerates the glyph path segments, yielding each segment one at a time. 
+        It is suitable for scenarios where processing segments incrementally is preferred.
+  example: []
+  syntax:
+    content: public IEnumerable<PdfGlyphPathSegment> GetSegments()
+    return:
+      type: System.Collections.Generic.IEnumerable{nebulae.dotPDFium.PdfGlyphPathSegment}
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="nebulae.dotPDFium.PdfGlyphPathSegment" data-throw-if-not-resolved="false"></xref> objects representing the glyph path
+            segments.
+    content.vb: Public Function GetSegments() As IEnumerable(Of PdfGlyphPathSegment)
+  overload: nebulae.dotPDFium.PdfGlyphPath.GetSegments*
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfGlyphPath.SegmentCount*
+  commentId: Overload:nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+  href: nebulae.dotPDFium.PdfGlyphPath.html#nebulae_dotPDFium_PdfGlyphPath_SegmentCount
+  name: SegmentCount
+  nameWithType: PdfGlyphPath.SegmentCount
+  fullName: nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+  commentId: P:nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+  href: nebulae.dotPDFium.PdfGlyphPath.html#nebulae_dotPDFium_PdfGlyphPath_SegmentCount
+  name: SegmentCount
+  nameWithType: PdfGlyphPath.SegmentCount
+  fullName: nebulae.dotPDFium.PdfGlyphPath.SegmentCount
+- uid: nebulae.dotPDFium.PdfGlyphPathSegment
+  commentId: T:nebulae.dotPDFium.PdfGlyphPathSegment
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfGlyphPathSegment.html
+  name: PdfGlyphPathSegment
+  nameWithType: PdfGlyphPathSegment
+  fullName: nebulae.dotPDFium.PdfGlyphPathSegment
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: nebulae.dotPDFium.dotPDFiumException
+  commentId: T:nebulae.dotPDFium.dotPDFiumException
+  href: nebulae.dotPDFium.dotPDFiumException.html
+  name: dotPDFiumException
+  nameWithType: dotPDFiumException
+  fullName: nebulae.dotPDFium.dotPDFiumException
+- uid: nebulae.dotPDFium.PdfGlyphPath.GetSegment*
+  commentId: Overload:nebulae.dotPDFium.PdfGlyphPath.GetSegment
+  href: nebulae.dotPDFium.PdfGlyphPath.html#nebulae_dotPDFium_PdfGlyphPath_GetSegment_System_Int32_
+  name: GetSegment
+  nameWithType: PdfGlyphPath.GetSegment
+  fullName: nebulae.dotPDFium.PdfGlyphPath.GetSegment
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfGlyphPath.GetSegments*
+  commentId: Overload:nebulae.dotPDFium.PdfGlyphPath.GetSegments
+  href: nebulae.dotPDFium.PdfGlyphPath.html#nebulae_dotPDFium_PdfGlyphPath_GetSegments
+  name: GetSegments
+  nameWithType: PdfGlyphPath.GetSegments
+  fullName: nebulae.dotPDFium.PdfGlyphPath.GetSegments
+- uid: System.Collections.Generic.IEnumerable{nebulae.dotPDFium.PdfGlyphPathSegment}
+  commentId: T:System.Collections.Generic.IEnumerable{nebulae.dotPDFium.PdfGlyphPathSegment}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PdfGlyphPathSegment>
+  nameWithType: IEnumerable<PdfGlyphPathSegment>
+  fullName: System.Collections.Generic.IEnumerable<nebulae.dotPDFium.PdfGlyphPathSegment>
+  nameWithType.vb: IEnumerable(Of PdfGlyphPathSegment)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of nebulae.dotPDFium.PdfGlyphPathSegment)
+  name.vb: IEnumerable(Of PdfGlyphPathSegment)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: nebulae.dotPDFium.PdfGlyphPathSegment
+    name: PdfGlyphPathSegment
+    href: nebulae.dotPDFium.PdfGlyphPathSegment.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: nebulae.dotPDFium.PdfGlyphPathSegment
+    name: PdfGlyphPathSegment
+    href: nebulae.dotPDFium.PdfGlyphPathSegment.html
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Forms
+  commentId: N:nebulae.dotPDFium.Forms
+  id: nebulae.dotPDFium.Forms
+  children:
+  - nebulae.dotPDFium.Forms.PdfCheckBox
+  - nebulae.dotPDFium.Forms.PdfComboBox
+  - nebulae.dotPDFium.Forms.PdfForm
+  - nebulae.dotPDFium.Forms.PdfFormEvents
+  - nebulae.dotPDFium.Forms.PdfFormFillBinder
+  - nebulae.dotPDFium.Forms.PdfListBox
+  - nebulae.dotPDFium.Forms.PdfPushButton
+  - nebulae.dotPDFium.Forms.PdfRadioButton
+  - nebulae.dotPDFium.Forms.PdfSignatureField
+  - nebulae.dotPDFium.Forms.PdfTextField
+  langs:
+  - csharp
+  - vb
+  name: nebulae.dotPDFium.Forms
+  nameWithType: nebulae.dotPDFium.Forms
+  fullName: nebulae.dotPDFium.Forms
+  type: Namespace
+  assemblies:
+  - dotPDFium
+references:
+- uid: nebulae.dotPDFium.Forms.PdfCheckBox
+  commentId: T:nebulae.dotPDFium.Forms.PdfCheckBox
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfCheckBox.html
+  name: PdfCheckBox
+  nameWithType: PdfCheckBox
+  fullName: nebulae.dotPDFium.Forms.PdfCheckBox
+- uid: nebulae.dotPDFium.Forms.PdfComboBox
+  commentId: T:nebulae.dotPDFium.Forms.PdfComboBox
+  href: nebulae.dotPDFium.Forms.PdfComboBox.html
+  name: PdfComboBox
+  nameWithType: PdfComboBox
+  fullName: nebulae.dotPDFium.Forms.PdfComboBox
+- uid: nebulae.dotPDFium.Forms.PdfForm
+  commentId: T:nebulae.dotPDFium.Forms.PdfForm
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfForm.html
+  name: PdfForm
+  nameWithType: PdfForm
+  fullName: nebulae.dotPDFium.Forms.PdfForm
+- uid: nebulae.dotPDFium.Forms.PdfFormEvents
+  commentId: T:nebulae.dotPDFium.Forms.PdfFormEvents
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfFormEvents.html
+  name: PdfFormEvents
+  nameWithType: PdfFormEvents
+  fullName: nebulae.dotPDFium.Forms.PdfFormEvents
+- uid: nebulae.dotPDFium.Forms.PdfFormFillBinder
+  commentId: T:nebulae.dotPDFium.Forms.PdfFormFillBinder
+  href: nebulae.dotPDFium.Forms.PdfFormFillBinder.html
+  name: PdfFormFillBinder
+  nameWithType: PdfFormFillBinder
+  fullName: nebulae.dotPDFium.Forms.PdfFormFillBinder
+- uid: nebulae.dotPDFium.Forms.PdfListBox
+  commentId: T:nebulae.dotPDFium.Forms.PdfListBox
+  href: nebulae.dotPDFium.Forms.PdfListBox.html
+  name: PdfListBox
+  nameWithType: PdfListBox
+  fullName: nebulae.dotPDFium.Forms.PdfListBox
+- uid: nebulae.dotPDFium.Forms.PdfPushButton
+  commentId: T:nebulae.dotPDFium.Forms.PdfPushButton
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfPushButton.html
+  name: PdfPushButton
+  nameWithType: PdfPushButton
+  fullName: nebulae.dotPDFium.Forms.PdfPushButton
+- uid: nebulae.dotPDFium.Forms.PdfRadioButton
+  commentId: T:nebulae.dotPDFium.Forms.PdfRadioButton
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfRadioButton.html
+  name: PdfRadioButton
+  nameWithType: PdfRadioButton
+  fullName: nebulae.dotPDFium.Forms.PdfRadioButton
+- uid: nebulae.dotPDFium.Forms.PdfSignatureField
+  commentId: T:nebulae.dotPDFium.Forms.PdfSignatureField
+  href: nebulae.dotPDFium.Forms.PdfSignatureField.html
+  name: PdfSignatureField
+  nameWithType: PdfSignatureField
+  fullName: nebulae.dotPDFium.Forms.PdfSignatureField
+- uid: nebulae.dotPDFium.Forms.PdfTextField
+  commentId: T:nebulae.dotPDFium.Forms.PdfTextField
+  parent: nebulae.dotPDFium.Forms
+  href: nebulae.dotPDFium.Forms.PdfTextField.html
+  name: PdfTextField
+  nameWithType: PdfTextField
+  fullName: nebulae.dotPDFium.Forms.PdfTextField
+- uid: nebulae.dotPDFium.Forms
+  commentId: N:nebulae.dotPDFium.Forms
+  href: nebulae.html
+  name: nebulae.dotPDFium.Forms
+  nameWithType: nebulae.dotPDFium.Forms
+  fullName: nebulae.dotPDFium.Forms
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Forms
+    name: Forms
+    href: nebulae.dotPDFium.Forms.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Forms
+    name: Forms
+    href: nebulae.dotPDFium.Forms.html

@@ -1,0 +1,315 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat
+  commentId: T:nebulae.dotPDFium.Native.PdfBitmapFormat
+  id: PdfBitmapFormat
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfBitmapFormat.BGR
+  - nebulae.dotPDFium.Native.PdfBitmapFormat.BGRA
+  - nebulae.dotPDFium.Native.PdfBitmapFormat.BGRAPremul
+  - nebulae.dotPDFium.Native.PdfBitmapFormat.BGRx
+  - nebulae.dotPDFium.Native.PdfBitmapFormat.Gray
+  - nebulae.dotPDFium.Native.PdfBitmapFormat.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PdfBitmapFormat
+  nameWithType: PdfBitmapFormat
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfBitmapFormat
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 637
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the bitmap formats supported for rendering in a PDF context.
+  remarks: >-
+    This enumeration defines various pixel formats that can be used when working with bitmap images in a
+        PDF. Each format represents a specific arrangement of color channels and, in some cases, transparency
+        information.
+  example: []
+  syntax:
+    content: public enum PdfBitmapFormat
+    content.vb: Public Enum PdfBitmapFormat
+  extensionMethods:
+  - nebulae.dotPDFium.Native.PdfBitmapFormat.nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat.Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfBitmapFormat.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.Native.PdfBitmapFormat
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PdfBitmapFormat.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 639
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unknown = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfBitmapFormat
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat.Gray
+  commentId: F:nebulae.dotPDFium.Native.PdfBitmapFormat.Gray
+  id: Gray
+  parent: nebulae.dotPDFium.Native.PdfBitmapFormat
+  langs:
+  - csharp
+  - vb
+  name: Gray
+  nameWithType: PdfBitmapFormat.Gray
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat.Gray
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Gray
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 640
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Gray = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfBitmapFormat
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat.BGR
+  commentId: F:nebulae.dotPDFium.Native.PdfBitmapFormat.BGR
+  id: BGR
+  parent: nebulae.dotPDFium.Native.PdfBitmapFormat
+  langs:
+  - csharp
+  - vb
+  name: BGR
+  nameWithType: PdfBitmapFormat.BGR
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat.BGR
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: BGR
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 641
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: BGR = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfBitmapFormat
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat.BGRx
+  commentId: F:nebulae.dotPDFium.Native.PdfBitmapFormat.BGRx
+  id: BGRx
+  parent: nebulae.dotPDFium.Native.PdfBitmapFormat
+  langs:
+  - csharp
+  - vb
+  name: BGRx
+  nameWithType: PdfBitmapFormat.BGRx
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat.BGRx
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: BGRx
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 642
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: BGRx = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfBitmapFormat
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat.BGRA
+  commentId: F:nebulae.dotPDFium.Native.PdfBitmapFormat.BGRA
+  id: BGRA
+  parent: nebulae.dotPDFium.Native.PdfBitmapFormat
+  langs:
+  - csharp
+  - vb
+  name: BGRA
+  nameWithType: PdfBitmapFormat.BGRA
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat.BGRA
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: BGRA
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 643
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: BGRA = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfBitmapFormat
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat.BGRAPremul
+  commentId: F:nebulae.dotPDFium.Native.PdfBitmapFormat.BGRAPremul
+  id: BGRAPremul
+  parent: nebulae.dotPDFium.Native.PdfBitmapFormat
+  langs:
+  - csharp
+  - vb
+  name: BGRAPremul
+  nameWithType: PdfBitmapFormat.BGRAPremul
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat.BGRAPremul
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: BGRAPremul
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 644
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: BGRAPremul = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfBitmapFormat
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat.nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel
+  commentId: M:nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  parent: nebulae.dotPDFium.PdfBitmapFormatExtension
+  definition: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  href: nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
+  name: GetBytesPerPixel(PdfBitmapFormat)
+  nameWithType: PdfBitmapFormatExtension.GetBytesPerPixel(PdfBitmapFormat)
+  fullName: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+    name: GetBytesPerPixel
+    href: nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.PdfBitmapFormat
+    name: PdfBitmapFormat
+    href: nebulae.dotPDFium.Native.PdfBitmapFormat.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+    name: GetBytesPerPixel
+    href: nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.PdfBitmapFormat
+    name: PdfBitmapFormat
+    href: nebulae.dotPDFium.Native.PdfBitmapFormat.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  commentId: M:nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  href: nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
+  name: GetBytesPerPixel(PdfBitmapFormat)
+  nameWithType: PdfBitmapFormatExtension.GetBytesPerPixel(PdfBitmapFormat)
+  fullName: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+    name: GetBytesPerPixel
+    href: nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.PdfBitmapFormat
+    name: PdfBitmapFormat
+    href: nebulae.dotPDFium.Native.PdfBitmapFormat.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfBitmapFormatExtension.GetBytesPerPixel(nebulae.dotPDFium.Native.PdfBitmapFormat)
+    name: GetBytesPerPixel
+    href: nebulae.dotPDFium.PdfBitmapFormatExtension.html#nebulae_dotPDFium_PdfBitmapFormatExtension_GetBytesPerPixel_nebulae_dotPDFium_Native_PdfBitmapFormat_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.PdfBitmapFormat
+    name: PdfBitmapFormat
+    href: nebulae.dotPDFium.Native.PdfBitmapFormat.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfBitmapFormatExtension
+  commentId: T:nebulae.dotPDFium.PdfBitmapFormatExtension
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfBitmapFormatExtension.html
+  name: PdfBitmapFormatExtension
+  nameWithType: PdfBitmapFormatExtension
+  fullName: nebulae.dotPDFium.PdfBitmapFormatExtension
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: nebulae.dotPDFium.Native.PdfBitmapFormat
+  commentId: T:nebulae.dotPDFium.Native.PdfBitmapFormat
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfBitmapFormat.html
+  name: PdfBitmapFormat
+  nameWithType: PdfBitmapFormat
+  fullName: nebulae.dotPDFium.Native.PdfBitmapFormat

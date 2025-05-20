@@ -1,0 +1,394 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.FsSize
+  commentId: T:nebulae.dotPDFium.Native.FsSize
+  id: FsSize
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.FsSize.#ctor(System.Double,System.Double)
+  - nebulae.dotPDFium.Native.FsSize.height
+  - nebulae.dotPDFium.Native.FsSize.width
+  langs:
+  - csharp
+  - vb
+  name: FsSize
+  nameWithType: FsSize
+  fullName: nebulae.dotPDFium.Native.FsSize
+  type: Struct
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FsSize
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 31
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public struct FsSize
+    content.vb: Public Structure FsSize
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: nebulae.dotPDFium.Native.FsSize.width
+  commentId: F:nebulae.dotPDFium.Native.FsSize.width
+  id: width
+  parent: nebulae.dotPDFium.Native.FsSize
+  langs:
+  - csharp
+  - vb
+  name: width
+  nameWithType: FsSize.width
+  fullName: nebulae.dotPDFium.Native.FsSize.width
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: width
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 34
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public double width
+    return:
+      type: System.Double
+    content.vb: Public width As Double
+- uid: nebulae.dotPDFium.Native.FsSize.height
+  commentId: F:nebulae.dotPDFium.Native.FsSize.height
+  id: height
+  parent: nebulae.dotPDFium.Native.FsSize
+  langs:
+  - csharp
+  - vb
+  name: height
+  nameWithType: FsSize.height
+  fullName: nebulae.dotPDFium.Native.FsSize.height
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: height
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 35
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public double height
+    return:
+      type: System.Double
+    content.vb: Public height As Double
+- uid: nebulae.dotPDFium.Native.FsSize.#ctor(System.Double,System.Double)
+  commentId: M:nebulae.dotPDFium.Native.FsSize.#ctor(System.Double,System.Double)
+  id: '#ctor(System.Double,System.Double)'
+  parent: nebulae.dotPDFium.Native.FsSize
+  langs:
+  - csharp
+  - vb
+  name: FsSize(double, double)
+  nameWithType: FsSize.FsSize(double, double)
+  fullName: nebulae.dotPDFium.Native.FsSize.FsSize(double, double)
+  type: Constructor
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: .ctor
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 37
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public FsSize(double width, double height)
+    parameters:
+    - id: width
+      type: System.Double
+    - id: height
+      type: System.Double
+    content.vb: Public Sub New(width As Double, height As Double)
+  overload: nebulae.dotPDFium.Native.FsSize.#ctor*
+  nameWithType.vb: FsSize.New(Double, Double)
+  fullName.vb: nebulae.dotPDFium.Native.FsSize.New(Double, Double)
+  name.vb: New(Double, Double)
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: nebulae.dotPDFium.Native.FsSize.#ctor*
+  commentId: Overload:nebulae.dotPDFium.Native.FsSize.#ctor
+  href: nebulae.dotPDFium.Native.FsSize.html#nebulae_dotPDFium_Native_FsSize__ctor_System_Double_System_Double_
+  name: FsSize
+  nameWithType: FsSize.FsSize
+  fullName: nebulae.dotPDFium.Native.FsSize.FsSize
+  nameWithType.vb: FsSize.New
+  fullName.vb: nebulae.dotPDFium.Native.FsSize.New
+  name.vb: New

@@ -1,0 +1,624 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative
+  commentId: T:nebulae.dotPDFium.Native.PdfProgressiveNative
+  id: PdfProgressiveNative
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_DONE
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_FAILED
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_READY
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_TOBECONTINUED
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme@,nebulae.dotPDFium.Native.IfSdkPause@)
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause@)
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue(System.IntPtr,nebulae.dotPDFium.Native.IfSdkPause@)
+  langs:
+  - csharp
+  - vb
+  name: PdfProgressiveNative
+  nameWithType: PdfProgressiveNative
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/Native/PdfProgressiveNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfProgressiveNative
+    path: ../dotPDFium/dotPDFium/Native/PdfProgressiveNative.cs
+    startLine: 4
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static class PdfProgressiveNative
+    content.vb: Public Module PdfProgressiveNative
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause@)
+  commentId: M:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause@)
+  id: FPDF_RenderPageBitmap_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.IfSdkPause@)
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RenderPageBitmap_Start(nint, nint, int, int, int, int, int, int, ref IfSdkPause)
+  nameWithType: PdfProgressiveNative.FPDF_RenderPageBitmap_Start(nint, nint, int, int, int, int, int, int, ref IfSdkPause)
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start(nint, nint, int, int, int, int, int, int, ref nebulae.dotPDFium.Native.IfSdkPause)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_RenderPageBitmap_Start(nint bitmap, nint page, int startX, int startY, int sizeX, int sizeY, int rotate, int flags, ref IfSdkPause pause)
+    parameters:
+    - id: bitmap
+      type: System.IntPtr
+    - id: page
+      type: System.IntPtr
+    - id: startX
+      type: System.Int32
+    - id: startY
+      type: System.Int32
+    - id: sizeX
+      type: System.Int32
+    - id: sizeY
+      type: System.Int32
+    - id: rotate
+      type: System.Int32
+    - id: flags
+      type: System.Int32
+    - id: pause
+      type: nebulae.dotPDFium.Native.IfSdkPause
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_RenderPageBitmap_Start(bitmap As IntPtr, page As IntPtr, startX As Integer, startY As Integer, sizeX As Integer, sizeY As Integer, rotate As Integer, flags As Integer, pause As IfSdkPause) As Integer
+  overload: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start*
+  nameWithType.vb: PdfProgressiveNative.FPDF_RenderPageBitmap_Start(IntPtr, IntPtr, Integer, Integer, Integer, Integer, Integer, Integer, IfSdkPause)
+  fullName.vb: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start(System.IntPtr, System.IntPtr, Integer, Integer, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.IfSdkPause)
+  name.vb: FPDF_RenderPageBitmap_Start(IntPtr, IntPtr, Integer, Integer, Integer, Integer, Integer, Integer, IfSdkPause)
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme@,nebulae.dotPDFium.Native.IfSdkPause@)
+  commentId: M:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme@,nebulae.dotPDFium.Native.IfSdkPause@)
+  id: FPDF_RenderPageBitmapWithColorScheme_Start(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfColorScheme@,nebulae.dotPDFium.Native.IfSdkPause@)
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RenderPageBitmapWithColorScheme_Start(nint, nint, int, int, int, int, int, int, ref PdfColorScheme, ref IfSdkPause)
+  nameWithType: PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start(nint, nint, int, int, int, int, int, int, ref PdfColorScheme, ref IfSdkPause)
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start(nint, nint, int, int, int, int, int, int, ref nebulae.dotPDFium.Native.PdfColorScheme, ref nebulae.dotPDFium.Native.IfSdkPause)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_RenderPageBitmapWithColorScheme_Start(nint bitmap, nint page, int startX, int startY, int sizeX, int sizeY, int rotate, int flags, ref PdfColorScheme colorScheme, ref IfSdkPause pause)
+    parameters:
+    - id: bitmap
+      type: System.IntPtr
+    - id: page
+      type: System.IntPtr
+    - id: startX
+      type: System.Int32
+    - id: startY
+      type: System.Int32
+    - id: sizeX
+      type: System.Int32
+    - id: sizeY
+      type: System.Int32
+    - id: rotate
+      type: System.Int32
+    - id: flags
+      type: System.Int32
+    - id: colorScheme
+      type: nebulae.dotPDFium.Native.PdfColorScheme
+    - id: pause
+      type: nebulae.dotPDFium.Native.IfSdkPause
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_RenderPageBitmapWithColorScheme_Start(bitmap As IntPtr, page As IntPtr, startX As Integer, startY As Integer, sizeX As Integer, sizeY As Integer, rotate As Integer, flags As Integer, colorScheme As PdfColorScheme, pause As IfSdkPause) As Integer
+  overload: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start*
+  nameWithType.vb: PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start(IntPtr, IntPtr, Integer, Integer, Integer, Integer, Integer, Integer, PdfColorScheme, IfSdkPause)
+  fullName.vb: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start(System.IntPtr, System.IntPtr, Integer, Integer, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfColorScheme, nebulae.dotPDFium.Native.IfSdkPause)
+  name.vb: FPDF_RenderPageBitmapWithColorScheme_Start(IntPtr, IntPtr, Integer, Integer, Integer, Integer, Integer, Integer, PdfColorScheme, IfSdkPause)
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue(System.IntPtr,nebulae.dotPDFium.Native.IfSdkPause@)
+  commentId: M:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue(System.IntPtr,nebulae.dotPDFium.Native.IfSdkPause@)
+  id: FPDF_RenderPage_Continue(System.IntPtr,nebulae.dotPDFium.Native.IfSdkPause@)
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RenderPage_Continue(nint, ref IfSdkPause)
+  nameWithType: PdfProgressiveNative.FPDF_RenderPage_Continue(nint, ref IfSdkPause)
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue(nint, ref nebulae.dotPDFium.Native.IfSdkPause)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_RenderPage_Continue(nint page, ref IfSdkPause pause)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    - id: pause
+      type: nebulae.dotPDFium.Native.IfSdkPause
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_RenderPage_Continue(page As IntPtr, pause As IfSdkPause) As Integer
+  overload: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue*
+  nameWithType.vb: PdfProgressiveNative.FPDF_RenderPage_Continue(IntPtr, IfSdkPause)
+  fullName.vb: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue(System.IntPtr, nebulae.dotPDFium.Native.IfSdkPause)
+  name.vb: FPDF_RenderPage_Continue(IntPtr, IfSdkPause)
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close(System.IntPtr)
+  id: FPDF_RenderPage_Close(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RenderPage_Close(nint)
+  nameWithType: PdfProgressiveNative.FPDF_RenderPage_Close(nint)
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDF_RenderPage_Close(nint page)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDF_RenderPage_Close(page As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close*
+  nameWithType.vb: PdfProgressiveNative.FPDF_RenderPage_Close(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close(System.IntPtr)
+  name.vb: FPDF_RenderPage_Close(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_READY
+  commentId: F:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_READY
+  id: FPDF_RENDER_READY
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RENDER_READY
+  nameWithType: PdfProgressiveNative.FPDF_RENDER_READY
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_READY
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfProgressiveNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FPDF_RENDER_READY
+    path: ../dotPDFium/dotPDFium/Native/PdfProgressiveNative.cs
+    startLine: 46
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public const int FPDF_RENDER_READY = 0
+    return:
+      type: System.Int32
+    content.vb: Public Const FPDF_RENDER_READY As Integer = 0
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_TOBECONTINUED
+  commentId: F:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_TOBECONTINUED
+  id: FPDF_RENDER_TOBECONTINUED
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RENDER_TOBECONTINUED
+  nameWithType: PdfProgressiveNative.FPDF_RENDER_TOBECONTINUED
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_TOBECONTINUED
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfProgressiveNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FPDF_RENDER_TOBECONTINUED
+    path: ../dotPDFium/dotPDFium/Native/PdfProgressiveNative.cs
+    startLine: 47
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public const int FPDF_RENDER_TOBECONTINUED = 1
+    return:
+      type: System.Int32
+    content.vb: Public Const FPDF_RENDER_TOBECONTINUED As Integer = 1
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_DONE
+  commentId: F:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_DONE
+  id: FPDF_RENDER_DONE
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RENDER_DONE
+  nameWithType: PdfProgressiveNative.FPDF_RENDER_DONE
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_DONE
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfProgressiveNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FPDF_RENDER_DONE
+    path: ../dotPDFium/dotPDFium/Native/PdfProgressiveNative.cs
+    startLine: 48
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public const int FPDF_RENDER_DONE = 2
+    return:
+      type: System.Int32
+    content.vb: Public Const FPDF_RENDER_DONE As Integer = 2
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_FAILED
+  commentId: F:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_FAILED
+  id: FPDF_RENDER_FAILED
+  parent: nebulae.dotPDFium.Native.PdfProgressiveNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_RENDER_FAILED
+  nameWithType: PdfProgressiveNative.FPDF_RENDER_FAILED
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RENDER_FAILED
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfProgressiveNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FPDF_RENDER_FAILED
+    path: ../dotPDFium/dotPDFium/Native/PdfProgressiveNative.cs
+    startLine: 49
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public const int FPDF_RENDER_FAILED = 3
+    return:
+      type: System.Int32
+    content.vb: Public Const FPDF_RENDER_FAILED As Integer = 3
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfProgressiveNative.html#nebulae_dotPDFium_Native_PdfProgressiveNative_FPDF_RenderPageBitmap_Start_System_IntPtr_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_IfSdkPause__
+  name: FPDF_RenderPageBitmap_Start
+  nameWithType: PdfProgressiveNative.FPDF_RenderPageBitmap_Start
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmap_Start
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.Native.IfSdkPause
+  commentId: T:nebulae.dotPDFium.Native.IfSdkPause
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.IfSdkPause.html
+  name: IfSdkPause
+  nameWithType: IfSdkPause
+  fullName: nebulae.dotPDFium.Native.IfSdkPause
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfProgressiveNative.html#nebulae_dotPDFium_Native_PdfProgressiveNative_FPDF_RenderPageBitmapWithColorScheme_Start_System_IntPtr_System_IntPtr_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfColorScheme__nebulae_dotPDFium_Native_IfSdkPause__
+  name: FPDF_RenderPageBitmapWithColorScheme_Start
+  nameWithType: PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPageBitmapWithColorScheme_Start
+- uid: nebulae.dotPDFium.Native.PdfColorScheme
+  commentId: T:nebulae.dotPDFium.Native.PdfColorScheme
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfColorScheme.html
+  name: PdfColorScheme
+  nameWithType: PdfColorScheme
+  fullName: nebulae.dotPDFium.Native.PdfColorScheme
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfProgressiveNative.html#nebulae_dotPDFium_Native_PdfProgressiveNative_FPDF_RenderPage_Continue_System_IntPtr_nebulae_dotPDFium_Native_IfSdkPause__
+  name: FPDF_RenderPage_Continue
+  nameWithType: PdfProgressiveNative.FPDF_RenderPage_Continue
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Continue
+- uid: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfProgressiveNative.html#nebulae_dotPDFium_Native_PdfProgressiveNative_FPDF_RenderPage_Close_System_IntPtr_
+  name: FPDF_RenderPage_Close
+  nameWithType: PdfProgressiveNative.FPDF_RenderPage_Close
+  fullName: nebulae.dotPDFium.Native.PdfProgressiveNative.FPDF_RenderPage_Close

@@ -1,0 +1,330 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfObjectType
+  commentId: T:nebulae.dotPDFium.PdfObjectType
+  id: PdfObjectType
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfObjectType.Annotation
+  - nebulae.dotPDFium.PdfObjectType.Bitmap
+  - nebulae.dotPDFium.PdfObjectType.Document
+  - nebulae.dotPDFium.PdfObjectType.Font
+  - nebulae.dotPDFium.PdfObjectType.Form
+  - nebulae.dotPDFium.PdfObjectType.Page
+  - nebulae.dotPDFium.PdfObjectType.PageObject
+  - nebulae.dotPDFium.PdfObjectType.Signature
+  - nebulae.dotPDFium.PdfObjectType.TextPage
+  - nebulae.dotPDFium.PdfObjectType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PdfObjectType
+  nameWithType: PdfObjectType
+  fullName: nebulae.dotPDFium.PdfObjectType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfObjectType
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 7
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: This enum represents the type of the PDF object.
+  example: []
+  syntax:
+    content: public enum PdfObjectType
+    content.vb: Public Enum PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Unknown
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PdfObjectType.Unknown
+  fullName: nebulae.dotPDFium.PdfObjectType.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 9
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Unknown = 0
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Document
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Document
+  id: Document
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: PdfObjectType.Document
+  fullName: nebulae.dotPDFium.PdfObjectType.Document
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Document
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 10
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Document = 1
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Page
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Page
+  id: Page
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Page
+  nameWithType: PdfObjectType.Page
+  fullName: nebulae.dotPDFium.PdfObjectType.Page
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Page
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 11
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Page = 2
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.TextPage
+  commentId: F:nebulae.dotPDFium.PdfObjectType.TextPage
+  id: TextPage
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: TextPage
+  nameWithType: PdfObjectType.TextPage
+  fullName: nebulae.dotPDFium.PdfObjectType.TextPage
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TextPage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 12
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: TextPage = 3
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Bitmap
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Bitmap
+  id: Bitmap
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Bitmap
+  nameWithType: PdfObjectType.Bitmap
+  fullName: nebulae.dotPDFium.PdfObjectType.Bitmap
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Bitmap
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 13
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Bitmap = 4
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.PageObject
+  commentId: F:nebulae.dotPDFium.PdfObjectType.PageObject
+  id: PageObject
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: PageObject
+  nameWithType: PdfObjectType.PageObject
+  fullName: nebulae.dotPDFium.PdfObjectType.PageObject
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PageObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 14
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: PageObject = 5
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Annotation
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Annotation
+  id: Annotation
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Annotation
+  nameWithType: PdfObjectType.Annotation
+  fullName: nebulae.dotPDFium.PdfObjectType.Annotation
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Annotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 15
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Annotation = 6
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Font
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Font
+  id: Font
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Font
+  nameWithType: PdfObjectType.Font
+  fullName: nebulae.dotPDFium.PdfObjectType.Font
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Font
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 16
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Font = 7
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Form
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Form
+  id: Form
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Form
+  nameWithType: PdfObjectType.Form
+  fullName: nebulae.dotPDFium.PdfObjectType.Form
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Form
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 17
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Form = 8
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+- uid: nebulae.dotPDFium.PdfObjectType.Signature
+  commentId: F:nebulae.dotPDFium.PdfObjectType.Signature
+  id: Signature
+  parent: nebulae.dotPDFium.PdfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Signature
+  nameWithType: PdfObjectType.Signature
+  fullName: nebulae.dotPDFium.PdfObjectType.Signature
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Signature
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfObject.cs
+    startLine: 18
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: Signature = 9
+    return:
+      type: nebulae.dotPDFium.PdfObjectType
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: nebulae.dotPDFium.PdfObjectType
+  commentId: T:nebulae.dotPDFium.PdfObjectType
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfObjectType.html
+  name: PdfObjectType
+  nameWithType: PdfObjectType
+  fullName: nebulae.dotPDFium.PdfObjectType

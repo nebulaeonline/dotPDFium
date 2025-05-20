@@ -1,0 +1,1152 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfFont
+  commentId: T:nebulae.dotPDFium.PdfFont
+  id: PdfFont
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfFont.GetAscent(System.Single)
+  - nebulae.dotPDFium.PdfFont.GetBaseFontName
+  - nebulae.dotPDFium.PdfFont.GetDescent(System.Single)
+  - nebulae.dotPDFium.PdfFont.GetFamilyName
+  - nebulae.dotPDFium.PdfFont.GetFlags
+  - nebulae.dotPDFium.PdfFont.GetFontData
+  - nebulae.dotPDFium.PdfFont.GetGlyphPath(System.UInt32,System.Single)
+  - nebulae.dotPDFium.PdfFont.GetGlyphWidth(System.UInt32,System.Single)
+  - nebulae.dotPDFium.PdfFont.GetItalicAngle
+  - nebulae.dotPDFium.PdfFont.GetWeight
+  - nebulae.dotPDFium.PdfFont.IsEmbedded
+  - nebulae.dotPDFium.PdfFont.Name
+  langs:
+  - csharp
+  - vb
+  name: PdfFont
+  nameWithType: PdfFont
+  fullName: nebulae.dotPDFium.PdfFont
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFont
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 11
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Represents a font object in a PDF document, providing access to font properties and metrics.
+  remarks: >-
+    This class allows users to retrieve information about a font, such as its name, family, weight, and
+        style, as well as access font data and glyph-specific metrics. It also provides methods to determine whether the
+        font is embedded in the PDF and to retrieve glyph paths for rendering or analysis.
+  example: []
+  syntax:
+    content: 'public class PdfFont : PdfObject, IDisposable'
+    content.vb: Public Class PdfFont Inherits PdfObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - nebulae.dotPDFium.PdfObject
+  derivedClasses:
+  - nebulae.dotPDFium.PdfEmbeddedFont
+  - nebulae.dotPDFium.PdfStandardFont
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - nebulae.dotPDFium.PdfObject._handle
+  - nebulae.dotPDFium.PdfObject._type
+  - nebulae.dotPDFium.PdfObject._disposed
+  - nebulae.dotPDFium.PdfObject.Handle
+  - nebulae.dotPDFium.PdfObject.Type
+  - nebulae.dotPDFium.PdfObject.IsDisposed
+  - nebulae.dotPDFium.PdfObject.GetPDFiumError
+  - nebulae.dotPDFium.PdfObject.Dispose
+  - nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfFont.Name
+  commentId: P:nebulae.dotPDFium.PdfFont.Name
+  id: Name
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PdfFont.Name
+  fullName: nebulae.dotPDFium.PdfFont.Name
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Name
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 30
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the name associated with the current instance.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: nebulae.dotPDFium.PdfFont.Name*
+- uid: nebulae.dotPDFium.PdfFont.GetBaseFontName
+  commentId: M:nebulae.dotPDFium.PdfFont.GetBaseFontName
+  id: GetBaseFontName
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetBaseFontName()
+  nameWithType: PdfFont.GetBaseFontName()
+  fullName: nebulae.dotPDFium.PdfFont.GetBaseFontName()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetBaseFontName
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 39
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the base font name of the current font.
+  remarks: >-
+    The base font name is typically used to identify the font in a PDF document. This method
+        ensures that the font name is read as a UTF-8 encoded string.
+  example: []
+  syntax:
+    content: public string GetBaseFontName()
+    return:
+      type: System.String
+      description: >-
+        A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the base font name. The returned string represents the name of the font as
+            defined in the PDF document. Returns an empty string if the font name cannot be determined.
+    content.vb: Public Function GetBaseFontName() As String
+  overload: nebulae.dotPDFium.PdfFont.GetBaseFontName*
+- uid: nebulae.dotPDFium.PdfFont.GetFamilyName
+  commentId: M:nebulae.dotPDFium.PdfFont.GetFamilyName
+  id: GetFamilyName
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetFamilyName()
+  nameWithType: PdfFont.GetFamilyName()
+  fullName: nebulae.dotPDFium.PdfFont.GetFamilyName()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFamilyName
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 54
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the family name of the font associated with this instance.
+  remarks: >-
+    The family name is typically used to identify the general design of the font,  such as
+        "Arial" or "Times New Roman". This method ensures the name is returned  as a UTF-8 encoded string.
+  example: []
+  syntax:
+    content: public string GetFamilyName()
+    return:
+      type: System.String
+      description: >-
+        A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the family name of the font.  Returns an empty string if the family name
+            cannot be determined.
+    content.vb: Public Function GetFamilyName() As String
+  overload: nebulae.dotPDFium.PdfFont.GetFamilyName*
+- uid: nebulae.dotPDFium.PdfFont.GetFontData
+  commentId: M:nebulae.dotPDFium.PdfFont.GetFontData
+  id: GetFontData
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetFontData()
+  nameWithType: PdfFont.GetFontData()
+  fullName: nebulae.dotPDFium.PdfFont.GetFontData()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFontData
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 70
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the raw font data associated with the current font.
+  remarks: >-
+    This method returns the font data as a byte array. If the font has no associated data, an
+        empty array is returned. The caller can use this data for further processing, such as embedding the font in a
+        document or analyzing its structure.
+  example: []
+  syntax:
+    content: public byte[] GetFontData()
+    return:
+      type: System.Byte[]
+      description: A byte array containing the raw font data. If the font has no data, an empty array is returned.
+    content.vb: Public Function GetFontData() As Byte()
+  overload: nebulae.dotPDFium.PdfFont.GetFontData*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the font data cannot be retrieved due to an internal error.
+- uid: nebulae.dotPDFium.PdfFont.IsEmbedded
+  commentId: P:nebulae.dotPDFium.PdfFont.IsEmbedded
+  id: IsEmbedded
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: IsEmbedded
+  nameWithType: PdfFont.IsEmbedded
+  fullName: nebulae.dotPDFium.PdfFont.IsEmbedded
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: IsEmbedded
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 88
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets a value indicating whether the font is embedded within the PDF document.
+  remarks: >-
+    An embedded font ensures that the font's appearance is preserved regardless of the
+        availability of the font on the viewing system.
+  example: []
+  syntax:
+    content: public bool IsEmbedded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsEmbedded As Boolean
+  overload: nebulae.dotPDFium.PdfFont.IsEmbedded*
+- uid: nebulae.dotPDFium.PdfFont.GetFlags
+  commentId: M:nebulae.dotPDFium.PdfFont.GetFlags
+  id: GetFlags
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetFlags()
+  nameWithType: PdfFont.GetFlags()
+  fullName: nebulae.dotPDFium.PdfFont.GetFlags()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFlags
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 98
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the font flags associated with the current font.
+  remarks: >-
+    The returned bitmask can be used to determine various characteristics of the font. For
+        example, specific bits may indicate whether the font is bold, italic, or symbolic. Refer to the PDF
+        specification for details on the meaning of each bit.
+  example: []
+  syntax:
+    content: public int GetFlags()
+    return:
+      type: System.Int32
+      description: >-
+        An integer representing the font flags. The value is a bitmask where each bit represents a specific font
+            property, such as whether the font is fixed-pitch, serif, symbolic, or others.
+    content.vb: Public Function GetFlags() As Integer
+  overload: nebulae.dotPDFium.PdfFont.GetFlags*
+- uid: nebulae.dotPDFium.PdfFont.GetWeight
+  commentId: M:nebulae.dotPDFium.PdfFont.GetWeight
+  id: GetWeight
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetWeight()
+  nameWithType: PdfFont.GetWeight()
+  fullName: nebulae.dotPDFium.PdfFont.GetWeight()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetWeight
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 110
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the weight of the font.
+  remarks: >-
+    The font weight is a numerical representation of the font's thickness or boldness. This value
+        can be used to determine the visual style of the font in rendering or layout operations.
+  example: []
+  syntax:
+    content: public int GetWeight()
+    return:
+      type: System.Int32
+      description: >-
+        An integer representing the weight of the font. The value typically ranges from 100 (Thin) to 900 (Black), where
+            higher values indicate a bolder font weight.
+    content.vb: Public Function GetWeight() As Integer
+  overload: nebulae.dotPDFium.PdfFont.GetWeight*
+- uid: nebulae.dotPDFium.PdfFont.GetItalicAngle
+  commentId: M:nebulae.dotPDFium.PdfFont.GetItalicAngle
+  id: GetItalicAngle
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetItalicAngle()
+  nameWithType: PdfFont.GetItalicAngle()
+  fullName: nebulae.dotPDFium.PdfFont.GetItalicAngle()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetItalicAngle
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 120
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the italic angle of the font.
+  example: []
+  syntax:
+    content: public int? GetItalicAngle()
+    return:
+      type: System.Nullable{System.Int32}
+      description: >-
+        The italic angle of the font in degrees, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the angle cannot be determined. A positive
+            value indicates a right-leaning italic angle, while a negative value indicates a left-leaning italic angle.
+    content.vb: Public Function GetItalicAngle() As Integer?
+  overload: nebulae.dotPDFium.PdfFont.GetItalicAngle*
+- uid: nebulae.dotPDFium.PdfFont.GetAscent(System.Single)
+  commentId: M:nebulae.dotPDFium.PdfFont.GetAscent(System.Single)
+  id: GetAscent(System.Single)
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetAscent(float)
+  nameWithType: PdfFont.GetAscent(float)
+  fullName: nebulae.dotPDFium.PdfFont.GetAscent(float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAscent
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 133
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Calculates the ascent of the font for the specified font size.
+  remarks: >-
+    The ascent represents the distance from the baseline to the highest point of the font's
+        glyphs for the given font size.
+  example: []
+  syntax:
+    content: public float? GetAscent(float fontSize)
+    parameters:
+    - id: fontSize
+      type: System.Single
+      description: The size of the font, in points, for which the ascent is calculated. Must be greater than 0.
+    return:
+      type: System.Nullable{System.Single}
+      description: >-
+        The ascent of the font as a floating-point value, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the ascent could not be
+            determined.
+    content.vb: Public Function GetAscent(fontSize As Single) As Single?
+  overload: nebulae.dotPDFium.PdfFont.GetAscent*
+  nameWithType.vb: PdfFont.GetAscent(Single)
+  fullName.vb: nebulae.dotPDFium.PdfFont.GetAscent(Single)
+  name.vb: GetAscent(Single)
+- uid: nebulae.dotPDFium.PdfFont.GetDescent(System.Single)
+  commentId: M:nebulae.dotPDFium.PdfFont.GetDescent(System.Single)
+  id: GetDescent(System.Single)
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetDescent(float)
+  nameWithType: PdfFont.GetDescent(float)
+  fullName: nebulae.dotPDFium.PdfFont.GetDescent(float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetDescent
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 147
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Calculates the descent value for the font at the specified size.
+  remarks: >-
+    The descent value represents the distance from the baseline to the lowest point of the font's
+        glyphs,  expressed as a negative value. This method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the calculation
+        fails.
+  example: []
+  syntax:
+    content: public float? GetDescent(float fontSize)
+    parameters:
+    - id: fontSize
+      type: System.Single
+      description: The size of the font, in points, for which the descent is calculated. Must be greater than zero.
+    return:
+      type: System.Nullable{System.Single}
+      description: The descent value of the font as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref> if the calculation is successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetDescent(fontSize As Single) As Single?
+  overload: nebulae.dotPDFium.PdfFont.GetDescent*
+  nameWithType.vb: PdfFont.GetDescent(Single)
+  fullName.vb: nebulae.dotPDFium.PdfFont.GetDescent(Single)
+  name.vb: GetDescent(Single)
+- uid: nebulae.dotPDFium.PdfFont.GetGlyphWidth(System.UInt32,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfFont.GetGlyphWidth(System.UInt32,System.Single)
+  id: GetGlyphWidth(System.UInt32,System.Single)
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetGlyphWidth(uint, float)
+  nameWithType: PdfFont.GetGlyphWidth(uint, float)
+  fullName: nebulae.dotPDFium.PdfFont.GetGlyphWidth(uint, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetGlyphWidth
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 161
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the width of a specified glyph at a given font size.
+  remarks: >-
+    This method queries the width of a glyph using the underlying font handle. The result is
+        dependent on the font's metrics and the specified font size. If the glyph ID is invalid or the operation fails,
+        the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public float? GetGlyphWidth(uint glyphId, float fontSize)
+    parameters:
+    - id: glyphId
+      type: System.UInt32
+      description: The identifier of the glyph whose width is to be retrieved.
+    - id: fontSize
+      type: System.Single
+      description: The size of the font, in points, used to calculate the glyph's width. Must be greater than 0.
+    return:
+      type: System.Nullable{System.Single}
+      description: The width of the glyph as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref> if the operation succeeds; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetGlyphWidth(glyphId As UInteger, fontSize As Single) As Single?
+  overload: nebulae.dotPDFium.PdfFont.GetGlyphWidth*
+  nameWithType.vb: PdfFont.GetGlyphWidth(UInteger, Single)
+  fullName.vb: nebulae.dotPDFium.PdfFont.GetGlyphWidth(UInteger, Single)
+  name.vb: GetGlyphWidth(UInteger, Single)
+- uid: nebulae.dotPDFium.PdfFont.GetGlyphPath(System.UInt32,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfFont.GetGlyphPath(System.UInt32,System.Single)
+  id: GetGlyphPath(System.UInt32,System.Single)
+  parent: nebulae.dotPDFium.PdfFont
+  langs:
+  - csharp
+  - vb
+  name: GetGlyphPath(uint, float)
+  nameWithType: PdfFont.GetGlyphPath(uint, float)
+  fullName: nebulae.dotPDFium.PdfFont.GetGlyphPath(uint, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfFont.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetGlyphPath
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfFont.cs
+    startLine: 175
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the glyph path for the specified glyph ID and font size.
+  remarks: >-
+    The glyph path represents the vector outline of the glyph, which can be used for rendering or
+        analysis. Ensure that the font size is a positive value to avoid unexpected behavior.
+  example: []
+  syntax:
+    content: public PdfGlyphPath? GetGlyphPath(uint glyphId, float fontSize)
+    parameters:
+    - id: glyphId
+      type: System.UInt32
+      description: The ID of the glyph to retrieve the path for.
+    - id: fontSize
+      type: System.Single
+      description: The size of the font, in points, used to scale the glyph path.
+    return:
+      type: nebulae.dotPDFium.PdfGlyphPath
+      description: >-
+        A <xref href="nebulae.dotPDFium.PdfGlyphPath" data-throw-if-not-resolved="false"></xref> object representing the path of the specified glyph,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if
+            the glyph path could not be retrieved.
+    content.vb: Public Function GetGlyphPath(glyphId As UInteger, fontSize As Single) As PdfGlyphPath
+  overload: nebulae.dotPDFium.PdfFont.GetGlyphPath*
+  nameWithType.vb: PdfFont.GetGlyphPath(UInteger, Single)
+  fullName.vb: nebulae.dotPDFium.PdfFont.GetGlyphPath(UInteger, Single)
+  name.vb: GetGlyphPath(UInteger, Single)
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: nebulae.dotPDFium.PdfObject
+  commentId: T:nebulae.dotPDFium.PdfObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfObject.html
+  name: PdfObject
+  nameWithType: PdfObject
+  fullName: nebulae.dotPDFium.PdfObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: nebulae.dotPDFium.PdfObject._handle
+  commentId: F:nebulae.dotPDFium.PdfObject._handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__handle
+  name: _handle
+  nameWithType: PdfObject._handle
+  fullName: nebulae.dotPDFium.PdfObject._handle
+- uid: nebulae.dotPDFium.PdfObject._type
+  commentId: F:nebulae.dotPDFium.PdfObject._type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__type
+  name: _type
+  nameWithType: PdfObject._type
+  fullName: nebulae.dotPDFium.PdfObject._type
+- uid: nebulae.dotPDFium.PdfObject._disposed
+  commentId: F:nebulae.dotPDFium.PdfObject._disposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__disposed
+  name: _disposed
+  nameWithType: PdfObject._disposed
+  fullName: nebulae.dotPDFium.PdfObject._disposed
+- uid: nebulae.dotPDFium.PdfObject.Handle
+  commentId: P:nebulae.dotPDFium.PdfObject.Handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Handle
+  name: Handle
+  nameWithType: PdfObject.Handle
+  fullName: nebulae.dotPDFium.PdfObject.Handle
+- uid: nebulae.dotPDFium.PdfObject.Type
+  commentId: P:nebulae.dotPDFium.PdfObject.Type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Type
+  name: Type
+  nameWithType: PdfObject.Type
+  fullName: nebulae.dotPDFium.PdfObject.Type
+- uid: nebulae.dotPDFium.PdfObject.IsDisposed
+  commentId: P:nebulae.dotPDFium.PdfObject.IsDisposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_IsDisposed
+  name: IsDisposed
+  nameWithType: PdfObject.IsDisposed
+  fullName: nebulae.dotPDFium.PdfObject.IsDisposed
+- uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+  commentId: M:nebulae.dotPDFium.PdfObject.GetPDFiumError
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  name: GetPDFiumError()
+  nameWithType: PdfObject.GetPDFiumError()
+  fullName: nebulae.dotPDFium.PdfObject.GetPDFiumError()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  name: Dispose()
+  nameWithType: PdfObject.Dispose()
+  fullName: nebulae.dotPDFium.PdfObject.Dispose()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  parent: nebulae.dotPDFium.PdfObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: PdfObject.Dispose(bool)
+  fullName: nebulae.dotPDFium.PdfObject.Dispose(bool)
+  nameWithType.vb: PdfObject.Dispose(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfFont.Name*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.Name
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_Name
+  name: Name
+  nameWithType: PdfFont.Name
+  fullName: nebulae.dotPDFium.PdfFont.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.PdfFont.GetBaseFontName*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetBaseFontName
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetBaseFontName
+  name: GetBaseFontName
+  nameWithType: PdfFont.GetBaseFontName
+  fullName: nebulae.dotPDFium.PdfFont.GetBaseFontName
+- uid: nebulae.dotPDFium.PdfFont.GetFamilyName*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetFamilyName
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetFamilyName
+  name: GetFamilyName
+  nameWithType: PdfFont.GetFamilyName
+  fullName: nebulae.dotPDFium.PdfFont.GetFamilyName
+- uid: nebulae.dotPDFium.dotPDFiumException
+  commentId: T:nebulae.dotPDFium.dotPDFiumException
+  href: nebulae.dotPDFium.dotPDFiumException.html
+  name: dotPDFiumException
+  nameWithType: dotPDFiumException
+  fullName: nebulae.dotPDFium.dotPDFiumException
+- uid: nebulae.dotPDFium.PdfFont.GetFontData*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetFontData
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetFontData
+  name: GetFontData
+  nameWithType: PdfFont.GetFontData
+  fullName: nebulae.dotPDFium.PdfFont.GetFontData
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfFont.IsEmbedded*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.IsEmbedded
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_IsEmbedded
+  name: IsEmbedded
+  nameWithType: PdfFont.IsEmbedded
+  fullName: nebulae.dotPDFium.PdfFont.IsEmbedded
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.PdfFont.GetFlags*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetFlags
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetFlags
+  name: GetFlags
+  nameWithType: PdfFont.GetFlags
+  fullName: nebulae.dotPDFium.PdfFont.GetFlags
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.PdfFont.GetWeight*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetWeight
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetWeight
+  name: GetWeight
+  nameWithType: PdfFont.GetWeight
+  fullName: nebulae.dotPDFium.PdfFont.GetWeight
+- uid: nebulae.dotPDFium.PdfFont.GetItalicAngle*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetItalicAngle
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetItalicAngle
+  name: GetItalicAngle
+  nameWithType: PdfFont.GetItalicAngle
+  fullName: nebulae.dotPDFium.PdfFont.GetItalicAngle
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfFont.GetAscent*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetAscent
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetAscent_System_Single_
+  name: GetAscent
+  nameWithType: PdfFont.GetAscent
+  fullName: nebulae.dotPDFium.PdfFont.GetAscent
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Nullable{System.Single}
+  commentId: T:System.Nullable{System.Single}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float?
+  nameWithType: float?
+  fullName: float?
+  nameWithType.vb: Single?
+  fullName.vb: Single?
+  name.vb: Single?
+  spec.csharp:
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '?'
+  spec.vb:
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '?'
+- uid: nebulae.dotPDFium.PdfFont.GetDescent*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetDescent
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetDescent_System_Single_
+  name: GetDescent
+  nameWithType: PdfFont.GetDescent
+  fullName: nebulae.dotPDFium.PdfFont.GetDescent
+- uid: nebulae.dotPDFium.PdfFont.GetGlyphWidth*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetGlyphWidth
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetGlyphWidth_System_UInt32_System_Single_
+  name: GetGlyphWidth
+  nameWithType: PdfFont.GetGlyphWidth
+  fullName: nebulae.dotPDFium.PdfFont.GetGlyphWidth
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: nebulae.dotPDFium.PdfGlyphPath
+  commentId: T:nebulae.dotPDFium.PdfGlyphPath
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfGlyphPath.html
+  name: PdfGlyphPath
+  nameWithType: PdfGlyphPath
+  fullName: nebulae.dotPDFium.PdfGlyphPath
+- uid: nebulae.dotPDFium.PdfFont.GetGlyphPath*
+  commentId: Overload:nebulae.dotPDFium.PdfFont.GetGlyphPath
+  href: nebulae.dotPDFium.PdfFont.html#nebulae_dotPDFium_PdfFont_GetGlyphPath_System_UInt32_System_Single_
+  name: GetGlyphPath
+  nameWithType: PdfFont.GetGlyphPath
+  fullName: nebulae.dotPDFium.PdfFont.GetGlyphPath

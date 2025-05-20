@@ -1,0 +1,503 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfRenderFlags
+  id: PdfRenderFlags
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfRenderFlags.Annot
+  - nebulae.dotPDFium.Native.PdfRenderFlags.ConvertFillToStroke
+  - nebulae.dotPDFium.Native.PdfRenderFlags.DebugInfo
+  - nebulae.dotPDFium.Native.PdfRenderFlags.ForceHalftone
+  - nebulae.dotPDFium.Native.PdfRenderFlags.Grayscale
+  - nebulae.dotPDFium.Native.PdfRenderFlags.LcdText
+  - nebulae.dotPDFium.Native.PdfRenderFlags.LimitedImageCache
+  - nebulae.dotPDFium.Native.PdfRenderFlags.NoCatch
+  - nebulae.dotPDFium.Native.PdfRenderFlags.NoNativeText
+  - nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothImage
+  - nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothPath
+  - nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothText
+  - nebulae.dotPDFium.Native.PdfRenderFlags.None
+  - nebulae.dotPDFium.Native.PdfRenderFlags.Printing
+  - nebulae.dotPDFium.Native.PdfRenderFlags.ReverseByteOrder
+  langs:
+  - csharp
+  - vb
+  name: PdfRenderFlags
+  nameWithType: PdfRenderFlags
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfRenderFlags
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 674
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies rendering options for PDF content, allowing fine-grained control over how pages are rendered.
+  remarks: >-
+    This enumeration supports bitwise combination of its values due to the <xref href="System.FlagsAttribute" data-throw-if-not-resolved="false"></xref>.
+        Use these flags to customize rendering behavior, such as enabling annotations, adjusting text smoothing, or
+        optimizing for printing. Some flags may affect performance or output quality, so choose options based on the
+        specific rendering requirements.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum PdfRenderFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum PdfRenderFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.None
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.None
+  id: None
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PdfRenderFlags.None
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.None
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: None
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 677
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: None = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.Annot
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.Annot
+  id: Annot
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: Annot
+  nameWithType: PdfRenderFlags.Annot
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.Annot
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Annot
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 678
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Annot = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.LcdText
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.LcdText
+  id: LcdText
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: LcdText
+  nameWithType: PdfRenderFlags.LcdText
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.LcdText
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LcdText
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 679
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: LcdText = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.NoNativeText
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.NoNativeText
+  id: NoNativeText
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: NoNativeText
+  nameWithType: PdfRenderFlags.NoNativeText
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.NoNativeText
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoNativeText
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 680
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoNativeText = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.Grayscale
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.Grayscale
+  id: Grayscale
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: Grayscale
+  nameWithType: PdfRenderFlags.Grayscale
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.Grayscale
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Grayscale
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 681
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Grayscale = 8
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.DebugInfo
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.DebugInfo
+  id: DebugInfo
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: DebugInfo
+  nameWithType: PdfRenderFlags.DebugInfo
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.DebugInfo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DebugInfo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 682
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DebugInfo = 128
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.NoCatch
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.NoCatch
+  id: NoCatch
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: NoCatch
+  nameWithType: PdfRenderFlags.NoCatch
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.NoCatch
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoCatch
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 683
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoCatch = 256
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.LimitedImageCache
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.LimitedImageCache
+  id: LimitedImageCache
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: LimitedImageCache
+  nameWithType: PdfRenderFlags.LimitedImageCache
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.LimitedImageCache
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LimitedImageCache
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 684
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: LimitedImageCache = 512
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.ForceHalftone
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.ForceHalftone
+  id: ForceHalftone
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: ForceHalftone
+  nameWithType: PdfRenderFlags.ForceHalftone
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.ForceHalftone
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ForceHalftone
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 685
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ForceHalftone = 1024
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.Printing
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.Printing
+  id: Printing
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: Printing
+  nameWithType: PdfRenderFlags.Printing
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.Printing
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Printing
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 686
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Printing = 2048
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothText
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothText
+  id: NoSmoothText
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: NoSmoothText
+  nameWithType: PdfRenderFlags.NoSmoothText
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothText
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoSmoothText
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 687
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoSmoothText = 4096
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothImage
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothImage
+  id: NoSmoothImage
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: NoSmoothImage
+  nameWithType: PdfRenderFlags.NoSmoothImage
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothImage
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoSmoothImage
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 688
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoSmoothImage = 8192
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothPath
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothPath
+  id: NoSmoothPath
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: NoSmoothPath
+  nameWithType: PdfRenderFlags.NoSmoothPath
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.NoSmoothPath
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoSmoothPath
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 689
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoSmoothPath = 16384
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.ReverseByteOrder
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.ReverseByteOrder
+  id: ReverseByteOrder
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: ReverseByteOrder
+  nameWithType: PdfRenderFlags.ReverseByteOrder
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.ReverseByteOrder
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ReverseByteOrder
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 690
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ReverseByteOrder = 16
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags.ConvertFillToStroke
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderFlags.ConvertFillToStroke
+  id: ConvertFillToStroke
+  parent: nebulae.dotPDFium.Native.PdfRenderFlags
+  langs:
+  - csharp
+  - vb
+  name: ConvertFillToStroke
+  nameWithType: PdfRenderFlags.ConvertFillToStroke
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags.ConvertFillToStroke
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ConvertFillToStroke
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 691
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ConvertFillToStroke = 32
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+references:
+- uid: System.FlagsAttribute
+  commentId: T:System.FlagsAttribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.flagsattribute
+  name: FlagsAttribute
+  nameWithType: FlagsAttribute
+  fullName: System.FlagsAttribute
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfRenderFlags
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfRenderFlags.html
+  name: PdfRenderFlags
+  nameWithType: PdfRenderFlags
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags

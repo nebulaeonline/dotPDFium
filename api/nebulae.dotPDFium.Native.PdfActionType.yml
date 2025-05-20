@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfActionType
+  id: PdfActionType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfActionType.GoTo
+  - nebulae.dotPDFium.Native.PdfActionType.JavaScript
+  - nebulae.dotPDFium.Native.PdfActionType.Launch
+  - nebulae.dotPDFium.Native.PdfActionType.Named
+  - nebulae.dotPDFium.Native.PdfActionType.RemoteGoTo
+  - nebulae.dotPDFium.Native.PdfActionType.Unsupported
+  - nebulae.dotPDFium.Native.PdfActionType.Uri
+  langs:
+  - csharp
+  - vb
+  name: PdfActionType
+  nameWithType: PdfActionType
+  fullName: nebulae.dotPDFium.Native.PdfActionType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfActionType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 261
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the type of action that can be performed in a PDF document.
+  remarks: >-
+    This enumeration defines the various types of actions that can be associated with interactive
+        elements in a PDF, such as links or buttons. Each action type represents a specific behavior or operation that can
+        be triggered when the action is executed.
+  example: []
+  syntax:
+    content: public enum PdfActionType
+    content.vb: Public Enum PdfActionType
+- uid: nebulae.dotPDFium.Native.PdfActionType.Unsupported
+  commentId: F:nebulae.dotPDFium.Native.PdfActionType.Unsupported
+  id: Unsupported
+  parent: nebulae.dotPDFium.Native.PdfActionType
+  langs:
+  - csharp
+  - vb
+  name: Unsupported
+  nameWithType: PdfActionType.Unsupported
+  fullName: nebulae.dotPDFium.Native.PdfActionType.Unsupported
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unsupported
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 263
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unsupported = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+- uid: nebulae.dotPDFium.Native.PdfActionType.GoTo
+  commentId: F:nebulae.dotPDFium.Native.PdfActionType.GoTo
+  id: GoTo
+  parent: nebulae.dotPDFium.Native.PdfActionType
+  langs:
+  - csharp
+  - vb
+  name: GoTo
+  nameWithType: PdfActionType.GoTo
+  fullName: nebulae.dotPDFium.Native.PdfActionType.GoTo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GoTo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 264
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: GoTo = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+- uid: nebulae.dotPDFium.Native.PdfActionType.RemoteGoTo
+  commentId: F:nebulae.dotPDFium.Native.PdfActionType.RemoteGoTo
+  id: RemoteGoTo
+  parent: nebulae.dotPDFium.Native.PdfActionType
+  langs:
+  - csharp
+  - vb
+  name: RemoteGoTo
+  nameWithType: PdfActionType.RemoteGoTo
+  fullName: nebulae.dotPDFium.Native.PdfActionType.RemoteGoTo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RemoteGoTo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 265
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: RemoteGoTo = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+- uid: nebulae.dotPDFium.Native.PdfActionType.Uri
+  commentId: F:nebulae.dotPDFium.Native.PdfActionType.Uri
+  id: Uri
+  parent: nebulae.dotPDFium.Native.PdfActionType
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: PdfActionType.Uri
+  fullName: nebulae.dotPDFium.Native.PdfActionType.Uri
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Uri
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 266
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Uri = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+- uid: nebulae.dotPDFium.Native.PdfActionType.Launch
+  commentId: F:nebulae.dotPDFium.Native.PdfActionType.Launch
+  id: Launch
+  parent: nebulae.dotPDFium.Native.PdfActionType
+  langs:
+  - csharp
+  - vb
+  name: Launch
+  nameWithType: PdfActionType.Launch
+  fullName: nebulae.dotPDFium.Native.PdfActionType.Launch
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Launch
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 267
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Launch = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+- uid: nebulae.dotPDFium.Native.PdfActionType.Named
+  commentId: F:nebulae.dotPDFium.Native.PdfActionType.Named
+  id: Named
+  parent: nebulae.dotPDFium.Native.PdfActionType
+  langs:
+  - csharp
+  - vb
+  name: Named
+  nameWithType: PdfActionType.Named
+  fullName: nebulae.dotPDFium.Native.PdfActionType.Named
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Named
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 268
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Named = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+- uid: nebulae.dotPDFium.Native.PdfActionType.JavaScript
+  commentId: F:nebulae.dotPDFium.Native.PdfActionType.JavaScript
+  id: JavaScript
+  parent: nebulae.dotPDFium.Native.PdfActionType
+  langs:
+  - csharp
+  - vb
+  name: JavaScript
+  nameWithType: PdfActionType.JavaScript
+  fullName: nebulae.dotPDFium.Native.PdfActionType.JavaScript
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: JavaScript
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 269
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: JavaScript = 6
+    return:
+      type: nebulae.dotPDFium.Native.PdfActionType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfActionType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfActionType.html
+  name: PdfActionType
+  nameWithType: PdfActionType
+  fullName: nebulae.dotPDFium.Native.PdfActionType

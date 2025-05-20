@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldType
+  id: PdfFormFieldType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFormFieldType.Button
+  - nebulae.dotPDFium.Native.PdfFormFieldType.CheckBox
+  - nebulae.dotPDFium.Native.PdfFormFieldType.ComboBox
+  - nebulae.dotPDFium.Native.PdfFormFieldType.ListBox
+  - nebulae.dotPDFium.Native.PdfFormFieldType.RadioButton
+  - nebulae.dotPDFium.Native.PdfFormFieldType.Signature
+  - nebulae.dotPDFium.Native.PdfFormFieldType.Text
+  - nebulae.dotPDFium.Native.PdfFormFieldType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PdfFormFieldType
+  nameWithType: PdfFormFieldType
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFormFieldType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 406
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the type of a form field in a PDF document.
+  remarks: >-
+    This enumeration is used to identify the type of a form field within a PDF document. Each value
+        corresponds to a specific type of interactive field, such as buttons, text fields, or signature fields.
+  example: []
+  syntax:
+    content: public enum PdfFormFieldType
+    content.vb: Public Enum PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PdfFormFieldType.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 408
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unknown = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.Button
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.Button
+  id: Button
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: Button
+  nameWithType: PdfFormFieldType.Button
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.Button
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Button
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 409
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Button = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.CheckBox
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.CheckBox
+  id: CheckBox
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: CheckBox
+  nameWithType: PdfFormFieldType.CheckBox
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.CheckBox
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CheckBox
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 410
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: CheckBox = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.RadioButton
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.RadioButton
+  id: RadioButton
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: RadioButton
+  nameWithType: PdfFormFieldType.RadioButton
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.RadioButton
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RadioButton
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 411
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: RadioButton = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.ComboBox
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.ComboBox
+  id: ComboBox
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: ComboBox
+  nameWithType: PdfFormFieldType.ComboBox
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.ComboBox
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ComboBox
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 412
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ComboBox = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.ListBox
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.ListBox
+  id: ListBox
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: ListBox
+  nameWithType: PdfFormFieldType.ListBox
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.ListBox
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ListBox
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 413
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ListBox = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.Text
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.Text
+  id: Text
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: PdfFormFieldType.Text
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.Text
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Text
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 414
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Text = 6
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType.Signature
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldType.Signature
+  id: Signature
+  parent: nebulae.dotPDFium.Native.PdfFormFieldType
+  langs:
+  - csharp
+  - vb
+  name: Signature
+  nameWithType: PdfFormFieldType.Signature
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType.Signature
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Signature
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 415
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Signature = 7
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfFormFieldType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFormFieldType.html
+  name: PdfFormFieldType
+  nameWithType: PdfFormFieldType
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldType

@@ -1,0 +1,1801 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfTextNative
+  commentId: T:nebulae.dotPDFium.Native.PdfTextNative
+  id: PdfTextNative
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect(System.IntPtr,System.Int32,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange(System.IntPtr,System.Int32,System.Int32@,System.Int32@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL(System.IntPtr,System.Int32,System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects(System.IntPtr,System.Int32,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart(System.IntPtr,System.String,System.UInt32,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText(System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.UInt16[],System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos(System.IntPtr,System.Double,System.Double,System.Double,System.Double)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin(System.IntPtr,System.Int32,System.Double@,System.Double@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo(System.IntPtr,System.Int32,System.Byte[],System.UInt32,System.Int32@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsRectF@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsMatrix@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText(System.IntPtr,System.Int32,System.Int32,System.UInt16[])
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage(System.IntPtr)
+  langs:
+  - csharp
+  - vb
+  name: PdfTextNative
+  nameWithType: PdfTextNative
+  fullName: nebulae.dotPDFium.Native.PdfTextNative
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/Native/PdfTextNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfTextNative
+    path: ../dotPDFium/dotPDFium/Native/PdfTextNative.cs
+    startLine: 5
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static class PdfTextNative
+    content.vb: Public Module PdfTextNative
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage(System.IntPtr)
+  id: FPDFText_LoadPage(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_LoadPage(nint)
+  nameWithType: PdfTextNative.FPDFText_LoadPage(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFText_LoadPage(nint page)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFText_LoadPage(page As IntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage*
+  nameWithType.vb: PdfTextNative.FPDFText_LoadPage(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage(System.IntPtr)
+  name.vb: FPDFText_LoadPage(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage(System.IntPtr)
+  id: FPDFText_ClosePage(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_ClosePage(nint)
+  nameWithType: PdfTextNative.FPDFText_ClosePage(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDFText_ClosePage(nint text_page)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDFText_ClosePage(text_page As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage*
+  nameWithType.vb: PdfTextNative.FPDFText_ClosePage(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage(System.IntPtr)
+  name.vb: FPDFText_ClosePage(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars(System.IntPtr)
+  id: FPDFText_CountChars(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_CountChars(nint)
+  nameWithType: PdfTextNative.FPDFText_CountChars(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_CountChars(nint text_page)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_CountChars(text_page As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars*
+  nameWithType.vb: PdfTextNative.FPDFText_CountChars(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars(System.IntPtr)
+  name.vb: FPDFText_CountChars(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode(System.IntPtr,System.Int32)
+  id: FPDFText_GetUnicode(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetUnicode(nint, int)
+  nameWithType: PdfTextNative.FPDFText_GetUnicode(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFText_GetUnicode(nint text_page, int index)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFText_GetUnicode(text_page As IntPtr, index As Integer) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode*
+  nameWithType.vb: PdfTextNative.FPDFText_GetUnicode(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode(System.IntPtr, Integer)
+  name.vb: FPDFText_GetUnicode(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText(System.IntPtr,System.Int32,System.Int32,System.UInt16[])
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText(System.IntPtr,System.Int32,System.Int32,System.UInt16[])
+  id: FPDFText_GetText(System.IntPtr,System.Int32,System.Int32,System.UInt16[])
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetText(nint, int, int, ushort[])
+  nameWithType: PdfTextNative.FPDFText_GetText(nint, int, int, ushort[])
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText(nint, int, int, ushort[])
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_GetText(nint text_page, int start_index, int count, ushort[] result)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: start_index
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    - id: result
+      type: System.UInt16[]
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_GetText(text_page As IntPtr, start_index As Integer, count As Integer, result As UShort()) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText*
+  nameWithType.vb: PdfTextNative.FPDFText_GetText(IntPtr, Integer, Integer, UShort())
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText(System.IntPtr, Integer, Integer, UShort())
+  name.vb: FPDFText_GetText(IntPtr, Integer, Integer, UShort())
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos(System.IntPtr,System.Double,System.Double,System.Double,System.Double)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos(System.IntPtr,System.Double,System.Double,System.Double,System.Double)
+  id: FPDFText_GetCharIndexAtPos(System.IntPtr,System.Double,System.Double,System.Double,System.Double)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetCharIndexAtPos(nint, double, double, double, double)
+  nameWithType: PdfTextNative.FPDFText_GetCharIndexAtPos(nint, double, double, double, double)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos(nint, double, double, double, double)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_GetCharIndexAtPos(nint text_page, double x, double y, double xTolerance, double yTolerance)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    - id: xTolerance
+      type: System.Double
+    - id: yTolerance
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_GetCharIndexAtPos(text_page As IntPtr, x As Double, y As Double, xTolerance As Double, yTolerance As Double) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos*
+  nameWithType.vb: PdfTextNative.FPDFText_GetCharIndexAtPos(IntPtr, Double, Double, Double, Double)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos(System.IntPtr, Double, Double, Double, Double)
+  name.vb: FPDFText_GetCharIndexAtPos(IntPtr, Double, Double, Double, Double)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  id: FPDFText_GetCharBox(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetCharBox(nint, int, out double, out double, out double, out double)
+  nameWithType: PdfTextNative.FPDFText_GetCharBox(nint, int, out double, out double, out double, out double)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox(nint, int, out double, out double, out double, out double)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_GetCharBox(nint text_page, int index, out double left, out double right, out double bottom, out double top)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: left
+      type: System.Double
+    - id: right
+      type: System.Double
+    - id: bottom
+      type: System.Double
+    - id: top
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_GetCharBox(text_page As IntPtr, index As Integer, left As Double, right As Double, bottom As Double, top As Double) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox*
+  nameWithType.vb: PdfTextNative.FPDFText_GetCharBox(IntPtr, Integer, Double, Double, Double, Double)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox(System.IntPtr, Integer, Double, Double, Double, Double)
+  name.vb: FPDFText_GetCharBox(IntPtr, Integer, Double, Double, Double, Double)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin(System.IntPtr,System.Int32,System.Double@,System.Double@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin(System.IntPtr,System.Int32,System.Double@,System.Double@)
+  id: FPDFText_GetCharOrigin(System.IntPtr,System.Int32,System.Double@,System.Double@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetCharOrigin(nint, int, out double, out double)
+  nameWithType: PdfTextNative.FPDFText_GetCharOrigin(nint, int, out double, out double)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin(nint, int, out double, out double)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_GetCharOrigin(nint text_page, int index, out double x, out double y)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: x
+      type: System.Double
+    - id: y
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_GetCharOrigin(text_page As IntPtr, index As Integer, x As Double, y As Double) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin*
+  nameWithType.vb: PdfTextNative.FPDFText_GetCharOrigin(IntPtr, Integer, Double, Double)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin(System.IntPtr, Integer, Double, Double)
+  name.vb: FPDFText_GetCharOrigin(IntPtr, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects(System.IntPtr,System.Int32,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects(System.IntPtr,System.Int32,System.Int32)
+  id: FPDFText_CountRects(System.IntPtr,System.Int32,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_CountRects(nint, int, int)
+  nameWithType: PdfTextNative.FPDFText_CountRects(nint, int, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects(nint, int, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_CountRects(nint text_page, int start_index, int count)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: start_index
+      type: System.Int32
+    - id: count
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_CountRects(text_page As IntPtr, start_index As Integer, count As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects*
+  nameWithType.vb: PdfTextNative.FPDFText_CountRects(IntPtr, Integer, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects(System.IntPtr, Integer, Integer)
+  name.vb: FPDFText_CountRects(IntPtr, Integer, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  id: FPDFText_GetRect(System.IntPtr,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetRect(nint, int, out double, out double, out double, out double)
+  nameWithType: PdfTextNative.FPDFText_GetRect(nint, int, out double, out double, out double, out double)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect(nint, int, out double, out double, out double, out double)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_GetRect(nint text_page, int rect_index, out double left, out double top, out double right, out double bottom)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: rect_index
+      type: System.Int32
+    - id: left
+      type: System.Double
+    - id: top
+      type: System.Double
+    - id: right
+      type: System.Double
+    - id: bottom
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_GetRect(text_page As IntPtr, rect_index As Integer, left As Double, top As Double, right As Double, bottom As Double) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect*
+  nameWithType.vb: PdfTextNative.FPDFText_GetRect(IntPtr, Integer, Double, Double, Double, Double)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect(System.IntPtr, Integer, Double, Double, Double, Double)
+  name.vb: FPDFText_GetRect(IntPtr, Integer, Double, Double, Double, Double)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText(System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.UInt16[],System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText(System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.UInt16[],System.Int32)
+  id: FPDFText_GetBoundedText(System.IntPtr,System.Double,System.Double,System.Double,System.Double,System.UInt16[],System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetBoundedText(nint, double, double, double, double, ushort[], int)
+  nameWithType: PdfTextNative.FPDFText_GetBoundedText(nint, double, double, double, double, ushort[], int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText(nint, double, double, double, double, ushort[], int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_GetBoundedText(nint text_page, double left, double top, double right, double bottom, ushort[] buffer, int buflen)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: left
+      type: System.Double
+    - id: top
+      type: System.Double
+    - id: right
+      type: System.Double
+    - id: bottom
+      type: System.Double
+    - id: buffer
+      type: System.UInt16[]
+    - id: buflen
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_GetBoundedText(text_page As IntPtr, left As Double, top As Double, right As Double, bottom As Double, buffer As UShort(), buflen As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText*
+  nameWithType.vb: PdfTextNative.FPDFText_GetBoundedText(IntPtr, Double, Double, Double, Double, UShort(), Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText(System.IntPtr, Double, Double, Double, Double, UShort(), Integer)
+  name.vb: FPDFText_GetBoundedText(IntPtr, Double, Double, Double, Double, UShort(), Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart(System.IntPtr,System.String,System.UInt32,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart(System.IntPtr,System.String,System.UInt32,System.Int32)
+  id: FPDFText_FindStart(System.IntPtr,System.String,System.UInt32,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_FindStart(nint, string, uint, int)
+  nameWithType: PdfTextNative.FPDFText_FindStart(nint, string, uint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart(nint, string, uint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFText_FindStart(nint text_page, string findwhat, uint flags, int start_index)
+    parameters:
+    - id: text_page
+      type: System.IntPtr
+    - id: findwhat
+      type: System.String
+    - id: flags
+      type: System.UInt32
+    - id: start_index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFText_FindStart(text_page As IntPtr, findwhat As String, flags As UInteger, start_index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart*
+  nameWithType.vb: PdfTextNative.FPDFText_FindStart(IntPtr, String, UInteger, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart(System.IntPtr, String, UInteger, Integer)
+  name.vb: FPDFText_FindStart(IntPtr, String, UInteger, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext(System.IntPtr)
+  id: FPDFText_FindNext(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_FindNext(nint)
+  nameWithType: PdfTextNative.FPDFText_FindNext(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_FindNext(nint searchHandle)
+    parameters:
+    - id: searchHandle
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_FindNext(searchHandle As IntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext*
+  nameWithType.vb: PdfTextNative.FPDFText_FindNext(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext(System.IntPtr)
+  name.vb: FPDFText_FindNext(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev(System.IntPtr)
+  id: FPDFText_FindPrev(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_FindPrev(nint)
+  nameWithType: PdfTextNative.FPDFText_FindPrev(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_FindPrev(nint searchHandle)
+    parameters:
+    - id: searchHandle
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_FindPrev(searchHandle As IntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev*
+  nameWithType.vb: PdfTextNative.FPDFText_FindPrev(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev(System.IntPtr)
+  name.vb: FPDFText_FindPrev(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex(System.IntPtr)
+  id: FPDFText_GetSchResultIndex(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetSchResultIndex(nint)
+  nameWithType: PdfTextNative.FPDFText_GetSchResultIndex(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_GetSchResultIndex(nint searchHandle)
+    parameters:
+    - id: searchHandle
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_GetSchResultIndex(searchHandle As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex*
+  nameWithType.vb: PdfTextNative.FPDFText_GetSchResultIndex(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex(System.IntPtr)
+  name.vb: FPDFText_GetSchResultIndex(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount(System.IntPtr)
+  id: FPDFText_GetSchCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetSchCount(nint)
+  nameWithType: PdfTextNative.FPDFText_GetSchCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_GetSchCount(nint searchHandle)
+    parameters:
+    - id: searchHandle
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_GetSchCount(searchHandle As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount*
+  nameWithType.vb: PdfTextNative.FPDFText_GetSchCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount(System.IntPtr)
+  name.vb: FPDFText_GetSchCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose(System.IntPtr)
+  id: FPDFText_FindClose(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_FindClose(nint)
+  nameWithType: PdfTextNative.FPDFText_FindClose(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDFText_FindClose(nint searchHandle)
+    parameters:
+    - id: searchHandle
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDFText_FindClose(searchHandle As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose*
+  nameWithType.vb: PdfTextNative.FPDFText_FindClose(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose(System.IntPtr)
+  name.vb: FPDFText_FindClose(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject(System.IntPtr,System.Int32)
+  id: FPDFText_GetTextObject(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetTextObject(nint, int)
+  nameWithType: PdfTextNative.FPDFText_GetTextObject(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFText_GetTextObject(nint textPage, int index)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFText_GetTextObject(textPage As IntPtr, index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject*
+  nameWithType.vb: PdfTextNative.FPDFText_GetTextObject(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject(System.IntPtr, Integer)
+  name.vb: FPDFText_GetTextObject(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated(System.IntPtr,System.Int32)
+  id: FPDFText_IsGenerated(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_IsGenerated(nint, int)
+  nameWithType: PdfTextNative.FPDFText_IsGenerated(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_IsGenerated(nint textPage, int index)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_IsGenerated(textPage As IntPtr, index As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated*
+  nameWithType.vb: PdfTextNative.FPDFText_IsGenerated(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated(System.IntPtr, Integer)
+  name.vb: FPDFText_IsGenerated(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen(System.IntPtr,System.Int32)
+  id: FPDFText_IsHyphen(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_IsHyphen(nint, int)
+  nameWithType: PdfTextNative.FPDFText_IsHyphen(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_IsHyphen(nint textPage, int index)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_IsHyphen(textPage As IntPtr, index As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen*
+  nameWithType.vb: PdfTextNative.FPDFText_IsHyphen(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen(System.IntPtr, Integer)
+  name.vb: FPDFText_IsHyphen(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError(System.IntPtr,System.Int32)
+  id: FPDFText_HasUnicodeMapError(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_HasUnicodeMapError(nint, int)
+  nameWithType: PdfTextNative.FPDFText_HasUnicodeMapError(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_HasUnicodeMapError(nint textPage, int index)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_HasUnicodeMapError(textPage As IntPtr, index As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError*
+  nameWithType.vb: PdfTextNative.FPDFText_HasUnicodeMapError(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError(System.IntPtr, Integer)
+  name.vb: FPDFText_HasUnicodeMapError(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize(System.IntPtr,System.Int32)
+  id: FPDFText_GetFontSize(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetFontSize(nint, int)
+  nameWithType: PdfTextNative.FPDFText_GetFontSize(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern double FPDFText_GetFontSize(nint textPage, int index)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: Public Shared Function FPDFText_GetFontSize(textPage As IntPtr, index As Integer) As Double
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize*
+  nameWithType.vb: PdfTextNative.FPDFText_GetFontSize(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize(System.IntPtr, Integer)
+  name.vb: FPDFText_GetFontSize(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo(System.IntPtr,System.Int32,System.Byte[],System.UInt32,System.Int32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo(System.IntPtr,System.Int32,System.Byte[],System.UInt32,System.Int32@)
+  id: FPDFText_GetFontInfo(System.IntPtr,System.Int32,System.Byte[],System.UInt32,System.Int32@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetFontInfo(nint, int, byte[], uint, out int)
+  nameWithType: PdfTextNative.FPDFText_GetFontInfo(nint, int, byte[], uint, out int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo(nint, int, byte[], uint, out int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFText_GetFontInfo(nint textPage, int index, byte[] buffer, uint buflen, out int flags)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: buffer
+      type: System.Byte[]
+    - id: buflen
+      type: System.UInt32
+    - id: flags
+      type: System.Int32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFText_GetFontInfo(textPage As IntPtr, index As Integer, buffer As Byte(), buflen As UInteger, flags As Integer) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo*
+  nameWithType.vb: PdfTextNative.FPDFText_GetFontInfo(IntPtr, Integer, Byte(), UInteger, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo(System.IntPtr, Integer, Byte(), UInteger, Integer)
+  name.vb: FPDFText_GetFontInfo(IntPtr, Integer, Byte(), UInteger, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight(System.IntPtr,System.Int32)
+  id: FPDFText_GetFontWeight(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetFontWeight(nint, int)
+  nameWithType: PdfTextNative.FPDFText_GetFontWeight(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFText_GetFontWeight(nint textPage, int index)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFText_GetFontWeight(textPage As IntPtr, index As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight*
+  nameWithType.vb: PdfTextNative.FPDFText_GetFontWeight(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight(System.IntPtr, Integer)
+  name.vb: FPDFText_GetFontWeight(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  id: FPDFText_GetFillColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetFillColor(nint, int, out uint, out uint, out uint, out uint)
+  nameWithType: PdfTextNative.FPDFText_GetFillColor(nint, int, out uint, out uint, out uint, out uint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor(nint, int, out uint, out uint, out uint, out uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_GetFillColor(nint textPage, int index, out uint r, out uint g, out uint b, out uint a)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: r
+      type: System.UInt32
+    - id: g
+      type: System.UInt32
+    - id: b
+      type: System.UInt32
+    - id: a
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_GetFillColor(textPage As IntPtr, index As Integer, r As UInteger, g As UInteger, b As UInteger, a As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor*
+  nameWithType.vb: PdfTextNative.FPDFText_GetFillColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor(System.IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  name.vb: FPDFText_GetFillColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  id: FPDFText_GetStrokeColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetStrokeColor(nint, int, out uint, out uint, out uint, out uint)
+  nameWithType: PdfTextNative.FPDFText_GetStrokeColor(nint, int, out uint, out uint, out uint, out uint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor(nint, int, out uint, out uint, out uint, out uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_GetStrokeColor(nint textPage, int index, out uint r, out uint g, out uint b, out uint a)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: r
+      type: System.UInt32
+    - id: g
+      type: System.UInt32
+    - id: b
+      type: System.UInt32
+    - id: a
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_GetStrokeColor(textPage As IntPtr, index As Integer, r As UInteger, g As UInteger, b As UInteger, a As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor*
+  nameWithType.vb: PdfTextNative.FPDFText_GetStrokeColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor(System.IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  name.vb: FPDFText_GetStrokeColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle(System.IntPtr,System.Int32)
+  id: FPDFText_GetCharAngle(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetCharAngle(nint, int)
+  nameWithType: PdfTextNative.FPDFText_GetCharAngle(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern float FPDFText_GetCharAngle(nint textPage, int index)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Single
+    content.vb: Public Shared Function FPDFText_GetCharAngle(textPage As IntPtr, index As Integer) As Single
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle*
+  nameWithType.vb: PdfTextNative.FPDFText_GetCharAngle(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle(System.IntPtr, Integer)
+  name.vb: FPDFText_GetCharAngle(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsRectF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsRectF@)
+  id: FPDFText_GetLooseCharBox(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsRectF@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetLooseCharBox(nint, int, out FsRectF)
+  nameWithType: PdfTextNative.FPDFText_GetLooseCharBox(nint, int, out FsRectF)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox(nint, int, out nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_GetLooseCharBox(nint textPage, int index, out FsRectF rect)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: rect
+      type: nebulae.dotPDFium.Native.FsRectF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_GetLooseCharBox(textPage As IntPtr, index As Integer, rect As FsRectF) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox*
+  nameWithType.vb: PdfTextNative.FPDFText_GetLooseCharBox(IntPtr, Integer, FsRectF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox(System.IntPtr, Integer, nebulae.dotPDFium.Native.FsRectF)
+  name.vb: FPDFText_GetLooseCharBox(IntPtr, Integer, FsRectF)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsMatrix@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsMatrix@)
+  id: FPDFText_GetMatrix(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FsMatrix@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFText_GetMatrix(nint, int, out FsMatrix)
+  nameWithType: PdfTextNative.FPDFText_GetMatrix(nint, int, out FsMatrix)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix(nint, int, out nebulae.dotPDFium.Native.FsMatrix)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFText_GetMatrix(nint textPage, int index, out FsMatrix matrix)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: matrix
+      type: nebulae.dotPDFium.Native.FsMatrix
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFText_GetMatrix(textPage As IntPtr, index As Integer, matrix As FsMatrix) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix*
+  nameWithType.vb: PdfTextNative.FPDFText_GetMatrix(IntPtr, Integer, FsMatrix)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix(System.IntPtr, Integer, nebulae.dotPDFium.Native.FsMatrix)
+  name.vb: FPDFText_GetMatrix(IntPtr, Integer, FsMatrix)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks(System.IntPtr)
+  id: FPDFLink_LoadWebLinks(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFLink_LoadWebLinks(nint)
+  nameWithType: PdfTextNative.FPDFLink_LoadWebLinks(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFLink_LoadWebLinks(nint textPage)
+    parameters:
+    - id: textPage
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFLink_LoadWebLinks(textPage As IntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks*
+  nameWithType.vb: PdfTextNative.FPDFLink_LoadWebLinks(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks(System.IntPtr)
+  name.vb: FPDFLink_LoadWebLinks(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks(System.IntPtr)
+  id: FPDFLink_CountWebLinks(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFLink_CountWebLinks(nint)
+  nameWithType: PdfTextNative.FPDFLink_CountWebLinks(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFLink_CountWebLinks(nint linkPage)
+    parameters:
+    - id: linkPage
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFLink_CountWebLinks(linkPage As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks*
+  nameWithType.vb: PdfTextNative.FPDFLink_CountWebLinks(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks(System.IntPtr)
+  name.vb: FPDFLink_CountWebLinks(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL(System.IntPtr,System.Int32,System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL(System.IntPtr,System.Int32,System.IntPtr,System.Int32)
+  id: FPDFLink_GetURL(System.IntPtr,System.Int32,System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFLink_GetURL(nint, int, nint, int)
+  nameWithType: PdfTextNative.FPDFLink_GetURL(nint, int, nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL(nint, int, nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFLink_GetURL(nint linkPage, int linkIndex, nint buffer, int buflen)
+    parameters:
+    - id: linkPage
+      type: System.IntPtr
+    - id: linkIndex
+      type: System.Int32
+    - id: buffer
+      type: System.IntPtr
+    - id: buflen
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFLink_GetURL(linkPage As IntPtr, linkIndex As Integer, buffer As IntPtr, buflen As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL*
+  nameWithType.vb: PdfTextNative.FPDFLink_GetURL(IntPtr, Integer, IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL(System.IntPtr, Integer, System.IntPtr, Integer)
+  name.vb: FPDFLink_GetURL(IntPtr, Integer, IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects(System.IntPtr,System.Int32)
+  id: FPDFLink_CountRects(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFLink_CountRects(nint, int)
+  nameWithType: PdfTextNative.FPDFLink_CountRects(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFLink_CountRects(nint linkPage, int linkIndex)
+    parameters:
+    - id: linkPage
+      type: System.IntPtr
+    - id: linkIndex
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFLink_CountRects(linkPage As IntPtr, linkIndex As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects*
+  nameWithType.vb: PdfTextNative.FPDFLink_CountRects(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects(System.IntPtr, Integer)
+  name.vb: FPDFLink_CountRects(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect(System.IntPtr,System.Int32,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect(System.IntPtr,System.Int32,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  id: FPDFLink_GetRect(System.IntPtr,System.Int32,System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFLink_GetRect(nint, int, int, out double, out double, out double, out double)
+  nameWithType: PdfTextNative.FPDFLink_GetRect(nint, int, int, out double, out double, out double, out double)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect(nint, int, int, out double, out double, out double, out double)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFLink_GetRect(nint linkPage, int linkIndex, int rectIndex, out double left, out double top, out double right, out double bottom)
+    parameters:
+    - id: linkPage
+      type: System.IntPtr
+    - id: linkIndex
+      type: System.Int32
+    - id: rectIndex
+      type: System.Int32
+    - id: left
+      type: System.Double
+    - id: top
+      type: System.Double
+    - id: right
+      type: System.Double
+    - id: bottom
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFLink_GetRect(linkPage As IntPtr, linkIndex As Integer, rectIndex As Integer, left As Double, top As Double, right As Double, bottom As Double) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect*
+  nameWithType.vb: PdfTextNative.FPDFLink_GetRect(IntPtr, Integer, Integer, Double, Double, Double, Double)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect(System.IntPtr, Integer, Integer, Double, Double, Double, Double)
+  name.vb: FPDFLink_GetRect(IntPtr, Integer, Integer, Double, Double, Double, Double)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange(System.IntPtr,System.Int32,System.Int32@,System.Int32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange(System.IntPtr,System.Int32,System.Int32@,System.Int32@)
+  id: FPDFLink_GetTextRange(System.IntPtr,System.Int32,System.Int32@,System.Int32@)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFLink_GetTextRange(nint, int, out int, out int)
+  nameWithType: PdfTextNative.FPDFLink_GetTextRange(nint, int, out int, out int)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange(nint, int, out int, out int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFLink_GetTextRange(nint linkPage, int linkIndex, out int startCharIndex, out int charCount)
+    parameters:
+    - id: linkPage
+      type: System.IntPtr
+    - id: linkIndex
+      type: System.Int32
+    - id: startCharIndex
+      type: System.Int32
+    - id: charCount
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFLink_GetTextRange(linkPage As IntPtr, linkIndex As Integer, startCharIndex As Integer, charCount As Integer) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange*
+  nameWithType.vb: PdfTextNative.FPDFLink_GetTextRange(IntPtr, Integer, Integer, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange(System.IntPtr, Integer, Integer, Integer)
+  name.vb: FPDFLink_GetTextRange(IntPtr, Integer, Integer, Integer)
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks(System.IntPtr)
+  id: FPDFLink_CloseWebLinks(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfTextNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFLink_CloseWebLinks(nint)
+  nameWithType: PdfTextNative.FPDFLink_CloseWebLinks(nint)
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDFLink_CloseWebLinks(nint linkPage)
+    parameters:
+    - id: linkPage
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDFLink_CloseWebLinks(linkPage As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks*
+  nameWithType.vb: PdfTextNative.FPDFLink_CloseWebLinks(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks(System.IntPtr)
+  name.vb: FPDFLink_CloseWebLinks(IntPtr)
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_LoadPage_System_IntPtr_
+  name: FPDFText_LoadPage
+  nameWithType: PdfTextNative.FPDFText_LoadPage
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_LoadPage
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_ClosePage_System_IntPtr_
+  name: FPDFText_ClosePage
+  nameWithType: PdfTextNative.FPDFText_ClosePage
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_ClosePage
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_CountChars_System_IntPtr_
+  name: FPDFText_CountChars
+  nameWithType: PdfTextNative.FPDFText_CountChars
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountChars
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetUnicode_System_IntPtr_System_Int32_
+  name: FPDFText_GetUnicode
+  nameWithType: PdfTextNative.FPDFText_GetUnicode
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetUnicode
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetText_System_IntPtr_System_Int32_System_Int32_System_UInt16___
+  name: FPDFText_GetText
+  nameWithType: PdfTextNative.FPDFText_GetText
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetText
+- uid: System.UInt16[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort[]
+  nameWithType: ushort[]
+  fullName: ushort[]
+  nameWithType.vb: UShort()
+  fullName.vb: UShort()
+  name.vb: UShort()
+  spec.csharp:
+  - uid: System.UInt16
+    name: ushort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.UInt16
+    name: UShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetCharIndexAtPos_System_IntPtr_System_Double_System_Double_System_Double_System_Double_
+  name: FPDFText_GetCharIndexAtPos
+  nameWithType: PdfTextNative.FPDFText_GetCharIndexAtPos
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharIndexAtPos
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetCharBox_System_IntPtr_System_Int32_System_Double__System_Double__System_Double__System_Double__
+  name: FPDFText_GetCharBox
+  nameWithType: PdfTextNative.FPDFText_GetCharBox
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharBox
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetCharOrigin_System_IntPtr_System_Int32_System_Double__System_Double__
+  name: FPDFText_GetCharOrigin
+  nameWithType: PdfTextNative.FPDFText_GetCharOrigin
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharOrigin
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_CountRects_System_IntPtr_System_Int32_System_Int32_
+  name: FPDFText_CountRects
+  nameWithType: PdfTextNative.FPDFText_CountRects
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_CountRects
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetRect_System_IntPtr_System_Int32_System_Double__System_Double__System_Double__System_Double__
+  name: FPDFText_GetRect
+  nameWithType: PdfTextNative.FPDFText_GetRect
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetRect
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetBoundedText_System_IntPtr_System_Double_System_Double_System_Double_System_Double_System_UInt16___System_Int32_
+  name: FPDFText_GetBoundedText
+  nameWithType: PdfTextNative.FPDFText_GetBoundedText
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetBoundedText
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_FindStart_System_IntPtr_System_String_System_UInt32_System_Int32_
+  name: FPDFText_FindStart
+  nameWithType: PdfTextNative.FPDFText_FindStart
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindStart
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_FindNext_System_IntPtr_
+  name: FPDFText_FindNext
+  nameWithType: PdfTextNative.FPDFText_FindNext
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindNext
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_FindPrev_System_IntPtr_
+  name: FPDFText_FindPrev
+  nameWithType: PdfTextNative.FPDFText_FindPrev
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindPrev
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetSchResultIndex_System_IntPtr_
+  name: FPDFText_GetSchResultIndex
+  nameWithType: PdfTextNative.FPDFText_GetSchResultIndex
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchResultIndex
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetSchCount_System_IntPtr_
+  name: FPDFText_GetSchCount
+  nameWithType: PdfTextNative.FPDFText_GetSchCount
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetSchCount
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_FindClose_System_IntPtr_
+  name: FPDFText_FindClose
+  nameWithType: PdfTextNative.FPDFText_FindClose
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_FindClose
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetTextObject_System_IntPtr_System_Int32_
+  name: FPDFText_GetTextObject
+  nameWithType: PdfTextNative.FPDFText_GetTextObject
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetTextObject
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_IsGenerated_System_IntPtr_System_Int32_
+  name: FPDFText_IsGenerated
+  nameWithType: PdfTextNative.FPDFText_IsGenerated
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsGenerated
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_IsHyphen_System_IntPtr_System_Int32_
+  name: FPDFText_IsHyphen
+  nameWithType: PdfTextNative.FPDFText_IsHyphen
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_IsHyphen
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_HasUnicodeMapError_System_IntPtr_System_Int32_
+  name: FPDFText_HasUnicodeMapError
+  nameWithType: PdfTextNative.FPDFText_HasUnicodeMapError
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_HasUnicodeMapError
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetFontSize_System_IntPtr_System_Int32_
+  name: FPDFText_GetFontSize
+  nameWithType: PdfTextNative.FPDFText_GetFontSize
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontSize
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetFontInfo_System_IntPtr_System_Int32_System_Byte___System_UInt32_System_Int32__
+  name: FPDFText_GetFontInfo
+  nameWithType: PdfTextNative.FPDFText_GetFontInfo
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontInfo
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetFontWeight_System_IntPtr_System_Int32_
+  name: FPDFText_GetFontWeight
+  nameWithType: PdfTextNative.FPDFText_GetFontWeight
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFontWeight
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetFillColor_System_IntPtr_System_Int32_System_UInt32__System_UInt32__System_UInt32__System_UInt32__
+  name: FPDFText_GetFillColor
+  nameWithType: PdfTextNative.FPDFText_GetFillColor
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetFillColor
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetStrokeColor_System_IntPtr_System_Int32_System_UInt32__System_UInt32__System_UInt32__System_UInt32__
+  name: FPDFText_GetStrokeColor
+  nameWithType: PdfTextNative.FPDFText_GetStrokeColor
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetStrokeColor
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetCharAngle_System_IntPtr_System_Int32_
+  name: FPDFText_GetCharAngle
+  nameWithType: PdfTextNative.FPDFText_GetCharAngle
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetCharAngle
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetLooseCharBox_System_IntPtr_System_Int32_nebulae_dotPDFium_Native_FsRectF__
+  name: FPDFText_GetLooseCharBox
+  nameWithType: PdfTextNative.FPDFText_GetLooseCharBox
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetLooseCharBox
+- uid: nebulae.dotPDFium.Native.FsRectF
+  commentId: T:nebulae.dotPDFium.Native.FsRectF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsRectF.html
+  name: FsRectF
+  nameWithType: FsRectF
+  fullName: nebulae.dotPDFium.Native.FsRectF
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFText_GetMatrix_System_IntPtr_System_Int32_nebulae_dotPDFium_Native_FsMatrix__
+  name: FPDFText_GetMatrix
+  nameWithType: PdfTextNative.FPDFText_GetMatrix
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFText_GetMatrix
+- uid: nebulae.dotPDFium.Native.FsMatrix
+  commentId: T:nebulae.dotPDFium.Native.FsMatrix
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsMatrix.html
+  name: FsMatrix
+  nameWithType: FsMatrix
+  fullName: nebulae.dotPDFium.Native.FsMatrix
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFLink_LoadWebLinks_System_IntPtr_
+  name: FPDFLink_LoadWebLinks
+  nameWithType: PdfTextNative.FPDFLink_LoadWebLinks
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_LoadWebLinks
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFLink_CountWebLinks_System_IntPtr_
+  name: FPDFLink_CountWebLinks
+  nameWithType: PdfTextNative.FPDFLink_CountWebLinks
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountWebLinks
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFLink_GetURL_System_IntPtr_System_Int32_System_IntPtr_System_Int32_
+  name: FPDFLink_GetURL
+  nameWithType: PdfTextNative.FPDFLink_GetURL
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetURL
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFLink_CountRects_System_IntPtr_System_Int32_
+  name: FPDFLink_CountRects
+  nameWithType: PdfTextNative.FPDFLink_CountRects
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CountRects
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFLink_GetRect_System_IntPtr_System_Int32_System_Int32_System_Double__System_Double__System_Double__System_Double__
+  name: FPDFLink_GetRect
+  nameWithType: PdfTextNative.FPDFLink_GetRect
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetRect
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFLink_GetTextRange_System_IntPtr_System_Int32_System_Int32__System_Int32__
+  name: FPDFLink_GetTextRange
+  nameWithType: PdfTextNative.FPDFLink_GetTextRange
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_GetTextRange
+- uid: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfTextNative.html#nebulae_dotPDFium_Native_PdfTextNative_FPDFLink_CloseWebLinks_System_IntPtr_
+  name: FPDFLink_CloseWebLinks
+  nameWithType: PdfTextNative.FPDFLink_CloseWebLinks
+  fullName: nebulae.dotPDFium.Native.PdfTextNative.FPDFLink_CloseWebLinks

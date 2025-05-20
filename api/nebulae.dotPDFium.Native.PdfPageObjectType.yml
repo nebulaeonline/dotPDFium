@@ -1,0 +1,260 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType
+  commentId: T:nebulae.dotPDFium.Native.PdfPageObjectType
+  id: PdfPageObjectType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfPageObjectType.Form
+  - nebulae.dotPDFium.Native.PdfPageObjectType.Image
+  - nebulae.dotPDFium.Native.PdfPageObjectType.Mark
+  - nebulae.dotPDFium.Native.PdfPageObjectType.Path
+  - nebulae.dotPDFium.Native.PdfPageObjectType.Shading
+  - nebulae.dotPDFium.Native.PdfPageObjectType.Text
+  - nebulae.dotPDFium.Native.PdfPageObjectType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PdfPageObjectType
+  nameWithType: PdfPageObjectType
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfPageObjectType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 13
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the type of an object on a PDF page.
+  remarks: >-
+    This enumeration is used to identify the category of a PDF page object, such as text, images, or
+        paths. It can be useful for processing or analyzing the content of a PDF document.
+  example: []
+  syntax:
+    content: public enum PdfPageObjectType
+    content.vb: Public Enum PdfPageObjectType
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.Native.PdfPageObjectType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PdfPageObjectType.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 15
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unknown = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageObjectType
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Text
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Text
+  id: Text
+  parent: nebulae.dotPDFium.Native.PdfPageObjectType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: PdfPageObjectType.Text
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Text
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Text
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 16
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Text = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageObjectType
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Path
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Path
+  id: Path
+  parent: nebulae.dotPDFium.Native.PdfPageObjectType
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: PdfPageObjectType.Path
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Path
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Path
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 17
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Path = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageObjectType
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Image
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Image
+  id: Image
+  parent: nebulae.dotPDFium.Native.PdfPageObjectType
+  langs:
+  - csharp
+  - vb
+  name: Image
+  nameWithType: PdfPageObjectType.Image
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Image
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Image
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 18
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Image = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageObjectType
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Shading
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Shading
+  id: Shading
+  parent: nebulae.dotPDFium.Native.PdfPageObjectType
+  langs:
+  - csharp
+  - vb
+  name: Shading
+  nameWithType: PdfPageObjectType.Shading
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Shading
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Shading
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 19
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Shading = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageObjectType
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Form
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Form
+  id: Form
+  parent: nebulae.dotPDFium.Native.PdfPageObjectType
+  langs:
+  - csharp
+  - vb
+  name: Form
+  nameWithType: PdfPageObjectType.Form
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Form
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Form
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 20
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Form = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageObjectType
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Mark
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Mark
+  id: Mark
+  parent: nebulae.dotPDFium.Native.PdfPageObjectType
+  langs:
+  - csharp
+  - vb
+  name: Mark
+  nameWithType: PdfPageObjectType.Mark
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Mark
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Mark
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 21
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Mark = 1000
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageObjectType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType
+  commentId: T:nebulae.dotPDFium.Native.PdfPageObjectType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfPageObjectType.html
+  name: PdfPageObjectType
+  nameWithType: PdfPageObjectType
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType

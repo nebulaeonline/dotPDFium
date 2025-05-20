@@ -1,0 +1,800 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Security.PdfSignature
+  commentId: T:nebulae.dotPDFium.Security.PdfSignature
+  id: PdfSignature
+  parent: nebulae.dotPDFium.Security
+  children:
+  - nebulae.dotPDFium.Security.PdfSignature.GetByteRange
+  - nebulae.dotPDFium.Security.PdfSignature.GetContents
+  - nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission
+  - nebulae.dotPDFium.Security.PdfSignature.GetReason
+  - nebulae.dotPDFium.Security.PdfSignature.GetSigningTime
+  - nebulae.dotPDFium.Security.PdfSignature.GetSubFilter
+  langs:
+  - csharp
+  - vb
+  name: PdfSignature
+  nameWithType: PdfSignature
+  fullName: nebulae.dotPDFium.Security.PdfSignature
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Security/PdfSignature.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfSignature
+    path: ../dotPDFium/dotPDFium/dotPDFium/Security/PdfSignature.cs
+    startLine: 12
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Security
+  summary: Represents a digital signature in a PDF document.
+  example: []
+  syntax:
+    content: 'public sealed class PdfSignature : PdfObject, IDisposable'
+    content.vb: Public NotInheritable Class PdfSignature Inherits PdfObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - nebulae.dotPDFium.PdfObject
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - nebulae.dotPDFium.PdfObject.Handle
+  - nebulae.dotPDFium.PdfObject.Type
+  - nebulae.dotPDFium.PdfObject.IsDisposed
+  - nebulae.dotPDFium.PdfObject.GetPDFiumError
+  - nebulae.dotPDFium.PdfObject.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetByteRange
+  commentId: M:nebulae.dotPDFium.Security.PdfSignature.GetByteRange
+  id: GetByteRange
+  parent: nebulae.dotPDFium.Security.PdfSignature
+  langs:
+  - csharp
+  - vb
+  name: GetByteRange()
+  nameWithType: PdfSignature.GetByteRange()
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetByteRange()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Security/PdfSignature.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetByteRange
+    path: ../dotPDFium/dotPDFium/dotPDFium/Security/PdfSignature.cs
+    startLine: 24
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Security
+  summary: >-
+    Gets the byte range used to compute the signature hash. This typically contains 4 integers:
+
+    start offset, length before signature, offset after signature, and length after.
+  example: []
+  syntax:
+    content: public IReadOnlyList<int> GetByteRange()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{System.Int32}
+      description: A list of signed byte range values, or empty if none are present.
+    content.vb: Public Function GetByteRange() As IReadOnlyList(Of Integer)
+  overload: nebulae.dotPDFium.Security.PdfSignature.GetByteRange*
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetContents
+  commentId: M:nebulae.dotPDFium.Security.PdfSignature.GetContents
+  id: GetContents
+  parent: nebulae.dotPDFium.Security.PdfSignature
+  langs:
+  - csharp
+  - vb
+  name: GetContents()
+  nameWithType: PdfSignature.GetContents()
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetContents()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Security/PdfSignature.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetContents
+    path: ../dotPDFium/dotPDFium/dotPDFium/Security/PdfSignature.cs
+    startLine: 43
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Security
+  summary: Gets the raw PKCS#7 signature contents as a DER-encoded binary blob.
+  example: []
+  syntax:
+    content: public byte[] GetContents()
+    return:
+      type: System.Byte[]
+      description: A <xref href="System.Byte" data-throw-if-not-resolved="false"></xref> array containing the raw signature data.
+    content.vb: Public Function GetContents() As Byte()
+  overload: nebulae.dotPDFium.Security.PdfSignature.GetContents*
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission
+  commentId: M:nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission
+  id: GetDocMDPPermission
+  parent: nebulae.dotPDFium.Security.PdfSignature
+  langs:
+  - csharp
+  - vb
+  name: GetDocMDPPermission()
+  nameWithType: PdfSignature.GetDocMDPPermission()
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Security/PdfSignature.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetDocMDPPermission
+    path: ../dotPDFium/dotPDFium/dotPDFium/Security/PdfSignature.cs
+    startLine: 70
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Security
+  summary: Gets the DocMDP permission level defined by this signature.
+  example: []
+  syntax:
+    content: public PdfDocMDPPermission GetDocMDPPermission()
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocMDPPermission
+      description: A <xref href="nebulae.dotPDFium.Native.PdfDocMDPPermission" data-throw-if-not-resolved="false"></xref> value indicating the allowed operations after signing.
+    content.vb: Public Function GetDocMDPPermission() As PdfDocMDPPermission
+  overload: nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission*
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetReason
+  commentId: M:nebulae.dotPDFium.Security.PdfSignature.GetReason
+  id: GetReason
+  parent: nebulae.dotPDFium.Security.PdfSignature
+  langs:
+  - csharp
+  - vb
+  name: GetReason()
+  nameWithType: PdfSignature.GetReason()
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetReason()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Security/PdfSignature.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetReason
+    path: ../dotPDFium/dotPDFium/dotPDFium/Security/PdfSignature.cs
+    startLine: 82
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Security
+  summary: Gets the human-readable reason string associated with the signature (if available).
+  example: []
+  syntax:
+    content: public string GetReason()
+    return:
+      type: System.String
+      description: The reason string provided by the signer, or an empty string if none.
+    content.vb: Public Function GetReason() As String
+  overload: nebulae.dotPDFium.Security.PdfSignature.GetReason*
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetSubFilter
+  commentId: M:nebulae.dotPDFium.Security.PdfSignature.GetSubFilter
+  id: GetSubFilter
+  parent: nebulae.dotPDFium.Security.PdfSignature
+  langs:
+  - csharp
+  - vb
+  name: GetSubFilter()
+  nameWithType: PdfSignature.GetSubFilter()
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetSubFilter()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Security/PdfSignature.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSubFilter
+    path: ../dotPDFium/dotPDFium/dotPDFium/Security/PdfSignature.cs
+    startLine: 101
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Security
+  summary: Gets the SubFilter string that specifies the encoding format of the signature (e.g. PKCS7, CAdES).
+  example: []
+  syntax:
+    content: public string GetSubFilter()
+    return:
+      type: System.String
+      description: The SubFilter string, or an empty string if not present.
+    content.vb: Public Function GetSubFilter() As String
+  overload: nebulae.dotPDFium.Security.PdfSignature.GetSubFilter*
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetSigningTime
+  commentId: M:nebulae.dotPDFium.Security.PdfSignature.GetSigningTime
+  id: GetSigningTime
+  parent: nebulae.dotPDFium.Security.PdfSignature
+  langs:
+  - csharp
+  - vb
+  name: GetSigningTime()
+  nameWithType: PdfSignature.GetSigningTime()
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetSigningTime()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/Security/PdfSignature.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSigningTime
+    path: ../dotPDFium/dotPDFium/dotPDFium/Security/PdfSignature.cs
+    startLine: 120
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Security
+  summary: Gets the timestamp string associated with the signature (typically from the /M field).
+  example: []
+  syntax:
+    content: public string GetSigningTime()
+    return:
+      type: System.String
+      description: A string containing the signing time, or an empty string if unavailable.
+    content.vb: Public Function GetSigningTime() As String
+  overload: nebulae.dotPDFium.Security.PdfSignature.GetSigningTime*
+references:
+- uid: nebulae.dotPDFium.Security
+  commentId: N:nebulae.dotPDFium.Security
+  href: nebulae.html
+  name: nebulae.dotPDFium.Security
+  nameWithType: nebulae.dotPDFium.Security
+  fullName: nebulae.dotPDFium.Security
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Security
+    name: Security
+    href: nebulae.dotPDFium.Security.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Security
+    name: Security
+    href: nebulae.dotPDFium.Security.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: nebulae.dotPDFium.PdfObject
+  commentId: T:nebulae.dotPDFium.PdfObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfObject.html
+  name: PdfObject
+  nameWithType: PdfObject
+  fullName: nebulae.dotPDFium.PdfObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: nebulae.dotPDFium.PdfObject.Handle
+  commentId: P:nebulae.dotPDFium.PdfObject.Handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Handle
+  name: Handle
+  nameWithType: PdfObject.Handle
+  fullName: nebulae.dotPDFium.PdfObject.Handle
+- uid: nebulae.dotPDFium.PdfObject.Type
+  commentId: P:nebulae.dotPDFium.PdfObject.Type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Type
+  name: Type
+  nameWithType: PdfObject.Type
+  fullName: nebulae.dotPDFium.PdfObject.Type
+- uid: nebulae.dotPDFium.PdfObject.IsDisposed
+  commentId: P:nebulae.dotPDFium.PdfObject.IsDisposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_IsDisposed
+  name: IsDisposed
+  nameWithType: PdfObject.IsDisposed
+  fullName: nebulae.dotPDFium.PdfObject.IsDisposed
+- uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+  commentId: M:nebulae.dotPDFium.PdfObject.GetPDFiumError
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  name: GetPDFiumError()
+  nameWithType: PdfObject.GetPDFiumError()
+  fullName: nebulae.dotPDFium.PdfObject.GetPDFiumError()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  name: Dispose()
+  nameWithType: PdfObject.Dispose()
+  fullName: nebulae.dotPDFium.PdfObject.Dispose()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetByteRange*
+  commentId: Overload:nebulae.dotPDFium.Security.PdfSignature.GetByteRange
+  href: nebulae.dotPDFium.Security.PdfSignature.html#nebulae_dotPDFium_Security_PdfSignature_GetByteRange
+  name: GetByteRange
+  nameWithType: PdfSignature.GetByteRange
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetByteRange
+- uid: System.Collections.Generic.IReadOnlyList{System.Int32}
+  commentId: T:System.Collections.Generic.IReadOnlyList{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<int>
+  nameWithType: IReadOnlyList<int>
+  fullName: System.Collections.Generic.IReadOnlyList<int>
+  nameWithType.vb: IReadOnlyList(Of Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Integer)
+  name.vb: IReadOnlyList(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetContents*
+  commentId: Overload:nebulae.dotPDFium.Security.PdfSignature.GetContents
+  href: nebulae.dotPDFium.Security.PdfSignature.html#nebulae_dotPDFium_Security_PdfSignature_GetContents
+  name: GetContents
+  nameWithType: PdfSignature.GetContents
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetContents
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.Native.PdfDocMDPPermission
+  commentId: T:nebulae.dotPDFium.Native.PdfDocMDPPermission
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfDocMDPPermission.html
+  name: PdfDocMDPPermission
+  nameWithType: PdfDocMDPPermission
+  fullName: nebulae.dotPDFium.Native.PdfDocMDPPermission
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission*
+  commentId: Overload:nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission
+  href: nebulae.dotPDFium.Security.PdfSignature.html#nebulae_dotPDFium_Security_PdfSignature_GetDocMDPPermission
+  name: GetDocMDPPermission
+  nameWithType: PdfSignature.GetDocMDPPermission
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetDocMDPPermission
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetReason*
+  commentId: Overload:nebulae.dotPDFium.Security.PdfSignature.GetReason
+  href: nebulae.dotPDFium.Security.PdfSignature.html#nebulae_dotPDFium_Security_PdfSignature_GetReason
+  name: GetReason
+  nameWithType: PdfSignature.GetReason
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetReason
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetSubFilter*
+  commentId: Overload:nebulae.dotPDFium.Security.PdfSignature.GetSubFilter
+  href: nebulae.dotPDFium.Security.PdfSignature.html#nebulae_dotPDFium_Security_PdfSignature_GetSubFilter
+  name: GetSubFilter
+  nameWithType: PdfSignature.GetSubFilter
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetSubFilter
+- uid: nebulae.dotPDFium.Security.PdfSignature.GetSigningTime*
+  commentId: Overload:nebulae.dotPDFium.Security.PdfSignature.GetSigningTime
+  href: nebulae.dotPDFium.Security.PdfSignature.html#nebulae_dotPDFium_Security_PdfSignature_GetSigningTime
+  name: GetSigningTime
+  nameWithType: PdfSignature.GetSigningTime
+  fullName: nebulae.dotPDFium.Security.PdfSignature.GetSigningTime

@@ -1,0 +1,126 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFlattenMode
+  commentId: T:nebulae.dotPDFium.Native.PdfFlattenMode
+  id: PdfFlattenMode
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay
+  - nebulae.dotPDFium.Native.PdfFlattenMode.Print
+  langs:
+  - csharp
+  - vb
+  name: PdfFlattenMode
+  nameWithType: PdfFlattenMode
+  fullName: nebulae.dotPDFium.Native.PdfFlattenMode
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFlattenMode
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 382
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the mode used to flatten a PDF document.
+  remarks: >-
+    Flattening a PDF refers to merging interactive elements, such as form fields or annotations,  into
+        the static content of the document. This enumeration defines the modes that control  how the flattening process is
+        applied.
+  example: []
+  syntax:
+    content: public enum PdfFlattenMode
+    content.vb: Public Enum PdfFlattenMode
+- uid: nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay
+  id: NormalDisplay
+  parent: nebulae.dotPDFium.Native.PdfFlattenMode
+  langs:
+  - csharp
+  - vb
+  name: NormalDisplay
+  nameWithType: PdfFlattenMode.NormalDisplay
+  fullName: nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NormalDisplay
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 384
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NormalDisplay = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFlattenMode
+- uid: nebulae.dotPDFium.Native.PdfFlattenMode.Print
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenMode.Print
+  id: Print
+  parent: nebulae.dotPDFium.Native.PdfFlattenMode
+  langs:
+  - csharp
+  - vb
+  name: Print
+  nameWithType: PdfFlattenMode.Print
+  fullName: nebulae.dotPDFium.Native.PdfFlattenMode.Print
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Print
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 385
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Print = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFlattenMode
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfFlattenMode
+  commentId: T:nebulae.dotPDFium.Native.PdfFlattenMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFlattenMode.html
+  name: PdfFlattenMode
+  nameWithType: PdfFlattenMode
+  fullName: nebulae.dotPDFium.Native.PdfFlattenMode

@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFillMode
+  commentId: T:nebulae.dotPDFium.Native.PdfFillMode
+  id: PdfFillMode
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFillMode.Alternate
+  - nebulae.dotPDFium.Native.PdfFillMode.None
+  - nebulae.dotPDFium.Native.PdfFillMode.Winding
+  langs:
+  - csharp
+  - vb
+  name: PdfFillMode
+  nameWithType: PdfFillMode
+  fullName: nebulae.dotPDFium.Native.PdfFillMode
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFillMode
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 43
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the fill mode to use when rendering paths in a PDF document.
+  remarks: >-
+    The fill mode determines how the interior of a path is defined when rendering shapes. Use <xref href="nebulae.dotPDFium.Native.PdfFillMode.None" data-throw-if-not-resolved="false"></xref> to disable filling, <xref href="nebulae.dotPDFium.Native.PdfFillMode.Alternate" data-throw-if-not-resolved="false"></xref> for the alternate fill rule, or <xref href="nebulae.dotPDFium.Native.PdfFillMode.Winding" data-throw-if-not-resolved="false"></xref> for
+        the nonzero winding number rule.
+  example: []
+  syntax:
+    content: public enum PdfFillMode
+    content.vb: Public Enum PdfFillMode
+- uid: nebulae.dotPDFium.Native.PdfFillMode.None
+  commentId: F:nebulae.dotPDFium.Native.PdfFillMode.None
+  id: None
+  parent: nebulae.dotPDFium.Native.PdfFillMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PdfFillMode.None
+  fullName: nebulae.dotPDFium.Native.PdfFillMode.None
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: None
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 45
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: None = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFillMode
+- uid: nebulae.dotPDFium.Native.PdfFillMode.Alternate
+  commentId: F:nebulae.dotPDFium.Native.PdfFillMode.Alternate
+  id: Alternate
+  parent: nebulae.dotPDFium.Native.PdfFillMode
+  langs:
+  - csharp
+  - vb
+  name: Alternate
+  nameWithType: PdfFillMode.Alternate
+  fullName: nebulae.dotPDFium.Native.PdfFillMode.Alternate
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Alternate
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 46
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Alternate = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFillMode
+- uid: nebulae.dotPDFium.Native.PdfFillMode.Winding
+  commentId: F:nebulae.dotPDFium.Native.PdfFillMode.Winding
+  id: Winding
+  parent: nebulae.dotPDFium.Native.PdfFillMode
+  langs:
+  - csharp
+  - vb
+  name: Winding
+  nameWithType: PdfFillMode.Winding
+  fullName: nebulae.dotPDFium.Native.PdfFillMode.Winding
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Winding
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 47
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Winding = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfFillMode
+references:
+- uid: nebulae.dotPDFium.Native.PdfFillMode.None
+  commentId: F:nebulae.dotPDFium.Native.PdfFillMode.None
+  href: nebulae.dotPDFium.Native.PdfFillMode.html#nebulae_dotPDFium_Native_PdfFillMode_None
+  name: None
+  nameWithType: PdfFillMode.None
+  fullName: nebulae.dotPDFium.Native.PdfFillMode.None
+- uid: nebulae.dotPDFium.Native.PdfFillMode.Alternate
+  commentId: F:nebulae.dotPDFium.Native.PdfFillMode.Alternate
+  href: nebulae.dotPDFium.Native.PdfFillMode.html#nebulae_dotPDFium_Native_PdfFillMode_Alternate
+  name: Alternate
+  nameWithType: PdfFillMode.Alternate
+  fullName: nebulae.dotPDFium.Native.PdfFillMode.Alternate
+- uid: nebulae.dotPDFium.Native.PdfFillMode.Winding
+  commentId: F:nebulae.dotPDFium.Native.PdfFillMode.Winding
+  href: nebulae.dotPDFium.Native.PdfFillMode.html#nebulae_dotPDFium_Native_PdfFillMode_Winding
+  name: Winding
+  nameWithType: PdfFillMode.Winding
+  fullName: nebulae.dotPDFium.Native.PdfFillMode.Winding
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfFillMode
+  commentId: T:nebulae.dotPDFium.Native.PdfFillMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFillMode.html
+  name: PdfFillMode
+  nameWithType: PdfFillMode
+  fullName: nebulae.dotPDFium.Native.PdfFillMode

@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfLineCapStyle
+  commentId: T:nebulae.dotPDFium.Native.PdfLineCapStyle
+  id: PdfLineCapStyle
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfLineCapStyle.Butt
+  - nebulae.dotPDFium.Native.PdfLineCapStyle.Round
+  - nebulae.dotPDFium.Native.PdfLineCapStyle.Square
+  langs:
+  - csharp
+  - vb
+  name: PdfLineCapStyle
+  nameWithType: PdfLineCapStyle
+  fullName: nebulae.dotPDFium.Native.PdfLineCapStyle
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfLineCapStyle
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 55
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the shape to be used at the ends of open paths when stroking a line in a PDF document.
+  remarks: >-
+    This enumeration defines the available line cap styles for stroking operations in PDF graphics. The
+        line cap determines how the end of a line is rendered when it does not connect to another line.
+  example: []
+  syntax:
+    content: public enum PdfLineCapStyle
+    content.vb: Public Enum PdfLineCapStyle
+- uid: nebulae.dotPDFium.Native.PdfLineCapStyle.Butt
+  commentId: F:nebulae.dotPDFium.Native.PdfLineCapStyle.Butt
+  id: Butt
+  parent: nebulae.dotPDFium.Native.PdfLineCapStyle
+  langs:
+  - csharp
+  - vb
+  name: Butt
+  nameWithType: PdfLineCapStyle.Butt
+  fullName: nebulae.dotPDFium.Native.PdfLineCapStyle.Butt
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Butt
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 57
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Butt = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfLineCapStyle
+- uid: nebulae.dotPDFium.Native.PdfLineCapStyle.Round
+  commentId: F:nebulae.dotPDFium.Native.PdfLineCapStyle.Round
+  id: Round
+  parent: nebulae.dotPDFium.Native.PdfLineCapStyle
+  langs:
+  - csharp
+  - vb
+  name: Round
+  nameWithType: PdfLineCapStyle.Round
+  fullName: nebulae.dotPDFium.Native.PdfLineCapStyle.Round
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Round
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 58
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Round = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfLineCapStyle
+- uid: nebulae.dotPDFium.Native.PdfLineCapStyle.Square
+  commentId: F:nebulae.dotPDFium.Native.PdfLineCapStyle.Square
+  id: Square
+  parent: nebulae.dotPDFium.Native.PdfLineCapStyle
+  langs:
+  - csharp
+  - vb
+  name: Square
+  nameWithType: PdfLineCapStyle.Square
+  fullName: nebulae.dotPDFium.Native.PdfLineCapStyle.Square
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Square
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 59
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Square = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfLineCapStyle
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfLineCapStyle
+  commentId: T:nebulae.dotPDFium.Native.PdfLineCapStyle
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfLineCapStyle.html
+  name: PdfLineCapStyle
+  nameWithType: PdfLineCapStyle
+  fullName: nebulae.dotPDFium.Native.PdfLineCapStyle

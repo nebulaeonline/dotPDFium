@@ -1,0 +1,571 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfBookmark
+  commentId: T:nebulae.dotPDFium.PdfBookmark
+  id: PdfBookmark
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfBookmark.GetAction
+  - nebulae.dotPDFium.PdfBookmark.GetChildCount
+  - nebulae.dotPDFium.PdfBookmark.GetDestination
+  - nebulae.dotPDFium.PdfBookmark.GetFirstChild
+  - nebulae.dotPDFium.PdfBookmark.GetNextSibling
+  - nebulae.dotPDFium.PdfBookmark.Title
+  langs:
+  - csharp
+  - vb
+  name: PdfBookmark
+  nameWithType: PdfBookmark
+  fullName: nebulae.dotPDFium.PdfBookmark
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfBookmark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfBookmark
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfBookmark.cs
+    startLine: 11
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Represents a bookmark in a PDF document, providing access to its title, hierarchical structure,  and associated
+
+    actions or destinations.
+  remarks: >-
+    A <xref href="nebulae.dotPDFium.PdfBookmark" data-throw-if-not-resolved="false"></xref> allows navigation through the bookmark hierarchy of a PDF document.  It
+        provides methods to retrieve child bookmarks, sibling bookmarks, and associated actions or  destinations. Bookmarks
+        are typically used to represent a table of contents or navigation points  within a PDF document.
+  example: []
+  syntax:
+    content: public sealed class PdfBookmark
+    content.vb: Public NotInheritable Class PdfBookmark
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfBookmark.Title
+  commentId: P:nebulae.dotPDFium.PdfBookmark.Title
+  id: Title
+  parent: nebulae.dotPDFium.PdfBookmark
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: PdfBookmark.Title
+  fullName: nebulae.dotPDFium.PdfBookmark.Title
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfBookmark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Title
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfBookmark.cs
+    startLine: 30
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the title of the bookmark represented by this instance.
+  example: []
+  syntax:
+    content: public string Title { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Title As String
+  overload: nebulae.dotPDFium.PdfBookmark.Title*
+- uid: nebulae.dotPDFium.PdfBookmark.GetChildCount
+  commentId: M:nebulae.dotPDFium.PdfBookmark.GetChildCount
+  id: GetChildCount
+  parent: nebulae.dotPDFium.PdfBookmark
+  langs:
+  - csharp
+  - vb
+  name: GetChildCount()
+  nameWithType: PdfBookmark.GetChildCount()
+  fullName: nebulae.dotPDFium.PdfBookmark.GetChildCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfBookmark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetChildCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfBookmark.cs
+    startLine: 51
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the number of child bookmarks associated with the current bookmark.
+  remarks: >-
+    Use this method to determine the number of child bookmarks for a given bookmark in a PDF
+        document. This can be useful for navigating or processing hierarchical bookmark structures.
+  example: []
+  syntax:
+    content: public int GetChildCount()
+    return:
+      type: System.Int32
+      description: The number of child bookmarks. Returns 0 if the current bookmark has no children.
+    content.vb: Public Function GetChildCount() As Integer
+  overload: nebulae.dotPDFium.PdfBookmark.GetChildCount*
+- uid: nebulae.dotPDFium.PdfBookmark.GetFirstChild
+  commentId: M:nebulae.dotPDFium.PdfBookmark.GetFirstChild
+  id: GetFirstChild
+  parent: nebulae.dotPDFium.PdfBookmark
+  langs:
+  - csharp
+  - vb
+  name: GetFirstChild()
+  nameWithType: PdfBookmark.GetFirstChild()
+  fullName: nebulae.dotPDFium.PdfBookmark.GetFirstChild()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfBookmark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFirstChild
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfBookmark.cs
+    startLine: 63
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the first child bookmark of the current bookmark.
+  remarks: >-
+    Use this method to navigate the hierarchy of bookmarks in a PDF document. If the current
+        bookmark has no child bookmarks, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfBookmark? GetFirstChild()
+    return:
+      type: nebulae.dotPDFium.PdfBookmark
+      description: >-
+        A <xref href="nebulae.dotPDFium.PdfBookmark" data-throw-if-not-resolved="false"></xref> representing the first child bookmark, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the current
+            bookmark has no children.
+    content.vb: Public Function GetFirstChild() As PdfBookmark
+  overload: nebulae.dotPDFium.PdfBookmark.GetFirstChild*
+- uid: nebulae.dotPDFium.PdfBookmark.GetNextSibling
+  commentId: M:nebulae.dotPDFium.PdfBookmark.GetNextSibling
+  id: GetNextSibling
+  parent: nebulae.dotPDFium.PdfBookmark
+  langs:
+  - csharp
+  - vb
+  name: GetNextSibling()
+  nameWithType: PdfBookmark.GetNextSibling()
+  fullName: nebulae.dotPDFium.PdfBookmark.GetNextSibling()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfBookmark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetNextSibling
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfBookmark.cs
+    startLine: 76
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the next sibling of the current bookmark in the document's bookmark hierarchy.
+  remarks: >-
+    This method navigates the bookmark hierarchy of the PDF document. If the current bookmark is
+        the last sibling in its level, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfBookmark? GetNextSibling()
+    return:
+      type: nebulae.dotPDFium.PdfBookmark
+      description: A <xref href="nebulae.dotPDFium.PdfBookmark" data-throw-if-not-resolved="false"></xref> object representing the next sibling of the current bookmark, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if there is no next sibling.
+    content.vb: Public Function GetNextSibling() As PdfBookmark
+  overload: nebulae.dotPDFium.PdfBookmark.GetNextSibling*
+- uid: nebulae.dotPDFium.PdfBookmark.GetDestination
+  commentId: M:nebulae.dotPDFium.PdfBookmark.GetDestination
+  id: GetDestination
+  parent: nebulae.dotPDFium.PdfBookmark
+  langs:
+  - csharp
+  - vb
+  name: GetDestination()
+  nameWithType: PdfBookmark.GetDestination()
+  fullName: nebulae.dotPDFium.PdfBookmark.GetDestination()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfBookmark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetDestination
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfBookmark.cs
+    startLine: 90
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the destination associated with the current bookmark.
+  remarks: >-
+    The destination provides information about the location or view in the PDF document  that the
+        bookmark points to. If the bookmark does not have an associated destination,  the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfDestination? GetDestination()
+    return:
+      type: nebulae.dotPDFium.PdfDestination
+      description: A <xref href="nebulae.dotPDFium.PdfDestination" data-throw-if-not-resolved="false"></xref> object representing the destination linked to the bookmark,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no destination is associated.
+    content.vb: Public Function GetDestination() As PdfDestination
+  overload: nebulae.dotPDFium.PdfBookmark.GetDestination*
+- uid: nebulae.dotPDFium.PdfBookmark.GetAction
+  commentId: M:nebulae.dotPDFium.PdfBookmark.GetAction
+  id: GetAction
+  parent: nebulae.dotPDFium.PdfBookmark
+  langs:
+  - csharp
+  - vb
+  name: GetAction()
+  nameWithType: PdfBookmark.GetAction()
+  fullName: nebulae.dotPDFium.PdfBookmark.GetAction()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfBookmark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAction
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfBookmark.cs
+    startLine: 104
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the action associated with the current PDF bookmark, if one exists.
+  remarks: >-
+    Use this method to obtain the action linked to a bookmark in a PDF document, such as 
+        navigating to a specific page or executing a script. If the bookmark does not have an  associated action, the
+        method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfAction? GetAction()
+    return:
+      type: nebulae.dotPDFium.PdfAction
+      description: A <xref href="nebulae.dotPDFium.PdfAction" data-throw-if-not-resolved="false"></xref> object representing the action associated with the bookmark,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no action is associated.
+    content.vb: Public Function GetAction() As PdfAction
+  overload: nebulae.dotPDFium.PdfBookmark.GetAction*
+references:
+- uid: nebulae.dotPDFium.PdfBookmark
+  commentId: T:nebulae.dotPDFium.PdfBookmark
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfBookmark.html
+  name: PdfBookmark
+  nameWithType: PdfBookmark
+  fullName: nebulae.dotPDFium.PdfBookmark
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfBookmark.Title*
+  commentId: Overload:nebulae.dotPDFium.PdfBookmark.Title
+  href: nebulae.dotPDFium.PdfBookmark.html#nebulae_dotPDFium_PdfBookmark_Title
+  name: Title
+  nameWithType: PdfBookmark.Title
+  fullName: nebulae.dotPDFium.PdfBookmark.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.PdfBookmark.GetChildCount*
+  commentId: Overload:nebulae.dotPDFium.PdfBookmark.GetChildCount
+  href: nebulae.dotPDFium.PdfBookmark.html#nebulae_dotPDFium_PdfBookmark_GetChildCount
+  name: GetChildCount
+  nameWithType: PdfBookmark.GetChildCount
+  fullName: nebulae.dotPDFium.PdfBookmark.GetChildCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.PdfBookmark.GetFirstChild*
+  commentId: Overload:nebulae.dotPDFium.PdfBookmark.GetFirstChild
+  href: nebulae.dotPDFium.PdfBookmark.html#nebulae_dotPDFium_PdfBookmark_GetFirstChild
+  name: GetFirstChild
+  nameWithType: PdfBookmark.GetFirstChild
+  fullName: nebulae.dotPDFium.PdfBookmark.GetFirstChild
+- uid: nebulae.dotPDFium.PdfBookmark.GetNextSibling*
+  commentId: Overload:nebulae.dotPDFium.PdfBookmark.GetNextSibling
+  href: nebulae.dotPDFium.PdfBookmark.html#nebulae_dotPDFium_PdfBookmark_GetNextSibling
+  name: GetNextSibling
+  nameWithType: PdfBookmark.GetNextSibling
+  fullName: nebulae.dotPDFium.PdfBookmark.GetNextSibling
+- uid: nebulae.dotPDFium.PdfDestination
+  commentId: T:nebulae.dotPDFium.PdfDestination
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfDestination.html
+  name: PdfDestination
+  nameWithType: PdfDestination
+  fullName: nebulae.dotPDFium.PdfDestination
+- uid: nebulae.dotPDFium.PdfBookmark.GetDestination*
+  commentId: Overload:nebulae.dotPDFium.PdfBookmark.GetDestination
+  href: nebulae.dotPDFium.PdfBookmark.html#nebulae_dotPDFium_PdfBookmark_GetDestination
+  name: GetDestination
+  nameWithType: PdfBookmark.GetDestination
+  fullName: nebulae.dotPDFium.PdfBookmark.GetDestination
+- uid: nebulae.dotPDFium.PdfAction
+  commentId: T:nebulae.dotPDFium.PdfAction
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfAction.html
+  name: PdfAction
+  nameWithType: PdfAction
+  fullName: nebulae.dotPDFium.PdfAction
+- uid: nebulae.dotPDFium.PdfBookmark.GetAction*
+  commentId: Overload:nebulae.dotPDFium.PdfBookmark.GetAction
+  href: nebulae.dotPDFium.PdfBookmark.html#nebulae_dotPDFium_PdfBookmark_GetAction
+  name: GetAction
+  nameWithType: PdfBookmark.GetAction
+  fullName: nebulae.dotPDFium.PdfBookmark.GetAction

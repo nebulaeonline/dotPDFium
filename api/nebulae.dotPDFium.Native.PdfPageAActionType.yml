@@ -1,0 +1,125 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfPageAActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfPageAActionType
+  id: PdfPageAActionType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfPageAActionType.Close
+  - nebulae.dotPDFium.Native.PdfPageAActionType.Open
+  langs:
+  - csharp
+  - vb
+  name: PdfPageAActionType
+  nameWithType: PdfPageAActionType
+  fullName: nebulae.dotPDFium.Native.PdfPageAActionType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfPageAActionType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 438
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the types of actions that can be performed on a PDF page.
+  remarks: >-
+    This enumeration is used to indicate whether an action should occur when a PDF page is opened or
+        closed.
+  example: []
+  syntax:
+    content: public enum PdfPageAActionType
+    content.vb: Public Enum PdfPageAActionType
+- uid: nebulae.dotPDFium.Native.PdfPageAActionType.Open
+  commentId: F:nebulae.dotPDFium.Native.PdfPageAActionType.Open
+  id: Open
+  parent: nebulae.dotPDFium.Native.PdfPageAActionType
+  langs:
+  - csharp
+  - vb
+  name: Open
+  nameWithType: PdfPageAActionType.Open
+  fullName: nebulae.dotPDFium.Native.PdfPageAActionType.Open
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Open
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 440
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Open = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageAActionType
+- uid: nebulae.dotPDFium.Native.PdfPageAActionType.Close
+  commentId: F:nebulae.dotPDFium.Native.PdfPageAActionType.Close
+  id: Close
+  parent: nebulae.dotPDFium.Native.PdfPageAActionType
+  langs:
+  - csharp
+  - vb
+  name: Close
+  nameWithType: PdfPageAActionType.Close
+  fullName: nebulae.dotPDFium.Native.PdfPageAActionType.Close
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Close
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 441
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Close = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageAActionType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfPageAActionType
+  commentId: T:nebulae.dotPDFium.Native.PdfPageAActionType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfPageAActionType.html
+  name: PdfPageAActionType
+  nameWithType: PdfPageAActionType
+  fullName: nebulae.dotPDFium.Native.PdfPageAActionType

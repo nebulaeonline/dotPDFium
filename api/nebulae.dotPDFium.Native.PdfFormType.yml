@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFormType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormType
+  id: PdfFormType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFormType.AcroForm
+  - nebulae.dotPDFium.Native.PdfFormType.None
+  - nebulae.dotPDFium.Native.PdfFormType.XfaForeground
+  - nebulae.dotPDFium.Native.PdfFormType.XfaFull
+  langs:
+  - csharp
+  - vb
+  name: PdfFormType
+  nameWithType: PdfFormType
+  fullName: nebulae.dotPDFium.Native.PdfFormType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFormType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 393
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the type of form contained within a PDF document.
+  remarks: >-
+    This enumeration is used to identify the form type in a PDF file, which can influence how the form is
+        processed or rendered.
+  example: []
+  syntax:
+    content: public enum PdfFormType
+    content.vb: Public Enum PdfFormType
+- uid: nebulae.dotPDFium.Native.PdfFormType.None
+  commentId: F:nebulae.dotPDFium.Native.PdfFormType.None
+  id: None
+  parent: nebulae.dotPDFium.Native.PdfFormType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PdfFormType.None
+  fullName: nebulae.dotPDFium.Native.PdfFormType.None
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: None
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 395
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: None = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormType
+- uid: nebulae.dotPDFium.Native.PdfFormType.AcroForm
+  commentId: F:nebulae.dotPDFium.Native.PdfFormType.AcroForm
+  id: AcroForm
+  parent: nebulae.dotPDFium.Native.PdfFormType
+  langs:
+  - csharp
+  - vb
+  name: AcroForm
+  nameWithType: PdfFormType.AcroForm
+  fullName: nebulae.dotPDFium.Native.PdfFormType.AcroForm
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AcroForm
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 396
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: AcroForm = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormType
+- uid: nebulae.dotPDFium.Native.PdfFormType.XfaFull
+  commentId: F:nebulae.dotPDFium.Native.PdfFormType.XfaFull
+  id: XfaFull
+  parent: nebulae.dotPDFium.Native.PdfFormType
+  langs:
+  - csharp
+  - vb
+  name: XfaFull
+  nameWithType: PdfFormType.XfaFull
+  fullName: nebulae.dotPDFium.Native.PdfFormType.XfaFull
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: XfaFull
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 397
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: XfaFull = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormType
+- uid: nebulae.dotPDFium.Native.PdfFormType.XfaForeground
+  commentId: F:nebulae.dotPDFium.Native.PdfFormType.XfaForeground
+  id: XfaForeground
+  parent: nebulae.dotPDFium.Native.PdfFormType
+  langs:
+  - csharp
+  - vb
+  name: XfaForeground
+  nameWithType: PdfFormType.XfaForeground
+  fullName: nebulae.dotPDFium.Native.PdfFormType.XfaForeground
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: XfaForeground
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 398
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: XfaForeground = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfFormType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFormType.html
+  name: PdfFormType
+  nameWithType: PdfFormType
+  fullName: nebulae.dotPDFium.Native.PdfFormType

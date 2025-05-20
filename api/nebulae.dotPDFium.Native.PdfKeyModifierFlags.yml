@@ -1,0 +1,366 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  id: PdfKeyModifierFlags
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.AltKey
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.AutoRepeat
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.ControlKey
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.KeyPad
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.LeftButtonDown
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.MetaKey
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.MiddleButtonDown
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.None
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.RightButtonDown
+  - nebulae.dotPDFium.Native.PdfKeyModifierFlags.ShiftKey
+  langs:
+  - csharp
+  - vb
+  name: PdfKeyModifierFlags
+  nameWithType: PdfKeyModifierFlags
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfKeyModifierFlags
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 478
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies modifier flags that represent the state of keys or mouse buttons during a PDF-related input event.
+  remarks: >-
+    This enumeration supports bitwise combination of its values due to the <xref href="System.FlagsAttribute" data-throw-if-not-resolved="false"></xref>.
+        Use these flags to determine which modifier keys or mouse buttons were active during an input event.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum PdfKeyModifierFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum PdfKeyModifierFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.None
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.None
+  id: None
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PdfKeyModifierFlags.None
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.None
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: None
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 481
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: None = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.ShiftKey
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.ShiftKey
+  id: ShiftKey
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: ShiftKey
+  nameWithType: PdfKeyModifierFlags.ShiftKey
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.ShiftKey
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ShiftKey
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 482
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ShiftKey = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.ControlKey
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.ControlKey
+  id: ControlKey
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: ControlKey
+  nameWithType: PdfKeyModifierFlags.ControlKey
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.ControlKey
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ControlKey
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 483
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ControlKey = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.AltKey
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.AltKey
+  id: AltKey
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: AltKey
+  nameWithType: PdfKeyModifierFlags.AltKey
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.AltKey
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AltKey
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 484
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: AltKey = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.MetaKey
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.MetaKey
+  id: MetaKey
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: MetaKey
+  nameWithType: PdfKeyModifierFlags.MetaKey
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.MetaKey
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: MetaKey
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 485
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: MetaKey = 8
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.KeyPad
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.KeyPad
+  id: KeyPad
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: KeyPad
+  nameWithType: PdfKeyModifierFlags.KeyPad
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.KeyPad
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: KeyPad
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 486
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: KeyPad = 16
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.AutoRepeat
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.AutoRepeat
+  id: AutoRepeat
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: AutoRepeat
+  nameWithType: PdfKeyModifierFlags.AutoRepeat
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.AutoRepeat
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AutoRepeat
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 487
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: AutoRepeat = 32
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.LeftButtonDown
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.LeftButtonDown
+  id: LeftButtonDown
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: LeftButtonDown
+  nameWithType: PdfKeyModifierFlags.LeftButtonDown
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.LeftButtonDown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LeftButtonDown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 488
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: LeftButtonDown = 64
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.MiddleButtonDown
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.MiddleButtonDown
+  id: MiddleButtonDown
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: MiddleButtonDown
+  nameWithType: PdfKeyModifierFlags.MiddleButtonDown
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.MiddleButtonDown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: MiddleButtonDown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 489
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: MiddleButtonDown = 128
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags.RightButtonDown
+  commentId: F:nebulae.dotPDFium.Native.PdfKeyModifierFlags.RightButtonDown
+  id: RightButtonDown
+  parent: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  langs:
+  - csharp
+  - vb
+  name: RightButtonDown
+  nameWithType: PdfKeyModifierFlags.RightButtonDown
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags.RightButtonDown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RightButtonDown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 490
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: RightButtonDown = 256
+    return:
+      type: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+references:
+- uid: System.FlagsAttribute
+  commentId: T:System.FlagsAttribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.flagsattribute
+  name: FlagsAttribute
+  nameWithType: FlagsAttribute
+  fullName: System.FlagsAttribute
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfKeyModifierFlags
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfKeyModifierFlags.html
+  name: PdfKeyModifierFlags
+  nameWithType: PdfKeyModifierFlags
+  fullName: nebulae.dotPDFium.Native.PdfKeyModifierFlags

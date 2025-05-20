@@ -1,0 +1,1081 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfMark
+  commentId: T:nebulae.dotPDFium.PdfMark
+  id: PdfMark
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfMark.GetBlobValue(System.String)
+  - nebulae.dotPDFium.PdfMark.GetIntValue(System.String)
+  - nebulae.dotPDFium.PdfMark.GetParamKeys
+  - nebulae.dotPDFium.PdfMark.GetParamType(System.String)
+  - nebulae.dotPDFium.PdfMark.GetStringValue(System.String)
+  - nebulae.dotPDFium.PdfMark.Name
+  - nebulae.dotPDFium.PdfMark.ParameterCount
+  - nebulae.dotPDFium.PdfMark.RemoveParam(nebulae.dotPDFium.PdfPageObject,System.String)
+  - nebulae.dotPDFium.PdfMark.SetBlobParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Byte[])
+  - nebulae.dotPDFium.PdfMark.SetIntParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Int32)
+  - nebulae.dotPDFium.PdfMark.SetStringParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: PdfMark
+  nameWithType: PdfMark
+  fullName: nebulae.dotPDFium.PdfMark
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfMark
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 9
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Represents a semantic mark attached to a page object, such as accessibility or structure metadata.
+  example: []
+  syntax:
+    content: public sealed class PdfMark
+    content.vb: Public NotInheritable Class PdfMark
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfMark.Name
+  commentId: P:nebulae.dotPDFium.PdfMark.Name
+  id: Name
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PdfMark.Name
+  fullName: nebulae.dotPDFium.PdfMark.Name
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Name
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 29
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the name associated with the current PDF page object mark.
+  remarks: >-
+    This property retrieves the name of the mark associated with the PDF page object.  If the
+        name cannot be determined, an empty string is returned.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: nebulae.dotPDFium.PdfMark.Name*
+- uid: nebulae.dotPDFium.PdfMark.ParameterCount
+  commentId: P:nebulae.dotPDFium.PdfMark.ParameterCount
+  id: ParameterCount
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: ParameterCount
+  nameWithType: PdfMark.ParameterCount
+  fullName: nebulae.dotPDFium.PdfMark.ParameterCount
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ParameterCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 57
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the number of parameters associated with the current PDF page object mark.
+  remarks: >-
+    This property retrieves the number of parameters defined for the mark associated with the PDF
+        page object. It can be used to iterate through or inspect the parameters of the mark.
+  example: []
+  syntax:
+    content: public int ParameterCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property ParameterCount As Integer
+  overload: nebulae.dotPDFium.PdfMark.ParameterCount*
+- uid: nebulae.dotPDFium.PdfMark.GetParamKeys
+  commentId: M:nebulae.dotPDFium.PdfMark.GetParamKeys
+  id: GetParamKeys
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: GetParamKeys()
+  nameWithType: PdfMark.GetParamKeys()
+  fullName: nebulae.dotPDFium.PdfMark.GetParamKeys()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetParamKeys
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 67
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the keys of all parameters associated with the current page object mark.
+  remarks: >-
+    This method enumerates the parameter keys for the page object mark represented by the current
+        instance. The keys are returned as UTF-8 encoded strings. If a key cannot be retrieved, an empty string is
+        returned for that key.
+  example: []
+  syntax:
+    content: public IEnumerable<string> GetParamKeys()
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of strings containing the parameter keys. The collection will be empty if no
+            parameters are associated with the page object mark.
+    content.vb: Public Function GetParamKeys() As IEnumerable(Of String)
+  overload: nebulae.dotPDFium.PdfMark.GetParamKeys*
+- uid: nebulae.dotPDFium.PdfMark.GetParamType(System.String)
+  commentId: M:nebulae.dotPDFium.PdfMark.GetParamType(System.String)
+  id: GetParamType(System.String)
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: GetParamType(string)
+  nameWithType: PdfMark.GetParamType(string)
+  fullName: nebulae.dotPDFium.PdfMark.GetParamType(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetParamType
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 84
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the parameter type associated with the specified key in the PDF mark.
+  remarks: >-
+    This method queries the underlying PDF object to determine the type of the parameter
+        associated with the given key. Ensure that the key exists in the PDF mark to avoid unexpected results.
+  example: []
+  syntax:
+    content: public PdfMarkParamType GetParamType(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key identifying the parameter whose type is to be retrieved. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: nebulae.dotPDFium.Native.PdfMarkParamType
+      description: The <xref href="nebulae.dotPDFium.Native.PdfMarkParamType" data-throw-if-not-resolved="false"></xref> representing the type of the parameter associated with the specified key.
+    content.vb: Public Function GetParamType(key As String) As PdfMarkParamType
+  overload: nebulae.dotPDFium.PdfMark.GetParamType*
+  nameWithType.vb: PdfMark.GetParamType(String)
+  fullName.vb: nebulae.dotPDFium.PdfMark.GetParamType(String)
+  name.vb: GetParamType(String)
+- uid: nebulae.dotPDFium.PdfMark.GetIntValue(System.String)
+  commentId: M:nebulae.dotPDFium.PdfMark.GetIntValue(System.String)
+  id: GetIntValue(System.String)
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: GetIntValue(string)
+  nameWithType: PdfMark.GetIntValue(string)
+  fullName: nebulae.dotPDFium.PdfMark.GetIntValue(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetIntValue
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 96
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the integer value associated with the specified key from the underlying object.
+  example: []
+  syntax:
+    content: public int? GetIntValue(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: >-
+        The key identifying the parameter whose integer value is to be retrieved. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or
+            empty.
+    return:
+      type: System.Nullable{System.Int32}
+      description: >-
+        The integer value associated with the specified key, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the key does not exist or the
+            value cannot be retrieved.
+    content.vb: Public Function GetIntValue(key As String) As Integer?
+  overload: nebulae.dotPDFium.PdfMark.GetIntValue*
+  nameWithType.vb: PdfMark.GetIntValue(String)
+  fullName.vb: nebulae.dotPDFium.PdfMark.GetIntValue(String)
+  name.vb: GetIntValue(String)
+- uid: nebulae.dotPDFium.PdfMark.SetIntParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfMark.SetIntParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Int32)
+  id: SetIntParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Int32)
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: SetIntParam(PdfDocument, PdfPageObject, string, int)
+  nameWithType: PdfMark.SetIntParam(PdfDocument, PdfPageObject, string, int)
+  fullName: nebulae.dotPDFium.PdfMark.SetIntParam(nebulae.dotPDFium.PdfDocument, nebulae.dotPDFium.PdfPageObject, string, int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetIntParam
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 114
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets an integer parameter on a mark associated with a PDF page object.
+  remarks: >-
+    This method modifies the metadata of a mark associated with a PDF page object by setting an
+        integer parameter. Ensure that the <code class="paramref">key</code> is valid and that the <code class="paramref">doc</code> and
+        <code class="paramref">obj</code>  are properly initialized before calling this method.
+  example: []
+  syntax:
+    content: public void SetIntParam(PdfDocument doc, PdfPageObject obj, string key, int value)
+    parameters:
+    - id: doc
+      type: nebulae.dotPDFium.PdfDocument
+      description: The <xref href="nebulae.dotPDFium.PdfDocument" data-throw-if-not-resolved="false"></xref> containing the page object.
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> to which the mark is associated.
+    - id: key
+      type: System.String
+      description: The key identifying the parameter to set. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    - id: value
+      type: System.Int32
+      description: The integer value to assign to the specified parameter.
+    content.vb: Public Sub SetIntParam(doc As PdfDocument, obj As PdfPageObject, key As String, value As Integer)
+  overload: nebulae.dotPDFium.PdfMark.SetIntParam*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails to set the integer parameter for the specified key.
+  nameWithType.vb: PdfMark.SetIntParam(PdfDocument, PdfPageObject, String, Integer)
+  fullName.vb: nebulae.dotPDFium.PdfMark.SetIntParam(nebulae.dotPDFium.PdfDocument, nebulae.dotPDFium.PdfPageObject, String, Integer)
+  name.vb: SetIntParam(PdfDocument, PdfPageObject, String, Integer)
+- uid: nebulae.dotPDFium.PdfMark.GetStringValue(System.String)
+  commentId: M:nebulae.dotPDFium.PdfMark.GetStringValue(System.String)
+  id: GetStringValue(System.String)
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: GetStringValue(string)
+  nameWithType: PdfMark.GetStringValue(string)
+  fullName: nebulae.dotPDFium.PdfMark.GetStringValue(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetStringValue
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 127
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the string value associated with the specified key from the PDF page object mark.
+  example: []
+  syntax:
+    content: public string? GetStringValue(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: >-
+        The key identifying the parameter whose string value is to be retrieved. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or
+            empty.
+    return:
+      type: System.String
+      description: >-
+        The string value associated with the specified key, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the key does not exist or the
+            value cannot be retrieved.
+    content.vb: Public Function GetStringValue(key As String) As String
+  overload: nebulae.dotPDFium.PdfMark.GetStringValue*
+  nameWithType.vb: PdfMark.GetStringValue(String)
+  fullName.vb: nebulae.dotPDFium.PdfMark.GetStringValue(String)
+  name.vb: GetStringValue(String)
+- uid: nebulae.dotPDFium.PdfMark.SetStringParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.String)
+  commentId: M:nebulae.dotPDFium.PdfMark.SetStringParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.String)
+  id: SetStringParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.String)
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: SetStringParam(PdfDocument, PdfPageObject, string, string)
+  nameWithType: PdfMark.SetStringParam(PdfDocument, PdfPageObject, string, string)
+  fullName: nebulae.dotPDFium.PdfMark.SetStringParam(nebulae.dotPDFium.PdfDocument, nebulae.dotPDFium.PdfPageObject, string, string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetStringParam
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 141
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets a string parameter on a mark associated with a PDF page object.
+  example: []
+  syntax:
+    content: public void SetStringParam(PdfDocument doc, PdfPageObject obj, string key, string value)
+    parameters:
+    - id: doc
+      type: nebulae.dotPDFium.PdfDocument
+      description: The <xref href="nebulae.dotPDFium.PdfDocument" data-throw-if-not-resolved="false"></xref> containing the page object.
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> to which the mark is associated.
+    - id: key
+      type: System.String
+      description: The key identifying the parameter to set. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    - id: value
+      type: System.String
+      description: The string value to assign to the parameter. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Sub SetStringParam(doc As PdfDocument, obj As PdfPageObject, key As String, value As String)
+  overload: nebulae.dotPDFium.PdfMark.SetStringParam*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails to set the string parameter.
+  nameWithType.vb: PdfMark.SetStringParam(PdfDocument, PdfPageObject, String, String)
+  fullName.vb: nebulae.dotPDFium.PdfMark.SetStringParam(nebulae.dotPDFium.PdfDocument, nebulae.dotPDFium.PdfPageObject, String, String)
+  name.vb: SetStringParam(PdfDocument, PdfPageObject, String, String)
+- uid: nebulae.dotPDFium.PdfMark.GetBlobValue(System.String)
+  commentId: M:nebulae.dotPDFium.PdfMark.GetBlobValue(System.String)
+  id: GetBlobValue(System.String)
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: GetBlobValue(string)
+  nameWithType: PdfMark.GetBlobValue(string)
+  fullName: nebulae.dotPDFium.PdfMark.GetBlobValue(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetBlobValue
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 155
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the binary data (blob) associated with the specified key.
+  remarks: >-
+    This method attempts to retrieve binary data associated with the given key. If the key is not
+        found or the blob value is empty, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public byte[]? GetBlobValue(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key identifying the blob value to retrieve. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: System.Byte[]
+      description: >-
+        A byte array containing the blob value associated with the specified key, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the key
+            does not exist or the blob value is empty.
+    content.vb: Public Function GetBlobValue(key As String) As Byte()
+  overload: nebulae.dotPDFium.PdfMark.GetBlobValue*
+  nameWithType.vb: PdfMark.GetBlobValue(String)
+  fullName.vb: nebulae.dotPDFium.PdfMark.GetBlobValue(String)
+  name.vb: GetBlobValue(String)
+- uid: nebulae.dotPDFium.PdfMark.SetBlobParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Byte[])
+  commentId: M:nebulae.dotPDFium.PdfMark.SetBlobParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Byte[])
+  id: SetBlobParam(nebulae.dotPDFium.PdfDocument,nebulae.dotPDFium.PdfPageObject,System.String,System.Byte[])
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: SetBlobParam(PdfDocument, PdfPageObject, string, byte[])
+  nameWithType: PdfMark.SetBlobParam(PdfDocument, PdfPageObject, string, byte[])
+  fullName: nebulae.dotPDFium.PdfMark.SetBlobParam(nebulae.dotPDFium.PdfDocument, nebulae.dotPDFium.PdfPageObject, string, byte[])
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetBlobParam
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 179
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets a blob parameter on a specified mark within a PDF page object.
+  remarks: >-
+    This method associates binary data with a specific key on a mark within a PDF page object.
+        The operation will fail if the underlying PDF library cannot set the parameter.
+  example: []
+  syntax:
+    content: public void SetBlobParam(PdfDocument doc, PdfPageObject obj, string key, byte[] data)
+    parameters:
+    - id: doc
+      type: nebulae.dotPDFium.PdfDocument
+      description: The <xref href="nebulae.dotPDFium.PdfDocument" data-throw-if-not-resolved="false"></xref> containing the page object.
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> to which the mark belongs.
+    - id: key
+      type: System.String
+      description: The key identifying the blob parameter to set.
+    - id: data
+      type: System.Byte[]
+      description: The binary data to associate with the specified key. Must not be null or empty.
+    content.vb: Public Sub SetBlobParam(doc As PdfDocument, obj As PdfPageObject, key As String, data As Byte())
+  overload: nebulae.dotPDFium.PdfMark.SetBlobParam*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code class="paramref">data</code> is null or empty.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails to set the blob parameter.
+  nameWithType.vb: PdfMark.SetBlobParam(PdfDocument, PdfPageObject, String, Byte())
+  fullName.vb: nebulae.dotPDFium.PdfMark.SetBlobParam(nebulae.dotPDFium.PdfDocument, nebulae.dotPDFium.PdfPageObject, String, Byte())
+  name.vb: SetBlobParam(PdfDocument, PdfPageObject, String, Byte())
+- uid: nebulae.dotPDFium.PdfMark.RemoveParam(nebulae.dotPDFium.PdfPageObject,System.String)
+  commentId: M:nebulae.dotPDFium.PdfMark.RemoveParam(nebulae.dotPDFium.PdfPageObject,System.String)
+  id: RemoveParam(nebulae.dotPDFium.PdfPageObject,System.String)
+  parent: nebulae.dotPDFium.PdfMark
+  langs:
+  - csharp
+  - vb
+  name: RemoveParam(PdfPageObject, string)
+  nameWithType: PdfMark.RemoveParam(PdfPageObject, string)
+  fullName: nebulae.dotPDFium.PdfMark.RemoveParam(nebulae.dotPDFium.PdfPageObject, string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfMark.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RemoveParam
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfMark.cs
+    startLine: 194
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Removes a parameter with the specified key from the mark associated with the given PDF page object.
+  example: []
+  syntax:
+    content: public void RemoveParam(PdfPageObject obj, string key)
+    parameters:
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The PDF page object from which the parameter will be removed. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    - id: key
+      type: System.String
+      description: The key of the parameter to remove. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    content.vb: Public Sub RemoveParam(obj As PdfPageObject, key As String)
+  overload: nebulae.dotPDFium.PdfMark.RemoveParam*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the parameter with the specified key could not be removed from the mark.
+  nameWithType.vb: PdfMark.RemoveParam(PdfPageObject, String)
+  fullName.vb: nebulae.dotPDFium.PdfMark.RemoveParam(nebulae.dotPDFium.PdfPageObject, String)
+  name.vb: RemoveParam(PdfPageObject, String)
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfMark.Name*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.Name
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_Name
+  name: Name
+  nameWithType: PdfMark.Name
+  fullName: nebulae.dotPDFium.PdfMark.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.PdfMark.ParameterCount*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.ParameterCount
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_ParameterCount
+  name: ParameterCount
+  nameWithType: PdfMark.ParameterCount
+  fullName: nebulae.dotPDFium.PdfMark.ParameterCount
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfMark.GetParamKeys*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.GetParamKeys
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_GetParamKeys
+  name: GetParamKeys
+  nameWithType: PdfMark.GetParamKeys
+  fullName: nebulae.dotPDFium.PdfMark.GetParamKeys
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: nebulae.dotPDFium.Native.PdfMarkParamType
+  commentId: T:nebulae.dotPDFium.Native.PdfMarkParamType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfMarkParamType.html
+  name: PdfMarkParamType
+  nameWithType: PdfMarkParamType
+  fullName: nebulae.dotPDFium.Native.PdfMarkParamType
+- uid: nebulae.dotPDFium.PdfMark.GetParamType*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.GetParamType
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_GetParamType_System_String_
+  name: GetParamType
+  nameWithType: PdfMark.GetParamType
+  fullName: nebulae.dotPDFium.PdfMark.GetParamType
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.PdfMark.GetIntValue*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.GetIntValue
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_GetIntValue_System_String_
+  name: GetIntValue
+  nameWithType: PdfMark.GetIntValue
+  fullName: nebulae.dotPDFium.PdfMark.GetIntValue
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfDocument
+  commentId: T:nebulae.dotPDFium.PdfDocument
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfDocument.html
+  name: PdfDocument
+  nameWithType: PdfDocument
+  fullName: nebulae.dotPDFium.PdfDocument
+- uid: nebulae.dotPDFium.PdfPageObject
+  commentId: T:nebulae.dotPDFium.PdfPageObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPageObject.html
+  name: PdfPageObject
+  nameWithType: PdfPageObject
+  fullName: nebulae.dotPDFium.PdfPageObject
+- uid: nebulae.dotPDFium.dotPDFiumException
+  commentId: T:nebulae.dotPDFium.dotPDFiumException
+  href: nebulae.dotPDFium.dotPDFiumException.html
+  name: dotPDFiumException
+  nameWithType: dotPDFiumException
+  fullName: nebulae.dotPDFium.dotPDFiumException
+- uid: nebulae.dotPDFium.PdfMark.SetIntParam*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.SetIntParam
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_SetIntParam_nebulae_dotPDFium_PdfDocument_nebulae_dotPDFium_PdfPageObject_System_String_System_Int32_
+  name: SetIntParam
+  nameWithType: PdfMark.SetIntParam
+  fullName: nebulae.dotPDFium.PdfMark.SetIntParam
+- uid: nebulae.dotPDFium.PdfMark.GetStringValue*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.GetStringValue
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_GetStringValue_System_String_
+  name: GetStringValue
+  nameWithType: PdfMark.GetStringValue
+  fullName: nebulae.dotPDFium.PdfMark.GetStringValue
+- uid: nebulae.dotPDFium.PdfMark.SetStringParam*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.SetStringParam
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_SetStringParam_nebulae_dotPDFium_PdfDocument_nebulae_dotPDFium_PdfPageObject_System_String_System_String_
+  name: SetStringParam
+  nameWithType: PdfMark.SetStringParam
+  fullName: nebulae.dotPDFium.PdfMark.SetStringParam
+- uid: nebulae.dotPDFium.PdfMark.GetBlobValue*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.GetBlobValue
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_GetBlobValue_System_String_
+  name: GetBlobValue
+  nameWithType: PdfMark.GetBlobValue
+  fullName: nebulae.dotPDFium.PdfMark.GetBlobValue
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: nebulae.dotPDFium.PdfMark.SetBlobParam*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.SetBlobParam
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_SetBlobParam_nebulae_dotPDFium_PdfDocument_nebulae_dotPDFium_PdfPageObject_System_String_System_Byte___
+  name: SetBlobParam
+  nameWithType: PdfMark.SetBlobParam
+  fullName: nebulae.dotPDFium.PdfMark.SetBlobParam
+- uid: nebulae.dotPDFium.PdfMark.RemoveParam*
+  commentId: Overload:nebulae.dotPDFium.PdfMark.RemoveParam
+  href: nebulae.dotPDFium.PdfMark.html#nebulae_dotPDFium_PdfMark_RemoveParam_nebulae_dotPDFium_PdfPageObject_System_String_
+  name: RemoveParam
+  nameWithType: PdfMark.RemoveParam
+  fullName: nebulae.dotPDFium.PdfMark.RemoveParam

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Security
+  commentId: N:nebulae.dotPDFium.Security
+  id: nebulae.dotPDFium.Security
+  children:
+  - nebulae.dotPDFium.Security.PdfSignature
+  langs:
+  - csharp
+  - vb
+  name: nebulae.dotPDFium.Security
+  nameWithType: nebulae.dotPDFium.Security
+  fullName: nebulae.dotPDFium.Security
+  type: Namespace
+  assemblies:
+  - dotPDFium
+references:
+- uid: nebulae.dotPDFium.Security.PdfSignature
+  commentId: T:nebulae.dotPDFium.Security.PdfSignature
+  href: nebulae.dotPDFium.Security.PdfSignature.html
+  name: PdfSignature
+  nameWithType: PdfSignature
+  fullName: nebulae.dotPDFium.Security.PdfSignature

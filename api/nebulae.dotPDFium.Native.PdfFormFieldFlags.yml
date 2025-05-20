@@ -1,0 +1,610 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldFlags
+  id: PdfFormFieldFlags
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Comb
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Combo
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.CommitOnSelChange
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotScroll
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotSpellCheck
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Edit
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.FileSelect
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.MultiSelect
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Multiline
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.NoExport
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.NoToggleToOff
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Password
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.PushButton
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Radio
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.RadiosInUnison
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.ReadOnly
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Required
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.RichText
+  - nebulae.dotPDFium.Native.PdfFormFieldFlags.Sort
+  langs:
+  - csharp
+  - vb
+  name: PdfFormFieldFlags
+  nameWithType: PdfFormFieldFlags
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFormFieldFlags
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 162
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the flags that define the behavior and appearance of a form field in a PDF document.
+  remarks: >-
+    This enumeration is decorated with the <xref href="System.FlagsAttribute" data-throw-if-not-resolved="false"></xref>, allowing a combination of values
+        to be specified using a bitwise OR operation. Each flag represents a specific characteristic or functionality of a
+        form field, such as whether it is read-only, required, or supports multiline input.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum PdfFormFieldFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum PdfFormFieldFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.ReadOnly
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.ReadOnly
+  id: ReadOnly
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: ReadOnly
+  nameWithType: PdfFormFieldFlags.ReadOnly
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.ReadOnly
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ReadOnly
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 165
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ReadOnly = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Required
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Required
+  id: Required
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Required
+  nameWithType: PdfFormFieldFlags.Required
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Required
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Required
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 166
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Required = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.NoExport
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.NoExport
+  id: NoExport
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: NoExport
+  nameWithType: PdfFormFieldFlags.NoExport
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.NoExport
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoExport
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 167
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoExport = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Multiline
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Multiline
+  id: Multiline
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Multiline
+  nameWithType: PdfFormFieldFlags.Multiline
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Multiline
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Multiline
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 168
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Multiline = 4096
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Password
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Password
+  id: Password
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: PdfFormFieldFlags.Password
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Password
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Password
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 169
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Password = 8192
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.NoToggleToOff
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.NoToggleToOff
+  id: NoToggleToOff
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: NoToggleToOff
+  nameWithType: PdfFormFieldFlags.NoToggleToOff
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.NoToggleToOff
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoToggleToOff
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 170
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoToggleToOff = 16384
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Radio
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Radio
+  id: Radio
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Radio
+  nameWithType: PdfFormFieldFlags.Radio
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Radio
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Radio
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 171
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Radio = 32768
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.PushButton
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.PushButton
+  id: PushButton
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: PushButton
+  nameWithType: PdfFormFieldFlags.PushButton
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.PushButton
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PushButton
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 172
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: PushButton = 65536
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Combo
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Combo
+  id: Combo
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Combo
+  nameWithType: PdfFormFieldFlags.Combo
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Combo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Combo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 173
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Combo = 131072
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Edit
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Edit
+  id: Edit
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Edit
+  nameWithType: PdfFormFieldFlags.Edit
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Edit
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Edit
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 174
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Edit = 262144
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Sort
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Sort
+  id: Sort
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Sort
+  nameWithType: PdfFormFieldFlags.Sort
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Sort
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Sort
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 175
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Sort = 524288
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.FileSelect
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.FileSelect
+  id: FileSelect
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: FileSelect
+  nameWithType: PdfFormFieldFlags.FileSelect
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.FileSelect
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FileSelect
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 176
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: FileSelect = 1048576
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.MultiSelect
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.MultiSelect
+  id: MultiSelect
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: MultiSelect
+  nameWithType: PdfFormFieldFlags.MultiSelect
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.MultiSelect
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: MultiSelect
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 177
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: MultiSelect = 2097152
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotSpellCheck
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotSpellCheck
+  id: DoNotSpellCheck
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: DoNotSpellCheck
+  nameWithType: PdfFormFieldFlags.DoNotSpellCheck
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotSpellCheck
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DoNotSpellCheck
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 178
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DoNotSpellCheck = 4194304
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotScroll
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotScroll
+  id: DoNotScroll
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: DoNotScroll
+  nameWithType: PdfFormFieldFlags.DoNotScroll
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.DoNotScroll
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DoNotScroll
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 179
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: DoNotScroll = 8388608
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.Comb
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.Comb
+  id: Comb
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: Comb
+  nameWithType: PdfFormFieldFlags.Comb
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.Comb
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Comb
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 180
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Comb = 16777216
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.RichText
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.RichText
+  id: RichText
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: RichText
+  nameWithType: PdfFormFieldFlags.RichText
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.RichText
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RichText
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 181
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: RichText = 33554432
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.RadiosInUnison
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.RadiosInUnison
+  id: RadiosInUnison
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: RadiosInUnison
+  nameWithType: PdfFormFieldFlags.RadiosInUnison
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.RadiosInUnison
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RadiosInUnison
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 182
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: RadiosInUnison = 67108864
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags.CommitOnSelChange
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldFlags.CommitOnSelChange
+  id: CommitOnSelChange
+  parent: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  langs:
+  - csharp
+  - vb
+  name: CommitOnSelChange
+  nameWithType: PdfFormFieldFlags.CommitOnSelChange
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags.CommitOnSelChange
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CommitOnSelChange
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 183
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: CommitOnSelChange = 134217728
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldFlags
+references:
+- uid: System.FlagsAttribute
+  commentId: T:System.FlagsAttribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.flagsattribute
+  name: FlagsAttribute
+  nameWithType: FlagsAttribute
+  fullName: System.FlagsAttribute
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfFormFieldFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldFlags
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFormFieldFlags.html
+  name: PdfFormFieldFlags
+  nameWithType: PdfFormFieldFlags
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldFlags

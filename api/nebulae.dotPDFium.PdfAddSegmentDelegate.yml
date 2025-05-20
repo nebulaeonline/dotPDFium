@@ -1,0 +1,79 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfAddSegmentDelegate
+  commentId: T:nebulae.dotPDFium.PdfAddSegmentDelegate
+  id: PdfAddSegmentDelegate
+  parent: nebulae.dotPDFium
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: PdfAddSegmentDelegate
+  nameWithType: PdfAddSegmentDelegate
+  fullName: nebulae.dotPDFium.PdfAddSegmentDelegate
+  type: Delegate
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfStreamAccessDelegates.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfAddSegmentDelegate
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfStreamAccessDelegates.cs
+    startLine: 24
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Delegate called by PDFium to request that a segment be downloaded or made available.
+
+    Used with FX_DOWNLOADHINTS.
+  example: []
+  syntax:
+    content: public delegate void PdfAddSegmentDelegate(ulong offset, ulong length)
+    parameters:
+    - id: offset
+      type: System.UInt64
+    - id: length
+      type: System.UInt64
+    content.vb: Public Delegate Sub PdfAddSegmentDelegate(offset As ULong, length As ULong)
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

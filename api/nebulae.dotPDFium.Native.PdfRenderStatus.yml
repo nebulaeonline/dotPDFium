@@ -1,0 +1,207 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus
+  commentId: T:nebulae.dotPDFium.Native.PdfRenderStatus
+  id: PdfRenderStatus
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfRenderStatus.Done
+  - nebulae.dotPDFium.Native.PdfRenderStatus.Failed
+  - nebulae.dotPDFium.Native.PdfRenderStatus.Ready
+  - nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued
+  langs:
+  - csharp
+  - vb
+  name: PdfRenderStatus
+  nameWithType: PdfRenderStatus
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfRenderStatus
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 525
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents the status of a PDF rendering operation.
+  remarks: >-
+    This enumeration is used to indicate the current state of a PDF rendering process.  The status can be
+        one of the following: <ul><li><xref href="nebulae.dotPDFium.Native.PdfRenderStatus.Ready" data-throw-if-not-resolved="false"></xref>: The rendering process is ready
+        to start.</li><li><xref href="nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued" data-throw-if-not-resolved="false"></xref>: The rendering process is in
+        progress and requires additional steps to complete.</li><li><xref href="nebulae.dotPDFium.Native.PdfRenderStatus.Done" data-throw-if-not-resolved="false"></xref>:
+        The rendering process has completed successfully.</li><li><xref href="nebulae.dotPDFium.Native.PdfRenderStatus.Failed" data-throw-if-not-resolved="false"></xref>:
+        The rendering process has failed.</li></ul>
+  example: []
+  syntax:
+    content: public enum PdfRenderStatus
+    content.vb: Public Enum PdfRenderStatus
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.Ready
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.Ready
+  id: Ready
+  parent: nebulae.dotPDFium.Native.PdfRenderStatus
+  langs:
+  - csharp
+  - vb
+  name: Ready
+  nameWithType: PdfRenderStatus.Ready
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.Ready
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Ready
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 527
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Ready = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderStatus
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued
+  id: ToBeContinued
+  parent: nebulae.dotPDFium.Native.PdfRenderStatus
+  langs:
+  - csharp
+  - vb
+  name: ToBeContinued
+  nameWithType: PdfRenderStatus.ToBeContinued
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ToBeContinued
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 528
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ToBeContinued = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderStatus
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.Done
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.Done
+  id: Done
+  parent: nebulae.dotPDFium.Native.PdfRenderStatus
+  langs:
+  - csharp
+  - vb
+  name: Done
+  nameWithType: PdfRenderStatus.Done
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.Done
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Done
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 529
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Done = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderStatus
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.Failed
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.Failed
+  id: Failed
+  parent: nebulae.dotPDFium.Native.PdfRenderStatus
+  langs:
+  - csharp
+  - vb
+  name: Failed
+  nameWithType: PdfRenderStatus.Failed
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.Failed
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Failed
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 530
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Failed = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfRenderStatus
+references:
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.Ready
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.Ready
+  href: nebulae.dotPDFium.Native.PdfRenderStatus.html#nebulae_dotPDFium_Native_PdfRenderStatus_Ready
+  name: Ready
+  nameWithType: PdfRenderStatus.Ready
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.Ready
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued
+  href: nebulae.dotPDFium.Native.PdfRenderStatus.html#nebulae_dotPDFium_Native_PdfRenderStatus_ToBeContinued
+  name: ToBeContinued
+  nameWithType: PdfRenderStatus.ToBeContinued
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.ToBeContinued
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.Done
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.Done
+  href: nebulae.dotPDFium.Native.PdfRenderStatus.html#nebulae_dotPDFium_Native_PdfRenderStatus_Done
+  name: Done
+  nameWithType: PdfRenderStatus.Done
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.Done
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus.Failed
+  commentId: F:nebulae.dotPDFium.Native.PdfRenderStatus.Failed
+  href: nebulae.dotPDFium.Native.PdfRenderStatus.html#nebulae_dotPDFium_Native_PdfRenderStatus_Failed
+  name: Failed
+  nameWithType: PdfRenderStatus.Failed
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus.Failed
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfRenderStatus
+  commentId: T:nebulae.dotPDFium.Native.PdfRenderStatus
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfRenderStatus.html
+  name: PdfRenderStatus
+  nameWithType: PdfRenderStatus
+  fullName: nebulae.dotPDFium.Native.PdfRenderStatus

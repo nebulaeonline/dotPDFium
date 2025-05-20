@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfSegmentType
+  commentId: T:nebulae.dotPDFium.Native.PdfSegmentType
+  id: PdfSegmentType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfSegmentType.BezierTo
+  - nebulae.dotPDFium.Native.PdfSegmentType.LineTo
+  - nebulae.dotPDFium.Native.PdfSegmentType.MoveTo
+  - nebulae.dotPDFium.Native.PdfSegmentType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: PdfSegmentType
+  nameWithType: PdfSegmentType
+  fullName: nebulae.dotPDFium.Native.PdfSegmentType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfSegmentType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 29
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents the type of a segment in a PDF path.
+  remarks: >-
+    This enumeration is used to identify the type of drawing operation for a segment in a PDF path. It
+        includes operations such as moving to a point, drawing a line, or creating a Bézier curve.
+  example: []
+  syntax:
+    content: public enum PdfSegmentType
+    content.vb: Public Enum PdfSegmentType
+- uid: nebulae.dotPDFium.Native.PdfSegmentType.Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfSegmentType.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.Native.PdfSegmentType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: PdfSegmentType.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfSegmentType.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 31
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unknown = -1
+    return:
+      type: nebulae.dotPDFium.Native.PdfSegmentType
+- uid: nebulae.dotPDFium.Native.PdfSegmentType.LineTo
+  commentId: F:nebulae.dotPDFium.Native.PdfSegmentType.LineTo
+  id: LineTo
+  parent: nebulae.dotPDFium.Native.PdfSegmentType
+  langs:
+  - csharp
+  - vb
+  name: LineTo
+  nameWithType: PdfSegmentType.LineTo
+  fullName: nebulae.dotPDFium.Native.PdfSegmentType.LineTo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: LineTo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 32
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: LineTo = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfSegmentType
+- uid: nebulae.dotPDFium.Native.PdfSegmentType.BezierTo
+  commentId: F:nebulae.dotPDFium.Native.PdfSegmentType.BezierTo
+  id: BezierTo
+  parent: nebulae.dotPDFium.Native.PdfSegmentType
+  langs:
+  - csharp
+  - vb
+  name: BezierTo
+  nameWithType: PdfSegmentType.BezierTo
+  fullName: nebulae.dotPDFium.Native.PdfSegmentType.BezierTo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: BezierTo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 33
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: BezierTo = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfSegmentType
+- uid: nebulae.dotPDFium.Native.PdfSegmentType.MoveTo
+  commentId: F:nebulae.dotPDFium.Native.PdfSegmentType.MoveTo
+  id: MoveTo
+  parent: nebulae.dotPDFium.Native.PdfSegmentType
+  langs:
+  - csharp
+  - vb
+  name: MoveTo
+  nameWithType: PdfSegmentType.MoveTo
+  fullName: nebulae.dotPDFium.Native.PdfSegmentType.MoveTo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: MoveTo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 34
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: MoveTo = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfSegmentType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfSegmentType
+  commentId: T:nebulae.dotPDFium.Native.PdfSegmentType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfSegmentType.html
+  name: PdfSegmentType
+  nameWithType: PdfSegmentType
+  fullName: nebulae.dotPDFium.Native.PdfSegmentType

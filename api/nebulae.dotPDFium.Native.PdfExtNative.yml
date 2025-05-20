@@ -1,0 +1,518 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfExtNative
+  commentId: T:nebulae.dotPDFium.Native.PdfExtNative
+  id: PdfExtNative
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction(nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc)
+  - nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction(nebulae.dotPDFium.Native.PdfExtNative.TimeFunc)
+  - nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler(nebulae.dotPDFium.Native.UnSupportInfo@)
+  langs:
+  - csharp
+  - vb
+  name: PdfExtNative
+  nameWithType: PdfExtNative
+  fullName: nebulae.dotPDFium.Native.PdfExtNative
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/Native/PdfExtNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfExtNative
+    path: ../dotPDFium/dotPDFium/Native/PdfExtNative.cs
+    startLine: 5
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static class PdfExtNative
+    content.vb: Public Module PdfExtNative
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler(nebulae.dotPDFium.Native.UnSupportInfo@)
+  commentId: M:nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler(nebulae.dotPDFium.Native.UnSupportInfo@)
+  id: FSDK_SetUnSpObjProcessHandler(nebulae.dotPDFium.Native.UnSupportInfo@)
+  parent: nebulae.dotPDFium.Native.PdfExtNative
+  langs:
+  - csharp
+  - vb
+  name: FSDK_SetUnSpObjProcessHandler(ref UnSupportInfo)
+  nameWithType: PdfExtNative.FSDK_SetUnSpObjProcessHandler(ref UnSupportInfo)
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler(ref nebulae.dotPDFium.Native.UnSupportInfo)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FSDK_SetUnSpObjProcessHandler(ref UnSupportInfo info)
+    parameters:
+    - id: info
+      type: nebulae.dotPDFium.Native.UnSupportInfo
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FSDK_SetUnSpObjProcessHandler(info As UnSupportInfo) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler*
+  nameWithType.vb: PdfExtNative.FSDK_SetUnSpObjProcessHandler(UnSupportInfo)
+  fullName.vb: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler(nebulae.dotPDFium.Native.UnSupportInfo)
+  name.vb: FSDK_SetUnSpObjProcessHandler(UnSupportInfo)
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction(nebulae.dotPDFium.Native.PdfExtNative.TimeFunc)
+  commentId: M:nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction(nebulae.dotPDFium.Native.PdfExtNative.TimeFunc)
+  id: FSDK_SetTimeFunction(nebulae.dotPDFium.Native.PdfExtNative.TimeFunc)
+  parent: nebulae.dotPDFium.Native.PdfExtNative
+  langs:
+  - csharp
+  - vb
+  name: FSDK_SetTimeFunction(TimeFunc)
+  nameWithType: PdfExtNative.FSDK_SetTimeFunction(PdfExtNative.TimeFunc)
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction(nebulae.dotPDFium.Native.PdfExtNative.TimeFunc)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FSDK_SetTimeFunction(PdfExtNative.TimeFunc func)
+    parameters:
+    - id: func
+      type: nebulae.dotPDFium.Native.PdfExtNative.TimeFunc
+    content.vb: Public Shared Sub FSDK_SetTimeFunction(func As PdfExtNative.TimeFunc)
+  overload: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction*
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction(nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc)
+  commentId: M:nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction(nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc)
+  id: FSDK_SetLocaltimeFunction(nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc)
+  parent: nebulae.dotPDFium.Native.PdfExtNative
+  langs:
+  - csharp
+  - vb
+  name: FSDK_SetLocaltimeFunction(LocalTimeFunc)
+  nameWithType: PdfExtNative.FSDK_SetLocaltimeFunction(PdfExtNative.LocalTimeFunc)
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction(nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FSDK_SetLocaltimeFunction(PdfExtNative.LocalTimeFunc func)
+    parameters:
+    - id: func
+      type: nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc
+    content.vb: Public Shared Sub FSDK_SetLocaltimeFunction(func As PdfExtNative.LocalTimeFunc)
+  overload: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction*
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode(System.IntPtr)
+  id: FPDFDoc_GetPageMode(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfExtNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFDoc_GetPageMode(nint)
+  nameWithType: PdfExtNative.FPDFDoc_GetPageMode(nint)
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFDoc_GetPageMode(nint document)
+    parameters:
+    - id: document
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFDoc_GetPageMode(document As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode*
+  nameWithType.vb: PdfExtNative.FPDFDoc_GetPageMode(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode(System.IntPtr)
+  name.vb: FPDFDoc_GetPageMode(IntPtr)
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfExtNative.html#nebulae_dotPDFium_Native_PdfExtNative_FSDK_SetUnSpObjProcessHandler_nebulae_dotPDFium_Native_UnSupportInfo__
+  name: FSDK_SetUnSpObjProcessHandler
+  nameWithType: PdfExtNative.FSDK_SetUnSpObjProcessHandler
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetUnSpObjProcessHandler
+- uid: nebulae.dotPDFium.Native.UnSupportInfo
+  commentId: T:nebulae.dotPDFium.Native.UnSupportInfo
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.UnSupportInfo.html
+  name: UnSupportInfo
+  nameWithType: UnSupportInfo
+  fullName: nebulae.dotPDFium.Native.UnSupportInfo
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfExtNative.html#nebulae_dotPDFium_Native_PdfExtNative_FSDK_SetTimeFunction_nebulae_dotPDFium_Native_PdfExtNative_TimeFunc_
+  name: FSDK_SetTimeFunction
+  nameWithType: PdfExtNative.FSDK_SetTimeFunction
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetTimeFunction
+- uid: nebulae.dotPDFium.Native.PdfExtNative.TimeFunc
+  commentId: T:nebulae.dotPDFium.Native.PdfExtNative.TimeFunc
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfExtNative.html
+  name: PdfExtNative.TimeFunc
+  nameWithType: PdfExtNative.TimeFunc
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.TimeFunc
+  spec.csharp:
+  - uid: nebulae.dotPDFium.Native.PdfExtNative
+    name: PdfExtNative
+    href: nebulae.dotPDFium.Native.PdfExtNative.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native.PdfExtNative.TimeFunc
+    name: TimeFunc
+    href: nebulae.dotPDFium.Native.PdfExtNative.TimeFunc.html
+  spec.vb:
+  - uid: nebulae.dotPDFium.Native.PdfExtNative
+    name: PdfExtNative
+    href: nebulae.dotPDFium.Native.PdfExtNative.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native.PdfExtNative.TimeFunc
+    name: TimeFunc
+    href: nebulae.dotPDFium.Native.PdfExtNative.TimeFunc.html
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfExtNative.html#nebulae_dotPDFium_Native_PdfExtNative_FSDK_SetLocaltimeFunction_nebulae_dotPDFium_Native_PdfExtNative_LocalTimeFunc_
+  name: FSDK_SetLocaltimeFunction
+  nameWithType: PdfExtNative.FSDK_SetLocaltimeFunction
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FSDK_SetLocaltimeFunction
+- uid: nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc
+  commentId: T:nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfExtNative.html
+  name: PdfExtNative.LocalTimeFunc
+  nameWithType: PdfExtNative.LocalTimeFunc
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc
+  spec.csharp:
+  - uid: nebulae.dotPDFium.Native.PdfExtNative
+    name: PdfExtNative
+    href: nebulae.dotPDFium.Native.PdfExtNative.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc
+    name: LocalTimeFunc
+    href: nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc.html
+  spec.vb:
+  - uid: nebulae.dotPDFium.Native.PdfExtNative
+    name: PdfExtNative
+    href: nebulae.dotPDFium.Native.PdfExtNative.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc
+    name: LocalTimeFunc
+    href: nebulae.dotPDFium.Native.PdfExtNative.LocalTimeFunc.html
+- uid: nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfExtNative.html#nebulae_dotPDFium_Native_PdfExtNative_FPDFDoc_GetPageMode_System_IntPtr_
+  name: FPDFDoc_GetPageMode
+  nameWithType: PdfExtNative.FPDFDoc_GetPageMode
+  fullName: nebulae.dotPDFium.Native.PdfExtNative.FPDFDoc_GetPageMode
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

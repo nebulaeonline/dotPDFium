@@ -1,0 +1,1082 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFillInfo
+  id: PdfFormFillInfo
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_ExecuteNamedAction
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetCurrentPage
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetLocalTime
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetPage
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetRotation
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_Invalidate
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_KillTimer
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OnChange
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OutputSelectedRect
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetCursor
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetTimer
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.Release
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.m_pJsPlatform
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.version
+  - nebulae.dotPDFium.Native.PdfFormFillInfo.xfa_disabled
+  langs:
+  - csharp
+  - vb
+  name: PdfFormFillInfo
+  nameWithType: PdfFormFillInfo
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo
+  type: Struct
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFormFillInfo
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 255
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public struct PdfFormFillInfo
+    content.vb: Public Structure PdfFormFillInfo
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.version
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.version
+  id: version
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: version
+  nameWithType: PdfFormFillInfo.version
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.version
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: version
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 258
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public int version
+    return:
+      type: System.Int32
+    content.vb: Public version As Integer
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.Release
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.Release
+  id: Release
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: Release
+  nameWithType: PdfFormFillInfo.Release
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.Release
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Release
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 261
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, void> Release
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, void>
+    content.vb: 'Public Release As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_Invalidate
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_Invalidate
+  id: FFI_Invalidate
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_Invalidate
+  nameWithType: PdfFormFillInfo.FFI_Invalidate
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_Invalidate
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_Invalidate
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 264
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, double, double, double, double, void> FFI_Invalidate
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, double, double, double, double, void>
+    content.vb: 'Public FFI_Invalidate As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OutputSelectedRect
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OutputSelectedRect
+  id: FFI_OutputSelectedRect
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_OutputSelectedRect
+  nameWithType: PdfFormFillInfo.FFI_OutputSelectedRect
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OutputSelectedRect
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_OutputSelectedRect
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 267
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, double, double, double, double, void> FFI_OutputSelectedRect
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, double, double, double, double, void>
+    content.vb: 'Public FFI_OutputSelectedRect As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetCursor
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetCursor
+  id: FFI_SetCursor
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_SetCursor
+  nameWithType: PdfFormFillInfo.FFI_SetCursor
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetCursor
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_SetCursor
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 270
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, void> FFI_SetCursor
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, int, void>
+    content.vb: 'Public FFI_SetCursor As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetTimer
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetTimer
+  id: FFI_SetTimer
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_SetTimer
+  nameWithType: PdfFormFillInfo.FFI_SetTimer
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_SetTimer
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_SetTimer
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 273
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, delegate* unmanaged[Cdecl]<int, void>, int> FFI_SetTimer
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, int, delegate* unmanaged[Cdecl]<int, void>, int>
+    content.vb: 'Public FFI_SetTimer As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_KillTimer
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_KillTimer
+  id: FFI_KillTimer
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_KillTimer
+  nameWithType: PdfFormFillInfo.FFI_KillTimer
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_KillTimer
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_KillTimer
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 274
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, void> FFI_KillTimer
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, int, void>
+    content.vb: 'Public FFI_KillTimer As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetLocalTime
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetLocalTime
+  id: FFI_GetLocalTime
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_GetLocalTime
+  nameWithType: PdfFormFillInfo.FFI_GetLocalTime
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetLocalTime
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_GetLocalTime
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 277
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, FpdfSystemTime> FFI_GetLocalTime
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nebulae.dotPDFium.Native.FpdfSystemTime>
+    content.vb: 'Public FFI_GetLocalTime As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OnChange
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OnChange
+  id: FFI_OnChange
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_OnChange
+  nameWithType: PdfFormFillInfo.FFI_OnChange
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_OnChange
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_OnChange
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 280
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, void> FFI_OnChange
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, void>
+    content.vb: 'Public FFI_OnChange As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetPage
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetPage
+  id: FFI_GetPage
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_GetPage
+  nameWithType: PdfFormFillInfo.FFI_GetPage
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetPage
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_GetPage
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 283
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, int, nint> FFI_GetPage
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, int, nint>
+    content.vb: 'Public FFI_GetPage As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetCurrentPage
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetCurrentPage
+  id: FFI_GetCurrentPage
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_GetCurrentPage
+  nameWithType: PdfFormFillInfo.FFI_GetCurrentPage
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetCurrentPage
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_GetCurrentPage
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 286
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, nint> FFI_GetCurrentPage
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, nint>
+    content.vb: 'Public FFI_GetCurrentPage As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetRotation
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetRotation
+  id: FFI_GetRotation
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_GetRotation
+  nameWithType: PdfFormFillInfo.FFI_GetRotation
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_GetRotation
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_GetRotation
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 287
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, int> FFI_GetRotation
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, int>
+    content.vb: 'Public FFI_GetRotation As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_ExecuteNamedAction
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_ExecuteNamedAction
+  id: FFI_ExecuteNamedAction
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: FFI_ExecuteNamedAction
+  nameWithType: PdfFormFillInfo.FFI_ExecuteNamedAction
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.FFI_ExecuteNamedAction
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FFI_ExecuteNamedAction
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 290
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, void> FFI_ExecuteNamedAction
+    return:
+      type: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, void>
+    content.vb: 'Public FFI_ExecuteNamedAction As '
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.m_pJsPlatform
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.m_pJsPlatform
+  id: m_pJsPlatform
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: m_pJsPlatform
+  nameWithType: PdfFormFillInfo.m_pJsPlatform
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.m_pJsPlatform
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: m_pJsPlatform
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 293
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public nint m_pJsPlatform
+    return:
+      type: System.IntPtr
+    content.vb: Public m_pJsPlatform As IntPtr
+- uid: nebulae.dotPDFium.Native.PdfFormFillInfo.xfa_disabled
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFillInfo.xfa_disabled
+  id: xfa_disabled
+  parent: nebulae.dotPDFium.Native.PdfFormFillInfo
+  langs:
+  - csharp
+  - vb
+  name: xfa_disabled
+  nameWithType: PdfFormFillInfo.xfa_disabled
+  fullName: nebulae.dotPDFium.Native.PdfFormFillInfo.xfa_disabled
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: xfa_disabled
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 296
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public byte xfa_disabled
+    return:
+      type: System.Byte
+    content.vb: Public xfa_disabled As Byte
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, void>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, void>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, void>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, void>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, double, double, double, double, void>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, double, double, double, double, void>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, double, double, double, double, void>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, double, double, double, double, void>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*,System.IntPtr,System.Double,System.Double,System.Double,System.Double)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, int, void>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, void>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, void>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, int, void>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*,System.Int32)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, int, delegate* unmanaged[Cdecl]<int, void>, int>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, delegate* unmanaged[Cdecl]<int, void>, int>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, int, delegate* unmanaged[Cdecl]<int, void>, int>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, int, delegate* unmanaged[Cdecl]<int, void>, int>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*,System.Int32,)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(System.Int32)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nebulae.dotPDFium.Native.FpdfSystemTime>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, FpdfSystemTime>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, FpdfSystemTime>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nebulae.dotPDFium.Native.FpdfSystemTime>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: nebulae.dotPDFium.Native.FpdfSystemTime
+    name: FpdfSystemTime
+    href: nebulae.dotPDFium.Native.FpdfSystemTime.html
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, int, nint>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, int, nint>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, int, nint>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, int, nint>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*,System.IntPtr,System.Int32)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, nint>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, nint>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, nint>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, nint>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*,System.IntPtr)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, int>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, int>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, int>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, int>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*,System.IntPtr)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+- uid: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, void>
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  name: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, void>
+  nameWithType: delegate* unmanaged[Cdecl]<PdfFormFillInfo*, nint, void>
+  fullName: delegate* unmanaged[Cdecl]<nebulae.dotPDFium.Native.PdfFormFillInfo*, nint, void>
+  spec.csharp:
+  - name: delegate
+  - name: '*'
+  - name: " "
+  - name: unmanaged
+  - name: '['
+  - uid: .(nebulae.dotPDFium.Native.PdfFormFillInfo*,System.IntPtr)
+    name: Cdecl
+    isExternal: true
+  - name: ']'
+  - name: <
+  - uid: nebulae.dotPDFium.Native.PdfFormFillInfo
+    name: PdfFormFillInfo
+    href: nebulae.dotPDFium.Native.PdfFormFillInfo.html
+  - name: '*'
+  - name: ','
+  - name: " "
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: ','
+  - name: " "
+  - uid: System.Void
+    name: void
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.void
+  - name: '>'
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte

@@ -1,0 +1,2858 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative
+  commentId: T:nebulae.dotPDFium.Native.PdfAnnotNative
+  id: PdfAnnotNative
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment(System.IntPtr,System.String)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke(System.IntPtr,System.IntPtr,System.UIntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(System.IntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP(System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder(System.IntPtr,System.Single@,System.Single@,System.Single@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor(System.IntPtr,System.IntPtr,System.UInt32@,System.UInt32@,System.UInt32@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize(System.IntPtr,System.IntPtr,System.Single@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(System.IntPtr,System.IntPtr,nebulae.dotPDFium.Native.FsPointF@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath(System.IntPtr,System.UInt32,System.IntPtr,System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine(System.IntPtr,nebulae.dotPDFium.Native.FsPointF@,nebulae.dotPDFium.Native.FsPointF@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(System.IntPtr,System.String)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue(System.IntPtr,System.String,System.Single@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue(System.IntPtr,System.String,System.Byte[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType(System.IntPtr,System.String)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices(System.IntPtr,System.IntPtr,System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey(System.IntPtr,System.String)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype(System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected(System.IntPtr,System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype(System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP(System.IntPtr,System.Int32,System.String)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder(System.IntPtr,System.Single,System.Single,System.Single)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor(System.IntPtr,System.Int32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(System.IntPtr,System.String,System.Single)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue(System.IntPtr,System.String,System.String)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI(System.IntPtr,System.String)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex(System.IntPtr,System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot(System.IntPtr,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PdfAnnotNative
+  nameWithType: PdfAnnotNative
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/Native/PdfAnnotNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfAnnotNative
+    path: ../dotPDFium/dotPDFium/Native/PdfAnnotNative.cs
+    startLine: 6
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static class PdfAnnotNative
+    content.vb: Public Module PdfAnnotNative
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype(System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype(System.Int32)
+  id: FPDFAnnot_IsObjectSupportedSubtype(System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_IsObjectSupportedSubtype(int)
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype(int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype(int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_IsObjectSupportedSubtype(int subtype)
+    parameters:
+    - id: subtype
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_IsObjectSupportedSubtype(subtype As Integer) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype(Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype(Integer)
+  name.vb: FPDFAnnot_IsObjectSupportedSubtype(Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_UpdateObject(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_UpdateObject(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_UpdateObject(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_UpdateObject(nint annot, nint obj)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: obj
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_UpdateObject(annot As IntPtr, obj As IntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_UpdateObject(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_UpdateObject(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke(System.IntPtr,System.IntPtr,System.UIntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke(System.IntPtr,System.IntPtr,System.UIntPtr)
+  id: FPDFAnnot_AddInkStroke(System.IntPtr,System.IntPtr,System.UIntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_AddInkStroke(nint, nint, nuint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_AddInkStroke(nint, nint, nuint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke(nint, nint, nuint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_AddInkStroke(nint annot, nint points, nuint pointCount)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: points
+      type: System.IntPtr
+    - id: pointCount
+      type: System.UIntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_AddInkStroke(annot As IntPtr, points As IntPtr, pointCount As UIntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_AddInkStroke(IntPtr, IntPtr, UIntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke(System.IntPtr, System.IntPtr, System.UIntPtr)
+  name.vb: FPDFAnnot_AddInkStroke(IntPtr, IntPtr, UIntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList(System.IntPtr)
+  id: FPDFAnnot_RemoveInkList(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_RemoveInkList(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_RemoveInkList(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_RemoveInkList(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_RemoveInkList(annot As IntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_RemoveInkList(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList(System.IntPtr)
+  name.vb: FPDFAnnot_RemoveInkList(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_AppendObject(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_AppendObject(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_AppendObject(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_AppendObject(nint annot, nint obj)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: obj
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_AppendObject(annot As IntPtr, obj As IntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_AppendObject(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_AppendObject(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount(System.IntPtr)
+  id: FPDFAnnot_GetObjectCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetObjectCount(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetObjectCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetObjectCount(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetObjectCount(annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetObjectCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount(System.IntPtr)
+  name.vb: FPDFAnnot_GetObjectCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject(System.IntPtr,System.Int32)
+  id: FPDFAnnot_GetObject(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetObject(nint, int)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetObject(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAnnot_GetObject(nint annot, int index)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAnnot_GetObject(annot As IntPtr, index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetObject(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject(System.IntPtr, Integer)
+  name.vb: FPDFAnnot_GetObject(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject(System.IntPtr,System.Int32)
+  id: FPDFAnnot_RemoveObject(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_RemoveObject(nint, int)
+  nameWithType: PdfAnnotNative.FPDFAnnot_RemoveObject(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_RemoveObject(nint annot, int index)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_RemoveObject(annot As IntPtr, index As Integer) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_RemoveObject(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject(System.IntPtr, Integer)
+  name.vb: FPDFAnnot_RemoveObject(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints(System.IntPtr)
+  id: FPDFAnnot_HasAttachmentPoints(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_HasAttachmentPoints(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_HasAttachmentPoints(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_HasAttachmentPoints(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_HasAttachmentPoints(annot As IntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_HasAttachmentPoints(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints(System.IntPtr)
+  name.vb: FPDFAnnot_HasAttachmentPoints(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  id: FPDFAnnot_SetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetAttachmentPoints(nint, nuint, ref FsQuadPointsF)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetAttachmentPoints(nint, nuint, ref FsQuadPointsF)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints(nint, nuint, ref nebulae.dotPDFium.Native.FsQuadPointsF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetAttachmentPoints(nint annot, nuint index, ref FsQuadPointsF quad)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: index
+      type: System.UIntPtr
+    - id: quad
+      type: nebulae.dotPDFium.Native.FsQuadPointsF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetAttachmentPoints(annot As IntPtr, index As UIntPtr, quad As FsQuadPointsF) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetAttachmentPoints(IntPtr, UIntPtr, FsQuadPointsF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints(System.IntPtr, System.UIntPtr, nebulae.dotPDFium.Native.FsQuadPointsF)
+  name.vb: FPDFAnnot_SetAttachmentPoints(IntPtr, UIntPtr, FsQuadPointsF)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(System.IntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(System.IntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  id: FPDFAnnot_AppendAttachmentPoints(System.IntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_AppendAttachmentPoints(nint, ref FsQuadPointsF)
+  nameWithType: PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(nint, ref FsQuadPointsF)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(nint, ref nebulae.dotPDFium.Native.FsQuadPointsF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_AppendAttachmentPoints(nint annot, ref FsQuadPointsF quad)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: quad
+      type: nebulae.dotPDFium.Native.FsQuadPointsF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_AppendAttachmentPoints(annot As IntPtr, quad As FsQuadPointsF) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(IntPtr, FsQuadPointsF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(System.IntPtr, nebulae.dotPDFium.Native.FsQuadPointsF)
+  name.vb: FPDFAnnot_AppendAttachmentPoints(IntPtr, FsQuadPointsF)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints(System.IntPtr)
+  id: FPDFAnnot_CountAttachmentPoints(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_CountAttachmentPoints(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_CountAttachmentPoints(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nuint FPDFAnnot_CountAttachmentPoints(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.UIntPtr
+    content.vb: Public Shared Function FPDFAnnot_CountAttachmentPoints(annot As IntPtr) As UIntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_CountAttachmentPoints(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints(System.IntPtr)
+  name.vb: FPDFAnnot_CountAttachmentPoints(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  id: FPDFAnnot_GetAttachmentPoints(System.IntPtr,System.UIntPtr,nebulae.dotPDFium.Native.FsQuadPointsF@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetAttachmentPoints(nint, nuint, out FsQuadPointsF)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetAttachmentPoints(nint, nuint, out FsQuadPointsF)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints(nint, nuint, out nebulae.dotPDFium.Native.FsQuadPointsF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetAttachmentPoints(nint annot, nuint index, out FsQuadPointsF quad)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: index
+      type: System.UIntPtr
+    - id: quad
+      type: nebulae.dotPDFium.Native.FsQuadPointsF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetAttachmentPoints(annot As IntPtr, index As UIntPtr, quad As FsQuadPointsF) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetAttachmentPoints(IntPtr, UIntPtr, FsQuadPointsF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints(System.IntPtr, System.UIntPtr, nebulae.dotPDFium.Native.FsQuadPointsF)
+  name.vb: FPDFAnnot_GetAttachmentPoints(IntPtr, UIntPtr, FsQuadPointsF)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices(System.IntPtr,System.IntPtr,System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices(System.IntPtr,System.IntPtr,System.UInt32)
+  id: FPDFAnnot_GetVertices(System.IntPtr,System.IntPtr,System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetVertices(nint, nint, uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetVertices(nint, nint, uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices(nint, nint, uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetVertices(nint annot, nint buffer, uint length)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: buffer
+      type: System.IntPtr
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetVertices(annot As IntPtr, buffer As IntPtr, length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetVertices(IntPtr, IntPtr, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices(System.IntPtr, System.IntPtr, UInteger)
+  name.vb: FPDFAnnot_GetVertices(IntPtr, IntPtr, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount(System.IntPtr)
+  id: FPDFAnnot_GetInkListCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetInkListCount(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetInkListCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetInkListCount(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetInkListCount(annot As IntPtr) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetInkListCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount(System.IntPtr)
+  name.vb: FPDFAnnot_GetInkListCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath(System.IntPtr,System.UInt32,System.IntPtr,System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath(System.IntPtr,System.UInt32,System.IntPtr,System.UInt32)
+  id: FPDFAnnot_GetInkListPath(System.IntPtr,System.UInt32,System.IntPtr,System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetInkListPath(nint, uint, nint, uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetInkListPath(nint, uint, nint, uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath(nint, uint, nint, uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetInkListPath(nint annot, uint pathIndex, nint buffer, uint length)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: pathIndex
+      type: System.UInt32
+    - id: buffer
+      type: System.IntPtr
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetInkListPath(annot As IntPtr, pathIndex As UInteger, buffer As IntPtr, length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetInkListPath(IntPtr, UInteger, IntPtr, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath(System.IntPtr, UInteger, System.IntPtr, UInteger)
+  name.vb: FPDFAnnot_GetInkListPath(IntPtr, UInteger, IntPtr, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine(System.IntPtr,nebulae.dotPDFium.Native.FsPointF@,nebulae.dotPDFium.Native.FsPointF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine(System.IntPtr,nebulae.dotPDFium.Native.FsPointF@,nebulae.dotPDFium.Native.FsPointF@)
+  id: FPDFAnnot_GetLine(System.IntPtr,nebulae.dotPDFium.Native.FsPointF@,nebulae.dotPDFium.Native.FsPointF@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetLine(nint, out FsPointF, out FsPointF)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetLine(nint, out FsPointF, out FsPointF)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine(nint, out nebulae.dotPDFium.Native.FsPointF, out nebulae.dotPDFium.Native.FsPointF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetLine(nint annot, out FsPointF start, out FsPointF end)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: start
+      type: nebulae.dotPDFium.Native.FsPointF
+    - id: end
+      type: nebulae.dotPDFium.Native.FsPointF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetLine(annot As IntPtr, start As FsPointF, [end] As FsPointF) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetLine(IntPtr, FsPointF, FsPointF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine(System.IntPtr, nebulae.dotPDFium.Native.FsPointF, nebulae.dotPDFium.Native.FsPointF)
+  name.vb: FPDFAnnot_GetLine(IntPtr, FsPointF, FsPointF)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder(System.IntPtr,System.Single,System.Single,System.Single)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder(System.IntPtr,System.Single,System.Single,System.Single)
+  id: FPDFAnnot_SetBorder(System.IntPtr,System.Single,System.Single,System.Single)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetBorder(nint, float, float, float)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetBorder(nint, float, float, float)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder(nint, float, float, float)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetBorder(nint annot, float hr, float vr, float width)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: hr
+      type: System.Single
+    - id: vr
+      type: System.Single
+    - id: width
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetBorder(annot As IntPtr, hr As Single, vr As Single, width As Single) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetBorder(IntPtr, Single, Single, Single)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder(System.IntPtr, Single, Single, Single)
+  name.vb: FPDFAnnot_SetBorder(IntPtr, Single, Single, Single)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder(System.IntPtr,System.Single@,System.Single@,System.Single@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder(System.IntPtr,System.Single@,System.Single@,System.Single@)
+  id: FPDFAnnot_GetBorder(System.IntPtr,System.Single@,System.Single@,System.Single@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetBorder(nint, out float, out float, out float)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetBorder(nint, out float, out float, out float)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder(nint, out float, out float, out float)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetBorder(nint annot, out float hr, out float vr, out float width)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: hr
+      type: System.Single
+    - id: vr
+      type: System.Single
+    - id: width
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetBorder(annot As IntPtr, hr As Single, vr As Single, width As Single) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetBorder(IntPtr, Single, Single, Single)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder(System.IntPtr, Single, Single, Single)
+  name.vb: FPDFAnnot_GetBorder(IntPtr, Single, Single, Single)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey(System.IntPtr,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey(System.IntPtr,System.String)
+  id: FPDFAnnot_HasKey(System.IntPtr,System.String)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_HasKey(nint, string)
+  nameWithType: PdfAnnotNative.FPDFAnnot_HasKey(nint, string)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey(nint, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_HasKey(nint annot, string key)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: key
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_HasKey(annot As IntPtr, key As String) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_HasKey(IntPtr, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey(System.IntPtr, String)
+  name.vb: FPDFAnnot_HasKey(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType(System.IntPtr,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType(System.IntPtr,System.String)
+  id: FPDFAnnot_GetValueType(System.IntPtr,System.String)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetValueType(nint, string)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetValueType(nint, string)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType(nint, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetValueType(nint annot, string key)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: key
+      type: System.String
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetValueType(annot As IntPtr, key As String) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetValueType(IntPtr, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType(System.IntPtr, String)
+  name.vb: FPDFAnnot_GetValueType(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue(System.IntPtr,System.String,System.Byte[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue(System.IntPtr,System.String,System.Byte[],System.UInt32)
+  id: FPDFAnnot_GetStringValue(System.IntPtr,System.String,System.Byte[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetStringValue(nint, string, byte[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetStringValue(nint, string, byte[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue(nint, string, byte[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetStringValue(nint annot, string key, byte[] buffer, uint buflen)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: key
+      type: System.String
+    - id: buffer
+      type: System.Byte[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetStringValue(annot As IntPtr, key As String, buffer As Byte(), buflen As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetStringValue(IntPtr, String, Byte(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue(System.IntPtr, String, Byte(), UInteger)
+  name.vb: FPDFAnnot_GetStringValue(IntPtr, String, Byte(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue(System.IntPtr,System.String,System.Single@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue(System.IntPtr,System.String,System.Single@)
+  id: FPDFAnnot_GetNumberValue(System.IntPtr,System.String,System.Single@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetNumberValue(nint, string, out float)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetNumberValue(nint, string, out float)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue(nint, string, out float)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetNumberValue(nint annot, string key, out float value)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetNumberValue(annot As IntPtr, key As String, value As Single) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetNumberValue(IntPtr, String, Single)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue(System.IntPtr, String, Single)
+  name.vb: FPDFAnnot_GetNumberValue(IntPtr, String, Single)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(System.IntPtr,System.String,System.Single)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(System.IntPtr,System.String,System.Single)
+  id: FPDFAnnot_SetNumberValue(System.IntPtr,System.String,System.Single)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetNumberValue(nint, string, float)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetNumberValue(nint, string, float)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(nint, string, float)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetNumberValue(nint annot, string key, float value)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetNumberValue(annot As IntPtr, key As String, value As Single) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetNumberValue(IntPtr, String, Single)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(System.IntPtr, String, Single)
+  name.vb: FPDFAnnot_SetNumberValue(IntPtr, String, Single)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP(System.IntPtr,System.Int32,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP(System.IntPtr,System.Int32,System.String)
+  id: FPDFAnnot_SetAP(System.IntPtr,System.Int32,System.String)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetAP(nint, int, string)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetAP(nint, int, string)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP(nint, int, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetAP(nint annot, int mode, string value)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: mode
+      type: System.Int32
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetAP(annot As IntPtr, mode As Integer, value As String) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetAP(IntPtr, Integer, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP(System.IntPtr, Integer, String)
+  name.vb: FPDFAnnot_SetAP(IntPtr, Integer, String)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP(System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP(System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  id: FPDFAnnot_GetAP(System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetAP(nint, int, char[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetAP(nint, int, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP(nint, int, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetAP(nint annot, int mode, char[] buffer, uint buflen)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: mode
+      type: System.Int32
+    - id: buffer
+      type: System.Char[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetAP(annot As IntPtr, mode As Integer, buffer As Char(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetAP(IntPtr, Integer, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP(System.IntPtr, Integer, Char(), UInteger)
+  name.vb: FPDFAnnot_GetAP(IntPtr, Integer, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(System.IntPtr,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(System.IntPtr,System.String)
+  id: FPDFAnnot_GetLinkedAnnot(System.IntPtr,System.String)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetLinkedAnnot(nint, string)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(nint, string)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(nint, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAnnot_GetLinkedAnnot(nint annot, string key)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: key
+      type: System.String
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAnnot_GetLinkedAnnot(annot As IntPtr, key As String) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(IntPtr, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(System.IntPtr, String)
+  name.vb: FPDFAnnot_GetLinkedAnnot(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags(System.IntPtr)
+  id: FPDFAnnot_GetFlags(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFlags(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFlags(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetFlags(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetFlags(annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFlags(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags(System.IntPtr)
+  name.vb: FPDFAnnot_GetFlags(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags(System.IntPtr,System.Int32)
+  id: FPDFAnnot_SetFlags(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetFlags(nint, int)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetFlags(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetFlags(nint annot, int flags)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: flags
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetFlags(annot As IntPtr, flags As Integer) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetFlags(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags(System.IntPtr, Integer)
+  name.vb: FPDFAnnot_SetFlags(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment(System.IntPtr)
+  id: FPDFAnnot_GetFileAttachment(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFileAttachment(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFileAttachment(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAnnot_GetFileAttachment(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAnnot_GetFileAttachment(annot As IntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFileAttachment(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment(System.IntPtr)
+  name.vb: FPDFAnnot_GetFileAttachment(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment(System.IntPtr,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment(System.IntPtr,System.String)
+  id: FPDFAnnot_AddFileAttachment(System.IntPtr,System.String)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_AddFileAttachment(nint, string)
+  nameWithType: PdfAnnotNative.FPDFAnnot_AddFileAttachment(nint, string)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment(nint, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAnnot_AddFileAttachment(nint annot, string name)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: name
+      type: System.String
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAnnot_AddFileAttachment(annot As IntPtr, name As String) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_AddFileAttachment(IntPtr, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment(System.IntPtr, String)
+  name.vb: FPDFAnnot_AddFileAttachment(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI(System.IntPtr,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI(System.IntPtr,System.String)
+  id: FPDFAnnot_SetURI(System.IntPtr,System.String)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetURI(nint, string)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetURI(nint, string)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI(nint, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetURI(nint annot, string uri)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: uri
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetURI(annot As IntPtr, uri As String) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetURI(IntPtr, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI(System.IntPtr, String)
+  name.vb: FPDFAnnot_SetURI(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink(System.IntPtr)
+  id: FPDFAnnot_GetLink(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetLink(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetLink(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAnnot_GetLink(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAnnot_GetLink(annot As IntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetLink(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink(System.IntPtr)
+  name.vb: FPDFAnnot_GetLink(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(System.IntPtr,System.IntPtr,nebulae.dotPDFium.Native.FsPointF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(System.IntPtr,System.IntPtr,nebulae.dotPDFium.Native.FsPointF@)
+  id: FPDFAnnot_GetFormFieldAtPoint(System.IntPtr,System.IntPtr,nebulae.dotPDFium.Native.FsPointF@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormFieldAtPoint(nint, nint, ref FsPointF)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(nint, nint, ref FsPointF)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(nint, nint, ref nebulae.dotPDFium.Native.FsPointF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAnnot_GetFormFieldAtPoint(nint hHandle, nint page, ref FsPointF point)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: page
+      type: System.IntPtr
+    - id: point
+      type: nebulae.dotPDFium.Native.FsPointF
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAnnot_GetFormFieldAtPoint(hHandle As IntPtr, page As IntPtr, point As FsPointF) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(IntPtr, IntPtr, FsPointF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(System.IntPtr, System.IntPtr, nebulae.dotPDFium.Native.FsPointF)
+  name.vb: FPDFAnnot_GetFormFieldAtPoint(IntPtr, IntPtr, FsPointF)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  id: FPDFAnnot_GetFormFieldName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormFieldName(nint, nint, char[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldName(nint, nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName(nint, nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetFormFieldName(nint hHandle, nint annot, char[] buffer, uint buflen)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetFormFieldName(hHandle As IntPtr, annot As IntPtr, buffer As Char(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormFieldName(IntPtr, IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName(System.IntPtr, System.IntPtr, Char(), UInteger)
+  name.vb: FPDFAnnot_GetFormFieldName(IntPtr, IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  id: FPDFAnnot_GetFormFieldAlternateName(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormFieldAlternateName(nint, nint, char[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(nint, nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(nint, nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetFormFieldAlternateName(nint hHandle, nint annot, char[] buffer, uint buflen)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetFormFieldAlternateName(hHandle As IntPtr, annot As IntPtr, buffer As Char(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(IntPtr, IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(System.IntPtr, System.IntPtr, Char(), UInteger)
+  name.vb: FPDFAnnot_GetFormFieldAlternateName(IntPtr, IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_GetFormFieldType(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormFieldType(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldType(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetFormFieldType(nint hHandle, nint annot)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetFormFieldType(hHandle As IntPtr, annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormFieldType(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_GetFormFieldType(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  id: FPDFAnnot_GetFormFieldValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormFieldValue(nint, nint, char[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldValue(nint, nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue(nint, nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetFormFieldValue(nint hHandle, nint annot, char[] buffer, uint buflen)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetFormFieldValue(hHandle As IntPtr, annot As IntPtr, buffer As Char(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormFieldValue(IntPtr, IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue(System.IntPtr, System.IntPtr, Char(), UInteger)
+  name.vb: FPDFAnnot_GetFormFieldValue(IntPtr, IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  id: FPDFAnnot_GetFormFieldExportValue(System.IntPtr,System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormFieldExportValue(nint, nint, char[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue(nint, nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue(nint, nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetFormFieldExportValue(nint hHandle, nint annot, char[] buffer, uint buflen)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetFormFieldExportValue(hHandle As IntPtr, annot As IntPtr, buffer As Char(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue(IntPtr, IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue(System.IntPtr, System.IntPtr, Char(), UInteger)
+  name.vb: FPDFAnnot_GetFormFieldExportValue(IntPtr, IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_GetFormFieldFlags(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormFieldFlags(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldFlags(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetFormFieldFlags(nint hHandle, nint annot)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetFormFieldFlags(hHandle As IntPtr, annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormFieldFlags(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_GetFormFieldFlags(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_GetOptionCount(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetOptionCount(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetOptionCount(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetOptionCount(nint hHandle, nint annot)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetOptionCount(hHandle As IntPtr, annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetOptionCount(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_GetOptionCount(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  id: FPDFAnnot_GetOptionLabel(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetOptionLabel(nint, nint, int, char[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetOptionLabel(nint, nint, int, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel(nint, nint, int, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetOptionLabel(nint hHandle, nint annot, int index, char[] buffer, uint buflen)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: buffer
+      type: System.Char[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetOptionLabel(hHandle As IntPtr, annot As IntPtr, index As Integer, buffer As Char(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetOptionLabel(IntPtr, IntPtr, Integer, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel(System.IntPtr, System.IntPtr, Integer, Char(), UInteger)
+  name.vb: FPDFAnnot_GetOptionLabel(IntPtr, IntPtr, Integer, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected(System.IntPtr,System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected(System.IntPtr,System.IntPtr,System.Int32)
+  id: FPDFAnnot_IsOptionSelected(System.IntPtr,System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_IsOptionSelected(nint, nint, int)
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsOptionSelected(nint, nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected(nint, nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_IsOptionSelected(nint hHandle, nint annot, int index)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_IsOptionSelected(hHandle As IntPtr, annot As IntPtr, index As Integer) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_IsOptionSelected(IntPtr, IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected(System.IntPtr, System.IntPtr, Integer)
+  name.vb: FPDFAnnot_IsOptionSelected(IntPtr, IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize(System.IntPtr,System.IntPtr,System.Single@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize(System.IntPtr,System.IntPtr,System.Single@)
+  id: FPDFAnnot_GetFontSize(System.IntPtr,System.IntPtr,System.Single@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFontSize(nint, nint, out float)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFontSize(nint, nint, out float)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize(nint, nint, out float)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetFontSize(nint hHandle, nint annot, out float value)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: value
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetFontSize(hHandle As IntPtr, annot As IntPtr, value As Single) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFontSize(IntPtr, IntPtr, Single)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize(System.IntPtr, System.IntPtr, Single)
+  name.vb: FPDFAnnot_GetFontSize(IntPtr, IntPtr, Single)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor(System.IntPtr,System.IntPtr,System.UInt32@,System.UInt32@,System.UInt32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor(System.IntPtr,System.IntPtr,System.UInt32@,System.UInt32@,System.UInt32@)
+  id: FPDFAnnot_GetFontColor(System.IntPtr,System.IntPtr,System.UInt32@,System.UInt32@,System.UInt32@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFontColor(nint, nint, out uint, out uint, out uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFontColor(nint, nint, out uint, out uint, out uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor(nint, nint, out uint, out uint, out uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetFontColor(nint hHandle, nint annot, out uint r, out uint g, out uint b)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: r
+      type: System.UInt32
+    - id: g
+      type: System.UInt32
+    - id: b
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetFontColor(hHandle As IntPtr, annot As IntPtr, r As UInteger, g As UInteger, b As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFontColor(IntPtr, IntPtr, UInteger, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor(System.IntPtr, System.IntPtr, UInteger, UInteger, UInteger)
+  name.vb: FPDFAnnot_GetFontColor(IntPtr, IntPtr, UInteger, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_IsChecked(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_IsChecked(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsChecked(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_IsChecked(nint hHandle, nint annot)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_IsChecked(hHandle As IntPtr, annot As IntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_IsChecked(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_IsChecked(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  id: FPDFAnnot_SetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetFocusableSubtypes(nint, nint, nuint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(nint, nint, nuint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(nint, nint, nuint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetFocusableSubtypes(nint hHandle, nint subtypes, nuint count)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: subtypes
+      type: System.IntPtr
+    - id: count
+      type: System.UIntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetFocusableSubtypes(hHandle As IntPtr, subtypes As IntPtr, count As UIntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(IntPtr, IntPtr, UIntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(System.IntPtr, System.IntPtr, System.UIntPtr)
+  name.vb: FPDFAnnot_SetFocusableSubtypes(IntPtr, IntPtr, UIntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(System.IntPtr)
+  id: FPDFAnnot_GetFocusableSubtypesCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFocusableSubtypesCount(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetFocusableSubtypesCount(nint hHandle)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetFocusableSubtypesCount(hHandle As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(System.IntPtr)
+  name.vb: FPDFAnnot_GetFocusableSubtypesCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  id: FPDFAnnot_GetFocusableSubtypes(System.IntPtr,System.IntPtr,System.UIntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFocusableSubtypes(nint, nint, nuint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(nint, nint, nuint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(nint, nint, nuint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetFocusableSubtypes(nint hHandle, nint subtypes, nuint count)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: subtypes
+      type: System.IntPtr
+    - id: count
+      type: System.UIntPtr
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetFocusableSubtypes(hHandle As IntPtr, subtypes As IntPtr, count As UIntPtr) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(IntPtr, IntPtr, UIntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(System.IntPtr, System.IntPtr, System.UIntPtr)
+  name.vb: FPDFAnnot_GetFocusableSubtypes(IntPtr, IntPtr, UIntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  id: FPDFAnnot_GetFormAdditionalActionJavaScript(System.IntPtr,System.IntPtr,System.Int32,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormAdditionalActionJavaScript(nint, nint, int, char[], uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript(nint, nint, int, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript(nint, nint, int, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDFAnnot_GetFormAdditionalActionJavaScript(nint hHandle, nint annot, int eventId, char[] buffer, uint buflen)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    - id: eventId
+      type: System.Int32
+    - id: buffer
+      type: System.Char[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDFAnnot_GetFormAdditionalActionJavaScript(hHandle As IntPtr, annot As IntPtr, eventId As Integer, buffer As Char(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript(IntPtr, IntPtr, Integer, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript(System.IntPtr, System.IntPtr, Integer, Char(), UInteger)
+  name.vb: FPDFAnnot_GetFormAdditionalActionJavaScript(IntPtr, IntPtr, Integer, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_GetFormControlCount(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormControlCount(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormControlCount(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetFormControlCount(nint hHandle, nint annot)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetFormControlCount(hHandle As IntPtr, annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormControlCount(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_GetFormControlCount(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex(System.IntPtr,System.IntPtr)
+  id: FPDFAnnot_GetFormControlIndex(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetFormControlIndex(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormControlIndex(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetFormControlIndex(nint hHandle, nint annot)
+    parameters:
+    - id: hHandle
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetFormControlIndex(hHandle As IntPtr, annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetFormControlIndex(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex(System.IntPtr, System.IntPtr)
+  name.vb: FPDFAnnot_GetFormControlIndex(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype(System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype(System.Int32)
+  id: FPDFAnnot_IsSupportedSubtype(System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_IsSupportedSubtype(int)
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsSupportedSubtype(int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype(int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_IsSupportedSubtype(int subtype)
+    parameters:
+    - id: subtype
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_IsSupportedSubtype(subtype As Integer) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_IsSupportedSubtype(Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype(Integer)
+  name.vb: FPDFAnnot_IsSupportedSubtype(Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot(System.IntPtr,System.Int32)
+  id: FPDFPage_CreateAnnot(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFPage_CreateAnnot(nint, int)
+  nameWithType: PdfAnnotNative.FPDFPage_CreateAnnot(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFPage_CreateAnnot(nint page, int subtype)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    - id: subtype
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFPage_CreateAnnot(page As IntPtr, subtype As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot*
+  nameWithType.vb: PdfAnnotNative.FPDFPage_CreateAnnot(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot(System.IntPtr, Integer)
+  name.vb: FPDFPage_CreateAnnot(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount(System.IntPtr)
+  id: FPDFPage_GetAnnotCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFPage_GetAnnotCount(nint)
+  nameWithType: PdfAnnotNative.FPDFPage_GetAnnotCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFPage_GetAnnotCount(nint page)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFPage_GetAnnotCount(page As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount*
+  nameWithType.vb: PdfAnnotNative.FPDFPage_GetAnnotCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount(System.IntPtr)
+  name.vb: FPDFPage_GetAnnotCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot(System.IntPtr,System.Int32)
+  id: FPDFPage_GetAnnot(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFPage_GetAnnot(nint, int)
+  nameWithType: PdfAnnotNative.FPDFPage_GetAnnot(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFPage_GetAnnot(nint page, int index)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFPage_GetAnnot(page As IntPtr, index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot*
+  nameWithType.vb: PdfAnnotNative.FPDFPage_GetAnnot(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot(System.IntPtr, Integer)
+  name.vb: FPDFPage_GetAnnot(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex(System.IntPtr,System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex(System.IntPtr,System.IntPtr)
+  id: FPDFPage_GetAnnotIndex(System.IntPtr,System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFPage_GetAnnotIndex(nint, nint)
+  nameWithType: PdfAnnotNative.FPDFPage_GetAnnotIndex(nint, nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex(nint, nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFPage_GetAnnotIndex(nint page, nint annot)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFPage_GetAnnotIndex(page As IntPtr, annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex*
+  nameWithType.vb: PdfAnnotNative.FPDFPage_GetAnnotIndex(IntPtr, IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex(System.IntPtr, System.IntPtr)
+  name.vb: FPDFPage_GetAnnotIndex(IntPtr, IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot(System.IntPtr)
+  id: FPDFPage_CloseAnnot(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFPage_CloseAnnot(nint)
+  nameWithType: PdfAnnotNative.FPDFPage_CloseAnnot(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDFPage_CloseAnnot(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDFPage_CloseAnnot(annot As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot*
+  nameWithType.vb: PdfAnnotNative.FPDFPage_CloseAnnot(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot(System.IntPtr)
+  name.vb: FPDFPage_CloseAnnot(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot(System.IntPtr,System.Int32)
+  id: FPDFPage_RemoveAnnot(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFPage_RemoveAnnot(nint, int)
+  nameWithType: PdfAnnotNative.FPDFPage_RemoveAnnot(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFPage_RemoveAnnot(nint page, int index)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFPage_RemoveAnnot(page As IntPtr, index As Integer) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot*
+  nameWithType.vb: PdfAnnotNative.FPDFPage_RemoveAnnot(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot(System.IntPtr, Integer)
+  name.vb: FPDFPage_RemoveAnnot(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype(System.IntPtr)
+  id: FPDFAnnot_GetSubtype(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetSubtype(nint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetSubtype(nint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAnnot_GetSubtype(nint annot)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAnnot_GetSubtype(annot As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetSubtype(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype(System.IntPtr)
+  name.vb: FPDFAnnot_GetSubtype(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor(System.IntPtr,System.Int32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor(System.IntPtr,System.Int32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)
+  id: FPDFAnnot_SetColor(System.IntPtr,System.Int32,System.UInt32,System.UInt32,System.UInt32,System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetColor(nint, int, uint, uint, uint, uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetColor(nint, int, uint, uint, uint, uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor(nint, int, uint, uint, uint, uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetColor(nint annot, int type, uint r, uint g, uint b, uint a)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: type
+      type: System.Int32
+    - id: r
+      type: System.UInt32
+    - id: g
+      type: System.UInt32
+    - id: b
+      type: System.UInt32
+    - id: a
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetColor(annot As IntPtr, type As Integer, r As UInteger, g As UInteger, b As UInteger, a As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor(System.IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  name.vb: FPDFAnnot_SetColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  id: FPDFAnnot_GetColor(System.IntPtr,System.Int32,System.UInt32@,System.UInt32@,System.UInt32@,System.UInt32@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetColor(nint, int, out uint, out uint, out uint, out uint)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetColor(nint, int, out uint, out uint, out uint, out uint)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor(nint, int, out uint, out uint, out uint, out uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetColor(nint annot, int type, out uint r, out uint g, out uint b, out uint a)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: type
+      type: System.Int32
+    - id: r
+      type: System.UInt32
+    - id: g
+      type: System.UInt32
+    - id: b
+      type: System.UInt32
+    - id: a
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetColor(annot As IntPtr, type As Integer, r As UInteger, g As UInteger, b As UInteger, a As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor(System.IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+  name.vb: FPDFAnnot_GetColor(IntPtr, Integer, UInteger, UInteger, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  id: FPDFAnnot_SetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetRect(nint, ref FsRectF)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetRect(nint, ref FsRectF)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect(nint, ref nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetRect(nint annot, ref FsRectF rect)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: rect
+      type: nebulae.dotPDFium.Native.FsRectF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetRect(annot As IntPtr, rect As FsRectF) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetRect(IntPtr, FsRectF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect(System.IntPtr, nebulae.dotPDFium.Native.FsRectF)
+  name.vb: FPDFAnnot_SetRect(IntPtr, FsRectF)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  id: FPDFAnnot_GetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_GetRect(nint, out FsRectF)
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetRect(nint, out FsRectF)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect(nint, out nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_GetRect(nint annot, out FsRectF rect)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: rect
+      type: nebulae.dotPDFium.Native.FsRectF
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_GetRect(annot As IntPtr, rect As FsRectF) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_GetRect(IntPtr, FsRectF)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect(System.IntPtr, nebulae.dotPDFium.Native.FsRectF)
+  name.vb: FPDFAnnot_GetRect(IntPtr, FsRectF)
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue(System.IntPtr,System.String,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue(System.IntPtr,System.String,System.String)
+  id: FPDFAnnot_SetStringValue(System.IntPtr,System.String,System.String)
+  parent: nebulae.dotPDFium.Native.PdfAnnotNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAnnot_SetStringValue(nint, string, string)
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetStringValue(nint, string, string)
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue(nint, string, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDFAnnot_SetStringValue(nint annot, string key, string value)
+    parameters:
+    - id: annot
+      type: System.IntPtr
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDFAnnot_SetStringValue(annot As IntPtr, key As String, value As String) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue*
+  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetStringValue(IntPtr, String, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue(System.IntPtr, String, String)
+  name.vb: FPDFAnnot_SetStringValue(IntPtr, String, String)
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_IsObjectSupportedSubtype_System_Int32_
+  name: FPDFAnnot_IsObjectSupportedSubtype
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsObjectSupportedSubtype
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_UpdateObject_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_UpdateObject
+  nameWithType: PdfAnnotNative.FPDFAnnot_UpdateObject
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_UpdateObject
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_AddInkStroke_System_IntPtr_System_IntPtr_System_UIntPtr_
+  name: FPDFAnnot_AddInkStroke
+  nameWithType: PdfAnnotNative.FPDFAnnot_AddInkStroke
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddInkStroke
+- uid: System.UIntPtr
+  commentId: T:System.UIntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uintptr
+  name: nuint
+  nameWithType: nuint
+  fullName: nuint
+  nameWithType.vb: UIntPtr
+  fullName.vb: System.UIntPtr
+  name.vb: UIntPtr
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_RemoveInkList_System_IntPtr_
+  name: FPDFAnnot_RemoveInkList
+  nameWithType: PdfAnnotNative.FPDFAnnot_RemoveInkList
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveInkList
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_AppendObject_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_AppendObject
+  nameWithType: PdfAnnotNative.FPDFAnnot_AppendObject
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendObject
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetObjectCount_System_IntPtr_
+  name: FPDFAnnot_GetObjectCount
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetObjectCount
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObjectCount
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetObject_System_IntPtr_System_Int32_
+  name: FPDFAnnot_GetObject
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetObject
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetObject
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_RemoveObject_System_IntPtr_System_Int32_
+  name: FPDFAnnot_RemoveObject
+  nameWithType: PdfAnnotNative.FPDFAnnot_RemoveObject
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_RemoveObject
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_HasAttachmentPoints_System_IntPtr_
+  name: FPDFAnnot_HasAttachmentPoints
+  nameWithType: PdfAnnotNative.FPDFAnnot_HasAttachmentPoints
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasAttachmentPoints
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetAttachmentPoints_System_IntPtr_System_UIntPtr_nebulae_dotPDFium_Native_FsQuadPointsF__
+  name: FPDFAnnot_SetAttachmentPoints
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetAttachmentPoints
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAttachmentPoints
+- uid: nebulae.dotPDFium.Native.FsQuadPointsF
+  commentId: T:nebulae.dotPDFium.Native.FsQuadPointsF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsQuadPointsF.html
+  name: FsQuadPointsF
+  nameWithType: FsQuadPointsF
+  fullName: nebulae.dotPDFium.Native.FsQuadPointsF
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_AppendAttachmentPoints_System_IntPtr_nebulae_dotPDFium_Native_FsQuadPointsF__
+  name: FPDFAnnot_AppendAttachmentPoints
+  nameWithType: PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_CountAttachmentPoints_System_IntPtr_
+  name: FPDFAnnot_CountAttachmentPoints
+  nameWithType: PdfAnnotNative.FPDFAnnot_CountAttachmentPoints
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_CountAttachmentPoints
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetAttachmentPoints_System_IntPtr_System_UIntPtr_nebulae_dotPDFium_Native_FsQuadPointsF__
+  name: FPDFAnnot_GetAttachmentPoints
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetAttachmentPoints
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAttachmentPoints
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetVertices_System_IntPtr_System_IntPtr_System_UInt32_
+  name: FPDFAnnot_GetVertices
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetVertices
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetVertices
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetInkListCount_System_IntPtr_
+  name: FPDFAnnot_GetInkListCount
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetInkListCount
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListCount
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetInkListPath_System_IntPtr_System_UInt32_System_IntPtr_System_UInt32_
+  name: FPDFAnnot_GetInkListPath
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetInkListPath
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetInkListPath
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetLine_System_IntPtr_nebulae_dotPDFium_Native_FsPointF__nebulae_dotPDFium_Native_FsPointF__
+  name: FPDFAnnot_GetLine
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetLine
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLine
+- uid: nebulae.dotPDFium.Native.FsPointF
+  commentId: T:nebulae.dotPDFium.Native.FsPointF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsPointF.html
+  name: FsPointF
+  nameWithType: FsPointF
+  fullName: nebulae.dotPDFium.Native.FsPointF
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetBorder_System_IntPtr_System_Single_System_Single_System_Single_
+  name: FPDFAnnot_SetBorder
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetBorder
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetBorder
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetBorder_System_IntPtr_System_Single__System_Single__System_Single__
+  name: FPDFAnnot_GetBorder
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetBorder
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetBorder
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_HasKey_System_IntPtr_System_String_
+  name: FPDFAnnot_HasKey
+  nameWithType: PdfAnnotNative.FPDFAnnot_HasKey
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_HasKey
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetValueType_System_IntPtr_System_String_
+  name: FPDFAnnot_GetValueType
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetValueType
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetValueType
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetStringValue_System_IntPtr_System_String_System_Byte___System_UInt32_
+  name: FPDFAnnot_GetStringValue
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetStringValue
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetStringValue
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetNumberValue_System_IntPtr_System_String_System_Single__
+  name: FPDFAnnot_GetNumberValue
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetNumberValue
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetNumberValue
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetNumberValue_System_IntPtr_System_String_System_Single_
+  name: FPDFAnnot_SetNumberValue
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetNumberValue
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetAP_System_IntPtr_System_Int32_System_String_
+  name: FPDFAnnot_SetAP
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetAP
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetAP
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetAP_System_IntPtr_System_Int32_System_Char___System_UInt32_
+  name: FPDFAnnot_GetAP
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetAP
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetAP
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetLinkedAnnot_System_IntPtr_System_String_
+  name: FPDFAnnot_GetLinkedAnnot
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetLinkedAnnot
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLinkedAnnot
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFlags_System_IntPtr_
+  name: FPDFAnnot_GetFlags
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFlags
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFlags
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetFlags_System_IntPtr_System_Int32_
+  name: FPDFAnnot_SetFlags
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetFlags
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFlags
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFileAttachment_System_IntPtr_
+  name: FPDFAnnot_GetFileAttachment
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFileAttachment
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFileAttachment
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_AddFileAttachment_System_IntPtr_System_String_
+  name: FPDFAnnot_AddFileAttachment
+  nameWithType: PdfAnnotNative.FPDFAnnot_AddFileAttachment
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_AddFileAttachment
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetURI_System_IntPtr_System_String_
+  name: FPDFAnnot_SetURI
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetURI
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetURI
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetLink_System_IntPtr_
+  name: FPDFAnnot_GetLink
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetLink
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetLink
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormFieldAtPoint_System_IntPtr_System_IntPtr_nebulae_dotPDFium_Native_FsPointF__
+  name: FPDFAnnot_GetFormFieldAtPoint
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormFieldName_System_IntPtr_System_IntPtr_System_Char___System_UInt32_
+  name: FPDFAnnot_GetFormFieldName
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldName
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldName
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormFieldAlternateName_System_IntPtr_System_IntPtr_System_Char___System_UInt32_
+  name: FPDFAnnot_GetFormFieldAlternateName
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormFieldType_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_GetFormFieldType
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldType
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldType
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormFieldValue_System_IntPtr_System_IntPtr_System_Char___System_UInt32_
+  name: FPDFAnnot_GetFormFieldValue
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldValue
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldValue
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormFieldExportValue_System_IntPtr_System_IntPtr_System_Char___System_UInt32_
+  name: FPDFAnnot_GetFormFieldExportValue
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldExportValue
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormFieldFlags_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_GetFormFieldFlags
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormFieldFlags
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormFieldFlags
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetOptionCount_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_GetOptionCount
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetOptionCount
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionCount
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetOptionLabel_System_IntPtr_System_IntPtr_System_Int32_System_Char___System_UInt32_
+  name: FPDFAnnot_GetOptionLabel
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetOptionLabel
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetOptionLabel
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_IsOptionSelected_System_IntPtr_System_IntPtr_System_Int32_
+  name: FPDFAnnot_IsOptionSelected
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsOptionSelected
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsOptionSelected
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFontSize_System_IntPtr_System_IntPtr_System_Single__
+  name: FPDFAnnot_GetFontSize
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFontSize
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontSize
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFontColor_System_IntPtr_System_IntPtr_System_UInt32__System_UInt32__System_UInt32__
+  name: FPDFAnnot_GetFontColor
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFontColor
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFontColor
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_IsChecked_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_IsChecked
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsChecked
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsChecked
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetFocusableSubtypes_System_IntPtr_System_IntPtr_System_UIntPtr_
+  name: FPDFAnnot_SetFocusableSubtypes
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFocusableSubtypesCount_System_IntPtr_
+  name: FPDFAnnot_GetFocusableSubtypesCount
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFocusableSubtypes_System_IntPtr_System_IntPtr_System_UIntPtr_
+  name: FPDFAnnot_GetFocusableSubtypes
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormAdditionalActionJavaScript_System_IntPtr_System_IntPtr_System_Int32_System_Char___System_UInt32_
+  name: FPDFAnnot_GetFormAdditionalActionJavaScript
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormAdditionalActionJavaScript
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormControlCount_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_GetFormControlCount
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormControlCount
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlCount
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetFormControlIndex_System_IntPtr_System_IntPtr_
+  name: FPDFAnnot_GetFormControlIndex
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetFormControlIndex
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetFormControlIndex
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_IsSupportedSubtype_System_Int32_
+  name: FPDFAnnot_IsSupportedSubtype
+  nameWithType: PdfAnnotNative.FPDFAnnot_IsSupportedSubtype
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_IsSupportedSubtype
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFPage_CreateAnnot_System_IntPtr_System_Int32_
+  name: FPDFPage_CreateAnnot
+  nameWithType: PdfAnnotNative.FPDFPage_CreateAnnot
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CreateAnnot
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFPage_GetAnnotCount_System_IntPtr_
+  name: FPDFPage_GetAnnotCount
+  nameWithType: PdfAnnotNative.FPDFPage_GetAnnotCount
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotCount
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFPage_GetAnnot_System_IntPtr_System_Int32_
+  name: FPDFPage_GetAnnot
+  nameWithType: PdfAnnotNative.FPDFPage_GetAnnot
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnot
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFPage_GetAnnotIndex_System_IntPtr_System_IntPtr_
+  name: FPDFPage_GetAnnotIndex
+  nameWithType: PdfAnnotNative.FPDFPage_GetAnnotIndex
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_GetAnnotIndex
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFPage_CloseAnnot_System_IntPtr_
+  name: FPDFPage_CloseAnnot
+  nameWithType: PdfAnnotNative.FPDFPage_CloseAnnot
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_CloseAnnot
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFPage_RemoveAnnot_System_IntPtr_System_Int32_
+  name: FPDFPage_RemoveAnnot
+  nameWithType: PdfAnnotNative.FPDFPage_RemoveAnnot
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFPage_RemoveAnnot
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetSubtype_System_IntPtr_
+  name: FPDFAnnot_GetSubtype
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetSubtype
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetSubtype
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetColor_System_IntPtr_System_Int32_System_UInt32_System_UInt32_System_UInt32_System_UInt32_
+  name: FPDFAnnot_SetColor
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetColor
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetColor
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetColor_System_IntPtr_System_Int32_System_UInt32__System_UInt32__System_UInt32__System_UInt32__
+  name: FPDFAnnot_GetColor
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetColor
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetColor
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetRect_System_IntPtr_nebulae_dotPDFium_Native_FsRectF__
+  name: FPDFAnnot_SetRect
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetRect
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect
+- uid: nebulae.dotPDFium.Native.FsRectF
+  commentId: T:nebulae.dotPDFium.Native.FsRectF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsRectF.html
+  name: FsRectF
+  nameWithType: FsRectF
+  fullName: nebulae.dotPDFium.Native.FsRectF
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_GetRect_System_IntPtr_nebulae_dotPDFium_Native_FsRectF__
+  name: FPDFAnnot_GetRect
+  nameWithType: PdfAnnotNative.FPDFAnnot_GetRect
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_GetRect
+- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetStringValue_System_IntPtr_System_String_System_String_
+  name: FPDFAnnot_SetStringValue
+  nameWithType: PdfAnnotNative.FPDFAnnot_SetStringValue
+  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetStringValue

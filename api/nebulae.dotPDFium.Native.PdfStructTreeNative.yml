@@ -1,0 +1,1576 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative
+  commentId: T:nebulae.dotPDFium.Native.PdfStructTreeNative
+  id: PdfStructTreeNative
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue(System.IntPtr,System.Boolean@)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName(System.IntPtr,System.Int32,System.IntPtr,System.UInt32,System.UInt32@)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue(System.IntPtr,System.Single@)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue(System.IntPtr,System.String)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText(System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText(System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID(System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang(System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType(System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute(System.IntPtr,System.String,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle(System.IntPtr,System.Char[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType(System.IntPtr,System.Byte[],System.UInt32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex(System.IntPtr,System.Int32)
+  - nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage(System.IntPtr)
+  langs:
+  - csharp
+  - vb
+  name: PdfStructTreeNative
+  nameWithType: PdfStructTreeNative
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/Native/PdfStructTreeNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfStructTreeNative
+    path: ../dotPDFium/dotPDFium/Native/PdfStructTreeNative.cs
+    startLine: 5
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static class PdfStructTreeNative
+    content.vb: Public Module PdfStructTreeNative
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage(System.IntPtr)
+  id: FPDF_StructTree_GetForPage(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructTree_GetForPage(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_GetForPage(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructTree_GetForPage(nint page)
+    parameters:
+    - id: page
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructTree_GetForPage(page As IntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructTree_GetForPage(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage(System.IntPtr)
+  name.vb: FPDF_StructTree_GetForPage(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close(System.IntPtr)
+  id: FPDF_StructTree_Close(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructTree_Close(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_Close(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDF_StructTree_Close(nint structTree)
+    parameters:
+    - id: structTree
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDF_StructTree_Close(structTree As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructTree_Close(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close(System.IntPtr)
+  name.vb: FPDF_StructTree_Close(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren(System.IntPtr)
+  id: FPDF_StructTree_CountChildren(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructTree_CountChildren(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_CountChildren(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructTree_CountChildren(nint structTree)
+    parameters:
+    - id: structTree
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructTree_CountChildren(structTree As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructTree_CountChildren(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren(System.IntPtr)
+  name.vb: FPDF_StructTree_CountChildren(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex(System.IntPtr,System.Int32)
+  id: FPDF_StructTree_GetChildAtIndex(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructTree_GetChildAtIndex(nint, int)
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructTree_GetChildAtIndex(nint structTree, int index)
+    parameters:
+    - id: structTree
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructTree_GetChildAtIndex(structTree As IntPtr, index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex(System.IntPtr, Integer)
+  name.vb: FPDF_StructTree_GetChildAtIndex(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent(System.IntPtr)
+  id: FPDF_StructElement_GetParent(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetParent(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetParent(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructElement_GetParent(nint element)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructElement_GetParent(element As IntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetParent(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent(System.IntPtr)
+  name.vb: FPDF_StructElement_GetParent(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren(System.IntPtr)
+  id: FPDF_StructElement_CountChildren(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_CountChildren(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_CountChildren(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_CountChildren(nint element)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_CountChildren(element As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_CountChildren(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren(System.IntPtr)
+  name.vb: FPDF_StructElement_CountChildren(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex(System.IntPtr,System.Int32)
+  id: FPDF_StructElement_GetChildAtIndex(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetChildAtIndex(nint, int)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructElement_GetChildAtIndex(nint element, int index)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructElement_GetChildAtIndex(element As IntPtr, index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex(System.IntPtr, Integer)
+  name.vb: FPDF_StructElement_GetChildAtIndex(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID(System.IntPtr)
+  id: FPDF_StructElement_GetMarkedContentID(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetMarkedContentID(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_GetMarkedContentID(nint element)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_GetMarkedContentID(element As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID(System.IntPtr)
+  name.vb: FPDF_StructElement_GetMarkedContentID(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText(System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText(System.IntPtr,System.Char[],System.UInt32)
+  id: FPDF_StructElement_GetAltText(System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetAltText(nint, char[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAltText(nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText(nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetAltText(nint element, char[] buffer, uint length)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetAltText(element As IntPtr, buffer As Char(), length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetAltText(IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText(System.IntPtr, Char(), UInteger)
+  name.vb: FPDF_StructElement_GetAltText(IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText(System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText(System.IntPtr,System.Char[],System.UInt32)
+  id: FPDF_StructElement_GetActualText(System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetActualText(nint, char[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetActualText(nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText(nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetActualText(nint element, char[] buffer, uint length)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetActualText(element As IntPtr, buffer As Char(), length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetActualText(IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText(System.IntPtr, Char(), UInteger)
+  name.vb: FPDF_StructElement_GetActualText(IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID(System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID(System.IntPtr,System.Char[],System.UInt32)
+  id: FPDF_StructElement_GetID(System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetID(nint, char[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetID(nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID(nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetID(nint element, char[] buffer, uint length)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetID(element As IntPtr, buffer As Char(), length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetID(IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID(System.IntPtr, Char(), UInteger)
+  name.vb: FPDF_StructElement_GetID(IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang(System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang(System.IntPtr,System.Char[],System.UInt32)
+  id: FPDF_StructElement_GetLang(System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetLang(nint, char[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetLang(nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang(nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetLang(nint element, char[] buffer, uint length)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetLang(element As IntPtr, buffer As Char(), length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetLang(IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang(System.IntPtr, Char(), UInteger)
+  name.vb: FPDF_StructElement_GetLang(IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType(System.IntPtr,System.Byte[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType(System.IntPtr,System.Byte[],System.UInt32)
+  id: FPDF_StructElement_GetType(System.IntPtr,System.Byte[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetType(nint, byte[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetType(nint, byte[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType(nint, byte[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetType(nint element, byte[] buffer, uint buflen)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: buffer
+      type: System.Byte[]
+    - id: buflen
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetType(element As IntPtr, buffer As Byte(), buflen As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetType(IntPtr, Byte(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType(System.IntPtr, Byte(), UInteger)
+  name.vb: FPDF_StructElement_GetType(IntPtr, Byte(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType(System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType(System.IntPtr,System.Char[],System.UInt32)
+  id: FPDF_StructElement_GetObjType(System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetObjType(nint, char[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetObjType(nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType(nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetObjType(nint element, char[] buffer, uint length)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetObjType(element As IntPtr, buffer As Char(), length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetObjType(IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType(System.IntPtr, Char(), UInteger)
+  name.vb: FPDF_StructElement_GetObjType(IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle(System.IntPtr,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle(System.IntPtr,System.Char[],System.UInt32)
+  id: FPDF_StructElement_GetTitle(System.IntPtr,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetTitle(nint, char[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetTitle(nint, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle(nint, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetTitle(nint element, char[] buffer, uint length)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: buffer
+      type: System.Char[]
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetTitle(element As IntPtr, buffer As Char(), length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetTitle(IntPtr, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle(System.IntPtr, Char(), UInteger)
+  name.vb: FPDF_StructElement_GetTitle(IntPtr, Char(), UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr(System.IntPtr)
+  id: FPDF_StructElement_GetAttr(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetAttr(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAttr(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructElement_GetAttr(nint element)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructElement_GetAttr(element As IntPtr) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetAttr(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr(System.IntPtr)
+  name.vb: FPDF_StructElement_GetAttr(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount(System.IntPtr)
+  id: FPDF_StructElement_GetAttributeCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetAttributeCount(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAttributeCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_GetAttributeCount(nint element)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_GetAttributeCount(element As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetAttributeCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount(System.IntPtr)
+  name.vb: FPDF_StructElement_GetAttributeCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex(System.IntPtr,System.Int32)
+  id: FPDF_StructElement_GetAttributeAtIndex(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetAttributeAtIndex(nint, int)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructElement_GetAttributeAtIndex(nint element, int index)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructElement_GetAttributeAtIndex(element As IntPtr, index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex(System.IntPtr, Integer)
+  name.vb: FPDF_StructElement_GetAttributeAtIndex(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount(System.IntPtr)
+  id: FPDF_StructElement_Attr_GetCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetCount(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_Attr_GetCount(nint attr)
+    parameters:
+    - id: attr
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetCount(attr As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount(System.IntPtr)
+  name.vb: FPDF_StructElement_Attr_GetCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName(System.IntPtr,System.Int32,System.IntPtr,System.UInt32,System.UInt32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName(System.IntPtr,System.Int32,System.IntPtr,System.UInt32,System.UInt32@)
+  id: FPDF_StructElement_Attr_GetName(System.IntPtr,System.Int32,System.IntPtr,System.UInt32,System.UInt32@)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetName(nint, int, nint, uint, out uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetName(nint, int, nint, uint, out uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName(nint, int, nint, uint, out uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDF_StructElement_Attr_GetName(nint attr, int index, nint buffer, uint buflen, out uint outBuflen)
+    parameters:
+    - id: attr
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    - id: buffer
+      type: System.IntPtr
+    - id: buflen
+      type: System.UInt32
+    - id: outBuflen
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetName(attr As IntPtr, index As Integer, buffer As IntPtr, buflen As UInteger, outBuflen As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetName(IntPtr, Integer, IntPtr, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName(System.IntPtr, Integer, System.IntPtr, UInteger, UInteger)
+  name.vb: FPDF_StructElement_Attr_GetName(IntPtr, Integer, IntPtr, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue(System.IntPtr,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue(System.IntPtr,System.String)
+  id: FPDF_StructElement_Attr_GetValue(System.IntPtr,System.String)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetValue(nint, string)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetValue(nint, string)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue(nint, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructElement_Attr_GetValue(nint attr, string name)
+    parameters:
+    - id: attr
+      type: System.IntPtr
+    - id: name
+      type: System.String
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetValue(attr As IntPtr, name As String) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetValue(IntPtr, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue(System.IntPtr, String)
+  name.vb: FPDF_StructElement_Attr_GetValue(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType(System.IntPtr)
+  id: FPDF_StructElement_Attr_GetType(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetType(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetType(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_Attr_GetType(nint value)
+    parameters:
+    - id: value
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetType(value As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetType(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType(System.IntPtr)
+  name.vb: FPDF_StructElement_Attr_GetType(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue(System.IntPtr,System.Boolean@)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue(System.IntPtr,System.Boolean@)
+  id: FPDF_StructElement_Attr_GetBooleanValue(System.IntPtr,System.Boolean@)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetBooleanValue(nint, out bool)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue(nint, out bool)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue(nint, out bool)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDF_StructElement_Attr_GetBooleanValue(nint value, out bool result)
+    parameters:
+    - id: value
+      type: System.IntPtr
+    - id: result
+      type: System.Boolean
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetBooleanValue(value As IntPtr, result As Boolean) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue(IntPtr, Boolean)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue(System.IntPtr, Boolean)
+  name.vb: FPDF_StructElement_Attr_GetBooleanValue(IntPtr, Boolean)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue(System.IntPtr,System.Single@)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue(System.IntPtr,System.Single@)
+  id: FPDF_StructElement_Attr_GetNumberValue(System.IntPtr,System.Single@)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetNumberValue(nint, out float)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue(nint, out float)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue(nint, out float)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDF_StructElement_Attr_GetNumberValue(nint value, out float result)
+    parameters:
+    - id: value
+      type: System.IntPtr
+    - id: result
+      type: System.Single
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetNumberValue(value As IntPtr, result As Single) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue(IntPtr, Single)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue(System.IntPtr, Single)
+  name.vb: FPDF_StructElement_Attr_GetNumberValue(IntPtr, Single)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  id: FPDF_StructElement_Attr_GetStringValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetStringValue(nint, nint, uint, out uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue(nint, nint, uint, out uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue(nint, nint, uint, out uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDF_StructElement_Attr_GetStringValue(nint value, nint buffer, uint buflen, out uint outBuflen)
+    parameters:
+    - id: value
+      type: System.IntPtr
+    - id: buffer
+      type: System.IntPtr
+    - id: buflen
+      type: System.UInt32
+    - id: outBuflen
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetStringValue(value As IntPtr, buffer As IntPtr, buflen As UInteger, outBuflen As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue(IntPtr, IntPtr, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue(System.IntPtr, System.IntPtr, UInteger, UInteger)
+  name.vb: FPDF_StructElement_Attr_GetStringValue(IntPtr, IntPtr, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  id: FPDF_StructElement_Attr_GetBlobValue(System.IntPtr,System.IntPtr,System.UInt32,System.UInt32@)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetBlobValue(nint, nint, uint, out uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue(nint, nint, uint, out uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue(nint, nint, uint, out uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern bool FPDF_StructElement_Attr_GetBlobValue(nint value, nint buffer, uint buflen, out uint outBuflen)
+    parameters:
+    - id: value
+      type: System.IntPtr
+    - id: buffer
+      type: System.IntPtr
+    - id: buflen
+      type: System.UInt32
+    - id: outBuflen
+      type: System.UInt32
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetBlobValue(value As IntPtr, buffer As IntPtr, buflen As UInteger, outBuflen As UInteger) As Boolean
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue(IntPtr, IntPtr, UInteger, UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue(System.IntPtr, System.IntPtr, UInteger, UInteger)
+  name.vb: FPDF_StructElement_Attr_GetBlobValue(IntPtr, IntPtr, UInteger, UInteger)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren(System.IntPtr)
+  id: FPDF_StructElement_Attr_CountChildren(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_CountChildren(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_Attr_CountChildren(nint value)
+    parameters:
+    - id: value
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_Attr_CountChildren(value As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren(System.IntPtr)
+  name.vb: FPDF_StructElement_Attr_CountChildren(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex(System.IntPtr,System.Int32)
+  id: FPDF_StructElement_Attr_GetChildAtIndex(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_Attr_GetChildAtIndex(nint, int)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDF_StructElement_Attr_GetChildAtIndex(nint value, int index)
+    parameters:
+    - id: value
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDF_StructElement_Attr_GetChildAtIndex(value As IntPtr, index As Integer) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex(System.IntPtr, Integer)
+  name.vb: FPDF_StructElement_Attr_GetChildAtIndex(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount(System.IntPtr)
+  id: FPDF_StructElement_GetMarkedContentIdCount(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetMarkedContentIdCount(nint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount(nint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_GetMarkedContentIdCount(nint element)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_GetMarkedContentIdCount(element As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount(System.IntPtr)
+  name.vb: FPDF_StructElement_GetMarkedContentIdCount(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex(System.IntPtr,System.Int32)
+  id: FPDF_StructElement_GetMarkedContentIdAtIndex(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetMarkedContentIdAtIndex(nint, int)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_GetMarkedContentIdAtIndex(nint element, int index)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_GetMarkedContentIdAtIndex(element As IntPtr, index As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex(System.IntPtr, Integer)
+  name.vb: FPDF_StructElement_GetMarkedContentIdAtIndex(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID(System.IntPtr,System.Int32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID(System.IntPtr,System.Int32)
+  id: FPDF_StructElement_GetChildMarkedContentID(System.IntPtr,System.Int32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetChildMarkedContentID(nint, int)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID(nint, int)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID(nint, int)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDF_StructElement_GetChildMarkedContentID(nint element, int index)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: index
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDF_StructElement_GetChildMarkedContentID(element As IntPtr, index As Integer) As Integer
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID(IntPtr, Integer)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID(System.IntPtr, Integer)
+  name.vb: FPDF_StructElement_GetChildMarkedContentID(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute(System.IntPtr,System.String,System.Char[],System.UInt32)
+  commentId: M:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute(System.IntPtr,System.String,System.Char[],System.UInt32)
+  id: FPDF_StructElement_GetStringAttribute(System.IntPtr,System.String,System.Char[],System.UInt32)
+  parent: nebulae.dotPDFium.Native.PdfStructTreeNative
+  langs:
+  - csharp
+  - vb
+  name: FPDF_StructElement_GetStringAttribute(nint, string, char[], uint)
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetStringAttribute(nint, string, char[], uint)
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute(nint, string, char[], uint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern uint FPDF_StructElement_GetStringAttribute(nint element, string name, char[] buffer, uint length)
+    parameters:
+    - id: element
+      type: System.IntPtr
+    - id: name
+      type: System.String
+    - id: buffer
+      type: System.Char[]
+    - id: length
+      type: System.UInt32
+    return:
+      type: System.UInt32
+    content.vb: Public Shared Function FPDF_StructElement_GetStringAttribute(element As IntPtr, name As String, buffer As Char(), length As UInteger) As UInteger
+  overload: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute*
+  nameWithType.vb: PdfStructTreeNative.FPDF_StructElement_GetStringAttribute(IntPtr, String, Char(), UInteger)
+  fullName.vb: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute(System.IntPtr, String, Char(), UInteger)
+  name.vb: FPDF_StructElement_GetStringAttribute(IntPtr, String, Char(), UInteger)
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructTree_GetForPage_System_IntPtr_
+  name: FPDF_StructTree_GetForPage
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_GetForPage
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetForPage
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructTree_Close_System_IntPtr_
+  name: FPDF_StructTree_Close
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_Close
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_Close
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructTree_CountChildren_System_IntPtr_
+  name: FPDF_StructTree_CountChildren
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_CountChildren
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_CountChildren
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructTree_GetChildAtIndex_System_IntPtr_System_Int32_
+  name: FPDF_StructTree_GetChildAtIndex
+  nameWithType: PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructTree_GetChildAtIndex
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetParent_System_IntPtr_
+  name: FPDF_StructElement_GetParent
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetParent
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetParent
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_CountChildren_System_IntPtr_
+  name: FPDF_StructElement_CountChildren
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_CountChildren
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_CountChildren
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetChildAtIndex_System_IntPtr_System_Int32_
+  name: FPDF_StructElement_GetChildAtIndex
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildAtIndex
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetMarkedContentID_System_IntPtr_
+  name: FPDF_StructElement_GetMarkedContentID
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentID
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetAltText_System_IntPtr_System_Char___System_UInt32_
+  name: FPDF_StructElement_GetAltText
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAltText
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAltText
+- uid: System.Char[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char[]
+  nameWithType: char[]
+  fullName: char[]
+  nameWithType.vb: Char()
+  fullName.vb: Char()
+  name.vb: Char()
+  spec.csharp:
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: (
+  - name: )
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetActualText_System_IntPtr_System_Char___System_UInt32_
+  name: FPDF_StructElement_GetActualText
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetActualText
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetActualText
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetID_System_IntPtr_System_Char___System_UInt32_
+  name: FPDF_StructElement_GetID
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetID
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetID
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetLang_System_IntPtr_System_Char___System_UInt32_
+  name: FPDF_StructElement_GetLang
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetLang
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetLang
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetType_System_IntPtr_System_Byte___System_UInt32_
+  name: FPDF_StructElement_GetType
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetType
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetType
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetObjType_System_IntPtr_System_Char___System_UInt32_
+  name: FPDF_StructElement_GetObjType
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetObjType
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetObjType
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetTitle_System_IntPtr_System_Char___System_UInt32_
+  name: FPDF_StructElement_GetTitle
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetTitle
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetTitle
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetAttr_System_IntPtr_
+  name: FPDF_StructElement_GetAttr
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAttr
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttr
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetAttributeCount_System_IntPtr_
+  name: FPDF_StructElement_GetAttributeCount
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAttributeCount
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeCount
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetAttributeAtIndex_System_IntPtr_System_Int32_
+  name: FPDF_StructElement_GetAttributeAtIndex
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetAttributeAtIndex
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetCount_System_IntPtr_
+  name: FPDF_StructElement_Attr_GetCount
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetCount
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetCount
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetName_System_IntPtr_System_Int32_System_IntPtr_System_UInt32_System_UInt32__
+  name: FPDF_StructElement_Attr_GetName
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetName
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetName
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetValue_System_IntPtr_System_String_
+  name: FPDF_StructElement_Attr_GetValue
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetValue
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetValue
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetType_System_IntPtr_
+  name: FPDF_StructElement_Attr_GetType
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetType
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetType
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetBooleanValue_System_IntPtr_System_Boolean__
+  name: FPDF_StructElement_Attr_GetBooleanValue
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBooleanValue
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetNumberValue_System_IntPtr_System_Single__
+  name: FPDF_StructElement_Attr_GetNumberValue
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetNumberValue
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetStringValue_System_IntPtr_System_IntPtr_System_UInt32_System_UInt32__
+  name: FPDF_StructElement_Attr_GetStringValue
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetStringValue
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetBlobValue_System_IntPtr_System_IntPtr_System_UInt32_System_UInt32__
+  name: FPDF_StructElement_Attr_GetBlobValue
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetBlobValue
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_CountChildren_System_IntPtr_
+  name: FPDF_StructElement_Attr_CountChildren
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_CountChildren
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_Attr_GetChildAtIndex_System_IntPtr_System_Int32_
+  name: FPDF_StructElement_Attr_GetChildAtIndex
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_Attr_GetChildAtIndex
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetMarkedContentIdCount_System_IntPtr_
+  name: FPDF_StructElement_GetMarkedContentIdCount
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdCount
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetMarkedContentIdAtIndex_System_IntPtr_System_Int32_
+  name: FPDF_StructElement_GetMarkedContentIdAtIndex
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetMarkedContentIdAtIndex
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetChildMarkedContentID_System_IntPtr_System_Int32_
+  name: FPDF_StructElement_GetChildMarkedContentID
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetChildMarkedContentID
+- uid: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfStructTreeNative.html#nebulae_dotPDFium_Native_PdfStructTreeNative_FPDF_StructElement_GetStringAttribute_System_IntPtr_System_String_System_Char___System_UInt32_
+  name: FPDF_StructElement_GetStringAttribute
+  nameWithType: PdfStructTreeNative.FPDF_StructElement_GetStringAttribute
+  fullName: nebulae.dotPDFium.Native.PdfStructTreeNative.FPDF_StructElement_GetStringAttribute

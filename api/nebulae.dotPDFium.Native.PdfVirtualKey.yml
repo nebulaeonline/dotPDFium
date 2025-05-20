@@ -1,0 +1,396 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey
+  commentId: T:nebulae.dotPDFium.Native.PdfVirtualKey
+  id: PdfVirtualKey
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Back
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Control
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Delete
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Down
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Escape
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Left
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Return
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Right
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Shift
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Space
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Tab
+  - nebulae.dotPDFium.Native.PdfVirtualKey.Up
+  langs:
+  - csharp
+  - vb
+  name: PdfVirtualKey
+  nameWithType: PdfVirtualKey
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfVirtualKey
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 499
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents virtual key codes for common keyboard keys used in PDF-related operations.
+  remarks: >-
+    This enumeration provides a set of virtual key codes that correspond to commonly used keyboard keys.
+        These values can be used to handle keyboard input in PDF-related applications, such as navigation or interaction
+        with PDF viewers. The values are based on standard virtual key codes.
+  example: []
+  syntax:
+    content: public enum PdfVirtualKey
+    content.vb: Public Enum PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Back
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Back
+  id: Back
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: PdfVirtualKey.Back
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Back
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Back
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 501
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Back = 8
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Tab
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Tab
+  id: Tab
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Tab
+  nameWithType: PdfVirtualKey.Tab
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Tab
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Tab
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 502
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Tab = 9
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Return
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Return
+  id: Return
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Return
+  nameWithType: PdfVirtualKey.Return
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Return
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Return
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 503
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Return = 13
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Shift
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Shift
+  id: Shift
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Shift
+  nameWithType: PdfVirtualKey.Shift
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Shift
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Shift
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 504
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Shift = 16
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Control
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Control
+  id: Control
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Control
+  nameWithType: PdfVirtualKey.Control
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Control
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Control
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 505
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Control = 17
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Escape
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Escape
+  id: Escape
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Escape
+  nameWithType: PdfVirtualKey.Escape
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Escape
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Escape
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 506
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Escape = 27
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Space
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Space
+  id: Space
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Space
+  nameWithType: PdfVirtualKey.Space
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Space
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Space
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 507
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Space = 32
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Left
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Left
+  id: Left
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: PdfVirtualKey.Left
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Left
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Left
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 508
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Left = 37
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Up
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Up
+  id: Up
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Up
+  nameWithType: PdfVirtualKey.Up
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Up
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Up
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 509
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Up = 38
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Right
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Right
+  id: Right
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: PdfVirtualKey.Right
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Right
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Right
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 510
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Right = 39
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Down
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Down
+  id: Down
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Down
+  nameWithType: PdfVirtualKey.Down
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Down
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Down
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 511
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Down = 40
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey.Delete
+  commentId: F:nebulae.dotPDFium.Native.PdfVirtualKey.Delete
+  id: Delete
+  parent: nebulae.dotPDFium.Native.PdfVirtualKey
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: PdfVirtualKey.Delete
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey.Delete
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Delete
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 512
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Delete = 46
+    return:
+      type: nebulae.dotPDFium.Native.PdfVirtualKey
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfVirtualKey
+  commentId: T:nebulae.dotPDFium.Native.PdfVirtualKey
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfVirtualKey.html
+  name: PdfVirtualKey
+  nameWithType: PdfVirtualKey
+  fullName: nebulae.dotPDFium.Native.PdfVirtualKey

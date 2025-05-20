@@ -1,0 +1,2547 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfAnnotation
+  commentId: T:nebulae.dotPDFium.PdfAnnotation
+  id: PdfAnnotation
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfAnnotation.#ctor(System.IntPtr,nebulae.dotPDFium.PdfPage)
+  - nebulae.dotPDFium.PdfAnnotation.AddFileAttachment(System.String)
+  - nebulae.dotPDFium.PdfAnnotation.AddInkStroke(System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF})
+  - nebulae.dotPDFium.PdfAnnotation.AppendObject(nebulae.dotPDFium.PdfPageObject)
+  - nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes
+  - nebulae.dotPDFium.PdfAnnotation.CommitChanges
+  - nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode)
+  - nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint(System.Int32)
+  - nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount
+  - nebulae.dotPDFium.PdfAnnotation.GetBorder
+  - nebulae.dotPDFium.PdfAnnotation.GetColor
+  - nebulae.dotPDFium.PdfAnnotation.GetFileAttachment
+  - nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount
+  - nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints(System.Int32)
+  - nebulae.dotPDFium.PdfAnnotation.GetLine
+  - nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation(System.String)
+  - nebulae.dotPDFium.PdfAnnotation.GetObject(System.Int32)
+  - nebulae.dotPDFium.PdfAnnotation.GetObjectCount
+  - nebulae.dotPDFium.PdfAnnotation.GetRect
+  - nebulae.dotPDFium.PdfAnnotation.GetSubtype
+  - nebulae.dotPDFium.PdfAnnotation.GetValueType(System.String)
+  - nebulae.dotPDFium.PdfAnnotation.GetVertices
+  - nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints
+  - nebulae.dotPDFium.PdfAnnotation.HasKey(System.String)
+  - nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  - nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype
+  - nebulae.dotPDFium.PdfAnnotation.RemoveObject(System.Int32)
+  - nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode,System.String)
+  - nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints(System.Int32,nebulae.dotPDFium.Native.FsQuadPointsF)
+  - nebulae.dotPDFium.PdfAnnotation.SetBorder(System.Single,System.Single,System.Single)
+  - nebulae.dotPDFium.PdfAnnotation.SetColor(nebulae.dotPDFium.Native.RgbaColor)
+  - nebulae.dotPDFium.PdfAnnotation.SetRect(nebulae.dotPDFium.Native.FsRectF)
+  - nebulae.dotPDFium.PdfAnnotation.SetUri(System.String)
+  - nebulae.dotPDFium.PdfAnnotation.Subtype
+  - nebulae.dotPDFium.PdfAnnotation.UpdateObject(nebulae.dotPDFium.PdfPageObject)
+  - nebulae.dotPDFium.PdfAnnotation._page
+  langs:
+  - csharp
+  - vb
+  name: PdfAnnotation
+  nameWithType: PdfAnnotation
+  fullName: nebulae.dotPDFium.PdfAnnotation
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfAnnotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 6
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: 'public class PdfAnnotation : PdfObject, IDisposable'
+    content.vb: Public Class PdfAnnotation Inherits PdfObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - nebulae.dotPDFium.PdfObject
+  derivedClasses:
+  - nebulae.dotPDFium.PdfLinkAnnotation
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - nebulae.dotPDFium.PdfObject._handle
+  - nebulae.dotPDFium.PdfObject._type
+  - nebulae.dotPDFium.PdfObject._disposed
+  - nebulae.dotPDFium.PdfObject.Handle
+  - nebulae.dotPDFium.PdfObject.Type
+  - nebulae.dotPDFium.PdfObject.IsDisposed
+  - nebulae.dotPDFium.PdfObject.GetPDFiumError
+  - nebulae.dotPDFium.PdfObject.Dispose
+  - nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfAnnotation._page
+  commentId: F:nebulae.dotPDFium.PdfAnnotation._page
+  id: _page
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: _page
+  nameWithType: PdfAnnotation._page
+  fullName: nebulae.dotPDFium.PdfAnnotation._page
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: _page
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 8
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: protected readonly PdfPage _page
+    return:
+      type: nebulae.dotPDFium.PdfPage
+    content.vb: Protected ReadOnly _page As PdfPage
+- uid: nebulae.dotPDFium.PdfAnnotation.#ctor(System.IntPtr,nebulae.dotPDFium.PdfPage)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.#ctor(System.IntPtr,nebulae.dotPDFium.PdfPage)
+  id: '#ctor(System.IntPtr,nebulae.dotPDFium.PdfPage)'
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: PdfAnnotation(nint, PdfPage)
+  nameWithType: PdfAnnotation.PdfAnnotation(nint, PdfPage)
+  fullName: nebulae.dotPDFium.PdfAnnotation.PdfAnnotation(nint, nebulae.dotPDFium.PdfPage)
+  type: Constructor
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: .ctor
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 19
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Initializes a new instance of the <xref href="nebulae.dotPDFium.PdfAnnotation" data-throw-if-not-resolved="false"></xref> class with the specified handle and associated
+
+    page.
+  remarks: >-
+    The <code class="paramref">handle</code> parameter is used to reference the underlying native PDF
+        annotation object,  and the <code class="paramref">page</code> parameter links the annotation to a specific page in the PDF
+        document.
+  example: []
+  syntax:
+    content: public PdfAnnotation(nint handle, PdfPage page)
+    parameters:
+    - id: handle
+      type: System.IntPtr
+      description: A pointer to the native PDF annotation object. Must be a valid, non-null handle.
+    - id: page
+      type: nebulae.dotPDFium.PdfPage
+      description: The <xref href="nebulae.dotPDFium.PdfPage" data-throw-if-not-resolved="false"></xref> object that this annotation is associated with. Cannot be null.
+    content.vb: Public Sub New(handle As IntPtr, page As PdfPage)
+  overload: nebulae.dotPDFium.PdfAnnotation.#ctor*
+  nameWithType.vb: PdfAnnotation.New(IntPtr, PdfPage)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.New(System.IntPtr, nebulae.dotPDFium.PdfPage)
+  name.vb: New(IntPtr, PdfPage)
+- uid: nebulae.dotPDFium.PdfAnnotation.Subtype
+  commentId: P:nebulae.dotPDFium.PdfAnnotation.Subtype
+  id: Subtype
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: Subtype
+  nameWithType: PdfAnnotation.Subtype
+  fullName: nebulae.dotPDFium.PdfAnnotation.Subtype
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Subtype
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 30
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the subtype of the PDF annotation.
+  remarks: >-
+    The subtype indicates the specific type of the annotation, such as text, link, or
+        highlight.
+  example: []
+  syntax:
+    content: public PdfAnnotationSubtype Subtype { get; }
+    parameters: []
+    return:
+      type: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+    content.vb: Public ReadOnly Property Subtype As PdfAnnotationSubtype
+  overload: nebulae.dotPDFium.PdfAnnotation.Subtype*
+- uid: nebulae.dotPDFium.PdfAnnotation.AddFileAttachment(System.String)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.AddFileAttachment(System.String)
+  id: AddFileAttachment(System.String)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: AddFileAttachment(string)
+  nameWithType: PdfAnnotation.AddFileAttachment(string)
+  fullName: nebulae.dotPDFium.PdfAnnotation.AddFileAttachment(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AddFileAttachment
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 41
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Adds a file attachment annotation to the PDF and returns a reference to the attached file.
+  remarks: >-
+    The method creates a file attachment annotation in the PDF document and associates it with
+        the specified name. If the operation fails, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfFileSpec? AddFileAttachment(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: The name of the file attachment to be added. This name is used to identify the attachment in the PDF.
+    return:
+      type: nebulae.dotPDFium.PdfFileSpec
+      description: >-
+        A <xref href="nebulae.dotPDFium.PdfFileSpec" data-throw-if-not-resolved="false"></xref> object representing the attached file if the operation is successful; otherwise,
+            <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function AddFileAttachment(name As String) As PdfFileSpec
+  overload: nebulae.dotPDFium.PdfAnnotation.AddFileAttachment*
+  nameWithType.vb: PdfAnnotation.AddFileAttachment(String)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.AddFileAttachment(String)
+  name.vb: AddFileAttachment(String)
+- uid: nebulae.dotPDFium.PdfAnnotation.AddInkStroke(System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF})
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.AddInkStroke(System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF})
+  id: AddInkStroke(System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF})
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: AddInkStroke(ReadOnlySpan<FsPointF>)
+  nameWithType: PdfAnnotation.AddInkStroke(ReadOnlySpan<FsPointF>)
+  fullName: nebulae.dotPDFium.PdfAnnotation.AddInkStroke(System.ReadOnlySpan<nebulae.dotPDFium.Native.FsPointF>)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AddInkStroke
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 58
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Adds an ink stroke to the annotation using the specified collection of points.
+  remarks: >-
+    This method adds a new ink stroke to the annotation by passing the provided points to the
+        underlying PDF annotation system. The caller must ensure that the span contains valid points to define the
+        stroke.
+  example: []
+  syntax:
+    content: public int AddInkStroke(ReadOnlySpan<FsPointF> strokePoints)
+    parameters:
+    - id: strokePoints
+      type: System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF}
+      description: >-
+        A read-only span of <xref href="nebulae.dotPDFium.Native.FsPointF" data-throw-if-not-resolved="false"></xref> representing the points that define the ink stroke. The span must
+            contain at least one point.
+    return:
+      type: System.Int32
+      description: >-
+        An integer representing the result of the operation. The meaning of the return value depends on the underlying
+            implementation.
+    content.vb: Public Function AddInkStroke(strokePoints As ReadOnlySpan(Of FsPointF)) As Integer
+  overload: nebulae.dotPDFium.PdfAnnotation.AddInkStroke*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code class="paramref">strokePoints</code> is empty.
+  nameWithType.vb: PdfAnnotation.AddInkStroke(ReadOnlySpan(Of FsPointF))
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.AddInkStroke(System.ReadOnlySpan(Of nebulae.dotPDFium.Native.FsPointF))
+  name.vb: AddInkStroke(ReadOnlySpan(Of FsPointF))
+- uid: nebulae.dotPDFium.PdfAnnotation.AppendObject(nebulae.dotPDFium.PdfPageObject)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.AppendObject(nebulae.dotPDFium.PdfPageObject)
+  id: AppendObject(nebulae.dotPDFium.PdfPageObject)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: AppendObject(PdfPageObject)
+  nameWithType: PdfAnnotation.AppendObject(PdfPageObject)
+  fullName: nebulae.dotPDFium.PdfAnnotation.AppendObject(nebulae.dotPDFium.PdfPageObject)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AppendObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 81
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Appends a specified PDF page object to the annotation.
+  remarks: >-
+    The appended object becomes part of the annotation and will be rendered as part of it. Ensure
+        that the <code class="paramref">obj</code> is properly initialized and compatible with the annotation before calling this
+        method.
+  example: []
+  syntax:
+    content: public bool AppendObject(PdfPageObject obj)
+    parameters:
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: >-
+        The <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> to append. This object must be valid and associated with the same document as
+            the annotation.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object was successfully appended; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function AppendObject(obj As PdfPageObject) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.AppendObject*
+- uid: nebulae.dotPDFium.PdfAnnotation.CommitChanges
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.CommitChanges
+  id: CommitChanges
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: CommitChanges()
+  nameWithType: PdfAnnotation.CommitChanges()
+  fullName: nebulae.dotPDFium.PdfAnnotation.CommitChanges()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CommitChanges
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 93
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Commits any changes made to the annotation.
+  remarks: >-
+    This method finalizes modifications to the annotation and ensures that all changes are saved.
+        After calling this method, the annotation handle is no longer valid and should not be used until or unless
+        you call GetAnnotation() again.
+  example: []
+  syntax:
+    content: public void CommitChanges()
+    content.vb: Public Sub CommitChanges()
+  overload: nebulae.dotPDFium.PdfAnnotation.CommitChanges*
+- uid: nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes
+  id: ClearInkStrokes
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: ClearInkStrokes()
+  nameWithType: PdfAnnotation.ClearInkStrokes()
+  fullName: nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ClearInkStrokes
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 104
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Removes all ink strokes from the annotation.
+  remarks: >-
+    This method clears the ink list associated with the annotation. If the annotation does not
+        contain any ink strokes,  the method will return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> without performing any action.
+  example: []
+  syntax:
+    content: public bool ClearInkStrokes()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if all ink strokes were successfully removed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function ClearInkStrokes() As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode)
+  id: GetAppearanceStreamName(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetAppearanceStreamName(PdfAnnotationAppearanceMode)
+  nameWithType: PdfAnnotation.GetAppearanceStreamName(PdfAnnotationAppearanceMode)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAppearanceStreamName
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 117
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the name of the appearance stream for the specified annotation appearance mode.
+  remarks: >-
+    The appearance stream name is used to identify the visual representation of the annotation in
+        the specified mode.
+  example: []
+  syntax:
+    content: public string? GetAppearanceStreamName(PdfAnnotationAppearanceMode mode)
+    parameters:
+    - id: mode
+      type: nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode
+      description: The appearance mode for which to retrieve the stream name. This can be Normal, Rollover, or Down.
+    return:
+      type: System.String
+      description: >-
+        The name of the appearance stream as a string, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no appearance stream is defined for
+            the specified mode.
+    content.vb: Public Function GetAppearanceStreamName(mode As PdfAnnotationAppearanceMode) As String
+  overload: nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint(System.Int32)
+  id: GetAttachmentPoint(System.Int32)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetAttachmentPoint(int)
+  nameWithType: PdfAnnotation.GetAttachmentPoint(int)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAttachmentPoint
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 132
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the attachment point at the specified index.
+  example: []
+  syntax:
+    content: public FsQuadPointsF? GetAttachmentPoint(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the attachment point to retrieve. Must be greater than or equal to 0.
+    return:
+      type: System.Nullable{nebulae.dotPDFium.Native.FsQuadPointsF}
+      description: An <xref href="nebulae.dotPDFium.Native.FsQuadPointsF" data-throw-if-not-resolved="false"></xref> structure representing the attachment point if found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetAttachmentPoint(index As Integer) As FsQuadPointsF?
+  overload: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown if <code class="paramref">index</code> is less than 0.
+  nameWithType.vb: PdfAnnotation.GetAttachmentPoint(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint(Integer)
+  name.vb: GetAttachmentPoint(Integer)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount
+  id: GetAttachmentPointCount
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetAttachmentPointCount()
+  nameWithType: PdfAnnotation.GetAttachmentPointCount()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAttachmentPointCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 149
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the number of attachment points associated with the annotation.
+  remarks: >-
+    Attachment points are specific locations within the annotation that can be used for
+        positioning or other purposes.
+  example: []
+  syntax:
+    content: public int GetAttachmentPointCount()
+    return:
+      type: System.Int32
+      description: The total number of attachment points. Returns 0 if the annotation has no attachment points.
+    content.vb: Public Function GetAttachmentPointCount() As Integer
+  overload: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetBorder
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetBorder
+  id: GetBorder
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetBorder()
+  nameWithType: PdfAnnotation.GetBorder()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetBorder()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetBorder
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 159
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the border characteristics of the PDF annotation.
+  example: []
+  syntax:
+    content: public PdfAnnotationBorder? GetBorder()
+    return:
+      type: System.Nullable{nebulae.dotPDFium.Native.PdfAnnotationBorder}
+      description: >-
+        A <xref href="nebulae.dotPDFium.Native.PdfAnnotationBorder" data-throw-if-not-resolved="false"></xref> object representing the horizontal radius, vertical radius,  and border
+            width of the annotation, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the border information is unavailable.
+    content.vb: Public Function GetBorder() As PdfAnnotationBorder?
+  overload: nebulae.dotPDFium.PdfAnnotation.GetBorder*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetFileAttachment
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetFileAttachment
+  id: GetFileAttachment
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetFileAttachment()
+  nameWithType: PdfAnnotation.GetFileAttachment()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetFileAttachment()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFileAttachment
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 172
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the file attachment associated with the annotation, if any.
+  example: []
+  syntax:
+    content: public PdfFileSpec? GetFileAttachment()
+    return:
+      type: nebulae.dotPDFium.PdfFileSpec
+      description: >-
+        A <xref href="nebulae.dotPDFium.PdfFileSpec" data-throw-if-not-resolved="false"></xref> object representing the file attachment, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no file
+            attachment is associated with the annotation.
+    content.vb: Public Function GetFileAttachment() As PdfFileSpec
+  overload: nebulae.dotPDFium.PdfAnnotation.GetFileAttachment*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount
+  id: GetInkStrokeCount
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetInkStrokeCount()
+  nameWithType: PdfAnnotation.GetInkStrokeCount()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetInkStrokeCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 184
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the number of ink strokes associated with the annotation.
+  remarks: >-
+    This method retrieves the count of ink strokes defined in the annotation's ink list.  Use
+        this method to determine how many individual strokes are part of the annotation.
+  example: []
+  syntax:
+    content: public int GetInkStrokeCount()
+    return:
+      type: System.Int32
+      description: The total number of ink strokes in the annotation. Returns 0 if no ink strokes are present.
+    content.vb: Public Function GetInkStrokeCount() As Integer
+  overload: nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints(System.Int32)
+  id: GetInkStrokePoints(System.Int32)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetInkStrokePoints(int)
+  nameWithType: PdfAnnotation.GetInkStrokePoints(int)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetInkStrokePoints
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 198
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the list of points that define the ink stroke for the specified path index.
+  remarks: >-
+    This method retrieves the points for a specific ink stroke path associated with an
+        annotation. The points are returned as a read-only list of <xref href="nebulae.dotPDFium.Native.FsPointF" data-throw-if-not-resolved="false"></xref> structures, which represent
+        the coordinates of the ink stroke in the annotation's coordinate space.
+  example: []
+  syntax:
+    content: public IReadOnlyList<FsPointF> GetInkStrokePoints(int pathIndex)
+    parameters:
+    - id: pathIndex
+      type: System.Int32
+      description: The zero-based index of the ink stroke path to retrieve.
+    return:
+      type: System.Collections.Generic.IReadOnlyList{nebulae.dotPDFium.Native.FsPointF}
+      description: >-
+        A read-only list of <xref href="nebulae.dotPDFium.Native.FsPointF" data-throw-if-not-resolved="false"></xref> objects representing the points in the ink stroke. Returns an empty
+            list if the specified path index does not contain any points.
+    content.vb: Public Function GetInkStrokePoints(pathIndex As Integer) As IReadOnlyList(Of FsPointF)
+  overload: nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints*
+  nameWithType.vb: PdfAnnotation.GetInkStrokePoints(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints(Integer)
+  name.vb: GetInkStrokePoints(Integer)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetLine
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetLine
+  id: GetLine
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetLine()
+  nameWithType: PdfAnnotation.GetLine()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetLine()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetLine
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 234
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the start and end points of the line annotation, if available.
+  example: []
+  syntax:
+    content: public (FsPointF Start, FsPointF End)? GetLine()
+    return:
+      type: System.Nullable{System.ValueTuple{nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF}}
+      description: A tuple containing the start and end points of the line as <xref href="nebulae.dotPDFium.Native.FsPointF" data-throw-if-not-resolved="false"></xref> objects,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the line annotation is not defined or cannot be retrieved.
+    content.vb: Public Function GetLine() As (Start As FsPointF, [End] As FsPointF)?
+  overload: nebulae.dotPDFium.PdfAnnotation.GetLine*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation(System.String)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation(System.String)
+  id: GetLinkedAnnotation(System.String)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetLinkedAnnotation(string)
+  nameWithType: PdfAnnotation.GetLinkedAnnotation(string)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetLinkedAnnotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 249
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the annotation linked to the specified key.
+  remarks: >-
+    This method returns a nullable <xref href="System.IntPtr" data-throw-if-not-resolved="false"></xref> to represent the linked annotation.  If
+        no linked annotation is found, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public nint? GetLinkedAnnotation(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key identifying the linked annotation. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: System.Nullable{System.IntPtr}
+      description: A pointer to the linked annotation if one exists; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Function GetLinkedAnnotation(key As String) As IntPtr?
+  overload: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation*
+  nameWithType.vb: PdfAnnotation.GetLinkedAnnotation(String)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation(String)
+  name.vb: GetLinkedAnnotation(String)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetObject(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetObject(System.Int32)
+  id: GetObject(System.Int32)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetObject(int)
+  nameWithType: PdfAnnotation.GetObject(int)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetObject(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 261
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> at the specified index within the annotation.
+  example: []
+  syntax:
+    content: public PdfPageObject? GetObject(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the object to retrieve. Must be within the valid range of objects in the annotation.
+    return:
+      type: nebulae.dotPDFium.PdfPageObject
+      description: >-
+        A <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> representing the object at the specified index, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no
+            object exists at the given index.
+    content.vb: Public Function GetObject(index As Integer) As PdfPageObject
+  overload: nebulae.dotPDFium.PdfAnnotation.GetObject*
+  nameWithType.vb: PdfAnnotation.GetObject(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.GetObject(Integer)
+  name.vb: GetObject(Integer)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetObjectCount
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetObjectCount
+  id: GetObjectCount
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetObjectCount()
+  nameWithType: PdfAnnotation.GetObjectCount()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetObjectCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetObjectCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 273
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the total number of objects associated with the annotation.
+  remarks: >-
+    This method retrieves the count of objects linked to the annotation represented by the
+        current instance.
+  example: []
+  syntax:
+    content: public int GetObjectCount()
+    return:
+      type: System.Int32
+      description: The number of objects associated with the annotation. Returns 0 if no objects are present.
+    content.vb: Public Function GetObjectCount() As Integer
+  overload: nebulae.dotPDFium.PdfAnnotation.GetObjectCount*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetSubtype
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetSubtype
+  id: GetSubtype
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetSubtype()
+  nameWithType: PdfAnnotation.GetSubtype()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetSubtype()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetSubtype
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 284
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the subtype of the PDF annotation represented by this instance.
+  example: []
+  syntax:
+    content: public PdfAnnotationSubtype GetSubtype()
+    return:
+      type: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+      description: A <xref href="nebulae.dotPDFium.Native.PdfAnnotationSubtype" data-throw-if-not-resolved="false"></xref> value representing the annotation's subtype.
+    content.vb: Public Function GetSubtype() As PdfAnnotationSubtype
+  overload: nebulae.dotPDFium.PdfAnnotation.GetSubtype*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: >-
+      Thrown if the annotation subtype is not recognized or is not defined in the <xref href="nebulae.dotPDFium.Native.PdfAnnotationSubtype" data-throw-if-not-resolved="false"></xref>
+          enumeration.
+- uid: nebulae.dotPDFium.PdfAnnotation.GetValueType(System.String)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetValueType(System.String)
+  id: GetValueType(System.String)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetValueType(string)
+  nameWithType: PdfAnnotation.GetValueType(string)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetValueType(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetValueType
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 300
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the type of the value associated with the specified key in the PDF annotation.
+  remarks: >-
+    This method queries the underlying PDF annotation to determine the type of the value
+        associated with the given key. Ensure that the key exists in the annotation to avoid unexpected
+        results.
+  example: []
+  syntax:
+    content: public PdfValueType GetValueType(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The key identifying the value whose type is to be retrieved. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: nebulae.dotPDFium.Native.PdfValueType
+      description: A <xref href="nebulae.dotPDFium.Native.PdfValueType" data-throw-if-not-resolved="false"></xref> representing the type of the value associated with the specified key.
+    content.vb: Public Function GetValueType(key As String) As PdfValueType
+  overload: nebulae.dotPDFium.PdfAnnotation.GetValueType*
+  nameWithType.vb: PdfAnnotation.GetValueType(String)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.GetValueType(String)
+  name.vb: GetValueType(String)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetVertices
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetVertices
+  id: GetVertices
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetVertices()
+  nameWithType: PdfAnnotation.GetVertices()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetVertices()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetVertices
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 313
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the vertices of the annotation as a read-only list of points.
+  remarks: This method returns the vertices of the annotation, represented as a collection of <xref href="nebulae.dotPDFium.Native.FsPointF" data-throw-if-not-resolved="false"></xref> structures. If the annotation does not have any vertices, an empty list is returned.
+  example: []
+  syntax:
+    content: public IReadOnlyList<FsPointF> GetVertices()
+    return:
+      type: System.Collections.Generic.IReadOnlyList{nebulae.dotPDFium.Native.FsPointF}
+      description: >-
+        A read-only list of <xref href="nebulae.dotPDFium.Native.FsPointF" data-throw-if-not-resolved="false"></xref> representing the vertices of the annotation. The list will be empty
+            if no vertices are defined.
+    content.vb: Public Function GetVertices() As IReadOnlyList(Of FsPointF)
+  overload: nebulae.dotPDFium.PdfAnnotation.GetVertices*
+- uid: nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints
+  id: HasAttachmentPoints
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: HasAttachmentPoints()
+  nameWithType: PdfAnnotation.HasAttachmentPoints()
+  fullName: nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: HasAttachmentPoints
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 349
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Determines whether the annotation has attachment points.
+  remarks: >-
+    Attachment points are specific locations associated with the annotation, such as coordinates
+        or markers, that may be used for positioning or rendering purposes.
+  example: []
+  syntax:
+    content: public bool HasAttachmentPoints()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the annotation has attachment points; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function HasAttachmentPoints() As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints*
+- uid: nebulae.dotPDFium.PdfAnnotation.HasKey(System.String)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.HasKey(System.String)
+  id: HasKey(System.String)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: HasKey(string)
+  nameWithType: PdfAnnotation.HasKey(string)
+  fullName: nebulae.dotPDFium.PdfAnnotation.HasKey(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: HasKey
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 359
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Determines whether the annotation contains a specific key.
+  example: []
+  syntax:
+    content: public bool HasKey(string key)
+    parameters:
+    - id: key
+      type: System.String
+      description: The name of the key to check for. This value cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the annotation contains the specified key; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function HasKey(key As String) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.HasKey*
+  nameWithType.vb: PdfAnnotation.HasKey(String)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.HasKey(String)
+  name.vb: HasKey(String)
+- uid: nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  id: IsObjectSupportedSubtype(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: IsObjectSupportedSubtype(PdfAnnotationSubtype)
+  nameWithType: PdfAnnotation.IsObjectSupportedSubtype(PdfAnnotationSubtype)
+  fullName: nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: IsObjectSupportedSubtype
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 369
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Determines whether the specified annotation subtype is supported.
+  example: []
+  syntax:
+    content: public static bool IsObjectSupportedSubtype(PdfAnnotationSubtype subtype)
+    parameters:
+    - id: subtype
+      type: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+      description: The annotation subtype to check for support.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified annotation subtype is supported; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function IsObjectSupportedSubtype(subtype As PdfAnnotationSubtype) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype*
+- uid: nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype
+  id: IsSupportedSubtype
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: IsSupportedSubtype()
+  nameWithType: PdfAnnotation.IsSupportedSubtype()
+  fullName: nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: IsSupportedSubtype
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 381
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Determines whether the annotation's subtype is supported.
+  remarks: >-
+    This method checks if the current annotation's subtype is recognized and supported by the
+        underlying system.
+  example: []
+  syntax:
+    content: public bool IsSupportedSubtype()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the annotation's subtype is supported; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function IsSupportedSubtype() As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype*
+- uid: nebulae.dotPDFium.PdfAnnotation.GetRect
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetRect
+  id: GetRect
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetRect()
+  nameWithType: PdfAnnotation.GetRect()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetRect()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetRect
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 391
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the rectangular bounds of the annotation.
+  example: []
+  syntax:
+    content: public FsRectF GetRect()
+    return:
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: A <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the annotation's rectangular bounds.
+    content.vb: Public Function GetRect() As FsRectF
+  overload: nebulae.dotPDFium.PdfAnnotation.GetRect*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the annotation rectangle could not be retrieved.
+- uid: nebulae.dotPDFium.PdfAnnotation.SetRect(nebulae.dotPDFium.Native.FsRectF)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.SetRect(nebulae.dotPDFium.Native.FsRectF)
+  id: SetRect(nebulae.dotPDFium.Native.FsRectF)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: SetRect(FsRectF)
+  nameWithType: PdfAnnotation.SetRect(FsRectF)
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetRect(nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetRect
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 404
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the rectangular bounds of the annotation.
+  example: []
+  syntax:
+    content: public void SetRect(FsRectF rect)
+    parameters:
+    - id: rect
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: The rectangle defining the bounds of the annotation. Must be a valid <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure.
+    content.vb: Public Sub SetRect(rect As FsRectF)
+  overload: nebulae.dotPDFium.PdfAnnotation.SetRect*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the rectangle could not be set due to an internal error.
+- uid: nebulae.dotPDFium.PdfAnnotation.GetColor
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetColor
+  id: GetColor
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: GetColor()
+  nameWithType: PdfAnnotation.GetColor()
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetColor()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetColor
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 415
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the color of the annotation as an RGBA value.
+  example: []
+  syntax:
+    content: public RgbaColor GetColor()
+    return:
+      type: nebulae.dotPDFium.Native.RgbaColor
+      description: An <xref href="nebulae.dotPDFium.Native.RgbaColor" data-throw-if-not-resolved="false"></xref> representing the red, green, blue, and alpha components of the annotation's color.
+    content.vb: Public Function GetColor() As RgbaColor
+  overload: nebulae.dotPDFium.PdfAnnotation.GetColor*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the annotation color cannot be retrieved.
+- uid: nebulae.dotPDFium.PdfAnnotation.SetColor(nebulae.dotPDFium.Native.RgbaColor)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.SetColor(nebulae.dotPDFium.Native.RgbaColor)
+  id: SetColor(nebulae.dotPDFium.Native.RgbaColor)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: SetColor(RgbaColor)
+  nameWithType: PdfAnnotation.SetColor(RgbaColor)
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetColor(nebulae.dotPDFium.Native.RgbaColor)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetColor
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 429
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the color of the annotation using the specified RGBA color.
+  example: []
+  syntax:
+    content: public void SetColor(RgbaColor color)
+    parameters:
+    - id: color
+      type: nebulae.dotPDFium.Native.RgbaColor
+      description: >-
+        The <xref href="nebulae.dotPDFium.Native.RgbaColor" data-throw-if-not-resolved="false"></xref> structure representing the red, green, blue, and alpha components of the color to
+            apply to the annotation.
+    content.vb: Public Sub SetColor(color As RgbaColor)
+  overload: nebulae.dotPDFium.PdfAnnotation.SetColor*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails to set the annotation color.
+- uid: nebulae.dotPDFium.PdfAnnotation.RemoveObject(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.RemoveObject(System.Int32)
+  id: RemoveObject(System.Int32)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: RemoveObject(int)
+  nameWithType: PdfAnnotation.RemoveObject(int)
+  fullName: nebulae.dotPDFium.PdfAnnotation.RemoveObject(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RemoveObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 442
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Removes an object at the specified index from the annotation.
+  remarks: >-
+    This method attempts to remove an object from the annotation at the specified index.  If the
+        index is invalid or the removal operation fails, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+  example: []
+  syntax:
+    content: public bool RemoveObject(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the object to remove.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object was successfully removed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function RemoveObject(index As Integer) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.RemoveObject*
+  nameWithType.vb: PdfAnnotation.RemoveObject(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.RemoveObject(Integer)
+  name.vb: RemoveObject(Integer)
+- uid: nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode,System.String)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode,System.String)
+  id: SetAppearanceStream(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode,System.String)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: SetAppearanceStream(PdfAnnotationAppearanceMode, string)
+  nameWithType: PdfAnnotation.SetAppearanceStream(PdfAnnotationAppearanceMode, string)
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode, string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetAppearanceStream
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 453
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the appearance stream for the annotation based on the specified mode and name.
+  example: []
+  syntax:
+    content: public bool SetAppearanceStream(PdfAnnotationAppearanceMode mode, string name)
+    parameters:
+    - id: mode
+      type: nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode
+      description: The appearance mode to set, such as normal, rollover, or down.
+    - id: name
+      type: System.String
+      description: The name of the appearance stream to apply. This value cannot be null or empty.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the appearance stream was successfully set; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function SetAppearanceStream(mode As PdfAnnotationAppearanceMode, name As String) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream*
+  nameWithType.vb: PdfAnnotation.SetAppearanceStream(PdfAnnotationAppearanceMode, String)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode, String)
+  name.vb: SetAppearanceStream(PdfAnnotationAppearanceMode, String)
+- uid: nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints(System.Int32,nebulae.dotPDFium.Native.FsQuadPointsF)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints(System.Int32,nebulae.dotPDFium.Native.FsQuadPointsF)
+  id: SetAttachmentPoints(System.Int32,nebulae.dotPDFium.Native.FsQuadPointsF)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: SetAttachmentPoints(int, FsQuadPointsF)
+  nameWithType: PdfAnnotation.SetAttachmentPoints(int, FsQuadPointsF)
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints(int, nebulae.dotPDFium.Native.FsQuadPointsF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetAttachmentPoints
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 466
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the attachment points for the annotation at the specified index.
+  remarks: >-
+    The attachment points define the area associated with the annotation. Ensure that the
+        <code class="paramref">quad</code> parameter is properly initialized before calling this method.
+  example: []
+  syntax:
+    content: public bool SetAttachmentPoints(int index, FsQuadPointsF quad)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The zero-based index of the attachment point to set.
+    - id: quad
+      type: nebulae.dotPDFium.Native.FsQuadPointsF
+      description: The quadrilateral points defining the attachment area.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the attachment points were successfully set; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function SetAttachmentPoints(index As Integer, quad As FsQuadPointsF) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints*
+  nameWithType.vb: PdfAnnotation.SetAttachmentPoints(Integer, FsQuadPointsF)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints(Integer, nebulae.dotPDFium.Native.FsQuadPointsF)
+  name.vb: SetAttachmentPoints(Integer, FsQuadPointsF)
+- uid: nebulae.dotPDFium.PdfAnnotation.SetBorder(System.Single,System.Single,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.SetBorder(System.Single,System.Single,System.Single)
+  id: SetBorder(System.Single,System.Single,System.Single)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: SetBorder(float, float, float)
+  nameWithType: PdfAnnotation.SetBorder(float, float, float)
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetBorder(float, float, float)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetBorder
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 480
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the border properties for the annotation, including corner radii and border width.
+  remarks: >-
+    This method modifies the visual appearance of the annotation by setting its border
+        properties. Ensure that the annotation handle is valid before calling this method.
+  example: []
+  syntax:
+    content: public bool SetBorder(float horizontalRadius, float verticalRadius, float borderWidth)
+    parameters:
+    - id: horizontalRadius
+      type: System.Single
+      description: The horizontal radius of the annotation's border corners. Must be non-negative.
+    - id: verticalRadius
+      type: System.Single
+      description: The vertical radius of the annotation's border corners. Must be non-negative.
+    - id: borderWidth
+      type: System.Single
+      description: The width of the annotation's border. Must be non-negative.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the border properties were successfully set; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function SetBorder(horizontalRadius As Single, verticalRadius As Single, borderWidth As Single) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.SetBorder*
+  nameWithType.vb: PdfAnnotation.SetBorder(Single, Single, Single)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.SetBorder(Single, Single, Single)
+  name.vb: SetBorder(Single, Single, Single)
+- uid: nebulae.dotPDFium.PdfAnnotation.SetUri(System.String)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.SetUri(System.String)
+  id: SetUri(System.String)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: SetUri(string)
+  nameWithType: PdfAnnotation.SetUri(string)
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetUri(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetUri
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 491
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the URI associated with the annotation.
+  example: []
+  syntax:
+    content: public bool SetUri(string uri)
+    parameters:
+    - id: uri
+      type: System.String
+      description: The URI to associate with the annotation. Must not be null, empty, or consist only of whitespace.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the URI was successfully set; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function SetUri(uri As String) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.SetUri*
+  exceptions:
+  - type: System.ArgumentException
+    commentId: T:System.ArgumentException
+    description: Thrown if <code class="paramref">uri</code> is null, empty, or consists only of whitespace.
+  nameWithType.vb: PdfAnnotation.SetUri(String)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.SetUri(String)
+  name.vb: SetUri(String)
+- uid: nebulae.dotPDFium.PdfAnnotation.UpdateObject(nebulae.dotPDFium.PdfPageObject)
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.UpdateObject(nebulae.dotPDFium.PdfPageObject)
+  id: UpdateObject(nebulae.dotPDFium.PdfPageObject)
+  parent: nebulae.dotPDFium.PdfAnnotation
+  langs:
+  - csharp
+  - vb
+  name: UpdateObject(PdfPageObject)
+  nameWithType: PdfAnnotation.UpdateObject(PdfPageObject)
+  fullName: nebulae.dotPDFium.PdfAnnotation.UpdateObject(nebulae.dotPDFium.PdfPageObject)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfAnnotation.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: UpdateObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfAnnotation.cs
+    startLine: 505
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Updates the specified PDF page object within the annotation.
+  example: []
+  syntax:
+    content: public bool UpdateObject(PdfPageObject obj)
+    parameters:
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> to update. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the object was successfully updated; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function UpdateObject(obj As PdfPageObject) As Boolean
+  overload: nebulae.dotPDFium.PdfAnnotation.UpdateObject*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">obj</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: nebulae.dotPDFium.PdfObject
+  commentId: T:nebulae.dotPDFium.PdfObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfObject.html
+  name: PdfObject
+  nameWithType: PdfObject
+  fullName: nebulae.dotPDFium.PdfObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: nebulae.dotPDFium.PdfObject._handle
+  commentId: F:nebulae.dotPDFium.PdfObject._handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__handle
+  name: _handle
+  nameWithType: PdfObject._handle
+  fullName: nebulae.dotPDFium.PdfObject._handle
+- uid: nebulae.dotPDFium.PdfObject._type
+  commentId: F:nebulae.dotPDFium.PdfObject._type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__type
+  name: _type
+  nameWithType: PdfObject._type
+  fullName: nebulae.dotPDFium.PdfObject._type
+- uid: nebulae.dotPDFium.PdfObject._disposed
+  commentId: F:nebulae.dotPDFium.PdfObject._disposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__disposed
+  name: _disposed
+  nameWithType: PdfObject._disposed
+  fullName: nebulae.dotPDFium.PdfObject._disposed
+- uid: nebulae.dotPDFium.PdfObject.Handle
+  commentId: P:nebulae.dotPDFium.PdfObject.Handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Handle
+  name: Handle
+  nameWithType: PdfObject.Handle
+  fullName: nebulae.dotPDFium.PdfObject.Handle
+- uid: nebulae.dotPDFium.PdfObject.Type
+  commentId: P:nebulae.dotPDFium.PdfObject.Type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Type
+  name: Type
+  nameWithType: PdfObject.Type
+  fullName: nebulae.dotPDFium.PdfObject.Type
+- uid: nebulae.dotPDFium.PdfObject.IsDisposed
+  commentId: P:nebulae.dotPDFium.PdfObject.IsDisposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_IsDisposed
+  name: IsDisposed
+  nameWithType: PdfObject.IsDisposed
+  fullName: nebulae.dotPDFium.PdfObject.IsDisposed
+- uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+  commentId: M:nebulae.dotPDFium.PdfObject.GetPDFiumError
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  name: GetPDFiumError()
+  nameWithType: PdfObject.GetPDFiumError()
+  fullName: nebulae.dotPDFium.PdfObject.GetPDFiumError()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  name: Dispose()
+  nameWithType: PdfObject.Dispose()
+  fullName: nebulae.dotPDFium.PdfObject.Dispose()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  parent: nebulae.dotPDFium.PdfObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: PdfObject.Dispose(bool)
+  fullName: nebulae.dotPDFium.PdfObject.Dispose(bool)
+  nameWithType.vb: PdfObject.Dispose(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfPage
+  commentId: T:nebulae.dotPDFium.PdfPage
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPage.html
+  name: PdfPage
+  nameWithType: PdfPage
+  fullName: nebulae.dotPDFium.PdfPage
+- uid: nebulae.dotPDFium.PdfAnnotation
+  commentId: T:nebulae.dotPDFium.PdfAnnotation
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfAnnotation.html
+  name: PdfAnnotation
+  nameWithType: PdfAnnotation
+  fullName: nebulae.dotPDFium.PdfAnnotation
+- uid: nebulae.dotPDFium.PdfAnnotation.#ctor*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.#ctor
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation__ctor_System_IntPtr_nebulae_dotPDFium_PdfPage_
+  name: PdfAnnotation
+  nameWithType: PdfAnnotation.PdfAnnotation
+  fullName: nebulae.dotPDFium.PdfAnnotation.PdfAnnotation
+  nameWithType.vb: PdfAnnotation.New
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.New
+  name.vb: New
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: nebulae.dotPDFium.PdfAnnotation.Subtype*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.Subtype
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_Subtype
+  name: Subtype
+  nameWithType: PdfAnnotation.Subtype
+  fullName: nebulae.dotPDFium.PdfAnnotation.Subtype
+- uid: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+  commentId: T:nebulae.dotPDFium.Native.PdfAnnotationSubtype
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfAnnotationSubtype.html
+  name: PdfAnnotationSubtype
+  nameWithType: PdfAnnotationSubtype
+  fullName: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.PdfFileSpec
+  commentId: T:nebulae.dotPDFium.PdfFileSpec
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfFileSpec.html
+  name: PdfFileSpec
+  nameWithType: PdfFileSpec
+  fullName: nebulae.dotPDFium.PdfFileSpec
+- uid: nebulae.dotPDFium.PdfAnnotation.AddFileAttachment*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.AddFileAttachment
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_AddFileAttachment_System_String_
+  name: AddFileAttachment
+  nameWithType: PdfAnnotation.AddFileAttachment
+  fullName: nebulae.dotPDFium.PdfAnnotation.AddFileAttachment
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.Native.FsPointF
+  commentId: T:nebulae.dotPDFium.Native.FsPointF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsPointF.html
+  name: FsPointF
+  nameWithType: FsPointF
+  fullName: nebulae.dotPDFium.Native.FsPointF
+- uid: System.ArgumentException
+  commentId: T:System.ArgumentException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentexception
+  name: ArgumentException
+  nameWithType: ArgumentException
+  fullName: System.ArgumentException
+- uid: nebulae.dotPDFium.PdfAnnotation.AddInkStroke*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.AddInkStroke
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_AddInkStroke_System_ReadOnlySpan_nebulae_dotPDFium_Native_FsPointF__
+  name: AddInkStroke
+  nameWithType: PdfAnnotation.AddInkStroke
+  fullName: nebulae.dotPDFium.PdfAnnotation.AddInkStroke
+- uid: System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF}
+  commentId: T:System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<FsPointF>
+  nameWithType: ReadOnlySpan<FsPointF>
+  fullName: System.ReadOnlySpan<nebulae.dotPDFium.Native.FsPointF>
+  nameWithType.vb: ReadOnlySpan(Of FsPointF)
+  fullName.vb: System.ReadOnlySpan(Of nebulae.dotPDFium.Native.FsPointF)
+  name.vb: ReadOnlySpan(Of FsPointF)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject
+  commentId: T:nebulae.dotPDFium.PdfPageObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPageObject.html
+  name: PdfPageObject
+  nameWithType: PdfPageObject
+  fullName: nebulae.dotPDFium.PdfPageObject
+- uid: nebulae.dotPDFium.PdfAnnotation.AppendObject*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.AppendObject
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_AppendObject_nebulae_dotPDFium_PdfPageObject_
+  name: AppendObject
+  nameWithType: PdfAnnotation.AppendObject
+  fullName: nebulae.dotPDFium.PdfAnnotation.AppendObject
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.PdfAnnotation.CommitChanges*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.CommitChanges
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_CommitChanges
+  name: CommitChanges
+  nameWithType: PdfAnnotation.CommitChanges
+  fullName: nebulae.dotPDFium.PdfAnnotation.CommitChanges
+- uid: nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_ClearInkStrokes
+  name: ClearInkStrokes
+  nameWithType: PdfAnnotation.ClearInkStrokes
+  fullName: nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes
+- uid: nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetAppearanceStreamName_nebulae_dotPDFium_Native_PdfAnnotationAppearanceMode_
+  name: GetAppearanceStreamName
+  nameWithType: PdfAnnotation.GetAppearanceStreamName
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName
+- uid: nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode
+  commentId: T:nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode.html
+  name: PdfAnnotationAppearanceMode
+  nameWithType: PdfAnnotationAppearanceMode
+  fullName: nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode
+- uid: nebulae.dotPDFium.Native.FsQuadPointsF
+  commentId: T:nebulae.dotPDFium.Native.FsQuadPointsF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsQuadPointsF.html
+  name: FsQuadPointsF
+  nameWithType: FsQuadPointsF
+  fullName: nebulae.dotPDFium.Native.FsQuadPointsF
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetAttachmentPoint_System_Int32_
+  name: GetAttachmentPoint
+  nameWithType: PdfAnnotation.GetAttachmentPoint
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint
+- uid: System.Nullable{nebulae.dotPDFium.Native.FsQuadPointsF}
+  commentId: T:System.Nullable{nebulae.dotPDFium.Native.FsQuadPointsF}
+  parent: System
+  definition: System.Nullable`1
+  href: nebulae.dotPDFium.Native.FsQuadPointsF.html
+  name: FsQuadPointsF?
+  nameWithType: FsQuadPointsF?
+  fullName: nebulae.dotPDFium.Native.FsQuadPointsF?
+  spec.csharp:
+  - uid: nebulae.dotPDFium.Native.FsQuadPointsF
+    name: FsQuadPointsF
+    href: nebulae.dotPDFium.Native.FsQuadPointsF.html
+  - name: '?'
+  spec.vb:
+  - uid: nebulae.dotPDFium.Native.FsQuadPointsF
+    name: FsQuadPointsF
+    href: nebulae.dotPDFium.Native.FsQuadPointsF.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetAttachmentPointCount
+  name: GetAttachmentPointCount
+  nameWithType: PdfAnnotation.GetAttachmentPointCount
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount
+- uid: nebulae.dotPDFium.Native.PdfAnnotationBorder
+  commentId: T:nebulae.dotPDFium.Native.PdfAnnotationBorder
+  href: nebulae.dotPDFium.Native.PdfAnnotationBorder.html
+  name: PdfAnnotationBorder
+  nameWithType: PdfAnnotationBorder
+  fullName: nebulae.dotPDFium.Native.PdfAnnotationBorder
+- uid: nebulae.dotPDFium.PdfAnnotation.GetBorder*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetBorder
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetBorder
+  name: GetBorder
+  nameWithType: PdfAnnotation.GetBorder
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetBorder
+- uid: System.Nullable{nebulae.dotPDFium.Native.PdfAnnotationBorder}
+  commentId: T:System.Nullable{nebulae.dotPDFium.Native.PdfAnnotationBorder}
+  parent: System
+  definition: System.Nullable`1
+  href: nebulae.dotPDFium.Native.PdfAnnotationBorder.html
+  name: PdfAnnotationBorder?
+  nameWithType: PdfAnnotationBorder?
+  fullName: nebulae.dotPDFium.Native.PdfAnnotationBorder?
+  spec.csharp:
+  - uid: nebulae.dotPDFium.Native.PdfAnnotationBorder
+    name: PdfAnnotationBorder
+    href: nebulae.dotPDFium.Native.PdfAnnotationBorder.html
+  - name: '?'
+  spec.vb:
+  - uid: nebulae.dotPDFium.Native.PdfAnnotationBorder
+    name: PdfAnnotationBorder
+    href: nebulae.dotPDFium.Native.PdfAnnotationBorder.html
+  - name: '?'
+- uid: nebulae.dotPDFium.PdfAnnotation.GetFileAttachment*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetFileAttachment
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetFileAttachment
+  name: GetFileAttachment
+  nameWithType: PdfAnnotation.GetFileAttachment
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetFileAttachment
+- uid: nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetInkStrokeCount
+  name: GetInkStrokeCount
+  nameWithType: PdfAnnotation.GetInkStrokeCount
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount
+- uid: nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetInkStrokePoints_System_Int32_
+  name: GetInkStrokePoints
+  nameWithType: PdfAnnotation.GetInkStrokePoints
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints
+- uid: System.Collections.Generic.IReadOnlyList{nebulae.dotPDFium.Native.FsPointF}
+  commentId: T:System.Collections.Generic.IReadOnlyList{nebulae.dotPDFium.Native.FsPointF}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<FsPointF>
+  nameWithType: IReadOnlyList<FsPointF>
+  fullName: System.Collections.Generic.IReadOnlyList<nebulae.dotPDFium.Native.FsPointF>
+  nameWithType.vb: IReadOnlyList(Of FsPointF)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of nebulae.dotPDFium.Native.FsPointF)
+  name.vb: IReadOnlyList(Of FsPointF)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: nebulae.dotPDFium.PdfAnnotation.GetLine*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetLine
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetLine
+  name: GetLine
+  nameWithType: PdfAnnotation.GetLine
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetLine
+- uid: System.Nullable{System.ValueTuple{nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF}}
+  commentId: T:System.Nullable{System.ValueTuple{nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF}}
+  parent: System
+  definition: System.Nullable`1
+  href: nebulae.dotPDFium.Native.FsPointF.html
+  name: (FsPointF Start, FsPointF End)?
+  nameWithType: (FsPointF Start, FsPointF End)?
+  fullName: (nebulae.dotPDFium.Native.FsPointF Start, nebulae.dotPDFium.Native.FsPointF End)?
+  nameWithType.vb: (Start As FsPointF, End As FsPointF)?
+  fullName.vb: (Start As nebulae.dotPDFium.Native.FsPointF, End As nebulae.dotPDFium.Native.FsPointF)?
+  name.vb: (Start As FsPointF, End As FsPointF)?
+  spec.csharp:
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: " "
+  - uid: System.ValueTuple{nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF}.Start
+    name: Start
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-nebulae.dotpdfium.native.fspointf,nebulae.dotpdfium.native.fspointf-.start
+  - name: ','
+  - name: " "
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: " "
+  - uid: System.ValueTuple{nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF}.End
+    name: End
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-nebulae.dotpdfium.native.fspointf,nebulae.dotpdfium.native.fspointf-.end
+  - name: )
+  - name: '?'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF}.Start
+    name: Start
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-nebulae.dotpdfium.native.fspointf,nebulae.dotpdfium.native.fspointf-.start
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF}.End
+    name: End
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-nebulae.dotpdfium.native.fspointf,nebulae.dotpdfium.native.fspointf-.end
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: nebulae.dotPDFium.Native.FsPointF
+    name: FsPointF
+    href: nebulae.dotPDFium.Native.FsPointF.html
+  - name: )
+  - name: '?'
+- uid: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetLinkedAnnotation_System_String_
+  name: GetLinkedAnnotation
+  nameWithType: PdfAnnotation.GetLinkedAnnotation
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation
+- uid: System.Nullable{System.IntPtr}
+  commentId: T:System.Nullable{System.IntPtr}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint?
+  nameWithType: nint?
+  fullName: nint?
+  nameWithType.vb: IntPtr?
+  fullName.vb: System.IntPtr?
+  name.vb: IntPtr?
+  spec.csharp:
+  - uid: System.IntPtr
+    name: nint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '?'
+  spec.vb:
+  - uid: System.IntPtr
+    name: IntPtr
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.intptr
+  - name: '?'
+- uid: nebulae.dotPDFium.PdfAnnotation.GetObject*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetObject
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetObject_System_Int32_
+  name: GetObject
+  nameWithType: PdfAnnotation.GetObject
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetObject
+- uid: nebulae.dotPDFium.PdfAnnotation.GetObjectCount*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetObjectCount
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetObjectCount
+  name: GetObjectCount
+  nameWithType: PdfAnnotation.GetObjectCount
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetObjectCount
+- uid: nebulae.dotPDFium.dotPDFiumException
+  commentId: T:nebulae.dotPDFium.dotPDFiumException
+  href: nebulae.dotPDFium.dotPDFiumException.html
+  name: dotPDFiumException
+  nameWithType: dotPDFiumException
+  fullName: nebulae.dotPDFium.dotPDFiumException
+- uid: nebulae.dotPDFium.PdfAnnotation.GetSubtype*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetSubtype
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetSubtype
+  name: GetSubtype
+  nameWithType: PdfAnnotation.GetSubtype
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetSubtype
+- uid: nebulae.dotPDFium.Native.PdfValueType
+  commentId: T:nebulae.dotPDFium.Native.PdfValueType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfValueType.html
+  name: PdfValueType
+  nameWithType: PdfValueType
+  fullName: nebulae.dotPDFium.Native.PdfValueType
+- uid: nebulae.dotPDFium.PdfAnnotation.GetValueType*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetValueType
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetValueType_System_String_
+  name: GetValueType
+  nameWithType: PdfAnnotation.GetValueType
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetValueType
+- uid: nebulae.dotPDFium.PdfAnnotation.GetVertices*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetVertices
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetVertices
+  name: GetVertices
+  nameWithType: PdfAnnotation.GetVertices
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetVertices
+- uid: nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_HasAttachmentPoints
+  name: HasAttachmentPoints
+  nameWithType: PdfAnnotation.HasAttachmentPoints
+  fullName: nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints
+- uid: nebulae.dotPDFium.PdfAnnotation.HasKey*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.HasKey
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_HasKey_System_String_
+  name: HasKey
+  nameWithType: PdfAnnotation.HasKey
+  fullName: nebulae.dotPDFium.PdfAnnotation.HasKey
+- uid: nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_IsObjectSupportedSubtype_nebulae_dotPDFium_Native_PdfAnnotationSubtype_
+  name: IsObjectSupportedSubtype
+  nameWithType: PdfAnnotation.IsObjectSupportedSubtype
+  fullName: nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype
+- uid: nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_IsSupportedSubtype
+  name: IsSupportedSubtype
+  nameWithType: PdfAnnotation.IsSupportedSubtype
+  fullName: nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype
+- uid: nebulae.dotPDFium.Native.FsRectF
+  commentId: T:nebulae.dotPDFium.Native.FsRectF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsRectF.html
+  name: FsRectF
+  nameWithType: FsRectF
+  fullName: nebulae.dotPDFium.Native.FsRectF
+- uid: nebulae.dotPDFium.PdfAnnotation.GetRect*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetRect
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetRect
+  name: GetRect
+  nameWithType: PdfAnnotation.GetRect
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetRect
+- uid: nebulae.dotPDFium.PdfAnnotation.SetRect*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.SetRect
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_SetRect_nebulae_dotPDFium_Native_FsRectF_
+  name: SetRect
+  nameWithType: PdfAnnotation.SetRect
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetRect
+- uid: nebulae.dotPDFium.Native.RgbaColor
+  commentId: T:nebulae.dotPDFium.Native.RgbaColor
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.RgbaColor.html
+  name: RgbaColor
+  nameWithType: RgbaColor
+  fullName: nebulae.dotPDFium.Native.RgbaColor
+- uid: nebulae.dotPDFium.PdfAnnotation.GetColor*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetColor
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetColor
+  name: GetColor
+  nameWithType: PdfAnnotation.GetColor
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetColor
+- uid: nebulae.dotPDFium.PdfAnnotation.SetColor*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.SetColor
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_SetColor_nebulae_dotPDFium_Native_RgbaColor_
+  name: SetColor
+  nameWithType: PdfAnnotation.SetColor
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetColor
+- uid: nebulae.dotPDFium.PdfAnnotation.RemoveObject*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.RemoveObject
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_RemoveObject_System_Int32_
+  name: RemoveObject
+  nameWithType: PdfAnnotation.RemoveObject
+  fullName: nebulae.dotPDFium.PdfAnnotation.RemoveObject
+- uid: nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_SetAppearanceStream_nebulae_dotPDFium_Native_PdfAnnotationAppearanceMode_System_String_
+  name: SetAppearanceStream
+  nameWithType: PdfAnnotation.SetAppearanceStream
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream
+- uid: nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_SetAttachmentPoints_System_Int32_nebulae_dotPDFium_Native_FsQuadPointsF_
+  name: SetAttachmentPoints
+  nameWithType: PdfAnnotation.SetAttachmentPoints
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints
+- uid: nebulae.dotPDFium.PdfAnnotation.SetBorder*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.SetBorder
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_SetBorder_System_Single_System_Single_System_Single_
+  name: SetBorder
+  nameWithType: PdfAnnotation.SetBorder
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetBorder
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: nebulae.dotPDFium.PdfAnnotation.SetUri*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.SetUri
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_SetUri_System_String_
+  name: SetUri
+  nameWithType: PdfAnnotation.SetUri
+  fullName: nebulae.dotPDFium.PdfAnnotation.SetUri
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: nebulae.dotPDFium.PdfAnnotation.UpdateObject*
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.UpdateObject
+  href: nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_UpdateObject_nebulae_dotPDFium_PdfPageObject_
+  name: UpdateObject
+  nameWithType: PdfAnnotation.UpdateObject
+  fullName: nebulae.dotPDFium.PdfAnnotation.UpdateObject

@@ -1,0 +1,156 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfDocMdpPermission
+  commentId: T:nebulae.dotPDFium.Native.PdfDocMdpPermission
+  id: PdfDocMdpPermission
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfDocMdpPermission.AnnotateFormFillAndSign
+  - nebulae.dotPDFium.Native.PdfDocMdpPermission.FormFillAndSign
+  - nebulae.dotPDFium.Native.PdfDocMdpPermission.NoChanges
+  langs:
+  - csharp
+  - vb
+  name: PdfDocMdpPermission
+  nameWithType: PdfDocMdpPermission
+  fullName: nebulae.dotPDFium.Native.PdfDocMdpPermission
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfDocMdpPermission
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 555
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: >-
+    Specifies the modification permissions for a PDF document when using  Document Modification Detection and Prevention
+
+    (MDP).
+  remarks: >-
+    These permissions define the level of changes allowed in a PDF document  while maintaining its
+        integrity under MDP. The permissions range from  disallowing all changes to allowing specific types of
+        modifications, such  as form filling or signing.
+  example: []
+  syntax:
+    content: public enum PdfDocMdpPermission
+    content.vb: Public Enum PdfDocMdpPermission
+- uid: nebulae.dotPDFium.Native.PdfDocMdpPermission.NoChanges
+  commentId: F:nebulae.dotPDFium.Native.PdfDocMdpPermission.NoChanges
+  id: NoChanges
+  parent: nebulae.dotPDFium.Native.PdfDocMdpPermission
+  langs:
+  - csharp
+  - vb
+  name: NoChanges
+  nameWithType: PdfDocMdpPermission.NoChanges
+  fullName: nebulae.dotPDFium.Native.PdfDocMdpPermission.NoChanges
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoChanges
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 557
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoChanges = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocMdpPermission
+- uid: nebulae.dotPDFium.Native.PdfDocMdpPermission.FormFillAndSign
+  commentId: F:nebulae.dotPDFium.Native.PdfDocMdpPermission.FormFillAndSign
+  id: FormFillAndSign
+  parent: nebulae.dotPDFium.Native.PdfDocMdpPermission
+  langs:
+  - csharp
+  - vb
+  name: FormFillAndSign
+  nameWithType: PdfDocMdpPermission.FormFillAndSign
+  fullName: nebulae.dotPDFium.Native.PdfDocMdpPermission.FormFillAndSign
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FormFillAndSign
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 558
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: FormFillAndSign = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocMdpPermission
+- uid: nebulae.dotPDFium.Native.PdfDocMdpPermission.AnnotateFormFillAndSign
+  commentId: F:nebulae.dotPDFium.Native.PdfDocMdpPermission.AnnotateFormFillAndSign
+  id: AnnotateFormFillAndSign
+  parent: nebulae.dotPDFium.Native.PdfDocMdpPermission
+  langs:
+  - csharp
+  - vb
+  name: AnnotateFormFillAndSign
+  nameWithType: PdfDocMdpPermission.AnnotateFormFillAndSign
+  fullName: nebulae.dotPDFium.Native.PdfDocMdpPermission.AnnotateFormFillAndSign
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AnnotateFormFillAndSign
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 559
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: AnnotateFormFillAndSign = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfDocMdpPermission
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfDocMdpPermission
+  commentId: T:nebulae.dotPDFium.Native.PdfDocMdpPermission
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfDocMdpPermission.html
+  name: PdfDocMdpPermission
+  nameWithType: PdfDocMdpPermission
+  fullName: nebulae.dotPDFium.Native.PdfDocMdpPermission

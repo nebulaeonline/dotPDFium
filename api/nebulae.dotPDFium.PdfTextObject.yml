@@ -1,0 +1,1578 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfTextObject
+  commentId: T:nebulae.dotPDFium.PdfTextObject
+  id: PdfTextObject
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfTextObject.GetFont
+  - nebulae.dotPDFium.PdfTextObject.GetFontSize
+  - nebulae.dotPDFium.PdfTextObject.GetRenderMode
+  - nebulae.dotPDFium.PdfTextObject.GetText(nebulae.dotPDFium.PdfPage)
+  - nebulae.dotPDFium.PdfTextObject.SetRenderMode(nebulae.dotPDFium.Native.PdfTextRenderMode)
+  - nebulae.dotPDFium.PdfTextObject.SetText(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PdfTextObject
+  nameWithType: PdfTextObject
+  fullName: nebulae.dotPDFium.PdfTextObject
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfTextObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfTextObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfTextObject.cs
+    startLine: 8
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    PdfTextObject represents a text object within a PDF document. It is derived from PdfPageObject and provides
+
+    the ability to manipulate text content on a PDF page.
+  example: []
+  syntax:
+    content: 'public class PdfTextObject : PdfPageObject, IDisposable'
+    content.vb: Public Class PdfTextObject Inherits PdfPageObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - nebulae.dotPDFium.PdfObject
+  - nebulae.dotPDFium.PdfPageObject
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - nebulae.dotPDFium.PdfPageObject._hasOwner
+  - nebulae.dotPDFium.PdfPageObject.Transform(nebulae.dotPDFium.Native.FsMatrix)
+  - nebulae.dotPDFium.PdfPageObject.SetPosition(System.Double,System.Double)
+  - nebulae.dotPDFium.PdfPageObject.ScaleBy(System.Double,System.Double)
+  - nebulae.dotPDFium.PdfPageObject.ScaleTo(System.Double,System.Double)
+  - nebulae.dotPDFium.PdfPageObject.TransformF(nebulae.dotPDFium.Native.FsMatrixF)
+  - nebulae.dotPDFium.PdfPageObject.SetPositionF(System.Single,System.Single)
+  - nebulae.dotPDFium.PdfPageObject.ScaleByF(System.Single,System.Single)
+  - nebulae.dotPDFium.PdfPageObject.ScaleToF(System.Single,System.Single)
+  - nebulae.dotPDFium.PdfPageObject.GetIsActive
+  - nebulae.dotPDFium.PdfPageObject.SetIsActive(System.Boolean)
+  - nebulae.dotPDFium.PdfPageObject.GetBounds
+  - nebulae.dotPDFium.PdfPageObject.GetFillColor
+  - nebulae.dotPDFium.PdfPageObject.SetFillColor(nebulae.dotPDFium.Native.RgbaColor)
+  - nebulae.dotPDFium.PdfPageObject.GetMatrixF
+  - nebulae.dotPDFium.PdfPageObject.SetMatrix(nebulae.dotPDFium.Native.FsMatrixF)
+  - nebulae.dotPDFium.PdfPageObject.GetRotatedBounds
+  - nebulae.dotPDFium.PdfPageObject.GetStrokeColor
+  - nebulae.dotPDFium.PdfPageObject.SetStrokeColor(nebulae.dotPDFium.Native.RgbaColor)
+  - nebulae.dotPDFium.PdfPageObject.GetStrokeWidth
+  - nebulae.dotPDFium.PdfPageObject.SetStrokeWidth(System.Single)
+  - nebulae.dotPDFium.PdfPageObject.HasTransparency
+  - nebulae.dotPDFium.PdfPageObject.GetClipPath
+  - nebulae.dotPDFium.PdfPageObject.TransformClipPath(nebulae.dotPDFium.Native.FsMatrix)
+  - nebulae.dotPDFium.PdfPageObject.AddMark(System.String)
+  - nebulae.dotPDFium.PdfPageObject.RemoveMark(nebulae.dotPDFium.PdfMark)
+  - nebulae.dotPDFium.PdfPageObject.GetMarkCount
+  - nebulae.dotPDFium.PdfPageObject.GetMark(System.Int32)
+  - nebulae.dotPDFium.PdfPageObject.Dispose(System.Boolean)
+  - nebulae.dotPDFium.PdfObject._handle
+  - nebulae.dotPDFium.PdfObject._type
+  - nebulae.dotPDFium.PdfObject._disposed
+  - nebulae.dotPDFium.PdfObject.Handle
+  - nebulae.dotPDFium.PdfObject.Type
+  - nebulae.dotPDFium.PdfObject.IsDisposed
+  - nebulae.dotPDFium.PdfObject.GetPDFiumError
+  - nebulae.dotPDFium.PdfObject.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfTextObject.GetFont
+  commentId: M:nebulae.dotPDFium.PdfTextObject.GetFont
+  id: GetFont
+  parent: nebulae.dotPDFium.PdfTextObject
+  langs:
+  - csharp
+  - vb
+  name: GetFont()
+  nameWithType: PdfTextObject.GetFont()
+  fullName: nebulae.dotPDFium.PdfTextObject.GetFont()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfTextObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFont
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfTextObject.cs
+    startLine: 24
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the font associated with the current text object.
+  example: []
+  syntax:
+    content: public PdfFont GetFont()
+    return:
+      type: nebulae.dotPDFium.PdfFont
+      description: A <xref href="nebulae.dotPDFium.PdfFont" data-throw-if-not-resolved="false"></xref> instance representing the font of the text object.
+    content.vb: Public Function GetFont() As PdfFont
+  overload: nebulae.dotPDFium.PdfTextObject.GetFont*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the font cannot be retrieved from the text object.
+- uid: nebulae.dotPDFium.PdfTextObject.GetFontSize
+  commentId: M:nebulae.dotPDFium.PdfTextObject.GetFontSize
+  id: GetFontSize
+  parent: nebulae.dotPDFium.PdfTextObject
+  langs:
+  - csharp
+  - vb
+  name: GetFontSize()
+  nameWithType: PdfTextObject.GetFontSize()
+  fullName: nebulae.dotPDFium.PdfTextObject.GetFontSize()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfTextObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetFontSize
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfTextObject.cs
+    startLine: 40
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the font size of the text object.
+  example: []
+  syntax:
+    content: public float GetFontSize()
+    return:
+      type: System.Single
+      description: The font size of the text object as a <xref href="System.Single" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Function GetFontSize() As Single
+  overload: nebulae.dotPDFium.PdfTextObject.GetFontSize*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the font size cannot be retrieved from the text object.
+- uid: nebulae.dotPDFium.PdfTextObject.GetText(nebulae.dotPDFium.PdfPage)
+  commentId: M:nebulae.dotPDFium.PdfTextObject.GetText(nebulae.dotPDFium.PdfPage)
+  id: GetText(nebulae.dotPDFium.PdfPage)
+  parent: nebulae.dotPDFium.PdfTextObject
+  langs:
+  - csharp
+  - vb
+  name: GetText(PdfPage)
+  nameWithType: PdfTextObject.GetText(PdfPage)
+  fullName: nebulae.dotPDFium.PdfTextObject.GetText(nebulae.dotPDFium.PdfPage)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfTextObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetText
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfTextObject.cs
+    startLine: 56
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Extracts the text content from the specified PDF page.
+  remarks: >-
+    The extracted text may include a null terminator at the end, which is removed before
+        returning the result.
+  example: []
+  syntax:
+    content: public string GetText(PdfPage page)
+    parameters:
+    - id: page
+      type: nebulae.dotPDFium.PdfPage
+      description: The <xref href="nebulae.dotPDFium.PdfPage" data-throw-if-not-resolved="false"></xref> object representing the page from which to extract text.
+    return:
+      type: System.String
+      description: >-
+        A <xref href="System.String" data-throw-if-not-resolved="false"></xref> containing the text content of the specified PDF page.  Returns an empty string if the
+            page contains no text or if the extraction fails.
+    content.vb: Public Function GetText(page As PdfPage) As String
+  overload: nebulae.dotPDFium.PdfTextObject.GetText*
+- uid: nebulae.dotPDFium.PdfTextObject.GetRenderMode
+  commentId: M:nebulae.dotPDFium.PdfTextObject.GetRenderMode
+  id: GetRenderMode
+  parent: nebulae.dotPDFium.PdfTextObject
+  langs:
+  - csharp
+  - vb
+  name: GetRenderMode()
+  nameWithType: PdfTextObject.GetRenderMode()
+  fullName: nebulae.dotPDFium.PdfTextObject.GetRenderMode()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfTextObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetRenderMode
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfTextObject.cs
+    startLine: 73
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the text rendering mode of the current PDF text object.
+  example: []
+  syntax:
+    content: public PdfTextRenderMode GetRenderMode()
+    return:
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+      description: A <xref href="nebulae.dotPDFium.Native.PdfTextRenderMode" data-throw-if-not-resolved="false"></xref> value representing the rendering mode of the text object.
+    content.vb: Public Function GetRenderMode() As PdfTextRenderMode
+  overload: nebulae.dotPDFium.PdfTextObject.GetRenderMode*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the text rendering mode retrieved is not a valid <xref href="nebulae.dotPDFium.Native.PdfTextRenderMode" data-throw-if-not-resolved="false"></xref> value.
+- uid: nebulae.dotPDFium.PdfTextObject.SetRenderMode(nebulae.dotPDFium.Native.PdfTextRenderMode)
+  commentId: M:nebulae.dotPDFium.PdfTextObject.SetRenderMode(nebulae.dotPDFium.Native.PdfTextRenderMode)
+  id: SetRenderMode(nebulae.dotPDFium.Native.PdfTextRenderMode)
+  parent: nebulae.dotPDFium.PdfTextObject
+  langs:
+  - csharp
+  - vb
+  name: SetRenderMode(PdfTextRenderMode)
+  nameWithType: PdfTextObject.SetRenderMode(PdfTextRenderMode)
+  fullName: nebulae.dotPDFium.PdfTextObject.SetRenderMode(nebulae.dotPDFium.Native.PdfTextRenderMode)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfTextObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetRenderMode
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfTextObject.cs
+    startLine: 90
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the text rendering mode for the current PDF text object.
+  remarks: >-
+    The <code class="paramref">mode</code> parameter specifies the rendering style for text, which can
+        include options such as filling, stroking, or clipping text. Ensure that the text object is valid and properly
+        initialized before calling this method.
+  example: []
+  syntax:
+    content: public void SetRenderMode(PdfTextRenderMode mode)
+    parameters:
+    - id: mode
+      type: nebulae.dotPDFium.Native.PdfTextRenderMode
+      description: >-
+        The text rendering mode to apply. This determines how text is rendered, such as fill, stroke, or a combination
+            of both.
+    content.vb: Public Sub SetRenderMode(mode As PdfTextRenderMode)
+  overload: nebulae.dotPDFium.PdfTextObject.SetRenderMode*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the operation fails due to an error in the underlying PDF library.
+- uid: nebulae.dotPDFium.PdfTextObject.SetText(System.String)
+  commentId: M:nebulae.dotPDFium.PdfTextObject.SetText(System.String)
+  id: SetText(System.String)
+  parent: nebulae.dotPDFium.PdfTextObject
+  langs:
+  - csharp
+  - vb
+  name: SetText(string)
+  nameWithType: PdfTextObject.SetText(string)
+  fullName: nebulae.dotPDFium.PdfTextObject.SetText(string)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfTextObject.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetText
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfTextObject.cs
+    startLine: 101
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the text content of the PdfTextObject. This method allows you to modify the text displayed in the text object.
+  example: []
+  syntax:
+    content: public void SetText(string text)
+    parameters:
+    - id: text
+      type: System.String
+      description: ''
+    content.vb: Public Sub SetText(text As String)
+  overload: nebulae.dotPDFium.PdfTextObject.SetText*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: ''
+  nameWithType.vb: PdfTextObject.SetText(String)
+  fullName.vb: nebulae.dotPDFium.PdfTextObject.SetText(String)
+  name.vb: SetText(String)
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: nebulae.dotPDFium.PdfObject
+  commentId: T:nebulae.dotPDFium.PdfObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfObject.html
+  name: PdfObject
+  nameWithType: PdfObject
+  fullName: nebulae.dotPDFium.PdfObject
+- uid: nebulae.dotPDFium.PdfPageObject
+  commentId: T:nebulae.dotPDFium.PdfPageObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPageObject.html
+  name: PdfPageObject
+  nameWithType: PdfPageObject
+  fullName: nebulae.dotPDFium.PdfPageObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: nebulae.dotPDFium.PdfPageObject._hasOwner
+  commentId: F:nebulae.dotPDFium.PdfPageObject._hasOwner
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject__hasOwner
+  name: _hasOwner
+  nameWithType: PdfPageObject._hasOwner
+  fullName: nebulae.dotPDFium.PdfPageObject._hasOwner
+- uid: nebulae.dotPDFium.PdfPageObject.Transform(nebulae.dotPDFium.Native.FsMatrix)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.Transform(nebulae.dotPDFium.Native.FsMatrix)
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_Transform_nebulae_dotPDFium_Native_FsMatrix_
+  name: Transform(FsMatrix)
+  nameWithType: PdfPageObject.Transform(FsMatrix)
+  fullName: nebulae.dotPDFium.PdfPageObject.Transform(nebulae.dotPDFium.Native.FsMatrix)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.Transform(nebulae.dotPDFium.Native.FsMatrix)
+    name: Transform
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_Transform_nebulae_dotPDFium_Native_FsMatrix_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrix
+    name: FsMatrix
+    href: nebulae.dotPDFium.Native.FsMatrix.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.Transform(nebulae.dotPDFium.Native.FsMatrix)
+    name: Transform
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_Transform_nebulae_dotPDFium_Native_FsMatrix_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrix
+    name: FsMatrix
+    href: nebulae.dotPDFium.Native.FsMatrix.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.SetPosition(System.Double,System.Double)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.SetPosition(System.Double,System.Double)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetPosition_System_Double_System_Double_
+  name: SetPosition(double, double)
+  nameWithType: PdfPageObject.SetPosition(double, double)
+  fullName: nebulae.dotPDFium.PdfPageObject.SetPosition(double, double)
+  nameWithType.vb: PdfPageObject.SetPosition(Double, Double)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.SetPosition(Double, Double)
+  name.vb: SetPosition(Double, Double)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetPosition(System.Double,System.Double)
+    name: SetPosition
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetPosition_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetPosition(System.Double,System.Double)
+    name: SetPosition
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetPosition_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.ScaleBy(System.Double,System.Double)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.ScaleBy(System.Double,System.Double)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleBy_System_Double_System_Double_
+  name: ScaleBy(double, double)
+  nameWithType: PdfPageObject.ScaleBy(double, double)
+  fullName: nebulae.dotPDFium.PdfPageObject.ScaleBy(double, double)
+  nameWithType.vb: PdfPageObject.ScaleBy(Double, Double)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.ScaleBy(Double, Double)
+  name.vb: ScaleBy(Double, Double)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleBy(System.Double,System.Double)
+    name: ScaleBy
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleBy_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleBy(System.Double,System.Double)
+    name: ScaleBy
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleBy_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.ScaleTo(System.Double,System.Double)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.ScaleTo(System.Double,System.Double)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleTo_System_Double_System_Double_
+  name: ScaleTo(double, double)
+  nameWithType: PdfPageObject.ScaleTo(double, double)
+  fullName: nebulae.dotPDFium.PdfPageObject.ScaleTo(double, double)
+  nameWithType.vb: PdfPageObject.ScaleTo(Double, Double)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.ScaleTo(Double, Double)
+  name.vb: ScaleTo(Double, Double)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleTo(System.Double,System.Double)
+    name: ScaleTo
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleTo_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleTo(System.Double,System.Double)
+    name: ScaleTo
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleTo_System_Double_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.TransformF(nebulae.dotPDFium.Native.FsMatrixF)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.TransformF(nebulae.dotPDFium.Native.FsMatrixF)
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_TransformF_nebulae_dotPDFium_Native_FsMatrixF_
+  name: TransformF(FsMatrixF)
+  nameWithType: PdfPageObject.TransformF(FsMatrixF)
+  fullName: nebulae.dotPDFium.PdfPageObject.TransformF(nebulae.dotPDFium.Native.FsMatrixF)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.TransformF(nebulae.dotPDFium.Native.FsMatrixF)
+    name: TransformF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_TransformF_nebulae_dotPDFium_Native_FsMatrixF_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrixF
+    name: FsMatrixF
+    href: nebulae.dotPDFium.Native.FsMatrixF.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.TransformF(nebulae.dotPDFium.Native.FsMatrixF)
+    name: TransformF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_TransformF_nebulae_dotPDFium_Native_FsMatrixF_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrixF
+    name: FsMatrixF
+    href: nebulae.dotPDFium.Native.FsMatrixF.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.SetPositionF(System.Single,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.SetPositionF(System.Single,System.Single)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetPositionF_System_Single_System_Single_
+  name: SetPositionF(float, float)
+  nameWithType: PdfPageObject.SetPositionF(float, float)
+  fullName: nebulae.dotPDFium.PdfPageObject.SetPositionF(float, float)
+  nameWithType.vb: PdfPageObject.SetPositionF(Single, Single)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.SetPositionF(Single, Single)
+  name.vb: SetPositionF(Single, Single)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetPositionF(System.Single,System.Single)
+    name: SetPositionF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetPositionF_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetPositionF(System.Single,System.Single)
+    name: SetPositionF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetPositionF_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.ScaleByF(System.Single,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.ScaleByF(System.Single,System.Single)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleByF_System_Single_System_Single_
+  name: ScaleByF(float, float)
+  nameWithType: PdfPageObject.ScaleByF(float, float)
+  fullName: nebulae.dotPDFium.PdfPageObject.ScaleByF(float, float)
+  nameWithType.vb: PdfPageObject.ScaleByF(Single, Single)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.ScaleByF(Single, Single)
+  name.vb: ScaleByF(Single, Single)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleByF(System.Single,System.Single)
+    name: ScaleByF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleByF_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleByF(System.Single,System.Single)
+    name: ScaleByF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleByF_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.ScaleToF(System.Single,System.Single)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.ScaleToF(System.Single,System.Single)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleToF_System_Single_System_Single_
+  name: ScaleToF(float, float)
+  nameWithType: PdfPageObject.ScaleToF(float, float)
+  fullName: nebulae.dotPDFium.PdfPageObject.ScaleToF(float, float)
+  nameWithType.vb: PdfPageObject.ScaleToF(Single, Single)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.ScaleToF(Single, Single)
+  name.vb: ScaleToF(Single, Single)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleToF(System.Single,System.Single)
+    name: ScaleToF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleToF_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.ScaleToF(System.Single,System.Single)
+    name: ScaleToF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_ScaleToF_System_Single_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetIsActive
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetIsActive
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetIsActive
+  name: GetIsActive()
+  nameWithType: PdfPageObject.GetIsActive()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetIsActive()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetIsActive
+    name: GetIsActive
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetIsActive
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetIsActive
+    name: GetIsActive
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetIsActive
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.SetIsActive(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.SetIsActive(System.Boolean)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetIsActive_System_Boolean_
+  name: SetIsActive(bool)
+  nameWithType: PdfPageObject.SetIsActive(bool)
+  fullName: nebulae.dotPDFium.PdfPageObject.SetIsActive(bool)
+  nameWithType.vb: PdfPageObject.SetIsActive(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.SetIsActive(Boolean)
+  name.vb: SetIsActive(Boolean)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetIsActive(System.Boolean)
+    name: SetIsActive
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetIsActive_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetIsActive(System.Boolean)
+    name: SetIsActive
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetIsActive_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetBounds
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetBounds
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetBounds
+  name: GetBounds()
+  nameWithType: PdfPageObject.GetBounds()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetBounds()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetBounds
+    name: GetBounds
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetBounds
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetBounds
+    name: GetBounds
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetBounds
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetFillColor
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetFillColor
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetFillColor
+  name: GetFillColor()
+  nameWithType: PdfPageObject.GetFillColor()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetFillColor()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetFillColor
+    name: GetFillColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetFillColor
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetFillColor
+    name: GetFillColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetFillColor
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.SetFillColor(nebulae.dotPDFium.Native.RgbaColor)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.SetFillColor(nebulae.dotPDFium.Native.RgbaColor)
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetFillColor_nebulae_dotPDFium_Native_RgbaColor_
+  name: SetFillColor(RgbaColor)
+  nameWithType: PdfPageObject.SetFillColor(RgbaColor)
+  fullName: nebulae.dotPDFium.PdfPageObject.SetFillColor(nebulae.dotPDFium.Native.RgbaColor)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetFillColor(nebulae.dotPDFium.Native.RgbaColor)
+    name: SetFillColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetFillColor_nebulae_dotPDFium_Native_RgbaColor_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.RgbaColor
+    name: RgbaColor
+    href: nebulae.dotPDFium.Native.RgbaColor.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetFillColor(nebulae.dotPDFium.Native.RgbaColor)
+    name: SetFillColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetFillColor_nebulae_dotPDFium_Native_RgbaColor_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.RgbaColor
+    name: RgbaColor
+    href: nebulae.dotPDFium.Native.RgbaColor.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetMatrixF
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetMatrixF
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMatrixF
+  name: GetMatrixF()
+  nameWithType: PdfPageObject.GetMatrixF()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetMatrixF()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetMatrixF
+    name: GetMatrixF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMatrixF
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetMatrixF
+    name: GetMatrixF
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMatrixF
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.SetMatrix(nebulae.dotPDFium.Native.FsMatrixF)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.SetMatrix(nebulae.dotPDFium.Native.FsMatrixF)
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetMatrix_nebulae_dotPDFium_Native_FsMatrixF_
+  name: SetMatrix(FsMatrixF)
+  nameWithType: PdfPageObject.SetMatrix(FsMatrixF)
+  fullName: nebulae.dotPDFium.PdfPageObject.SetMatrix(nebulae.dotPDFium.Native.FsMatrixF)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetMatrix(nebulae.dotPDFium.Native.FsMatrixF)
+    name: SetMatrix
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetMatrix_nebulae_dotPDFium_Native_FsMatrixF_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrixF
+    name: FsMatrixF
+    href: nebulae.dotPDFium.Native.FsMatrixF.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetMatrix(nebulae.dotPDFium.Native.FsMatrixF)
+    name: SetMatrix
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetMatrix_nebulae_dotPDFium_Native_FsMatrixF_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrixF
+    name: FsMatrixF
+    href: nebulae.dotPDFium.Native.FsMatrixF.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetRotatedBounds
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetRotatedBounds
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetRotatedBounds
+  name: GetRotatedBounds()
+  nameWithType: PdfPageObject.GetRotatedBounds()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetRotatedBounds()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetRotatedBounds
+    name: GetRotatedBounds
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetRotatedBounds
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetRotatedBounds
+    name: GetRotatedBounds
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetRotatedBounds
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetStrokeColor
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetStrokeColor
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetStrokeColor
+  name: GetStrokeColor()
+  nameWithType: PdfPageObject.GetStrokeColor()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetStrokeColor()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetStrokeColor
+    name: GetStrokeColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetStrokeColor
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetStrokeColor
+    name: GetStrokeColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetStrokeColor
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.SetStrokeColor(nebulae.dotPDFium.Native.RgbaColor)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.SetStrokeColor(nebulae.dotPDFium.Native.RgbaColor)
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetStrokeColor_nebulae_dotPDFium_Native_RgbaColor_
+  name: SetStrokeColor(RgbaColor)
+  nameWithType: PdfPageObject.SetStrokeColor(RgbaColor)
+  fullName: nebulae.dotPDFium.PdfPageObject.SetStrokeColor(nebulae.dotPDFium.Native.RgbaColor)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetStrokeColor(nebulae.dotPDFium.Native.RgbaColor)
+    name: SetStrokeColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetStrokeColor_nebulae_dotPDFium_Native_RgbaColor_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.RgbaColor
+    name: RgbaColor
+    href: nebulae.dotPDFium.Native.RgbaColor.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetStrokeColor(nebulae.dotPDFium.Native.RgbaColor)
+    name: SetStrokeColor
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetStrokeColor_nebulae_dotPDFium_Native_RgbaColor_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.RgbaColor
+    name: RgbaColor
+    href: nebulae.dotPDFium.Native.RgbaColor.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetStrokeWidth
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetStrokeWidth
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetStrokeWidth
+  name: GetStrokeWidth()
+  nameWithType: PdfPageObject.GetStrokeWidth()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetStrokeWidth()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetStrokeWidth
+    name: GetStrokeWidth
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetStrokeWidth
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetStrokeWidth
+    name: GetStrokeWidth
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetStrokeWidth
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.SetStrokeWidth(System.Single)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.SetStrokeWidth(System.Single)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetStrokeWidth_System_Single_
+  name: SetStrokeWidth(float)
+  nameWithType: PdfPageObject.SetStrokeWidth(float)
+  fullName: nebulae.dotPDFium.PdfPageObject.SetStrokeWidth(float)
+  nameWithType.vb: PdfPageObject.SetStrokeWidth(Single)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.SetStrokeWidth(Single)
+  name.vb: SetStrokeWidth(Single)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetStrokeWidth(System.Single)
+    name: SetStrokeWidth
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetStrokeWidth_System_Single_
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.SetStrokeWidth(System.Single)
+    name: SetStrokeWidth
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_SetStrokeWidth_System_Single_
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.HasTransparency
+  commentId: M:nebulae.dotPDFium.PdfPageObject.HasTransparency
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_HasTransparency
+  name: HasTransparency()
+  nameWithType: PdfPageObject.HasTransparency()
+  fullName: nebulae.dotPDFium.PdfPageObject.HasTransparency()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.HasTransparency
+    name: HasTransparency
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_HasTransparency
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.HasTransparency
+    name: HasTransparency
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_HasTransparency
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetClipPath
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetClipPath
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetClipPath
+  name: GetClipPath()
+  nameWithType: PdfPageObject.GetClipPath()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetClipPath()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetClipPath
+    name: GetClipPath
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetClipPath
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetClipPath
+    name: GetClipPath
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetClipPath
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.TransformClipPath(nebulae.dotPDFium.Native.FsMatrix)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.TransformClipPath(nebulae.dotPDFium.Native.FsMatrix)
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_TransformClipPath_nebulae_dotPDFium_Native_FsMatrix_
+  name: TransformClipPath(FsMatrix)
+  nameWithType: PdfPageObject.TransformClipPath(FsMatrix)
+  fullName: nebulae.dotPDFium.PdfPageObject.TransformClipPath(nebulae.dotPDFium.Native.FsMatrix)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.TransformClipPath(nebulae.dotPDFium.Native.FsMatrix)
+    name: TransformClipPath
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_TransformClipPath_nebulae_dotPDFium_Native_FsMatrix_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrix
+    name: FsMatrix
+    href: nebulae.dotPDFium.Native.FsMatrix.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.TransformClipPath(nebulae.dotPDFium.Native.FsMatrix)
+    name: TransformClipPath
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_TransformClipPath_nebulae_dotPDFium_Native_FsMatrix_
+  - name: (
+  - uid: nebulae.dotPDFium.Native.FsMatrix
+    name: FsMatrix
+    href: nebulae.dotPDFium.Native.FsMatrix.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.AddMark(System.String)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.AddMark(System.String)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_AddMark_System_String_
+  name: AddMark(string)
+  nameWithType: PdfPageObject.AddMark(string)
+  fullName: nebulae.dotPDFium.PdfPageObject.AddMark(string)
+  nameWithType.vb: PdfPageObject.AddMark(String)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.AddMark(String)
+  name.vb: AddMark(String)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.AddMark(System.String)
+    name: AddMark
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_AddMark_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.AddMark(System.String)
+    name: AddMark
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_AddMark_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.RemoveMark(nebulae.dotPDFium.PdfMark)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.RemoveMark(nebulae.dotPDFium.PdfMark)
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_RemoveMark_nebulae_dotPDFium_PdfMark_
+  name: RemoveMark(PdfMark)
+  nameWithType: PdfPageObject.RemoveMark(PdfMark)
+  fullName: nebulae.dotPDFium.PdfPageObject.RemoveMark(nebulae.dotPDFium.PdfMark)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.RemoveMark(nebulae.dotPDFium.PdfMark)
+    name: RemoveMark
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_RemoveMark_nebulae_dotPDFium_PdfMark_
+  - name: (
+  - uid: nebulae.dotPDFium.PdfMark
+    name: PdfMark
+    href: nebulae.dotPDFium.PdfMark.html
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.RemoveMark(nebulae.dotPDFium.PdfMark)
+    name: RemoveMark
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_RemoveMark_nebulae_dotPDFium_PdfMark_
+  - name: (
+  - uid: nebulae.dotPDFium.PdfMark
+    name: PdfMark
+    href: nebulae.dotPDFium.PdfMark.html
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetMarkCount
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetMarkCount
+  parent: nebulae.dotPDFium.PdfPageObject
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMarkCount
+  name: GetMarkCount()
+  nameWithType: PdfPageObject.GetMarkCount()
+  fullName: nebulae.dotPDFium.PdfPageObject.GetMarkCount()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetMarkCount
+    name: GetMarkCount
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMarkCount
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetMarkCount
+    name: GetMarkCount
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMarkCount
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.GetMark(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetMark(System.Int32)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMark_System_Int32_
+  name: GetMark(int)
+  nameWithType: PdfPageObject.GetMark(int)
+  fullName: nebulae.dotPDFium.PdfPageObject.GetMark(int)
+  nameWithType.vb: PdfPageObject.GetMark(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.GetMark(Integer)
+  name.vb: GetMark(Integer)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetMark(System.Int32)
+    name: GetMark
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMark_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.GetMark(System.Int32)
+    name: GetMark
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMark_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: nebulae.dotPDFium.PdfPageObject.Dispose(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfPageObject.Dispose(System.Boolean)
+  parent: nebulae.dotPDFium.PdfPageObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: PdfPageObject.Dispose(bool)
+  fullName: nebulae.dotPDFium.PdfPageObject.Dispose(bool)
+  nameWithType.vb: PdfPageObject.Dispose(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfPageObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfPageObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfPageObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject._handle
+  commentId: F:nebulae.dotPDFium.PdfObject._handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__handle
+  name: _handle
+  nameWithType: PdfObject._handle
+  fullName: nebulae.dotPDFium.PdfObject._handle
+- uid: nebulae.dotPDFium.PdfObject._type
+  commentId: F:nebulae.dotPDFium.PdfObject._type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__type
+  name: _type
+  nameWithType: PdfObject._type
+  fullName: nebulae.dotPDFium.PdfObject._type
+- uid: nebulae.dotPDFium.PdfObject._disposed
+  commentId: F:nebulae.dotPDFium.PdfObject._disposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__disposed
+  name: _disposed
+  nameWithType: PdfObject._disposed
+  fullName: nebulae.dotPDFium.PdfObject._disposed
+- uid: nebulae.dotPDFium.PdfObject.Handle
+  commentId: P:nebulae.dotPDFium.PdfObject.Handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Handle
+  name: Handle
+  nameWithType: PdfObject.Handle
+  fullName: nebulae.dotPDFium.PdfObject.Handle
+- uid: nebulae.dotPDFium.PdfObject.Type
+  commentId: P:nebulae.dotPDFium.PdfObject.Type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Type
+  name: Type
+  nameWithType: PdfObject.Type
+  fullName: nebulae.dotPDFium.PdfObject.Type
+- uid: nebulae.dotPDFium.PdfObject.IsDisposed
+  commentId: P:nebulae.dotPDFium.PdfObject.IsDisposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_IsDisposed
+  name: IsDisposed
+  nameWithType: PdfObject.IsDisposed
+  fullName: nebulae.dotPDFium.PdfObject.IsDisposed
+- uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+  commentId: M:nebulae.dotPDFium.PdfObject.GetPDFiumError
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  name: GetPDFiumError()
+  nameWithType: PdfObject.GetPDFiumError()
+  fullName: nebulae.dotPDFium.PdfObject.GetPDFiumError()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  name: Dispose()
+  nameWithType: PdfObject.Dispose()
+  fullName: nebulae.dotPDFium.PdfObject.Dispose()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfFont
+  commentId: T:nebulae.dotPDFium.PdfFont
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfFont.html
+  name: PdfFont
+  nameWithType: PdfFont
+  fullName: nebulae.dotPDFium.PdfFont
+- uid: nebulae.dotPDFium.dotPDFiumException
+  commentId: T:nebulae.dotPDFium.dotPDFiumException
+  href: nebulae.dotPDFium.dotPDFiumException.html
+  name: dotPDFiumException
+  nameWithType: dotPDFiumException
+  fullName: nebulae.dotPDFium.dotPDFiumException
+- uid: nebulae.dotPDFium.PdfTextObject.GetFont*
+  commentId: Overload:nebulae.dotPDFium.PdfTextObject.GetFont
+  href: nebulae.dotPDFium.PdfTextObject.html#nebulae_dotPDFium_PdfTextObject_GetFont
+  name: GetFont
+  nameWithType: PdfTextObject.GetFont
+  fullName: nebulae.dotPDFium.PdfTextObject.GetFont
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: nebulae.dotPDFium.PdfTextObject.GetFontSize*
+  commentId: Overload:nebulae.dotPDFium.PdfTextObject.GetFontSize
+  href: nebulae.dotPDFium.PdfTextObject.html#nebulae_dotPDFium_PdfTextObject_GetFontSize
+  name: GetFontSize
+  nameWithType: PdfTextObject.GetFontSize
+  fullName: nebulae.dotPDFium.PdfTextObject.GetFontSize
+- uid: nebulae.dotPDFium.PdfPage
+  commentId: T:nebulae.dotPDFium.PdfPage
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPage.html
+  name: PdfPage
+  nameWithType: PdfPage
+  fullName: nebulae.dotPDFium.PdfPage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.PdfTextObject.GetText*
+  commentId: Overload:nebulae.dotPDFium.PdfTextObject.GetText
+  href: nebulae.dotPDFium.PdfTextObject.html#nebulae_dotPDFium_PdfTextObject_GetText_nebulae_dotPDFium_PdfPage_
+  name: GetText
+  nameWithType: PdfTextObject.GetText
+  fullName: nebulae.dotPDFium.PdfTextObject.GetText
+- uid: nebulae.dotPDFium.Native.PdfTextRenderMode
+  commentId: T:nebulae.dotPDFium.Native.PdfTextRenderMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfTextRenderMode.html
+  name: PdfTextRenderMode
+  nameWithType: PdfTextRenderMode
+  fullName: nebulae.dotPDFium.Native.PdfTextRenderMode
+- uid: nebulae.dotPDFium.PdfTextObject.GetRenderMode*
+  commentId: Overload:nebulae.dotPDFium.PdfTextObject.GetRenderMode
+  href: nebulae.dotPDFium.PdfTextObject.html#nebulae_dotPDFium_PdfTextObject_GetRenderMode
+  name: GetRenderMode
+  nameWithType: PdfTextObject.GetRenderMode
+  fullName: nebulae.dotPDFium.PdfTextObject.GetRenderMode
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.PdfTextObject.SetRenderMode*
+  commentId: Overload:nebulae.dotPDFium.PdfTextObject.SetRenderMode
+  href: nebulae.dotPDFium.PdfTextObject.html#nebulae_dotPDFium_PdfTextObject_SetRenderMode_nebulae_dotPDFium_Native_PdfTextRenderMode_
+  name: SetRenderMode
+  nameWithType: PdfTextObject.SetRenderMode
+  fullName: nebulae.dotPDFium.PdfTextObject.SetRenderMode
+- uid: nebulae.dotPDFium.PdfTextObject.SetText*
+  commentId: Overload:nebulae.dotPDFium.PdfTextObject.SetText
+  href: nebulae.dotPDFium.PdfTextObject.html#nebulae_dotPDFium_PdfTextObject_SetText_System_String_
+  name: SetText
+  nameWithType: PdfTextObject.SetText
+  fullName: nebulae.dotPDFium.PdfTextObject.SetText

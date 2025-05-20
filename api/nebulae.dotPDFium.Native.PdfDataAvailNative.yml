@@ -1,0 +1,642 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative
+  commentId: T:nebulae.dotPDFium.Native.PdfDataAvailNative
+  id: PdfDataAvailNative
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create(nebulae.dotPDFium.Native.FxFileAvail@,nebulae.dotPDFium.Native.PdfFileAccess@)
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument(System.IntPtr,System.String)
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized(System.IntPtr)
+  - nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FxDownloadHints@)
+  langs:
+  - csharp
+  - vb
+  name: PdfDataAvailNative
+  nameWithType: PdfDataAvailNative
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/Native/PdfDataAvailNative.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfDataAvailNative
+    path: ../dotPDFium/dotPDFium/Native/PdfDataAvailNative.cs
+    startLine: 5
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static class PdfDataAvailNative
+    content.vb: Public Module PdfDataAvailNative
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create(nebulae.dotPDFium.Native.FxFileAvail@,nebulae.dotPDFium.Native.PdfFileAccess@)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create(nebulae.dotPDFium.Native.FxFileAvail@,nebulae.dotPDFium.Native.PdfFileAccess@)
+  id: FPDFAvail_Create(nebulae.dotPDFium.Native.FxFileAvail@,nebulae.dotPDFium.Native.PdfFileAccess@)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_Create(ref FxFileAvail, ref PdfFileAccess)
+  nameWithType: PdfDataAvailNative.FPDFAvail_Create(ref FxFileAvail, ref PdfFileAccess)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create(ref nebulae.dotPDFium.Native.FxFileAvail, ref nebulae.dotPDFium.Native.PdfFileAccess)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAvail_Create(ref FxFileAvail fileAvail, ref PdfFileAccess fileAccess)
+    parameters:
+    - id: fileAvail
+      type: nebulae.dotPDFium.Native.FxFileAvail
+    - id: fileAccess
+      type: nebulae.dotPDFium.Native.PdfFileAccess
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAvail_Create(fileAvail As FxFileAvail, fileAccess As PdfFileAccess) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_Create(FxFileAvail, PdfFileAccess)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create(nebulae.dotPDFium.Native.FxFileAvail, nebulae.dotPDFium.Native.PdfFileAccess)
+  name.vb: FPDFAvail_Create(FxFileAvail, PdfFileAccess)
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy(System.IntPtr)
+  id: FPDFAvail_Destroy(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_Destroy(nint)
+  nameWithType: PdfDataAvailNative.FPDFAvail_Destroy(nint)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern void FPDFAvail_Destroy(nint avail)
+    parameters:
+    - id: avail
+      type: System.IntPtr
+    content.vb: Public Shared Sub FPDFAvail_Destroy(avail As IntPtr)
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_Destroy(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy(System.IntPtr)
+  name.vb: FPDFAvail_Destroy(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  id: FPDFAvail_IsDocAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_IsDocAvail(nint, ref FxDownloadHints)
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsDocAvail(nint, ref FxDownloadHints)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail(nint, ref nebulae.dotPDFium.Native.FxDownloadHints)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAvail_IsDocAvail(nint avail, ref FxDownloadHints hints)
+    parameters:
+    - id: avail
+      type: System.IntPtr
+    - id: hints
+      type: nebulae.dotPDFium.Native.FxDownloadHints
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAvail_IsDocAvail(avail As IntPtr, hints As FxDownloadHints) As Integer
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_IsDocAvail(IntPtr, FxDownloadHints)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail(System.IntPtr, nebulae.dotPDFium.Native.FxDownloadHints)
+  name.vb: FPDFAvail_IsDocAvail(IntPtr, FxDownloadHints)
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument(System.IntPtr,System.String)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument(System.IntPtr,System.String)
+  id: FPDFAvail_GetDocument(System.IntPtr,System.String)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_GetDocument(nint, string)
+  nameWithType: PdfDataAvailNative.FPDFAvail_GetDocument(nint, string)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument(nint, string)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern nint FPDFAvail_GetDocument(nint avail, string password)
+    parameters:
+    - id: avail
+      type: System.IntPtr
+    - id: password
+      type: System.String
+    return:
+      type: System.IntPtr
+    content.vb: Public Shared Function FPDFAvail_GetDocument(avail As IntPtr, password As String) As IntPtr
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_GetDocument(IntPtr, String)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument(System.IntPtr, String)
+  name.vb: FPDFAvail_GetDocument(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FxDownloadHints@)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FxDownloadHints@)
+  id: FPDFAvail_IsPageAvail(System.IntPtr,System.Int32,nebulae.dotPDFium.Native.FxDownloadHints@)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_IsPageAvail(nint, int, ref FxDownloadHints)
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsPageAvail(nint, int, ref FxDownloadHints)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail(nint, int, ref nebulae.dotPDFium.Native.FxDownloadHints)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAvail_IsPageAvail(nint avail, int pageIndex, ref FxDownloadHints hints)
+    parameters:
+    - id: avail
+      type: System.IntPtr
+    - id: pageIndex
+      type: System.Int32
+    - id: hints
+      type: nebulae.dotPDFium.Native.FxDownloadHints
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAvail_IsPageAvail(avail As IntPtr, pageIndex As Integer, hints As FxDownloadHints) As Integer
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_IsPageAvail(IntPtr, Integer, FxDownloadHints)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail(System.IntPtr, Integer, nebulae.dotPDFium.Native.FxDownloadHints)
+  name.vb: FPDFAvail_IsPageAvail(IntPtr, Integer, FxDownloadHints)
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  id: FPDFAvail_IsFormAvail(System.IntPtr,nebulae.dotPDFium.Native.FxDownloadHints@)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_IsFormAvail(nint, ref FxDownloadHints)
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsFormAvail(nint, ref FxDownloadHints)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail(nint, ref nebulae.dotPDFium.Native.FxDownloadHints)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAvail_IsFormAvail(nint avail, ref FxDownloadHints hints)
+    parameters:
+    - id: avail
+      type: System.IntPtr
+    - id: hints
+      type: nebulae.dotPDFium.Native.FxDownloadHints
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAvail_IsFormAvail(avail As IntPtr, hints As FxDownloadHints) As Integer
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_IsFormAvail(IntPtr, FxDownloadHints)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail(System.IntPtr, nebulae.dotPDFium.Native.FxDownloadHints)
+  name.vb: FPDFAvail_IsFormAvail(IntPtr, FxDownloadHints)
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized(System.IntPtr)
+  id: FPDFAvail_IsLinearized(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_IsLinearized(nint)
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsLinearized(nint)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAvail_IsLinearized(nint avail)
+    parameters:
+    - id: avail
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAvail_IsLinearized(avail As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_IsLinearized(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized(System.IntPtr)
+  name.vb: FPDFAvail_IsLinearized(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum(System.IntPtr)
+  commentId: M:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum(System.IntPtr)
+  id: FPDFAvail_GetFirstPageNum(System.IntPtr)
+  parent: nebulae.dotPDFium.Native.PdfDataAvailNative
+  langs:
+  - csharp
+  - vb
+  name: FPDFAvail_GetFirstPageNum(nint)
+  nameWithType: PdfDataAvailNative.FPDFAvail_GetFirstPageNum(nint)
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum(nint)
+  type: Method
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public static extern int FPDFAvail_GetFirstPageNum(nint document)
+    parameters:
+    - id: document
+      type: System.IntPtr
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FPDFAvail_GetFirstPageNum(document As IntPtr) As Integer
+  overload: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum*
+  nameWithType.vb: PdfDataAvailNative.FPDFAvail_GetFirstPageNum(IntPtr)
+  fullName.vb: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum(System.IntPtr)
+  name.vb: FPDFAvail_GetFirstPageNum(IntPtr)
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_Create_nebulae_dotPDFium_Native_FxFileAvail__nebulae_dotPDFium_Native_PdfFileAccess__
+  name: FPDFAvail_Create
+  nameWithType: PdfDataAvailNative.FPDFAvail_Create
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Create
+- uid: nebulae.dotPDFium.Native.FxFileAvail
+  commentId: T:nebulae.dotPDFium.Native.FxFileAvail
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FxFileAvail.html
+  name: FxFileAvail
+  nameWithType: FxFileAvail
+  fullName: nebulae.dotPDFium.Native.FxFileAvail
+- uid: nebulae.dotPDFium.Native.PdfFileAccess
+  commentId: T:nebulae.dotPDFium.Native.PdfFileAccess
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFileAccess.html
+  name: PdfFileAccess
+  nameWithType: PdfFileAccess
+  fullName: nebulae.dotPDFium.Native.PdfFileAccess
+- uid: System.IntPtr
+  commentId: T:System.IntPtr
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.intptr
+  name: nint
+  nameWithType: nint
+  fullName: nint
+  nameWithType.vb: IntPtr
+  fullName.vb: System.IntPtr
+  name.vb: IntPtr
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_Destroy_System_IntPtr_
+  name: FPDFAvail_Destroy
+  nameWithType: PdfDataAvailNative.FPDFAvail_Destroy
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_Destroy
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_IsDocAvail_System_IntPtr_nebulae_dotPDFium_Native_FxDownloadHints__
+  name: FPDFAvail_IsDocAvail
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsDocAvail
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsDocAvail
+- uid: nebulae.dotPDFium.Native.FxDownloadHints
+  commentId: T:nebulae.dotPDFium.Native.FxDownloadHints
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FxDownloadHints.html
+  name: FxDownloadHints
+  nameWithType: FxDownloadHints
+  fullName: nebulae.dotPDFium.Native.FxDownloadHints
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_GetDocument_System_IntPtr_System_String_
+  name: FPDFAvail_GetDocument
+  nameWithType: PdfDataAvailNative.FPDFAvail_GetDocument
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetDocument
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_IsPageAvail_System_IntPtr_System_Int32_nebulae_dotPDFium_Native_FxDownloadHints__
+  name: FPDFAvail_IsPageAvail
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsPageAvail
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsPageAvail
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_IsFormAvail_System_IntPtr_nebulae_dotPDFium_Native_FxDownloadHints__
+  name: FPDFAvail_IsFormAvail
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsFormAvail
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsFormAvail
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_IsLinearized_System_IntPtr_
+  name: FPDFAvail_IsLinearized
+  nameWithType: PdfDataAvailNative.FPDFAvail_IsLinearized
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_IsLinearized
+- uid: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum*
+  commentId: Overload:nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum
+  isExternal: true
+  href: nebulae.dotPDFium.Native.PdfDataAvailNative.html#nebulae_dotPDFium_Native_PdfDataAvailNative_FPDFAvail_GetFirstPageNum_System_IntPtr_
+  name: FPDFAvail_GetFirstPageNum
+  nameWithType: PdfDataAvailNative.FPDFAvail_GetFirstPageNum
+  fullName: nebulae.dotPDFium.Native.PdfDataAvailNative.FPDFAvail_GetFirstPageNum

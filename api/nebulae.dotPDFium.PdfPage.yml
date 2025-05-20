@@ -1,0 +1,2922 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.PdfPage
+  commentId: T:nebulae.dotPDFium.PdfPage
+  id: PdfPage
+  parent: nebulae.dotPDFium
+  children:
+  - nebulae.dotPDFium.PdfPage.Close
+  - nebulae.dotPDFium.PdfPage.CreateAnnotation(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  - nebulae.dotPDFium.PdfPage.DeviceToPage(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Int32,System.Int32,System.Double@,System.Double@)
+  - nebulae.dotPDFium.PdfPage.Dispose(System.Boolean)
+  - nebulae.dotPDFium.PdfPage.EnumerateLinks
+  - nebulae.dotPDFium.PdfPage.FinalizeContent
+  - nebulae.dotPDFium.PdfPage.FindLinkAtPoint(System.Double,System.Double)
+  - nebulae.dotPDFium.PdfPage.Flatten(nebulae.dotPDFium.Native.PdfFlattenMode)
+  - nebulae.dotPDFium.PdfPage.GetAnnotation(System.Int32)
+  - nebulae.dotPDFium.PdfPage.GetAnnotationCount
+  - nebulae.dotPDFium.PdfPage.GetAnnotationIndex(nebulae.dotPDFium.PdfAnnotation)
+  - nebulae.dotPDFium.PdfPage.GetArtBox
+  - nebulae.dotPDFium.PdfPage.GetBleedBox
+  - nebulae.dotPDFium.PdfPage.GetBoundingBox
+  - nebulae.dotPDFium.PdfPage.GetCropBox
+  - nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData
+  - nebulae.dotPDFium.PdfPage.GetLinkAnnotation(System.Int32)
+  - nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint(System.Double,System.Double)
+  - nebulae.dotPDFium.PdfPage.GetMediaBox
+  - nebulae.dotPDFium.PdfPage.GetObject(System.Int32)
+  - nebulae.dotPDFium.PdfPage.GetObjectCount
+  - nebulae.dotPDFium.PdfPage.GetOrLoadText
+  - nebulae.dotPDFium.PdfPage.GetRawThumbnailData
+  - nebulae.dotPDFium.PdfPage.GetRotation
+  - nebulae.dotPDFium.PdfPage.GetStructTree
+  - nebulae.dotPDFium.PdfPage.GetThumbnailBitmap
+  - nebulae.dotPDFium.PdfPage.GetTrimBox
+  - nebulae.dotPDFium.PdfPage.HasTransparency
+  - nebulae.dotPDFium.PdfPage.Height
+  - nebulae.dotPDFium.PdfPage.HeightF
+  - nebulae.dotPDFium.PdfPage.InsertObject(nebulae.dotPDFium.PdfPageObject)
+  - nebulae.dotPDFium.PdfPage.PageToDevice(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Double,System.Double,System.Int32@,System.Int32@)
+  - nebulae.dotPDFium.PdfPage.RemoveAnnotation(nebulae.dotPDFium.PdfAnnotation)
+  - nebulae.dotPDFium.PdfPage.RemoveObject(nebulae.dotPDFium.PdfPageObject)
+  - nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
+  - nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
+  - nebulae.dotPDFium.PdfPage.SetArtBox(nebulae.dotPDFium.Native.FsRectF)
+  - nebulae.dotPDFium.PdfPage.SetBleedBox(nebulae.dotPDFium.Native.FsRectF)
+  - nebulae.dotPDFium.PdfPage.SetCropBox(nebulae.dotPDFium.Native.FsRectF)
+  - nebulae.dotPDFium.PdfPage.SetMediaBox(nebulae.dotPDFium.Native.FsRectF)
+  - nebulae.dotPDFium.PdfPage.SetRotation(nebulae.dotPDFium.Native.PdfPageRotation)
+  - nebulae.dotPDFium.PdfPage.SetTrimBox(nebulae.dotPDFium.Native.FsRectF)
+  - nebulae.dotPDFium.PdfPage.TransformAnnotations(nebulae.dotPDFium.Native.FsMatrix)
+  - nebulae.dotPDFium.PdfPage.TransformWithClip(nebulae.dotPDFium.Native.FsMatrixF,nebulae.dotPDFium.Native.FsRectF)
+  - nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText@)
+  - nebulae.dotPDFium.PdfPage.Width
+  - nebulae.dotPDFium.PdfPage.WidthF
+  langs:
+  - csharp
+  - vb
+  name: PdfPage
+  nameWithType: PdfPage
+  fullName: nebulae.dotPDFium.PdfPage
+  type: Class
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfPage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 7
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  syntax:
+    content: 'public class PdfPage : PdfObject, IDisposable'
+    content.vb: Public Class PdfPage Inherits PdfObject Implements IDisposable
+  inheritance:
+  - System.Object
+  - nebulae.dotPDFium.PdfObject
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - nebulae.dotPDFium.PdfObject._handle
+  - nebulae.dotPDFium.PdfObject._type
+  - nebulae.dotPDFium.PdfObject._disposed
+  - nebulae.dotPDFium.PdfObject.Handle
+  - nebulae.dotPDFium.PdfObject.Type
+  - nebulae.dotPDFium.PdfObject.IsDisposed
+  - nebulae.dotPDFium.PdfObject.GetPDFiumError
+  - nebulae.dotPDFium.PdfObject.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: nebulae.dotPDFium.PdfPage.Width
+  commentId: P:nebulae.dotPDFium.PdfPage.Width
+  id: Width
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: Width
+  nameWithType: PdfPage.Width
+  fullName: nebulae.dotPDFium.PdfPage.Width
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Width
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 31
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the width of the current PDF page in points.
+  remarks: >-
+    The width is retrieved directly from the underlying PDF page handle. The value is
+        typically used for rendering or layout purposes.
+  example: []
+  syntax:
+    content: public double Width { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Width As Double
+  overload: nebulae.dotPDFium.PdfPage.Width*
+- uid: nebulae.dotPDFium.PdfPage.Height
+  commentId: P:nebulae.dotPDFium.PdfPage.Height
+  id: Height
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: Height
+  nameWithType: PdfPage.Height
+  fullName: nebulae.dotPDFium.PdfPage.Height
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Height
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 40
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the height of the current PDF page in points.
+  remarks: >-
+    The height is retrieved directly from the underlying PDF page handle. The value is
+        typically used for rendering or layout purposes.
+  example: []
+  syntax:
+    content: public double Height { get; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public ReadOnly Property Height As Double
+  overload: nebulae.dotPDFium.PdfPage.Height*
+- uid: nebulae.dotPDFium.PdfPage.WidthF
+  commentId: P:nebulae.dotPDFium.PdfPage.WidthF
+  id: WidthF
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: WidthF
+  nameWithType: PdfPage.WidthF
+  fullName: nebulae.dotPDFium.PdfPage.WidthF
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: WidthF
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 47
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the width of the current PDF page in points as a float.
+  example: []
+  syntax:
+    content: public float WidthF { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property WidthF As Single
+  overload: nebulae.dotPDFium.PdfPage.WidthF*
+- uid: nebulae.dotPDFium.PdfPage.HeightF
+  commentId: P:nebulae.dotPDFium.PdfPage.HeightF
+  id: HeightF
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: HeightF
+  nameWithType: PdfPage.HeightF
+  fullName: nebulae.dotPDFium.PdfPage.HeightF
+  type: Property
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: HeightF
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 54
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the height of the current PDF page in points as a float.
+  example: []
+  syntax:
+    content: public float HeightF { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public ReadOnly Property HeightF As Single
+  overload: nebulae.dotPDFium.PdfPage.HeightF*
+- uid: nebulae.dotPDFium.PdfPage.GetRotation
+  commentId: M:nebulae.dotPDFium.PdfPage.GetRotation
+  id: GetRotation
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetRotation()
+  nameWithType: PdfPage.GetRotation()
+  fullName: nebulae.dotPDFium.PdfPage.GetRotation()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetRotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 63
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the rotation of the current PDF page.
+  example: []
+  syntax:
+    content: public PdfPageRotation GetRotation()
+    return:
+      type: nebulae.dotPDFium.Native.PdfPageRotation
+      description: A <xref href="nebulae.dotPDFium.Native.PdfPageRotation" data-throw-if-not-resolved="false"></xref> value representing the rotation of the page.
+    content.vb: Public Function GetRotation() As PdfPageRotation
+  overload: nebulae.dotPDFium.PdfPage.GetRotation*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the rotation value retrieved from the native PDF library is invalid.
+- uid: nebulae.dotPDFium.PdfPage.SetRotation(nebulae.dotPDFium.Native.PdfPageRotation)
+  commentId: M:nebulae.dotPDFium.PdfPage.SetRotation(nebulae.dotPDFium.Native.PdfPageRotation)
+  id: SetRotation(nebulae.dotPDFium.Native.PdfPageRotation)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: SetRotation(PdfPageRotation)
+  nameWithType: PdfPage.SetRotation(PdfPageRotation)
+  fullName: nebulae.dotPDFium.PdfPage.SetRotation(nebulae.dotPDFium.Native.PdfPageRotation)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetRotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 77
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the rotation of the current PDF page.
+  remarks: >-
+    This method updates the rotation of the page to the specified value.  The rotation is
+        applied in 90-degree increments, as defined by the <xref href="nebulae.dotPDFium.Native.PdfPageRotation" data-throw-if-not-resolved="false"></xref> enumeration.
+  example: []
+  syntax:
+    content: public void SetRotation(PdfPageRotation rotation)
+    parameters:
+    - id: rotation
+      type: nebulae.dotPDFium.Native.PdfPageRotation
+      description: The desired rotation for the page, specified as a <xref href="nebulae.dotPDFium.Native.PdfPageRotation" data-throw-if-not-resolved="false"></xref> value.
+    content.vb: Public Sub SetRotation(rotation As PdfPageRotation)
+  overload: nebulae.dotPDFium.PdfPage.SetRotation*
+- uid: nebulae.dotPDFium.PdfPage.GetOrLoadText
+  commentId: M:nebulae.dotPDFium.PdfPage.GetOrLoadText
+  id: GetOrLoadText
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetOrLoadText()
+  nameWithType: PdfPage.GetOrLoadText()
+  fullName: nebulae.dotPDFium.PdfPage.GetOrLoadText()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetOrLoadText
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 88
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the text content of the current PDF page if it is already loaded, otherwise loads it.
+  example: []
+  syntax:
+    content: public PdfText GetOrLoadText()
+    return:
+      type: nebulae.dotPDFium.PdfText
+      description: ''
+    content.vb: Public Function GetOrLoadText() As PdfText
+  overload: nebulae.dotPDFium.PdfPage.GetOrLoadText*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Throws if the page has been disposed
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Throws on PDFium library error
+- uid: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText@)
+  commentId: M:nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText@)
+  id: TryGetOrLoadText(nebulae.dotPDFium.PdfText@)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: TryGetOrLoadText(out PdfText?)
+  nameWithType: PdfPage.TryGetOrLoadText(out PdfText?)
+  fullName: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(out nebulae.dotPDFium.PdfText?)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TryGetOrLoadText
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 112
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the text content of the current PDF page if it is already loaded, otherwise loads it.
+  example: []
+  syntax:
+    content: public bool TryGetOrLoadText(out PdfText? pdfText)
+    parameters:
+    - id: pdfText
+      type: nebulae.dotPDFium.PdfText
+      description: Out parameter for receiving the PdfText object
+    return:
+      type: System.Boolean
+      description: true on success, false on failure
+    content.vb: Public Function TryGetOrLoadText(pdfText As PdfText) As Boolean
+  overload: nebulae.dotPDFium.PdfPage.TryGetOrLoadText*
+  nameWithType.vb: PdfPage.TryGetOrLoadText(PdfText)
+  fullName.vb: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText)
+  name.vb: TryGetOrLoadText(PdfText)
+- uid: nebulae.dotPDFium.PdfPage.GetBoundingBox
+  commentId: M:nebulae.dotPDFium.PdfPage.GetBoundingBox
+  id: GetBoundingBox
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetBoundingBox()
+  nameWithType: PdfPage.GetBoundingBox()
+  fullName: nebulae.dotPDFium.PdfPage.GetBoundingBox()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetBoundingBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 144
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the bounding box of the current PDF page.
+  example: []
+  syntax:
+    content: public FsRectF GetBoundingBox()
+    return:
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: A <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the bounding box of the page.
+    content.vb: Public Function GetBoundingBox() As FsRectF
+  overload: nebulae.dotPDFium.PdfPage.GetBoundingBox*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if the PDF page has been disposed.
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the bounding box could not be retrieved.
+- uid: nebulae.dotPDFium.PdfPage.GetStructTree
+  commentId: M:nebulae.dotPDFium.PdfPage.GetStructTree
+  id: GetStructTree
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetStructTree()
+  nameWithType: PdfPage.GetStructTree()
+  fullName: nebulae.dotPDFium.PdfPage.GetStructTree()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetStructTree
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 159
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the logical structure tree for this page, if one exists.
+  example: []
+  syntax:
+    content: public PdfStructTree? GetStructTree()
+    return:
+      type: nebulae.dotPDFium.PdfStructTree
+      description: A <xref href="nebulae.dotPDFium.PdfStructTree" data-throw-if-not-resolved="false"></xref>, or <code>null</code> if the page has no tagged content.
+    content.vb: Public Function GetStructTree() As PdfStructTree
+  overload: nebulae.dotPDFium.PdfPage.GetStructTree*
+- uid: nebulae.dotPDFium.PdfPage.GetLinkAnnotation(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfPage.GetLinkAnnotation(System.Int32)
+  id: GetLinkAnnotation(System.Int32)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetLinkAnnotation(int)
+  nameWithType: PdfPage.GetLinkAnnotation(int)
+  fullName: nebulae.dotPDFium.PdfPage.GetLinkAnnotation(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetLinkAnnotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 170
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the link annotation at the specified index as a <xref href="nebulae.dotPDFium.PdfAnnotation" data-throw-if-not-resolved="false"></xref>, if it exists.
+  example: []
+  syntax:
+    content: public PdfAnnotation? GetLinkAnnotation(int linkIndex)
+    parameters:
+    - id: linkIndex
+      type: System.Int32
+      description: The zero-based index of the link annotation.
+    return:
+      type: nebulae.dotPDFium.PdfAnnotation
+      description: The corresponding <xref href="nebulae.dotPDFium.PdfAnnotation" data-throw-if-not-resolved="false"></xref> or <code>null</code> if not found.
+    content.vb: Public Function GetLinkAnnotation(linkIndex As Integer) As PdfAnnotation
+  overload: nebulae.dotPDFium.PdfPage.GetLinkAnnotation*
+  nameWithType.vb: PdfPage.GetLinkAnnotation(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfPage.GetLinkAnnotation(Integer)
+  name.vb: GetLinkAnnotation(Integer)
+- uid: nebulae.dotPDFium.PdfPage.HasTransparency
+  commentId: M:nebulae.dotPDFium.PdfPage.HasTransparency
+  id: HasTransparency
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: HasTransparency()
+  nameWithType: PdfPage.HasTransparency()
+  fullName: nebulae.dotPDFium.PdfPage.HasTransparency()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: HasTransparency
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 182
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Determines whether the PDF page contains any transparent elements.
+  remarks: >-
+    This method checks for the presence of transparency on the PDF page, which may affect
+        rendering or printing.
+  example: []
+  syntax:
+    content: public bool HasTransparency()
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the PDF page has transparent elements; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Function HasTransparency() As Boolean
+  overload: nebulae.dotPDFium.PdfPage.HasTransparency*
+- uid: nebulae.dotPDFium.PdfPage.RemoveObject(nebulae.dotPDFium.PdfPageObject)
+  commentId: M:nebulae.dotPDFium.PdfPage.RemoveObject(nebulae.dotPDFium.PdfPageObject)
+  id: RemoveObject(nebulae.dotPDFium.PdfPageObject)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: RemoveObject(PdfPageObject)
+  nameWithType: PdfPage.RemoveObject(PdfPageObject)
+  fullName: nebulae.dotPDFium.PdfPage.RemoveObject(nebulae.dotPDFium.PdfPageObject)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RemoveObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 192
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Removes the specified PDF page object from the current page.
+  example: []
+  syntax:
+    content: public void RemoveObject(PdfPageObject obj)
+    parameters:
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The <xref href="nebulae.dotPDFium.PdfPageObject" data-throw-if-not-resolved="false"></xref> to remove. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Sub RemoveObject(obj As PdfPageObject)
+  overload: nebulae.dotPDFium.PdfPage.RemoveObject*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the removal operation fails due to an error in the underlying PDF library.
+- uid: nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
+  commentId: M:nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
+  id: RenderToBitmap(nebulae.dotPDFium.PdfBitmap,System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,nebulae.dotPDFium.Native.PdfRenderFlags)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: RenderToBitmap(PdfBitmap, int, int, int, int, PdfPageRotation, PdfRenderFlags)
+  nameWithType: PdfPage.RenderToBitmap(PdfBitmap, int, int, int, int, PdfPageRotation, PdfRenderFlags)
+  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap, int, int, int, int, nebulae.dotPDFium.Native.PdfPageRotation, nebulae.dotPDFium.Native.PdfRenderFlags)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RenderToBitmap
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 210
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: This method renders the current PDF page to a bitmap.
+  example: []
+  syntax:
+    content: public void RenderToBitmap(PdfBitmap bitmap, int startX, int startY, int width, int height, PdfPageRotation rotate = PdfPageRotation.NoRotation, PdfRenderFlags flags = PdfRenderFlags.None)
+    parameters:
+    - id: bitmap
+      type: nebulae.dotPDFium.PdfBitmap
+      description: The bitmap to render the page to
+    - id: startX
+      type: System.Int32
+      description: The starting x coordinate in pixels
+    - id: startY
+      type: System.Int32
+      description: The starting y coordinate in pixels
+    - id: width
+      type: System.Int32
+      description: The width of the bitmap to render in pixels
+    - id: height
+      type: System.Int32
+      description: The height of the bitmap to render in pixels
+    - id: rotate
+      type: nebulae.dotPDFium.Native.PdfPageRotation
+      description: The rotation of the page (see PdfRotation enum)
+    - id: flags
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+      description: See PdfRenderFlags
+    content.vb: Public Sub RenderToBitmap(bitmap As PdfBitmap, startX As Integer, startY As Integer, width As Integer, height As Integer, rotate As PdfPageRotation = PdfPageRotation.NoRotation, flags As PdfRenderFlags = PdfRenderFlags.None)
+  overload: nebulae.dotPDFium.PdfPage.RenderToBitmap*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: ''
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
+  nameWithType.vb: PdfPage.RenderToBitmap(PdfBitmap, Integer, Integer, Integer, Integer, PdfPageRotation, PdfRenderFlags)
+  fullName.vb: nebulae.dotPDFium.PdfPage.RenderToBitmap(nebulae.dotPDFium.PdfBitmap, Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfPageRotation, nebulae.dotPDFium.Native.PdfRenderFlags)
+  name.vb: RenderToBitmap(PdfBitmap, Integer, Integer, Integer, Integer, PdfPageRotation, PdfRenderFlags)
+- uid: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
+  commentId: M:nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
+  id: RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.Native.FsMatrixF@,nebulae.dotPDFium.Native.FsRectF@,nebulae.dotPDFium.Native.PdfRenderFlags)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: RenderToBitmapWithMatrix(PdfBitmap, ref FsMatrixF, ref FsRectF, PdfRenderFlags)
+  nameWithType: PdfPage.RenderToBitmapWithMatrix(PdfBitmap, ref FsMatrixF, ref FsRectF, PdfRenderFlags)
+  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap, ref nebulae.dotPDFium.Native.FsMatrixF, ref nebulae.dotPDFium.Native.FsRectF, nebulae.dotPDFium.Native.PdfRenderFlags)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RenderToBitmapWithMatrix
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 237
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Renders the current PDF page to a bitmap using a transformation matrix and clipping rectangle.
+  example: []
+  syntax:
+    content: public void RenderToBitmapWithMatrix(PdfBitmap bitmap, ref FsMatrixF transform, ref FsRectF clip, PdfRenderFlags flags = PdfRenderFlags.None)
+    parameters:
+    - id: bitmap
+      type: nebulae.dotPDFium.PdfBitmap
+      description: The bitmap to render to
+    - id: transform
+      type: nebulae.dotPDFium.Native.FsMatrixF
+      description: The transform matrix for the page
+    - id: clip
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: The clipping rectangle for the page
+    - id: flags
+      type: nebulae.dotPDFium.Native.PdfRenderFlags
+      description: Flags - see PdfRenderFlags
+    content.vb: Public Sub RenderToBitmapWithMatrix(bitmap As PdfBitmap, transform As FsMatrixF, clip As FsRectF, flags As PdfRenderFlags = PdfRenderFlags.None)
+  overload: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if the PDF page has already been disposed
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if the PDF bitmap is null
+  nameWithType.vb: PdfPage.RenderToBitmapWithMatrix(PdfBitmap, FsMatrixF, FsRectF, PdfRenderFlags)
+  fullName.vb: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix(nebulae.dotPDFium.PdfBitmap, nebulae.dotPDFium.Native.FsMatrixF, nebulae.dotPDFium.Native.FsRectF, nebulae.dotPDFium.Native.PdfRenderFlags)
+  name.vb: RenderToBitmapWithMatrix(PdfBitmap, FsMatrixF, FsRectF, PdfRenderFlags)
+- uid: nebulae.dotPDFium.PdfPage.DeviceToPage(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Int32,System.Int32,System.Double@,System.Double@)
+  commentId: M:nebulae.dotPDFium.PdfPage.DeviceToPage(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Int32,System.Int32,System.Double@,System.Double@)
+  id: DeviceToPage(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Int32,System.Int32,System.Double@,System.Double@)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: DeviceToPage(int, int, int, int, PdfPageRotation, int, int, out double, out double)
+  nameWithType: PdfPage.DeviceToPage(int, int, int, int, PdfPageRotation, int, int, out double, out double)
+  fullName: nebulae.dotPDFium.PdfPage.DeviceToPage(int, int, int, int, nebulae.dotPDFium.Native.PdfPageRotation, int, int, out double, out double)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: DeviceToPage
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 273
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Converts device (pixel) coordinates into page-space coordinates (points).
+  example: []
+  syntax:
+    content: public void DeviceToPage(int startX, int startY, int width, int height, PdfPageRotation rotate, int deviceX, int deviceY, out double pageX, out double pageY)
+    parameters:
+    - id: startX
+      type: System.Int32
+      description: The X position of the rendered area in device pixels (usually 0).
+    - id: startY
+      type: System.Int32
+      description: The Y position of the rendered area in device pixels (usually 0).
+    - id: width
+      type: System.Int32
+      description: The width of the rendered area in pixels (matches the bitmap width).
+    - id: height
+      type: System.Int32
+      description: The height of the rendered area in pixels (matches the bitmap height).
+    - id: rotate
+      type: nebulae.dotPDFium.Native.PdfPageRotation
+      description: >-
+        The rotation of the page (0, 90, 180, 270 degrees). See PdfRotation enum.
+            Do not swap width and height manually; PDFium handles this automatically.
+    - id: deviceX
+      type: System.Int32
+      description: The device-space X coordinate (in pixels) to convert.
+    - id: deviceY
+      type: System.Int32
+      description: The device-space Y coordinate (in pixels) to convert.
+    - id: pageX
+      type: System.Double
+      description: Output variable for the resulting X coordinate in page-space points.
+    - id: pageY
+      type: System.Double
+      description: Output variable for the resulting Y coordinate in page-space points.
+    content.vb: Public Sub DeviceToPage(startX As Integer, startY As Integer, width As Integer, height As Integer, rotate As PdfPageRotation, deviceX As Integer, deviceY As Integer, pageX As Double, pageY As Double)
+  overload: nebulae.dotPDFium.PdfPage.DeviceToPage*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if the page has been disposed.
+  nameWithType.vb: PdfPage.DeviceToPage(Integer, Integer, Integer, Integer, PdfPageRotation, Integer, Integer, Double, Double)
+  fullName.vb: nebulae.dotPDFium.PdfPage.DeviceToPage(Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfPageRotation, Integer, Integer, Double, Double)
+  name.vb: DeviceToPage(Integer, Integer, Integer, Integer, PdfPageRotation, Integer, Integer, Double, Double)
+- uid: nebulae.dotPDFium.PdfPage.PageToDevice(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Double,System.Double,System.Int32@,System.Int32@)
+  commentId: M:nebulae.dotPDFium.PdfPage.PageToDevice(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Double,System.Double,System.Int32@,System.Int32@)
+  id: PageToDevice(System.Int32,System.Int32,System.Int32,System.Int32,nebulae.dotPDFium.Native.PdfPageRotation,System.Double,System.Double,System.Int32@,System.Int32@)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: PageToDevice(int, int, int, int, PdfPageRotation, double, double, out int, out int)
+  nameWithType: PdfPage.PageToDevice(int, int, int, int, PdfPageRotation, double, double, out int, out int)
+  fullName: nebulae.dotPDFium.PdfPage.PageToDevice(int, int, int, int, nebulae.dotPDFium.Native.PdfPageRotation, double, double, out int, out int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PageToDevice
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 310
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Converts a point from page coordinates (points) to device coordinates (pixels).
+  example: []
+  syntax:
+    content: public void PageToDevice(int startX, int startY, int width, int height, PdfPageRotation rotate, double pageX, double pageY, out int deviceX, out int deviceY)
+    parameters:
+    - id: startX
+      type: System.Int32
+      description: The X offset in device pixels where the page rendering starts (usually 0).
+    - id: startY
+      type: System.Int32
+      description: The Y offset in device pixels where the page rendering starts (usually 0).
+    - id: width
+      type: System.Int32
+      description: The width of the rendered area in device pixels (e.g., the bitmap width).
+    - id: height
+      type: System.Int32
+      description: The height of the rendered area in device pixels (e.g., the bitmap height).
+    - id: rotate
+      type: nebulae.dotPDFium.Native.PdfPageRotation
+    - id: pageX
+      type: System.Double
+      description: The X coordinate in page space (points, where 1 point = 1/72 inch).
+    - id: pageY
+      type: System.Double
+      description: The Y coordinate in page space (points).
+    - id: deviceX
+      type: System.Int32
+      description: Output parameter receiving the corresponding X coordinate in device space (pixels).
+    - id: deviceY
+      type: System.Int32
+      description: Output parameter receiving the corresponding Y coordinate in device space (pixels).
+    content.vb: Public Sub PageToDevice(startX As Integer, startY As Integer, width As Integer, height As Integer, rotate As PdfPageRotation, pageX As Double, pageY As Double, deviceX As Integer, deviceY As Integer)
+  overload: nebulae.dotPDFium.PdfPage.PageToDevice*
+  exceptions:
+  - type: System.ObjectDisposedException
+    commentId: T:System.ObjectDisposedException
+    description: Thrown if the page has been disposed.
+  nameWithType.vb: PdfPage.PageToDevice(Integer, Integer, Integer, Integer, PdfPageRotation, Double, Double, Integer, Integer)
+  fullName.vb: nebulae.dotPDFium.PdfPage.PageToDevice(Integer, Integer, Integer, Integer, nebulae.dotPDFium.Native.PdfPageRotation, Double, Double, Integer, Integer)
+  name.vb: PageToDevice(Integer, Integer, Integer, Integer, PdfPageRotation, Double, Double, Integer, Integer)
+- uid: nebulae.dotPDFium.PdfPage.InsertObject(nebulae.dotPDFium.PdfPageObject)
+  commentId: M:nebulae.dotPDFium.PdfPage.InsertObject(nebulae.dotPDFium.PdfPageObject)
+  id: InsertObject(nebulae.dotPDFium.PdfPageObject)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: InsertObject(PdfPageObject)
+  nameWithType: PdfPage.InsertObject(PdfPageObject)
+  fullName: nebulae.dotPDFium.PdfPage.InsertObject(nebulae.dotPDFium.PdfPageObject)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: InsertObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 338
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Insert a PDF page object into the current page.
+  example: []
+  syntax:
+    content: public void InsertObject(PdfPageObject obj)
+    parameters:
+    - id: obj
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The PdfObject to insert into the page
+    content.vb: Public Sub InsertObject(obj As PdfPageObject)
+  overload: nebulae.dotPDFium.PdfPage.InsertObject*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Throws if obj is null
+- uid: nebulae.dotPDFium.PdfPage.FinalizeContent
+  commentId: M:nebulae.dotPDFium.PdfPage.FinalizeContent
+  id: FinalizeContent
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: FinalizeContent()
+  nameWithType: PdfPage.FinalizeContent()
+  fullName: nebulae.dotPDFium.PdfPage.FinalizeContent()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FinalizeContent
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 353
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Finalizes the content of the current page. This method should be called after all modifications to the page are complete.
+  example: []
+  syntax:
+    content: public void FinalizeContent()
+    content.vb: Public Sub FinalizeContent()
+  overload: nebulae.dotPDFium.PdfPage.FinalizeContent*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Throws on PDFium library error
+- uid: nebulae.dotPDFium.PdfPage.GetObjectCount
+  commentId: M:nebulae.dotPDFium.PdfPage.GetObjectCount
+  id: GetObjectCount
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetObjectCount()
+  nameWithType: PdfPage.GetObjectCount()
+  fullName: nebulae.dotPDFium.PdfPage.GetObjectCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetObjectCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 363
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the number of objects on the current page.
+  example: []
+  syntax:
+    content: public int GetObjectCount()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function GetObjectCount() As Integer
+  overload: nebulae.dotPDFium.PdfPage.GetObjectCount*
+- uid: nebulae.dotPDFium.PdfPage.GetObject(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfPage.GetObject(System.Int32)
+  id: GetObject(System.Int32)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetObject(int)
+  nameWithType: PdfPage.GetObject(int)
+  fullName: nebulae.dotPDFium.PdfPage.GetObject(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetObject
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 374
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the object at the specified index on the current page.
+  example: []
+  syntax:
+    content: public PdfPageObject GetObject(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: The index of the object to retrieve
+    return:
+      type: nebulae.dotPDFium.PdfPageObject
+      description: The object at the specified index
+    content.vb: Public Function GetObject(index As Integer) As PdfPageObject
+  overload: nebulae.dotPDFium.PdfPage.GetObject*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Throws on PDFium library error
+  nameWithType.vb: PdfPage.GetObject(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfPage.GetObject(Integer)
+  name.vb: GetObject(Integer)
+- uid: nebulae.dotPDFium.PdfPage.GetAnnotationCount
+  commentId: M:nebulae.dotPDFium.PdfPage.GetAnnotationCount
+  id: GetAnnotationCount
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetAnnotationCount()
+  nameWithType: PdfPage.GetAnnotationCount()
+  fullName: nebulae.dotPDFium.PdfPage.GetAnnotationCount()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAnnotationCount
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 398
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the total number of annotations on the current PDF page.
+  remarks: >-
+    This method retrieves the count of annotations present on the PDF page represented by
+        this instance.
+  example: []
+  syntax:
+    content: public int GetAnnotationCount()
+    return:
+      type: System.Int32
+      description: The number of annotations on the page. Returns 0 if the page has no annotations.
+    content.vb: Public Function GetAnnotationCount() As Integer
+  overload: nebulae.dotPDFium.PdfPage.GetAnnotationCount*
+- uid: nebulae.dotPDFium.PdfPage.GetAnnotation(System.Int32)
+  commentId: M:nebulae.dotPDFium.PdfPage.GetAnnotation(System.Int32)
+  id: GetAnnotation(System.Int32)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetAnnotation(int)
+  nameWithType: PdfPage.GetAnnotation(int)
+  fullName: nebulae.dotPDFium.PdfPage.GetAnnotation(int)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAnnotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 410
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the annotation at the specified index on the PDF page.
+  example: []
+  syntax:
+    content: public PdfAnnotation GetAnnotation(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+      description: >-
+        The zero-based index of the annotation to retrieve. Must be within the range of available annotations on the
+            page.
+    return:
+      type: nebulae.dotPDFium.PdfAnnotation
+      description: A <xref href="nebulae.dotPDFium.PdfAnnotation" data-throw-if-not-resolved="false"></xref> object representing the annotation at the specified index.
+    content.vb: Public Function GetAnnotation(index As Integer) As PdfAnnotation
+  overload: nebulae.dotPDFium.PdfPage.GetAnnotation*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the annotation at the specified <code class="paramref">index</code> cannot be retrieved.
+  nameWithType.vb: PdfPage.GetAnnotation(Integer)
+  fullName.vb: nebulae.dotPDFium.PdfPage.GetAnnotation(Integer)
+  name.vb: GetAnnotation(Integer)
+- uid: nebulae.dotPDFium.PdfPage.CreateAnnotation(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  commentId: M:nebulae.dotPDFium.PdfPage.CreateAnnotation(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  id: CreateAnnotation(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: CreateAnnotation(PdfAnnotationSubtype)
+  nameWithType: PdfPage.CreateAnnotation(PdfAnnotationSubtype)
+  fullName: nebulae.dotPDFium.PdfPage.CreateAnnotation(nebulae.dotPDFium.Native.PdfAnnotationSubtype)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CreateAnnotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 427
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Creates a new annotation of the specified subtype on the current PDF page.
+  example: []
+  syntax:
+    content: public PdfAnnotation CreateAnnotation(PdfAnnotationSubtype subtype)
+    parameters:
+    - id: subtype
+      type: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+      description: >-
+        The subtype of the annotation to create. This determines the type of annotation, such as a text note,
+            highlight, or shape.
+    return:
+      type: nebulae.dotPDFium.PdfAnnotation
+      description: A <xref href="nebulae.dotPDFium.PdfAnnotation" data-throw-if-not-resolved="false"></xref> object representing the newly created annotation.
+    content.vb: Public Function CreateAnnotation(subtype As PdfAnnotationSubtype) As PdfAnnotation
+  overload: nebulae.dotPDFium.PdfPage.CreateAnnotation*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the annotation could not be created for the specified <code class="paramref">subtype</code>.
+- uid: nebulae.dotPDFium.PdfPage.GetAnnotationIndex(nebulae.dotPDFium.PdfAnnotation)
+  commentId: M:nebulae.dotPDFium.PdfPage.GetAnnotationIndex(nebulae.dotPDFium.PdfAnnotation)
+  id: GetAnnotationIndex(nebulae.dotPDFium.PdfAnnotation)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetAnnotationIndex(PdfAnnotation)
+  nameWithType: PdfPage.GetAnnotationIndex(PdfAnnotation)
+  fullName: nebulae.dotPDFium.PdfPage.GetAnnotationIndex(nebulae.dotPDFium.PdfAnnotation)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetAnnotationIndex
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 442
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the index of the specified annotation within the PDF page.
+  example: []
+  syntax:
+    content: public int GetAnnotationIndex(PdfAnnotation annotation)
+    parameters:
+    - id: annotation
+      type: nebulae.dotPDFium.PdfAnnotation
+      description: The annotation whose index is to be retrieved. Must not be <code>null</code>.
+    return:
+      type: System.Int32
+      description: The zero-based index of the annotation within the page.
+    content.vb: Public Function GetAnnotationIndex(annotation As PdfAnnotation) As Integer
+  overload: nebulae.dotPDFium.PdfPage.GetAnnotationIndex*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the annotation cannot be located on the page.
+- uid: nebulae.dotPDFium.PdfPage.RemoveAnnotation(nebulae.dotPDFium.PdfAnnotation)
+  commentId: M:nebulae.dotPDFium.PdfPage.RemoveAnnotation(nebulae.dotPDFium.PdfAnnotation)
+  id: RemoveAnnotation(nebulae.dotPDFium.PdfAnnotation)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: RemoveAnnotation(PdfAnnotation)
+  nameWithType: PdfPage.RemoveAnnotation(PdfAnnotation)
+  fullName: nebulae.dotPDFium.PdfPage.RemoveAnnotation(nebulae.dotPDFium.PdfAnnotation)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RemoveAnnotation
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 457
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Removes the specified annotation from the PDF page.
+  remarks: >-
+    Use this method to delete an annotation from the current PDF page. Ensure that the
+        annotation  is valid and associated with this page before calling this method.
+  example: []
+  syntax:
+    content: public void RemoveAnnotation(PdfAnnotation annotation)
+    parameters:
+    - id: annotation
+      type: nebulae.dotPDFium.PdfAnnotation
+      description: The annotation to remove from the page. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+    content.vb: Public Sub RemoveAnnotation(annotation As PdfAnnotation)
+  overload: nebulae.dotPDFium.PdfPage.RemoveAnnotation*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the annotation could not be removed from the page.
+- uid: nebulae.dotPDFium.PdfPage.GetMediaBox
+  commentId: M:nebulae.dotPDFium.PdfPage.GetMediaBox
+  id: GetMediaBox
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetMediaBox()
+  nameWithType: PdfPage.GetMediaBox()
+  fullName: nebulae.dotPDFium.PdfPage.GetMediaBox()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetMediaBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 513
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the MediaBox of the current PDF page.
+  remarks: >-
+    The MediaBox is the default boundary for the page content in a PDF document.  It
+        specifies the dimensions of the page in user space units.
+  example: []
+  syntax:
+    content: public FsRectF GetMediaBox()
+    return:
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        An <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the MediaBox of the page.  The MediaBox defines the
+            boundaries of the physical medium on which the page is intended to be displayed or printed.
+    content.vb: Public Function GetMediaBox() As FsRectF
+  overload: nebulae.dotPDFium.PdfPage.GetMediaBox*
+- uid: nebulae.dotPDFium.PdfPage.SetMediaBox(nebulae.dotPDFium.Native.FsRectF)
+  commentId: M:nebulae.dotPDFium.PdfPage.SetMediaBox(nebulae.dotPDFium.Native.FsRectF)
+  id: SetMediaBox(nebulae.dotPDFium.Native.FsRectF)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: SetMediaBox(FsRectF)
+  nameWithType: PdfPage.SetMediaBox(FsRectF)
+  fullName: nebulae.dotPDFium.PdfPage.SetMediaBox(nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetMediaBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 523
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the MediaBox for the current page.
+  remarks: >-
+    The MediaBox defines the boundaries of the physical medium on which the page is
+        intended to be displayed or printed. Ensure that the provided <code class="paramref">box</code> is valid and within the
+        acceptable range for the page.
+  example: []
+  syntax:
+    content: public void SetMediaBox(FsRectF box)
+    parameters:
+    - id: box
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        The <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the new MediaBox dimensions.  The coordinates must be
+            specified in points and follow the PDF coordinate system.
+    content.vb: Public Sub SetMediaBox(box As FsRectF)
+  overload: nebulae.dotPDFium.PdfPage.SetMediaBox*
+- uid: nebulae.dotPDFium.PdfPage.GetCropBox
+  commentId: M:nebulae.dotPDFium.PdfPage.GetCropBox
+  id: GetCropBox
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetCropBox()
+  nameWithType: PdfPage.GetCropBox()
+  fullName: nebulae.dotPDFium.PdfPage.GetCropBox()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetCropBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 530
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the crop box of the current page.
+  example: []
+  syntax:
+    content: public FsRectF GetCropBox()
+    return:
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        A <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the crop box of the page.  The crop box defines the visible
+            area of the page in user space coordinates.
+    content.vb: Public Function GetCropBox() As FsRectF
+  overload: nebulae.dotPDFium.PdfPage.GetCropBox*
+- uid: nebulae.dotPDFium.PdfPage.SetCropBox(nebulae.dotPDFium.Native.FsRectF)
+  commentId: M:nebulae.dotPDFium.PdfPage.SetCropBox(nebulae.dotPDFium.Native.FsRectF)
+  id: SetCropBox(nebulae.dotPDFium.Native.FsRectF)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: SetCropBox(FsRectF)
+  nameWithType: PdfPage.SetCropBox(FsRectF)
+  fullName: nebulae.dotPDFium.PdfPage.SetCropBox(nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetCropBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 539
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the crop box for the current page.
+  remarks: >-
+    The crop box defines the visible area of the page when displayed or printed.  Any
+        content outside the crop box will be clipped.
+  example: []
+  syntax:
+    content: public void SetCropBox(FsRectF box)
+    parameters:
+    - id: box
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        The <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure defining the crop box dimensions.  The coordinates are specified in
+            points, with the origin at the bottom-left corner of the page.
+    content.vb: Public Sub SetCropBox(box As FsRectF)
+  overload: nebulae.dotPDFium.PdfPage.SetCropBox*
+- uid: nebulae.dotPDFium.PdfPage.GetBleedBox
+  commentId: M:nebulae.dotPDFium.PdfPage.GetBleedBox
+  id: GetBleedBox
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetBleedBox()
+  nameWithType: PdfPage.GetBleedBox()
+  fullName: nebulae.dotPDFium.PdfPage.GetBleedBox()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetBleedBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 549
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Retrieves the bleed box of the page, which defines the region to which the page's content should be clipped
+
+    when printed.
+  remarks: >-
+    The bleed box is typically used in printing workflows to account for content that
+        extends beyond the trim box, such as bleeds.
+  example: []
+  syntax:
+    content: public FsRectF GetBleedBox()
+    return:
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        An <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the bleed box of the page. The bleed box is defined in the
+            page's coordinate system.
+    content.vb: Public Function GetBleedBox() As FsRectF
+  overload: nebulae.dotPDFium.PdfPage.GetBleedBox*
+- uid: nebulae.dotPDFium.PdfPage.SetBleedBox(nebulae.dotPDFium.Native.FsRectF)
+  commentId: M:nebulae.dotPDFium.PdfPage.SetBleedBox(nebulae.dotPDFium.Native.FsRectF)
+  id: SetBleedBox(nebulae.dotPDFium.Native.FsRectF)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: SetBleedBox(FsRectF)
+  nameWithType: PdfPage.SetBleedBox(FsRectF)
+  fullName: nebulae.dotPDFium.PdfPage.SetBleedBox(nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetBleedBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 559
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the bleed box for the current page.
+  remarks: >-
+    The bleed box is used to ensure that content intended to extend to the edge of the
+        page  is printed correctly, even if the page is trimmed. Ensure that the <code class="paramref">box</code>  parameter
+        specifies valid dimensions within the page boundaries.
+  example: []
+  syntax:
+    content: public void SetBleedBox(FsRectF box)
+    parameters:
+    - id: box
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        The <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the bleed box dimensions.  The bleed box defines the region
+            to which the page content should extend,  typically used for printing purposes.
+    content.vb: Public Sub SetBleedBox(box As FsRectF)
+  overload: nebulae.dotPDFium.PdfPage.SetBleedBox*
+- uid: nebulae.dotPDFium.PdfPage.GetTrimBox
+  commentId: M:nebulae.dotPDFium.PdfPage.GetTrimBox
+  id: GetTrimBox
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetTrimBox()
+  nameWithType: PdfPage.GetTrimBox()
+  fullName: nebulae.dotPDFium.PdfPage.GetTrimBox()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetTrimBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 566
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the trim box of the current page.
+  example: []
+  syntax:
+    content: public FsRectF GetTrimBox()
+    return:
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        An <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the trim box of the page.  The trim box defines the intended
+            dimensions of the page's content after trimming.
+    content.vb: Public Function GetTrimBox() As FsRectF
+  overload: nebulae.dotPDFium.PdfPage.GetTrimBox*
+- uid: nebulae.dotPDFium.PdfPage.SetTrimBox(nebulae.dotPDFium.Native.FsRectF)
+  commentId: M:nebulae.dotPDFium.PdfPage.SetTrimBox(nebulae.dotPDFium.Native.FsRectF)
+  id: SetTrimBox(nebulae.dotPDFium.Native.FsRectF)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: SetTrimBox(FsRectF)
+  nameWithType: PdfPage.SetTrimBox(FsRectF)
+  fullName: nebulae.dotPDFium.PdfPage.SetTrimBox(nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetTrimBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 576
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the trim box for the current page.
+  remarks: >-
+    The trim box is typically used to specify the final dimensions of the page after any
+        trimming or cutting operations. Ensure that the provided <code class="paramref">box</code> dimensions are valid and
+        within the bounds of the page.
+  example: []
+  syntax:
+    content: public void SetTrimBox(FsRectF box)
+    parameters:
+    - id: box
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        The <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the trim box dimensions. The trim box defines the intended
+            visible area of the page after trimming.
+    content.vb: Public Sub SetTrimBox(box As FsRectF)
+  overload: nebulae.dotPDFium.PdfPage.SetTrimBox*
+- uid: nebulae.dotPDFium.PdfPage.GetArtBox
+  commentId: M:nebulae.dotPDFium.PdfPage.GetArtBox
+  id: GetArtBox
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetArtBox()
+  nameWithType: PdfPage.GetArtBox()
+  fullName: nebulae.dotPDFium.PdfPage.GetArtBox()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetArtBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 585
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the ArtBox of the current PDF page.
+  remarks: >-
+    The ArtBox defines the extent of the page's meaningful content as intended by the
+        creator. This method returns the rectangle that represents the ArtBox in user space coordinates.
+  example: []
+  syntax:
+    content: public FsRectF GetArtBox()
+    return:
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        A <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure representing the ArtBox of the page.  The rectangle's coordinates are in
+            user space units.
+    content.vb: Public Function GetArtBox() As FsRectF
+  overload: nebulae.dotPDFium.PdfPage.GetArtBox*
+- uid: nebulae.dotPDFium.PdfPage.SetArtBox(nebulae.dotPDFium.Native.FsRectF)
+  commentId: M:nebulae.dotPDFium.PdfPage.SetArtBox(nebulae.dotPDFium.Native.FsRectF)
+  id: SetArtBox(nebulae.dotPDFium.Native.FsRectF)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: SetArtBox(FsRectF)
+  nameWithType: PdfPage.SetArtBox(FsRectF)
+  fullName: nebulae.dotPDFium.PdfPage.SetArtBox(nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: SetArtBox
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 595
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Sets the ArtBox for the current page.
+  remarks: >-
+    The ArtBox defines the extent of the page's meaningful content,  excluding any
+        additional elements such as bleed or trim areas. Ensure that the specified <code class="paramref">box</code> is valid
+        and within the page's boundaries.
+  example: []
+  syntax:
+    content: public void SetArtBox(FsRectF box)
+    parameters:
+    - id: box
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: >-
+        The <xref href="nebulae.dotPDFium.Native.FsRectF" data-throw-if-not-resolved="false"></xref> structure defining the ArtBox dimensions.  The coordinates must be specified in
+            the page's coordinate system.
+    content.vb: Public Sub SetArtBox(box As FsRectF)
+  overload: nebulae.dotPDFium.PdfPage.SetArtBox*
+- uid: nebulae.dotPDFium.PdfPage.TransformWithClip(nebulae.dotPDFium.Native.FsMatrixF,nebulae.dotPDFium.Native.FsRectF)
+  commentId: M:nebulae.dotPDFium.PdfPage.TransformWithClip(nebulae.dotPDFium.Native.FsMatrixF,nebulae.dotPDFium.Native.FsRectF)
+  id: TransformWithClip(nebulae.dotPDFium.Native.FsMatrixF,nebulae.dotPDFium.Native.FsRectF)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: TransformWithClip(FsMatrixF, FsRectF)
+  nameWithType: PdfPage.TransformWithClip(FsMatrixF, FsRectF)
+  fullName: nebulae.dotPDFium.PdfPage.TransformWithClip(nebulae.dotPDFium.Native.FsMatrixF, nebulae.dotPDFium.Native.FsRectF)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TransformWithClip
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 604
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Applies a transformation matrix and a clipping rectangle to the current page.
+  example: []
+  syntax:
+    content: public void TransformWithClip(FsMatrixF matrix, FsRectF clip)
+    parameters:
+    - id: matrix
+      type: nebulae.dotPDFium.Native.FsMatrixF
+      description: >-
+        The transformation matrix to apply to the page. This defines how the page content is scaled, rotated, or
+            translated.
+    - id: clip
+      type: nebulae.dotPDFium.Native.FsRectF
+      description: The clipping rectangle that limits the visible area of the page after the transformation is applied.
+    content.vb: Public Sub TransformWithClip(matrix As FsMatrixF, clip As FsRectF)
+  overload: nebulae.dotPDFium.PdfPage.TransformWithClip*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the transformation or clipping operation fails.
+- uid: nebulae.dotPDFium.PdfPage.Flatten(nebulae.dotPDFium.Native.PdfFlattenMode)
+  commentId: M:nebulae.dotPDFium.PdfPage.Flatten(nebulae.dotPDFium.Native.PdfFlattenMode)
+  id: Flatten(nebulae.dotPDFium.Native.PdfFlattenMode)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: Flatten(PdfFlattenMode)
+  nameWithType: PdfPage.Flatten(PdfFlattenMode)
+  fullName: nebulae.dotPDFium.PdfPage.Flatten(nebulae.dotPDFium.Native.PdfFlattenMode)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Flatten
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 623
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: >-
+    Flattens the PDF page content into a single layer, making annotations and form fields part of the page
+
+    content.
+  remarks: >-
+    Flattening a PDF page can be useful for ensuring that annotations and form fields are
+        no longer interactive and are instead rendered as part of the static page content. This operation is
+        typically irreversible.
+  example: []
+  syntax:
+    content: public PdfFlattenResult Flatten(PdfFlattenMode mode = PdfFlattenMode.NormalDisplay)
+    parameters:
+    - id: mode
+      type: nebulae.dotPDFium.Native.PdfFlattenMode
+      description: The flattening mode that determines how the content is rendered. Defaults to <xref href="nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay" data-throw-if-not-resolved="false"></xref>.
+    return:
+      type: nebulae.dotPDFium.Native.PdfFlattenResult
+      description: 'A <xref href="nebulae.dotPDFium.Native.PdfFlattenResult" data-throw-if-not-resolved="false"></xref> indicating the result of the flattening operation: <xref href="nebulae.dotPDFium.Native.PdfFlattenResult.Success" data-throw-if-not-resolved="false"></xref> if the operation was successful, <xref href="nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo" data-throw-if-not-resolved="false"></xref> if there was no content to flatten, or <xref href="nebulae.dotPDFium.Native.PdfFlattenResult.Fail" data-throw-if-not-resolved="false"></xref> if the operation failed.'
+    content.vb: Public Function Flatten(mode As PdfFlattenMode = PdfFlattenMode.NormalDisplay) As PdfFlattenResult
+  overload: nebulae.dotPDFium.PdfPage.Flatten*
+- uid: nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData
+  commentId: M:nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData
+  id: GetDecodedThumbnailData
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetDecodedThumbnailData()
+  nameWithType: PdfPage.GetDecodedThumbnailData()
+  fullName: nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetDecodedThumbnailData
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 641
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the decoded thumbnail image data for the current PDF page.
+  remarks: >-
+    The returned byte array represents the raw image data of the thumbnail.  Callers can
+        process this data further as needed, such as converting it into an image format.
+  example: []
+  syntax:
+    content: public byte[] GetDecodedThumbnailData()
+    return:
+      type: System.Byte[]
+      description: >-
+        A byte array containing the decoded thumbnail image data.  Returns an empty array if no thumbnail data is
+            available.
+    content.vb: Public Function GetDecodedThumbnailData() As Byte()
+  overload: nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData*
+- uid: nebulae.dotPDFium.PdfPage.GetRawThumbnailData
+  commentId: M:nebulae.dotPDFium.PdfPage.GetRawThumbnailData
+  id: GetRawThumbnailData
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetRawThumbnailData()
+  nameWithType: PdfPage.GetRawThumbnailData()
+  fullName: nebulae.dotPDFium.PdfPage.GetRawThumbnailData()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetRawThumbnailData
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 666
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the raw thumbnail data for the current PDF page.
+  remarks: >-
+    The raw thumbnail data can be used for further processing or rendering.  The caller
+        is responsible for interpreting the data appropriately.
+  example: []
+  syntax:
+    content: public byte[] GetRawThumbnailData()
+    return:
+      type: System.Byte[]
+      description: >-
+        A byte array containing the raw thumbnail data of the PDF page.  Returns an empty array if no thumbnail data
+            is available.
+    content.vb: Public Function GetRawThumbnailData() As Byte()
+  overload: nebulae.dotPDFium.PdfPage.GetRawThumbnailData*
+- uid: nebulae.dotPDFium.PdfPage.GetThumbnailBitmap
+  commentId: M:nebulae.dotPDFium.PdfPage.GetThumbnailBitmap
+  id: GetThumbnailBitmap
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetThumbnailBitmap()
+  nameWithType: PdfPage.GetThumbnailBitmap()
+  fullName: nebulae.dotPDFium.PdfPage.GetThumbnailBitmap()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetThumbnailBitmap
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 693
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Retrieves the thumbnail image of the current PDF page as a <xref href="nebulae.dotPDFium.PdfBitmap" data-throw-if-not-resolved="false"></xref> object.
+  remarks: >-
+    The returned <xref href="nebulae.dotPDFium.PdfBitmap" data-throw-if-not-resolved="false"></xref> contains the thumbnail image of the current PDF
+        page,  with its dimensions estimated based on the bitmap's stride and format.  If the thumbnail cannot be
+        retrieved, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+  example: []
+  syntax:
+    content: public PdfBitmap? GetThumbnailBitmap()
+    return:
+      type: nebulae.dotPDFium.PdfBitmap
+      description: A <xref href="nebulae.dotPDFium.PdfBitmap" data-throw-if-not-resolved="false"></xref> representing the thumbnail image of the current PDF page,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no thumbnail is available.
+    content.vb: Public Function GetThumbnailBitmap() As PdfBitmap
+  overload: nebulae.dotPDFium.PdfPage.GetThumbnailBitmap*
+  exceptions:
+  - type: nebulae.dotPDFium.dotPDFiumException
+    commentId: T:nebulae.dotPDFium.dotPDFiumException
+    description: Thrown if the thumbnail image is in an unsupported format.
+- uid: nebulae.dotPDFium.PdfPage.TransformAnnotations(nebulae.dotPDFium.Native.FsMatrix)
+  commentId: M:nebulae.dotPDFium.PdfPage.TransformAnnotations(nebulae.dotPDFium.Native.FsMatrix)
+  id: TransformAnnotations(nebulae.dotPDFium.Native.FsMatrix)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: TransformAnnotations(FsMatrix)
+  nameWithType: PdfPage.TransformAnnotations(FsMatrix)
+  fullName: nebulae.dotPDFium.PdfPage.TransformAnnotations(nebulae.dotPDFium.Native.FsMatrix)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TransformAnnotations
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 726
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Applies a transformation matrix to all annotations on the current PDF page.
+  remarks: >-
+    This method modifies the appearance and positioning of annotations on the page by
+        applying the specified transformation matrix. The transformation is applied directly to the annotations and
+        does not affect the page content itself.
+  example: []
+  syntax:
+    content: public void TransformAnnotations(FsMatrix matrix)
+    parameters:
+    - id: matrix
+      type: nebulae.dotPDFium.Native.FsMatrix
+      description: >-
+        The transformation matrix to apply. Each element of the matrix represents a specific transformation
+            component (e.g., scaling, rotation, translation).
+    content.vb: Public Sub TransformAnnotations(matrix As FsMatrix)
+  overload: nebulae.dotPDFium.PdfPage.TransformAnnotations*
+- uid: nebulae.dotPDFium.PdfPage.EnumerateLinks
+  commentId: M:nebulae.dotPDFium.PdfPage.EnumerateLinks
+  id: EnumerateLinks
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: EnumerateLinks()
+  nameWithType: PdfPage.EnumerateLinks()
+  fullName: nebulae.dotPDFium.PdfPage.EnumerateLinks()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: EnumerateLinks
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 743
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Enumerates all link annotations on the current PDF page.
+  remarks: >-
+    This method lazily enumerates the link annotations on the page. Each <xref href="nebulae.dotPDFium.PdfLinkAnnotation" data-throw-if-not-resolved="false"></xref>  object represents a single link annotation and provides access to its properties
+        and behaviors.
+  example: []
+  syntax:
+    content: public IEnumerable<PdfLinkAnnotation> EnumerateLinks()
+    return:
+      type: System.Collections.Generic.IEnumerable{nebulae.dotPDFium.PdfLinkAnnotation}
+      description: >-
+        An <xref href="System.Collections.Generic.IEnumerable%601" data-throw-if-not-resolved="false"></xref> of <xref href="nebulae.dotPDFium.PdfLinkAnnotation" data-throw-if-not-resolved="false"></xref> objects representing the link annotations
+            found on the page. The enumeration will be empty if no link annotations are present.
+    content.vb: Public Function EnumerateLinks() As IEnumerable(Of PdfLinkAnnotation)
+  overload: nebulae.dotPDFium.PdfPage.EnumerateLinks*
+- uid: nebulae.dotPDFium.PdfPage.FindLinkAtPoint(System.Double,System.Double)
+  commentId: M:nebulae.dotPDFium.PdfPage.FindLinkAtPoint(System.Double,System.Double)
+  id: FindLinkAtPoint(System.Double,System.Double)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: FindLinkAtPoint(double, double)
+  nameWithType: PdfPage.FindLinkAtPoint(double, double)
+  fullName: nebulae.dotPDFium.PdfPage.FindLinkAtPoint(double, double)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FindLinkAtPoint
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 760
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Finds a link annotation at the specified point on the PDF page.
+  example: []
+  syntax:
+    content: public PdfLinkAnnotation? FindLinkAtPoint(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The x-coordinate of the point, in the coordinate system of the PDF page.
+    - id: y
+      type: System.Double
+      description: The y-coordinate of the point, in the coordinate system of the PDF page.
+    return:
+      type: nebulae.dotPDFium.PdfLinkAnnotation
+      description: A <xref href="nebulae.dotPDFium.PdfLinkAnnotation" data-throw-if-not-resolved="false"></xref> object representing the link annotation at the specified point,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no link annotation is found.
+    content.vb: Public Function FindLinkAtPoint(x As Double, y As Double) As PdfLinkAnnotation
+  overload: nebulae.dotPDFium.PdfPage.FindLinkAtPoint*
+  nameWithType.vb: PdfPage.FindLinkAtPoint(Double, Double)
+  fullName.vb: nebulae.dotPDFium.PdfPage.FindLinkAtPoint(Double, Double)
+  name.vb: FindLinkAtPoint(Double, Double)
+- uid: nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint(System.Double,System.Double)
+  commentId: M:nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint(System.Double,System.Double)
+  id: GetLinkZOrderAtPoint(System.Double,System.Double)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: GetLinkZOrderAtPoint(double, double)
+  nameWithType: PdfPage.GetLinkZOrderAtPoint(double, double)
+  fullName: nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint(double, double)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: GetLinkZOrderAtPoint
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 776
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Gets the z-order index of a link at the specified point on the page.
+  remarks: >-
+    The z-order index determines the stacking order of links at a given point, with lower
+        indices representing links that are visually on top. This method can be used to identify and interact with
+        specific links in a document.
+  example: []
+  syntax:
+    content: public int GetLinkZOrderAtPoint(double x, double y)
+    parameters:
+    - id: x
+      type: System.Double
+      description: The x-coordinate of the point, in the page's coordinate system.
+    - id: y
+      type: System.Double
+      description: The y-coordinate of the point, in the page's coordinate system.
+    return:
+      type: System.Int32
+      description: >-
+        The zero-based z-order index of the link at the specified point, where a lower index indicates a link closer
+            to the top of the z-order. Returns -1 if no link is found at the specified point.
+    content.vb: Public Function GetLinkZOrderAtPoint(x As Double, y As Double) As Integer
+  overload: nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint*
+  nameWithType.vb: PdfPage.GetLinkZOrderAtPoint(Double, Double)
+  fullName.vb: nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint(Double, Double)
+  name.vb: GetLinkZOrderAtPoint(Double, Double)
+- uid: nebulae.dotPDFium.PdfPage.Close
+  commentId: M:nebulae.dotPDFium.PdfPage.Close
+  id: Close
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: PdfPage.Close()
+  fullName: nebulae.dotPDFium.PdfPage.Close()
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Close
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 784
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Closes the current page and releases the associated resources.
+  example: []
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: nebulae.dotPDFium.PdfPage.Close*
+- uid: nebulae.dotPDFium.PdfPage.Dispose(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfPage.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: nebulae.dotPDFium.PdfPage
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: PdfPage.Dispose(bool)
+  fullName: nebulae.dotPDFium.PdfPage.Dispose(bool)
+  type: Method
+  source:
+    remote:
+      path: dotPDFium/dotPDFium/PdfPage.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Dispose
+    path: ../dotPDFium/dotPDFium/dotPDFium/PdfPage.cs
+    startLine: 794
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium
+  summary: Releases the resources used by the page, optionally unregistering it from the parent document.
+  remarks: >-
+    When <code class="paramref">disposing</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, this method unregisters
+        the page  from its parent document, if applicable. Ensure that this method is called to properly clean up 
+        resources associated with the page.
+  example: []
+  syntax:
+    content: protected override void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+      description: >-
+        <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to release both managed and unmanaged resources; <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a> to release
+            only unmanaged resources.
+    content.vb: Protected Overrides Sub Dispose(disposing As Boolean)
+  overridden: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  overload: nebulae.dotPDFium.PdfPage.Dispose*
+  nameWithType.vb: PdfPage.Dispose(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfPage.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+references:
+- uid: nebulae.dotPDFium
+  commentId: N:nebulae.dotPDFium
+  href: nebulae.html
+  name: nebulae.dotPDFium
+  nameWithType: nebulae.dotPDFium
+  fullName: nebulae.dotPDFium
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: nebulae.dotPDFium.PdfObject
+  commentId: T:nebulae.dotPDFium.PdfObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfObject.html
+  name: PdfObject
+  nameWithType: PdfObject
+  fullName: nebulae.dotPDFium.PdfObject
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: nebulae.dotPDFium.PdfObject._handle
+  commentId: F:nebulae.dotPDFium.PdfObject._handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__handle
+  name: _handle
+  nameWithType: PdfObject._handle
+  fullName: nebulae.dotPDFium.PdfObject._handle
+- uid: nebulae.dotPDFium.PdfObject._type
+  commentId: F:nebulae.dotPDFium.PdfObject._type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__type
+  name: _type
+  nameWithType: PdfObject._type
+  fullName: nebulae.dotPDFium.PdfObject._type
+- uid: nebulae.dotPDFium.PdfObject._disposed
+  commentId: F:nebulae.dotPDFium.PdfObject._disposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject__disposed
+  name: _disposed
+  nameWithType: PdfObject._disposed
+  fullName: nebulae.dotPDFium.PdfObject._disposed
+- uid: nebulae.dotPDFium.PdfObject.Handle
+  commentId: P:nebulae.dotPDFium.PdfObject.Handle
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Handle
+  name: Handle
+  nameWithType: PdfObject.Handle
+  fullName: nebulae.dotPDFium.PdfObject.Handle
+- uid: nebulae.dotPDFium.PdfObject.Type
+  commentId: P:nebulae.dotPDFium.PdfObject.Type
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Type
+  name: Type
+  nameWithType: PdfObject.Type
+  fullName: nebulae.dotPDFium.PdfObject.Type
+- uid: nebulae.dotPDFium.PdfObject.IsDisposed
+  commentId: P:nebulae.dotPDFium.PdfObject.IsDisposed
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_IsDisposed
+  name: IsDisposed
+  nameWithType: PdfObject.IsDisposed
+  fullName: nebulae.dotPDFium.PdfObject.IsDisposed
+- uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+  commentId: M:nebulae.dotPDFium.PdfObject.GetPDFiumError
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  name: GetPDFiumError()
+  nameWithType: PdfObject.GetPDFiumError()
+  fullName: nebulae.dotPDFium.PdfObject.GetPDFiumError()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.GetPDFiumError
+    name: GetPDFiumError
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_GetPDFiumError
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfObject.Dispose
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose
+  parent: nebulae.dotPDFium.PdfObject
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  name: Dispose()
+  nameWithType: PdfObject.Dispose()
+  fullName: nebulae.dotPDFium.PdfObject.Dispose()
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.PdfPage.Width*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.Width
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_Width
+  name: Width
+  nameWithType: PdfPage.Width
+  fullName: nebulae.dotPDFium.PdfPage.Width
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: nebulae.dotPDFium.PdfPage.Height*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.Height
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_Height
+  name: Height
+  nameWithType: PdfPage.Height
+  fullName: nebulae.dotPDFium.PdfPage.Height
+- uid: nebulae.dotPDFium.PdfPage.WidthF*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.WidthF
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_WidthF
+  name: WidthF
+  nameWithType: PdfPage.WidthF
+  fullName: nebulae.dotPDFium.PdfPage.WidthF
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: nebulae.dotPDFium.PdfPage.HeightF*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.HeightF
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_HeightF
+  name: HeightF
+  nameWithType: PdfPage.HeightF
+  fullName: nebulae.dotPDFium.PdfPage.HeightF
+- uid: nebulae.dotPDFium.Native.PdfPageRotation
+  commentId: T:nebulae.dotPDFium.Native.PdfPageRotation
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfPageRotation.html
+  name: PdfPageRotation
+  nameWithType: PdfPageRotation
+  fullName: nebulae.dotPDFium.Native.PdfPageRotation
+- uid: nebulae.dotPDFium.dotPDFiumException
+  commentId: T:nebulae.dotPDFium.dotPDFiumException
+  href: nebulae.dotPDFium.dotPDFiumException.html
+  name: dotPDFiumException
+  nameWithType: dotPDFiumException
+  fullName: nebulae.dotPDFium.dotPDFiumException
+- uid: nebulae.dotPDFium.PdfPage.GetRotation*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetRotation
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetRotation
+  name: GetRotation
+  nameWithType: PdfPage.GetRotation
+  fullName: nebulae.dotPDFium.PdfPage.GetRotation
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.PdfPage.SetRotation*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.SetRotation
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_SetRotation_nebulae_dotPDFium_Native_PdfPageRotation_
+  name: SetRotation
+  nameWithType: PdfPage.SetRotation
+  fullName: nebulae.dotPDFium.PdfPage.SetRotation
+- uid: System.ObjectDisposedException
+  commentId: T:System.ObjectDisposedException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.objectdisposedexception
+  name: ObjectDisposedException
+  nameWithType: ObjectDisposedException
+  fullName: System.ObjectDisposedException
+- uid: nebulae.dotPDFium.PdfPage.GetOrLoadText*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetOrLoadText
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetOrLoadText
+  name: GetOrLoadText
+  nameWithType: PdfPage.GetOrLoadText
+  fullName: nebulae.dotPDFium.PdfPage.GetOrLoadText
+- uid: nebulae.dotPDFium.PdfText
+  commentId: T:nebulae.dotPDFium.PdfText
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfText.html
+  name: PdfText
+  nameWithType: PdfText
+  fullName: nebulae.dotPDFium.PdfText
+- uid: nebulae.dotPDFium.PdfPage.TryGetOrLoadText*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.TryGetOrLoadText
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_TryGetOrLoadText_nebulae_dotPDFium_PdfText__
+  name: TryGetOrLoadText
+  nameWithType: PdfPage.TryGetOrLoadText
+  fullName: nebulae.dotPDFium.PdfPage.TryGetOrLoadText
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: nebulae.dotPDFium.Native.FsRectF
+  commentId: T:nebulae.dotPDFium.Native.FsRectF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsRectF.html
+  name: FsRectF
+  nameWithType: FsRectF
+  fullName: nebulae.dotPDFium.Native.FsRectF
+- uid: nebulae.dotPDFium.PdfPage.GetBoundingBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetBoundingBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetBoundingBox
+  name: GetBoundingBox
+  nameWithType: PdfPage.GetBoundingBox
+  fullName: nebulae.dotPDFium.PdfPage.GetBoundingBox
+- uid: nebulae.dotPDFium.PdfStructTree
+  commentId: T:nebulae.dotPDFium.PdfStructTree
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfStructTree.html
+  name: PdfStructTree
+  nameWithType: PdfStructTree
+  fullName: nebulae.dotPDFium.PdfStructTree
+- uid: nebulae.dotPDFium.PdfPage.GetStructTree*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetStructTree
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetStructTree
+  name: GetStructTree
+  nameWithType: PdfPage.GetStructTree
+  fullName: nebulae.dotPDFium.PdfPage.GetStructTree
+- uid: nebulae.dotPDFium.PdfAnnotation
+  commentId: T:nebulae.dotPDFium.PdfAnnotation
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfAnnotation.html
+  name: PdfAnnotation
+  nameWithType: PdfAnnotation
+  fullName: nebulae.dotPDFium.PdfAnnotation
+- uid: nebulae.dotPDFium.PdfPage.GetLinkAnnotation*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetLinkAnnotation
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetLinkAnnotation_System_Int32_
+  name: GetLinkAnnotation
+  nameWithType: PdfPage.GetLinkAnnotation
+  fullName: nebulae.dotPDFium.PdfPage.GetLinkAnnotation
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: nebulae.dotPDFium.PdfPage.HasTransparency*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.HasTransparency
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_HasTransparency
+  name: HasTransparency
+  nameWithType: PdfPage.HasTransparency
+  fullName: nebulae.dotPDFium.PdfPage.HasTransparency
+- uid: nebulae.dotPDFium.PdfPageObject
+  commentId: T:nebulae.dotPDFium.PdfPageObject
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfPageObject.html
+  name: PdfPageObject
+  nameWithType: PdfPageObject
+  fullName: nebulae.dotPDFium.PdfPageObject
+- uid: nebulae.dotPDFium.PdfPage.RemoveObject*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.RemoveObject
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RemoveObject_nebulae_dotPDFium_PdfPageObject_
+  name: RemoveObject
+  nameWithType: PdfPage.RemoveObject
+  fullName: nebulae.dotPDFium.PdfPage.RemoveObject
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: nebulae.dotPDFium.PdfPage.RenderToBitmap*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.RenderToBitmap
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RenderToBitmap_nebulae_dotPDFium_PdfBitmap_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_nebulae_dotPDFium_Native_PdfRenderFlags_
+  name: RenderToBitmap
+  nameWithType: PdfPage.RenderToBitmap
+  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmap
+- uid: nebulae.dotPDFium.PdfBitmap
+  commentId: T:nebulae.dotPDFium.PdfBitmap
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfBitmap.html
+  name: PdfBitmap
+  nameWithType: PdfBitmap
+  fullName: nebulae.dotPDFium.PdfBitmap
+- uid: nebulae.dotPDFium.Native.PdfRenderFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfRenderFlags
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfRenderFlags.html
+  name: PdfRenderFlags
+  nameWithType: PdfRenderFlags
+  fullName: nebulae.dotPDFium.Native.PdfRenderFlags
+- uid: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RenderToBitmapWithMatrix_nebulae_dotPDFium_PdfBitmap_nebulae_dotPDFium_Native_FsMatrixF__nebulae_dotPDFium_Native_FsRectF__nebulae_dotPDFium_Native_PdfRenderFlags_
+  name: RenderToBitmapWithMatrix
+  nameWithType: PdfPage.RenderToBitmapWithMatrix
+  fullName: nebulae.dotPDFium.PdfPage.RenderToBitmapWithMatrix
+- uid: nebulae.dotPDFium.Native.FsMatrixF
+  commentId: T:nebulae.dotPDFium.Native.FsMatrixF
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsMatrixF.html
+  name: FsMatrixF
+  nameWithType: FsMatrixF
+  fullName: nebulae.dotPDFium.Native.FsMatrixF
+- uid: nebulae.dotPDFium.PdfPage.DeviceToPage*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.DeviceToPage
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_DeviceToPage_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_System_Int32_System_Int32_System_Double__System_Double__
+  name: DeviceToPage
+  nameWithType: PdfPage.DeviceToPage
+  fullName: nebulae.dotPDFium.PdfPage.DeviceToPage
+- uid: nebulae.dotPDFium.PdfPage.PageToDevice*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.PageToDevice
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_PageToDevice_System_Int32_System_Int32_System_Int32_System_Int32_nebulae_dotPDFium_Native_PdfPageRotation_System_Double_System_Double_System_Int32__System_Int32__
+  name: PageToDevice
+  nameWithType: PdfPage.PageToDevice
+  fullName: nebulae.dotPDFium.PdfPage.PageToDevice
+- uid: nebulae.dotPDFium.PdfPage.InsertObject*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.InsertObject
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_InsertObject_nebulae_dotPDFium_PdfPageObject_
+  name: InsertObject
+  nameWithType: PdfPage.InsertObject
+  fullName: nebulae.dotPDFium.PdfPage.InsertObject
+- uid: nebulae.dotPDFium.PdfPage.FinalizeContent*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.FinalizeContent
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_FinalizeContent
+  name: FinalizeContent
+  nameWithType: PdfPage.FinalizeContent
+  fullName: nebulae.dotPDFium.PdfPage.FinalizeContent
+- uid: nebulae.dotPDFium.PdfPage.GetObjectCount*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetObjectCount
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetObjectCount
+  name: GetObjectCount
+  nameWithType: PdfPage.GetObjectCount
+  fullName: nebulae.dotPDFium.PdfPage.GetObjectCount
+- uid: nebulae.dotPDFium.PdfPage.GetObject*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetObject
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetObject_System_Int32_
+  name: GetObject
+  nameWithType: PdfPage.GetObject
+  fullName: nebulae.dotPDFium.PdfPage.GetObject
+- uid: nebulae.dotPDFium.PdfPage.GetAnnotationCount*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetAnnotationCount
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetAnnotationCount
+  name: GetAnnotationCount
+  nameWithType: PdfPage.GetAnnotationCount
+  fullName: nebulae.dotPDFium.PdfPage.GetAnnotationCount
+- uid: nebulae.dotPDFium.PdfPage.GetAnnotation*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetAnnotation
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetAnnotation_System_Int32_
+  name: GetAnnotation
+  nameWithType: PdfPage.GetAnnotation
+  fullName: nebulae.dotPDFium.PdfPage.GetAnnotation
+- uid: nebulae.dotPDFium.PdfPage.CreateAnnotation*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.CreateAnnotation
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_CreateAnnotation_nebulae_dotPDFium_Native_PdfAnnotationSubtype_
+  name: CreateAnnotation
+  nameWithType: PdfPage.CreateAnnotation
+  fullName: nebulae.dotPDFium.PdfPage.CreateAnnotation
+- uid: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+  commentId: T:nebulae.dotPDFium.Native.PdfAnnotationSubtype
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfAnnotationSubtype.html
+  name: PdfAnnotationSubtype
+  nameWithType: PdfAnnotationSubtype
+  fullName: nebulae.dotPDFium.Native.PdfAnnotationSubtype
+- uid: nebulae.dotPDFium.PdfPage.GetAnnotationIndex*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetAnnotationIndex
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetAnnotationIndex_nebulae_dotPDFium_PdfAnnotation_
+  name: GetAnnotationIndex
+  nameWithType: PdfPage.GetAnnotationIndex
+  fullName: nebulae.dotPDFium.PdfPage.GetAnnotationIndex
+- uid: nebulae.dotPDFium.PdfPage.RemoveAnnotation*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.RemoveAnnotation
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_RemoveAnnotation_nebulae_dotPDFium_PdfAnnotation_
+  name: RemoveAnnotation
+  nameWithType: PdfPage.RemoveAnnotation
+  fullName: nebulae.dotPDFium.PdfPage.RemoveAnnotation
+- uid: nebulae.dotPDFium.PdfPage.GetMediaBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetMediaBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetMediaBox
+  name: GetMediaBox
+  nameWithType: PdfPage.GetMediaBox
+  fullName: nebulae.dotPDFium.PdfPage.GetMediaBox
+- uid: nebulae.dotPDFium.PdfPage.SetMediaBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.SetMediaBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_SetMediaBox_nebulae_dotPDFium_Native_FsRectF_
+  name: SetMediaBox
+  nameWithType: PdfPage.SetMediaBox
+  fullName: nebulae.dotPDFium.PdfPage.SetMediaBox
+- uid: nebulae.dotPDFium.PdfPage.GetCropBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetCropBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetCropBox
+  name: GetCropBox
+  nameWithType: PdfPage.GetCropBox
+  fullName: nebulae.dotPDFium.PdfPage.GetCropBox
+- uid: nebulae.dotPDFium.PdfPage.SetCropBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.SetCropBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_SetCropBox_nebulae_dotPDFium_Native_FsRectF_
+  name: SetCropBox
+  nameWithType: PdfPage.SetCropBox
+  fullName: nebulae.dotPDFium.PdfPage.SetCropBox
+- uid: nebulae.dotPDFium.PdfPage.GetBleedBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetBleedBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetBleedBox
+  name: GetBleedBox
+  nameWithType: PdfPage.GetBleedBox
+  fullName: nebulae.dotPDFium.PdfPage.GetBleedBox
+- uid: nebulae.dotPDFium.PdfPage.SetBleedBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.SetBleedBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_SetBleedBox_nebulae_dotPDFium_Native_FsRectF_
+  name: SetBleedBox
+  nameWithType: PdfPage.SetBleedBox
+  fullName: nebulae.dotPDFium.PdfPage.SetBleedBox
+- uid: nebulae.dotPDFium.PdfPage.GetTrimBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetTrimBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetTrimBox
+  name: GetTrimBox
+  nameWithType: PdfPage.GetTrimBox
+  fullName: nebulae.dotPDFium.PdfPage.GetTrimBox
+- uid: nebulae.dotPDFium.PdfPage.SetTrimBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.SetTrimBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_SetTrimBox_nebulae_dotPDFium_Native_FsRectF_
+  name: SetTrimBox
+  nameWithType: PdfPage.SetTrimBox
+  fullName: nebulae.dotPDFium.PdfPage.SetTrimBox
+- uid: nebulae.dotPDFium.PdfPage.GetArtBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetArtBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetArtBox
+  name: GetArtBox
+  nameWithType: PdfPage.GetArtBox
+  fullName: nebulae.dotPDFium.PdfPage.GetArtBox
+- uid: nebulae.dotPDFium.PdfPage.SetArtBox*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.SetArtBox
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_SetArtBox_nebulae_dotPDFium_Native_FsRectF_
+  name: SetArtBox
+  nameWithType: PdfPage.SetArtBox
+  fullName: nebulae.dotPDFium.PdfPage.SetArtBox
+- uid: nebulae.dotPDFium.PdfPage.TransformWithClip*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.TransformWithClip
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_TransformWithClip_nebulae_dotPDFium_Native_FsMatrixF_nebulae_dotPDFium_Native_FsRectF_
+  name: TransformWithClip
+  nameWithType: PdfPage.TransformWithClip
+  fullName: nebulae.dotPDFium.PdfPage.TransformWithClip
+- uid: nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay
+  href: nebulae.dotPDFium.Native.PdfFlattenMode.html#nebulae_dotPDFium_Native_PdfFlattenMode_NormalDisplay
+  name: NormalDisplay
+  nameWithType: PdfFlattenMode.NormalDisplay
+  fullName: nebulae.dotPDFium.Native.PdfFlattenMode.NormalDisplay
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult
+  commentId: T:nebulae.dotPDFium.Native.PdfFlattenResult
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFlattenResult.html
+  name: PdfFlattenResult
+  nameWithType: PdfFlattenResult
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult.Success
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenResult.Success
+  href: nebulae.dotPDFium.Native.PdfFlattenResult.html#nebulae_dotPDFium_Native_PdfFlattenResult_Success
+  name: Success
+  nameWithType: PdfFlattenResult.Success
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult.Success
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo
+  href: nebulae.dotPDFium.Native.PdfFlattenResult.html#nebulae_dotPDFium_Native_PdfFlattenResult_NothingToDo
+  name: NothingToDo
+  nameWithType: PdfFlattenResult.NothingToDo
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult.Fail
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenResult.Fail
+  href: nebulae.dotPDFium.Native.PdfFlattenResult.html#nebulae_dotPDFium_Native_PdfFlattenResult_Fail
+  name: Fail
+  nameWithType: PdfFlattenResult.Fail
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult.Fail
+- uid: nebulae.dotPDFium.PdfPage.Flatten*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.Flatten
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_Flatten_nebulae_dotPDFium_Native_PdfFlattenMode_
+  name: Flatten
+  nameWithType: PdfPage.Flatten
+  fullName: nebulae.dotPDFium.PdfPage.Flatten
+- uid: nebulae.dotPDFium.Native.PdfFlattenMode
+  commentId: T:nebulae.dotPDFium.Native.PdfFlattenMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFlattenMode.html
+  name: PdfFlattenMode
+  nameWithType: PdfFlattenMode
+  fullName: nebulae.dotPDFium.Native.PdfFlattenMode
+- uid: nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetDecodedThumbnailData
+  name: GetDecodedThumbnailData
+  nameWithType: PdfPage.GetDecodedThumbnailData
+  fullName: nebulae.dotPDFium.PdfPage.GetDecodedThumbnailData
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: nebulae.dotPDFium.PdfPage.GetRawThumbnailData*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetRawThumbnailData
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetRawThumbnailData
+  name: GetRawThumbnailData
+  nameWithType: PdfPage.GetRawThumbnailData
+  fullName: nebulae.dotPDFium.PdfPage.GetRawThumbnailData
+- uid: nebulae.dotPDFium.PdfPage.GetThumbnailBitmap*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetThumbnailBitmap
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetThumbnailBitmap
+  name: GetThumbnailBitmap
+  nameWithType: PdfPage.GetThumbnailBitmap
+  fullName: nebulae.dotPDFium.PdfPage.GetThumbnailBitmap
+- uid: nebulae.dotPDFium.PdfPage.TransformAnnotations*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.TransformAnnotations
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_TransformAnnotations_nebulae_dotPDFium_Native_FsMatrix_
+  name: TransformAnnotations
+  nameWithType: PdfPage.TransformAnnotations
+  fullName: nebulae.dotPDFium.PdfPage.TransformAnnotations
+- uid: nebulae.dotPDFium.Native.FsMatrix
+  commentId: T:nebulae.dotPDFium.Native.FsMatrix
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FsMatrix.html
+  name: FsMatrix
+  nameWithType: FsMatrix
+  fullName: nebulae.dotPDFium.Native.FsMatrix
+- uid: nebulae.dotPDFium.PdfLinkAnnotation
+  commentId: T:nebulae.dotPDFium.PdfLinkAnnotation
+  parent: nebulae.dotPDFium
+  href: nebulae.dotPDFium.PdfLinkAnnotation.html
+  name: PdfLinkAnnotation
+  nameWithType: PdfLinkAnnotation
+  fullName: nebulae.dotPDFium.PdfLinkAnnotation
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: nebulae.dotPDFium.PdfPage.EnumerateLinks*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.EnumerateLinks
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_EnumerateLinks
+  name: EnumerateLinks
+  nameWithType: PdfPage.EnumerateLinks
+  fullName: nebulae.dotPDFium.PdfPage.EnumerateLinks
+- uid: System.Collections.Generic.IEnumerable{nebulae.dotPDFium.PdfLinkAnnotation}
+  commentId: T:System.Collections.Generic.IEnumerable{nebulae.dotPDFium.PdfLinkAnnotation}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<PdfLinkAnnotation>
+  nameWithType: IEnumerable<PdfLinkAnnotation>
+  fullName: System.Collections.Generic.IEnumerable<nebulae.dotPDFium.PdfLinkAnnotation>
+  nameWithType.vb: IEnumerable(Of PdfLinkAnnotation)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of nebulae.dotPDFium.PdfLinkAnnotation)
+  name.vb: IEnumerable(Of PdfLinkAnnotation)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: nebulae.dotPDFium.PdfLinkAnnotation
+    name: PdfLinkAnnotation
+    href: nebulae.dotPDFium.PdfLinkAnnotation.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: nebulae.dotPDFium.PdfLinkAnnotation
+    name: PdfLinkAnnotation
+    href: nebulae.dotPDFium.PdfLinkAnnotation.html
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: nebulae.dotPDFium.PdfPage.FindLinkAtPoint*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.FindLinkAtPoint
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_FindLinkAtPoint_System_Double_System_Double_
+  name: FindLinkAtPoint
+  nameWithType: PdfPage.FindLinkAtPoint
+  fullName: nebulae.dotPDFium.PdfPage.FindLinkAtPoint
+- uid: nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_GetLinkZOrderAtPoint_System_Double_System_Double_
+  name: GetLinkZOrderAtPoint
+  nameWithType: PdfPage.GetLinkZOrderAtPoint
+  fullName: nebulae.dotPDFium.PdfPage.GetLinkZOrderAtPoint
+- uid: nebulae.dotPDFium.PdfPage.Close*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.Close
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_Close
+  name: Close
+  nameWithType: PdfPage.Close
+  fullName: nebulae.dotPDFium.PdfPage.Close
+- uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  commentId: M:nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+  parent: nebulae.dotPDFium.PdfObject
+  isExternal: true
+  href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  name: Dispose(bool)
+  nameWithType: PdfObject.Dispose(bool)
+  fullName: nebulae.dotPDFium.PdfObject.Dispose(bool)
+  nameWithType.vb: PdfObject.Dispose(Boolean)
+  fullName.vb: nebulae.dotPDFium.PdfObject.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+  spec.csharp:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: nebulae.dotPDFium.PdfObject.Dispose(System.Boolean)
+    name: Dispose
+    href: nebulae.dotPDFium.PdfObject.html#nebulae_dotPDFium_PdfObject_Dispose_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: nebulae.dotPDFium.PdfPage.Dispose*
+  commentId: Overload:nebulae.dotPDFium.PdfPage.Dispose
+  href: nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: PdfPage.Dispose
+  fullName: nebulae.dotPDFium.PdfPage.Dispose

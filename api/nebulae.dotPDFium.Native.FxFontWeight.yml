@@ -1,0 +1,137 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.FxFontWeight
+  commentId: T:nebulae.dotPDFium.Native.FxFontWeight
+  id: FxFontWeight
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.FxFontWeight.Bold
+  - nebulae.dotPDFium.Native.FxFontWeight.Normal
+  langs:
+  - csharp
+  - vb
+  name: FxFontWeight
+  nameWithType: FxFontWeight
+  fullName: nebulae.dotPDFium.Native.FxFontWeight
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FxFontWeight
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 625
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the weight of a font, which determines the thickness of the characters.
+  remarks: >-
+    The font weight is represented as an integer value, where higher values indicate thicker weights.
+        Commonly used values include <xref href="nebulae.dotPDFium.Native.FxFontWeight.Normal" data-throw-if-not-resolved="false"></xref> for regular text and <xref href="nebulae.dotPDFium.Native.FxFontWeight.Bold" data-throw-if-not-resolved="false"></xref> for bold text.
+  example: []
+  syntax:
+    content: public enum FxFontWeight
+    content.vb: Public Enum FxFontWeight
+- uid: nebulae.dotPDFium.Native.FxFontWeight.Normal
+  commentId: F:nebulae.dotPDFium.Native.FxFontWeight.Normal
+  id: Normal
+  parent: nebulae.dotPDFium.Native.FxFontWeight
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: FxFontWeight.Normal
+  fullName: nebulae.dotPDFium.Native.FxFontWeight.Normal
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Normal
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 627
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Normal = 400
+    return:
+      type: nebulae.dotPDFium.Native.FxFontWeight
+- uid: nebulae.dotPDFium.Native.FxFontWeight.Bold
+  commentId: F:nebulae.dotPDFium.Native.FxFontWeight.Bold
+  id: Bold
+  parent: nebulae.dotPDFium.Native.FxFontWeight
+  langs:
+  - csharp
+  - vb
+  name: Bold
+  nameWithType: FxFontWeight.Bold
+  fullName: nebulae.dotPDFium.Native.FxFontWeight.Bold
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Bold
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 628
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Bold = 700
+    return:
+      type: nebulae.dotPDFium.Native.FxFontWeight
+references:
+- uid: nebulae.dotPDFium.Native.FxFontWeight.Normal
+  commentId: F:nebulae.dotPDFium.Native.FxFontWeight.Normal
+  href: nebulae.dotPDFium.Native.FxFontWeight.html#nebulae_dotPDFium_Native_FxFontWeight_Normal
+  name: Normal
+  nameWithType: FxFontWeight.Normal
+  fullName: nebulae.dotPDFium.Native.FxFontWeight.Normal
+- uid: nebulae.dotPDFium.Native.FxFontWeight.Bold
+  commentId: F:nebulae.dotPDFium.Native.FxFontWeight.Bold
+  href: nebulae.dotPDFium.Native.FxFontWeight.html#nebulae_dotPDFium_Native_FxFontWeight_Bold
+  name: Bold
+  nameWithType: FxFontWeight.Bold
+  fullName: nebulae.dotPDFium.Native.FxFontWeight.Bold
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.FxFontWeight
+  commentId: T:nebulae.dotPDFium.Native.FxFontWeight
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FxFontWeight.html
+  name: FxFontWeight
+  nameWithType: FxFontWeight
+  fullName: nebulae.dotPDFium.Native.FxFontWeight

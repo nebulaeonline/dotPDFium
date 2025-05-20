@@ -1,0 +1,153 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult
+  commentId: T:nebulae.dotPDFium.Native.PdfFlattenResult
+  id: PdfFlattenResult
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFlattenResult.Fail
+  - nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo
+  - nebulae.dotPDFium.Native.PdfFlattenResult.Success
+  langs:
+  - csharp
+  - vb
+  name: PdfFlattenResult
+  nameWithType: PdfFlattenResult
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFlattenResult
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 369
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents the result of a PDF flattening operation.
+  remarks: >-
+    This enumeration indicates the outcome of a PDF flattening process, which may fail, succeed,  or
+        determine that no action was necessary. Use this to evaluate the result of the operation  and take appropriate
+        actions based on the value.
+  example: []
+  syntax:
+    content: public enum PdfFlattenResult
+    content.vb: Public Enum PdfFlattenResult
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult.Fail
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenResult.Fail
+  id: Fail
+  parent: nebulae.dotPDFium.Native.PdfFlattenResult
+  langs:
+  - csharp
+  - vb
+  name: Fail
+  nameWithType: PdfFlattenResult.Fail
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult.Fail
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Fail
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 371
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Fail = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFlattenResult
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult.Success
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenResult.Success
+  id: Success
+  parent: nebulae.dotPDFium.Native.PdfFlattenResult
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: PdfFlattenResult.Success
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult.Success
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Success
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 372
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Success = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFlattenResult
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo
+  commentId: F:nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo
+  id: NothingToDo
+  parent: nebulae.dotPDFium.Native.PdfFlattenResult
+  langs:
+  - csharp
+  - vb
+  name: NothingToDo
+  nameWithType: PdfFlattenResult.NothingToDo
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult.NothingToDo
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NothingToDo
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 373
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NothingToDo = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfFlattenResult
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfFlattenResult
+  commentId: T:nebulae.dotPDFium.Native.PdfFlattenResult
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFlattenResult.html
+  name: PdfFlattenResult
+  nameWithType: PdfFlattenResult
+  fullName: nebulae.dotPDFium.Native.PdfFlattenResult

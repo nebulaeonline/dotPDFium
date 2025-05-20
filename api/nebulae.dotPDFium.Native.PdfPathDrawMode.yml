@@ -1,0 +1,205 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfPathDrawMode
+  commentId: T:nebulae.dotPDFium.Native.PdfPathDrawMode
+  id: PdfPathDrawMode
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfPathDrawMode.Fill
+  - nebulae.dotPDFium.Native.PdfPathDrawMode.FillStroke
+  - nebulae.dotPDFium.Native.PdfPathDrawMode.None
+  - nebulae.dotPDFium.Native.PdfPathDrawMode.Stroke
+  langs:
+  - csharp
+  - vb
+  name: PdfPathDrawMode
+  nameWithType: PdfPathDrawMode
+  fullName: nebulae.dotPDFium.Native.PdfPathDrawMode
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfPathDrawMode
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 763
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the drawing mode for a path in a PDF document.
+  remarks: >-
+    This enumeration defines the options for rendering a path in a PDF, including filling, stroking, or
+        both. It supports bitwise combination of its values due to the <xref href="System.FlagsAttribute" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum PdfPathDrawMode
+    content.vb: >-
+      <Flags>
+
+      Public Enum PdfPathDrawMode
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: nebulae.dotPDFium.Native.PdfPathDrawMode.None
+  commentId: F:nebulae.dotPDFium.Native.PdfPathDrawMode.None
+  id: None
+  parent: nebulae.dotPDFium.Native.PdfPathDrawMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PdfPathDrawMode.None
+  fullName: nebulae.dotPDFium.Native.PdfPathDrawMode.None
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: None
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 766
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: None = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfPathDrawMode
+- uid: nebulae.dotPDFium.Native.PdfPathDrawMode.Fill
+  commentId: F:nebulae.dotPDFium.Native.PdfPathDrawMode.Fill
+  id: Fill
+  parent: nebulae.dotPDFium.Native.PdfPathDrawMode
+  langs:
+  - csharp
+  - vb
+  name: Fill
+  nameWithType: PdfPathDrawMode.Fill
+  fullName: nebulae.dotPDFium.Native.PdfPathDrawMode.Fill
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Fill
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 767
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Fill = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfPathDrawMode
+- uid: nebulae.dotPDFium.Native.PdfPathDrawMode.Stroke
+  commentId: F:nebulae.dotPDFium.Native.PdfPathDrawMode.Stroke
+  id: Stroke
+  parent: nebulae.dotPDFium.Native.PdfPathDrawMode
+  langs:
+  - csharp
+  - vb
+  name: Stroke
+  nameWithType: PdfPathDrawMode.Stroke
+  fullName: nebulae.dotPDFium.Native.PdfPathDrawMode.Stroke
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Stroke
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 768
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Stroke = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfPathDrawMode
+- uid: nebulae.dotPDFium.Native.PdfPathDrawMode.FillStroke
+  commentId: F:nebulae.dotPDFium.Native.PdfPathDrawMode.FillStroke
+  id: FillStroke
+  parent: nebulae.dotPDFium.Native.PdfPathDrawMode
+  langs:
+  - csharp
+  - vb
+  name: FillStroke
+  nameWithType: PdfPathDrawMode.FillStroke
+  fullName: nebulae.dotPDFium.Native.PdfPathDrawMode.FillStroke
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FillStroke
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 769
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: FillStroke = Fill | Stroke
+    return:
+      type: nebulae.dotPDFium.Native.PdfPathDrawMode
+    content.vb: FillStroke = Fill Or Stroke
+references:
+- uid: System.FlagsAttribute
+  commentId: T:System.FlagsAttribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.flagsattribute
+  name: FlagsAttribute
+  nameWithType: FlagsAttribute
+  fullName: System.FlagsAttribute
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfPathDrawMode
+  commentId: T:nebulae.dotPDFium.Native.PdfPathDrawMode
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfPathDrawMode.html
+  name: PdfPathDrawMode
+  nameWithType: PdfPathDrawMode
+  fullName: nebulae.dotPDFium.Native.PdfPathDrawMode

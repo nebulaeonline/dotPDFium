@@ -1,0 +1,526 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  commentId: T:nebulae.dotPDFium.Native.PdfImageObjMetadata
+  id: PdfImageObjMetadata
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfImageObjMetadata.bits_per_pixel
+  - nebulae.dotPDFium.Native.PdfImageObjMetadata.colorspace
+  - nebulae.dotPDFium.Native.PdfImageObjMetadata.height
+  - nebulae.dotPDFium.Native.PdfImageObjMetadata.horizontal_dpi
+  - nebulae.dotPDFium.Native.PdfImageObjMetadata.marked_content_id
+  - nebulae.dotPDFium.Native.PdfImageObjMetadata.vertical_dpi
+  - nebulae.dotPDFium.Native.PdfImageObjMetadata.width
+  langs:
+  - csharp
+  - vb
+  name: PdfImageObjMetadata
+  nameWithType: PdfImageObjMetadata
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  type: Struct
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfImageObjMetadata
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 160
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: public struct PdfImageObjMetadata
+    content.vb: Public Structure PdfImageObjMetadata
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata.width
+  commentId: F:nebulae.dotPDFium.Native.PdfImageObjMetadata.width
+  id: width
+  parent: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  langs:
+  - csharp
+  - vb
+  name: width
+  nameWithType: PdfImageObjMetadata.width
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata.width
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: width
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 164
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: The image width in pixels.
+  example: []
+  syntax:
+    content: public uint width
+    return:
+      type: System.UInt32
+    content.vb: Public width As UInteger
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata.height
+  commentId: F:nebulae.dotPDFium.Native.PdfImageObjMetadata.height
+  id: height
+  parent: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  langs:
+  - csharp
+  - vb
+  name: height
+  nameWithType: PdfImageObjMetadata.height
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata.height
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: height
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 167
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: The image height in pixels.
+  example: []
+  syntax:
+    content: public uint height
+    return:
+      type: System.UInt32
+    content.vb: Public height As UInteger
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata.horizontal_dpi
+  commentId: F:nebulae.dotPDFium.Native.PdfImageObjMetadata.horizontal_dpi
+  id: horizontal_dpi
+  parent: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  langs:
+  - csharp
+  - vb
+  name: horizontal_dpi
+  nameWithType: PdfImageObjMetadata.horizontal_dpi
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata.horizontal_dpi
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: horizontal_dpi
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 170
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: The image's horizontal DPI (dots per inch).
+  example: []
+  syntax:
+    content: public float horizontal_dpi
+    return:
+      type: System.Single
+    content.vb: Public horizontal_dpi As Single
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata.vertical_dpi
+  commentId: F:nebulae.dotPDFium.Native.PdfImageObjMetadata.vertical_dpi
+  id: vertical_dpi
+  parent: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  langs:
+  - csharp
+  - vb
+  name: vertical_dpi
+  nameWithType: PdfImageObjMetadata.vertical_dpi
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata.vertical_dpi
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: vertical_dpi
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 173
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: The image's vertical DPI (dots per inch).
+  example: []
+  syntax:
+    content: public float vertical_dpi
+    return:
+      type: System.Single
+    content.vb: Public vertical_dpi As Single
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata.bits_per_pixel
+  commentId: F:nebulae.dotPDFium.Native.PdfImageObjMetadata.bits_per_pixel
+  id: bits_per_pixel
+  parent: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  langs:
+  - csharp
+  - vb
+  name: bits_per_pixel
+  nameWithType: PdfImageObjMetadata.bits_per_pixel
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata.bits_per_pixel
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: bits_per_pixel
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 176
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Bits per pixel.
+  example: []
+  syntax:
+    content: public uint bits_per_pixel
+    return:
+      type: System.UInt32
+    content.vb: Public bits_per_pixel As UInteger
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata.colorspace
+  commentId: F:nebulae.dotPDFium.Native.PdfImageObjMetadata.colorspace
+  id: colorspace
+  parent: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  langs:
+  - csharp
+  - vb
+  name: colorspace
+  nameWithType: PdfImageObjMetadata.colorspace
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata.colorspace
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: colorspace
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 179
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: The image's color space. Use FPDF_COLORSPACE_* constants.
+  example: []
+  syntax:
+    content: public int colorspace
+    return:
+      type: System.Int32
+    content.vb: Public colorspace As Integer
+- uid: nebulae.dotPDFium.Native.PdfImageObjMetadata.marked_content_id
+  commentId: F:nebulae.dotPDFium.Native.PdfImageObjMetadata.marked_content_id
+  id: marked_content_id
+  parent: nebulae.dotPDFium.Native.PdfImageObjMetadata
+  langs:
+  - csharp
+  - vb
+  name: marked_content_id
+  nameWithType: PdfImageObjMetadata.marked_content_id
+  fullName: nebulae.dotPDFium.Native.PdfImageObjMetadata.marked_content_id
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfNativeStructs.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: marked_content_id
+    path: ../dotPDFium/dotPDFium/Native/PdfNativeStructs.cs
+    startLine: 182
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: The image's marked content ID, or -1 if none.
+  example: []
+  syntax:
+    content: public int marked_content_id
+    return:
+      type: System.Int32
+    content.vb: Public marked_content_id As Integer
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

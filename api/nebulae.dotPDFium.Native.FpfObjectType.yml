@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.FpfObjectType
+  commentId: T:nebulae.dotPDFium.Native.FpfObjectType
+  id: FpfObjectType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.FpfObjectType.Array
+  - nebulae.dotPDFium.Native.FpfObjectType.Boolean
+  - nebulae.dotPDFium.Native.FpfObjectType.Dictionary
+  - nebulae.dotPDFium.Native.FpfObjectType.Name
+  - nebulae.dotPDFium.Native.FpfObjectType.NullObj
+  - nebulae.dotPDFium.Native.FpfObjectType.Number
+  - nebulae.dotPDFium.Native.FpfObjectType.Reference
+  - nebulae.dotPDFium.Native.FpfObjectType.Stream
+  - nebulae.dotPDFium.Native.FpfObjectType.String
+  - nebulae.dotPDFium.Native.FpfObjectType.Unknown
+  langs:
+  - csharp
+  - vb
+  name: FpfObjectType
+  nameWithType: FpfObjectType
+  fullName: nebulae.dotPDFium.Native.FpfObjectType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FpfObjectType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 653
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents the types of objects that can be processed in the FPF (File Processing Framework).
+  remarks: >-
+    This enumeration defines the various object types that may be encountered or manipulated within the
+        FPF system. Each value corresponds to a specific type of object, such as a boolean, number, string, or more complex
+        structures like arrays and dictionaries.
+  example: []
+  syntax:
+    content: public enum FpfObjectType
+    content.vb: Public Enum FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Unknown
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Unknown
+  id: Unknown
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Unknown
+  nameWithType: FpfObjectType.Unknown
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Unknown
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Unknown
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 655
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Unknown = 0
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Boolean
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Boolean
+  id: Boolean
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Boolean
+  nameWithType: FpfObjectType.Boolean
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Boolean
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Boolean
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 656
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Boolean = 1
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Number
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Number
+  id: Number
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: FpfObjectType.Number
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Number
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Number
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 657
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Number = 2
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.String
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.String
+  id: String
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: FpfObjectType.String
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.String
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: String
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 658
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: String = 3
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Name
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Name
+  id: Name
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: FpfObjectType.Name
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Name
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Name
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 659
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Name = 4
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Array
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Array
+  id: Array
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Array
+  nameWithType: FpfObjectType.Array
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Array
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Array
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 660
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Array = 5
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Dictionary
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Dictionary
+  id: Dictionary
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Dictionary
+  nameWithType: FpfObjectType.Dictionary
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Dictionary
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Dictionary
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 661
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Dictionary = 6
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Stream
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Stream
+  id: Stream
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: FpfObjectType.Stream
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Stream
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Stream
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 662
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Stream = 7
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.NullObj
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.NullObj
+  id: NullObj
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: NullObj
+  nameWithType: FpfObjectType.NullObj
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.NullObj
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NullObj
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 663
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NullObj = 8
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+- uid: nebulae.dotPDFium.Native.FpfObjectType.Reference
+  commentId: F:nebulae.dotPDFium.Native.FpfObjectType.Reference
+  id: Reference
+  parent: nebulae.dotPDFium.Native.FpfObjectType
+  langs:
+  - csharp
+  - vb
+  name: Reference
+  nameWithType: FpfObjectType.Reference
+  fullName: nebulae.dotPDFium.Native.FpfObjectType.Reference
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Reference
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 664
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Reference = 9
+    return:
+      type: nebulae.dotPDFium.Native.FpfObjectType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.FpfObjectType
+  commentId: T:nebulae.dotPDFium.Native.FpfObjectType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FpfObjectType.html
+  name: FpfObjectType
+  nameWithType: FpfObjectType
+  fullName: nebulae.dotPDFium.Native.FpfObjectType

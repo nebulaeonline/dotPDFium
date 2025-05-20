@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.FxFontPitchFamily
+  commentId: T:nebulae.dotPDFium.Native.FxFontPitchFamily
+  id: FxFontPitchFamily
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.FxFontPitchFamily.FixedPitch
+  - nebulae.dotPDFium.Native.FxFontPitchFamily.Roman
+  - nebulae.dotPDFium.Native.FxFontPitchFamily.Script
+  langs:
+  - csharp
+  - vb
+  name: FxFontPitchFamily
+  nameWithType: FxFontPitchFamily
+  fullName: nebulae.dotPDFium.Native.FxFontPitchFamily
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FxFontPitchFamily
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 591
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the pitch and family classification of a font.
+  remarks: >-
+    This enumeration is used to define font characteristics such as whether the font has a fixed pitch or
+        belongs to a specific family, such as Roman or Script. The values can be combined using a bitwise OR operation due
+        to the <xref href="System.FlagsAttribute" data-throw-if-not-resolved="false"></xref> applied to the enumeration.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum FxFontPitchFamily
+    content.vb: >-
+      <Flags>
+
+      Public Enum FxFontPitchFamily
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: nebulae.dotPDFium.Native.FxFontPitchFamily.FixedPitch
+  commentId: F:nebulae.dotPDFium.Native.FxFontPitchFamily.FixedPitch
+  id: FixedPitch
+  parent: nebulae.dotPDFium.Native.FxFontPitchFamily
+  langs:
+  - csharp
+  - vb
+  name: FixedPitch
+  nameWithType: FxFontPitchFamily.FixedPitch
+  fullName: nebulae.dotPDFium.Native.FxFontPitchFamily.FixedPitch
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: FixedPitch
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 594
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: FixedPitch = 1
+    return:
+      type: nebulae.dotPDFium.Native.FxFontPitchFamily
+- uid: nebulae.dotPDFium.Native.FxFontPitchFamily.Roman
+  commentId: F:nebulae.dotPDFium.Native.FxFontPitchFamily.Roman
+  id: Roman
+  parent: nebulae.dotPDFium.Native.FxFontPitchFamily
+  langs:
+  - csharp
+  - vb
+  name: Roman
+  nameWithType: FxFontPitchFamily.Roman
+  fullName: nebulae.dotPDFium.Native.FxFontPitchFamily.Roman
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Roman
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 595
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Roman = 16
+    return:
+      type: nebulae.dotPDFium.Native.FxFontPitchFamily
+- uid: nebulae.dotPDFium.Native.FxFontPitchFamily.Script
+  commentId: F:nebulae.dotPDFium.Native.FxFontPitchFamily.Script
+  id: Script
+  parent: nebulae.dotPDFium.Native.FxFontPitchFamily
+  langs:
+  - csharp
+  - vb
+  name: Script
+  nameWithType: FxFontPitchFamily.Script
+  fullName: nebulae.dotPDFium.Native.FxFontPitchFamily.Script
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Script
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 596
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Script = 64
+    return:
+      type: nebulae.dotPDFium.Native.FxFontPitchFamily
+references:
+- uid: System.FlagsAttribute
+  commentId: T:System.FlagsAttribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.flagsattribute
+  name: FlagsAttribute
+  nameWithType: FlagsAttribute
+  fullName: System.FlagsAttribute
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.FxFontPitchFamily
+  commentId: T:nebulae.dotPDFium.Native.FxFontPitchFamily
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.FxFontPitchFamily.html
+  name: FxFontPitchFamily
+  nameWithType: FxFontPitchFamily
+  fullName: nebulae.dotPDFium.Native.FxFontPitchFamily

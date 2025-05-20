@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.AttachmentValueType
+  commentId: T:nebulae.dotPDFium.Native.AttachmentValueType
+  id: AttachmentValueType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.AttachmentValueType.Array
+  - nebulae.dotPDFium.Native.AttachmentValueType.Boolean
+  - nebulae.dotPDFium.Native.AttachmentValueType.Dictionary
+  - nebulae.dotPDFium.Native.AttachmentValueType.Name
+  - nebulae.dotPDFium.Native.AttachmentValueType.Number
+  - nebulae.dotPDFium.Native.AttachmentValueType.Stream
+  - nebulae.dotPDFium.Native.AttachmentValueType.String
+  langs:
+  - csharp
+  - vb
+  name: AttachmentValueType
+  nameWithType: AttachmentValueType
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: AttachmentValueType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 225
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Represents the type of value that an attachment can hold.
+  remarks: >-
+    This enumeration defines the possible data types that can be associated with an attachment.  It is
+        used to specify the type of value stored in an attachment, enabling type-safe handling  of attachment
+        data.
+  example: []
+  syntax:
+    content: public enum AttachmentValueType
+    content.vb: Public Enum AttachmentValueType
+- uid: nebulae.dotPDFium.Native.AttachmentValueType.Boolean
+  commentId: F:nebulae.dotPDFium.Native.AttachmentValueType.Boolean
+  id: Boolean
+  parent: nebulae.dotPDFium.Native.AttachmentValueType
+  langs:
+  - csharp
+  - vb
+  name: Boolean
+  nameWithType: AttachmentValueType.Boolean
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType.Boolean
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Boolean
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 227
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Boolean = 0
+    return:
+      type: nebulae.dotPDFium.Native.AttachmentValueType
+- uid: nebulae.dotPDFium.Native.AttachmentValueType.Number
+  commentId: F:nebulae.dotPDFium.Native.AttachmentValueType.Number
+  id: Number
+  parent: nebulae.dotPDFium.Native.AttachmentValueType
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: AttachmentValueType.Number
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType.Number
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Number
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 228
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Number = 1
+    return:
+      type: nebulae.dotPDFium.Native.AttachmentValueType
+- uid: nebulae.dotPDFium.Native.AttachmentValueType.String
+  commentId: F:nebulae.dotPDFium.Native.AttachmentValueType.String
+  id: String
+  parent: nebulae.dotPDFium.Native.AttachmentValueType
+  langs:
+  - csharp
+  - vb
+  name: String
+  nameWithType: AttachmentValueType.String
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType.String
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: String
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 229
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: String = 2
+    return:
+      type: nebulae.dotPDFium.Native.AttachmentValueType
+- uid: nebulae.dotPDFium.Native.AttachmentValueType.Name
+  commentId: F:nebulae.dotPDFium.Native.AttachmentValueType.Name
+  id: Name
+  parent: nebulae.dotPDFium.Native.AttachmentValueType
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: AttachmentValueType.Name
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType.Name
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Name
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 230
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Name = 3
+    return:
+      type: nebulae.dotPDFium.Native.AttachmentValueType
+- uid: nebulae.dotPDFium.Native.AttachmentValueType.Array
+  commentId: F:nebulae.dotPDFium.Native.AttachmentValueType.Array
+  id: Array
+  parent: nebulae.dotPDFium.Native.AttachmentValueType
+  langs:
+  - csharp
+  - vb
+  name: Array
+  nameWithType: AttachmentValueType.Array
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType.Array
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Array
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 231
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Array = 4
+    return:
+      type: nebulae.dotPDFium.Native.AttachmentValueType
+- uid: nebulae.dotPDFium.Native.AttachmentValueType.Dictionary
+  commentId: F:nebulae.dotPDFium.Native.AttachmentValueType.Dictionary
+  id: Dictionary
+  parent: nebulae.dotPDFium.Native.AttachmentValueType
+  langs:
+  - csharp
+  - vb
+  name: Dictionary
+  nameWithType: AttachmentValueType.Dictionary
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType.Dictionary
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Dictionary
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 232
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Dictionary = 5
+    return:
+      type: nebulae.dotPDFium.Native.AttachmentValueType
+- uid: nebulae.dotPDFium.Native.AttachmentValueType.Stream
+  commentId: F:nebulae.dotPDFium.Native.AttachmentValueType.Stream
+  id: Stream
+  parent: nebulae.dotPDFium.Native.AttachmentValueType
+  langs:
+  - csharp
+  - vb
+  name: Stream
+  nameWithType: AttachmentValueType.Stream
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType.Stream
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Stream
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 233
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Stream = 6
+    return:
+      type: nebulae.dotPDFium.Native.AttachmentValueType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.AttachmentValueType
+  commentId: T:nebulae.dotPDFium.Native.AttachmentValueType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.AttachmentValueType.html
+  name: AttachmentValueType
+  nameWithType: AttachmentValueType
+  fullName: nebulae.dotPDFium.Native.AttachmentValueType

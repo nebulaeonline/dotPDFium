@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfSaveFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfSaveFlags
+  id: PdfSaveFlags
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfSaveFlags.Incremental
+  - nebulae.dotPDFium.Native.PdfSaveFlags.NoIncremental
+  - nebulae.dotPDFium.Native.PdfSaveFlags.None
+  - nebulae.dotPDFium.Native.PdfSaveFlags.RemoveSecurity
+  langs:
+  - csharp
+  - vb
+  name: PdfSaveFlags
+  nameWithType: PdfSaveFlags
+  fullName: nebulae.dotPDFium.Native.PdfSaveFlags
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfSaveFlags
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 539
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies flags that control the behavior of saving a PDF document.
+  remarks: >-
+    This enumeration supports bitwise combination of its values due to the <xref href="System.FlagsAttribute" data-throw-if-not-resolved="false"></xref>.
+        Use these flags to customize how a PDF document is saved, such as enabling incremental updates or removing security
+        settings.
+  example: []
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum PdfSaveFlags
+    content.vb: >-
+      <Flags>
+
+      Public Enum PdfSaveFlags
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: nebulae.dotPDFium.Native.PdfSaveFlags.None
+  commentId: F:nebulae.dotPDFium.Native.PdfSaveFlags.None
+  id: None
+  parent: nebulae.dotPDFium.Native.PdfSaveFlags
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: PdfSaveFlags.None
+  fullName: nebulae.dotPDFium.Native.PdfSaveFlags.None
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: None
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 542
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: None = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfSaveFlags
+- uid: nebulae.dotPDFium.Native.PdfSaveFlags.Incremental
+  commentId: F:nebulae.dotPDFium.Native.PdfSaveFlags.Incremental
+  id: Incremental
+  parent: nebulae.dotPDFium.Native.PdfSaveFlags
+  langs:
+  - csharp
+  - vb
+  name: Incremental
+  nameWithType: PdfSaveFlags.Incremental
+  fullName: nebulae.dotPDFium.Native.PdfSaveFlags.Incremental
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Incremental
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 543
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Incremental = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfSaveFlags
+- uid: nebulae.dotPDFium.Native.PdfSaveFlags.NoIncremental
+  commentId: F:nebulae.dotPDFium.Native.PdfSaveFlags.NoIncremental
+  id: NoIncremental
+  parent: nebulae.dotPDFium.Native.PdfSaveFlags
+  langs:
+  - csharp
+  - vb
+  name: NoIncremental
+  nameWithType: PdfSaveFlags.NoIncremental
+  fullName: nebulae.dotPDFium.Native.PdfSaveFlags.NoIncremental
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: NoIncremental
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 544
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: NoIncremental = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfSaveFlags
+- uid: nebulae.dotPDFium.Native.PdfSaveFlags.RemoveSecurity
+  commentId: F:nebulae.dotPDFium.Native.PdfSaveFlags.RemoveSecurity
+  id: RemoveSecurity
+  parent: nebulae.dotPDFium.Native.PdfSaveFlags
+  langs:
+  - csharp
+  - vb
+  name: RemoveSecurity
+  nameWithType: PdfSaveFlags.RemoveSecurity
+  fullName: nebulae.dotPDFium.Native.PdfSaveFlags.RemoveSecurity
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RemoveSecurity
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 545
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: RemoveSecurity = Incremental | NoIncremental
+    return:
+      type: nebulae.dotPDFium.Native.PdfSaveFlags
+    content.vb: RemoveSecurity = Incremental Or NoIncremental
+references:
+- uid: System.FlagsAttribute
+  commentId: T:System.FlagsAttribute
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.flagsattribute
+  name: FlagsAttribute
+  nameWithType: FlagsAttribute
+  fullName: System.FlagsAttribute
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: nebulae.dotPDFium.Native.PdfSaveFlags
+  commentId: T:nebulae.dotPDFium.Native.PdfSaveFlags
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfSaveFlags.html
+  name: PdfSaveFlags
+  nameWithType: PdfSaveFlags
+  fullName: nebulae.dotPDFium.Native.PdfSaveFlags

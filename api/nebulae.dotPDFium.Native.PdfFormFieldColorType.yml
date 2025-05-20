@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFormFieldColorType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldColorType
+  id: PdfFormFieldColorType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFormFieldColorType.Border
+  - nebulae.dotPDFium.Native.PdfFormFieldColorType.Fill
+  - nebulae.dotPDFium.Native.PdfFormFieldColorType.Text
+  langs:
+  - csharp
+  - vb
+  name: PdfFormFieldColorType
+  nameWithType: PdfFormFieldColorType
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldColorType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFormFieldColorType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 466
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the type of color applied to a PDF form field.
+  remarks: >-
+    This enumeration is used to define the context in which a color is applied to a PDF form field,  such
+        as the background fill, border stroke, or text font color.
+  example: []
+  syntax:
+    content: public enum PdfFormFieldColorType
+    content.vb: Public Enum PdfFormFieldColorType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldColorType.Fill
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldColorType.Fill
+  id: Fill
+  parent: nebulae.dotPDFium.Native.PdfFormFieldColorType
+  langs:
+  - csharp
+  - vb
+  name: Fill
+  nameWithType: PdfFormFieldColorType.Fill
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldColorType.Fill
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Fill
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 468
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Fill = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldColorType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldColorType.Border
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldColorType.Border
+  id: Border
+  parent: nebulae.dotPDFium.Native.PdfFormFieldColorType
+  langs:
+  - csharp
+  - vb
+  name: Border
+  nameWithType: PdfFormFieldColorType.Border
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldColorType.Border
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Border
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 469
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Border = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldColorType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldColorType.Text
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldColorType.Text
+  id: Text
+  parent: nebulae.dotPDFium.Native.PdfFormFieldColorType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: PdfFormFieldColorType.Text
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldColorType.Text
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: Text
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 470
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: Text = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldColorType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfFormFieldColorType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldColorType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFormFieldColorType.html
+  name: PdfFormFieldColorType
+  nameWithType: PdfFormFieldColorType
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldColorType

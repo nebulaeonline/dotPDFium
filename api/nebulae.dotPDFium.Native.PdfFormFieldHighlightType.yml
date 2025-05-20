@@ -1,0 +1,261 @@
+### YamlMime:ManagedReference
+items:
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  id: PdfFormFieldHighlightType
+  parent: nebulae.dotPDFium.Native
+  children:
+  - nebulae.dotPDFium.Native.PdfFormFieldHighlightType.All
+  - nebulae.dotPDFium.Native.PdfFormFieldHighlightType.CheckBox
+  - nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ComboBox
+  - nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ListBox
+  - nebulae.dotPDFium.Native.PdfFormFieldHighlightType.PushButton
+  - nebulae.dotPDFium.Native.PdfFormFieldHighlightType.RadioButton
+  - nebulae.dotPDFium.Native.PdfFormFieldHighlightType.TextField
+  langs:
+  - csharp
+  - vb
+  name: PdfFormFieldHighlightType
+  nameWithType: PdfFormFieldHighlightType
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  type: Enum
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PdfFormFieldHighlightType
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 450
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  summary: Specifies the types of form fields in a PDF document that can be highlighted.
+  remarks: >-
+    This enumeration is used to indicate the type of form field to which a specific operation or behavior
+        applies. For example, it can be used to determine which form fields should be visually highlighted in a PDF
+        viewer.
+  example: []
+  syntax:
+    content: public enum PdfFormFieldHighlightType
+    content.vb: Public Enum PdfFormFieldHighlightType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.All
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldHighlightType.All
+  id: All
+  parent: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: PdfFormFieldHighlightType.All
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.All
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: All
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 452
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: All = 0
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.TextField
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldHighlightType.TextField
+  id: TextField
+  parent: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  langs:
+  - csharp
+  - vb
+  name: TextField
+  nameWithType: PdfFormFieldHighlightType.TextField
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.TextField
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: TextField
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 453
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: TextField = 1
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.CheckBox
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldHighlightType.CheckBox
+  id: CheckBox
+  parent: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  langs:
+  - csharp
+  - vb
+  name: CheckBox
+  nameWithType: PdfFormFieldHighlightType.CheckBox
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.CheckBox
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: CheckBox
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 454
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: CheckBox = 2
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.RadioButton
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldHighlightType.RadioButton
+  id: RadioButton
+  parent: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  langs:
+  - csharp
+  - vb
+  name: RadioButton
+  nameWithType: PdfFormFieldHighlightType.RadioButton
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.RadioButton
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: RadioButton
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 455
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: RadioButton = 3
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.PushButton
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldHighlightType.PushButton
+  id: PushButton
+  parent: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  langs:
+  - csharp
+  - vb
+  name: PushButton
+  nameWithType: PdfFormFieldHighlightType.PushButton
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.PushButton
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: PushButton
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 456
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: PushButton = 4
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ComboBox
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ComboBox
+  id: ComboBox
+  parent: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  langs:
+  - csharp
+  - vb
+  name: ComboBox
+  nameWithType: PdfFormFieldHighlightType.ComboBox
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ComboBox
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ComboBox
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 457
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ComboBox = 5
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ListBox
+  commentId: F:nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ListBox
+  id: ListBox
+  parent: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  langs:
+  - csharp
+  - vb
+  name: ListBox
+  nameWithType: PdfFormFieldHighlightType.ListBox
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.ListBox
+  type: Field
+  source:
+    remote:
+      path: dotPDFium/Native/PdfEnums.cs
+      branch: main
+      repo: https://github.com/nebulaeonline/dotPDFium.git
+    id: ListBox
+    path: ../dotPDFium/dotPDFium/Native/PdfEnums.cs
+    startLine: 458
+  assemblies:
+  - dotPDFium
+  namespace: nebulae.dotPDFium.Native
+  syntax:
+    content: ListBox = 6
+    return:
+      type: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+references:
+- uid: nebulae.dotPDFium.Native
+  commentId: N:nebulae.dotPDFium.Native
+  href: nebulae.html
+  name: nebulae.dotPDFium.Native
+  nameWithType: nebulae.dotPDFium.Native
+  fullName: nebulae.dotPDFium.Native
+  spec.csharp:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+  spec.vb:
+  - uid: nebulae
+    name: nebulae
+    href: nebulae.html
+  - name: .
+  - uid: nebulae.dotPDFium
+    name: dotPDFium
+    href: nebulae.dotPDFium.html
+  - name: .
+  - uid: nebulae.dotPDFium.Native
+    name: Native
+    href: nebulae.dotPDFium.Native.html
+- uid: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  commentId: T:nebulae.dotPDFium.Native.PdfFormFieldHighlightType
+  parent: nebulae.dotPDFium.Native
+  href: nebulae.dotPDFium.Native.PdfFormFieldHighlightType.html
+  name: PdfFormFieldHighlightType
+  nameWithType: PdfFormFieldHighlightType
+  fullName: nebulae.dotPDFium.Native.PdfFormFieldHighlightType
