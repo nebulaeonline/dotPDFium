@@ -72,7 +72,7 @@ See: [FPDFAnnot_IsSupportedSubtype](https://pdfium.googlesource.com/pdfium/+/cff
     PDFiumEngine.Shutdown();
 ```
 
-#### Cross platform rendering & drawing (using SixLabors ImageSharp for cross-platform support)
+#### Cross platform rendering & drawing (using SixLabors' ImageSharp for cross-platform support)
 ```csharp
 
     PDFiumEngine.Init();
