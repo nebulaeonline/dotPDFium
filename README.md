@@ -31,6 +31,7 @@ We are at v0.2.5-prealpha, which is a *very* early pre-alpha version. The goal i
 - Structured trees and progressive loading are implemented
 - XFA support is not planned
 
+#### API Docs are available at [dotPDFium API Docs](https://nebulae.online/dotPDFium/)
 ---
 
 **Note:** This is a low-level interop library in early development. Expect sharp edges, breaking changes, and missing functionality.
