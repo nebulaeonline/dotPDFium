@@ -1,5 +1,7 @@
-﻿using System;
-using nebulae.dotPDFium.Native;
+﻿using nebulae.dotPDFium.Native;
+using System;
+using System.Runtime.InteropServices;
+using System.Text;
 
 namespace nebulae.dotPDFium.Forms;
 
@@ -46,12 +48,6 @@ public sealed class PdfForm : PdfObject
         // Set annotation flags (printable)
         PdfAnnotNative.FPDFAnnot_SetFlags(annot, (int)PdfAnnotationFlags.Print);
 
-        // Set /Ff (Form Field Flags) to indicate this is a PushButton
-        // PDF spec: Ff bit 17 = no toggle-to-off (ignored for push button), bit 16 = checkbox, bit 15 = radio
-        // For push button, all those should be unset
-        if (!PdfAnnotNative.FPDFAnnot_SetNumberValue(annot, "Ff", 0))
-            throw new dotPDFiumException($"Failed to clear field behavior flags: {PdfObject.GetPDFiumError()}");
-
         // Determine annotation index
         int index = PdfAnnotNative.FPDFPage_GetAnnotCount(page.Handle) - 1;
 
@@ -86,7 +82,6 @@ public sealed class PdfForm : PdfObject
 
         // Optional: set check box-specific flags (bit 16 = checkbox, bit 15 = radio)
         // We clear the radio bit, and ensure checkbox behavior
-        int rawFlags = 0; // just leave as-is unless you want to set required bits
         PdfAnnotNative.FPDFAnnot_SetFlags(annot, (int)PdfAnnotationFlags.Print);
 
         // Determine annotation index
@@ -123,11 +118,6 @@ public sealed class PdfForm : PdfObject
 
         // Mark as printable
         PdfAnnotNative.FPDFAnnot_SetFlags(annot, (int)PdfAnnotationFlags.Print);
-
-        // Set form field flags: /Ff bit 15 (radio button)
-        const int RadioButtonFlag = 1 << 15;
-        if (!PdfAnnotNative.FPDFAnnot_SetNumberValue(annot, "Ff", (float)RadioButtonFlag))
-            throw new dotPDFiumException($"Failed to set radio button flag: {PdfObject.GetPDFiumError()}");
 
         // Determine annotation index
         int index = PdfAnnotNative.FPDFPage_GetAnnotCount(page.Handle) - 1;
@@ -170,11 +160,6 @@ public sealed class PdfForm : PdfObject
 
             // Set as printable
             PdfAnnotNative.FPDFAnnot_SetFlags(annot, (int)PdfAnnotationFlags.Print);
-
-            // Set /Ff bit 15 = radio button
-            const int RadioButtonFlag = 1 << 15;
-            if (!PdfAnnotNative.FPDFAnnot_SetNumberValue(annot, "Ff", (float)RadioButtonFlag))
-                throw new dotPDFiumException($"Failed to set radio flag for button {i}: {PdfObject.GetPDFiumError()}");
 
             // Set export value
             if (!PdfAnnotNative.FPDFAnnot_SetStringValue(annot, "V", exportValues[i]))
@@ -258,6 +243,147 @@ public sealed class PdfForm : PdfObject
         }
 
         return elements;
+    }
+
+    /// <summary>
+    /// Retrieves a list of annotation subtypes that are considered focusable within this form context.
+    /// </summary>
+    /// <returns>A list of supported focusable annotation subtypes.</returns>
+    public List<PdfAnnotationSubtype> GetFocusableSubtypes()
+    {
+        int count = PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(this.Handle);
+        if (count <= 0)
+            return new List<PdfAnnotationSubtype>();
+
+        int size = sizeof(int) * count;
+        IntPtr buffer = Marshal.AllocHGlobal(size);
+
+        try
+        {
+            if (!PdfAnnotNative.FPDFAnnot_GetFocusableSubtypes(this.Handle, buffer, (UIntPtr)count))
+                throw new dotPDFiumException("Failed to retrieve focusable annotation subtypes.");
+
+            var result = new List<PdfAnnotationSubtype>(count);
+            for (int i = 0; i < count; i++)
+            {
+                int value = Marshal.ReadInt32(buffer, i * sizeof(int));
+                if (Enum.IsDefined(typeof(PdfAnnotationSubtype), value))
+                    result.Add((PdfAnnotationSubtype)value);
+            }
+
+            return result;
+        }
+        finally
+        {
+            Marshal.FreeHGlobal(buffer);
+        }
+    }
+
+
+    /// <summary>
+    /// Gets the number of annotation subtypes considered focusable by the current form environment.
+    /// </summary>
+    /// <returns>The number of focusable annotation subtypes.</returns>
+    public int GetFocusableSubtypeCount()
+    {
+        return PdfAnnotNative.FPDFAnnot_GetFocusableSubtypesCount(this.Handle);
+    }
+
+    /// <summary>
+    /// Retrieves the alternate name of a form field associated with the specified PDF annotation.
+    /// </summary>
+    /// <remarks>The alternate name of a form field is an optional, user-friendly name that may be used in
+    /// place of the field's technical name.</remarks>
+    /// <param name="annotation">The PDF annotation for which to retrieve the form field's alternate name. Cannot be <see langword="null"/>.</param>
+    /// <returns>The alternate name of the form field as a string, or <see langword="null"/> if the form field does not have an
+    /// alternate name.</returns>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="annotation"/> is <see langword="null"/>.</exception>
+    public string? GetFormFieldAlternateName(PdfAnnotation annotation)
+    {
+        if (annotation == null)
+            throw new ArgumentNullException(nameof(annotation));
+
+        uint len = PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(this.Handle, annotation.Handle, Array.Empty<char>(), 0);
+        if (len == 0)
+            return null;
+
+        var buffer = new char[len];
+        uint written = PdfAnnotNative.FPDFAnnot_GetFormFieldAlternateName(this.Handle, annotation.Handle, buffer, len);
+        if (written == 0)
+            return null;
+
+        return new string(buffer, 0, (int)(written - 1)); // remove null terminator
+    }
+
+    /// <summary>
+    /// Retrieves the form field name associated with the specified PDF annotation.
+    /// </summary>
+    /// <param name="annot">The <see cref="PdfAnnotation"/> object representing the annotation to retrieve the form field name for. Must not
+    /// be <see langword="null"/>.</param>
+    /// <returns>The name of the form field as a string, or <see langword="null"/> if the annotation is not a widget annotation
+    /// or if the form field name cannot be determined.</returns>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="annot"/> is <see langword="null"/>.</exception>
+    public string? GetFormFieldName(PdfAnnotation annot)
+    {
+        if (annot == null)
+            throw new ArgumentNullException(nameof(annot));
+
+        // Must be a widget annotation
+        if (annot.Subtype != PdfAnnotationSubtype.Widget)
+            return null;
+
+        uint len = PdfAnnotNative.FPDFAnnot_GetFormFieldName(_handle, annot.Handle, null!, 0);
+        if (len == 0)
+            return null;
+
+        var buffer = new char[len];
+        uint written = PdfAnnotNative.FPDFAnnot_GetFormFieldName(_handle, annot.Handle, buffer, len);
+        if (written == 0)
+            return null;
+
+        return new string(buffer, 0, (int)(written - 1)); // strip null terminator
+    }
+
+    public PdfAnnotation? GetFormFieldAtPoint(PdfPage page, float x, float y)
+    {
+        var point = new FsPointF(x, y);
+        var handle = PdfAnnotNative.FPDFAnnot_GetFormFieldAtPoint(this.Handle, page.Handle, ref point);
+        return handle != IntPtr.Zero ? new PdfAnnotation(handle, page) : null;
+    }
+
+    /// <summary>
+    /// Sets the focusable annotation subtypes for the current PDF annotation.
+    /// </summary>
+    /// <remarks>This method allocates unmanaged memory to pass the subtypes to the underlying PDF library. 
+    /// Ensure that the provided subtypes are valid and meaningful for the current context.</remarks>
+    /// <param name="subtypes">A collection of <see cref="PdfAnnotationSubtype"/> values representing the annotation subtypes  that should be
+    /// focusable. If the collection is null or empty, no subtypes will be set.</param>
+    /// <returns><see langword="true"/> if the focusable subtypes were successfully set; otherwise, <see langword="false"/>.</returns>
+    public bool SetFocusableSubtypes(IEnumerable<PdfAnnotationSubtype> subtypes)
+    {
+        var subtypeList = subtypes?.ToArray() ?? Array.Empty<PdfAnnotationSubtype>();
+        if (subtypeList.Length == 0)
+            return false;
+
+        int size = subtypeList.Length * sizeof(int);
+        IntPtr buffer = Marshal.AllocHGlobal(size);
+
+        try
+        {
+            for (int i = 0; i < subtypeList.Length; i++)
+            {
+                Marshal.WriteInt32(buffer, i * sizeof(int), (int)subtypeList[i]);
+            }
+
+            return PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes(
+                this.Handle,
+                buffer,
+                (UIntPtr)subtypeList.Length);
+        }
+        finally
+        {
+            Marshal.FreeHGlobal(buffer);
+        }
     }
 
     protected override void Dispose(bool disposing)

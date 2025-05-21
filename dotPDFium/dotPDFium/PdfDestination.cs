@@ -28,7 +28,7 @@ public sealed class PdfDestination
     /// <summary>
     /// Gets the zero-based index of the page associated with the destination.
     /// </summary>
-    public int PageIndex => PdfDocNative.FPDFDest_GetPageIndex(_doc.Handle, _handle);
+    public int PageIndex => PdfDocNative.FPDFDest_GetDestPageIndex(_doc.Handle, _handle);
 
     /// <summary>
     /// Retrieves the location of the destination within the page.

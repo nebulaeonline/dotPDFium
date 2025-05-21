@@ -15,13 +15,13 @@ public static class PdfDataAvailNative
     public static extern void FPDFAvail_Destroy(IntPtr avail);
 
     [DllImport(PdfiumLib)]
-    public static extern int FPDFAvail_IsDocAvail(IntPtr avail, ref FxDownloadHints hints);
-
-    [DllImport(PdfiumLib)]
     public static extern IntPtr FPDFAvail_GetDocument(IntPtr avail, [MarshalAs(UnmanagedType.LPStr)] string password);
 
     [DllImport(PdfiumLib)]
-    public static extern int FPDFAvail_IsPageAvail(IntPtr avail, int pageIndex, ref FxDownloadHints hints);
+    public static extern int FPDFAvail_GetFirstPageNum(IntPtr document);
+
+    [DllImport(PdfiumLib)]
+    public static extern int FPDFAvail_IsDocAvail(IntPtr avail, ref FxDownloadHints hints);
 
     [DllImport(PdfiumLib)]
     public static extern int FPDFAvail_IsFormAvail(IntPtr avail, ref FxDownloadHints hints);
@@ -30,6 +30,6 @@ public static class PdfDataAvailNative
     public static extern int FPDFAvail_IsLinearized(IntPtr avail);
 
     [DllImport(PdfiumLib)]
-    public static extern int FPDFAvail_GetFirstPageNum(IntPtr document);
+    public static extern int FPDFAvail_IsPageAvail(IntPtr avail, int pageIndex, ref FxDownloadHints hints);
 }
 

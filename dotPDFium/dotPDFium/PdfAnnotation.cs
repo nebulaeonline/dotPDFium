@@ -1,6 +1,7 @@
 ﻿using nebulae.dotPDFium;
 using nebulae.dotPDFium.Native;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace nebulae.dotPDFium;
 
@@ -124,6 +125,17 @@ public class PdfAnnotation : PdfObject
     }
 
     /// <summary>
+    /// Appends an attachment point (quad) to the annotation.
+    /// This is typically used for annotations like highlights, underlines, or squiggly lines.
+    /// </summary>
+    /// <param name="quad">The quadrilateral to attach to the annotation.</param>
+    /// <returns><c>true</c> if the quad was successfully appended; otherwise, <c>false</c>.</returns>
+    public bool AppendAttachmentPoints(FsQuadPointsF quad)
+    {
+        return PdfAnnotNative.FPDFAnnot_AppendAttachmentPoints(this.Handle, ref quad);
+    }
+
+    /// <summary>
     /// Retrieves the attachment point at the specified index.
     /// </summary>
     /// <param name="index">The zero-based index of the attachment point to retrieve. Must be greater than or equal to 0.</param>
@@ -241,6 +253,20 @@ public class PdfAnnotation : PdfObject
     }
 
     /// <summary>
+    /// If this annotation is a link, retrieves the associated link object handle.
+    /// </summary>
+    /// <returns>The link handle if available, or <see cref="IntPtr.Zero"/> if not a link.</returns>
+    public PdfLink? GetLink(PdfDocument context)
+    {
+        if (Subtype != PdfAnnotationSubtype.Link)
+            return null;
+
+        var handle = PdfAnnotNative.FPDFAnnot_GetLink(this.Handle);
+        return handle == IntPtr.Zero ? null : new PdfLink(handle, context);
+    }
+
+
+    /// <summary>
     /// Retrieves the annotation linked to the specified key.
     /// </summary>
     /// <remarks>This method returns a nullable <see cref="IntPtr"/> to represent the linked annotation.  If
@@ -251,6 +277,54 @@ public class PdfAnnotation : PdfObject
     {
         IntPtr linked = PdfAnnotNative.FPDFAnnot_GetLinkedAnnot(_handle, key);
         return linked != IntPtr.Zero ? linked : null;
+    }
+
+    /// <summary>
+    /// Retrieves the numeric value for a given dictionary key on the annotation.
+    /// </summary>
+    /// <param name="key">The dictionary key (e.g. "F", "CA", etc.).</param>
+    /// <returns>The float value if the key is present, or <c>null</c> if not found or not numeric.</returns>
+    public float? GetNumberValue(string key)
+    {
+        if (string.IsNullOrWhiteSpace(key))
+            throw new ArgumentNullException(nameof(key));
+
+        if (PdfAnnotNative.FPDFAnnot_GetNumberValue(Handle, key, out float value))
+            return value;
+
+        return null;
+    }
+
+    /// <summary>
+    /// Retrieves the string value associated with the specified key from the annotation.
+    /// </summary>
+    /// <remarks>The returned string is decoded from a null-terminated UTF-8 byte array. If the key is not
+    /// found or the retrieval fails, the method returns <see langword="null"/>.</remarks>
+    /// <param name="key">The key identifying the string value to retrieve. This parameter cannot be <see langword="null"/> or whitespace.</param>
+    /// <returns>The string value associated with the specified key, or <see langword="null"/> if the key does not exist or the
+    /// value cannot be retrieved.</returns>
+    /// <exception cref="ArgumentNullException">Thrown if <paramref name="key"/> is <see langword="null"/> or consists only of whitespace.</exception>
+    public string? GetStringValue(string key)
+    {
+        if (string.IsNullOrWhiteSpace(key))
+            throw new ArgumentNullException(nameof(key));
+
+        // First call to get size
+        uint size = 0;
+        var dummy = new byte[0];
+        PdfAnnotNative.FPDFAnnot_GetStringValue(this.Handle, key, dummy, 0);
+
+        size = 256; // fallback default buffer size
+        var buffer = new byte[size];
+
+        if (!PdfAnnotNative.FPDFAnnot_GetStringValue(this.Handle, key, buffer, size))
+            return null;
+
+        // PDFium returns null-terminated UTF-8 string
+        int actualLength = Array.IndexOf(buffer, (byte)0);
+        if (actualLength < 0) actualLength = buffer.Length;
+
+        return Encoding.UTF8.GetString(buffer, 0, actualLength);
     }
 
     /// <summary>

@@ -160,6 +160,26 @@ public class PdfImageObject : PdfPageObject
     }
 
     /// <summary>
+    /// Loads a JPEG image into the current PDF image object inline.
+    /// </summary>
+    /// <remarks>This method attempts to load a JPEG image directly into the PDF image object. If a page is
+    /// provided,  the image is associated with that page. If no page is provided, the image is loaded without a
+    /// specific  page association. Ensure that the <paramref name="fileAccess"/> parameter is properly configured to 
+    /// provide access to the JPEG file.</remarks>
+    /// <param name="page">The <see cref="PdfPage"/> to associate with the image, or <see langword="null"/> if no specific page is
+    /// associated.</param>
+    /// <param name="fileAccess">The <see cref="FPDF_FILEACCESS"/> structure providing access to the JPEG file.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the JPEG image could not be loaded into the image object inline.</exception>
+    public void LoadJpegInline(PdfPage? page, PdfFileAccess fileAccess)
+    {
+        IntPtr[]? pages = page != null ? new[] { page.Handle } : null;
+        int count = pages?.Length ?? 0;
+
+        if (!PdfEditNative.FPDFImageObj_LoadJpegFileInline(pages, count, this.Handle, ref fileAccess))
+            throw new dotPDFiumException("Failed to load JPEG into image object inline.");
+    }
+
+    /// <summary>
     /// Sets the specified bitmap as the content of this image object.
     /// </summary>
     /// <remarks>If a page is provided, the bitmap will be associated with that page. If no page is specified,
@@ -171,8 +191,24 @@ public class PdfImageObject : PdfPageObject
     public void SetBitmap(PdfBitmap bitmap, PdfPage? page = null)
     {
         IntPtr[]? pages = page != null ? new[] { page.Handle } : null;
+        
         if (!PdfEditNative.FPDFImageObj_SetBitmap(pages, pages?.Length ?? 0, this.Handle, bitmap.Handle))
             throw new dotPDFiumException($"Failed to set bitmap: {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
+    /// Sets the blend mode for this page object. Valid values are "Normal" (default), "Multiply", "Screen",
+    /// "Overlay", "Darken", "Lighten", "ColorDodge", "ColorBurn", "HardLight", "SoftLight",
+    /// "Difference" and "Exclusion".
+    /// </summary>
+    /// <param name="blendMode">The PDF blend mode name as a string.</param>
+    /// <exception cref="ArgumentNullException">Thrown if blendMode is null or empty.</exception>
+    public void SetBlendMode(string blendMode)
+    {
+        if (string.IsNullOrWhiteSpace(blendMode))
+            throw new ArgumentNullException(nameof(blendMode));
+
+        PdfEditNative.FPDFPageObj_SetBlendMode(this.Handle, blendMode);
     }
 
     /// <summary>

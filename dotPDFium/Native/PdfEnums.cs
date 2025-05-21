@@ -20,6 +20,7 @@ public enum PdfPageObjectType
     Shading,
     Form,
     Mark = 1000,
+    Link,
 }
 
 /// <summary>
@@ -768,6 +769,21 @@ public enum PdfPathDrawMode
     Fill = 1,
     Stroke = 2,
     FillStroke = Fill | Stroke
+}
+
+/// <summary>
+/// Specifies the type of a segment in a PDF path.
+/// </summary>
+/// <remarks>This enumeration is used to identify the type of path segment in a PDF graphics context. Each value
+/// represents a specific drawing operation, such as moving to a point, drawing a line, or creating a Bézier
+/// curve.</remarks>
+public enum PdfPathSegmentType
+{
+    Unknown = -1,
+    MoveTo = 0,
+    LineTo = 1,
+    BezierTo = 2,
+    Close = 3
 }
 
 /// <summary>

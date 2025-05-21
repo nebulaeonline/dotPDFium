@@ -72,6 +72,19 @@ public class PdfPageObject : PdfObject
     }
 
     /// <summary>
+    /// Gets the marked content ID (MCID) associated with this page object.
+    /// </summary>
+    /// <remarks>
+    /// The MCID is used in tagged/structured PDFs to associate content with logical structure.
+    /// Returns -1 if no MCID is present.
+    /// </remarks>
+    /// <returns>The marked content ID, or -1 if none is associated.</returns>
+    public int GetMarkedContentId()
+    {
+        return PdfEditNative.FPDFPageObj_GetMarkedContentID(this.Handle);
+    }
+
+    /// <summary>
     /// Transforms a page object using a specified transformation matrix. The transformation matrix is defined by the
     /// six parameters: a, b, c, d, e, and f. This method modifies the object's position and size on the page.
     /// </summary>

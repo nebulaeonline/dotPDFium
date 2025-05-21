@@ -11,6 +11,58 @@ public class PdfPathObject : PdfPageObject
     }
 
     /// <summary>
+    /// Appends a cubic Bézier curve to the current path.
+    /// </summary>
+    /// <param name="x1">X-coordinate of the first control point.</param>
+    /// <param name="y1">Y-coordinate of the first control point.</param>
+    /// <param name="x2">X-coordinate of the second control point.</param>
+    /// <param name="y2">Y-coordinate of the second control point.</param>
+    /// <param name="x3">X-coordinate of the end point.</param>
+    /// <param name="y3">Y-coordinate of the end point.</param>
+    /// <exception cref="dotPDFiumException">Thrown if the curve could not be added.</exception>
+    public void BezierTo(float x1, float y1, float x2, float y2, float x3, float y3)
+    {
+        if (!PdfEditNative.FPDFPath_BezierTo(_handle, x1, y1, x2, y2, x3, y3))
+            throw new dotPDFiumException($"Failed to add Bézier curve to path: {PdfObject.GetPDFiumError()}");
+    }
+
+    /// <summary>
+    /// Returns the number of segments in this path object.
+    /// </summary>
+    public int GetSegmentCount()
+    {
+        int count = PdfEditNative.FPDFPath_CountSegments(_handle);
+        return count < 0 ? 0 : count;
+    }
+
+    /// <summary>
+    /// Returns true if this segment closes the current subpath.
+    /// </summary>
+    public bool IsCloseSegment()
+    {
+        return PdfEditNative.FPDFPathSegment_GetClose(this.Handle);
+    }
+
+    /// <summary>
+    /// Gets the (x, y) coordinates of this path segment.
+    /// </summary>
+    public (double X, double Y) GetPoint()
+    {
+        if (!PdfEditNative.FPDFPathSegment_GetPoint(Handle, out double x, out double y))
+            throw new dotPDFiumException("Failed to retrieve path segment coordinates.");
+
+        return (x, y);
+    }
+
+    /// <summary>
+    /// Gets the type of this path segment.
+    /// </summary>
+    public PdfPathSegmentType GetSegmentType()
+    {
+        return (PdfPathSegmentType)PdfEditNative.FPDFPathSegment_GetType(Handle);
+    }
+
+    /// <summary>
     /// Moves the current path to the specified coordinates.
     /// </summary>
     /// <param name="x">The x-coordinate of the new position.</param>

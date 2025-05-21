@@ -54,10 +54,7 @@ namespace nebulae.dotPDFium
 
         private static IEnumerable<string> EnumerateWindowsFonts()
         {
-            if (!OperatingSystem.IsWindows())
-                return Enumerable.Empty<string>();
-
-            if (!OperatingSystem.IsWindowsVersionAtLeast(6, 1))
+            if (!OperatingSystem.IsWindows() || !OperatingSystem.IsWindowsVersionAtLeast(6, 1))
                 return Enumerable.Empty<string>();
 
             var collection = new InstalledFontCollection();
