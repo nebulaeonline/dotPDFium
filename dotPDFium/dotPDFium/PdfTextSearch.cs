@@ -9,14 +9,14 @@ namespace nebulae.dotPDFium;
 public class PdfTextSearch : IDisposable
 {
     private IntPtr _searchHandle;
-    private readonly PdfText _parentText;
+    private readonly PdfPageText _parentText;
 
     /// <summary>
     /// Constructor for PdfTextSearch. This constructor is internal and should not be used directly.
     /// </summary>
     /// <param name="handle"></param>
     /// <param name="parent"></param>
-    internal PdfTextSearch(IntPtr handle, PdfText parent)
+    internal PdfTextSearch(IntPtr handle, PdfPageText parent)
     {
         _searchHandle = handle;
         _parentText = parent;

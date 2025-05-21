@@ -8,7 +8,7 @@ namespace nebulae.dotPDFium
     public class PdfPage : PdfObject
     {
         private readonly PdfDocument _parentDoc;
-        private PdfText? _text = null;
+        private PdfPageText? _text = null;
 
         /// <summary>
         /// PdfPage constructor. This constructor is internal and should not be used directly.
@@ -86,7 +86,7 @@ namespace nebulae.dotPDFium
         /// <returns></returns>
         /// <exception cref="ObjectDisposedException">Throws if the page has been disposed</exception>
         /// <exception cref="dotPDFiumException">Throws on PDFium library error</exception>
-        public PdfText GetOrLoadText()
+        public PdfPageText GetOrLoadText()
         {
             if (_handle == IntPtr.Zero)
                 throw new ObjectDisposedException(nameof(PdfPage));
@@ -98,7 +98,7 @@ namespace nebulae.dotPDFium
                 if (textHandle == IntPtr.Zero)
                     throw new dotPDFiumException($"Failed to load text page: {PdfObject.GetPDFiumError()}");
 
-                var text = new PdfText(textHandle, this);
+                var text = new PdfPageText(textHandle, this);
                 _text = text;
             }
             
@@ -110,7 +110,7 @@ namespace nebulae.dotPDFium
         /// </summary>
         /// <param name="pdfText">Out parameter for receiving the PdfText object</param>
         /// <returns>true on success, false on failure</returns>
-        public bool TryGetOrLoadText(out PdfText? pdfText)
+        public bool TryGetOrLoadText(out PdfPageText? pdfText)
         {
             pdfText = null;
 
@@ -124,7 +124,7 @@ namespace nebulae.dotPDFium
                 if (textHandle == IntPtr.Zero)
                     return false;
 
-                var text = new PdfText(textHandle, this);
+                var text = new PdfPageText(textHandle, this);
                 _text = text;
                 pdfText = _text;
                 return true;

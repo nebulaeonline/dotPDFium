@@ -8,16 +8,28 @@ We're not yet feature-complete, stable, or ready for production use. This reposi
 
 The library contains the latest PDFium binaries (v138.0.7175.0) from chromium/7175, built by bblanchon (https://github.com/bblanchon/pdfium-binaries/releases) for Windows x64 & ARM64, Linux x64 & ARM64, and MacOS (as a universal dylib supporting x64 & ARM64).
 
-We are at v0.3.1-prealpha, which is a *very* early pre-alpha version. The goal is to hit v1.0 within 3 months or so, maybe sooner.
+We are at v0.4.0-prealpha, which is a *very* early pre-alpha version. The goal is to hit v1.0 within 3 months or so, maybe sooner. Prior to a v1.0 release, our minor version will serve to indicate the SemVer of the library, and the 3rd digit will indicate the build.
+
+Feature requests, bug reports, and PRs are welcome. Please open an issue or PR if you have suggestions or want to help out.
+
+As always, we can be reached at nebulae at nebulae dot online.
 
 ### Goals (eventually)
 
-- Managed lifecycle and memory safety for native PDFium handles
-- Optional exceptions or `TryX()` patterns for common workflows
-- Modular text extraction and page rendering APIs
-- MIT-licensed wrapper code with proper attribution of PDFium (Apache 2.0)
+- Managed lifecycle and memory safety for native PDFium handles (most done)
+- Optional exceptions or `TryX()` patterns for common workflows (WIP)
+- Modular text extraction and page rendering APIs (mostly feature complete)
+- MIT-licensed wrapper code with proper attribution to the PDFium project (Apache 2.0)
 
-### Status
+### Recent Updates
+
+2025-05-21 
+
+- Renamed the `PdfText` class to `PdfPageText` to avoid confusion with the `PdfTextObject` class.
+- Added the nebulae.dotPDFium.Drawing namespace for drawing; currently supports `DrawLine()` and `DrawRect()` methods.
+- Added a fluent API for path drawing to the new Drawing namespace.
+
+### Current Status
 
 - Basic document and page loading implemented
 - Page handling and rendering implemented
@@ -29,6 +41,7 @@ We are at v0.3.1-prealpha, which is a *very* early pre-alpha version. The goal i
 - Very few formal tests
 - No documentation or examples yet
 - Structured trees and progressive loading are implemented
+- Basic Drawing API is implemented
 - XFA support is not planned
 - Javascript support is not planned
 
@@ -36,7 +49,7 @@ We are at v0.3.1-prealpha, which is a *very* early pre-alpha version. The goal i
 
 #### Getting Started can be found [here](https://nebulae.online/dotPDFium/docs/getting-started.html)
 
-#### Can I Create New Form Fields?
+#### \*Can I Create New Form Fields?
 
 No — the underlying PDFium library does not support creating new `/Widget` annotations, which are required for checkboxes, text inputs, radio buttons, etc.
 

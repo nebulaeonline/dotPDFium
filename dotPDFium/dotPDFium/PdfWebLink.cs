@@ -14,23 +14,23 @@ namespace nebulae.dotPDFium;
 /// </summary>
 /// <remarks>This class allows users to retrieve information about a web link in a PDF, such as its text range,
 /// URL, and the rectangular regions that define its clickable area. Instances of this class are typically obtained
-/// through a parent <see cref="PdfText"/> object.</remarks>
+/// through a parent <see cref="PdfPageText"/> object.</remarks>
 public sealed class PdfWebLink
 {
     private readonly IntPtr _handle;
     private readonly int _index;
-    private readonly PdfText _parent;
+    private readonly PdfPageText _parent;
 
     /// <summary>
     /// Represents a hyperlink within a PDF document, associated with a specific text element.
     /// </summary>
     /// <remarks>This class is used internally to manage hyperlinks in PDF documents. It is associated with a
-    /// parent <see cref="PdfText"/> object and provides access to the underlying native handle and index of the
+    /// parent <see cref="PdfPageText"/> object and provides access to the underlying native handle and index of the
     /// link.</remarks>
     /// <param name="parent"></param>
     /// <param name="handle"></param>
     /// <param name="index"></param>
-    internal PdfWebLink(PdfText parent, IntPtr handle, int index)
+    internal PdfWebLink(PdfPageText parent, IntPtr handle, int index)
     {
         _parent = parent;
         _handle = handle;

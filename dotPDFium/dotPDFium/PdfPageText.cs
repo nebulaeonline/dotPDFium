@@ -4,7 +4,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace nebulae.dotPDFium;
 
-public class PdfText : PdfObject
+public class PdfPageText : PdfObject
 {
     private readonly PdfPage _parentPage;
     private int _charCount = 0;
@@ -16,7 +16,7 @@ public class PdfText : PdfObject
     /// <param name="textHandle">The PDFium text pointer</param>
     /// <param name="parentPage">The parent PdfPage</param>
     /// <exception cref="ArgumentException">Throws if the textHandle is null or if the parentPage is null</exception>
-    internal PdfText(IntPtr textHandle, PdfPage parentPage) : base(textHandle, PdfObjectType.TextPage)
+    internal PdfPageText(IntPtr textHandle, PdfPage parentPage) : base(textHandle, PdfObjectType.TextPage)
     {
         if (textHandle == IntPtr.Zero || parentPage == null)
             throw new ArgumentException("Invalid text handle or parent page:", nameof(textHandle));
@@ -30,7 +30,7 @@ public class PdfText : PdfObject
     /// </summary>
     public int CountChars => _handle != IntPtr.Zero
         ? _charCount
-        : throw new ObjectDisposedException(nameof(PdfText));
+        : throw new ObjectDisposedException(nameof(PdfPageText));
 
     /// <summary>
     /// Gets the character at the specified index in the associated PDF text.
@@ -42,7 +42,7 @@ public class PdfText : PdfObject
     public uint GetChar(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
         
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -80,7 +80,7 @@ public class PdfText : PdfObject
     public bool GetCharBox(int index, out double left, out double right, out double bottom, out double top)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
         
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index));
@@ -124,7 +124,7 @@ public class PdfText : PdfObject
     public int GetCharIndexAtPos(double x, double y, double xTolerance = 2.0, double yTolerance = 2.0)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         return PdfTextNative.FPDFText_GetCharIndexAtPos(_handle, x, y, xTolerance, yTolerance);
     }
@@ -171,7 +171,7 @@ public class PdfText : PdfObject
     public RgbaColor? GetFillColor(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
         
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -193,13 +193,13 @@ public class PdfText : PdfObject
     /// available characters.</param>
     /// <returns>A <see cref="PdfFontInfo"/> object containing the font name and style flags for the specified character,  or
     /// <see langword="null"/> if the font information cannot be retrieved. Flags can be checked using the PdfFontFlags enum and .HasFlag().</returns>
-    /// <exception cref="ObjectDisposedException">Thrown if the <see cref="PdfText"/> object has been disposed.</exception>
+    /// <exception cref="ObjectDisposedException">Thrown if the <see cref="PdfPageText"/> object has been disposed.</exception>
     /// <exception cref="ArgumentOutOfRangeException">Thrown if <paramref name="index"/> is less than 0 or greater than or equal 
     /// to the total number of characters.</exception>
     public PdfFontInfo? GetFontInfo(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -232,7 +232,7 @@ public class PdfText : PdfObject
     public double GetFontSize(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -254,7 +254,7 @@ public class PdfText : PdfObject
     public int GetFontWeight(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -276,7 +276,7 @@ public class PdfText : PdfObject
     public FsRectF? GetLooseCharBox(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -300,7 +300,7 @@ public class PdfText : PdfObject
     public FsMatrix? GetMatrix(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -321,7 +321,7 @@ public class PdfText : PdfObject
     public RgbaColor? GetStrokeColor(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -338,12 +338,12 @@ public class PdfText : PdfObject
     /// <param name="index">The zero-based index of the text object to retrieve. Must be within the range of available text objects.</param>
     /// <returns>A <see cref="PdfTextObject"/> representing the text object at the specified index,  or <see langword="null"/> if
     /// no text object exists at the specified index.</returns>
-    /// <exception cref="ObjectDisposedException">Thrown if the current <see cref="PdfText"/> instance has been disposed.</exception>
+    /// <exception cref="ObjectDisposedException">Thrown if the current <see cref="PdfPageText"/> instance has been disposed.</exception>
     /// <exception cref="ArgumentOutOfRangeException">Thrown if <paramref name="index"/> is less than 0 or greater than or equal to the total number of text objects.</exception>
     public PdfTextObject? GetTextObject(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
@@ -366,7 +366,7 @@ public class PdfText : PdfObject
     public string GetTextRange(int index, int count)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount || count < 0 || (index + count) > _charCount)
             throw new ArgumentOutOfRangeException();
@@ -431,7 +431,7 @@ public class PdfText : PdfObject
     public bool GetCharOrigin(int index, out double x, out double y)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index));
@@ -467,7 +467,7 @@ public class PdfText : PdfObject
     public int CountRects(int startIndex, int count)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         return PdfTextNative.FPDFText_CountRects(_handle, startIndex, count);
     }
@@ -557,7 +557,7 @@ public class PdfText : PdfObject
     public bool HasUnicodeMapError(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index));
@@ -577,7 +577,7 @@ public class PdfText : PdfObject
     public bool IsGenerated(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index));
@@ -596,7 +596,7 @@ public class PdfText : PdfObject
     public bool IsHyphen(int index)
     {
         if (_handle == IntPtr.Zero)
-            throw new ObjectDisposedException(nameof(PdfText));
+            throw new ObjectDisposedException(nameof(PdfPageText));
 
         if (index < 0 || index >= _charCount)
             throw new ArgumentOutOfRangeException(nameof(index));
