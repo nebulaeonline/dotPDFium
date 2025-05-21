@@ -7,6 +7,240 @@ references:
   commentId: N:nebulae.dotPDFium
   fullName: nebulae.dotPDFium
   nameWithType: nebulae.dotPDFium
+- uid: nebulae.dotPDFium.Drawing
+  name: nebulae.dotPDFium.Drawing
+  href: api/nebulae.dotPDFium.Drawing.html
+  commentId: N:nebulae.dotPDFium.Drawing
+  fullName: nebulae.dotPDFium.Drawing
+  nameWithType: nebulae.dotPDFium.Drawing
+- uid: nebulae.dotPDFium.Drawing.Drawing
+  name: Drawing
+  href: api/nebulae.dotPDFium.Drawing.Drawing.html
+  commentId: T:nebulae.dotPDFium.Drawing.Drawing
+  fullName: nebulae.dotPDFium.Drawing.Drawing
+  nameWithType: Drawing
+- uid: nebulae.dotPDFium.Drawing.Drawing.DrawLine(nebulae.dotPDFium.PdfPathObject,nebulae.dotPDFium.Drawing.DrawingOptions,nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF)
+  name: DrawLine(PdfPathObject, DrawingOptions, FsPointF, FsPointF)
+  href: api/nebulae.dotPDFium.Drawing.Drawing.html#nebulae_dotPDFium_Drawing_Drawing_DrawLine_nebulae_dotPDFium_PdfPathObject_nebulae_dotPDFium_Drawing_DrawingOptions_nebulae_dotPDFium_Native_FsPointF_nebulae_dotPDFium_Native_FsPointF_
+  commentId: M:nebulae.dotPDFium.Drawing.Drawing.DrawLine(nebulae.dotPDFium.PdfPathObject,nebulae.dotPDFium.Drawing.DrawingOptions,nebulae.dotPDFium.Native.FsPointF,nebulae.dotPDFium.Native.FsPointF)
+  fullName: nebulae.dotPDFium.Drawing.Drawing.DrawLine(nebulae.dotPDFium.PdfPathObject, nebulae.dotPDFium.Drawing.DrawingOptions, nebulae.dotPDFium.Native.FsPointF, nebulae.dotPDFium.Native.FsPointF)
+  nameWithType: Drawing.DrawLine(PdfPathObject, DrawingOptions, FsPointF, FsPointF)
+- uid: nebulae.dotPDFium.Drawing.Drawing.DrawLine*
+  name: DrawLine
+  href: api/nebulae.dotPDFium.Drawing.Drawing.html#nebulae_dotPDFium_Drawing_Drawing_DrawLine_
+  commentId: Overload:nebulae.dotPDFium.Drawing.Drawing.DrawLine
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.Drawing.DrawLine
+  nameWithType: Drawing.DrawLine
+- uid: nebulae.dotPDFium.Drawing.Drawing.DrawRect(nebulae.dotPDFium.PdfPathObject,nebulae.dotPDFium.Drawing.DrawingOptions,nebulae.dotPDFium.Native.FsRectF)
+  name: DrawRect(PdfPathObject, DrawingOptions, FsRectF)
+  href: api/nebulae.dotPDFium.Drawing.Drawing.html#nebulae_dotPDFium_Drawing_Drawing_DrawRect_nebulae_dotPDFium_PdfPathObject_nebulae_dotPDFium_Drawing_DrawingOptions_nebulae_dotPDFium_Native_FsRectF_
+  commentId: M:nebulae.dotPDFium.Drawing.Drawing.DrawRect(nebulae.dotPDFium.PdfPathObject,nebulae.dotPDFium.Drawing.DrawingOptions,nebulae.dotPDFium.Native.FsRectF)
+  fullName: nebulae.dotPDFium.Drawing.Drawing.DrawRect(nebulae.dotPDFium.PdfPathObject, nebulae.dotPDFium.Drawing.DrawingOptions, nebulae.dotPDFium.Native.FsRectF)
+  nameWithType: Drawing.DrawRect(PdfPathObject, DrawingOptions, FsRectF)
+- uid: nebulae.dotPDFium.Drawing.Drawing.DrawRect*
+  name: DrawRect
+  href: api/nebulae.dotPDFium.Drawing.Drawing.html#nebulae_dotPDFium_Drawing_Drawing_DrawRect_
+  commentId: Overload:nebulae.dotPDFium.Drawing.Drawing.DrawRect
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.Drawing.DrawRect
+  nameWithType: Drawing.DrawRect
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions
+  name: DrawingOptions
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html
+  commentId: T:nebulae.dotPDFium.Drawing.DrawingOptions
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions
+  nameWithType: DrawingOptions
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.ClosePath
+  name: ClosePath
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_ClosePath
+  commentId: P:nebulae.dotPDFium.Drawing.DrawingOptions.ClosePath
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.ClosePath
+  nameWithType: DrawingOptions.ClosePath
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.ClosePath*
+  name: ClosePath
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_ClosePath_
+  commentId: Overload:nebulae.dotPDFium.Drawing.DrawingOptions.ClosePath
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.ClosePath
+  nameWithType: DrawingOptions.ClosePath
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.Default
+  name: Default
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_Default
+  commentId: P:nebulae.dotPDFium.Drawing.DrawingOptions.Default
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.Default
+  nameWithType: DrawingOptions.Default
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.Default*
+  name: Default
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_Default_
+  commentId: Overload:nebulae.dotPDFium.Drawing.DrawingOptions.Default
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.Default
+  nameWithType: DrawingOptions.Default
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.FillColor
+  name: FillColor
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_FillColor
+  commentId: P:nebulae.dotPDFium.Drawing.DrawingOptions.FillColor
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.FillColor
+  nameWithType: DrawingOptions.FillColor
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.FillColor*
+  name: FillColor
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_FillColor_
+  commentId: Overload:nebulae.dotPDFium.Drawing.DrawingOptions.FillColor
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.FillColor
+  nameWithType: DrawingOptions.FillColor
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.LineCap
+  name: LineCap
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_LineCap
+  commentId: P:nebulae.dotPDFium.Drawing.DrawingOptions.LineCap
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.LineCap
+  nameWithType: DrawingOptions.LineCap
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.LineCap*
+  name: LineCap
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_LineCap_
+  commentId: Overload:nebulae.dotPDFium.Drawing.DrawingOptions.LineCap
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.LineCap
+  nameWithType: DrawingOptions.LineCap
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.LineJoin
+  name: LineJoin
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_LineJoin
+  commentId: P:nebulae.dotPDFium.Drawing.DrawingOptions.LineJoin
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.LineJoin
+  nameWithType: DrawingOptions.LineJoin
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.LineJoin*
+  name: LineJoin
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_LineJoin_
+  commentId: Overload:nebulae.dotPDFium.Drawing.DrawingOptions.LineJoin
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.LineJoin
+  nameWithType: DrawingOptions.LineJoin
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeColor
+  name: StrokeColor
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_StrokeColor
+  commentId: P:nebulae.dotPDFium.Drawing.DrawingOptions.StrokeColor
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeColor
+  nameWithType: DrawingOptions.StrokeColor
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeColor*
+  name: StrokeColor
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_StrokeColor_
+  commentId: Overload:nebulae.dotPDFium.Drawing.DrawingOptions.StrokeColor
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeColor
+  nameWithType: DrawingOptions.StrokeColor
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeWidth
+  name: StrokeWidth
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_StrokeWidth
+  commentId: P:nebulae.dotPDFium.Drawing.DrawingOptions.StrokeWidth
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeWidth
+  nameWithType: DrawingOptions.StrokeWidth
+- uid: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeWidth*
+  name: StrokeWidth
+  href: api/nebulae.dotPDFium.Drawing.DrawingOptions.html#nebulae_dotPDFium_Drawing_DrawingOptions_StrokeWidth_
+  commentId: Overload:nebulae.dotPDFium.Drawing.DrawingOptions.StrokeWidth
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.DrawingOptions.StrokeWidth
+  nameWithType: DrawingOptions.StrokeWidth
+- uid: nebulae.dotPDFium.Drawing.PathBuilder
+  name: PathBuilder
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html
+  commentId: T:nebulae.dotPDFium.Drawing.PathBuilder
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder
+  nameWithType: PathBuilder
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.#ctor(System.Nullable{nebulae.dotPDFium.Drawing.DrawingOptions})
+  name: PathBuilder(DrawingOptions?)
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder__ctor_System_Nullable_nebulae_dotPDFium_Drawing_DrawingOptions__
+  commentId: M:nebulae.dotPDFium.Drawing.PathBuilder.#ctor(System.Nullable{nebulae.dotPDFium.Drawing.DrawingOptions})
+  name.vb: New(DrawingOptions?)
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.PathBuilder(nebulae.dotPDFium.Drawing.DrawingOptions?)
+  fullName.vb: nebulae.dotPDFium.Drawing.PathBuilder.New(nebulae.dotPDFium.Drawing.DrawingOptions?)
+  nameWithType: PathBuilder.PathBuilder(DrawingOptions?)
+  nameWithType.vb: PathBuilder.New(DrawingOptions?)
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.#ctor*
+  name: PathBuilder
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder__ctor_
+  commentId: Overload:nebulae.dotPDFium.Drawing.PathBuilder.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.PathBuilder
+  fullName.vb: nebulae.dotPDFium.Drawing.PathBuilder.New
+  nameWithType: PathBuilder.PathBuilder
+  nameWithType.vb: PathBuilder.New
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.BezierTo(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: BezierTo(float, float, float, float, float, float)
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_BezierTo_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:nebulae.dotPDFium.Drawing.PathBuilder.BezierTo(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name.vb: BezierTo(Single, Single, Single, Single, Single, Single)
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.BezierTo(float, float, float, float, float, float)
+  fullName.vb: nebulae.dotPDFium.Drawing.PathBuilder.BezierTo(Single, Single, Single, Single, Single, Single)
+  nameWithType: PathBuilder.BezierTo(float, float, float, float, float, float)
+  nameWithType.vb: PathBuilder.BezierTo(Single, Single, Single, Single, Single, Single)
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.BezierTo*
+  name: BezierTo
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_BezierTo_
+  commentId: Overload:nebulae.dotPDFium.Drawing.PathBuilder.BezierTo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.BezierTo
+  nameWithType: PathBuilder.BezierTo
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.Build
+  name: Build()
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_Build
+  commentId: M:nebulae.dotPDFium.Drawing.PathBuilder.Build
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.Build()
+  nameWithType: PathBuilder.Build()
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.Build*
+  name: Build
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_Build_
+  commentId: Overload:nebulae.dotPDFium.Drawing.PathBuilder.Build
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.Build
+  nameWithType: PathBuilder.Build
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.Close
+  name: Close()
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_Close
+  commentId: M:nebulae.dotPDFium.Drawing.PathBuilder.Close
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.Close()
+  nameWithType: PathBuilder.Close()
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.Close*
+  name: Close
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_Close_
+  commentId: Overload:nebulae.dotPDFium.Drawing.PathBuilder.Close
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.Close
+  nameWithType: PathBuilder.Close
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.LineTo(System.Single,System.Single)
+  name: LineTo(float, float)
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_LineTo_System_Single_System_Single_
+  commentId: M:nebulae.dotPDFium.Drawing.PathBuilder.LineTo(System.Single,System.Single)
+  name.vb: LineTo(Single, Single)
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.LineTo(float, float)
+  fullName.vb: nebulae.dotPDFium.Drawing.PathBuilder.LineTo(Single, Single)
+  nameWithType: PathBuilder.LineTo(float, float)
+  nameWithType.vb: PathBuilder.LineTo(Single, Single)
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.LineTo*
+  name: LineTo
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_LineTo_
+  commentId: Overload:nebulae.dotPDFium.Drawing.PathBuilder.LineTo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.LineTo
+  nameWithType: PathBuilder.LineTo
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.MoveTo(System.Single,System.Single)
+  name: MoveTo(float, float)
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_MoveTo_System_Single_System_Single_
+  commentId: M:nebulae.dotPDFium.Drawing.PathBuilder.MoveTo(System.Single,System.Single)
+  name.vb: MoveTo(Single, Single)
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.MoveTo(float, float)
+  fullName.vb: nebulae.dotPDFium.Drawing.PathBuilder.MoveTo(Single, Single)
+  nameWithType: PathBuilder.MoveTo(float, float)
+  nameWithType.vb: PathBuilder.MoveTo(Single, Single)
+- uid: nebulae.dotPDFium.Drawing.PathBuilder.MoveTo*
+  name: MoveTo
+  href: api/nebulae.dotPDFium.Drawing.PathBuilder.html#nebulae_dotPDFium_Drawing_PathBuilder_MoveTo_
+  commentId: Overload:nebulae.dotPDFium.Drawing.PathBuilder.MoveTo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Drawing.PathBuilder.MoveTo
+  nameWithType: PathBuilder.MoveTo
 - uid: nebulae.dotPDFium.Forms
   name: nebulae.dotPDFium.Forms
   href: api/nebulae.dotPDFium.Forms.html
@@ -15330,15 +15564,15 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfPage.TransformWithClip
   nameWithType: PdfPage.TransformWithClip
-- uid: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText@)
-  name: TryGetOrLoadText(out PdfText?)
-  href: api/nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_TryGetOrLoadText_nebulae_dotPDFium_PdfText__
-  commentId: M:nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText@)
-  name.vb: TryGetOrLoadText(PdfText)
-  fullName: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(out nebulae.dotPDFium.PdfText?)
-  fullName.vb: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfText)
-  nameWithType: PdfPage.TryGetOrLoadText(out PdfText?)
-  nameWithType.vb: PdfPage.TryGetOrLoadText(PdfText)
+- uid: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfPageText@)
+  name: TryGetOrLoadText(out PdfPageText?)
+  href: api/nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_TryGetOrLoadText_nebulae_dotPDFium_PdfPageText__
+  commentId: M:nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfPageText@)
+  name.vb: TryGetOrLoadText(PdfPageText)
+  fullName: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(out nebulae.dotPDFium.PdfPageText?)
+  fullName.vb: nebulae.dotPDFium.PdfPage.TryGetOrLoadText(nebulae.dotPDFium.PdfPageText)
+  nameWithType: PdfPage.TryGetOrLoadText(out PdfPageText?)
+  nameWithType.vb: PdfPage.TryGetOrLoadText(PdfPageText)
 - uid: nebulae.dotPDFium.PdfPage.TryGetOrLoadText*
   name: TryGetOrLoadText
   href: api/nebulae.dotPDFium.PdfPage.html#nebulae_dotPDFium_PdfPage_TryGetOrLoadText_
@@ -15794,6 +16028,496 @@ references:
   commentId: F:nebulae.dotPDFium.PdfPageObject._hasOwner
   fullName: nebulae.dotPDFium.PdfPageObject._hasOwner
   nameWithType: PdfPageObject._hasOwner
+- uid: nebulae.dotPDFium.PdfPageText
+  name: PdfPageText
+  href: api/nebulae.dotPDFium.PdfPageText.html
+  commentId: T:nebulae.dotPDFium.PdfPageText
+  fullName: nebulae.dotPDFium.PdfPageText
+  nameWithType: PdfPageText
+- uid: nebulae.dotPDFium.PdfPageText.CloseWebLinks
+  name: CloseWebLinks()
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_CloseWebLinks
+  commentId: M:nebulae.dotPDFium.PdfPageText.CloseWebLinks
+  fullName: nebulae.dotPDFium.PdfPageText.CloseWebLinks()
+  nameWithType: PdfPageText.CloseWebLinks()
+- uid: nebulae.dotPDFium.PdfPageText.CloseWebLinks*
+  name: CloseWebLinks
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_CloseWebLinks_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.CloseWebLinks
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.CloseWebLinks
+  nameWithType: PdfPageText.CloseWebLinks
+- uid: nebulae.dotPDFium.PdfPageText.CountChars
+  name: CountChars
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_CountChars
+  commentId: P:nebulae.dotPDFium.PdfPageText.CountChars
+  fullName: nebulae.dotPDFium.PdfPageText.CountChars
+  nameWithType: PdfPageText.CountChars
+- uid: nebulae.dotPDFium.PdfPageText.CountChars*
+  name: CountChars
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_CountChars_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.CountChars
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.CountChars
+  nameWithType: PdfPageText.CountChars
+- uid: nebulae.dotPDFium.PdfPageText.CountRects(System.Int32,System.Int32)
+  name: CountRects(int, int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_CountRects_System_Int32_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.CountRects(System.Int32,System.Int32)
+  name.vb: CountRects(Integer, Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.CountRects(int, int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.CountRects(Integer, Integer)
+  nameWithType: PdfPageText.CountRects(int, int)
+  nameWithType.vb: PdfPageText.CountRects(Integer, Integer)
+- uid: nebulae.dotPDFium.PdfPageText.CountRects*
+  name: CountRects
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_CountRects_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.CountRects
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.CountRects
+  nameWithType: PdfPageText.CountRects
+- uid: nebulae.dotPDFium.PdfPageText.Dispose(System.Boolean)
+  name: Dispose(bool)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_Dispose_System_Boolean_
+  commentId: M:nebulae.dotPDFium.PdfPageText.Dispose(System.Boolean)
+  name.vb: Dispose(Boolean)
+  fullName: nebulae.dotPDFium.PdfPageText.Dispose(bool)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.Dispose(Boolean)
+  nameWithType: PdfPageText.Dispose(bool)
+  nameWithType.vb: PdfPageText.Dispose(Boolean)
+- uid: nebulae.dotPDFium.PdfPageText.Dispose*
+  name: Dispose
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_Dispose_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.Dispose
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.Dispose
+  nameWithType: PdfPageText.Dispose
+- uid: nebulae.dotPDFium.PdfPageText.Find(System.String,System.Boolean,System.Boolean,System.Int32)
+  name: Find(string, bool, bool, int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_Find_System_String_System_Boolean_System_Boolean_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.Find(System.String,System.Boolean,System.Boolean,System.Int32)
+  name.vb: Find(String, Boolean, Boolean, Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.Find(string, bool, bool, int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.Find(String, Boolean, Boolean, Integer)
+  nameWithType: PdfPageText.Find(string, bool, bool, int)
+  nameWithType.vb: PdfPageText.Find(String, Boolean, Boolean, Integer)
+- uid: nebulae.dotPDFium.PdfPageText.Find*
+  name: Find
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_Find_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.Find
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.Find
+  nameWithType: PdfPageText.Find
+- uid: nebulae.dotPDFium.PdfPageText.GetChar(System.Int32)
+  name: GetChar(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetChar_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetChar(System.Int32)
+  name.vb: GetChar(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetChar(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetChar(Integer)
+  nameWithType: PdfPageText.GetChar(int)
+  nameWithType.vb: PdfPageText.GetChar(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetChar*
+  name: GetChar
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetChar_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetChar
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetChar
+  nameWithType: PdfPageText.GetChar
+- uid: nebulae.dotPDFium.PdfPageText.GetCharAngle(System.Int32)
+  name: GetCharAngle(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharAngle_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetCharAngle(System.Int32)
+  name.vb: GetCharAngle(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharAngle(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetCharAngle(Integer)
+  nameWithType: PdfPageText.GetCharAngle(int)
+  nameWithType.vb: PdfPageText.GetCharAngle(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetCharAngle*
+  name: GetCharAngle
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharAngle_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetCharAngle
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharAngle
+  nameWithType: PdfPageText.GetCharAngle
+- uid: nebulae.dotPDFium.PdfPageText.GetCharBox(System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  name: GetCharBox(int, out double, out double, out double, out double)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharBox_System_Int32_System_Double__System_Double__System_Double__System_Double__
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetCharBox(System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  name.vb: GetCharBox(Integer, Double, Double, Double, Double)
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharBox(int, out double, out double, out double, out double)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetCharBox(Integer, Double, Double, Double, Double)
+  nameWithType: PdfPageText.GetCharBox(int, out double, out double, out double, out double)
+  nameWithType.vb: PdfPageText.GetCharBox(Integer, Double, Double, Double, Double)
+- uid: nebulae.dotPDFium.PdfPageText.GetCharBox*
+  name: GetCharBox
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharBox_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetCharBox
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharBox
+  nameWithType: PdfPageText.GetCharBox
+- uid: nebulae.dotPDFium.PdfPageText.GetCharIndexAtPos(System.Double,System.Double,System.Double,System.Double)
+  name: GetCharIndexAtPos(double, double, double, double)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharIndexAtPos_System_Double_System_Double_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetCharIndexAtPos(System.Double,System.Double,System.Double,System.Double)
+  name.vb: GetCharIndexAtPos(Double, Double, Double, Double)
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharIndexAtPos(double, double, double, double)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetCharIndexAtPos(Double, Double, Double, Double)
+  nameWithType: PdfPageText.GetCharIndexAtPos(double, double, double, double)
+  nameWithType.vb: PdfPageText.GetCharIndexAtPos(Double, Double, Double, Double)
+- uid: nebulae.dotPDFium.PdfPageText.GetCharIndexAtPos*
+  name: GetCharIndexAtPos
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharIndexAtPos_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetCharIndexAtPos
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharIndexAtPos
+  nameWithType: PdfPageText.GetCharIndexAtPos
+- uid: nebulae.dotPDFium.PdfPageText.GetCharIndexFromTextIndex(System.Int32)
+  name: GetCharIndexFromTextIndex(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharIndexFromTextIndex_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetCharIndexFromTextIndex(System.Int32)
+  name.vb: GetCharIndexFromTextIndex(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharIndexFromTextIndex(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetCharIndexFromTextIndex(Integer)
+  nameWithType: PdfPageText.GetCharIndexFromTextIndex(int)
+  nameWithType.vb: PdfPageText.GetCharIndexFromTextIndex(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetCharIndexFromTextIndex*
+  name: GetCharIndexFromTextIndex
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharIndexFromTextIndex_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetCharIndexFromTextIndex
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharIndexFromTextIndex
+  nameWithType: PdfPageText.GetCharIndexFromTextIndex
+- uid: nebulae.dotPDFium.PdfPageText.GetCharOrigin(System.Int32,System.Double@,System.Double@)
+  name: GetCharOrigin(int, out double, out double)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharOrigin_System_Int32_System_Double__System_Double__
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetCharOrigin(System.Int32,System.Double@,System.Double@)
+  name.vb: GetCharOrigin(Integer, Double, Double)
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharOrigin(int, out double, out double)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetCharOrigin(Integer, Double, Double)
+  nameWithType: PdfPageText.GetCharOrigin(int, out double, out double)
+  nameWithType.vb: PdfPageText.GetCharOrigin(Integer, Double, Double)
+- uid: nebulae.dotPDFium.PdfPageText.GetCharOrigin*
+  name: GetCharOrigin
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetCharOrigin_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetCharOrigin
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetCharOrigin
+  nameWithType: PdfPageText.GetCharOrigin
+- uid: nebulae.dotPDFium.PdfPageText.GetFillColor(System.Int32)
+  name: GetFillColor(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFillColor_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetFillColor(System.Int32)
+  name.vb: GetFillColor(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetFillColor(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetFillColor(Integer)
+  nameWithType: PdfPageText.GetFillColor(int)
+  nameWithType.vb: PdfPageText.GetFillColor(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetFillColor*
+  name: GetFillColor
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFillColor_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetFillColor
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetFillColor
+  nameWithType: PdfPageText.GetFillColor
+- uid: nebulae.dotPDFium.PdfPageText.GetFontInfo(System.Int32)
+  name: GetFontInfo(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFontInfo_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetFontInfo(System.Int32)
+  name.vb: GetFontInfo(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetFontInfo(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetFontInfo(Integer)
+  nameWithType: PdfPageText.GetFontInfo(int)
+  nameWithType.vb: PdfPageText.GetFontInfo(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetFontInfo*
+  name: GetFontInfo
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFontInfo_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetFontInfo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetFontInfo
+  nameWithType: PdfPageText.GetFontInfo
+- uid: nebulae.dotPDFium.PdfPageText.GetFontSize(System.Int32)
+  name: GetFontSize(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFontSize_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetFontSize(System.Int32)
+  name.vb: GetFontSize(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetFontSize(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetFontSize(Integer)
+  nameWithType: PdfPageText.GetFontSize(int)
+  nameWithType.vb: PdfPageText.GetFontSize(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetFontSize*
+  name: GetFontSize
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFontSize_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetFontSize
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetFontSize
+  nameWithType: PdfPageText.GetFontSize
+- uid: nebulae.dotPDFium.PdfPageText.GetFontWeight(System.Int32)
+  name: GetFontWeight(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFontWeight_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetFontWeight(System.Int32)
+  name.vb: GetFontWeight(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetFontWeight(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetFontWeight(Integer)
+  nameWithType: PdfPageText.GetFontWeight(int)
+  nameWithType.vb: PdfPageText.GetFontWeight(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetFontWeight*
+  name: GetFontWeight
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetFontWeight_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetFontWeight
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetFontWeight
+  nameWithType: PdfPageText.GetFontWeight
+- uid: nebulae.dotPDFium.PdfPageText.GetLooseCharBox(System.Int32)
+  name: GetLooseCharBox(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetLooseCharBox_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetLooseCharBox(System.Int32)
+  name.vb: GetLooseCharBox(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetLooseCharBox(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetLooseCharBox(Integer)
+  nameWithType: PdfPageText.GetLooseCharBox(int)
+  nameWithType.vb: PdfPageText.GetLooseCharBox(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetLooseCharBox*
+  name: GetLooseCharBox
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetLooseCharBox_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetLooseCharBox
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetLooseCharBox
+  nameWithType: PdfPageText.GetLooseCharBox
+- uid: nebulae.dotPDFium.PdfPageText.GetMatrix(System.Int32)
+  name: GetMatrix(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetMatrix_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetMatrix(System.Int32)
+  name.vb: GetMatrix(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetMatrix(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetMatrix(Integer)
+  nameWithType: PdfPageText.GetMatrix(int)
+  nameWithType.vb: PdfPageText.GetMatrix(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetMatrix*
+  name: GetMatrix
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetMatrix_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetMatrix
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetMatrix
+  nameWithType: PdfPageText.GetMatrix
+- uid: nebulae.dotPDFium.PdfPageText.GetStrokeColor(System.Int32)
+  name: GetStrokeColor(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetStrokeColor_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetStrokeColor(System.Int32)
+  name.vb: GetStrokeColor(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetStrokeColor(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetStrokeColor(Integer)
+  nameWithType: PdfPageText.GetStrokeColor(int)
+  nameWithType.vb: PdfPageText.GetStrokeColor(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetStrokeColor*
+  name: GetStrokeColor
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetStrokeColor_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetStrokeColor
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetStrokeColor
+  nameWithType: PdfPageText.GetStrokeColor
+- uid: nebulae.dotPDFium.PdfPageText.GetTextIndexFromCharIndex(System.Int32)
+  name: GetTextIndexFromCharIndex(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetTextIndexFromCharIndex_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetTextIndexFromCharIndex(System.Int32)
+  name.vb: GetTextIndexFromCharIndex(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetTextIndexFromCharIndex(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetTextIndexFromCharIndex(Integer)
+  nameWithType: PdfPageText.GetTextIndexFromCharIndex(int)
+  nameWithType.vb: PdfPageText.GetTextIndexFromCharIndex(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetTextIndexFromCharIndex*
+  name: GetTextIndexFromCharIndex
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetTextIndexFromCharIndex_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetTextIndexFromCharIndex
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetTextIndexFromCharIndex
+  nameWithType: PdfPageText.GetTextIndexFromCharIndex
+- uid: nebulae.dotPDFium.PdfPageText.GetTextObject(System.Int32)
+  name: GetTextObject(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetTextObject_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetTextObject(System.Int32)
+  name.vb: GetTextObject(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetTextObject(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetTextObject(Integer)
+  nameWithType: PdfPageText.GetTextObject(int)
+  nameWithType.vb: PdfPageText.GetTextObject(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetTextObject*
+  name: GetTextObject
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetTextObject_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetTextObject
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetTextObject
+  nameWithType: PdfPageText.GetTextObject
+- uid: nebulae.dotPDFium.PdfPageText.GetTextRange(System.Int32,System.Int32)
+  name: GetTextRange(int, int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetTextRange_System_Int32_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.GetTextRange(System.Int32,System.Int32)
+  name.vb: GetTextRange(Integer, Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.GetTextRange(int, int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.GetTextRange(Integer, Integer)
+  nameWithType: PdfPageText.GetTextRange(int, int)
+  nameWithType.vb: PdfPageText.GetTextRange(Integer, Integer)
+- uid: nebulae.dotPDFium.PdfPageText.GetTextRange*
+  name: GetTextRange
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_GetTextRange_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.GetTextRange
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.GetTextRange
+  nameWithType: PdfPageText.GetTextRange
+- uid: nebulae.dotPDFium.PdfPageText.HasUnicodeMapError(System.Int32)
+  name: HasUnicodeMapError(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_HasUnicodeMapError_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.HasUnicodeMapError(System.Int32)
+  name.vb: HasUnicodeMapError(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.HasUnicodeMapError(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.HasUnicodeMapError(Integer)
+  nameWithType: PdfPageText.HasUnicodeMapError(int)
+  nameWithType.vb: PdfPageText.HasUnicodeMapError(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.HasUnicodeMapError*
+  name: HasUnicodeMapError
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_HasUnicodeMapError_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.HasUnicodeMapError
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.HasUnicodeMapError
+  nameWithType: PdfPageText.HasUnicodeMapError
+- uid: nebulae.dotPDFium.PdfPageText.IsGenerated(System.Int32)
+  name: IsGenerated(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_IsGenerated_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.IsGenerated(System.Int32)
+  name.vb: IsGenerated(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.IsGenerated(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.IsGenerated(Integer)
+  nameWithType: PdfPageText.IsGenerated(int)
+  nameWithType.vb: PdfPageText.IsGenerated(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.IsGenerated*
+  name: IsGenerated
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_IsGenerated_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.IsGenerated
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.IsGenerated
+  nameWithType: PdfPageText.IsGenerated
+- uid: nebulae.dotPDFium.PdfPageText.IsHyphen(System.Int32)
+  name: IsHyphen(int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_IsHyphen_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.IsHyphen(System.Int32)
+  name.vb: IsHyphen(Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.IsHyphen(int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.IsHyphen(Integer)
+  nameWithType: PdfPageText.IsHyphen(int)
+  nameWithType.vb: PdfPageText.IsHyphen(Integer)
+- uid: nebulae.dotPDFium.PdfPageText.IsHyphen*
+  name: IsHyphen
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_IsHyphen_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.IsHyphen
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.IsHyphen
+  nameWithType: PdfPageText.IsHyphen
+- uid: nebulae.dotPDFium.PdfPageText.LoadWebLinks
+  name: LoadWebLinks()
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_LoadWebLinks
+  commentId: M:nebulae.dotPDFium.PdfPageText.LoadWebLinks
+  fullName: nebulae.dotPDFium.PdfPageText.LoadWebLinks()
+  nameWithType: PdfPageText.LoadWebLinks()
+- uid: nebulae.dotPDFium.PdfPageText.LoadWebLinks*
+  name: LoadWebLinks
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_LoadWebLinks_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.LoadWebLinks
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.LoadWebLinks
+  nameWithType: PdfPageText.LoadWebLinks
+- uid: nebulae.dotPDFium.PdfPageText.TryCountRects(System.Int32,System.Int32,System.Int32)
+  name: TryCountRects(int, int, int)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryCountRects_System_Int32_System_Int32_System_Int32_
+  commentId: M:nebulae.dotPDFium.PdfPageText.TryCountRects(System.Int32,System.Int32,System.Int32)
+  name.vb: TryCountRects(Integer, Integer, Integer)
+  fullName: nebulae.dotPDFium.PdfPageText.TryCountRects(int, int, int)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.TryCountRects(Integer, Integer, Integer)
+  nameWithType: PdfPageText.TryCountRects(int, int, int)
+  nameWithType.vb: PdfPageText.TryCountRects(Integer, Integer, Integer)
+- uid: nebulae.dotPDFium.PdfPageText.TryCountRects*
+  name: TryCountRects
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryCountRects_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.TryCountRects
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.TryCountRects
+  nameWithType: PdfPageText.TryCountRects
+- uid: nebulae.dotPDFium.PdfPageText.TryGetCharBox(System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  name: TryGetCharBox(int, out double, out double, out double, out double)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetCharBox_System_Int32_System_Double__System_Double__System_Double__System_Double__
+  commentId: M:nebulae.dotPDFium.PdfPageText.TryGetCharBox(System.Int32,System.Double@,System.Double@,System.Double@,System.Double@)
+  name.vb: TryGetCharBox(Integer, Double, Double, Double, Double)
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetCharBox(int, out double, out double, out double, out double)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.TryGetCharBox(Integer, Double, Double, Double, Double)
+  nameWithType: PdfPageText.TryGetCharBox(int, out double, out double, out double, out double)
+  nameWithType.vb: PdfPageText.TryGetCharBox(Integer, Double, Double, Double, Double)
+- uid: nebulae.dotPDFium.PdfPageText.TryGetCharBox*
+  name: TryGetCharBox
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetCharBox_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.TryGetCharBox
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetCharBox
+  nameWithType: PdfPageText.TryGetCharBox
+- uid: nebulae.dotPDFium.PdfPageText.TryGetCharIndexAtPos(System.Double,System.Double,System.Int32@,System.Double,System.Double)
+  name: TryGetCharIndexAtPos(double, double, out int, double, double)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetCharIndexAtPos_System_Double_System_Double_System_Int32__System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.PdfPageText.TryGetCharIndexAtPos(System.Double,System.Double,System.Int32@,System.Double,System.Double)
+  name.vb: TryGetCharIndexAtPos(Double, Double, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetCharIndexAtPos(double, double, out int, double, double)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.TryGetCharIndexAtPos(Double, Double, Integer, Double, Double)
+  nameWithType: PdfPageText.TryGetCharIndexAtPos(double, double, out int, double, double)
+  nameWithType.vb: PdfPageText.TryGetCharIndexAtPos(Double, Double, Integer, Double, Double)
+- uid: nebulae.dotPDFium.PdfPageText.TryGetCharIndexAtPos*
+  name: TryGetCharIndexAtPos
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetCharIndexAtPos_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.TryGetCharIndexAtPos
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetCharIndexAtPos
+  nameWithType: PdfPageText.TryGetCharIndexAtPos
+- uid: nebulae.dotPDFium.PdfPageText.TryGetCharOrigin(System.Int32,System.Double@,System.Double@)
+  name: TryGetCharOrigin(int, out double, out double)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetCharOrigin_System_Int32_System_Double__System_Double__
+  commentId: M:nebulae.dotPDFium.PdfPageText.TryGetCharOrigin(System.Int32,System.Double@,System.Double@)
+  name.vb: TryGetCharOrigin(Integer, Double, Double)
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetCharOrigin(int, out double, out double)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.TryGetCharOrigin(Integer, Double, Double)
+  nameWithType: PdfPageText.TryGetCharOrigin(int, out double, out double)
+  nameWithType.vb: PdfPageText.TryGetCharOrigin(Integer, Double, Double)
+- uid: nebulae.dotPDFium.PdfPageText.TryGetCharOrigin*
+  name: TryGetCharOrigin
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetCharOrigin_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.TryGetCharOrigin
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetCharOrigin
+  nameWithType: PdfPageText.TryGetCharOrigin
+- uid: nebulae.dotPDFium.PdfPageText.TryGetTextRange(System.Int32,System.Int32,System.String@)
+  name: TryGetTextRange(int, int, out string)
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetTextRange_System_Int32_System_Int32_System_String__
+  commentId: M:nebulae.dotPDFium.PdfPageText.TryGetTextRange(System.Int32,System.Int32,System.String@)
+  name.vb: TryGetTextRange(Integer, Integer, String)
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetTextRange(int, int, out string)
+  fullName.vb: nebulae.dotPDFium.PdfPageText.TryGetTextRange(Integer, Integer, String)
+  nameWithType: PdfPageText.TryGetTextRange(int, int, out string)
+  nameWithType.vb: PdfPageText.TryGetTextRange(Integer, Integer, String)
+- uid: nebulae.dotPDFium.PdfPageText.TryGetTextRange*
+  name: TryGetTextRange
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_TryGetTextRange_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.TryGetTextRange
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.TryGetTextRange
+  nameWithType: PdfPageText.TryGetTextRange
+- uid: nebulae.dotPDFium.PdfPageText.WebLinkCount
+  name: WebLinkCount
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_WebLinkCount
+  commentId: P:nebulae.dotPDFium.PdfPageText.WebLinkCount
+  fullName: nebulae.dotPDFium.PdfPageText.WebLinkCount
+  nameWithType: PdfPageText.WebLinkCount
+- uid: nebulae.dotPDFium.PdfPageText.WebLinkCount*
+  name: WebLinkCount
+  href: api/nebulae.dotPDFium.PdfPageText.html#nebulae_dotPDFium_PdfPageText_WebLinkCount_
+  commentId: Overload:nebulae.dotPDFium.PdfPageText.WebLinkCount
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageText.WebLinkCount
+  nameWithType: PdfPageText.WebLinkCount
 - uid: nebulae.dotPDFium.PdfPathObject
   name: PdfPathObject
   href: api/nebulae.dotPDFium.PdfPathObject.html
