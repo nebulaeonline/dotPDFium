@@ -132,6 +132,9 @@ Class PdfPathObject  <a class="header-action link-secondary" title="View source"
       <a class="xref" href="nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject__hasOwner">PdfPageObject._hasOwner</a>
     </div>
     <div>
+      <a class="xref" href="nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMarkedContentId">PdfPageObject.GetMarkedContentId()</a>
+    </div>
+    <div>
       <a class="xref" href="nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_Transform_nebulae_dotPDFium_Native_FsMatrix_">PdfPageObject.Transform(FsMatrix)</a>
     </div>
     <div>
@@ -271,11 +274,65 @@ Class PdfPathObject  <a class="header-action link-secondary" title="View source"
 </h2>
 
 
+  <a id="nebulae_dotPDFium_PdfPathObject_BezierTo_" data-uid="nebulae.dotPDFium.PdfPathObject.BezierTo*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPathObject_BezierTo_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_" data-uid="nebulae.dotPDFium.PdfPathObject.BezierTo(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)">
+  BezierTo(float, float, float, float, float, float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L23"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Appends a cubic Bézier curve to the current path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BezierTo(float x1, float y1, float x2, float y2, float x3, float y3)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>x1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>X-coordinate of the first control point.</p>
+</dd>
+    <dt><code>y1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Y-coordinate of the first control point.</p>
+</dd>
+    <dt><code>x2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>X-coordinate of the second control point.</p>
+</dd>
+    <dt><code>y2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Y-coordinate of the second control point.</p>
+</dd>
+    <dt><code>x3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>X-coordinate of the end point.</p>
+</dd>
+    <dt><code>y3</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>Y-coordinate of the end point.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.dotPDFiumException.html">dotPDFiumException</a></dt>
+    <dd><p>Thrown if the curve could not be added.</p>
+</dd>
+  </dl>
+
+
+
   <a id="nebulae_dotPDFium_PdfPathObject_ClosePath_" data-uid="nebulae.dotPDFium.PdfPathObject.ClosePath*"></a>
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_ClosePath" data-uid="nebulae.dotPDFium.PdfPathObject.ClosePath">
   ClosePath()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Closes the current path in the PDF document.</p>
@@ -313,7 +370,7 @@ operation fails, an exception is thrown.</p>
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_GetDashPattern" data-uid="nebulae.dotPDFium.PdfPathObject.GetDashPattern">
   GetDashPattern()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L151"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the full stroke dash pattern as an array of floats. If none is defined, returns an empty array.</p>
@@ -345,7 +402,7 @@ operation fails, an exception is thrown.</p>
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_GetDashPatternCount" data-uid="nebulae.dotPDFium.PdfPathObject.GetDashPatternCount">
   GetDashPatternCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L142"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the dash pattern used for stroking paths in the current page object.</p>
@@ -385,7 +442,7 @@ of a dash or gap in the pattern. Returns an empty array if no dash pattern is de
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_GetDashPhase" data-uid="nebulae.dotPDFium.PdfPathObject.GetDashPhase">
   GetDashPhase()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L134"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the dash phase, which specifies the offset into the dash pattern at which stroking begins.</p>
@@ -424,7 +481,7 @@ of a dash or gap in the pattern. Returns an empty array if no dash pattern is de
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_GetDrawMode_nebulae_dotPDFium_Native_PdfPathDrawMode__System_Boolean__" data-uid="nebulae.dotPDFium.PdfPathObject.GetDrawMode(nebulae.dotPDFium.Native.PdfPathDrawMode@,System.Boolean@)">
   GetDrawMode(out PdfPathDrawMode, out bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L110"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the drawing mode and stroke information for the current PDF path.</p>
@@ -467,7 +524,7 @@ path is stroked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_GetLineCap" data-uid="nebulae.dotPDFium.PdfPathObject.GetLineCap">
   GetLineCap()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L209"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the line cap style used when stroking the path.</p>
@@ -500,7 +557,7 @@ path is stroked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_GetLineJoin" data-uid="nebulae.dotPDFium.PdfPathObject.GetLineJoin">
   GetLineJoin()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L186"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L238"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the line join style used when stroking connected segments in the path.</p>
@@ -529,11 +586,139 @@ path is stroked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/l
 
 
 
+  <a id="nebulae_dotPDFium_PdfPathObject_GetPoint_" data-uid="nebulae.dotPDFium.PdfPathObject.GetPoint*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPathObject_GetPoint" data-uid="nebulae.dotPDFium.PdfPathObject.GetPoint">
+  GetPoint()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the (x, y) coordinates of this path segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (double X, double Y) GetPoint()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.x">X</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double-.y">Y</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPathObject_GetSegmentCount_" data-uid="nebulae.dotPDFium.PdfPathObject.GetSegmentCount*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPathObject_GetSegmentCount" data-uid="nebulae.dotPDFium.PdfPathObject.GetSegmentCount">
+  GetSegmentCount()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the number of segments in this path object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetSegmentCount()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPathObject_GetSegmentType_" data-uid="nebulae.dotPDFium.PdfPathObject.GetSegmentType*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPathObject_GetSegmentType" data-uid="nebulae.dotPDFium.PdfPathObject.GetSegmentType">
+  GetSegmentType()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the type of this path segment.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfPathSegmentType GetSegmentType()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.Native.PdfPathSegmentType.html">PdfPathSegmentType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_PdfPathObject_IsCloseSegment_" data-uid="nebulae.dotPDFium.PdfPathObject.IsCloseSegment*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfPathObject_IsCloseSegment" data-uid="nebulae.dotPDFium.PdfPathObject.IsCloseSegment">
+  IsCloseSegment()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns true if this segment closes the current subpath.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCloseSegment()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="nebulae_dotPDFium_PdfPathObject_LineTo_" data-uid="nebulae.dotPDFium.PdfPathObject.LineTo*"></a>
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_LineTo_System_Single_System_Single_" data-uid="nebulae.dotPDFium.PdfPathObject.LineTo(System.Single,System.Single)">
   LineTo(float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a straight line segment from the current point to the specified coordinates.</p>
@@ -575,7 +760,7 @@ path is stroked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_MoveTo_System_Single_System_Single_" data-uid="nebulae.dotPDFium.PdfPathObject.MoveTo(System.Single,System.Single)">
   MoveTo(float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Moves the current path to the specified coordinates.</p>
@@ -617,7 +802,7 @@ path is stroked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_SetDashPattern_System_Single___System_Single_" data-uid="nebulae.dotPDFium.PdfPathObject.SetDashPattern(System.Single[],System.Single)">
   SetDashPattern(float[], float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the dash pattern and phase used when stroking the path.</p>
@@ -662,7 +847,7 @@ path is stroked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_SetDashPhase_System_Single_" data-uid="nebulae.dotPDFium.PdfPathObject.SetDashPhase(System.Single)">
   SetDashPhase(float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L199"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the dash phase, which specifies the offset into the dash pattern at which stroking begins.</p>
@@ -701,7 +886,7 @@ path is stroked; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_SetDrawMode_nebulae_dotPDFium_Native_PdfPathDrawMode_System_Boolean_" data-uid="nebulae.dotPDFium.PdfPathObject.SetDrawMode(nebulae.dotPDFium.Native.PdfPathDrawMode,System.Boolean)">
   SetDrawMode(PdfPathDrawMode, bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the drawing mode for the current PDF path.</p>
@@ -745,7 +930,7 @@ combination of both.</p>
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_SetLineCap_nebulae_dotPDFium_Native_PdfLineCapStyle_" data-uid="nebulae.dotPDFium.PdfPathObject.SetLineCap(nebulae.dotPDFium.Native.PdfLineCapStyle)">
   SetLineCap(PdfLineCapStyle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L227"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the line cap style used at the ends of stroked open subpaths.</p>
@@ -784,7 +969,7 @@ combination of both.</p>
 
   <h3 id="nebulae_dotPDFium_PdfPathObject_SetLineJoin_nebulae_dotPDFium_Native_PdfLineJoinStyle_" data-uid="nebulae.dotPDFium.PdfPathObject.SetLineJoin(nebulae.dotPDFium.Native.PdfLineJoinStyle)">
   SetLineJoin(PdfLineJoinStyle)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L204"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfPathObject.cs/#L256"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the line join style used for path corners when stroking.</p>

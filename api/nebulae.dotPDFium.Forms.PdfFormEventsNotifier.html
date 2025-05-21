@@ -1,0 +1,1551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class PdfFormEventsNotifier | dotPDFium </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class PdfFormEventsNotifier | dotPDFium ">
+      
+      <meta name="description" content="Dispatches user-driven events to the PDFium form environment. These methods mirror PDFium&#39;s FORM_* notification APIs (see fpdf_formfill.h).">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/nebulaeonline/dotPDFium/new/main/apiSpec/new?filename=nebulae_dotPDFium_Forms_PdfFormEventsNotifier.md&amp;value=---%0Auid%3A%20nebulae.dotPDFium.Forms.PdfFormEventsNotifier%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="dotPDFium">
+            dotPDFium
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier">
+
+
+
+  <h1 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier" class="text-break">
+Class PdfFormEventsNotifier  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="nebulae.html">nebulae</a>.<a class="xref" href="nebulae.dotPDFium.html">dotPDFium</a>.<a class="xref" href="nebulae.dotPDFium.Forms.html">Forms</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>dotPDFium.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Dispatches user-driven events to the PDFium form environment.
+These methods mirror PDFium's FORM_* notification APIs (see fpdf_formfill.h).</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PdfFormEventsNotifier</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">PdfFormEventsNotifier</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanRedo_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanRedo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  CanRedo(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified PDF form can redo the last undone action on the given page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanRedo(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The PDF form to check for redo capability.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The page within the PDF form to check for redo capability.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the last undone action on the specified page can be redone; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanUndo_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanUndo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  CanUndo(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified form and page have an undoable action available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanUndo(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The PDF form to check for undoable actions. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The PDF page associated with the form. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if there is an undoable action available for the specified form and page; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentAAction_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentAAction_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_Native_PdfPageAActionType_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.Native.PdfPageAActionType)">
+  DoDocumentAAction(PdfForm, PdfPageAActionType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes a document-level action on the specified PDF form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDocumentAAction(PdfForm form, PdfPageAActionType action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the PDF form on which the action will be performed. Cannot be
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfPageAActionType.html">PdfPageAActionType</a></dt>
+    <dd><p>The document-level action to execute, specified as a <a class="xref" href="nebulae.dotPDFium.Native.PdfPageAActionType.html">PdfPageAActionType</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentAAction_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_Native_PdfPageAActionType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Document-level actions are predefined actions in a PDF document that are triggered by
+specific events, such as opening or closing the document. Use this method to programmatically invoke such
+actions on a PDF form.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentJSAction_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentJSAction_nebulae_dotPDFium_Forms_PdfForm_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction(nebulae.dotPDFium.Forms.PdfForm)">
+  DoDocumentJSAction(PdfForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the JavaScript action associated with the document in the specified PDF form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDocumentJSAction(PdfForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> object representing the PDF form on which the JavaScript action will be executed.
+Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentJSAction_nebulae_dotPDFium_Forms_PdfForm__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method triggers the document-level JavaScript action defined in the PDF form.  Ensure
+that the <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance is properly initialized before calling this method.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentOpenAction_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentOpenAction_nebulae_dotPDFium_Forms_PdfForm_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction(nebulae.dotPDFium.Forms.PdfForm)">
+  DoDocumentOpenAction(PdfForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the document's open action, if defined, for the specified PDF form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoDocumentOpenAction(PdfForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> representing the PDF document. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentOpenAction_nebulae_dotPDFium_Forms_PdfForm__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method triggers any actions associated with the document's open event, such as scripts
+or other predefined behaviors. Ensure that the <code class="paramref">form</code> is properly initialized before calling
+this method.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoPageAAction_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoPageAAction_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_nebulae_dotPDFium_Native_PdfPageAActionType_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.Native.PdfPageAActionType)">
+  DoPageAAction(PdfForm, PdfPage, PdfPageAActionType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes a specific page-level additional action on a PDF page within a form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DoPageAAction(PdfForm form, PdfPage page, PdfPageAActionType action)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form containing the page.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page on which the action will be performed.</p>
+</dd>
+    <dt><code>action</code> <a class="xref" href="nebulae.dotPDFium.Native.PdfPageAActionType.html">PdfPageAActionType</a></dt>
+    <dd><p>The type of additional action to execute, specified as a <a class="xref" href="nebulae.dotPDFium.Native.PdfPageAActionType.html">PdfPageAActionType</a> value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoPageAAction_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_nebulae_dotPDFium_Native_PdfPageAActionType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method triggers a predefined additional action associated with the specified page in the
+context of the provided form. The action type is determined by the <code class="paramref">action</code> parameter, which
+must be a valid member of the <a class="xref" href="nebulae.dotPDFium.Native.PdfPageAActionType.html">PdfPageAActionType</a> enumeration.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ForceKillFocus_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ForceKillFocus_nebulae_dotPDFium_Forms_PdfForm_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus(nebulae.dotPDFium.Forms.PdfForm)">
+  ForceKillFocus(PdfForm)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L402"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Forces the specified PDF form to lose focus.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForceKillFocus(PdfForm form)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance whose focus will be forcibly removed. Cannot be null.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ForceKillFocus_nebulae_dotPDFium_Forms_PdfForm__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is typically used to ensure that no form field within the specified PDF form
+retains focus. It may be useful in scenarios where focus-related behavior needs to be reset or
+overridden.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedAnnot_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedAnnot_nebulae_dotPDFium_Forms_PdfForm_System_Int32__nebulae_dotPDFium_PdfAnnotation__" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm,System.Int32@,nebulae.dotPDFium.PdfAnnotation@)">
+  GetFocusedAnnot(PdfForm, out int, out PdfAnnotation?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the currently focused annotation within the specified PDF form, if any.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GetFocusedAnnot(PdfForm form, out int pageIndex, out PdfAnnotation? annotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form to query.</p>
+</dd>
+    <dt><code>pageIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>When this method returns, contains the zero-based index of the page containing the focused annotation,  or -1 if
+no annotation is focused.</p>
+</dd>
+    <dt><code>annotation</code> <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></dt>
+    <dd><p>When this method returns, contains the <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a> object representing the focused annotation,
+or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no annotation is focused.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if a focused annotation is found; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedAnnot_nebulae_dotPDFium_Forms_PdfForm_System_Int32__nebulae_dotPDFium_PdfAnnotation___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method queries the PDF form to determine if an annotation currently has focus. If an
+annotation is  focused, its associated page index and annotation object are returned. If no annotation is
+focused,  <code class="paramref">pageIndex</code> is set to -1 and <code class="paramref">annotation</code> is set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedText_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  GetFocusedText(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L351"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the text from the currently focused field in a PDF form on the specified page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? GetFocusedText(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the PDF form.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the focused field.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> containing the text of the focused field, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no field is
+focused or the field is empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned text is encoded in UTF-8. If the focused field is empty, this method returns
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetSelectedText_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetSelectedText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  GetSelectedText(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L377"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the text currently selected within the specified PDF form and page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string? GetSelectedText(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form containing the selection.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the selection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a> containing the selected text, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no text is selected.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetSelectedText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned string is encoded in UTF-8. If no text is selected, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_IsIndexSelected_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_IsIndexSelected_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32)">
+  IsIndexSelected(PdfForm, PdfPage, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determines whether the specified index is selected in the given PDF form on the specified page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsIndexSelected(PdfForm form, PdfPage page, int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The PDF form containing the selection state.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The page of the PDF form to check.</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index to check for selection.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the specified index is selected; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_IsIndexSelected_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method checks the selection state of an index within a PDF form field on a specific
+page. Ensure that the <code class="paramref">form</code> and <code class="paramref">page</code> are valid and properly
+initialized.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnAfterLoadPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnAfterLoadPage_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  OnAfterLoadPage(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L21"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs post-processing actions on a PDF page after it has been loaded into a form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnAfterLoadPage(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance associated with the PDF document.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the loaded page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnAfterLoadPage_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method should be called after a page is loaded to ensure that any necessary form-related
+adjustments or initializations are applied to the page. It is typically used in workflows involving interactive
+forms or annotations.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnBeforeClosePage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnBeforeClosePage_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  OnBeforeClosePage(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs necessary operations before a PDF page is closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnBeforeClosePage(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> associated with the PDF document. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> that is about to be closed. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnBeforeClosePage_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method ensures that any required cleanup or finalization tasks are performed for the
+specified page before it is closed. Both <code class="paramref">form</code> and <code class="paramref">page</code> must be valid and
+initialized.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnChar_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnChar_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)">
+  OnChar(PdfForm, PdfPage, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L187"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a character input event for a PDF form on a specific page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnChar(PdfForm form, PdfPage page, int charCode, int modifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form to which the character input is applied.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the form.</p>
+</dd>
+    <dt><code>charCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The Unicode character code of the input character.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing any modifier keys (e.g., Shift, Ctrl) that were active during the input event.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnChar_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method processes character input events, such as typing into a form field, and applies
+the input to the specified form and page. Ensure that both <code class="paramref">form</code> and <code class="paramref">page</code>
+are valid and properly initialized before calling this method.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnFocus_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnFocus_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)">
+  OnFocus(PdfForm, PdfPage, int, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the focus event for a PDF form field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnFocus(PdfForm form, PdfPage page, int modifier, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form containing the field.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page where the form field is located.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the modifier keys pressed during the focus event.  This value is typically a bitmask of
+key states (e.g., Shift, Ctrl, Alt).</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate, in points, of the focus event relative to the page.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate, in points, of the focus event relative to the page.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyDown_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyDown_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)">
+  OnKeyDown(PdfForm, PdfPage, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a key-down event for a PDF form on a specified page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnKeyDown(PdfForm form, PdfPage page, int keyCode, int modifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form to process the key event for.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the form.</p>
+</dd>
+    <dt><code>keyCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The key code of the key that was pressed.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The modifier key state (e.g., Shift, Ctrl, Alt) at the time of the key press.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyUp_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyUp_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)">
+  OnKeyUp(PdfForm, PdfPage, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the key-up event for a PDF form on a specified page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnKeyUp(PdfForm form, PdfPage page, int keyCode, int modifier)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form where the event occurred.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the form.</p>
+</dd>
+    <dt><code>keyCode</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The code of the key that was released.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The modifier key state at the time of the key release, such as Shift, Ctrl, or Alt.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDoubleClick_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDoubleClick_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)">
+  OnLButtonDoubleClick(PdfForm, PdfPage, int, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a left mouse button double-click event on a PDF form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnLButtonDoubleClick(PdfForm form, PdfPage page, int modifier, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form where the event occurred.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the form.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the state of modifier keys (e.g., Shift, Ctrl, Alt) during the event.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate, in page space, where the double-click occurred.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate, in page space, where the double-click occurred.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDown_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDown_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)">
+  OnLButtonDown(PdfForm, PdfPage, int, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L87"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a left mouse button down event on a PDF form at the specified location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnLButtonDown(PdfForm form, PdfPage page, int modifier, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form being interacted with.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the form.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing any modifier keys pressed during the event (e.g., Shift, Ctrl).</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the mouse pointer, in the page's coordinate system.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the mouse pointer, in the page's coordinate system.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonUp_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonUp_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)">
+  OnLButtonUp(PdfForm, PdfPage, int, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the left mouse button release event for a PDF form on a specified page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnLButtonUp(PdfForm form, PdfPage page, int modifier, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form to interact with.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page where the event occurred.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the state of modifier keys (e.g., Shift, Ctrl) at the time of the event.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the mouse pointer, in page coordinates, at the time of the event.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the mouse pointer, in page coordinates, at the time of the event.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseMove_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseMove_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)">
+  OnMouseMove(PdfForm, PdfPage, int, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the mouse move event for a PDF form on a specific page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnMouseMove(PdfForm form, PdfPage page, int modifier, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form to interact with.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page where the mouse event occurred.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the state of modifier keys (e.g., Shift, Ctrl, Alt) during the mouse event.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate of the mouse pointer, in page coordinates.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate of the mouse pointer, in page coordinates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseWheel_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseWheel_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_nebulae_dotPDFium_Native_FsPointF_System_Int32_System_Int32_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,nebulae.dotPDFium.Native.FsPointF,System.Int32,System.Int32)">
+  OnMouseWheel(PdfForm, PdfPage, int, FsPointF, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles mouse wheel events for a PDF form on a specific page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnMouseWheel(PdfForm form, PdfPage page, int modifier, FsPointF coord, int deltaX, int deltaY)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance associated with the PDF document.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page where the event occurred.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the state of modifier keys (e.g., Ctrl, Alt, Shift) during the event.</p>
+</dd>
+    <dt><code>coord</code> <a class="xref" href="nebulae.dotPDFium.Native.FsPointF.html">FsPointF</a></dt>
+    <dd><p>The coordinates, in points, where the mouse wheel event occurred.</p>
+</dd>
+    <dt><code>deltaX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The horizontal scroll delta, in points, caused by the mouse wheel.</p>
+</dd>
+    <dt><code>deltaY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The vertical scroll delta, in points, caused by the mouse wheel.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonDown_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonDown_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)">
+  OnRButtonDown(PdfForm, PdfPage, int, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles a right mouse button down event on a PDF form at the specified location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnRButtonDown(PdfForm form, PdfPage page, int modifier, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form being interacted with.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page where the event occurred.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the state of modifier keys (e.g., Ctrl, Alt, Shift) during the event.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate, in page space, where the event occurred.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate, in page space, where the event occurred.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonUp_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonUp_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)">
+  OnRButtonUp(PdfForm, PdfPage, int, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handles the right mouse button release event for a PDF form on a specified page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OnRButtonUp(PdfForm form, PdfPage page, int modifier, double x, double y)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form being interacted with.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page where the event occurred.</p>
+</dd>
+    <dt><code>modifier</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>An integer representing the state of modifier keys (e.g., Ctrl, Alt, Shift) at the time of the event.</p>
+</dd>
+    <dt><code>x</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The x-coordinate, in page space, where the right mouse button was released.</p>
+</dd>
+    <dt><code>y</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd><p>The y-coordinate, in page space, where the right mouse button was released.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Redo_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Redo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  Redo(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reapplies the most recently undone action on the specified PDF form and page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Redo(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form to which the redo operation applies.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page on which the redo operation is performed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the redo operation is successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceAndKeepSelection_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceAndKeepSelection_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_String_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.String)">
+  ReplaceAndKeepSelection(PdfForm, PdfPage, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces the current text in the specified PDF form field while preserving the user's selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReplaceAndKeepSelection(PdfForm form, PdfPage page, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> object representing the form containing the field to update. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> object representing the page containing the form field. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The new text to replace the current content of the form field. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceAndKeepSelection_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method ensures that the user's current selection within the form field is preserved
+after the text is replaced.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceSelection_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceSelection_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_String_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.String)">
+  ReplaceSelection(PdfForm, PdfPage, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L216"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replaces the current text selection on the specified PDF page with the provided text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReplaceSelection(PdfForm form, PdfPage page, string text)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> object representing the form associated with the PDF document. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> object representing the page where the text selection will be replaced. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The text to replace the current selection with. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or empty, the selection will be
+cleared.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceSelection_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method modifies the content of the specified PDF page by replacing the currently
+selected text with the provided string. Ensure that the <code class="paramref">form</code> and <code class="paramref">page</code>
+objects are valid and properly initialized before calling this method.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SelectAllText_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SelectAllText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  SelectAllText(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Selects all text within the specified PDF form and page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SelectAllText(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> object representing the form containing the text to select. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> object representing the page within the form. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the text was successfully selected; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SelectAllText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method is typically used to programmatically select all text on a specific page of a PDF
+form. The selection state may depend on the underlying PDF library's implementation.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetFocusedAnnot_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetFocusedAnnot_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfAnnotation_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfAnnotation)">
+  SetFocusedAnnot(PdfForm, PdfAnnotation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the specified annotation as the focused annotation within the given PDF form.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SetFocusedAnnot(PdfForm form, PdfAnnotation annotation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The PDF form containing the annotation to be focused. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>annotation</code> <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a></dt>
+    <dd><p>The annotation to set as focused. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the annotation was successfully set as focused; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetIndexSelected_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetIndexSelected_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Boolean_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Boolean)">
+  SetIndexSelected(PdfForm, PdfPage, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the selection state of a specific index within a form on a given PDF page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SetIndexSelected(PdfForm form, PdfPage page, int index, bool selected)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a> instance representing the form to modify.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a> instance representing the page containing the form.</p>
+</dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The zero-based index of the item to update within the form.</p>
+</dd>
+    <dt><code>selected</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> to mark the item at the specified index as selected; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>
+to deselect it.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the selection state was successfully updated; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetIndexSelected_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method modifies the selection state of an item within a form field on a specific PDF
+page. Ensure that the provided <code class="paramref">form</code> and <code class="paramref">page</code> are valid and correspond to
+the same document.</p>
+</div>
+
+
+
+
+  <a id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Undo_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo*"></a>
+
+  <h3 id="nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Undo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)">
+  Undo(PdfForm, PdfPage)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L330"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reverts the most recent change made to the specified PDF form on the given page.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Undo(PdfForm form, PdfPage page)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>form</code> <a class="xref" href="nebulae.dotPDFium.Forms.PdfForm.html">PdfForm</a></dt>
+    <dd><p>The PDF form to undo the last change for. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+    <dt><code>page</code> <a class="xref" href="nebulae.dotPDFium.PdfPage.html">PdfPage</a></dt>
+    <dd><p>The page of the PDF form where the undo operation is performed. Cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the undo operation was successful; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/Forms/PdfFormNotifier.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

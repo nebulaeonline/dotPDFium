@@ -308,6 +308,90 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.Forms.PdfForm.GetElements
   nameWithType: PdfForm.GetElements
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypeCount
+  name: GetFocusableSubtypeCount()
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFocusableSubtypeCount
+  commentId: M:nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypeCount
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypeCount()
+  nameWithType: PdfForm.GetFocusableSubtypeCount()
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypeCount*
+  name: GetFocusableSubtypeCount
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFocusableSubtypeCount_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypeCount
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypeCount
+  nameWithType: PdfForm.GetFocusableSubtypeCount
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypes
+  name: GetFocusableSubtypes()
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFocusableSubtypes
+  commentId: M:nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypes
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypes()
+  nameWithType: PdfForm.GetFocusableSubtypes()
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypes*
+  name: GetFocusableSubtypes
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFocusableSubtypes_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypes
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFocusableSubtypes
+  nameWithType: PdfForm.GetFocusableSubtypes
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAlternateName(nebulae.dotPDFium.PdfAnnotation)
+  name: GetFormFieldAlternateName(PdfAnnotation)
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFormFieldAlternateName_nebulae_dotPDFium_PdfAnnotation_
+  commentId: M:nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAlternateName(nebulae.dotPDFium.PdfAnnotation)
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAlternateName(nebulae.dotPDFium.PdfAnnotation)
+  nameWithType: PdfForm.GetFormFieldAlternateName(PdfAnnotation)
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAlternateName*
+  name: GetFormFieldAlternateName
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFormFieldAlternateName_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAlternateName
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAlternateName
+  nameWithType: PdfForm.GetFormFieldAlternateName
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAtPoint(nebulae.dotPDFium.PdfPage,System.Single,System.Single)
+  name: GetFormFieldAtPoint(PdfPage, float, float)
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFormFieldAtPoint_nebulae_dotPDFium_PdfPage_System_Single_System_Single_
+  commentId: M:nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAtPoint(nebulae.dotPDFium.PdfPage,System.Single,System.Single)
+  name.vb: GetFormFieldAtPoint(PdfPage, Single, Single)
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAtPoint(nebulae.dotPDFium.PdfPage, float, float)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAtPoint(nebulae.dotPDFium.PdfPage, Single, Single)
+  nameWithType: PdfForm.GetFormFieldAtPoint(PdfPage, float, float)
+  nameWithType.vb: PdfForm.GetFormFieldAtPoint(PdfPage, Single, Single)
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAtPoint*
+  name: GetFormFieldAtPoint
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFormFieldAtPoint_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAtPoint
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldAtPoint
+  nameWithType: PdfForm.GetFormFieldAtPoint
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldName(nebulae.dotPDFium.PdfAnnotation)
+  name: GetFormFieldName(PdfAnnotation)
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFormFieldName_nebulae_dotPDFium_PdfAnnotation_
+  commentId: M:nebulae.dotPDFium.Forms.PdfForm.GetFormFieldName(nebulae.dotPDFium.PdfAnnotation)
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldName(nebulae.dotPDFium.PdfAnnotation)
+  nameWithType: PdfForm.GetFormFieldName(PdfAnnotation)
+- uid: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldName*
+  name: GetFormFieldName
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_GetFormFieldName_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfForm.GetFormFieldName
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfForm.GetFormFieldName
+  nameWithType: PdfForm.GetFormFieldName
+- uid: nebulae.dotPDFium.Forms.PdfForm.SetFocusableSubtypes(System.Collections.Generic.IEnumerable{nebulae.dotPDFium.Native.PdfAnnotationSubtype})
+  name: SetFocusableSubtypes(IEnumerable<PdfAnnotationSubtype>)
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_SetFocusableSubtypes_System_Collections_Generic_IEnumerable_nebulae_dotPDFium_Native_PdfAnnotationSubtype__
+  commentId: M:nebulae.dotPDFium.Forms.PdfForm.SetFocusableSubtypes(System.Collections.Generic.IEnumerable{nebulae.dotPDFium.Native.PdfAnnotationSubtype})
+  name.vb: SetFocusableSubtypes(IEnumerable(Of PdfAnnotationSubtype))
+  fullName: nebulae.dotPDFium.Forms.PdfForm.SetFocusableSubtypes(System.Collections.Generic.IEnumerable<nebulae.dotPDFium.Native.PdfAnnotationSubtype>)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfForm.SetFocusableSubtypes(System.Collections.Generic.IEnumerable(Of nebulae.dotPDFium.Native.PdfAnnotationSubtype))
+  nameWithType: PdfForm.SetFocusableSubtypes(IEnumerable<PdfAnnotationSubtype>)
+  nameWithType.vb: PdfForm.SetFocusableSubtypes(IEnumerable(Of PdfAnnotationSubtype))
+- uid: nebulae.dotPDFium.Forms.PdfForm.SetFocusableSubtypes*
+  name: SetFocusableSubtypes
+  href: api/nebulae.dotPDFium.Forms.PdfForm.html#nebulae_dotPDFium_Forms_PdfForm_SetFocusableSubtypes_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfForm.SetFocusableSubtypes
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfForm.SetFocusableSubtypes
+  nameWithType: PdfForm.SetFocusableSubtypes
 - uid: nebulae.dotPDFium.Forms.PdfFormEvents
   name: PdfFormEvents
   href: api/nebulae.dotPDFium.Forms.PdfFormEvents.html
@@ -444,6 +528,463 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.Forms.PdfFormEvents.OnSetTimer
   nameWithType: PdfFormEvents.OnSetTimer
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier
+  name: PdfFormEventsNotifier
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html
+  commentId: T:nebulae.dotPDFium.Forms.PdfFormEventsNotifier
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier
+  nameWithType: PdfFormEventsNotifier
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: CanRedo(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanRedo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.CanRedo(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo*
+  name: CanRedo
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanRedo_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanRedo
+  nameWithType: PdfFormEventsNotifier.CanRedo
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: CanUndo(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanUndo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.CanUndo(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo*
+  name: CanUndo
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_CanUndo_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.CanUndo
+  nameWithType: PdfFormEventsNotifier.CanUndo
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.Native.PdfPageAActionType)
+  name: DoDocumentAAction(PdfForm, PdfPageAActionType)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentAAction_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_Native_PdfPageAActionType_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.Native.PdfPageAActionType)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.Native.PdfPageAActionType)
+  nameWithType: PdfFormEventsNotifier.DoDocumentAAction(PdfForm, PdfPageAActionType)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction*
+  name: DoDocumentAAction
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentAAction_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentAAction
+  nameWithType: PdfFormEventsNotifier.DoDocumentAAction
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction(nebulae.dotPDFium.Forms.PdfForm)
+  name: DoDocumentJSAction(PdfForm)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentJSAction_nebulae_dotPDFium_Forms_PdfForm_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction(nebulae.dotPDFium.Forms.PdfForm)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction(nebulae.dotPDFium.Forms.PdfForm)
+  nameWithType: PdfFormEventsNotifier.DoDocumentJSAction(PdfForm)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction*
+  name: DoDocumentJSAction
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentJSAction_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentJSAction
+  nameWithType: PdfFormEventsNotifier.DoDocumentJSAction
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction(nebulae.dotPDFium.Forms.PdfForm)
+  name: DoDocumentOpenAction(PdfForm)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentOpenAction_nebulae_dotPDFium_Forms_PdfForm_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction(nebulae.dotPDFium.Forms.PdfForm)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction(nebulae.dotPDFium.Forms.PdfForm)
+  nameWithType: PdfFormEventsNotifier.DoDocumentOpenAction(PdfForm)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction*
+  name: DoDocumentOpenAction
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoDocumentOpenAction_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoDocumentOpenAction
+  nameWithType: PdfFormEventsNotifier.DoDocumentOpenAction
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.Native.PdfPageAActionType)
+  name: DoPageAAction(PdfForm, PdfPage, PdfPageAActionType)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoPageAAction_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_nebulae_dotPDFium_Native_PdfPageAActionType_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.Native.PdfPageAActionType)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, nebulae.dotPDFium.Native.PdfPageAActionType)
+  nameWithType: PdfFormEventsNotifier.DoPageAAction(PdfForm, PdfPage, PdfPageAActionType)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction*
+  name: DoPageAAction
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_DoPageAAction_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.DoPageAAction
+  nameWithType: PdfFormEventsNotifier.DoPageAAction
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus(nebulae.dotPDFium.Forms.PdfForm)
+  name: ForceKillFocus(PdfForm)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ForceKillFocus_nebulae_dotPDFium_Forms_PdfForm_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus(nebulae.dotPDFium.Forms.PdfForm)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus(nebulae.dotPDFium.Forms.PdfForm)
+  nameWithType: PdfFormEventsNotifier.ForceKillFocus(PdfForm)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus*
+  name: ForceKillFocus
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ForceKillFocus_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ForceKillFocus
+  nameWithType: PdfFormEventsNotifier.ForceKillFocus
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm,System.Int32@,nebulae.dotPDFium.PdfAnnotation@)
+  name: GetFocusedAnnot(PdfForm, out int, out PdfAnnotation?)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedAnnot_nebulae_dotPDFium_Forms_PdfForm_System_Int32__nebulae_dotPDFium_PdfAnnotation__
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm,System.Int32@,nebulae.dotPDFium.PdfAnnotation@)
+  name.vb: GetFocusedAnnot(PdfForm, Integer, PdfAnnotation)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm, out int, out nebulae.dotPDFium.PdfAnnotation?)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm, Integer, nebulae.dotPDFium.PdfAnnotation)
+  nameWithType: PdfFormEventsNotifier.GetFocusedAnnot(PdfForm, out int, out PdfAnnotation?)
+  nameWithType.vb: PdfFormEventsNotifier.GetFocusedAnnot(PdfForm, Integer, PdfAnnotation)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot*
+  name: GetFocusedAnnot
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedAnnot_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedAnnot
+  nameWithType: PdfFormEventsNotifier.GetFocusedAnnot
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: GetFocusedText(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.GetFocusedText(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText*
+  name: GetFocusedText
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetFocusedText_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetFocusedText
+  nameWithType: PdfFormEventsNotifier.GetFocusedText
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: GetSelectedText(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetSelectedText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.GetSelectedText(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText*
+  name: GetSelectedText
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_GetSelectedText_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.GetSelectedText
+  nameWithType: PdfFormEventsNotifier.GetSelectedText
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32)
+  name: IsIndexSelected(PdfForm, PdfPage, int)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_IsIndexSelected_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32)
+  name.vb: IsIndexSelected(PdfForm, PdfPage, Integer)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer)
+  nameWithType: PdfFormEventsNotifier.IsIndexSelected(PdfForm, PdfPage, int)
+  nameWithType.vb: PdfFormEventsNotifier.IsIndexSelected(PdfForm, PdfPage, Integer)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected*
+  name: IsIndexSelected
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_IsIndexSelected_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.IsIndexSelected
+  nameWithType: PdfFormEventsNotifier.IsIndexSelected
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: OnAfterLoadPage(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnAfterLoadPage_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.OnAfterLoadPage(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage*
+  name: OnAfterLoadPage
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnAfterLoadPage_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnAfterLoadPage
+  nameWithType: PdfFormEventsNotifier.OnAfterLoadPage
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: OnBeforeClosePage(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnBeforeClosePage_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.OnBeforeClosePage(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage*
+  name: OnBeforeClosePage
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnBeforeClosePage_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnBeforeClosePage
+  nameWithType: PdfFormEventsNotifier.OnBeforeClosePage
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)
+  name: OnChar(PdfForm, PdfPage, int, int)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnChar_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)
+  name.vb: OnChar(PdfForm, PdfPage, Integer, Integer)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, int)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Integer)
+  nameWithType: PdfFormEventsNotifier.OnChar(PdfForm, PdfPage, int, int)
+  nameWithType.vb: PdfFormEventsNotifier.OnChar(PdfForm, PdfPage, Integer, Integer)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar*
+  name: OnChar
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnChar_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnChar
+  nameWithType: PdfFormEventsNotifier.OnChar
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name: OnFocus(PdfForm, PdfPage, int, double, double)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnFocus_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name.vb: OnFocus(PdfForm, PdfPage, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, double, double)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Double, Double)
+  nameWithType: PdfFormEventsNotifier.OnFocus(PdfForm, PdfPage, int, double, double)
+  nameWithType.vb: PdfFormEventsNotifier.OnFocus(PdfForm, PdfPage, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus*
+  name: OnFocus
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnFocus_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnFocus
+  nameWithType: PdfFormEventsNotifier.OnFocus
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)
+  name: OnKeyDown(PdfForm, PdfPage, int, int)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyDown_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)
+  name.vb: OnKeyDown(PdfForm, PdfPage, Integer, Integer)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, int)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Integer)
+  nameWithType: PdfFormEventsNotifier.OnKeyDown(PdfForm, PdfPage, int, int)
+  nameWithType.vb: PdfFormEventsNotifier.OnKeyDown(PdfForm, PdfPage, Integer, Integer)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown*
+  name: OnKeyDown
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyDown_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyDown
+  nameWithType: PdfFormEventsNotifier.OnKeyDown
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)
+  name: OnKeyUp(PdfForm, PdfPage, int, int)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyUp_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Int32_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Int32)
+  name.vb: OnKeyUp(PdfForm, PdfPage, Integer, Integer)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, int)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Integer)
+  nameWithType: PdfFormEventsNotifier.OnKeyUp(PdfForm, PdfPage, int, int)
+  nameWithType.vb: PdfFormEventsNotifier.OnKeyUp(PdfForm, PdfPage, Integer, Integer)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp*
+  name: OnKeyUp
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnKeyUp_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnKeyUp
+  nameWithType: PdfFormEventsNotifier.OnKeyUp
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name: OnLButtonDoubleClick(PdfForm, PdfPage, int, double, double)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDoubleClick_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name.vb: OnLButtonDoubleClick(PdfForm, PdfPage, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, double, double)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Double, Double)
+  nameWithType: PdfFormEventsNotifier.OnLButtonDoubleClick(PdfForm, PdfPage, int, double, double)
+  nameWithType.vb: PdfFormEventsNotifier.OnLButtonDoubleClick(PdfForm, PdfPage, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick*
+  name: OnLButtonDoubleClick
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDoubleClick_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDoubleClick
+  nameWithType: PdfFormEventsNotifier.OnLButtonDoubleClick
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name: OnLButtonDown(PdfForm, PdfPage, int, double, double)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDown_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name.vb: OnLButtonDown(PdfForm, PdfPage, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, double, double)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Double, Double)
+  nameWithType: PdfFormEventsNotifier.OnLButtonDown(PdfForm, PdfPage, int, double, double)
+  nameWithType.vb: PdfFormEventsNotifier.OnLButtonDown(PdfForm, PdfPage, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown*
+  name: OnLButtonDown
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonDown_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonDown
+  nameWithType: PdfFormEventsNotifier.OnLButtonDown
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name: OnLButtonUp(PdfForm, PdfPage, int, double, double)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonUp_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name.vb: OnLButtonUp(PdfForm, PdfPage, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, double, double)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Double, Double)
+  nameWithType: PdfFormEventsNotifier.OnLButtonUp(PdfForm, PdfPage, int, double, double)
+  nameWithType.vb: PdfFormEventsNotifier.OnLButtonUp(PdfForm, PdfPage, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp*
+  name: OnLButtonUp
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnLButtonUp_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnLButtonUp
+  nameWithType: PdfFormEventsNotifier.OnLButtonUp
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name: OnMouseMove(PdfForm, PdfPage, int, double, double)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseMove_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name.vb: OnMouseMove(PdfForm, PdfPage, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, double, double)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Double, Double)
+  nameWithType: PdfFormEventsNotifier.OnMouseMove(PdfForm, PdfPage, int, double, double)
+  nameWithType.vb: PdfFormEventsNotifier.OnMouseMove(PdfForm, PdfPage, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove*
+  name: OnMouseMove
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseMove_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseMove
+  nameWithType: PdfFormEventsNotifier.OnMouseMove
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,nebulae.dotPDFium.Native.FsPointF,System.Int32,System.Int32)
+  name: OnMouseWheel(PdfForm, PdfPage, int, FsPointF, int, int)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseWheel_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_nebulae_dotPDFium_Native_FsPointF_System_Int32_System_Int32_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,nebulae.dotPDFium.Native.FsPointF,System.Int32,System.Int32)
+  name.vb: OnMouseWheel(PdfForm, PdfPage, Integer, FsPointF, Integer, Integer)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, nebulae.dotPDFium.Native.FsPointF, int, int)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, nebulae.dotPDFium.Native.FsPointF, Integer, Integer)
+  nameWithType: PdfFormEventsNotifier.OnMouseWheel(PdfForm, PdfPage, int, FsPointF, int, int)
+  nameWithType.vb: PdfFormEventsNotifier.OnMouseWheel(PdfForm, PdfPage, Integer, FsPointF, Integer, Integer)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel*
+  name: OnMouseWheel
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnMouseWheel_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnMouseWheel
+  nameWithType: PdfFormEventsNotifier.OnMouseWheel
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name: OnRButtonDown(PdfForm, PdfPage, int, double, double)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonDown_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name.vb: OnRButtonDown(PdfForm, PdfPage, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, double, double)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Double, Double)
+  nameWithType: PdfFormEventsNotifier.OnRButtonDown(PdfForm, PdfPage, int, double, double)
+  nameWithType.vb: PdfFormEventsNotifier.OnRButtonDown(PdfForm, PdfPage, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown*
+  name: OnRButtonDown
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonDown_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonDown
+  nameWithType: PdfFormEventsNotifier.OnRButtonDown
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name: OnRButtonUp(PdfForm, PdfPage, int, double, double)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonUp_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Double_System_Double_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Double,System.Double)
+  name.vb: OnRButtonUp(PdfForm, PdfPage, Integer, Double, Double)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, double, double)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Double, Double)
+  nameWithType: PdfFormEventsNotifier.OnRButtonUp(PdfForm, PdfPage, int, double, double)
+  nameWithType.vb: PdfFormEventsNotifier.OnRButtonUp(PdfForm, PdfPage, Integer, Double, Double)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp*
+  name: OnRButtonUp
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_OnRButtonUp_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.OnRButtonUp
+  nameWithType: PdfFormEventsNotifier.OnRButtonUp
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: Redo(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Redo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.Redo(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo*
+  name: Redo
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Redo_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Redo
+  nameWithType: PdfFormEventsNotifier.Redo
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.String)
+  name: ReplaceAndKeepSelection(PdfForm, PdfPage, string)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceAndKeepSelection_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_String_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.String)
+  name.vb: ReplaceAndKeepSelection(PdfForm, PdfPage, String)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, string)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, String)
+  nameWithType: PdfFormEventsNotifier.ReplaceAndKeepSelection(PdfForm, PdfPage, string)
+  nameWithType.vb: PdfFormEventsNotifier.ReplaceAndKeepSelection(PdfForm, PdfPage, String)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection*
+  name: ReplaceAndKeepSelection
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceAndKeepSelection_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceAndKeepSelection
+  nameWithType: PdfFormEventsNotifier.ReplaceAndKeepSelection
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.String)
+  name: ReplaceSelection(PdfForm, PdfPage, string)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceSelection_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_String_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.String)
+  name.vb: ReplaceSelection(PdfForm, PdfPage, String)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, string)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, String)
+  nameWithType: PdfFormEventsNotifier.ReplaceSelection(PdfForm, PdfPage, string)
+  nameWithType.vb: PdfFormEventsNotifier.ReplaceSelection(PdfForm, PdfPage, String)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection*
+  name: ReplaceSelection
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_ReplaceSelection_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.ReplaceSelection
+  nameWithType: PdfFormEventsNotifier.ReplaceSelection
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: SelectAllText(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SelectAllText_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.SelectAllText(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText*
+  name: SelectAllText
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SelectAllText_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SelectAllText
+  nameWithType: PdfFormEventsNotifier.SelectAllText
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfAnnotation)
+  name: SetFocusedAnnot(PdfForm, PdfAnnotation)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetFocusedAnnot_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfAnnotation_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfAnnotation)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfAnnotation)
+  nameWithType: PdfFormEventsNotifier.SetFocusedAnnot(PdfForm, PdfAnnotation)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot*
+  name: SetFocusedAnnot
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetFocusedAnnot_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetFocusedAnnot
+  nameWithType: PdfFormEventsNotifier.SetFocusedAnnot
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Boolean)
+  name: SetIndexSelected(PdfForm, PdfPage, int, bool)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetIndexSelected_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_System_Int32_System_Boolean_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage,System.Int32,System.Boolean)
+  name.vb: SetIndexSelected(PdfForm, PdfPage, Integer, Boolean)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, int, bool)
+  fullName.vb: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage, Integer, Boolean)
+  nameWithType: PdfFormEventsNotifier.SetIndexSelected(PdfForm, PdfPage, int, bool)
+  nameWithType.vb: PdfFormEventsNotifier.SetIndexSelected(PdfForm, PdfPage, Integer, Boolean)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected*
+  name: SetIndexSelected
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_SetIndexSelected_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.SetIndexSelected
+  nameWithType: PdfFormEventsNotifier.SetIndexSelected
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  name: Undo(PdfForm, PdfPage)
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Undo_nebulae_dotPDFium_Forms_PdfForm_nebulae_dotPDFium_PdfPage_
+  commentId: M:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo(nebulae.dotPDFium.Forms.PdfForm,nebulae.dotPDFium.PdfPage)
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo(nebulae.dotPDFium.Forms.PdfForm, nebulae.dotPDFium.PdfPage)
+  nameWithType: PdfFormEventsNotifier.Undo(PdfForm, PdfPage)
+- uid: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo*
+  name: Undo
+  href: api/nebulae.dotPDFium.Forms.PdfFormEventsNotifier.html#nebulae_dotPDFium_Forms_PdfFormEventsNotifier_Undo_
+  commentId: Overload:nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.Forms.PdfFormEventsNotifier.Undo
+  nameWithType: PdfFormEventsNotifier.Undo
 - uid: nebulae.dotPDFium.Forms.PdfFormFillBinder
   name: PdfFormFillBinder
   href: api/nebulae.dotPDFium.Forms.PdfFormFillBinder.html
@@ -2450,21 +2991,6 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes
   fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes
   nameWithType: PdfAnnotNative.FPDFAnnot_SetFocusableSubtypes
-- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(System.IntPtr,System.String,System.Single)
-  name: FPDFAnnot_SetNumberValue(nint, string, float)
-  href: api/nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetNumberValue_System_IntPtr_System_String_System_Single_
-  commentId: M:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(System.IntPtr,System.String,System.Single)
-  name.vb: FPDFAnnot_SetNumberValue(IntPtr, String, Single)
-  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(nint, string, float)
-  fullName.vb: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue(System.IntPtr, String, Single)
-  nameWithType: PdfAnnotNative.FPDFAnnot_SetNumberValue(nint, string, float)
-  nameWithType.vb: PdfAnnotNative.FPDFAnnot_SetNumberValue(IntPtr, String, Single)
-- uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue*
-  name: FPDFAnnot_SetNumberValue
-  href: api/nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetNumberValue_
-  commentId: Overload:nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue
-  fullName: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetNumberValue
-  nameWithType: PdfAnnotNative.FPDFAnnot_SetNumberValue
 - uid: nebulae.dotPDFium.Native.PdfAnnotNative.FPDFAnnot_SetRect(System.IntPtr,nebulae.dotPDFium.Native.FsRectF@)
   name: FPDFAnnot_SetRect(nint, ref FsRectF)
   href: api/nebulae.dotPDFium.Native.PdfAnnotNative.html#nebulae_dotPDFium_Native_PdfAnnotNative_FPDFAnnot_SetRect_System_IntPtr_nebulae_dotPDFium_Native_FsRectF__
@@ -3846,21 +4372,6 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetLocationInPage
   fullName: nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetLocationInPage
   nameWithType: PdfDocNative.FPDFDest_GetLocationInPage
-- uid: nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetPageIndex(System.IntPtr,System.IntPtr)
-  name: FPDFDest_GetPageIndex(nint, nint)
-  href: api/nebulae.dotPDFium.Native.PdfDocNative.html#nebulae_dotPDFium_Native_PdfDocNative_FPDFDest_GetPageIndex_System_IntPtr_System_IntPtr_
-  commentId: M:nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetPageIndex(System.IntPtr,System.IntPtr)
-  name.vb: FPDFDest_GetPageIndex(IntPtr, IntPtr)
-  fullName: nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetPageIndex(nint, nint)
-  fullName.vb: nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetPageIndex(System.IntPtr, System.IntPtr)
-  nameWithType: PdfDocNative.FPDFDest_GetPageIndex(nint, nint)
-  nameWithType.vb: PdfDocNative.FPDFDest_GetPageIndex(IntPtr, IntPtr)
-- uid: nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetPageIndex*
-  name: FPDFDest_GetPageIndex
-  href: api/nebulae.dotPDFium.Native.PdfDocNative.html#nebulae_dotPDFium_Native_PdfDocNative_FPDFDest_GetPageIndex_
-  commentId: Overload:nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetPageIndex
-  fullName: nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetPageIndex
-  nameWithType: PdfDocNative.FPDFDest_GetPageIndex
 - uid: nebulae.dotPDFium.Native.PdfDocNative.FPDFDest_GetView(System.IntPtr,System.UInt32@,System.Single[])
   name: FPDFDest_GetView(nint, out uint, float[])
   href: api/nebulae.dotPDFium.Native.PdfDocNative.html#nebulae_dotPDFium_Native_PdfDocNative_FPDFDest_GetView_System_IntPtr_System_UInt32__System_Single___
@@ -4011,15 +4522,6 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfDocNative.FPDFLink_GetQuadPoints
   fullName: nebulae.dotPDFium.Native.PdfDocNative.FPDFLink_GetQuadPoints
   nameWithType: PdfDocNative.FPDFLink_GetQuadPoints
-- uid: nebulae.dotPDFium.Native.PdfDocNative.FPDF_GetFileIdentifier(System.IntPtr,System.Int32,System.IntPtr,System.UInt32)
-  name: FPDF_GetFileIdentifier(nint, int, nint, uint)
-  href: api/nebulae.dotPDFium.Native.PdfDocNative.html#nebulae_dotPDFium_Native_PdfDocNative_FPDF_GetFileIdentifier_System_IntPtr_System_Int32_System_IntPtr_System_UInt32_
-  commentId: M:nebulae.dotPDFium.Native.PdfDocNative.FPDF_GetFileIdentifier(System.IntPtr,System.Int32,System.IntPtr,System.UInt32)
-  name.vb: FPDF_GetFileIdentifier(IntPtr, Integer, IntPtr, UInteger)
-  fullName: nebulae.dotPDFium.Native.PdfDocNative.FPDF_GetFileIdentifier(nint, int, nint, uint)
-  fullName.vb: nebulae.dotPDFium.Native.PdfDocNative.FPDF_GetFileIdentifier(System.IntPtr, Integer, System.IntPtr, UInteger)
-  nameWithType: PdfDocNative.FPDF_GetFileIdentifier(nint, int, nint, uint)
-  nameWithType.vb: PdfDocNative.FPDF_GetFileIdentifier(IntPtr, Integer, IntPtr, UInteger)
 - uid: nebulae.dotPDFium.Native.PdfDocNative.FPDF_GetFileIdentifier(System.IntPtr,System.UInt32,System.Byte[],System.UInt32)
   name: FPDF_GetFileIdentifier(nint, uint, byte[], uint)
   href: api/nebulae.dotPDFium.Native.PdfDocNative.html#nebulae_dotPDFium_Native_PdfDocNative_FPDF_GetFileIdentifier_System_IntPtr_System_UInt32_System_Byte___System_UInt32_
@@ -4542,6 +5044,21 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFile
   fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFile
   nameWithType: PdfEditNative.FPDFImageObj_LoadJpegFile
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFileInline(System.IntPtr[],System.Int32,System.IntPtr,nebulae.dotPDFium.Native.PdfFileAccess@)
+  name: FPDFImageObj_LoadJpegFileInline(nint[], int, nint, ref PdfFileAccess)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFImageObj_LoadJpegFileInline_System_IntPtr___System_Int32_System_IntPtr_nebulae_dotPDFium_Native_PdfFileAccess__
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFileInline(System.IntPtr[],System.Int32,System.IntPtr,nebulae.dotPDFium.Native.PdfFileAccess@)
+  name.vb: FPDFImageObj_LoadJpegFileInline(IntPtr(), Integer, IntPtr, PdfFileAccess)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFileInline(nint[], int, nint, ref nebulae.dotPDFium.Native.PdfFileAccess)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFileInline(System.IntPtr(), Integer, System.IntPtr, nebulae.dotPDFium.Native.PdfFileAccess)
+  nameWithType: PdfEditNative.FPDFImageObj_LoadJpegFileInline(nint[], int, nint, ref PdfFileAccess)
+  nameWithType.vb: PdfEditNative.FPDFImageObj_LoadJpegFileInline(IntPtr(), Integer, IntPtr, PdfFileAccess)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFileInline*
+  name: FPDFImageObj_LoadJpegFileInline
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFImageObj_LoadJpegFileInline_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFileInline
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_LoadJpegFileInline
+  nameWithType: PdfEditNative.FPDFImageObj_LoadJpegFileInline
 - uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFImageObj_SetBitmap(System.IntPtr[],System.Int32,System.IntPtr,System.IntPtr)
   name: FPDFImageObj_SetBitmap(nint[], int, nint, nint)
   href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFImageObj_SetBitmap_System_IntPtr___System_Int32_System_IntPtr_System_IntPtr_
@@ -4962,6 +5479,21 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMark
   fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMark
   nameWithType: PdfEditNative.FPDFPageObj_GetMark
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMarkedContentID(System.IntPtr)
+  name: FPDFPageObj_GetMarkedContentID(nint)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPageObj_GetMarkedContentID_System_IntPtr_
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMarkedContentID(System.IntPtr)
+  name.vb: FPDFPageObj_GetMarkedContentID(IntPtr)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMarkedContentID(nint)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMarkedContentID(System.IntPtr)
+  nameWithType: PdfEditNative.FPDFPageObj_GetMarkedContentID(nint)
+  nameWithType.vb: PdfEditNative.FPDFPageObj_GetMarkedContentID(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMarkedContentID*
+  name: FPDFPageObj_GetMarkedContentID
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPageObj_GetMarkedContentID_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMarkedContentID
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMarkedContentID
+  nameWithType: PdfEditNative.FPDFPageObj_GetMarkedContentID
 - uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_GetMatrix(System.IntPtr,nebulae.dotPDFium.Native.FsMatrixF@)
   name: FPDFPageObj_GetMatrix(nint, out FsMatrixF)
   href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPageObj_GetMatrix_System_IntPtr_nebulae_dotPDFium_Native_FsMatrixF__
@@ -5097,6 +5629,21 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_RemoveMark
   fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_RemoveMark
   nameWithType: PdfEditNative.FPDFPageObj_RemoveMark
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetBlendMode(System.IntPtr,System.String)
+  name: FPDFPageObj_SetBlendMode(nint, string)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPageObj_SetBlendMode_System_IntPtr_System_String_
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetBlendMode(System.IntPtr,System.String)
+  name.vb: FPDFPageObj_SetBlendMode(IntPtr, String)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetBlendMode(nint, string)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetBlendMode(System.IntPtr, String)
+  nameWithType: PdfEditNative.FPDFPageObj_SetBlendMode(nint, string)
+  nameWithType.vb: PdfEditNative.FPDFPageObj_SetBlendMode(IntPtr, String)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetBlendMode*
+  name: FPDFPageObj_SetBlendMode
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPageObj_SetBlendMode_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetBlendMode
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetBlendMode
+  nameWithType: PdfEditNative.FPDFPageObj_SetBlendMode
 - uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPageObj_SetDashArray(System.IntPtr,System.Single[],System.UIntPtr,System.Single)
   name: FPDFPageObj_SetDashArray(nint, float[], nuint, float)
   href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPageObj_SetDashArray_System_IntPtr_System_Single___System_UIntPtr_System_Single_
@@ -5427,6 +5974,66 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPage_TransformAnnots
   fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPage_TransformAnnots
   nameWithType: PdfEditNative.FPDFPage_TransformAnnots
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetClose(System.IntPtr)
+  name: FPDFPathSegment_GetClose(nint)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPathSegment_GetClose_System_IntPtr_
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetClose(System.IntPtr)
+  name.vb: FPDFPathSegment_GetClose(IntPtr)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetClose(nint)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetClose(System.IntPtr)
+  nameWithType: PdfEditNative.FPDFPathSegment_GetClose(nint)
+  nameWithType.vb: PdfEditNative.FPDFPathSegment_GetClose(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetClose*
+  name: FPDFPathSegment_GetClose
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPathSegment_GetClose_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetClose
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetClose
+  nameWithType: PdfEditNative.FPDFPathSegment_GetClose
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetPoint(System.IntPtr,System.Double@,System.Double@)
+  name: FPDFPathSegment_GetPoint(nint, out double, out double)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPathSegment_GetPoint_System_IntPtr_System_Double__System_Double__
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetPoint(System.IntPtr,System.Double@,System.Double@)
+  name.vb: FPDFPathSegment_GetPoint(IntPtr, Double, Double)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetPoint(nint, out double, out double)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetPoint(System.IntPtr, Double, Double)
+  nameWithType: PdfEditNative.FPDFPathSegment_GetPoint(nint, out double, out double)
+  nameWithType.vb: PdfEditNative.FPDFPathSegment_GetPoint(IntPtr, Double, Double)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetPoint*
+  name: FPDFPathSegment_GetPoint
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPathSegment_GetPoint_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetPoint
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetPoint
+  nameWithType: PdfEditNative.FPDFPathSegment_GetPoint
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetType(System.IntPtr)
+  name: FPDFPathSegment_GetType(nint)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPathSegment_GetType_System_IntPtr_
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetType(System.IntPtr)
+  name.vb: FPDFPathSegment_GetType(IntPtr)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetType(nint)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetType(System.IntPtr)
+  nameWithType: PdfEditNative.FPDFPathSegment_GetType(nint)
+  nameWithType.vb: PdfEditNative.FPDFPathSegment_GetType(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetType*
+  name: FPDFPathSegment_GetType
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPathSegment_GetType_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetType
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPathSegment_GetType
+  nameWithType: PdfEditNative.FPDFPathSegment_GetType
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_BezierTo(System.IntPtr,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: FPDFPath_BezierTo(nint, float, float, float, float, float, float)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_BezierTo_System_IntPtr_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_BezierTo(System.IntPtr,System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name.vb: FPDFPath_BezierTo(IntPtr, Single, Single, Single, Single, Single, Single)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_BezierTo(nint, float, float, float, float, float, float)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_BezierTo(System.IntPtr, Single, Single, Single, Single, Single, Single)
+  nameWithType: PdfEditNative.FPDFPath_BezierTo(nint, float, float, float, float, float, float)
+  nameWithType.vb: PdfEditNative.FPDFPath_BezierTo(IntPtr, Single, Single, Single, Single, Single, Single)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_BezierTo*
+  name: FPDFPath_BezierTo
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_BezierTo_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_BezierTo
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_BezierTo
+  nameWithType: PdfEditNative.FPDFPath_BezierTo
 - uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_Close(System.IntPtr)
   name: FPDFPath_Close(nint)
   href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_Close_System_IntPtr_
@@ -5442,6 +6049,21 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_Close
   fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_Close
   nameWithType: PdfEditNative.FPDFPath_Close
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_CountSegments(System.IntPtr)
+  name: FPDFPath_CountSegments(nint)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_CountSegments_System_IntPtr_
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_CountSegments(System.IntPtr)
+  name.vb: FPDFPath_CountSegments(IntPtr)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_CountSegments(nint)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_CountSegments(System.IntPtr)
+  nameWithType: PdfEditNative.FPDFPath_CountSegments(nint)
+  nameWithType.vb: PdfEditNative.FPDFPath_CountSegments(IntPtr)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_CountSegments*
+  name: FPDFPath_CountSegments
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_CountSegments_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_CountSegments
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_CountSegments
+  nameWithType: PdfEditNative.FPDFPath_CountSegments
 - uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetDrawMode(System.IntPtr,System.Int32@,System.Boolean@)
   name: FPDFPath_GetDrawMode(nint, out int, out bool)
   href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_GetDrawMode_System_IntPtr_System_Int32__System_Boolean__
@@ -5457,6 +6079,21 @@ references:
   commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetDrawMode
   fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetDrawMode
   nameWithType: PdfEditNative.FPDFPath_GetDrawMode
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetPathSegment(System.IntPtr,System.Int32)
+  name: FPDFPath_GetPathSegment(nint, int)
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_GetPathSegment_System_IntPtr_System_Int32_
+  commentId: M:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetPathSegment(System.IntPtr,System.Int32)
+  name.vb: FPDFPath_GetPathSegment(IntPtr, Integer)
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetPathSegment(nint, int)
+  fullName.vb: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetPathSegment(System.IntPtr, Integer)
+  nameWithType: PdfEditNative.FPDFPath_GetPathSegment(nint, int)
+  nameWithType.vb: PdfEditNative.FPDFPath_GetPathSegment(IntPtr, Integer)
+- uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetPathSegment*
+  name: FPDFPath_GetPathSegment
+  href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_GetPathSegment_
+  commentId: Overload:nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetPathSegment
+  fullName: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_GetPathSegment
+  nameWithType: PdfEditNative.FPDFPath_GetPathSegment
 - uid: nebulae.dotPDFium.Native.PdfEditNative.FPDFPath_LineTo(System.IntPtr,System.Single,System.Single)
   name: FPDFPath_LineTo(nint, float, float)
   href: api/nebulae.dotPDFium.Native.PdfEditNative.html#nebulae_dotPDFium_Native_PdfEditNative_FPDFPath_LineTo_System_IntPtr_System_Single_System_Single_
@@ -7338,6 +7975,12 @@ references:
   commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Image
   fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Image
   nameWithType: PdfPageObjectType.Image
+- uid: nebulae.dotPDFium.Native.PdfPageObjectType.Link
+  name: Link
+  href: api/nebulae.dotPDFium.Native.PdfPageObjectType.html#nebulae_dotPDFium_Native_PdfPageObjectType_Link
+  commentId: F:nebulae.dotPDFium.Native.PdfPageObjectType.Link
+  fullName: nebulae.dotPDFium.Native.PdfPageObjectType.Link
+  nameWithType: PdfPageObjectType.Link
 - uid: nebulae.dotPDFium.Native.PdfPageObjectType.Mark
   name: Mark
   href: api/nebulae.dotPDFium.Native.PdfPageObjectType.html#nebulae_dotPDFium_Native_PdfPageObjectType_Mark
@@ -7428,6 +8071,42 @@ references:
   commentId: F:nebulae.dotPDFium.Native.PdfPathDrawMode.Stroke
   fullName: nebulae.dotPDFium.Native.PdfPathDrawMode.Stroke
   nameWithType: PdfPathDrawMode.Stroke
+- uid: nebulae.dotPDFium.Native.PdfPathSegmentType
+  name: PdfPathSegmentType
+  href: api/nebulae.dotPDFium.Native.PdfPathSegmentType.html
+  commentId: T:nebulae.dotPDFium.Native.PdfPathSegmentType
+  fullName: nebulae.dotPDFium.Native.PdfPathSegmentType
+  nameWithType: PdfPathSegmentType
+- uid: nebulae.dotPDFium.Native.PdfPathSegmentType.BezierTo
+  name: BezierTo
+  href: api/nebulae.dotPDFium.Native.PdfPathSegmentType.html#nebulae_dotPDFium_Native_PdfPathSegmentType_BezierTo
+  commentId: F:nebulae.dotPDFium.Native.PdfPathSegmentType.BezierTo
+  fullName: nebulae.dotPDFium.Native.PdfPathSegmentType.BezierTo
+  nameWithType: PdfPathSegmentType.BezierTo
+- uid: nebulae.dotPDFium.Native.PdfPathSegmentType.Close
+  name: Close
+  href: api/nebulae.dotPDFium.Native.PdfPathSegmentType.html#nebulae_dotPDFium_Native_PdfPathSegmentType_Close
+  commentId: F:nebulae.dotPDFium.Native.PdfPathSegmentType.Close
+  fullName: nebulae.dotPDFium.Native.PdfPathSegmentType.Close
+  nameWithType: PdfPathSegmentType.Close
+- uid: nebulae.dotPDFium.Native.PdfPathSegmentType.LineTo
+  name: LineTo
+  href: api/nebulae.dotPDFium.Native.PdfPathSegmentType.html#nebulae_dotPDFium_Native_PdfPathSegmentType_LineTo
+  commentId: F:nebulae.dotPDFium.Native.PdfPathSegmentType.LineTo
+  fullName: nebulae.dotPDFium.Native.PdfPathSegmentType.LineTo
+  nameWithType: PdfPathSegmentType.LineTo
+- uid: nebulae.dotPDFium.Native.PdfPathSegmentType.MoveTo
+  name: MoveTo
+  href: api/nebulae.dotPDFium.Native.PdfPathSegmentType.html#nebulae_dotPDFium_Native_PdfPathSegmentType_MoveTo
+  commentId: F:nebulae.dotPDFium.Native.PdfPathSegmentType.MoveTo
+  fullName: nebulae.dotPDFium.Native.PdfPathSegmentType.MoveTo
+  nameWithType: PdfPathSegmentType.MoveTo
+- uid: nebulae.dotPDFium.Native.PdfPathSegmentType.Unknown
+  name: Unknown
+  href: api/nebulae.dotPDFium.Native.PdfPathSegmentType.html#nebulae_dotPDFium_Native_PdfPathSegmentType_Unknown
+  commentId: F:nebulae.dotPDFium.Native.PdfPathSegmentType.Unknown
+  fullName: nebulae.dotPDFium.Native.PdfPathSegmentType.Unknown
+  nameWithType: PdfPathSegmentType.Unknown
 - uid: nebulae.dotPDFium.Native.PdfPpoNative
   name: PdfPpoNative
   href: api/nebulae.dotPDFium.Native.PdfPpoNative.html
@@ -11090,6 +11769,19 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfAnnotation.AddInkStroke
   nameWithType: PdfAnnotation.AddInkStroke
+- uid: nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints(nebulae.dotPDFium.Native.FsQuadPointsF)
+  name: AppendAttachmentPoints(FsQuadPointsF)
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_AppendAttachmentPoints_nebulae_dotPDFium_Native_FsQuadPointsF_
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints(nebulae.dotPDFium.Native.FsQuadPointsF)
+  fullName: nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints(nebulae.dotPDFium.Native.FsQuadPointsF)
+  nameWithType: PdfAnnotation.AppendAttachmentPoints(FsQuadPointsF)
+- uid: nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints*
+  name: AppendAttachmentPoints
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_AppendAttachmentPoints_
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints
+  nameWithType: PdfAnnotation.AppendAttachmentPoints
 - uid: nebulae.dotPDFium.PdfAnnotation.AppendObject(nebulae.dotPDFium.PdfPageObject)
   name: AppendObject(PdfPageObject)
   href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_AppendObject_nebulae_dotPDFium_PdfPageObject_
@@ -11252,6 +11944,19 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfAnnotation.GetLine
   nameWithType: PdfAnnotation.GetLine
+- uid: nebulae.dotPDFium.PdfAnnotation.GetLink(nebulae.dotPDFium.PdfDocument)
+  name: GetLink(PdfDocument)
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetLink_nebulae_dotPDFium_PdfDocument_
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetLink(nebulae.dotPDFium.PdfDocument)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetLink(nebulae.dotPDFium.PdfDocument)
+  nameWithType: PdfAnnotation.GetLink(PdfDocument)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetLink*
+  name: GetLink
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetLink_
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetLink
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetLink
+  nameWithType: PdfAnnotation.GetLink
 - uid: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation(System.String)
   name: GetLinkedAnnotation(string)
   href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetLinkedAnnotation_System_String_
@@ -11268,6 +11973,22 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation
   nameWithType: PdfAnnotation.GetLinkedAnnotation
+- uid: nebulae.dotPDFium.PdfAnnotation.GetNumberValue(System.String)
+  name: GetNumberValue(string)
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetNumberValue_System_String_
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetNumberValue(System.String)
+  name.vb: GetNumberValue(String)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetNumberValue(string)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.GetNumberValue(String)
+  nameWithType: PdfAnnotation.GetNumberValue(string)
+  nameWithType.vb: PdfAnnotation.GetNumberValue(String)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetNumberValue*
+  name: GetNumberValue
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetNumberValue_
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetNumberValue
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetNumberValue
+  nameWithType: PdfAnnotation.GetNumberValue
 - uid: nebulae.dotPDFium.PdfAnnotation.GetObject(System.Int32)
   name: GetObject(int)
   href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetObject_System_Int32_
@@ -11310,6 +12031,22 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfAnnotation.GetRect
   nameWithType: PdfAnnotation.GetRect
+- uid: nebulae.dotPDFium.PdfAnnotation.GetStringValue(System.String)
+  name: GetStringValue(string)
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetStringValue_System_String_
+  commentId: M:nebulae.dotPDFium.PdfAnnotation.GetStringValue(System.String)
+  name.vb: GetStringValue(String)
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetStringValue(string)
+  fullName.vb: nebulae.dotPDFium.PdfAnnotation.GetStringValue(String)
+  nameWithType: PdfAnnotation.GetStringValue(string)
+  nameWithType.vb: PdfAnnotation.GetStringValue(String)
+- uid: nebulae.dotPDFium.PdfAnnotation.GetStringValue*
+  name: GetStringValue
+  href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetStringValue_
+  commentId: Overload:nebulae.dotPDFium.PdfAnnotation.GetStringValue
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfAnnotation.GetStringValue
+  nameWithType: PdfAnnotation.GetStringValue
 - uid: nebulae.dotPDFium.PdfAnnotation.GetSubtype
   name: GetSubtype()
   href: api/nebulae.dotPDFium.PdfAnnotation.html#nebulae_dotPDFium_PdfAnnotation_GetSubtype
@@ -13405,6 +14142,22 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfImageObject.LoadJpeg
   nameWithType: PdfImageObject.LoadJpeg
+- uid: nebulae.dotPDFium.PdfImageObject.LoadJpegInline(nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.Native.PdfFileAccess)
+  name: LoadJpegInline(PdfPage?, PdfFileAccess)
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_LoadJpegInline_nebulae_dotPDFium_PdfPage_nebulae_dotPDFium_Native_PdfFileAccess_
+  commentId: M:nebulae.dotPDFium.PdfImageObject.LoadJpegInline(nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.Native.PdfFileAccess)
+  name.vb: LoadJpegInline(PdfPage, PdfFileAccess)
+  fullName: nebulae.dotPDFium.PdfImageObject.LoadJpegInline(nebulae.dotPDFium.PdfPage?, nebulae.dotPDFium.Native.PdfFileAccess)
+  fullName.vb: nebulae.dotPDFium.PdfImageObject.LoadJpegInline(nebulae.dotPDFium.PdfPage, nebulae.dotPDFium.Native.PdfFileAccess)
+  nameWithType: PdfImageObject.LoadJpegInline(PdfPage?, PdfFileAccess)
+  nameWithType.vb: PdfImageObject.LoadJpegInline(PdfPage, PdfFileAccess)
+- uid: nebulae.dotPDFium.PdfImageObject.LoadJpegInline*
+  name: LoadJpegInline
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_LoadJpegInline_
+  commentId: Overload:nebulae.dotPDFium.PdfImageObject.LoadJpegInline
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfImageObject.LoadJpegInline
+  nameWithType: PdfImageObject.LoadJpegInline
 - uid: nebulae.dotPDFium.PdfImageObject.SetBitmap(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.PdfPage)
   name: SetBitmap(PdfBitmap, PdfPage?)
   href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_SetBitmap_nebulae_dotPDFium_PdfBitmap_nebulae_dotPDFium_PdfPage_
@@ -13421,6 +14174,22 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfImageObject.SetBitmap
   nameWithType: PdfImageObject.SetBitmap
+- uid: nebulae.dotPDFium.PdfImageObject.SetBlendMode(System.String)
+  name: SetBlendMode(string)
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_SetBlendMode_System_String_
+  commentId: M:nebulae.dotPDFium.PdfImageObject.SetBlendMode(System.String)
+  name.vb: SetBlendMode(String)
+  fullName: nebulae.dotPDFium.PdfImageObject.SetBlendMode(string)
+  fullName.vb: nebulae.dotPDFium.PdfImageObject.SetBlendMode(String)
+  nameWithType: PdfImageObject.SetBlendMode(string)
+  nameWithType.vb: PdfImageObject.SetBlendMode(String)
+- uid: nebulae.dotPDFium.PdfImageObject.SetBlendMode*
+  name: SetBlendMode
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_SetBlendMode_
+  commentId: Overload:nebulae.dotPDFium.PdfImageObject.SetBlendMode
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfImageObject.SetBlendMode
+  nameWithType: PdfImageObject.SetBlendMode
 - uid: nebulae.dotPDFium.PdfImageObject.SetMatrix(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)
   name: SetMatrix(double, double, double, double, double, double)
   href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_SetMatrix_System_Double_System_Double_System_Double_System_Double_System_Double_System_Double_
@@ -13443,6 +14212,38 @@ references:
   commentId: T:nebulae.dotPDFium.PdfIsDataAvailDelegate
   fullName: nebulae.dotPDFium.PdfIsDataAvailDelegate
   nameWithType: PdfIsDataAvailDelegate
+- uid: nebulae.dotPDFium.PdfLink
+  name: PdfLink
+  href: api/nebulae.dotPDFium.PdfLink.html
+  commentId: T:nebulae.dotPDFium.PdfLink
+  fullName: nebulae.dotPDFium.PdfLink
+  nameWithType: PdfLink
+- uid: nebulae.dotPDFium.PdfLink.GetAction
+  name: GetAction()
+  href: api/nebulae.dotPDFium.PdfLink.html#nebulae_dotPDFium_PdfLink_GetAction
+  commentId: M:nebulae.dotPDFium.PdfLink.GetAction
+  fullName: nebulae.dotPDFium.PdfLink.GetAction()
+  nameWithType: PdfLink.GetAction()
+- uid: nebulae.dotPDFium.PdfLink.GetAction*
+  name: GetAction
+  href: api/nebulae.dotPDFium.PdfLink.html#nebulae_dotPDFium_PdfLink_GetAction_
+  commentId: Overload:nebulae.dotPDFium.PdfLink.GetAction
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfLink.GetAction
+  nameWithType: PdfLink.GetAction
+- uid: nebulae.dotPDFium.PdfLink.GetDestination
+  name: GetDestination()
+  href: api/nebulae.dotPDFium.PdfLink.html#nebulae_dotPDFium_PdfLink_GetDestination
+  commentId: M:nebulae.dotPDFium.PdfLink.GetDestination
+  fullName: nebulae.dotPDFium.PdfLink.GetDestination()
+  nameWithType: PdfLink.GetDestination()
+- uid: nebulae.dotPDFium.PdfLink.GetDestination*
+  name: GetDestination
+  href: api/nebulae.dotPDFium.PdfLink.html#nebulae_dotPDFium_PdfLink_GetDestination_
+  commentId: Overload:nebulae.dotPDFium.PdfLink.GetDestination
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfLink.GetDestination
+  nameWithType: PdfLink.GetDestination
 - uid: nebulae.dotPDFium.PdfLinkAnnotation
   name: PdfLinkAnnotation
   href: api/nebulae.dotPDFium.PdfLinkAnnotation.html
@@ -14658,6 +15459,19 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfPageObject.GetMarkCount
   nameWithType: PdfPageObject.GetMarkCount
+- uid: nebulae.dotPDFium.PdfPageObject.GetMarkedContentId
+  name: GetMarkedContentId()
+  href: api/nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMarkedContentId
+  commentId: M:nebulae.dotPDFium.PdfPageObject.GetMarkedContentId
+  fullName: nebulae.dotPDFium.PdfPageObject.GetMarkedContentId()
+  nameWithType: PdfPageObject.GetMarkedContentId()
+- uid: nebulae.dotPDFium.PdfPageObject.GetMarkedContentId*
+  name: GetMarkedContentId
+  href: api/nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMarkedContentId_
+  commentId: Overload:nebulae.dotPDFium.PdfPageObject.GetMarkedContentId
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPageObject.GetMarkedContentId
+  nameWithType: PdfPageObject.GetMarkedContentId
 - uid: nebulae.dotPDFium.PdfPageObject.GetMatrixF
   name: GetMatrixF()
   href: api/nebulae.dotPDFium.PdfPageObject.html#nebulae_dotPDFium_PdfPageObject_GetMatrixF
@@ -14954,6 +15768,22 @@ references:
   commentId: T:nebulae.dotPDFium.PdfPathObject
   fullName: nebulae.dotPDFium.PdfPathObject
   nameWithType: PdfPathObject
+- uid: nebulae.dotPDFium.PdfPathObject.BezierTo(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name: BezierTo(float, float, float, float, float, float)
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_BezierTo_System_Single_System_Single_System_Single_System_Single_System_Single_System_Single_
+  commentId: M:nebulae.dotPDFium.PdfPathObject.BezierTo(System.Single,System.Single,System.Single,System.Single,System.Single,System.Single)
+  name.vb: BezierTo(Single, Single, Single, Single, Single, Single)
+  fullName: nebulae.dotPDFium.PdfPathObject.BezierTo(float, float, float, float, float, float)
+  fullName.vb: nebulae.dotPDFium.PdfPathObject.BezierTo(Single, Single, Single, Single, Single, Single)
+  nameWithType: PdfPathObject.BezierTo(float, float, float, float, float, float)
+  nameWithType.vb: PdfPathObject.BezierTo(Single, Single, Single, Single, Single, Single)
+- uid: nebulae.dotPDFium.PdfPathObject.BezierTo*
+  name: BezierTo
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_BezierTo_
+  commentId: Overload:nebulae.dotPDFium.PdfPathObject.BezierTo
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPathObject.BezierTo
+  nameWithType: PdfPathObject.BezierTo
 - uid: nebulae.dotPDFium.PdfPathObject.ClosePath
   name: ClosePath()
   href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_ClosePath
@@ -15048,6 +15878,58 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfPathObject.GetLineJoin
   nameWithType: PdfPathObject.GetLineJoin
+- uid: nebulae.dotPDFium.PdfPathObject.GetPoint
+  name: GetPoint()
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_GetPoint
+  commentId: M:nebulae.dotPDFium.PdfPathObject.GetPoint
+  fullName: nebulae.dotPDFium.PdfPathObject.GetPoint()
+  nameWithType: PdfPathObject.GetPoint()
+- uid: nebulae.dotPDFium.PdfPathObject.GetPoint*
+  name: GetPoint
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_GetPoint_
+  commentId: Overload:nebulae.dotPDFium.PdfPathObject.GetPoint
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPathObject.GetPoint
+  nameWithType: PdfPathObject.GetPoint
+- uid: nebulae.dotPDFium.PdfPathObject.GetSegmentCount
+  name: GetSegmentCount()
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_GetSegmentCount
+  commentId: M:nebulae.dotPDFium.PdfPathObject.GetSegmentCount
+  fullName: nebulae.dotPDFium.PdfPathObject.GetSegmentCount()
+  nameWithType: PdfPathObject.GetSegmentCount()
+- uid: nebulae.dotPDFium.PdfPathObject.GetSegmentCount*
+  name: GetSegmentCount
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_GetSegmentCount_
+  commentId: Overload:nebulae.dotPDFium.PdfPathObject.GetSegmentCount
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPathObject.GetSegmentCount
+  nameWithType: PdfPathObject.GetSegmentCount
+- uid: nebulae.dotPDFium.PdfPathObject.GetSegmentType
+  name: GetSegmentType()
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_GetSegmentType
+  commentId: M:nebulae.dotPDFium.PdfPathObject.GetSegmentType
+  fullName: nebulae.dotPDFium.PdfPathObject.GetSegmentType()
+  nameWithType: PdfPathObject.GetSegmentType()
+- uid: nebulae.dotPDFium.PdfPathObject.GetSegmentType*
+  name: GetSegmentType
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_GetSegmentType_
+  commentId: Overload:nebulae.dotPDFium.PdfPathObject.GetSegmentType
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPathObject.GetSegmentType
+  nameWithType: PdfPathObject.GetSegmentType
+- uid: nebulae.dotPDFium.PdfPathObject.IsCloseSegment
+  name: IsCloseSegment()
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_IsCloseSegment
+  commentId: M:nebulae.dotPDFium.PdfPathObject.IsCloseSegment
+  fullName: nebulae.dotPDFium.PdfPathObject.IsCloseSegment()
+  nameWithType: PdfPathObject.IsCloseSegment()
+- uid: nebulae.dotPDFium.PdfPathObject.IsCloseSegment*
+  name: IsCloseSegment
+  href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_IsCloseSegment_
+  commentId: Overload:nebulae.dotPDFium.PdfPathObject.IsCloseSegment
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfPathObject.IsCloseSegment
+  nameWithType: PdfPathObject.IsCloseSegment
 - uid: nebulae.dotPDFium.PdfPathObject.LineTo(System.Single,System.Single)
   name: LineTo(float, float)
   href: api/nebulae.dotPDFium.PdfPathObject.html#nebulae_dotPDFium_PdfPathObject_LineTo_System_Single_System_Single_

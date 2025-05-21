@@ -89,7 +89,7 @@
 
 
   <h1 id="nebulae_dotPDFium_PdfAnnotation" data-uid="nebulae.dotPDFium.PdfAnnotation" class="text-break">
-Class PdfAnnotation  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L7"><i class="bi bi-code-slash"></i></a>
+Class PdfAnnotation  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L8"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -196,7 +196,7 @@ Class PdfAnnotation  <a class="header-action link-secondary" title="View source"
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation__ctor_System_IntPtr_nebulae_dotPDFium_PdfPage_" data-uid="nebulae.dotPDFium.PdfAnnotation.#ctor(System.IntPtr,nebulae.dotPDFium.PdfPage)">
   PdfAnnotation(nint, PdfPage)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L21"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="nebulae.dotPDFium.PdfAnnotation.html">PdfAnnotation</a> class with the specified handle and associated
@@ -241,7 +241,7 @@ document.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation__page" data-uid="nebulae.dotPDFium.PdfAnnotation._page">
   _page
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L10"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -276,7 +276,7 @@ document.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_Subtype" data-uid="nebulae.dotPDFium.PdfAnnotation.Subtype">
   Subtype
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L32"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the subtype of the PDF annotation.</p>
@@ -316,7 +316,7 @@ highlight.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_AddFileAttachment_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.AddFileAttachment(System.String)">
   AddFileAttachment(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a file attachment annotation to the PDF and returns a reference to the attached file.</p>
@@ -360,7 +360,7 @@ the specified name. If the operation fails, the method returns <a href="https://
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_AddInkStroke_System_ReadOnlySpan_nebulae_dotPDFium_Native_FsPointF__" data-uid="nebulae.dotPDFium.PdfAnnotation.AddInkStroke(System.ReadOnlySpan{nebulae.dotPDFium.Native.FsPointF})">
   AddInkStroke(ReadOnlySpan&lt;FsPointF&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an ink stroke to the annotation using the specified collection of points.</p>
@@ -408,11 +408,51 @@ stroke.</p>
 
 
 
+  <a id="nebulae_dotPDFium_PdfAnnotation_AppendAttachmentPoints_" data-uid="nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfAnnotation_AppendAttachmentPoints_nebulae_dotPDFium_Native_FsQuadPointsF_" data-uid="nebulae.dotPDFium.PdfAnnotation.AppendAttachmentPoints(nebulae.dotPDFium.Native.FsQuadPointsF)">
+  AppendAttachmentPoints(FsQuadPointsF)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Appends an attachment point (quad) to the annotation.
+This is typically used for annotations like highlights, underlines, or squiggly lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AppendAttachmentPoints(FsQuadPointsF quad)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>quad</code> <a class="xref" href="nebulae.dotPDFium.Native.FsQuadPointsF.html">FsQuadPointsF</a></dt>
+    <dd><p>The quadrilateral to attach to the annotation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p><code>true</code> if the quad was successfully appended; otherwise, <code>false</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="nebulae_dotPDFium_PdfAnnotation_AppendObject_" data-uid="nebulae.dotPDFium.PdfAnnotation.AppendObject*"></a>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_AppendObject_nebulae_dotPDFium_PdfPageObject_" data-uid="nebulae.dotPDFium.PdfAnnotation.AppendObject(nebulae.dotPDFium.PdfPageObject)">
   AppendObject(PdfPageObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Appends a specified PDF page object to the annotation.</p>
@@ -457,7 +497,7 @@ method.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_ClearInkStrokes" data-uid="nebulae.dotPDFium.PdfAnnotation.ClearInkStrokes">
   ClearInkStrokes()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes all ink strokes from the annotation.</p>
@@ -494,7 +534,7 @@ contain any ink strokes,  the method will return <a href="https://learn.microsof
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_CommitChanges" data-uid="nebulae.dotPDFium.PdfAnnotation.CommitChanges">
   CommitChanges()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Commits any changes made to the annotation.</p>
@@ -526,7 +566,7 @@ you call GetAnnotation() again.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetAppearanceStreamName_nebulae_dotPDFium_Native_PdfAnnotationAppearanceMode_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetAppearanceStreamName(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode)">
   GetAppearanceStreamName(PdfAnnotationAppearanceMode)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L119"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the name of the appearance stream for the specified annotation appearance mode.</p>
@@ -570,7 +610,7 @@ the specified mode.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetAttachmentPoint_System_Int32_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetAttachmentPoint(System.Int32)">
   GetAttachmentPoint(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L145"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the attachment point at the specified index.</p>
@@ -615,7 +655,7 @@ the specified mode.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetAttachmentPointCount" data-uid="nebulae.dotPDFium.PdfAnnotation.GetAttachmentPointCount">
   GetAttachmentPointCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L162"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the number of attachment points associated with the annotation.</p>
@@ -652,7 +692,7 @@ positioning or other purposes.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetBorder" data-uid="nebulae.dotPDFium.PdfAnnotation.GetBorder">
   GetBorder()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L172"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the border characteristics of the PDF annotation.</p>
@@ -686,7 +726,7 @@ width of the annotation, or <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetColor" data-uid="nebulae.dotPDFium.PdfAnnotation.GetColor">
   GetColor()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L490"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the color of the annotation as an RGBA value.</p>
@@ -725,7 +765,7 @@ width of the annotation, or <a href="https://learn.microsoft.com/dotnet/csharp/l
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetFileAttachment" data-uid="nebulae.dotPDFium.PdfAnnotation.GetFileAttachment">
   GetFileAttachment()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L185"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the file attachment associated with the annotation, if any.</p>
@@ -759,7 +799,7 @@ attachment is associated with the annotation.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetInkStrokeCount" data-uid="nebulae.dotPDFium.PdfAnnotation.GetInkStrokeCount">
   GetInkStrokeCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L197"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the number of ink strokes associated with the annotation.</p>
@@ -796,7 +836,7 @@ this method to determine how many individual strokes are part of the annotation.
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetInkStrokePoints_System_Int32_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetInkStrokePoints(System.Int32)">
   GetInkStrokePoints(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L211"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the list of points that define the ink stroke for the specified path index.</p>
@@ -841,7 +881,7 @@ the coordinates of the ink stroke in the annotation's coordinate space.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetLine" data-uid="nebulae.dotPDFium.PdfAnnotation.GetLine">
   GetLine()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L247"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the start and end points of the line annotation, if available.</p>
@@ -870,11 +910,49 @@ the coordinates of the ink stroke in the annotation's coordinate space.</p>
 
 
 
+  <a id="nebulae_dotPDFium_PdfAnnotation_GetLink_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetLink*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfAnnotation_GetLink_nebulae_dotPDFium_PdfDocument_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetLink(nebulae.dotPDFium.PdfDocument)">
+  GetLink(PdfDocument)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If this annotation is a link, retrieves the associated link object handle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PdfLink? GetLink(PdfDocument context)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="nebulae.dotPDFium.PdfDocument.html">PdfDocument</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="nebulae.dotPDFium.PdfLink.html">PdfLink</a></dt>
+    <dd><p>The link handle if available, or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr.zero">Zero</a> if not a link.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="nebulae_dotPDFium_PdfAnnotation_GetLinkedAnnotation_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation*"></a>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetLinkedAnnotation_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetLinkedAnnotation(System.String)">
   GetLinkedAnnotation(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L250"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the annotation linked to the specified key.</p>
@@ -913,11 +991,50 @@ no linked annotation is found, the method returns <a href="https://learn.microso
 
 
 
+  <a id="nebulae_dotPDFium_PdfAnnotation_GetNumberValue_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetNumberValue*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfAnnotation_GetNumberValue_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetNumberValue(System.String)">
+  GetNumberValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the numeric value for a given dictionary key on the annotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float? GetNumberValue(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The dictionary key (e.g. &quot;F&quot;, &quot;CA&quot;, etc.).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</dt>
+    <dd><p>The float value if the key is present, or <code>null</code> if not found or not numeric.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="nebulae_dotPDFium_PdfAnnotation_GetObject_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetObject*"></a>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetObject_System_Int32_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetObject(System.Int32)">
   GetObject(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L336"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the <a class="xref" href="nebulae.dotPDFium.PdfPageObject.html">PdfPageObject</a> at the specified index within the annotation.</p>
@@ -957,7 +1074,7 @@ object exists at the given index.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetObjectCount" data-uid="nebulae.dotPDFium.PdfAnnotation.GetObjectCount">
   GetObjectCount()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L348"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the total number of objects associated with the annotation.</p>
@@ -994,7 +1111,7 @@ current instance.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetRect" data-uid="nebulae.dotPDFium.PdfAnnotation.GetRect">
   GetRect()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L392"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L466"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the rectangular bounds of the annotation.</p>
@@ -1029,11 +1146,61 @@ current instance.</p>
 
 
 
+  <a id="nebulae_dotPDFium_PdfAnnotation_GetStringValue_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetStringValue*"></a>
+
+  <h3 id="nebulae_dotPDFium_PdfAnnotation_GetStringValue_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetStringValue(System.String)">
+  GetStringValue(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Retrieves the string value associated with the specified key from the annotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? GetStringValue(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The key identifying the string value to retrieve. This parameter cannot be <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or whitespace.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The string value associated with the specified key, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the key does not exist or the
+value cannot be retrieved.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="nebulae_dotPDFium_PdfAnnotation_GetStringValue_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The returned string is decoded from a null-terminated UTF-8 byte array. If the key is not
+found or the retrieval fails, the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown if <code class="paramref">key</code> is <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> or consists only of whitespace.</p>
+</dd>
+  </dl>
+
+
+
   <a id="nebulae_dotPDFium_PdfAnnotation_GetSubtype_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetSubtype*"></a>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetSubtype" data-uid="nebulae.dotPDFium.PdfAnnotation.GetSubtype">
   GetSubtype()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L359"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the subtype of the PDF annotation represented by this instance.</p>
@@ -1073,7 +1240,7 @@ enumeration.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetValueType_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.GetValueType(System.String)">
   GetValueType(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L375"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the type of the value associated with the specified key in the PDF annotation.</p>
@@ -1117,7 +1284,7 @@ results.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_GetVertices" data-uid="nebulae.dotPDFium.PdfAnnotation.GetVertices">
   GetVertices()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L314"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L388"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Retrieves the vertices of the annotation as a read-only list of points.</p>
@@ -1154,7 +1321,7 @@ if no vertices are defined.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_HasAttachmentPoints" data-uid="nebulae.dotPDFium.PdfAnnotation.HasAttachmentPoints">
   HasAttachmentPoints()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L350"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L424"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the annotation has attachment points.</p>
@@ -1191,7 +1358,7 @@ or markers, that may be used for positioning or rendering purposes.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_HasKey_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.HasKey(System.String)">
   HasKey(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L434"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the annotation contains a specific key.</p>
@@ -1230,7 +1397,7 @@ or markers, that may be used for positioning or rendering purposes.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_IsObjectSupportedSubtype_nebulae_dotPDFium_Native_PdfAnnotationSubtype_" data-uid="nebulae.dotPDFium.PdfAnnotation.IsObjectSupportedSubtype(nebulae.dotPDFium.Native.PdfAnnotationSubtype)">
   IsObjectSupportedSubtype(PdfAnnotationSubtype)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L370"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L444"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the specified annotation subtype is supported.</p>
@@ -1269,7 +1436,7 @@ or markers, that may be used for positioning or rendering purposes.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_IsSupportedSubtype" data-uid="nebulae.dotPDFium.PdfAnnotation.IsSupportedSubtype">
   IsSupportedSubtype()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L382"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L456"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Determines whether the annotation's subtype is supported.</p>
@@ -1306,7 +1473,7 @@ underlying system.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_RemoveObject_System_Int32_" data-uid="nebulae.dotPDFium.PdfAnnotation.RemoveObject(System.Int32)">
   RemoveObject(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L517"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Removes an object at the specified index from the annotation.</p>
@@ -1349,7 +1516,7 @@ index is invalid or the removal operation fails, the method returns <a href="htt
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_SetAppearanceStream_nebulae_dotPDFium_Native_PdfAnnotationAppearanceMode_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.SetAppearanceStream(nebulae.dotPDFium.Native.PdfAnnotationAppearanceMode,System.String)">
   SetAppearanceStream(PdfAnnotationAppearanceMode, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L528"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the appearance stream for the annotation based on the specified mode and name.</p>
@@ -1391,7 +1558,7 @@ index is invalid or the removal operation fails, the method returns <a href="htt
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_SetAttachmentPoints_System_Int32_nebulae_dotPDFium_Native_FsQuadPointsF_" data-uid="nebulae.dotPDFium.PdfAnnotation.SetAttachmentPoints(System.Int32,nebulae.dotPDFium.Native.FsQuadPointsF)">
   SetAttachmentPoints(int, FsQuadPointsF)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L467"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L541"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the attachment points for the annotation at the specified index.</p>
@@ -1437,7 +1604,7 @@ index is invalid or the removal operation fails, the method returns <a href="htt
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_SetBorder_System_Single_System_Single_System_Single_" data-uid="nebulae.dotPDFium.PdfAnnotation.SetBorder(System.Single,System.Single,System.Single)">
   SetBorder(float, float, float)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L481"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L555"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the border properties for the annotation, including corner radii and border width.</p>
@@ -1486,7 +1653,7 @@ properties. Ensure that the annotation handle is valid before calling this metho
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_SetColor_nebulae_dotPDFium_Native_RgbaColor_" data-uid="nebulae.dotPDFium.PdfAnnotation.SetColor(nebulae.dotPDFium.Native.RgbaColor)">
   SetColor(RgbaColor)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L504"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the color of the annotation using the specified RGBA color.</p>
@@ -1526,7 +1693,7 @@ apply to the annotation.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_SetRect_nebulae_dotPDFium_Native_FsRectF_" data-uid="nebulae.dotPDFium.PdfAnnotation.SetRect(nebulae.dotPDFium.Native.FsRectF)">
   SetRect(FsRectF)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L405"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L479"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the rectangular bounds of the annotation.</p>
@@ -1565,7 +1732,7 @@ apply to the annotation.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_SetUri_System_String_" data-uid="nebulae.dotPDFium.PdfAnnotation.SetUri(System.String)">
   SetUri(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L492"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L566"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the URI associated with the annotation.</p>
@@ -1610,7 +1777,7 @@ apply to the annotation.</p>
 
   <h3 id="nebulae_dotPDFium_PdfAnnotation_UpdateObject_nebulae_dotPDFium_PdfPageObject_" data-uid="nebulae.dotPDFium.PdfAnnotation.UpdateObject(nebulae.dotPDFium.PdfPageObject)">
   UpdateObject(PdfPageObject)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L506"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L580"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Updates the specified PDF page object within the annotation.</p>
@@ -1655,7 +1822,7 @@ apply to the annotation.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L7" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfAnnotation.cs/#L8" class="edit-link">Edit this page</a>
         </div>
 
 
