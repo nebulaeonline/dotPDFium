@@ -1884,7 +1884,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "nebulae.dotPDFium.PdfLink",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/nebulae.dotPDFium.PdfLink.yml\" sourcestartlinenumber=\"1\">Represents a link annotation within a PDF document.</p>\n"
     },
     {
       "type": "ManagedReference",

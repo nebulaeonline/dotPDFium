@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class PdfLink | dotPDFium ">
       
-      
+      <meta name="description" content="Represents a link annotation within a PDF document.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="nebulae_dotPDFium_PdfLink" data-uid="nebulae.dotPDFium.PdfLink" class="text-break">
-Class PdfLink  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L10"><i class="bi bi-code-slash"></i></a>
+Class PdfLink  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L16"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
   <dl><dt>Assembly</dt><dd>dotPDFium.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"></div>
+  <div class="markdown summary"><p>Represents a link annotation within a PDF document.</p>
+</div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
@@ -250,6 +251,11 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h2 id="nebulae_dotPDFium_PdfLink_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>A <a class="xref" href="nebulae.dotPDFium.PdfLink.html">PdfLink</a> object provides access to the destination or action associated with a link
+annotation in a PDF document. Use this class to retrieve information about where the link points to, such as a
+specific page or an external action.</p>
+</div>
 
 
   <h2 class="section" id="methods">Methods
@@ -260,10 +266,11 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="nebulae_dotPDFium_PdfLink_GetAction" data-uid="nebulae.dotPDFium.PdfLink.GetAction">
   GetAction()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the action associated with the current PDF link, if any.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -274,7 +281,9 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="nebulae.dotPDFium.PdfAction.html">PdfAction</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfAction.html">PdfAction</a> object representing the action associated with the link,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if
+no action is associated.</p>
+</dd>
   </dl>
 
 
@@ -291,10 +300,11 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
 
   <h3 id="nebulae_dotPDFium_PdfLink_GetDestination" data-uid="nebulae.dotPDFium.PdfLink.GetDestination">
   GetDestination()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L34"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Retrieves the destination associated with the current PDF link.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
@@ -305,7 +315,9 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="nebulae.dotPDFium.PdfDestination.html">PdfDestination</a></dt>
-    <dd></dd>
+    <dd><p>A <a class="xref" href="nebulae.dotPDFium.PdfDestination.html">PdfDestination</a> object representing the destination of the link,  or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if no
+destination is associated with the link.</p>
+</dd>
   </dl>
 
 
@@ -314,6 +326,11 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
 
 
 
+  <h4 class="section" id="nebulae_dotPDFium_PdfLink_GetDestination_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The destination provides information about where the link points to within the PDF document,
+such as a specific page or location. If the link does not have an associated destination,  the method returns
+<a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
+</div>
 
 
 
@@ -322,7 +339,7 @@ Class PdfLink  <a class="header-action link-secondary" title="View source" href=
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L10" class="edit-link">Edit this page</a>
+          <a href="https://github.com/nebulaeonline/dotPDFium/blob/main/dotPDFium/dotPDFium/PdfLink.cs/#L16" class="edit-link">Edit this page</a>
         </div>
 
 
