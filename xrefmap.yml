@@ -14142,6 +14142,22 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfImageObject.LoadJpeg
   nameWithType: PdfImageObject.LoadJpeg
+- uid: nebulae.dotPDFium.PdfImageObject.LoadJpegFromPath(nebulae.dotPDFium.PdfPage,System.String)
+  name: LoadJpegFromPath(PdfPage?, string)
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_LoadJpegFromPath_nebulae_dotPDFium_PdfPage_System_String_
+  commentId: M:nebulae.dotPDFium.PdfImageObject.LoadJpegFromPath(nebulae.dotPDFium.PdfPage,System.String)
+  name.vb: LoadJpegFromPath(PdfPage, String)
+  fullName: nebulae.dotPDFium.PdfImageObject.LoadJpegFromPath(nebulae.dotPDFium.PdfPage?, string)
+  fullName.vb: nebulae.dotPDFium.PdfImageObject.LoadJpegFromPath(nebulae.dotPDFium.PdfPage, String)
+  nameWithType: PdfImageObject.LoadJpegFromPath(PdfPage?, string)
+  nameWithType.vb: PdfImageObject.LoadJpegFromPath(PdfPage, String)
+- uid: nebulae.dotPDFium.PdfImageObject.LoadJpegFromPath*
+  name: LoadJpegFromPath
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_LoadJpegFromPath_
+  commentId: Overload:nebulae.dotPDFium.PdfImageObject.LoadJpegFromPath
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfImageObject.LoadJpegFromPath
+  nameWithType: PdfImageObject.LoadJpegFromPath
 - uid: nebulae.dotPDFium.PdfImageObject.LoadJpegInline(nebulae.dotPDFium.PdfPage,nebulae.dotPDFium.Native.PdfFileAccess)
   name: LoadJpegInline(PdfPage?, PdfFileAccess)
   href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_LoadJpegInline_nebulae_dotPDFium_PdfPage_nebulae_dotPDFium_Native_PdfFileAccess_
@@ -14158,6 +14174,22 @@ references:
   isSpec: "True"
   fullName: nebulae.dotPDFium.PdfImageObject.LoadJpegInline
   nameWithType: PdfImageObject.LoadJpegInline
+- uid: nebulae.dotPDFium.PdfImageObject.LoadJpegInlineFromPath(nebulae.dotPDFium.PdfPage,System.String)
+  name: LoadJpegInlineFromPath(PdfPage?, string)
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_LoadJpegInlineFromPath_nebulae_dotPDFium_PdfPage_System_String_
+  commentId: M:nebulae.dotPDFium.PdfImageObject.LoadJpegInlineFromPath(nebulae.dotPDFium.PdfPage,System.String)
+  name.vb: LoadJpegInlineFromPath(PdfPage, String)
+  fullName: nebulae.dotPDFium.PdfImageObject.LoadJpegInlineFromPath(nebulae.dotPDFium.PdfPage?, string)
+  fullName.vb: nebulae.dotPDFium.PdfImageObject.LoadJpegInlineFromPath(nebulae.dotPDFium.PdfPage, String)
+  nameWithType: PdfImageObject.LoadJpegInlineFromPath(PdfPage?, string)
+  nameWithType.vb: PdfImageObject.LoadJpegInlineFromPath(PdfPage, String)
+- uid: nebulae.dotPDFium.PdfImageObject.LoadJpegInlineFromPath*
+  name: LoadJpegInlineFromPath
+  href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_LoadJpegInlineFromPath_
+  commentId: Overload:nebulae.dotPDFium.PdfImageObject.LoadJpegInlineFromPath
+  isSpec: "True"
+  fullName: nebulae.dotPDFium.PdfImageObject.LoadJpegInlineFromPath
+  nameWithType: PdfImageObject.LoadJpegInlineFromPath
 - uid: nebulae.dotPDFium.PdfImageObject.SetBitmap(nebulae.dotPDFium.PdfBitmap,nebulae.dotPDFium.PdfPage)
   name: SetBitmap(PdfBitmap, PdfPage?)
   href: api/nebulae.dotPDFium.PdfImageObject.html#nebulae_dotPDFium_PdfImageObject_SetBitmap_nebulae_dotPDFium_PdfBitmap_nebulae_dotPDFium_PdfPage_
