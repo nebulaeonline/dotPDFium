@@ -1,9 +1,12 @@
 ﻿using nebulae.dotPDFium.Native;
+using System.Runtime.InteropServices;
 
 namespace nebulae.dotPDFium;
 
 public class PdfImageObject : PdfPageObject
 {
+    private static readonly GetBlockDelegate _sharedBlockDelegate = GetBlock;
+
     internal PdfImageObject(IntPtr handle)
         : base(handle, PdfPageObjectType.Image)
     {
@@ -179,6 +182,105 @@ public class PdfImageObject : PdfPageObject
             throw new dotPDFiumException("Failed to load JPEG into image object inline.");
     }
 
+    /// <summary>
+    /// Loads a JPEG image from the specified file path and associates it with the given PDF page.
+    /// </summary>
+    /// <remarks>This method reads the JPEG image from the provided file path and associates it with the
+    /// specified PDF page. If <paramref name="page"/> is <see langword="null"/>, the image will not be associated with
+    /// any page.</remarks>
+    /// <param name="page">The PDF page to which the JPEG image will be added. Can be <see langword="null"/> if no page is specified.</param>
+    /// <param name="filePath">The file path of the JPEG image to load. Must not be <see langword="null"/> or empty.</param>
+    public void LoadJpegFromPath(PdfPage? page, string filePath)
+    {
+        using var data = LoadFileAsPinned(filePath);
+        LoadJpeg(page, data.Access);
+    }
+
+    /// <summary>
+    /// Loads a JPEG image from the specified file path and embeds it inline within the given PDF page.
+    /// </summary>
+    /// <remarks>This method reads the JPEG image from the provided file path, processes it, and embeds it
+    /// inline  within the specified PDF page. If <paramref name="page"/> is <see langword="null"/>, the behavior 
+    /// depends on the implementation of the underlying PDF library.</remarks>
+    /// <param name="page">The <see cref="PdfPage"/> object where the JPEG image will be embedded.  This parameter can be <see
+    /// langword="null"/> if no specific page is targeted.</param>
+    /// <param name="filePath">The file path of the JPEG image to load. Must be a valid path to an existing file.</param>
+    public void LoadJpegInlineFromPath(PdfPage? page, string filePath)
+    {
+        using var data = LoadFileAsPinned(filePath);
+        LoadJpegInline(page, data.Access);
+    }
+
+    /// <summary>
+    /// Represents a pinned memory buffer for accessing image data, ensuring the buffer remains fixed in memory.
+    /// </summary>
+    /// <remarks>This class is used to load an image file into memory, pin the buffer to prevent it from being
+    /// moved by the garbage collector,  and provide access to the file data through a <see cref="PdfFileAccess"/>
+    /// structure.  The buffer is automatically unpinned when the object is disposed.</remarks>
+    private sealed class PinnedData : IDisposable
+    {
+        public byte[] Buffer { get; }
+        public GCHandle Handle { get; }
+        public PdfFileAccess Access { get; }
+
+        public PinnedData(string filePath)
+        {
+            Buffer = File.ReadAllBytes(filePath);
+            Handle = GCHandle.Alloc(Buffer, GCHandleType.Pinned);
+            Access = new PdfFileAccess
+            {
+                fileLength = (uint)Buffer.Length,
+                getBlock = Marshal.GetFunctionPointerForDelegate(_sharedBlockDelegate),
+                userData = GCHandle.ToIntPtr(Handle)
+            };
+        }
+
+        public void Dispose()
+        {
+            if (Handle.IsAllocated)
+                Handle.Free();
+        }
+    }
+
+    /// <summary>
+    /// Loads a file from the specified path and returns its data in a pinned memory structure.
+    /// </summary>
+    /// <param name="path">The full path to the file to be loaded. Must not be null or empty.</param>
+    /// <returns>A <see cref="PinnedData"/> object containing the file's data in pinned memory.</returns>
+    /// <exception cref="FileNotFoundException">Thrown if the file specified by <paramref name="path"/> does not exist.</exception>
+    private static PinnedData LoadFileAsPinned(string path)
+    {
+        if (!File.Exists(path))
+            throw new FileNotFoundException("File does not exist", path);
+
+        return new PinnedData(path);
+    }
+
+    /// <summary>
+    /// Copies a block of data from a managed byte array to an unmanaged memory buffer.
+    /// </summary>
+    /// <remarks>This method assumes that <paramref name="param"/> is a valid pointer to a <see
+    /// cref="GCHandle"/> referencing a managed byte array. The caller is responsible for ensuring that the unmanaged
+    /// buffer referenced by <paramref name="buffer"/> is large enough to hold the specified number of bytes.</remarks>
+    /// <param name="param">A pointer to a <see cref="GCHandle"/> that references the managed byte array.</param>
+    /// <param name="position">The starting position, in bytes, within the managed array from which to copy data.</param>
+    /// <param name="buffer">A pointer to the unmanaged memory buffer where the data will be copied.</param>
+    /// <param name="size">The number of bytes to copy from the managed array to the unmanaged buffer.</param>
+    /// <returns><see langword="1"/> if the operation succeeds; otherwise, <see langword="0"/> if an error occurs.</returns>
+    private static int GetBlock(IntPtr param, uint position, IntPtr buffer, uint size)
+    {
+        try
+        {
+            var handle = GCHandle.FromIntPtr(param);
+            var data = (byte[])handle.Target!;
+            Marshal.Copy(data, (int)position, buffer, (int)size);
+            return 1;
+        }
+        catch
+        {
+            return 0;
+        }
+    }
     /// <summary>
     /// Sets the specified bitmap as the content of this image object.
     /// </summary>
