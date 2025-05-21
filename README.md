@@ -16,7 +16,7 @@ As always, we can be reached at nebulae at nebulae dot online.
 
 ### Goals (eventually)
 
-- Managed lifecycle and memory safety for native PDFium handles (most done)
+- Managed lifecycle and memory safety for native PDFium handles (mostly done)
 - Optional exceptions or `TryX()` patterns for common workflows (WIP)
 - Modular text extraction and page rendering APIs (mostly feature complete)
 - MIT-licensed wrapper code with proper attribution to the PDFium project (Apache 2.0)
