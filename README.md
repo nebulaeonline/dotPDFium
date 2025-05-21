@@ -27,7 +27,7 @@ As always, we can be reached at nebulae at nebulae dot online.
 
 - Renamed the `PdfText` class to `PdfPageText` to avoid confusion with the `PdfTextObject` class.
 - Added the nebulae.dotPDFium.Drawing namespace for drawing; currently supports `DrawLine()` and `DrawRect()` methods.
-- Added a fluent API for path drawing to the new Drawing namespace.
+- Added a fluent API for path drawing to the new Drawing namespace via the `PathBuilder` class.
 
 ### Current Status
 
