@@ -1,5 +1,9 @@
 ﻿# dotPDFium
 
+#### Getting Started can be found [here](https://nebulae.online/dotPDFium/docs/getting-started.html)
+
+#### API Docs are available at [dotPDFium API Docs](https://nebulae.online/dotPDFium/api/nebulae.dotPDFium.html)
+
 **dotPDFium** is an early-stage, .NET 8+ wrapper around the native [PDFium](https://pdfium.googlesource.com/pdfium/) library, aiming to provide a safe and idiomatic C# interface for loading, parsing, and rendering PDF files.
 
 This project is currently in a **pre-pre-alpha** state. Development is focused on establishing core object lifecycles (`PdfDocument`, `PdfPage`, `PdfText`), managing native resource ownership correctly, and wrapping the lower-level PDFium API with a clean, maintainable surface.
@@ -13,6 +17,8 @@ We are at v0.4.0-prealpha, which is a *very* early pre-alpha version. The goal i
 Feature requests, bug reports, and PRs are welcome. Please open an issue or PR if you have suggestions or want to help out.
 
 As always, we can be reached at nebulae at nebulae dot online.
+
+[![NuGet](https://img.shields.io/nuget/v/nebulae.dotPdfium.svg)](https://www.nuget.org/packages/nebulae.dotPdfium)
 
 ### Goals (eventually)
 
@@ -44,10 +50,6 @@ As always, we can be reached at nebulae at nebulae dot online.
 - Basic Drawing API is implemented
 - XFA support is not planned
 - Javascript support is not planned
-
-#### API Docs are available at [dotPDFium API Docs](https://nebulae.online/dotPDFium/api/nebulae.dotPDFium.html)
-
-#### Getting Started can be found [here](https://nebulae.online/dotPDFium/docs/getting-started.html)
 
 #### \*Can I Create New Form Fields?
 
@@ -136,3 +138,29 @@ See: [FPDFAnnot_IsSupportedSubtype](https://pdfium.googlesource.com/pdfium/+/cff
 
     PDFiumEngine.Shutdown();
 ```
+
+## Installation
+
+You can install the package via NuGet:
+
+```bash
+
+$ dotnet add package nebulae.dotPdfium
+
+```
+
+Or via git:
+
+```bash
+
+$ git clone https://github.com/nebulaeonline/dotPdfium.git
+$ cd dotPdfium
+$ dotnet build
+
+```
+
+---
+
+## License
+
+MIT

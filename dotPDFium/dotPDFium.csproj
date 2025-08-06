@@ -1,23 +1,26 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-      <Version>0.4.0</Version>
-    <LangVersion>latest</LangVersion>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <PackageId>nebulae.$(AssemblyName)</PackageId>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
-    <Company>Nebulae Foundation, LLC</Company>
-    <Authors>Robert C. Horvath, III</Authors>
-    <Product>nebulae.$(AssemblyName)</Product>
-    <Copyright>©2025 Nebulae Foundation, LLC</Copyright>
-    <PackageProjectUrl>https://github.com/nebulaeonline/dotPDFium</PackageProjectUrl>
-      <RepositoryType>git</RepositoryType>
-      <RepositoryUrl>https://github.com/nebulaeonline/dotPDFium</RepositoryUrl>
-    <RootNamespace>nebulae.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-      <PackageReadmeFile>docs\README.md</PackageReadmeFile>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>nebulae.dotPdfium</RootNamespace>
+        <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+        <PackageId>nebulae.dotPdfium</PackageId>
+        <Version>0.4.1</Version>
+        <Authors>Robert C. Horvath III</Authors>
+        <Company>Nebulae Foundation LLC</Company>
+        <Description>Cross-platform wrapper around Pdfium C++ PDF engine</Description>
+        <PackageTags>pdf pdfium form library text native AOT</PackageTags>
+        <RepositoryUrl>https://github.com/nebulaeonline/dotPdfium</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageProjectUrl>https://github.com/nebulaeonline/dotPdfium</PackageProjectUrl>
+        <IncludeSymbols>false</IncludeSymbols>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Copyright>Copyright © 2025 Nebulae Foundation LLC </Copyright>
+        <PackageReadmeFile>docs\README.md</PackageReadmeFile>
+    </PropertyGroup>
 
     <ItemGroup>
         <!-- Windows x64 -->
