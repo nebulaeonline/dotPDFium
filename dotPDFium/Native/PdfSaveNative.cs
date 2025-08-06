@@ -5,7 +5,7 @@ namespace nebulae.dotPDFium.Native;
 public static class PdfSaveNative
 {
     private const string PdfiumLib = "pdfium";
-    [DllImport("pdfium.dll", CallingConvention = CallingConvention.Cdecl)]
+    [DllImport(PdfiumLib, CallingConvention = CallingConvention.Cdecl)]
     [return: MarshalAs(UnmanagedType.I1)]
     public static extern bool FPDF_SaveAsCopy(IntPtr document, IntPtr writer, uint flags);
     [DllImport(PdfiumLib)]

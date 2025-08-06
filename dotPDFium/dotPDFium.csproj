@@ -7,7 +7,7 @@
         <RootNamespace>nebulae.dotPdfium</RootNamespace>
         <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
         <PackageId>nebulae.dotPdfium</PackageId>
-        <Version>0.4.1</Version>
+        <Version>0.4.2</Version>
         <Authors>Robert C. Horvath III</Authors>
         <Company>Nebulae Foundation LLC</Company>
         <Description>Cross-platform wrapper around Pdfium C++ PDF engine</Description>
