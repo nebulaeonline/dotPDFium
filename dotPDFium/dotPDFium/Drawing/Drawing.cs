@@ -97,18 +97,24 @@ namespace nebulae.dotPDFium.Drawing
         /// styles.</param>
         internal static void ApplyDrawingOptions(IntPtr path, DrawingOptions opts)
         {
-            PdfEditNative.FPDFPath_SetDrawMode(path,
-                opts.FillColor.HasValue ? 1 /* fill or fill+stroke */ : 0,
-                stroke: true
-            );
+            // Decide fill mode: if user didn’t ask for fill, force None
+            int fillMode = (opts.FillColor.HasValue ? (int)opts.FillMode : (int)FillMode.None);
 
-            var stroke = opts.StrokeColor;
-            PdfEditNative.FPDFPageObj_SetStrokeColor(path, stroke.R, stroke.G, stroke.B, stroke.A);
-            PdfEditNative.FPDFPageObj_SetStrokeWidth(path, opts.StrokeWidth);
-            PdfEditNative.FPDFPageObj_SetLineCap(path, opts.LineCap);
-            PdfEditNative.FPDFPageObj_SetLineJoin(path, opts.LineJoin);
+            // PDFium draw mode: fill mode + stroke flag
+            PdfEditNative.FPDFPath_SetDrawMode(path, fillMode, opts.Stroke);
 
-            if (opts.FillColor.HasValue)
+            // Stroke settings only matter if stroke is enabled
+            if (opts.Stroke)
+            {
+                var stroke = opts.StrokeColor;
+                PdfEditNative.FPDFPageObj_SetStrokeColor(path, stroke.R, stroke.G, stroke.B, stroke.A);
+                PdfEditNative.FPDFPageObj_SetStrokeWidth(path, opts.StrokeWidth);
+                PdfEditNative.FPDFPageObj_SetLineCap(path, opts.LineCap);
+                PdfEditNative.FPDFPageObj_SetLineJoin(path, opts.LineJoin);
+            }
+
+            // Fill settings only matter if FillColor is provided and fill mode isn’t None
+            if (opts.FillColor.HasValue && fillMode != (int)FillMode.None)
             {
                 var fill = opts.FillColor.Value;
                 PdfEditNative.FPDFPageObj_SetFillColor(path, fill.R, fill.G, fill.B, fill.A);

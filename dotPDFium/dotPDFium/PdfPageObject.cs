@@ -91,7 +91,67 @@ public class PdfPageObject : PdfObject
     /// <param name="matrix"></param>
     public void Transform(FsMatrix matrix)
     {
-        PdfEditNative.FPDFPageObj_Transform(_handle, matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f);
+        PdfEditNative.FPDFPageObj_Transform(Handle, matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f);
+    }
+
+    public void Transform(float a, float b, float c, float d, float e, float f)
+    {
+        FsMatrixF matrix = new FsMatrixF(a, b, c, d, e, f);
+        PdfEditNative.FPDFPageObj_TransformF(Handle, ref matrix);
+    }
+
+    public void Transform(double a, double b, double c, double d, double e, double f)
+    {
+        PdfEditNative.FPDFPageObj_Transform(Handle, a, b, c, d, e, f);
+    }
+
+    public void Translate(float dx, float dy) => Transform(1, 0, 0, 1, dx, dy);
+    public void Scale(float sx, float sy) => Transform(sx, 0, 0, sy, 0, 0);
+    public void Scale(float sx, float sy, float cx, float cy)
+    {
+        Translate(-cx, -cy);
+        Scale(sx, sy);
+        Translate(cx, cy);
+    }
+
+    public void Rotate(float degrees)
+    {
+        double r = Math.PI * degrees / 180.0;
+        float cos = (float)Math.Cos(r);
+        float sin = (float)Math.Sin(r);
+        Transform(cos, sin, -sin, cos, 0, 0);
+    }
+
+    public void Rotate(float degrees, float cx, float cy)
+    {
+        Translate(-cx, -cy);
+        Rotate(degrees);
+        Translate(cx, cy);
+    }
+    public void Shear(float shxDegrees, float shyDegrees)
+    {
+        float shx = (float)Math.Tan(Math.PI * shxDegrees / 180.0);
+        float shy = (float)Math.Tan(Math.PI * shyDegrees / 180.0);
+        Transform(1, shy, shx, 1, 0, 0);
+    }
+
+    /// <summary>
+    /// Skew by angles (in degrees). ax = skewX, ay = skewY.
+    /// </summary>
+    public void Skew(float ax, float ay)
+    {
+        double rx = Math.PI * ax / 180.0;
+        double ry = Math.PI * ay / 180.0;
+        float tx = (float)Math.Tan(rx);
+        float ty = (float)Math.Tan(ry);
+        Transform(1, ty, tx, 1, 0, 0);
+    }
+
+    public void Skew(float ax, float ay, float cx, float cy)
+    {
+        Translate(-cx, -cy);
+        Skew(ax, ay);
+        Translate(cx, cy);
     }
 
     /// <summary>

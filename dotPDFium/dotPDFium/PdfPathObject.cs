@@ -258,7 +258,5 @@ public class PdfPathObject : PdfPageObject
         bool ok = PdfEditNative.FPDFPageObj_SetLineJoin(_handle, (int)joinStyle);
         if (!ok)
             throw new dotPDFiumException("Failed to set line join style.");
-    }
-
-
+    }    
 }
