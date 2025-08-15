@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using nebulae.dotPDFium.Native;
 
-using nebulae.dotPDFium.Native;
-
-namespace nebulae.dotPDFium;
+namespace nebulae.dotPdfium.Extensions;
 
 public static class PdfBitmapFormatExtension
 {

@@ -1,5 +1,4 @@
-﻿using nebulae.dotPDFium.Forms;
-using nebulae.dotPDFium.Native;
+﻿using nebulae.dotPDFium.Native;
 
 namespace nebulae.dotPDFium;
 
@@ -94,19 +93,69 @@ public class PdfPageObject : PdfObject
         PdfEditNative.FPDFPageObj_Transform(Handle, matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f);
     }
 
+    /// <summary>
+    /// Applies a transformation to the current object using the specified matrix parameters.
+    /// </summary>
+    /// <remarks>This method modifies the object's state by applying a transformation defined by the matrix
+    /// parameters. The transformation includes scaling, rotation, and translation based on the provided
+    /// values.</remarks>
+    /// <param name="a">The horizontal scaling factor.</param>
+    /// <param name="b">The vertical skewing factor.</param>
+    /// <param name="c">The horizontal skewing factor.</param>
+    /// <param name="d">The vertical scaling factor.</param>
+    /// <param name="e">The horizontal translation value.</param>
+    /// <param name="f">The vertical translation value.</param>
     public void Transform(float a, float b, float c, float d, float e, float f)
     {
         FsMatrixF matrix = new FsMatrixF(a, b, c, d, e, f);
         PdfEditNative.FPDFPageObj_TransformF(Handle, ref matrix);
     }
 
+    /// <summary>
+    /// Applies a transformation matrix to the current page object.
+    /// </summary>
+    /// <remarks>The transformation matrix is defined by the six parameters: a, b, c, d, e, and f. This method
+    /// modifies the position, scale, and orientation of the page object based on the matrix.</remarks>
+    /// <param name="a">The horizontal scaling factor.</param>
+    /// <param name="b">The vertical skewing factor.</param>
+    /// <param name="c">The horizontal skewing factor.</param>
+    /// <param name="d">The vertical scaling factor.</param>
+    /// <param name="e">The horizontal translation value.</param>
+    /// <param name="f">The vertical translation value.</param>
     public void Transform(double a, double b, double c, double d, double e, double f)
     {
         PdfEditNative.FPDFPageObj_Transform(Handle, a, b, c, d, e, f);
     }
 
+    /// <summary>
+    /// Applies a translation to the current transformation matrix by shifting it horizontally and vertically.
+    /// </summary>
+    /// <remarks>This method modifies the current transformation matrix by adding a translation component. Use
+    /// this to reposition graphical elements or coordinate systems.</remarks>
+    /// <param name="dx">The amount to shift along the x-axis.</param>
+    /// <param name="dy">The amount to shift along the y-axis.</param>
     public void Translate(float dx, float dy) => Transform(1, 0, 0, 1, dx, dy);
+    
+    /// <summary>
+    /// Scales the current object by the specified horizontal and vertical factors.
+    /// </summary>
+    /// <remarks>This method applies a scaling transformation to the object, modifying its size 
+    /// proportionally based on the provided scaling factors. Positive values increase the size,  while values between 0
+    /// and 1 reduce it. Negative values may result in inversion.</remarks>
+    /// <param name="sx">The scaling factor along the horizontal axis.</param>
+    /// <param name="sy">The scaling factor along the vertical axis.</param>
     public void Scale(float sx, float sy) => Transform(sx, 0, 0, sy, 0, 0);
+
+    /// <summary>
+    /// Scales the current transformation by the specified factors, with scaling centered around a given point.
+    /// </summary>
+    /// <remarks>This method adjusts the transformation matrix to apply scaling relative to the specified
+    /// center point. The transformation is first translated to center the scaling operation, then scaled, and finally
+    /// translated back.</remarks>
+    /// <param name="sx">The scaling factor along the X-axis.</param>
+    /// <param name="sy">The scaling factor along the Y-axis.</param>
+    /// <param name="cx">The X-coordinate of the center point around which scaling is applied.</param>
+    /// <param name="cy">The Y-coordinate of the center point around which scaling is applied.</param>
     public void Scale(float sx, float sy, float cx, float cy)
     {
         Translate(-cx, -cy);
@@ -114,6 +163,13 @@ public class PdfPageObject : PdfObject
         Translate(cx, cy);
     }
 
+    /// <summary>
+    /// Rotates the current transformation by the specified angle in degrees.
+    /// </summary>
+    /// <remarks>This method applies a rotation to the current transformation matrix. The rotation is
+    /// performed around the origin (0, 0).</remarks>
+    /// <param name="degrees">The angle, in degrees, by which to rotate the transformation. Positive values rotate clockwise, and negative
+    /// values rotate counterclockwise.</param>
     public void Rotate(float degrees)
     {
         double r = Math.PI * degrees / 180.0;
@@ -122,12 +178,30 @@ public class PdfPageObject : PdfObject
         Transform(cos, sin, -sin, cos, 0, 0);
     }
 
+    /// <summary>
+    /// Rotates the current object by the specified angle around a given pivot point.
+    /// </summary>
+    /// <remarks>The rotation is performed relative to the specified pivot point, which is temporarily
+    /// translated to the origin during the operation.</remarks>
+    /// <param name="degrees">The angle, in degrees, by which to rotate the object. Positive values rotate clockwise; negative values rotate
+    /// counterclockwise.</param>
+    /// <param name="cx">The x-coordinate of the pivot point around which the rotation occurs.</param>
+    /// <param name="cy">The y-coordinate of the pivot point around which the rotation occurs.</param>
     public void Rotate(float degrees, float cx, float cy)
     {
         Translate(-cx, -cy);
         Rotate(degrees);
         Translate(cx, cy);
     }
+
+    /// <summary>
+    /// Applies a shear transformation to the current object.
+    /// </summary>
+    /// <remarks>This method modifies the object's transformation matrix by applying a shear operation. The
+    /// shear angles are specified in degrees and converted internally to radians. Positive values of <paramref
+    /// name="shxDegrees"/> and <paramref name="shyDegrees"/> result in shearing along the respective axes.</remarks>
+    /// <param name="shxDegrees">The shear angle in degrees along the X-axis.</param>
+    /// <param name="shyDegrees">The shear angle in degrees along the Y-axis.</param>
     public void Shear(float shxDegrees, float shyDegrees)
     {
         float shx = (float)Math.Tan(Math.PI * shxDegrees / 180.0);
@@ -136,8 +210,13 @@ public class PdfPageObject : PdfObject
     }
 
     /// <summary>
-    /// Skew by angles (in degrees). ax = skewX, ay = skewY.
+    /// Applies a skew transformation to the current object along the X and Y axes.
     /// </summary>
+    /// <remarks>The skew transformation alters the shape of the object by slanting it along the specified
+    /// axes. Positive values skew the object in the positive direction of the respective axis, while negative values
+    /// skew it in the opposite direction.</remarks>
+    /// <param name="ax">The angle, in degrees, to skew along the X-axis.</param>
+    /// <param name="ay">The angle, in degrees, to skew along the Y-axis.</param>
     public void Skew(float ax, float ay)
     {
         double rx = Math.PI * ax / 180.0;
@@ -147,6 +226,16 @@ public class PdfPageObject : PdfObject
         Transform(1, ty, tx, 1, 0, 0);
     }
 
+    /// <summary>
+    /// Applies a skew transformation to the current object using the specified angles and pivot point.
+    /// </summary>
+    /// <remarks>The skew transformation is applied relative to the specified pivot point (<paramref
+    /// name="cx"/>, <paramref name="cy">). The object is first translated to align the pivot point with the origin,
+    /// then skewed, and finally translated back.</remarks>
+    /// <param name="ax">The angle, in radians, to skew along the x-axis.</param>
+    /// <param name="ay">The angle, in radians, to skew along the y-axis.</param>
+    /// <param name="cx">The x-coordinate of the pivot point around which the skew is applied.</param>
+    /// <param name="cy">The y-coordinate of the pivot point around which the skew is applied.</param>
     public void Skew(float ax, float ay, float cx, float cy)
     {
         Translate(-cx, -cy);

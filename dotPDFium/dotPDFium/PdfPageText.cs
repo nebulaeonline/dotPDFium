@@ -377,11 +377,9 @@ public class PdfPageText : PdfObject
         int written = PdfTextNative.FPDFText_GetText(_handle, index, count, buffer);
         if (written <= 0) return string.Empty;
 
-        // Convert ushort[] → char[] safely
-        var chars = new char[written];
-        for (int i = 0; i < written; i++)
-            chars[i] = (char)buffer[i];
-
+        // account for tailing null terminator
+        var chars = new char[Math.Max(0, written - 1)];
+        for (int i = 0; i < chars.Length; i++) chars[i] = (char)buffer[i];
         return new string(chars);
     }
 
@@ -410,10 +408,9 @@ public class PdfPageText : PdfObject
             return false;
         }
 
-        // Convert ushort[] → char[] safely
-        var chars = new char[written];
-        for (int i = 0; i < written; i++)
-            chars[i] = (char)buffer[i];
+        // account for tailing null terminator
+        var chars = new char[Math.Max(0, written - 1)];
+        for (int i = 0; i < chars.Length; i++) chars[i] = (char)buffer[i];
 
         text = new string(chars);
         return true;
@@ -479,7 +476,7 @@ public class PdfPageText : PdfObject
     /// <param name="count">The count of characters to count bounding rectangles for</param>
     /// <param name="rects">The out parameter to hold The number of bounding rectangles that exist for the specified range of characters</param>
     /// <returns>true on success, false on failure</returns>
-    public bool TryCountRects(int startIndex, int count, int rects)
+    public bool TryCountRects(int startIndex, int count, out int rects)
     {
         if (_handle == IntPtr.Zero)
         {
